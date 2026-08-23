@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AAU Introduction to Scripting tutorial, from computational foundations to practical Python" />
+    <title>Introduction to Scripting | AAU Tutorial</title>
+    <link rel="stylesheet" href="styles.css?v=5" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to tutorial content</a>
+    <header class="topbar">
+      <button class="menu-button" id="menu-button" aria-label="Open module menu">☰</button>
+      <button class="brand" id="home-button" aria-label="Return to Start Here overview">
+        <span class="brand-mark">AAU</span>
+        <span class="brand-copy">
+          <strong>Introduction to Scripting</strong>
+          <small>Practical tutorial for STS students</small>
+        </span>
+      </button>
+      <nav class="top-actions" aria-label="Site tools">
+        <button class="text-button" id="glossary-button">Glossary</button>
+        <button class="text-button" data-toast="The troubleshooting centre will collect errors from every module.">Get help</button>
+        <span class="progress-chip"><span id="progress-value">0</span>/5 complete</span>
+      </nav>
+    </header>
+
+    <div class="shell">
+      <aside class="sidebar" id="sidebar" aria-label="Course tutorial sections">
+        <div class="course-switcher" aria-label="Course sections">
+          <button class="package-button active" data-package="start"><span>0</span> Start Here</button>
+          <button class="package-button" data-package="foundation"><span>1.1</span> Computational problems</button>
+          <button class="package-button" data-package="flow"><span>1.2</span> Flowcharts and pseudocode</button>
+          <button class="package-button" data-package="python"><span>2.1</span> Python Foundations I</button>
+          <button class="package-button" data-package="python-ii"><span>2.2</span> Python Foundations II</button>
+        </div>
+        <div class="sidebar-heading">
+          <p class="eyebrow" id="sidebar-kicker">Course orientation</p>
+          <h2 id="sidebar-title">Start Here</h2>
+          <p id="sidebar-description">Begin here even if you have never written or run code.</p>
+        </div>
+        <div class="sidebar-progress" aria-label="Start Here progress">
+          <div><span>Your progress</span><strong id="progress-percent">0%</strong></div>
+          <div class="progress-track"><span id="progress-bar"></span></div>
+        </div>
+        <nav id="module-nav" class="module-nav"></nav>
+        <div class="sidebar-note">
+          <span class="note-icon">i</span>
+          <p>You do not need Python or a coding application installed. The practical work runs in your browser.</p>
+        </div>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <div id="page-content"></div>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="section-1.2.js?v=3"></script>
+    <script src="section-python-foundations-i.js?v=3"></script>
+    <script src="section-python-foundations-ii.js?v=3"></script>
+    <script src="app.js?v=5"></script>
+  </body>
+</html>

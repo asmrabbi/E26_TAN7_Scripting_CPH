@@ -12,10 +12,14 @@ The notebooks use Google Colab, so students do not need a local Python installat
 
 ## Part II — Python Foundations
 
+The website subsection sequence is continuous: Python Foundations I uses Tutorials 2.1–2.7, followed by Python Foundations II as Tutorials 2.8–2.14.
+
 | Lecture | Examples and case | Student exercises | Worked solutions |
 |---|---|---|---|
-| L03 — Python basics (Section 2.1) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_examples_python_basics.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L03_exercises_python_basics.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L03_solutions_python_basics.ipynb) |
-| L04 — Conditions, loops, collections, functions (Section 2.2) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_examples_control_flow_collections_functions.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L04_exercises_control_flow_collections_functions.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L04_solutions_control_flow_collections_functions.ipynb) |
+| L03 — Python basics (Tutorials 2.1–2.7) | [All tutorial code](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb) · [Short examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_examples_python_basics.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L03_exercises_python_basics.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L03_solutions_python_basics.ipynb) |
+| L04 — Conditions, loops, collections, functions (Tutorials 2.8–2.14) | [All tutorial code](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_complete_python_foundations_II_tutorial.ipynb) · [Short examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_examples_control_flow_collections_functions.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L04_exercises_control_flow_collections_functions.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L04_solutions_control_flow_collections_functions.ipynb) |
+
+The deployable tutorial website is stored in [`docs/`](docs/) and is ready for GitHub Pages to publish from the `main` branch. Once Pages is enabled, the expected address is https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/.
 
 ## Part III — Data Handling, Text Analysis and Visualisation
 
@@ -42,4 +46,3 @@ The notebooks use Google Colab, so students do not need a local Python installat
 The course structure and examples were written for the Copenhagen E26 course. The design was informed by beginner programming and file-based exercise ideas in Rodrigo Pérez Iragorri's Aalborg repository: https://github.com/roedorpi/TAN7_Scripting_classnotes. No source file from that repository is reproduced verbatim; examples were rewritten and adapted to the Copenhagen tutorial's learning sequence and recurring synthetic service-report case.
 
 The synthetic course dataset contains no real people or service performance. See [data/README.md](data/README.md) before teaching with it.
-
