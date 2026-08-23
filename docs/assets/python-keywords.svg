@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title description">
+  <title id="title">Python keyword wall</title>
+  <description id="description">All 37 words listed by the W3Schools Python keyword reference, arranged in six beginner-friendly groups. The most relevant early-course keywords are highlighted.</description>
+  <defs>
+    <style>
+      .heading { font: 700 34px Georgia, serif; fill: #173d49; }
+      .subheading { font: 18px Arial, sans-serif; fill: #52656d; }
+      .group { font: 700 17px Arial, sans-serif; fill: #173d49; }
+      .word { font: 600 18px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #294a52; }
+      .core { fill: #0c6b5d; font-weight: 800; }
+      .note { font: 15px Arial, sans-serif; fill: #53656c; }
+    </style>
+  </defs>
+  <rect width="1200" height="690" rx="24" fill="#f6f8f5"/>
+  <rect x="1" y="1" width="1198" height="688" rx="23" fill="none" stroke="#cad9d4" stroke-width="2"/>
+  <text x="55" y="65" class="heading">Python keywords</text>
+  <text x="55" y="97" class="subheading">Reserved words that give Python its structure</text>
+
+  <g transform="translate(55 135)">
+    <rect width="525" height="130" rx="14" fill="#e8f3ef" stroke="#c6ddd5"/>
+    <text x="24" y="33" class="group">Values and logical relationships</text>
+    <text x="24" y="72" class="word core">False   None   True   and   or   not</text>
+    <text x="24" y="105" class="word core">in      is</text>
+  </g>
+
+  <g transform="translate(620 135)">
+    <rect width="525" height="130" rx="14" fill="#fff4e7" stroke="#e6c7a9"/>
+    <text x="24" y="33" class="group">Decisions and repetition</text>
+    <text x="24" y="72" class="word core">if      elif   else   for</text>
+    <text x="24" y="105" class="word core">while   break  continue</text>
+  </g>
+
+  <g transform="translate(55 290)">
+    <rect width="525" height="130" rx="14" fill="#edf1f5" stroke="#cbd7df"/>
+    <text x="24" y="33" class="group">Defining reusable code</text>
+    <text x="24" y="72" class="word"><tspan class="core">def</tspan>     <tspan class="core">return</tspan>   yield   lambda</text>
+    <text x="24" y="105" class="word">class   del      pass</text>
+  </g>
+
+  <g transform="translate(620 290)">
+    <rect width="525" height="130" rx="14" fill="#f1edf7" stroke="#d8cbe6"/>
+    <text x="24" y="33" class="group">Modules, names and context</text>
+    <text x="24" y="72" class="word"><tspan class="core">import</tspan>  from     as</text>
+    <text x="24" y="105" class="word">global  nonlocal with</text>
+  </g>
+
+  <g transform="translate(55 445)">
+    <rect width="525" height="130" rx="14" fill="#f9eeee" stroke="#e4cccc"/>
+    <text x="24" y="33" class="group">Checking and handling errors</text>
+    <text x="24" y="72" class="word">assert  <tspan class="core">try</tspan>      <tspan class="core">except</tspan></text>
+    <text x="24" y="105" class="word">finally raise</text>
+  </g>
+
+  <g transform="translate(620 445)">
+    <rect width="525" height="130" rx="14" fill="#edf5f7" stroke="#c9dce1"/>
+    <text x="24" y="33" class="group">Asynchronous code and pattern matching</text>
+    <text x="24" y="72" class="word">async   await</text>
+    <text x="24" y="105" class="word">match   case</text>
+  </g>
+
+  <circle cx="67" cy="630" r="8" fill="#0c6b5d"/>
+  <text x="87" y="636" class="note">Green words are the most useful starting set for this course. Recognition is more important than memorisation.</text>
+  <text x="87" y="662" class="note">The official Python documentation treats match and case as context-sensitive soft keywords.</text>
+</svg>
