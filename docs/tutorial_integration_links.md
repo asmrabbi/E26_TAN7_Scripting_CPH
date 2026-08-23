@@ -12,17 +12,19 @@ Use this map when adding repository and Google Colab buttons to the scripting tu
 
 ## Part II — Python Foundations
 
-The previous Section 1.3 becomes Section 2.1. The previous Section 2 becomes Section 2.2.
+The previous Section 1.3 becomes the start of Part II. Its seven website tutorials are numbered 2.1–2.7. Python Foundations II then continues without restarting, using 2.8–2.14.
 
-### Section 2.1 — Python Foundations I / Lecture 3
+### Tutorials 2.1–2.7 — Python Foundations I / Lecture 3
 
+- Complete website-code companion: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb
 - Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_examples_python_basics.ipynb
 - Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L03_exercises_python_basics.ipynb
 - Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L03_solutions_python_basics.ipynb
 - GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks
 
-### Section 2.2 — Python Foundations II / Lecture 4
+### Tutorials 2.8–2.14 — Python Foundations II / Lecture 4
 
+- Complete website-code companion: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_complete_python_foundations_II_tutorial.ipynb
 - Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_examples_control_flow_collections_functions.ipynb
 - Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L04_exercises_control_flow_collections_functions.ipynb
 - Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L04_solutions_control_flow_collections_functions.ipynb
@@ -71,4 +73,3 @@ The previous Section 1.3 becomes Section 2.1. The previous Section 2 becomes Sec
 
 - Copenhagen E26 course page: https://www.moodle.aau.dk/course/view.php?id=60166
 - Keep worked-solution links hidden until the corresponding exercise has been attempted.
-
