@@ -1,0 +1,74 @@
+# Tutorial integration map
+
+Use this map when adding repository and Google Colab buttons to the scripting tutorial website. The canonical repository is:
+
+- GitHub repository: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH
+
+## Part I — Computational Foundations
+
+- Section 1.1 remains in Part I.
+- Section 1.2 remains in Part I.
+- These sections do not require Python notebooks.
+
+## Part II — Python Foundations
+
+The previous Section 1.3 becomes Section 2.1. The previous Section 2 becomes Section 2.2.
+
+### Section 2.1 — Python Foundations I / Lecture 3
+
+- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_examples_python_basics.ipynb
+- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L03_exercises_python_basics.ipynb
+- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L03_solutions_python_basics.ipynb
+- GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks
+
+### Section 2.2 — Python Foundations II / Lecture 4
+
+- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_examples_control_flow_collections_functions.ipynb
+- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L04_exercises_control_flow_collections_functions.ipynb
+- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L04_solutions_control_flow_collections_functions.ipynb
+
+## Part III — Data Handling, Text Analysis and Visualisation
+
+### Lecture 5 — CSV and pandas inspection
+
+- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L05_examples_csv_pandas_inspection.ipynb
+- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L05_exercises_csv_pandas_inspection.ipynb
+- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L05_solutions_csv_pandas_inspection.ipynb
+- Dataset: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/data/monthly_service_report.csv
+
+### Lecture 6 — Data cleaning and text preparation
+
+- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L06_examples_data_cleaning_text_preparation.ipynb
+- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L06_exercises_data_cleaning_text_preparation.ipynb
+- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L06_solutions_data_cleaning_text_preparation.ipynb
+
+### Lecture 7 — Analysis and visualisation
+
+- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L07_examples_analysis_visualisation.ipynb
+- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L07_exercises_analysis_visualisation.ipynb
+- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L07_solutions_analysis_visualisation.ipynb
+
+## Part IV — Machine Learning, Automation and Agents
+
+### Lecture 8 — Introductory machine learning
+
+- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L08_examples_machine_learning.ipynb
+- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L08_exercises_machine_learning.ipynb
+- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L08_solutions_machine_learning.ipynb
+
+### Lecture 9 — Automation and agentic AI
+
+- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L09_examples_automation_agent_workflows.ipynb
+- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L09_exercises_automation_agent_workflows.ipynb
+- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L09_solutions_automation_agent_workflows.ipynb
+
+## Course wrap-up
+
+- End-to-end review example: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L10_example_end_to_end_review.ipynb
+- Student mini-project template: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/projects/L10_student_mini_project_template.ipynb
+
+## Moodle
+
+- Copenhagen E26 course page: https://www.moodle.aau.dk/course/view.php?id=60166
+- Keep worked-solution links hidden until the corresponding exercise has been attempted.
+
