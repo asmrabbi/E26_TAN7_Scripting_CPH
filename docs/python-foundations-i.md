@@ -113,8 +113,6 @@ Code appears in Python blocks, output appears in text blocks and comments begin 
 
 # Part A. Start coding in Google Colab
 
-### Suggested book chapters for Part A
-
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 1: Why should you learn to write programs?](https://www.py4e.com/html3/01-intro) | Read **Words and sentences**, **Conversing with Python**, **Writing a program**, **What could possibly go wrong?** and **Debugging**. These sections support first output, execution order and a constructive response to errors. |
@@ -432,8 +430,6 @@ Requirements:
 ---
 
 # Part B. Values, variables and names
-
-### Suggested book chapters for Part B
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -1297,8 +1293,6 @@ For each rewritten name, add a one-sentence definition of what the value represe
 
 # Part C. Expressions and calculations
 
-### Suggested book chapters for Part C
-
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Statements**, **Operators and operands**, **Expressions**, **Order of operations**, **Modulus operator** and **String operations**. These sections match the Part C sequence closely. |
@@ -1998,8 +1992,6 @@ Then run each as part of a labelled `print()` statement. For one expression, exp
 ---
 
 # Part D. Foundational Python data types
-
-### Suggested book chapters for Part D
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -2968,8 +2960,6 @@ Then verify with `type()`. For every incorrect prediction, write one sentence ex
 
 # Part E. Type conversion and user input
 
-### Suggested book chapters for Part E
-
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Asking the user for input** and the surrounding type-conversion discussion. This directly supports `input()`, `int()` and the `ValueError` produced by unsuitable text. |
@@ -3613,8 +3603,6 @@ Which value should remain text even though it contains digits, and why?
 ---
 
 # Part F. Comments and beginner debugging
-
-### Suggested book chapters for Part F
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -4315,8 +4303,6 @@ Do not paste personal data into error screenshots.
 ---
 
 # Part G. Integrate and apply the foundations
-
-### Suggested book chapters for Part G
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
