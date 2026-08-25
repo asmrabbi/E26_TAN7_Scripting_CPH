@@ -10,12 +10,11 @@ const courseRepositoryUrl = "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH"
 const courseDatasetUrl = "https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/monthly_service_report.csv";
 const pythonResourceLinks = {
   foundationsI: {
-    examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_examples_python_basics.ipynb",
-    complete: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb",
-    completeGithub: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb",
-    exercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L03_exercises_python_basics.ipynb",
-    solutions: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L03_solutions_python_basics.ipynb",
-    github: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_examples_python_basics.ipynb"
+    examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb",
+    examplesGithub: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb",
+    exercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb",
+    practice: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb",
+    github: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_03"
   },
   foundationsII: {
     examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_examples_control_flow_collections_functions.ipynb",
@@ -84,8 +83,7 @@ function resolveTutorialResource(placeholder) {
   if (placeholder === "COLAB_HOME_URL") return "https://colab.research.google.com/";
   if (placeholder.includes("DATASET")) return courseDatasetUrl;
   if (placeholder.includes("GITHUB") || placeholder === "SCREENSHOT_ASSET_FOLDER_URL") return courseRepositoryUrl;
-  if (placeholder.includes("SOLUTION")) return pythonResourceLinks.foundationsI.solutions;
-  if (placeholder.includes("HINTS") || placeholder.includes("WORKSHEET") || placeholder.includes("BRIEF") || placeholder.includes("SELF_TEST_FORM")) return pythonResourceLinks.foundationsI.exercises;
+  if (placeholder.includes("SOLUTION") || placeholder.includes("HINTS") || placeholder.includes("WORKSHEET") || placeholder.includes("BRIEF") || placeholder.includes("SELF_TEST_FORM")) return pythonResourceLinks.foundationsI.exercises;
   if (placeholder.includes("COLAB")) return pythonResourceLinks.foundationsI.examples;
   return null;
 }
@@ -613,7 +611,7 @@ const foundationVisuals = {
       <div class="journey-step"><span>5</span><strong>Test and revise</strong><small>Compare the actual and intended results</small></div>
       <div class="revision-loop">↶ Problems can send us back to redefine an earlier decision</div>
     </div>
-    <figcaption><strong>Figure:</strong> From a real-world situation to a tested program. The process is iterative because testing can reveal problems in the definition, assumptions or plan. <strong>Alt text:</strong> Five connected stages move from situation to tested code, with a revision path returning to earlier stages.</figcaption>
+    <figcaption><strong>Figure:</strong> From a real-world situation to a tested program. The process is iterative because testing can reveal problems in the definition, assumptions or plan.</figcaption>
   </figure>`,
   "1.3": `<figure class="concept-figure task-tree-figure">
     <div class="task-tree-diagram" role="img" aria-label="A task tree for preparing a monthly report. The root divides into acquire data, preserve source, validate records, summarise data, create visualisation and save outputs. Validate records is expanded into checking columns, dates, missing values and participant counts.">
@@ -1176,7 +1174,7 @@ function renderFoundationOverview() {
         <a class="resource-button reading-button" href="https://doi.org/10.7551/mitpress/9780262525374.003.0009" target="_blank" rel="noreferrer">Open reading ↗</a>
       </section>
 
-      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Tutorial sequence</p><h2 class="section-title">From problem to specification</h2></div></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
+      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><h2 class="section-title">From problem to specification</h2></div></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
       <section class="section-footer-grid single">
         <div class="checkpoint-card"><p class="eyebrow">Reuse later</p><h3>CivicConnect specification</h3><p>The case output can be converted into flowcharts and pseudocode, then implemented using the predefined course dataset.</p></div>
@@ -1207,7 +1205,7 @@ function renderFlowOverview() {
         <span class="mini-node start">Start</span><span class="mini-arrow">→</span><span class="mini-node io">Input</span><span class="mini-arrow">→</span><span class="mini-node process">Process</span><span class="mini-arrow">→</span><span class="mini-node decision">Decision?</span><span class="mini-arrow">→</span><span class="mini-node start">End</span>
       </section>
 
-      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Five connected tutorials</p><h2 class="section-title">From visible logic towards Python</h2></div><p>The tutorials develop flowcharts, introduce Python keywords and conclude with one integrated case.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
+      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><h2 class="section-title">From visible logic towards Python</h2></div></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
       <section class="reading-panel flow-resources">
         <div><p class="eyebrow">Shared section materials</p><h2>Templates and reference sheets</h2><p>These resources belong to the complete Section 1.2 package, rather than to individual pages.</p><div class="reading-links"><a href="#" data-toast="Flowchart symbol sheet placeholder.">Symbol reference sheet</a><a href="#" data-toast="Trace-table template placeholder.">Trace-table template</a><a href="#" data-toast="Consistency checklist placeholder.">Consistency checklist</a><a href="#" data-toast="Final case worksheet placeholder.">Case worksheet</a></div></div>
@@ -1240,16 +1238,11 @@ function renderPythonFoundationOverview() {
       <section class="package-ilos foundation-ilos"><div><p class="eyebrow">Section 2.1</p><h2>Intended learning outcomes</h2><p>These outcomes apply across Tutorials 2.1 to 2.7.</p></div><ul class="learning-list">${pythonFoundationIlos.map(ilo => `<li>${ilo}</li>`).join("")}</ul></section>
 
       <details class="foundation-guide">
-        <summary>Open the study route, prerequisites and tutorial conventions</summary>
+        <summary>Open prerequisites, course files and coding options</summary>
         <div>${pythonFoundationGuide}</div>
       </details>
 
       <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Seven connected tutorials</p><h2 class="section-title">From your first Colab cell to a complete script</h2></div><p>Study in order if Python is new to you. Each page builds on the vocabulary and skills introduced earlier.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
-
-      <section class="reading-panel python-resources">
-        <div><p class="eyebrow">Full tutorial and companion materials</p><h2>Keep a complete offline copy</h2><p>The complete companion contains all 79 Python blocks from this website tutorial. The shorter notebook remains available for live lecture demonstrations.</p><div class="reading-links"><a href="${pythonResourceLinks.foundationsI.complete}" target="_blank" rel="noreferrer">All tutorial code in Colab</a><a href="${pythonResourceLinks.foundationsI.examples}" target="_blank" rel="noreferrer">Short lecture examples</a><a href="${pythonResourceLinks.foundationsI.exercises}" target="_blank" rel="noreferrer">Exercises in Colab</a><a href="${pythonResourceLinks.foundationsI.solutions}" target="_blank" rel="noreferrer">Solutions in Colab</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code coverage map</a></div></div>
-        <a class="resource-button reading-button" href="python-foundations-i.md" download>↓ Download full Markdown</a>
-      </section>
 
       <section class="section-footer-grid">
         <div class="checkpoint-card"><p class="eyebrow">End of section</p><h3>Integration mini-case</h3><p>Bring together input, conversion, calculations, clear output, comments and systematic debugging in one bounded script.</p></div>
@@ -1351,7 +1344,7 @@ function showModule(id) {
         ${flow ? `<section class="case-contribution"><p class="eyebrow">Continuing case</p><h3>What this adds</h3><p>${module.contribution}</p></section><details class="model-answer"><summary>Open the model answer</summary><div><p>${module.model}</p><p class="answer-note">A different layout can also be valid when it preserves the same logic and course notation.</p></div></details>` : ""}
         <section class="reflection compact-reflection"><strong>${conceptual ? "Critical reflection" : "Responsible practice"}:</strong> ${module.reflection}</section>
         ${foundation ? renderTutorialReferences(module.id, foundationReferences) : flow ? renderTutorialReferences(module.id, flowReferences) : pythonFoundation ? renderTutorialReferences(module.id, pythonFoundationReferences) : pythonFoundationII ? renderTutorialReferences(module.id, pythonFoundationIIReferences) : ""}
-        ${conceptual ? "" : pythonFoundation || pythonFoundationII ? (() => { const links = pythonFoundationII ? pythonResourceLinks.foundationsII : pythonResourceLinks.foundationsI; return `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><a class="resource-button" href="${pythonFoundationII ? "python-foundations-ii.md" : "python-foundations-i.md"}" download>↓ Full Markdown</a><a class="resource-button" href="${links.complete}" target="_blank" rel="noreferrer">↗ All tutorial code</a><a class="resource-button" href="${links.examples}" target="_blank" rel="noreferrer">↗ Lecture examples</a><a class="resource-button" href="${links.completeGithub}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${links.exercises}" target="_blank" rel="noreferrer">✎ Exercises</a><a class="resource-button" href="${links.solutions}" target="_blank" rel="noreferrer">✓ Solutions</a></div></section>`; })() : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><button class="resource-button" data-toast="Colab link placeholder.">↗ Colab</button><a class="resource-button" href="${courseRepositoryUrl}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${courseDatasetUrl}" target="_blank" rel="noreferrer">↓ Dataset</a><button class="resource-button" data-toast="Solution link placeholder.">✓ Solution</button></div></section>`}
+        ${conceptual ? "" : pythonFoundation || pythonFoundationII ? (() => { const links = pythonFoundationII ? pythonResourceLinks.foundationsII : pythonResourceLinks.foundationsI; return pythonFoundationII ? `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><a class="resource-button" href="python-foundations-ii.md" download>↓ Full Markdown</a><a class="resource-button" href="${links.complete}" target="_blank" rel="noreferrer">↗ All tutorial code</a><a class="resource-button" href="${links.examples}" target="_blank" rel="noreferrer">↗ Lecture examples</a><a class="resource-button" href="${links.completeGithub}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${links.exercises}" target="_blank" rel="noreferrer">✎ Exercises</a><a class="resource-button" href="${links.solutions}" target="_blank" rel="noreferrer">✓ Solutions</a></div></section>` : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Lecture 3 files</p><h2>Match this website page with the numbered notebook section</h2></div><div class="resource-row"><a class="resource-button" href="${links.examples}" target="_blank" rel="noreferrer">↗ Tutorial Examples</a><a class="resource-button" href="${links.exercises}" target="_blank" rel="noreferrer">✎ Exercises</a><a class="resource-button" href="${links.practice}" target="_blank" rel="noreferrer">＋ Practice Materials</a><a class="resource-button" href="${links.github}" target="_blank" rel="noreferrer">⌘ GitHub folder</a></div></section>`; })() : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><button class="resource-button" data-toast="Colab link placeholder.">↗ Colab</button><a class="resource-button" href="${courseRepositoryUrl}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${courseDatasetUrl}" target="_blank" rel="noreferrer">↓ Dataset</a><button class="resource-button" data-toast="Solution link placeholder.">✓ Solution</button></div></section>`}
         <nav class="next-row" aria-label="Module navigation">
           ${previous ? `<button class="next-button" data-previous="${previous.id}"><span>←</span><span><small>Previous</small><strong>${previous.id} ${previous.title}</strong></span></button>` : `<button class="next-button" data-overview><span>←</span><span><small>Return to</small><strong>${sectionLabel}</strong></span></button>`}
           <button class="next-button complete-button ${state.completed.has(module.id) ? "done" : ""}" data-complete="${module.id}"><span>${state.completed.has(module.id) ? "✓" : "○"}</span><span><small>${state.completed.has(module.id) ? "Completed" : "Progress"}</small><strong>${state.completed.has(module.id) ? "Mark incomplete" : "Mark complete"}</strong></span></button>
@@ -1432,7 +1425,9 @@ function addCodeCompanionLinks() {
     if (codeBlockElement.nextElementSibling?.classList.contains("code-companion-links")) return;
     const resourceLinks = document.createElement("div");
     resourceLinks.className = "code-companion-links";
-    resourceLinks.innerHTML = `<span>Run or review this tutorial code:</span><a href="${links.complete}" target="_blank" rel="noreferrer">Open complete Colab companion</a><a href="${links.completeGithub}" target="_blank" rel="noreferrer">View on GitHub</a>`;
+    resourceLinks.innerHTML = state.section === "python"
+      ? `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 3 Examples in Colab</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`
+      : `<span>Run or review this tutorial code:</span><a href="${links.complete}" target="_blank" rel="noreferrer">Open complete Colab companion</a><a href="${links.completeGithub}" target="_blank" rel="noreferrer">View on GitHub</a>`;
     codeBlockElement.insertAdjacentElement("afterend", resourceLinks);
   });
 }

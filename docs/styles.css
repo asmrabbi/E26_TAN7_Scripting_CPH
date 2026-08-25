@@ -128,11 +128,9 @@ button { cursor: pointer; }
 }
 .sidebar-heading { padding: 0 8px 18px; }
 .course-switcher { display: grid; gap: 5px; margin: 0 5px 18px; padding-bottom: 17px; border-bottom: 1px solid #d5d8d3; }
-.package-button { display: flex; align-items: center; gap: 9px; width: 100%; padding: 9px 10px; color: #52606a; background: transparent; border: 0; border-radius: 9px; text-align: left; font-size: 12px; font-weight: 750; }
-.package-button span { display: grid; place-items: center; min-width: 29px; height: 25px; padding: 0 5px; color: #46615c; background: #e1e6e2; border-radius: 7px; font-size: 10px; }
+.package-button { display: flex; align-items: center; width: 100%; padding: 11px 12px; color: #52606a; background: transparent; border: 0; border-radius: 9px; text-align: left; font-size: 12px; font-weight: 750; }
 .package-button:hover { background: rgba(255,255,255,.65); }
 .package-button.active { color: var(--navy); background: white; box-shadow: 0 4px 13px rgba(22,44,55,.06); }
-.package-button.active span { color: var(--navy); background: var(--aqua); }
 .eyebrow { margin: 0 0 6px; color: var(--aqua-dark); font-size: 11px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
 .sidebar-heading h2 { margin: 0; color: var(--navy); font-family: Georgia, serif; font-size: 28px; }
 .sidebar-heading p { margin: 8px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
@@ -531,7 +529,7 @@ pre { margin: 0; padding: 20px; overflow-x: auto; color: #e9f5f3; font: 14px/1.7
 .serial-checklist label { display: grid; grid-template-columns: 18px 1fr; align-items: start; gap: 8px; padding: 9px 11px; color: #43535a; background: #f5f7f5; border: 1px solid #dce4e1; border-radius: 8px; font-size: 13px; line-height: 1.45; }
 .serial-checklist input { margin: 2px 0 0; }
 
-/* Section 1.3: long-form Python Foundations I tutorial */
+/* Part II, Section 2.1: long-form Python Foundations I tutorial */
 .python-hero { background: #2f345e; }
 .python-hero::after { border-color: rgba(111,226,207,.2); }
 .python-page .key-idea { background: #eef0fb; border-color: #d9ddf1; }

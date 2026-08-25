@@ -1,94 +1,28 @@
 # Tutorial code coverage
 
-This report maps every Python code block in the two website tutorials to a complete GitHub/Colab companion notebook.
+This report maps the Python Foundations website code to the lecture-ready GitHub and Google Colab notebooks.
 
-## `L03_complete_python_foundations_I_tutorial.ipynb`
+## Lecture 3 — Tutorials 2.1–2.7
 
-- GitHub: [notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb)
-- Colab: [Open notebook](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb)
-- Python blocks covered: **79**
+Lecture 3 now has exactly three student-facing notebooks. All three use standard Python 3, require no third-party packages, run from top to bottom and include a plain-language comment on every non-empty executable line.
 
-| Block | Tutorial heading | Source line | Audit status |
-|---:|---|---:|---|
-| 1 | Python Foundations I | 24 | runnable: executed successfully during the audit |
-| 2 | Worked example 1A - Run your first code cell | 197 | runnable: executed successfully during the audit |
-| 3 | Worked example 1B - Run cells in sequence | 242 | runnable: executed successfully during the audit |
-| 4 | Worked example 1B - Run cells in sequence | 254 | diagnostic: NameError: name 'organisation' is not defined |
-| 5 | Worked example 2A - Display several pieces of information | 334 | runnable: executed successfully during the audit |
-| 6 | Worked example 2B - Display a small organisational summary | 384 | runnable: executed successfully during the audit |
-| 7 | Worked example 2C - Format a readable report with newline characters | 442 | runnable: executed successfully during the audit |
-| 8 | Worked example 3A - Use literals directly | 546 | runnable: executed successfully during the audit |
-| 9 | Worked example 3B - Use constants by convention | 598 | runnable: executed successfully during the audit |
-| 10 | Worked example 3C - Recognise the risk of unexplained literals | 653 | runnable: executed successfully during the audit |
-| 11 | Worked example 4A - Assign and display values | 730 | runnable: executed successfully during the audit |
-| 12 | Worked example 4B - Reassign a variable | 785 | runnable: executed successfully during the audit |
-| 13 | Worked example 4C - Extend an audit trail with `+=` | 844 | runnable: executed successfully during the audit |
-| 14 | Worked example 4D - Derive new variables without losing originals | 896 | runnable: executed successfully during the audit |
-| 15 | Worked example 5A - Use a reserved word inside a meaningful name | 990 | runnable: executed successfully during the audit |
-| 16 | Worked example 5B - Check whether words are Python keywords | 1046 | runnable: executed successfully during the audit |
-| 17 | Worked example 5C - Avoid hiding a built-in function | 1100 | runnable: executed successfully during the audit |
-| 18 | Worked example 6A - Use valid snake-case names | 1206 | runnable: executed successfully during the audit |
-| 19 | Worked example 6B - Replace vague names with meaningful ones | 1260 | runnable: executed successfully during the audit |
-| 20 | Worked example 6C - Notice case sensitivity | 1310 | runnable: executed successfully during the audit |
-| 21 | Worked example 7A - Put an expression inside a statement | 1408 | runnable: executed successfully during the audit |
-| 22 | Worked example 7B - Store the result of an expression | 1456 | runnable: executed successfully during the audit |
-| 23 | Worked example 7C - Turn a messy field label into a consistent name | 1510 | runnable: executed successfully during the audit |
-| 24 | Worked example 8A - Calculate basic data-quality counts | 1608 | runnable: executed successfully during the audit |
-| 25 | Worked example 8B - Compare division, floor division and remainder | 1663 | runnable: executed successfully during the audit |
-| 26 | Worked example 8C - Calculate a rate and a projected count | 1720 | runnable: executed successfully during the audit |
-| 27 | Worked example 8D - Use exponentiation in a simple growth scenario | 1776 | runnable: executed successfully during the audit |
-| 28 | Worked example 9A - See how multiplication happens before addition | 1859 | runnable: executed successfully during the audit |
-| 29 | Worked example 9B - Make a percentage formula explicit | 1910 | runnable: executed successfully during the audit |
-| 30 | Worked example 9C - Use nested parentheses for a weighted scenario | 1962 | runnable: executed successfully during the audit |
-| 31 | Worked example 9D - Understand a subtle negative-number case | 2014 | runnable: executed successfully during the audit |
-| 32 | 10. Strings: working with text | 2094 | runnable: executed successfully during the audit |
-| 33 | Worked example 10A - Choose quotation marks that fit the text | 2107 | runnable: executed successfully during the audit |
-| 34 | Worked example 10B - Join and repeat strings | 2158 | runnable: executed successfully during the audit |
-| 35 | Worked example 10C - Build clear messages with f-strings | 2213 | runnable: executed successfully during the audit |
-| 36 | Worked example 11A - Use counts and measurements appropriately | 2289 | runnable: executed successfully during the audit |
-| 37 | Worked example 11B - Notice that division produces a float | 2345 | runnable: executed successfully during the audit |
-| 38 | Worked example 11C - Understand floating-point representation | 2399 | runnable: executed successfully during the audit |
-| 39 | Worked example 11D - Recognise implicit conversion from integer to float | 2453 | runnable: executed successfully during the audit |
-| 40 | Worked example 11E - Separate rounding a value from formatting its display | 2510 | runnable: executed successfully during the audit |
-| 41 | Worked example 12A - Store Boolean flags directly | 2605 | runnable: executed successfully during the audit |
-| 42 | Worked example 12B - Produce Booleans with comparisons | 2658 | runnable: executed successfully during the audit |
-| 43 | Worked example 12C - Combine Boolean conditions | 2716 | runnable: executed successfully during the audit |
-| 44 | Worked example 13A - Inspect the four foundation types | 2804 | runnable: executed successfully during the audit |
-| 45 | Worked example 13B - Use `type()` to investigate a failed calculation | 2861 | runnable: executed successfully during the audit |
-| 46 | Worked example 13C - Inspect expressions, not only variables | 2911 | runnable: executed successfully during the audit |
-| 47 | Worked example 13D - Preserve three different states | 2967 | runnable: executed successfully during the audit |
-| 48 | Worked example 14A - Convert whole-number text to an integer | 3077 | runnable: executed successfully during the audit |
-| 49 | Worked example 14B - Convert decimal text to a float | 3131 | runnable: executed successfully during the audit |
-| 50 | Worked example 14C - Convert numbers to text for concatenation | 3184 | runnable: executed successfully during the audit |
-| 51 | Worked example 14D - Understand that `int()` truncates floats | 3235 | runnable: executed successfully during the audit |
-| 52 | Worked example 15A - Collect and display text input | 3329 | manual: interactive input |
-| 53 | Worked example 15B - Convert numerical input before calculating | 3379 | manual: interactive input |
-| 54 | Worked example 15C - Turn messy text input into a traceable file label | 3432 | manual: interactive input |
-| 55 | Worked example 15D - Compare text joining before and after conversion | 3502 | manual: interactive input |
-| 56 | Worked example 15E - Transfer the input pattern to a gross-pay estimate | 3581 | manual: interactive input |
-| 57 | Worked example 15F - Transfer the input pattern to a temperature conversion | 3640 | manual: interactive input |
-| 58 | Worked example 16A - Explain purpose and assumptions | 3726 | runnable: executed successfully during the audit |
-| 59 | Worked example 16B - Use end-of-line comments carefully | 3780 | runnable: executed successfully during the audit |
-| 60 | Worked example 16C - Do not confuse strings with comments | 3830 | runnable: executed successfully during the audit |
-| 61 | Error clinic 17A - `SyntaxError` | 3931 | diagnostic: SyntaxError on line 1: unterminated string literal (detected at line 1) |
-| 62 | Error clinic 17A - `SyntaxError` | 3946 | runnable: executed successfully during the audit |
-| 63 | Error clinic 17B - `NameError` | 3992 | diagnostic: NameError: name 'missing_record' is not defined. Did you mean: 'missing_records'? |
-| 64 | Error clinic 17B - `NameError` | 4007 | runnable: executed successfully during the audit |
-| 65 | Error clinic 17C - `TypeError` | 4056 | diagnostic: TypeError: unsupported operand type(s) for -: 'str' and 'int' |
-| 66 | Error clinic 17C - `TypeError` | 4071 | runnable: executed successfully during the audit |
-| 67 | Error clinic 17D - `ValueError` | 4120 | diagnostic: ValueError: invalid literal for int() with base 10: '93.5' |
-| 68 | Error clinic 17D - `ValueError` | 4134 | runnable: executed successfully during the audit |
-| 69 | Error clinic 17E - `ZeroDivisionError` | 4182 | diagnostic: ZeroDivisionError: division by zero |
-| 70 | Error clinic 17E - `ZeroDivisionError` | 4197 | runnable: executed successfully during the audit |
-| 71 | Error clinic 17F - `IndentationError` | 4246 | diagnostic: SyntaxError on line 1: unexpected indent |
-| 72 | Error clinic 17F - `IndentationError` | 4259 | runnable: executed successfully during the audit |
-| 73 | Error clinic 17G - A logical error with no traceback | 4306 | runnable: executed successfully during the audit |
-| 74 | Error clinic 17G - A logical error with no traceback | 4322 | runnable: executed successfully during the audit |
-| 75 | Worked example 18A - Produce a monthly data-quality summary | 4417 | runnable: executed successfully during the audit |
-| 76 | Worked example 18B - Compare expected and received file structure | 4492 | runnable: executed successfully during the audit |
-| 77 | Worked example 18C - Create an interactive organisational intake note | 4567 | manual: interactive input |
-| 78 | Worked example 18D - Preserve raw metadata and publish a standardisation note | 4640 | runnable: executed successfully during the audit |
-| 79 | 24. What comes next | 5260 | manual: an external CSV file |
+| Notebook | GitHub | Colab | Executable cells | Latest audit |
+|---|---|---|---:|---|
+| Tutorial Examples | [View file](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) | 79 | 0 execution errors; 0 uncommented executable lines |
+| Exercises | [View file](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | 7 | 0 execution errors; 0 uncommented executable lines |
+| Practice Materials | [View file](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) | 7 | 0 execution errors; 0 uncommented executable lines |
+
+The Tutorial Examples notebook preserves every Python block from the website source. Deliberately broken, interactive and later file-dependent snippets remain visible as teaching text; their paired executable cells use safe diagnostic records so **Run all** completes successfully.
+
+| Website tutorial | Example identifiers | Exercise | Practice case |
+|---|---|---|---|
+| 2.1 Colab and visible output | 2.1.1–2.1.5 | 2.1.1 | 2.1.1 |
+| 2.2 Values, variables and names | 2.2.1–2.2.13 | 2.2.1 | 2.2.1 |
+| 2.3 Expressions and calculations | 2.3.1–2.3.11 | 2.3.1 | 2.3.1 |
+| 2.4 Foundational data types | 2.4.1–2.4.15 | 2.4.1 | 2.4.1 |
+| 2.5 Conversion and input | 2.5.1–2.5.10 | 2.5.1 | 2.5.1 |
+| 2.6 Comments and debugging | 2.6.1–2.6.10 | 2.6.1 | 2.6.1 |
+| 2.7 Integration and recap | 2.7.1–2.7.4 | 2.7.1 | 2.7.1 |
 
 ## `L04_complete_python_foundations_II_tutorial.ipynb`
 

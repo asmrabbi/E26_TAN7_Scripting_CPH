@@ -35,111 +35,79 @@ EDITORIAL SOURCE NOTE
 The topic boundary follows the Python Foundations I scope identified by the course owner and the historical course context. The tutorial expands the slide-level topics pedagogically and is not a verbatim transcript of any historical lecture version. Historical versions should continue to be labelled separately elsewhere on the course site.
 -->
 
-## Tutorial resources
+## Before you start: course files and coding options
 
-- [Run every Python Foundations I tutorial example in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb)
-- [View the complete tutorial companion on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_complete_python_foundations_I_tutorial.ipynb)
-- [Open the shorter Lecture 3 examples in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L03_examples_python_basics.ipynb)
-- [Open the Lecture 3 exercises in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L03_exercises_python_basics.ipynb)
-- [Open the separate Lecture 3 solutions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L03_solutions_python_basics.ipynb)
-- [Download the synthetic course dataset](https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/monthly_service_report.csv)
+You do not need previous programming experience. You need a modern web browser, careful typing and a willingness to run, inspect and repair small examples. Lecture 3 uses standard Python 3 only: no third-party library, dataset, virtual environment or `requirements.txt` file is required.
 
-## Learning outcomes
+### The three Lecture 3 notebooks
 
-After completing the core pathway, you should be able to:
+Use the tutorial number in each notebook to match it with the website:
 
-1. Open a Google Colab notebook, create and run code cells, and recognise cell output.
-2. Explain the difference between a literal value, a variable, an assignment and a constant-by-convention.
-3. Use `print()` to show text, values and calculation results.
-4. Choose valid, meaningful Python variable names and avoid reserved words and built-in names.
-5. Distinguish an expression from a statement.
-6. Use arithmetic operators and parentheses to control the order of a calculation.
-7. Recognise and work with strings, integers, floating-point numbers and Boolean values, and distinguish `None` from zero and empty text.
-8. Inspect values with `type()`, recognise implicit integer-to-float conversion, and convert suitable values with `int()`, `float()` and `str()`.
-9. Collect keyboard input with `input()` and convert it before numerical calculation.
-10. Write useful comments that explain purpose, assumptions and data-quality decisions.
-11. Read the final line of a beginner traceback and repair common `SyntaxError`, `NameError`, `TypeError`, `ValueError`, `ZeroDivisionError` and `IndentationError` problems.
-12. Adapt a short script to a small organisational or societal data case and explain every important line.
+| File | What it contains | When to use it |
+|---|---|---|
+| [Tutorial Examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) | Every code example shown in Tutorials 2.1–2.7, in website order | During the lecture and when reviewing an explanation |
+| [Exercises](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | One runnable exercise for each tutorial subsection | After the examples on the matching page |
+| [Practice Materials](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) | Additional case questions, code-logic steps and fully commented examples | For extra classroom demonstrations or independent practice |
 
-## Suggested study route
+[Open the complete AAU course repository on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH). The repository is the organised course folder: `notebooks/lecture_03` contains these three files, `docs` contains the tutorial website and later lecture folders contain later materials.
 
-| Part | Focus | Suggested time |
-|---|---|---:|
-| A | Colab, code cells and `print()` | 60 to 75 minutes |
-| B | Literals, variables, reserved words and naming | 90 to 105 minutes |
-| C | Expressions, arithmetic and precedence | 75 to 90 minutes |
-| D | Strings, numbers, Booleans, missing states and `type()` | 120 to 150 minutes |
-| E | Type conversion, user input and transfer examples | 105 to 135 minutes |
-| F | Comments, errors and debugging | 90 to 120 minutes |
-| G | Integrated examples, mini-cases, recap and self-test | 120 to 180 minutes |
+### Use Google Colab — recommended for the course
 
-Times are estimates, not deadlines. If this is your first time coding, it is normal to repeat a section.
+Google Colab runs a Jupyter notebook in a browser, so nothing needs to be installed for Lecture 3.
 
-## How to use the suggested book chapters
+1. Open one of the three direct Colab links above.
+2. Choose **File > Save a copy in Drive** before editing the public course notebook.
+3. Rename the copy so the lecture, tutorial range and your name are clear.
+4. Run a code cell with its play button or **Shift+Enter**.
+5. Use **Runtime > Run all** when you want to check the whole notebook from top to bottom.
+6. Remember that live variables and temporarily uploaded files can disappear when a runtime restarts.
 
-This tutorial remains the complete required learning resource. The book chapters are **companions**, not replacements for the worked examples, checkpoints and cases here.
+![The public Lecture 3 Colab notebook with the File menu open.](assets/PF1-01-colab-file-menu.png)
 
-- **Primary companion:** Charles R. Severance, *Python for Everybody*. Chapters 1 and 2 closely match Python Foundations I and were used in earlier course materials.
-- **Optional text-focused companion:** Steven Bird, Ewan Klein and Edward Loper, *Natural Language Processing with Python*, commonly called the NLTK Book. Selected parts of Chapter 1 provide another explanation of expressions, variables and strings through language data.
-- **Important scope note:** Do not install or begin learning NLTK for Day 1. The NLTK Book links are optional previews. NLTK itself belongs in the later data-cleaning and text-processing lecture.
-- **Environment note:** Some book screenshots and interpreter instructions use a terminal or IDLE. Continue to use Google Colab for this course and follow the tutorial when the interfaces differ.
+![The Save a copy in Drive action in the original Colab File menu.](assets/PF1-02-colab-save-copy-drive.png)
 
-Every Part A to G begins with a small table stating exactly which chapter or subsection is most relevant and whether it is core, recommended or optional.
+![The original Lecture 3 notebook title field in Colab.](assets/PF1-03-colab-notebook-title.png)
 
-## Prerequisites
+![A real course code cell, Run control and recorded output.](assets/PF1-04-colab-code-cell-output.png)
 
-You do not need previous programming experience. You should be able to:
+![The original Code and Text controls in the published course notebook.](assets/PF1-05-colab-code-text-toolbar.png)
 
-- open a link in a web browser;
-- type text carefully;
-- save a file or notebook;
-- compare your screen with a screenshot;
-- be willing to make and repair mistakes.
+![The original Colab Runtime menu used by the course notebook.](assets/PF1-06-colab-runtime-menu.png)
 
-## How to use every worked example
+Use [Google Colab](https://colab.research.google.com/) to create a blank notebook and read the [official Colab FAQ](https://research.google.com/colaboratory/faq.html) for saving, sharing and runtime information.
 
-For each worked example, follow this sequence:
+### Use GitHub to find or download the material
 
-1. **Predict:** Read the code and write down what you expect.
-2. **Run:** Run the cell without changing it.
-3. **Inspect:** Compare the actual output with the expected output.
-4. **Explain:** Read the line-by-line explanation.
-5. **Modify:** Complete the modification task.
-6. **Break:** Make the deliberate error exactly as instructed.
-7. **Repair:** Read the error, fix the smallest relevant part, and run the cell again.
-8. **Reflect:** Explain what changed and why.
+GitHub stores the course files and their version history. Open the repository, select `notebooks`, then `lecture_03`, and choose the file whose name ends in `Examples`, `Exercises` or `Practice_Materials`. Select **Open in Colab** from this tutorial when you want to run a notebook; use GitHub when you want to inspect or download the source.
 
-This repeated pattern is intentional. Debugging is part of programming, not evidence that you are bad at it.
+- [GitHub Hello World — official beginner guide](https://docs.github.com/en/get-started/start-your-journey/hello-world)
+- [Getting started with Git — official GitHub guide](https://docs.github.com/en/get-started/learning-to-code/getting-started-with-git)
+- [A brief introduction to Git for beginners — official GitHub video](https://www.youtube.com/watch?v=r8jQ9hVA2qs)
 
-## Conventions used in this tutorial
+### Use Python locally in PyCharm or Jupyter
 
-- Code to type or run appears in a Python code block.
-- Output appears in a text block.
-- Text in quotation marks, such as `"Copenhagen"`, is a string.
-- A line beginning with `#` is a comment and is ignored by Python.
-- `...` in explanatory prose means that part has been omitted. Do not type `...` unless a task explicitly asks you to.
-- Error wording can vary slightly between Python and Colab versions. Focus on the error type and the final explanatory line.
-- Each main worked example is self-contained. You can normally run it in a fresh cell without depending on an earlier example.
+Students may use another Python environment. All Lecture 3 code uses standard Python 3, so it can be copied into a `.py` file or run from the supplied notebook without installing course libraries.
 
-## How the examples were designed
+- [Python setup and usage — official documentation](https://docs.python.org/3/using/)
+- [Install PyCharm — official JetBrains guide](https://www.jetbrains.com/help/pycharm/installation-guide.html)
+- [Configure a Python interpreter in PyCharm — official JetBrains guide](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
+- [Install JupyterLab or Jupyter Notebook — official Project Jupyter guide](https://jupyter.org/install)
+- [W3Schools Python tutorial](https://www.w3schools.com/python/default.asp)
 
-The examples use three levels. **Simple** examples isolate one new idea. **Intermediate** examples combine that idea with earlier knowledge. **More advanced** examples resemble a small piece of realistic work and may ask you to preserve raw input, standardise text, create traceable labels, distinguish missing information from zero, or explain an assumption. More advanced does not mean using unexplained Day 2 topics.
+For this lecture, do not create a virtual environment or install `requirements.txt` during class. Those workflows become relevant when later lectures introduce third-party libraries.
 
-Unless an example is explicitly labelled as adapted, it is an original AAU course teaching example written for this tutorial. Two transfer examples later in the tutorial are adapted from the open textbook *Python for Everybody* by Charles R. Severance. Their source is linked beside the activity and in the references. The scenarios and explanations around them have been rewritten for this course rather than copied as model answers.
+### How to work with each example
 
-If the first examples feel too easy, use them as quick checks and continue to this applied pathway:
+1. **Predict** the output or error.
+2. **Run** the unmodified cell.
+3. **Inspect** the actual result.
+4. **Explain** the important line or symbol.
+5. **Modify** one input or message.
+6. **Break** only the instructed part.
+7. **Repair** the smallest relevant part.
+8. **Reflect** on what changed and what the code cannot establish.
 
-| Example | Applied challenge |
-|---|---|
-| 4C | Extend a human-readable audit trail with `+=` |
-| 7C | Standardise a messy field label while preserving the raw value |
-| 10C | Build a compact evidence statement with an f-string |
-| 11E | Separate rounded data from formatted presentation |
-| 13D | Distinguish missing information, zero and empty text |
-| 15C | Turn messy user input into a traceable draft file name |
-| 18D | Produce a non-mathematical metadata standardisation note |
-
-These are still Day 1 examples. They use sequential execution and built-in operations, but not conditions, loops, custom functions or exception handling.
+Code appears in Python blocks, output appears in text blocks and comments begin with `#`. Each main example is self-contained unless the page explicitly says that two cells must be run in order.
 
 ---
 
@@ -151,41 +119,11 @@ These are still Day 1 examples. They use sequential execution and built-in opera
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 1: Why should you learn to write programs?](https://www.py4e.com/html3/01-intro) | Read **Words and sentences**, **Conversing with Python**, **Writing a program**, **What could possibly go wrong?** and **Debugging**. These sections support first output, execution order and a constructive response to errors. |
 | Recommended companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Skim **Statements** to see why assignment may produce no visible output and why scripts execute in sequence. |
-| Optional text-focused preview | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Read only **Section 1.1, Getting Started with Python**, for expressions and a first `SyntaxError`. Use Colab instead of the book's older IDLE instructions. Do not install NLTK yet. |
+## Code cells, execution order and visible output
 
-## 1. Open, save and run Python in Google Colab
+The prerequisite panel on the Python Foundations I homepage explains how to open, copy, rename and save a notebook. This tutorial now begins with the Python activity itself: run a code cell, inspect its output and understand why notebook execution order matters.
 
-Google Colab is a browser-based notebook service. A notebook can contain explanatory text, Python code and the output produced by that code. The Python code runs in a temporary runtime, which is a remote computer environment provided for the notebook.
-
-### 1.1 Open the course notebook
-
-1. Open [the course starter notebook]({{COLAB_FOUNDATIONS_I_STARTER_URL}}).
-2. If prompted, sign in with an account permitted for your course work.
-3. If the notebook is view-only, select **File > Save a copy in Drive**.
-4. Rename your copy to `Python_Foundations_I_YourName.ipynb`.
-5. Confirm that your own copy is open before editing.
-
-![The public Lecture 3 Colab notebook with the File menu open.](assets/PF1-01-colab-file-menu.png)
-
-![The Save a copy in Drive action in the original Colab File menu.](assets/PF1-02-colab-save-copy-drive.png)
-
-![The original Lecture 3 notebook title field in Colab.](assets/PF1-03-colab-notebook-title.png)
-
-If no course notebook has been published, open [Google Colab]({{COLAB_HOME_URL}}), create a new notebook, and rename it.
-
-### 1.2 Understand code cells and text cells
-
-A **code cell** contains Python that can be executed. A **text cell** contains formatted notes written in Markdown. Python does not execute the words in a text cell.
-
-To add a new code cell, use the **+ Code** control. To run the current cell, select its play button or press **Shift+Enter**. The output normally appears directly below the cell.
-
-The first run may take a moment while Colab connects to a runtime. Wait for the cell to finish before deciding that there is no output. Interface labels and icons can change, so use the screenshot and the nearby text together.
-
-![A real course code cell, Run control and recorded output.](assets/PF1-04-colab-code-cell-output.png)
-
-![The original Code and Text controls in the published course notebook.](assets/PF1-05-colab-code-text-toolbar.png)
-
-### Worked example 1A - Run your first code cell
+### Example 2.1.1 - Run your first code cell
 
 **Level:** Simple
 
@@ -230,7 +168,7 @@ Change the message so the output is `Welcome to Python Foundations I`.
 
 Which characters tell Python that `Python is running` should be treated as text?
 
-### Worked example 1B - Run cells in sequence
+### Example 2.1.2 - Run cells in sequence
 
 **Level:** Intermediate
 
@@ -287,22 +225,7 @@ Change the organisation name in cell 1 to a fictional university unit. Rerun cel
 
 Why is notebook execution order part of debugging?
 
-### 1.3 Know what is saved and what can disappear
-
-Your notebook can save code, text and visible output. The live runtime state is temporary. Variables and uploaded temporary files can disappear when the runtime restarts or expires. Later tutorials will therefore show how to upload data again and rerun setup cells.
-
-Use these habits:
-
-- save your own notebook copy;
-- run cells from top to bottom after reopening a notebook;
-- keep important setup code in the notebook;
-- do not treat temporary uploaded files as permanent storage;
-- download important outputs or save them to an approved location;
-- avoid placing personal or sensitive data in a teaching notebook unless the course provides an approved procedure.
-
-![The original Colab Runtime menu used by the course notebook.](assets/PF1-06-colab-runtime-menu.png)
-
-### Practice checkpoint A1
+### Exercise 2.1.1 - Run, restart and repair the cell order
 
 Without copying the worked example exactly:
 
@@ -318,11 +241,11 @@ Without copying the worked example exactly:
 
 ---
 
-## 2. Display information with `print()`
+## Display information with `print()`
 
 `print()` lets a program communicate with a person who runs it. It can display text, numbers, variable values and the results of expressions. Later, `print()` will help you inspect data and debug scripts.
 
-### Worked example 2A - Display several pieces of information
+### Example 2.1.3 - Display several pieces of information
 
 **Level:** Simple
 
@@ -372,7 +295,7 @@ Add a fourth line that displays `Duplicate rows: 6`.
 
 What job is the comma performing inside the second `print()` call?
 
-### Worked example 2B - Display a small organisational summary
+### Example 2.1.4 - Display a small organisational summary
 
 **Level:** Intermediate
 
@@ -430,7 +353,7 @@ Change `responses_valid` to `440`. Before running, predict the new number of exc
 
 Does the final subtraction happen before or after `print()` displays the result?
 
-### Worked example 2C - Format a readable report with newline characters
+### Example 2.1.5 - Format a readable report with newline characters
 
 **Level:** More advanced
 
@@ -486,7 +409,7 @@ Add a blank line before the status section and change the status message to `Ini
 
 Why does `\n` change the layout even though `print()` is called only once on the final line?
 
-### Practice checkpoint A2
+### Exercise 2.1.2 - Format and explain a short report
 
 Write a four-line printed summary for a fictional dataset:
 
@@ -518,7 +441,7 @@ Requirements:
 | Recommended background | [Severance, *Python for Everybody*, Chapter 1](https://www.py4e.com/html3/01-intro) | Revisit **Words and sentences** for Python's reserved vocabulary and the idea that programmers create their own meaningful variable names. |
 | Optional text-focused companion | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Read **Section 2.3, Variables**, and **Section 2.4, Strings**. Stop before the language-analysis sections if lists and corpora are unfamiliar. |
 
-## 3. Constants and literals
+## Constants and literals
 
 A **literal** is a value written directly in code. Examples include `42`, `3.5`, `"Copenhagen"` and `True`. Python also has the special constant `None`, meaning no value is present. Section 13.1 later distinguishes `None` from zero, empty text and the string `"None"`.
 
@@ -534,7 +457,7 @@ Compare these roles:
 | `total_records = 250` | Assignment of a literal to a variable |
 | `MISSING_LABEL = "Unknown"` | Constant-by-convention assigned a string literal |
 
-### Worked example 3A - Use literals directly
+### Example 2.2.1 - Use literals directly
 
 **Level:** Simple
 
@@ -586,7 +509,7 @@ Change the heading, whole number, decimal number and Boolean value. Predict whic
 
 Which of the four literals requires quotation marks?
 
-### Worked example 3B - Use constants by convention
+### Example 2.2.2 - Use constants by convention
 
 **Level:** Intermediate
 
@@ -641,7 +564,7 @@ Add `REPORTING_MONTH = "October"` and display it. Then change `MAX_PREVIEW_ROWS`
 
 Is an uppercase Python name technically protected from reassignment?
 
-### Worked example 3C - Recognise the risk of unexplained literals
+### Example 2.2.3 - Recognise the risk of unexplained literals
 
 **Level:** More advanced
 
@@ -693,7 +616,7 @@ Change the completion rate to `84.0`. Predict the output. Then change the label 
 
 What social or organisational question should accompany any coded threshold?
 
-### Practice checkpoint B1
+### Exercise 2.2.1
 
 Create three constants-by-convention for a fictional monthly report:
 
@@ -708,7 +631,7 @@ Display all three with clear labels. Then write two sentences explaining why upp
 
 ---
 
-## 4. Variables and assignment
+## Variables and assignment
 
 A **variable** is a name that refers to a value. An **assignment statement** connects a name to a value with `=`.
 
@@ -718,7 +641,7 @@ variable_name = value
 
 Read `=` in an assignment as "is assigned" or "now refers to", not as "is mathematically equal forever".
 
-### Worked example 4A - Assign and display values
+### Example 2.2.4 - Assign and display values
 
 **Level:** Simple
 
@@ -773,7 +696,7 @@ Change all three values to describe a different fictional case. Add labels to th
 
 Which side of `=` normally contains the variable name in a basic assignment?
 
-### Worked example 4B - Reassign a variable
+### Example 2.2.5 - Reassign a variable
 
 **Level:** Intermediate
 
@@ -830,7 +753,7 @@ Change the first batch to `40` and the second batch increase to `15`. Predict al
 
 Why can the same variable name appear on both sides of `=` during an update?
 
-### Worked example 4C - Extend an audit trail with `+=`
+### Example 2.2.6 - Extend an audit trail with `+=`
 
 **Level:** More advanced
 
@@ -884,7 +807,7 @@ Add a third action stating that category labels were reviewed. Then replace the 
 
 Why is this break especially important to test even though Python produces no traceback?
 
-### Worked example 4D - Derive new variables without losing originals
+### Example 2.2.7 - Derive new variables without losing originals
 
 **Level:** More advanced
 
@@ -942,7 +865,7 @@ Change the counts to `1000`, `65` and `15`. Predict the usable count and percent
 
 Which assumption in this calculation should be checked against the real dataset?
 
-### Practice checkpoint B2
+### Exercise 2.2.2
 
 Create a short script about a fictional organisation that receives, excludes and retains records. Your script must:
 
@@ -959,7 +882,7 @@ Create a short script about a fictional organisation that receives, excludes and
 
 ---
 
-## 5. Reserved words and built-in names
+## Reserved words and built-in names
 
 Python reserves certain words for its own grammar. These are usually called **keywords** or **reserved words**. You cannot use a keyword as an ordinary variable name.
 
@@ -978,7 +901,7 @@ Python also has **built-in names** such as `print`, `input`, `int`, `float`, `st
 
 Current Python versions also have **soft keywords** such as `match`, `case`, `_` and `type`. A soft keyword has a special role only in a particular grammatical context. You do not need these contexts in Python Foundations I. The `keyword` module also provides `issoftkeyword()` for version-appropriate checks. Continue to avoid `type` as a variable name because it is an important built-in function in this tutorial.
 
-### Worked example 5A - Use a reserved word inside a meaningful name
+### Example 2.2.8 - Use a reserved word inside a meaningful name
 
 **Level:** Simple
 
@@ -1032,7 +955,7 @@ Add a valid variable whose name contains the word `for`, such as `records_for_re
 
 Why is `class_size` allowed even though `class` is a keyword?
 
-### Worked example 5B - Check whether words are Python keywords
+### Example 2.2.9 - Check whether words are Python keywords
 
 **Level:** More advanced
 
@@ -1088,7 +1011,7 @@ Check `if`, `dataset`, `input` and `while`. Predict each result before running.
 
 Why does `keyword.iskeyword("print")` return `False` even though you should avoid using `print` as a variable name?
 
-### Worked example 5C - Avoid hiding a built-in function
+### Example 2.2.10 - Avoid hiding a built-in function
 
 **Level:** Intermediate
 
@@ -1139,7 +1062,7 @@ Add a float variable called `completion_percentage` and use `type()` to inspect 
 
 Why can a legal variable name still be a bad variable name?
 
-### Practice checkpoint B3
+### Exercise 2.2.3
 
 For each proposed name, classify it as:
 
@@ -1157,11 +1080,11 @@ Then write and run a short check using the `keyword` module for at least four na
 
 ---
 
-## 6. Variable naming rules and meaningful names
+## Variable naming rules and meaningful names
 
 Python variable names must follow technical rules. Good names must also help humans understand the code.
 
-### 6.1 Technical naming rules
+### Technical naming rules
 
 A basic Python variable name:
 
@@ -1172,7 +1095,7 @@ A basic Python variable name:
 - must not be a Python keyword;
 - is case-sensitive, so `records`, `Records` and `RECORDS` are three different names.
 
-### 6.2 Style for this course
+### Style for this course
 
 Use **snake case** for ordinary variables: lowercase words joined by underscores.
 
@@ -1194,7 +1117,7 @@ MISSING_LABEL
 
 Avoid names such as `x`, `thing`, `data1`, `temp` and `final_final` unless the context genuinely makes them clear.
 
-### Worked example 6A - Use valid snake-case names
+### Example 2.2.11 - Use valid snake-case names
 
 **Level:** Simple
 
@@ -1248,7 +1171,7 @@ Add valid variables for the survey title and the number of duplicate responses. 
 
 Why can output labels contain spaces while variable names cannot?
 
-### Worked example 6B - Replace vague names with meaningful ones
+### Example 2.2.12 - Replace vague names with meaningful ones
 
 **Level:** Intermediate
 
@@ -1298,7 +1221,7 @@ Rename `invalid_responses` to a more precise name for one actual rule, such as `
 
 How can a precise variable name expose an assumption in a data-cleaning decision?
 
-### Worked example 6C - Notice case sensitivity
+### Example 2.2.13 - Notice case sensitivity
 
 **Level:** More advanced
 
@@ -1352,7 +1275,7 @@ Replace the three confusing names with `total_records`, `flagged_records` and `M
 
 Are two names that differ only in capitalisation the same variable in Python?
 
-### Practice checkpoint B4
+### Exercise 2.2.4
 
 Rewrite these unclear or invalid names as valid, meaningful snake-case names:
 
@@ -1381,7 +1304,7 @@ For each rewritten name, add a one-sentence definition of what the value represe
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Statements**, **Operators and operands**, **Expressions**, **Order of operations**, **Modulus operator** and **String operations**. These sections match the Part C sequence closely. |
 | Optional practice | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Use **Section 1.1** and Exercises 1 to 3 for extra practice with arithmetic expressions, parentheses and operator behaviour. The later corpus exercises are outside Day 1. |
 
-## 7. Expressions and statements
+## Expressions and statements
 
 An **expression** is code that Python can evaluate to produce a value. Examples include:
 
@@ -1396,7 +1319,7 @@ At beginner level, use this practical distinction:
 
 > An expression answers "what value does this produce?" A statement answers "what instruction is Python carrying out?"
 
-### Worked example 7A - Put an expression inside a statement
+### Example 2.3.1 - Put an expression inside a statement
 
 **Level:** Simple
 
@@ -1444,7 +1367,7 @@ Change both assigned values and predict the expression result. Then assign the r
 
 Which part of the final line produces the numerical value?
 
-### Worked example 7B - Store the result of an expression
+### Example 2.3.2 - Store the result of an expression
 
 **Level:** Intermediate
 
@@ -1498,7 +1421,7 @@ Add `duplicate_records = 9` and modify the complete-record calculation to subtra
 
 Why is `completion_rate` assigned a float even though the source counts are integers?
 
-### Worked example 7C - Turn a messy field label into a consistent name
+### Example 2.3.3 - Turn a messy field label into a consistent name
 
 **Level:** More advanced
 
@@ -1556,7 +1479,7 @@ Change the raw label to `"  SERVICE   Access? "`. Predict the proposed name. Ide
 
 Why is preserving `raw_field_label` useful when reviewing a data-cleaning decision?
 
-### Practice checkpoint C1
+### Exercise 2.3.1
 
 For each line below, decide whether its main role is an expression, an assignment statement or a print statement containing an expression:
 
@@ -1575,7 +1498,7 @@ Then write a short script that creates two source variables, derives one new var
 
 ---
 
-## 8. Arithmetic operators
+## Arithmetic operators
 
 Python uses arithmetic operators to build numerical expressions.
 
@@ -1596,7 +1519,7 @@ Important points:
 - `%` means remainder. It does not mean percentage.
 - `**` means "raised to the power of". Python does not use `^` for exponentiation.
 
-### Worked example 8A - Calculate basic data-quality counts
+### Example 2.3.4 - Calculate basic data-quality counts
 
 **Level:** Simple
 
@@ -1651,7 +1574,7 @@ Change the source values to `500`, `35` and `10`. Predict both derived counts. T
 
 Which assumption determines whether the addition is valid?
 
-### Worked example 8B - Compare division, floor division and remainder
+### Example 2.3.5 - Compare division, floor division and remainder
 
 **Level:** Intermediate
 
@@ -1708,7 +1631,7 @@ Change the batch size to `12`. Predict the exact result, complete batches and re
 
 Which operator tells you how many records remain after creating complete batches?
 
-### Worked example 8C - Calculate a rate and a projected count
+### Example 2.3.6 - Calculate a rate and a projected count
 
 **Level:** More advanced
 
@@ -1764,7 +1687,7 @@ Change the multiplier to represent a 5 per cent decrease. Hint: the multiplier w
 
 What assumption is encoded in `next_round_multiplier`?
 
-### Worked example 8D - Use exponentiation in a simple growth scenario
+### Example 2.3.7 - Use exponentiation in a simple growth scenario
 
 **Level:** Optional advanced example
 
@@ -1816,7 +1739,7 @@ Change the number of periods to `3` and predict whether the result will be below
 
 Why is a compounded scenario analytically different from simply adding 5 twice?
 
-### Practice checkpoint C2
+### Exercise 2.3.2
 
 An organisation has `387` records and reviews them in batches of `25`.
 
@@ -1834,7 +1757,7 @@ Predict the output first. Then deliberately replace one numerical value with a s
 
 ---
 
-## 9. Operator precedence and parentheses
+## Operator precedence and parentheses
 
 When an expression contains several operators, Python needs rules for deciding which operation happens first. These rules are called **operator precedence**.
 
@@ -1847,7 +1770,7 @@ For the arithmetic in this tutorial, use this simplified order:
 
 Operators at the same level are usually evaluated from left to right. Exponentiation has special right-associative behaviour, which is outside the core requirement. Parentheses remain the clearest way to communicate intended grouping.
 
-### Worked example 9A - See how multiplication happens before addition
+### Example 2.3.8 - See how multiplication happens before addition
 
 **Level:** Simple
 
@@ -1898,7 +1821,7 @@ Change `4` to `6`. Predict both results. Then write one sentence describing a si
 
 Which operation is performed first in `1200 + 350 * 4`?
 
-### Worked example 9B - Make a percentage formula explicit
+### Example 2.3.9 - Make a percentage formula explicit
 
 **Level:** Intermediate
 
@@ -1950,7 +1873,7 @@ Add `invalid_date_records = 12` to the numerator. Predict the new rate and state
 
 What value is the complete numerator in the repaired expression?
 
-### Worked example 9C - Use nested parentheses for a weighted scenario
+### Example 2.3.10 - Use nested parentheses for a weighted scenario
 
 **Level:** More advanced
 
@@ -2002,7 +1925,7 @@ Create `MISSING_WEIGHT = 2` and replace the literal weight in the formula with t
 
 Who is responsible for justifying the value of a weight used in a metric?
 
-### Worked example 9D - Understand a subtle negative-number case
+### Example 2.3.11 - Understand a subtle negative-number case
 
 **Level:** Optional advanced example
 
@@ -2053,7 +1976,7 @@ Change the exponent from `2` to `3`. Predict both results before running.
 
 What is the base of the exponent in `(-3) ** 2`?
 
-### Practice checkpoint C3
+### Exercise 2.3.3
 
 Predict the values without running Python first:
 
@@ -2084,7 +2007,7 @@ Then run each as part of a labelled `print()` statement. For one expression, exp
 | Recommended review | [Severance, *Python for Everybody*, Chapter 2](https://www.py4e.com/html3/02-variables) | Revisit ordinary division and use `type()` to check the values produced by expressions. The tutorial adds Booleans, `None`, floating-point representation and formatting in more detail. |
 | Optional text-focused companion | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Read **Section 2.4, Strings**, for string assignment, joining and repetition. List indexing and corpus exploration are not required for Python Foundations I. |
 
-## 10. Strings: working with text
+## Strings: working with text
 
 A **string** is a sequence of characters used to represent text. A string literal is normally enclosed in single or double quotation marks.
 
@@ -2095,7 +2018,7 @@ A **string** is a sequence of characters used to represent text. A string litera
 
 The quotation marks define the value but are not part of the displayed output. Digits inside quotation marks are also text: `"250"` is a string, not an integer.
 
-### Worked example 10A - Choose quotation marks that fit the text
+### Example 2.4.1 - Choose quotation marks that fit the text
 
 **Level:** Simple
 
@@ -2146,7 +2069,7 @@ Change the case title to a phrase containing an apostrophe. Try both quotation s
 
 Why are double quotation marks convenient for the first string?
 
-### Worked example 10B - Join and repeat strings
+### Example 2.4.2 - Join and repeat strings
 
 **Level:** Intermediate
 
@@ -2199,7 +2122,7 @@ Add a third string for the department and join all three with ` | `. Change the 
 
 What does `+` do when both operands are strings?
 
-### Worked example 10C - Build clear messages with f-strings
+### Example 2.4.3 - Build clear messages with f-strings
 
 **Level:** More advanced
 
@@ -2253,7 +2176,7 @@ Display the completion rate with two decimal places. Add the reporting month as 
 
 Does `:.1f` change the stored value or only its displayed format?
 
-### Practice checkpoint D1
+### Exercise 2.4.1
 
 Create a report heading from separate variables for:
 
@@ -2269,7 +2192,7 @@ Produce one version with concatenation and one with an f-string. Add an apostrop
 
 ---
 
-## 11. Integers and floats: working with numbers
+## Integers and floats: working with numbers
 
 An **integer**, written `int` in Python, is a whole number such as `0`, `42` or `-7`.
 
@@ -2277,7 +2200,7 @@ A **floating-point number**, written `float`, contains a decimal point or is pro
 
 Use integers for counts when partial units are impossible. Use floats for measurements, averages, rates and other quantities that can include fractional values. Context matters. A year such as `2026` may be stored as an integer, but it is an identifier rather than an amount to average.
 
-### Worked example 11A - Use counts and measurements appropriately
+### Example 2.4.4 - Use counts and measurements appropriately
 
 **Level:** Simple
 
@@ -2333,7 +2256,7 @@ Add an integer for the number of service locations and a float for average satis
 
 Why should a count normally be stored as an integer?
 
-### Worked example 11B - Notice that division produces a float
+### Example 2.4.5 - Notice that division produces a float
 
 **Level:** Intermediate
 
@@ -2385,7 +2308,7 @@ Change the total to `48`. Predict the displayed value and result type.
 
 Can dividing two integers produce a float?
 
-### Worked example 11C - Understand floating-point representation
+### Example 2.4.6 - Understand floating-point representation
 
 **Level:** More advanced
 
@@ -2439,7 +2362,7 @@ Try `0.1 + 0.1 + 0.1`. Display the raw result and a version formatted to one dec
 
 Why might a simple decimal calculation display more digits than expected?
 
-### Worked example 11D - Recognise implicit conversion from integer to float
+### Example 2.4.7 - Recognise implicit conversion from integer to float
 
 **Level:** Intermediate
 
@@ -2496,7 +2419,7 @@ Change `additional_hours` to `2.0`. Predict both the displayed value and its typ
 
 After the calculation, what is the type of `whole_hours`, and what is the type of `total_hours`?
 
-### Worked example 11E - Separate rounding a value from formatting its display
+### Example 2.4.8 - Separate rounding a value from formatting its display
 
 **Level:** More advanced
 
@@ -2557,7 +2480,7 @@ Create a second display line with two decimal places. Then round the numerical v
 
 Which line creates a new rounded number, and which line only controls presentation?
 
-### Practice checkpoint D2
+### Exercise 2.4.2
 
 For each value, decide whether `int`, `float` or `str` best represents its intended role, and explain why:
 
@@ -2576,7 +2499,7 @@ Then create and inspect at least one example of each of the three types.
 
 ---
 
-## 12. Boolean values and comparisons
+## Boolean values and comparisons
 
 A **Boolean** value is either `True` or `False`. The capital letters are required. Boolean values can store flags directly or result from comparisons.
 
@@ -2593,7 +2516,7 @@ Common comparison operators are:
 
 Do not confuse assignment `=` with equality comparison `==`.
 
-### Worked example 12A - Store Boolean flags directly
+### Example 2.4.9 - Store Boolean flags directly
 
 **Level:** Simple
 
@@ -2646,7 +2569,7 @@ Add a Boolean variable called `requires_manual_review` and display it. Write one
 
 What are the only two Boolean literal values in Python?
 
-### Worked example 12B - Produce Booleans with comparisons
+### Example 2.4.10 - Produce Booleans with comparisons
 
 **Level:** Intermediate
 
@@ -2704,7 +2627,7 @@ Set `total_records` to exactly `250`. Predict which Boolean results change.
 
 Why are `>= 250` and `== 250` different questions?
 
-### Worked example 12C - Combine Boolean conditions
+### Example 2.4.11 - Combine Boolean conditions
 
 **Level:** More advanced
 
@@ -2762,7 +2685,7 @@ Change `duplicate_record_count` to `2`. Predict the combined result. Then rename
 
 Does a `True` result prove that the dataset is reliable, representative or ethically appropriate?
 
-### Practice checkpoint D3
+### Exercise 2.4.3
 
 Create Boolean variables that answer these questions for a fictional dataset:
 
@@ -2779,7 +2702,7 @@ Display every Boolean with a clear label. Test at least one boundary value, such
 
 ---
 
-## 13. Inspect values with `type()`
+## Inspect values with `type()`
 
 The built-in `type()` function tells you the type of a value. It is especially useful when code looks correct but Python reports that two values cannot be combined.
 
@@ -2792,7 +2715,7 @@ Common results in this tutorial are:
 <class 'bool'>
 ```
 
-### Worked example 13A - Inspect the four foundation types
+### Example 2.4.12 - Inspect the four foundation types
 
 **Level:** Simple
 
@@ -2849,7 +2772,7 @@ Change one value so its type changes without changing its visible characters whe
 
 Does `type()` report the role of a value in your research design or only its Python type?
 
-### Worked example 13B - Use `type()` to investigate a failed calculation
+### Example 2.4.13 - Use `type()` to investigate a failed calculation
 
 **Level:** Intermediate
 
@@ -2899,7 +2822,7 @@ Add `records_received_number = int(records_received)` and inspect its type. Then
 
 What evidence in the code tells you that `"250"` is not an integer?
 
-### Worked example 13C - Inspect expressions, not only variables
+### Example 2.4.14 - Inspect expressions, not only variables
 
 **Level:** More advanced
 
@@ -2951,11 +2874,11 @@ Predict and inspect the types of `10 // 5`, `10 == 5`, `"10" * 2` and `10 * 2.0`
 
 Why is intended meaning necessary when repairing a type mismatch?
 
-### 13.1 `None`, zero and empty text mean different things
+### `None`, zero and empty text mean different things
 
 Python uses the special value `None` to represent the absence of a value. It is not the integer `0`, the empty string `""`, the Boolean `False`, or the text `"None"`. This distinction is important in later data work because "not recorded" is different from a recorded value of zero.
 
-### Worked example 13D - Preserve three different states
+### Example 2.4.15 - Preserve three different states
 
 **Level:** More advanced
 
@@ -3017,7 +2940,7 @@ Add `review_note = "Not yet checked"`. Compare its meaning and type with `None` 
 
 Why would replacing a missing waiting time with `0` change the meaning of the record?
 
-### Practice checkpoint D4
+### Exercise 2.4.4
 
 Before running, predict the type produced by each expression:
 
@@ -3053,7 +2976,7 @@ Then verify with `type()`. For every incorrect prediction, write one sentence ex
 | Recommended transfer practice | [Severance, *Python for Everybody*, Chapter 2 exercises](https://www.py4e.com/html3/02-variables) | Complete Exercises 2, 3 and 5 after the tutorial examples. Exercises 3 and 5 are the sources for the explicitly adapted gross-pay and temperature activities in this part. |
 | NLTK Book | No Day 1 reading required | The NLTK Book is not the best companion for keyboard input and type conversion. Return to it during the later text-processing lecture. |
 
-## 14. Convert values with `int()`, `float()` and `str()`
+## Convert values with `int()`, `float()` and `str()`
 
 Type conversion creates a value of a different type when the conversion is possible and meaningful.
 
@@ -3065,7 +2988,7 @@ Type conversion creates a value of a different type when the conversion is possi
 
 Conversion is not the same as data validation. Successfully converting `"999"` to `999` does not prove that 999 is a plausible age, count or score.
 
-### Worked example 14A - Convert whole-number text to an integer
+### Example 2.5.1 - Convert whole-number text to an integer
 
 **Level:** Simple
 
@@ -3119,7 +3042,7 @@ Change the text to `"1000"` and the subtraction to `65`. Predict the new result.
 
 Which variable retains the original string after conversion?
 
-### Worked example 14B - Convert decimal text to a float
+### Example 2.5.2 - Convert decimal text to a float
 
 **Level:** Intermediate
 
@@ -3172,7 +3095,7 @@ Change the text to `"87.25"`. Display the gap with two decimal places using an f
 
 Why is `float()` the appropriate converter for `"93.5"`?
 
-### Worked example 14C - Convert numbers to text for concatenation
+### Example 2.5.3 - Convert numbers to text for concatenation
 
 **Level:** Intermediate
 
@@ -3223,7 +3146,7 @@ Add a string variable for the reporting month and include it in the label. Use l
 
 Does calling `str(report_year)` change the type stored under `report_year`?
 
-### Worked example 14D - Understand that `int()` truncates floats
+### Example 2.5.4 - Understand that `int()` truncates floats
 
 **Level:** More advanced
 
@@ -3285,7 +3208,7 @@ Before converting, ask:
 5. What should happen to missing, empty or invalid text?
 6. Does conversion change the interpretation of the data?
 
-### Practice checkpoint E1
+### Exercise 2.5.1
 
 For each source string, predict whether `int()`, `float()` or neither converter will work directly:
 
@@ -3307,7 +3230,7 @@ Run each prediction in a separate cell so one error does not prevent later tests
 
 ---
 
-## 15. Collect user input with `input()`
+## Collect user input with `input()`
 
 The built-in `input()` function pauses the program, displays a prompt and waits for the user to type something. When the user presses Enter, `input()` returns the typed content as a **string**.
 
@@ -3317,7 +3240,7 @@ variable_name = input("Prompt shown to the user: ")
 
 Even when the user types digits, the returned value is a string. Numerical input must normally be converted before arithmetic.
 
-### Worked example 15A - Collect and display text input
+### Example 2.5.5 - Collect and display text input
 
 **Level:** Simple
 
@@ -3367,7 +3290,7 @@ Change the prompt to request a dataset title. Add a second input for the reporti
 
 What type does `input()` return?
 
-### Worked example 15B - Convert numerical input before calculating
+### Example 2.5.6 - Convert numerical input before calculating
 
 **Level:** Intermediate
 
@@ -3420,7 +3343,7 @@ Collect the missing-record count from the user as well. Convert both inputs and 
 
 Why does typing `120` not automatically create an integer?
 
-### Worked example 15C - Turn messy text input into a traceable file label
+### Example 2.5.7 - Turn messy text input into a traceable file label
 
 **Level:** More advanced
 
@@ -3490,7 +3413,7 @@ Add a fourth input for a version label such as `v01`. Include it before `.csv`. 
 
 Why does this script keep both `dataset_raw` and `dataset_label`?
 
-### Worked example 15D - Compare text joining before and after conversion
+### Example 2.5.8 - Compare text joining before and after conversion
 
 **Level:** More advanced
 
@@ -3546,7 +3469,7 @@ Try inputs `5` and `10`. Predict both lines of output. Rename the source variabl
 
 Why is converting the joined text not equivalent to adding converted inputs?
 
-### Practice checkpoint E2
+### Exercise 2.5.2
 
 Create an interactive script for a fictional project that asks for:
 
@@ -3567,7 +3490,7 @@ Do not hide these problems. Explain which ones produce Python errors and which o
 - [Open checkpoint hints]({{HINTS_E2_URL}})
 - [Open checkpoint solution]({{SOLUTIONS_E2_URL}})
 
-### Worked example 15E - Transfer the input pattern to a gross-pay estimate
+### Example 2.5.9 - Transfer the input pattern to a gross-pay estimate
 
 **Level:** Intermediate transfer
 
@@ -3626,7 +3549,7 @@ Add a string input for the reporting period and include it in the final note. Th
 
 Why does this program calculate only a basic estimate rather than a complete payroll result?
 
-### Worked example 15F - Transfer the input pattern to a temperature conversion
+### Example 2.5.10 - Transfer the input pattern to a temperature conversion
 
 **Level:** More advanced transfer
 
@@ -3699,7 +3622,7 @@ Which value should remain text even though it contains digits, and why?
 | Core comments companion | [Severance, *Python for Everybody*, Chapter 2](https://www.py4e.com/html3/02-variables) | Read **Comments** and compare comments that repeat syntax with comments that explain purpose, units or assumptions. |
 | Optional text-focused example | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Revisit the `SyntaxError` example in **Section 1.1**. Use the current tutorial for modern traceback wording and the complete repair routine. |
 
-## 16. Write useful comments
+## Write useful comments
 
 A comment begins with `#`. Python ignores the remainder of that line. Comments are written for humans.
 
@@ -3714,7 +3637,7 @@ Useful comments can explain:
 
 Avoid comments that merely repeat obvious syntax.
 
-### Worked example 16A - Explain purpose and assumptions
+### Example 2.6.1 - Explain purpose and assumptions
 
 **Level:** Simple
 
@@ -3768,7 +3691,7 @@ Add `duplicate_records = 4`, update the calculation, and revise the assumption c
 
 Why is the assumption comment more useful than a comment saying `# subtract`?
 
-### Worked example 16B - Use end-of-line comments carefully
+### Example 2.6.2 - Use end-of-line comments carefully
 
 **Level:** Intermediate
 
@@ -3818,7 +3741,7 @@ Move one long end-of-line comment to its own line above the related code. Change
 
 What unit must both operands use for the gap calculation to be meaningful?
 
-### Worked example 16C - Do not confuse strings with comments
+### Example 2.6.3 - Do not confuse strings with comments
 
 **Level:** More advanced
 
@@ -3879,7 +3802,7 @@ Before keeping a comment, ask:
 - Does it reveal confidential or personal information?
 - Does it distinguish a confirmed fact from an assumption or pending decision?
 
-### Practice checkpoint F1
+### Exercise 2.6.1
 
 Add comments to a short script of your own. Include:
 
@@ -3895,7 +3818,7 @@ Then delete any comment that merely repeats an obvious assignment. Ask another s
 
 ---
 
-## 17. Read and repair beginner error messages
+## Read and repair beginner error messages
 
 An error message is information. It normally tells you:
 
@@ -3919,7 +3842,7 @@ When Python reports an error during execution, Colab often displays a **tracebac
 
 ![A safely caught ValueError traceback from the published Lecture 3 Colab notebook.](assets/PF1-07-colab-traceback.png)
 
-### Error clinic 17A - `SyntaxError`
+### Example 2.6.4 - Error clinic: `SyntaxError`
 
 `SyntaxError` means Python cannot understand the code as valid Python grammar. Common causes include missing quotation marks, missing brackets, invalid variable names and incomplete expressions.
 
@@ -3980,7 +3903,7 @@ Change the title to a phrase containing an apostrophe and choose quotation marks
 
 What unfinished structure caused the first syntax error?
 
-### Error clinic 17B - `NameError`
+### Example 2.6.5 - Error clinic: `NameError`
 
 `NameError` means Python does not currently know a name that the code tried to use. The name may be misspelt, never defined, deleted, or lost after a runtime restart.
 
@@ -4044,7 +3967,7 @@ Rename `missing_records` to `records_with_missing_values` everywhere. Use search
 
 Why can correctly spelt code still raise `NameError` in a notebook?
 
-### Error clinic 17C - `TypeError`
+### Example 2.6.6 - Error clinic: `TypeError`
 
 `TypeError` means an operation received a type of value it cannot use in that way.
 
@@ -4108,7 +4031,7 @@ Print the type of each source value before and after the repair. Explain why the
 
 How does the final error line identify the two incompatible types?
 
-### Error clinic 17D - `ValueError`
+### Example 2.6.7 - Error clinic: `ValueError`
 
 `ValueError` means a function received the right broad type but an unsuitable value. A common beginner case is asking `int()` to convert text that is not a valid whole-number representation.
 
@@ -4170,7 +4093,7 @@ Test `"93"`, `"93.0"`, `"93,5"` and `"ninety-three"` separately with `int()` and
 
 Why is `float()` a better repair than converting first to float and then to integer here?
 
-### Error clinic 17E - `ZeroDivisionError`
+### Example 2.6.8 - Error clinic: `ZeroDivisionError`
 
 `ZeroDivisionError` occurs when a numerical expression tries to divide by zero.
 
@@ -4234,7 +4157,7 @@ Use `0` completed responses and `90` invited participants. Predict the valid res
 
 Which part of a division expression must not be zero?
 
-### Error clinic 17F - `IndentationError`
+### Example 2.6.9 - Error clinic: `IndentationError`
 
 Python uses indentation to group lines in structures such as conditions, loops and functions. Those structures are taught later, but accidental leading spaces can already cause an error.
 
@@ -4294,7 +4217,7 @@ Add a third unindented print line describing a completed check. Confirm that all
 
 Why is indentation part of Python syntax rather than only visual style?
 
-### Error clinic 17G - A logical error with no traceback
+### Example 2.6.10 - Error clinic: A logical error with no traceback
 
 Some of the most important errors do not produce an error message. Python can execute the wrong formula perfectly.
 
@@ -4372,7 +4295,7 @@ What evidence helped you recognise the wrong formula without a traceback?
 | `IndentationError` | Leading spaces do not fit Python's structure | Tabs, spaces, copied code, block alignment |
 | No traceback | Python ran, but the logic may be wrong | Expected output, units, formula direction, boundaries, assumptions |
 
-### Practice checkpoint F2 - Error laboratory
+### Exercise 2.6.2 - Error laboratory
 
 Create a fresh notebook section with seven deliberately broken cells, one for each error clinic above. For each cell, record:
 
@@ -4401,11 +4324,11 @@ Do not paste personal data into error screenshots.
 | Optional language-data transfer | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Revisit **Sections 2.3 and 2.4** and explain which variables, assignments, expressions and string operations you now recognise. Lists, corpora and frequency analysis belong to later tutorials. |
 | Looking ahead, not Day 1 | [NLTK Book, Chapter 3: Processing Raw Text](https://www.nltk.org/book/ch03.html) | Bookmark this chapter for the later text-processing lecture. Do not treat it as required Python Foundations I reading. |
 
-## 18. Read complete foundation scripts
+## Read complete foundation scripts
 
 The next examples combine the ideas from the whole tutorial. Do not rush to run them. First annotate every literal, variable, assignment, expression, operator, type conversion, comparison, comment and output statement that you recognise.
 
-### Worked example 18A - Produce a monthly data-quality summary
+### Example 2.7.1 - Produce a monthly data-quality summary
 
 **Level:** Intermediate integration
 
@@ -4480,7 +4403,7 @@ Add `invalid_date_records = 14`. Update the formula, comment and output. Then re
 
 Which line creates the Boolean, and which line merely displays it?
 
-### Worked example 18B - Compare expected and received file structure
+### Example 2.7.2 - Compare expected and received file structure
 
 **Level:** More advanced integration
 
@@ -4555,7 +4478,7 @@ Test received counts of `12` and `14`. For `14`, rename or redesign the differen
 
 Why is a correct column count only one part of a structural check?
 
-### Worked example 18C - Create an interactive organisational intake note
+### Example 2.7.3 - Create an interactive organisational intake note
 
 **Level:** More advanced integration
 
@@ -4626,7 +4549,7 @@ Add a string input describing the exclusion rule. Display it in the final note. 
 
 Which types are returned by the four `input()` calls before conversion is applied?
 
-### Worked example 18D - Preserve raw metadata and publish a standardisation note
+### Example 2.7.4 - Preserve raw metadata and publish a standardisation note
 
 **Level:** More advanced non-mathematical integration
 
@@ -4706,7 +4629,7 @@ Add `raw_source_label = "  MOBILE portal "`. Produce a cleaned presentation labe
 
 Which variables preserve evidence, which variables contain proposed standardisations, and which variable records workflow state?
 
-### Integration checkpoint G1
+### Exercise 2.7.1 - Integrate the foundation
 
 Choose one of the four integrated scripts. Without looking at the explanation, annotate:
 
@@ -4727,11 +4650,11 @@ Then explain the script aloud in no more than two minutes.
 
 ---
 
-## 19. Mini-case activities
+## Mini-case activities
 
 The mini-cases are student activities, not additional worked solutions. Use the techniques in this tutorial, but keep your completed code in your own notebook. Solutions belong on the separate solution page.
 
-### Mini-case 1 - Municipal consultation intake
+### Mini-case 2.7.1 - Municipal consultation intake
 
 **Estimated time:** 40 to 60 minutes
 
@@ -4797,7 +4720,7 @@ Create and repair one `NameError`, one `TypeError` and one logical error. Record
 - [Open mini-case 1 dataset placeholder]({{MINI_CASE_1_DATASET_URL}})
 - [Open mini-case 1 solution]({{MINI_CASE_1_SOLUTION_URL}})
 
-### Mini-case 2 - University feedback preparation
+### Mini-case 2.7.2 - University feedback preparation
 
 **Estimated time:** 45 to 70 minutes
 
@@ -4857,7 +4780,7 @@ Enter a word for one numerical prompt, capture the `ValueError`, and repair the 
 - [Open mini-case 2 starter notebook]({{MINI_CASE_2_COLAB_URL}})
 - [Open mini-case 2 solution]({{MINI_CASE_2_SOLUTION_URL}})
 
-### Mini-case 3 - Communicating a societal indicator
+### Mini-case 2.7.3 - Communicating a societal indicator
 
 **Estimated time:** 50 to 75 minutes
 
@@ -4916,7 +4839,7 @@ Reverse the comparison or rate formula deliberately, inspect the plausible but i
 
 ---
 
-## 20. Recap and quick reference
+## Recap and quick reference
 
 ### The foundation mental model
 
@@ -4998,7 +4921,7 @@ When you encounter unfamiliar beginner code, ask:
 
 ---
 
-## 21. Self-test
+## Self-test
 
 Complete this test without running Python first. Then use Python to check only after recording your answer. Keep the answer key separate.
 
@@ -5063,7 +4986,7 @@ Complete this test without running Python first. Then use Python to check only a
 
 ---
 
-## 22. Glossary
+## Glossary
 
 **Argument**  
 A value supplied to a function inside parentheses. In `print(total)`, `total` is an argument.
@@ -5205,7 +5128,7 @@ A name that refers to a value.
 
 ---
 
-## 23. Completion checklist
+## Completion checklist
 
 You are ready to continue when you can honestly tick these items:
 
@@ -5238,7 +5161,7 @@ If several boxes remain unticked, return to the relevant checkpoint rather than 
 
 ---
 
-## 24. What comes next
+## What comes next
 
 Python Foundations II will build on this tutorial with:
 
@@ -5271,7 +5194,7 @@ Do not worry if `pd` and CSV loading are not yet familiar. Their full explanatio
 
 ---
 
-## 25. Published assets and quality checks
+## Published assets and quality checks
 
 The tutorial links to separate example, exercise and solution notebooks, plus a complete companion containing every website code block. The original Colab screenshots below contain no personal account details.
 
