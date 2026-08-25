@@ -60,12 +60,12 @@ renumberTutorialSet(
 );
 
 const tutorialScreenshotAssets = {
-  "PF1-01": { src: "assets/PF1-01-colab-file-menu.png", caption: "The public Lecture 3 notebook with Colab's File menu open." },
-  "PF1-02": { src: "assets/PF1-02-colab-save-copy-drive.png", caption: "Use Save a copy in Drive before editing the public course notebook." },
-  "PF1-03": { src: "assets/PF1-03-colab-notebook-title.png", caption: "The original Lecture 3 notebook title field in Google Colab." },
-  "PF1-04": { src: "assets/PF1-04-colab-code-cell-output.png", caption: "A real course code cell with its Run control and recorded output." },
-  "PF1-05": { src: "assets/PF1-05-colab-code-text-toolbar.png", caption: "The original + Code and + Text controls in the course notebook." },
-  "PF1-06": { src: "assets/PF1-06-colab-runtime-menu.png", caption: "The Colab Runtime menu, including restart and run-all actions." },
+  "PF1-01": { src: "assets/PF1-01-colab-file-menu.png?v=2", caption: "The published Lecture 3 Examples notebook with Colab's File menu open." },
+  "PF1-02": { src: "assets/PF1-02-colab-save-copy-drive.png?v=2", caption: "Use Save a copy in Drive before editing the published course notebook." },
+  "PF1-03": { src: "assets/PF1-03-colab-notebook-title.png?v=2", caption: "The published Lecture 3 Examples notebook title in Google Colab." },
+  "PF1-04": { src: "assets/PF1-04-colab-code-cell-output.png?v=2", caption: "A published, fully commented course code cell with its Run control and successful output." },
+  "PF1-05": { src: "assets/PF1-05-colab-code-text-toolbar.png?v=2", caption: "The + Code, + Text and Run all controls in the published course notebook." },
+  "PF1-06": { src: "assets/PF1-06-colab-runtime-menu.png?v=2", caption: "The published notebook's Colab Runtime menu, including run-all and restart actions." },
   "PF1-07": { src: "assets/PF1-07-colab-traceback.png", caption: "A real, safely caught ValueError traceback from the Lecture 3 notebook." }
 };
 
