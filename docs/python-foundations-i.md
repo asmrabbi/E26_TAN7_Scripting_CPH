@@ -4,7 +4,7 @@ description: "A complete beginner tutorial for running, reading, modifying, brea
 course: "AAU Introduction to Scripting, Data Mining and Machine Learning"
 lecture: "Python Foundations I"
 language: "en-GB"
-estimated_time: "8 to 10 hours for the core pathway, plus 3 to 4 hours for practice and mini-cases"
+estimated_time: "8 to 10 hours for the core pathway, plus 3 to 4 hours for exercises and practice"
 prerequisites:
   - "No previous programming experience"
   - "A modern web browser"
@@ -234,8 +234,8 @@ Without copying the worked example exactly:
 5. Restart the runtime, run only the display cell, and record the error type.
 6. Repair the execution order.
 
-- [Open checkpoint hints]({{HINTS_A1_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_A1_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -424,8 +424,8 @@ Requirements:
 - Create one `NameError`, then repair it.
 - Explain why a successful calculation does not prove that the exclusion rule was fair or appropriate.
 
-- [Open checkpoint hints]({{HINTS_A2_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_A2_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -622,8 +622,8 @@ Create three constants-by-convention for a fictional monthly report:
 
 Display all three with clear labels. Then write two sentences explaining why uppercase names communicate intent but do not prevent reassignment.
 
-- [Open checkpoint hints]({{HINTS_B1_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_B1_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -873,8 +873,8 @@ Create a short script about a fictional organisation that receives, excludes and
 - include one deliberate `NameError` and its repair in your notes;
 - state one assumption that the arithmetic makes about the categories.
 
-- [Open checkpoint hints]({{HINTS_B2_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_B2_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1071,8 +1071,8 @@ Names: `if`, `data`, `input`, `missing_record_count`, `class`, `class_label`, `x
 
 Then write and run a short check using the `keyword` module for at least four names.
 
-- [Open checkpoint hints]({{HINTS_B3_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_B3_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1286,8 +1286,8 @@ final final count
 
 For each rewritten name, add a one-sentence definition of what the value represents. A name is not fully meaningful if its underlying concept remains undefined.
 
-- [Open checkpoint hints]({{HINTS_B4_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_B4_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1487,8 +1487,8 @@ print(total - missing)
 
 Then write a short script that creates two source variables, derives one new variable through an expression, and displays it.
 
-- [Open checkpoint hints]({{HINTS_C1_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_C1_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1746,8 +1746,8 @@ Calculate and display:
 
 Predict the output first. Then deliberately replace one numerical value with a string, record the resulting error type, and repair it.
 
-- [Open checkpoint hints]({{HINTS_C2_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_C2_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1986,8 +1986,8 @@ Predict the values without running Python first:
 
 Then run each as part of a labelled `print()` statement. For one expression, explain a realistic case meaning and identify any assumption.
 
-- [Open checkpoint hints]({{HINTS_C3_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_C3_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2179,8 +2179,8 @@ Create a report heading from separate variables for:
 
 Produce one version with concatenation and one with an f-string. Add an apostrophe to one piece of text and choose quotation marks that keep the code readable.
 
-- [Open checkpoint hints]({{HINTS_D1_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_D1_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2486,8 +2486,8 @@ For each value, decide whether `int`, `float` or `str` best represents its inten
 
 Then create and inspect at least one example of each of the three types.
 
-- [Open checkpoint hints]({{HINTS_D2_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_D2_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2689,8 +2689,8 @@ Create Boolean variables that answer these questions for a fictional dataset:
 
 Display every Boolean with a clear label. Test at least one boundary value, such as exactly `500` or exactly `80.0`.
 
-- [Open checkpoint hints]({{HINTS_D3_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_D3_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2953,8 +2953,8 @@ f"{93.756:.1f}"
 
 Then verify with `type()`. For every incorrect prediction, write one sentence explaining the rule you had misunderstood.
 
-- [Open checkpoint hints]({{HINTS_D4_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_D4_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -3215,8 +3215,8 @@ For each source string, predict whether `int()`, `float()` or neither converter 
 
 Run each prediction in a separate cell so one error does not prevent later tests. Record the error type for failed conversions. Then explain which values should possibly remain strings even if conversion is technically possible.
 
-- [Open checkpoint hints]({{HINTS_E1_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_E1_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -3477,8 +3477,8 @@ The script must display a labelled summary and calculate a completion percentage
 
 Do not hide these problems. Explain which ones produce Python errors and which ones produce logically questionable results.
 
-- [Open checkpoint hints]({{HINTS_E2_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_E2_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ### Example 2.5.9 - Transfer the input pattern to a gross-pay estimate
 
@@ -3801,8 +3801,8 @@ Add comments to a short script of your own. Include:
 
 Then delete any comment that merely repeats an obvious assignment. Ask another student whether the remaining comments help them explain the code.
 
-- [Open checkpoint hints]({{HINTS_F1_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_F1_URL}})
+- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -4296,9 +4296,9 @@ Create a fresh notebook section with seven deliberately broken cells, one for ea
 
 Do not paste personal data into error screenshots.
 
-- [Open error-laboratory starter notebook]({{COLAB_ERROR_LAB_URL}})
-- [Open error-laboratory hints]({{HINTS_F2_URL}})
-- [Open error-laboratory solution]({{SOLUTIONS_F2_URL}})
+- [Open the error-laboratory starter and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb)
+- [Open the matching exercise in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -4631,16 +4631,16 @@ Choose one of the four integrated scripts. Without looking at the explanation, a
 
 Then explain the script aloud in no more than two minutes.
 
-- [Open annotation worksheet]({{ANNOTATION_WORKSHEET_URL}})
-- [Open checkpoint solution]({{SOLUTIONS_G1_URL}})
+- [Open the annotation exercise in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
-## Mini-case activities
+## Applied problem-solving exercises
 
-The mini-cases are student activities, not additional worked solutions. Use the techniques in this tutorial, but keep your completed code in your own notebook. Solutions belong on the separate solution page.
+These exercises bring several Python Foundations I ideas together. Read the situation, follow the numbered requirements and try your own solution before opening the fully commented answer in the Lecture 3 Exercises notebook.
 
-### Mini-case 2.7.1 - Municipal consultation intake
+### Exercise 2.7.2 - Municipal consultation intake
 
 **Estimated time:** 40 to 60 minutes
 
@@ -4701,12 +4701,10 @@ Change the case so the file has all expected columns and no duplicates. Predict 
 
 Create and repair one `NameError`, one `TypeError` and one logical error. Record the broken line, the observed message or output, and the repaired line in a text cell.
 
-- [Download mini-case 1 brief]({{MINI_CASE_1_BRIEF_URL}})
-- [Open mini-case 1 starter notebook]({{MINI_CASE_1_COLAB_URL}})
-- [Open mini-case 1 dataset placeholder]({{MINI_CASE_1_DATASET_URL}})
-- [Open mini-case 1 solution]({{MINI_CASE_1_SOLUTION_URL}})
+- [Open Exercise 2.7.2 and its fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [View the exercise and solution notebook on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
-### Mini-case 2.7.2 - University feedback preparation
+### Exercise 2.7.3 - University feedback preparation
 
 **Estimated time:** 45 to 70 minutes
 
@@ -4762,11 +4760,10 @@ Change the prompts and labels so the same script could support a fictional commu
 
 Enter a word for one numerical prompt, capture the `ValueError`, and repair the interaction by rerunning with suitable input. Do not add exception handling yet.
 
-- [Download mini-case 2 brief]({{MINI_CASE_2_BRIEF_URL}})
-- [Open mini-case 2 starter notebook]({{MINI_CASE_2_COLAB_URL}})
-- [Open mini-case 2 solution]({{MINI_CASE_2_SOLUTION_URL}})
+- [Open Exercise 2.7.3 and its fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [View the exercise and solution notebook on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
-### Mini-case 2.7.3 - Communicating a societal indicator
+### Exercise 2.7.4 - Communicating a societal indicator
 
 **Estimated time:** 50 to 75 minutes
 
@@ -4819,9 +4816,8 @@ Reverse the comparison or rate formula deliberately, inspect the plausible but i
 - Can a single percentage hide differences between groups or locations?
 - What evidence is missing from the script?
 
-- [Download mini-case 3 brief]({{MINI_CASE_3_BRIEF_URL}})
-- [Open mini-case 3 starter notebook]({{MINI_CASE_3_COLAB_URL}})
-- [Open mini-case 3 solution]({{MINI_CASE_3_SOLUTION_URL}})
+- [Open Exercise 2.7.4 and its fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [View the exercise and solution notebook on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -4967,8 +4963,8 @@ Complete this test without running Python first. Then use Python to check only a
 43. Name one piece of information that should not be entered into a public teaching notebook.
 44. Explain a complete break-and-repair cycle in your own words.
 
-- [Open the self-test answer form]({{SELF_TEST_FORM_URL}})
-- [Open the separate self-test answer key]({{SELF_TEST_SOLUTION_URL}})
+- [Open the self-test practice in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented answer notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 

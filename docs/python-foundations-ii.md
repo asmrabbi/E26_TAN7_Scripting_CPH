@@ -3,7 +3,7 @@
 **Course:** Introduction to Scripting, Data Mining and Machine Learning  
 **Audience:** Programming beginners in Techno-Anthropology and related social-science programmes  
 **Tutorial status:** Core  
-**Estimated study time:** 4 to 6 hours, including exercises  
+**Estimated study time:** 8 to 10 hours, including exercises and independent practice
 **Suggested lecture use:** Four 45-minute teaching slots, supported by pre-lecture and post-lecture practice  
 **Primary environment:** Google Colab  
 **Prerequisite:** Python Foundations I, including variables, values, data types, expressions, `print()`, type conversion, user input and comments  
@@ -14,16 +14,29 @@
 
 ## Tutorial links
 
-- **Run every Python Foundations II tutorial example:** [Open the complete companion in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_complete_python_foundations_II_tutorial.ipynb)
-- **View all tutorial code on GitHub:** [Complete companion notebook](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_complete_python_foundations_II_tutorial.ipynb)
-- **Open the shorter lecture examples:** [Lecture 4 examples in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_examples_control_flow_collections_functions.ipynb)
-- **Practise independently:** [Lecture 4 exercises in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L04_exercises_control_flow_collections_functions.ipynb)
-- **Review worked answers separately:** [Lecture 4 solutions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L04_solutions_control_flow_collections_functions.ipynb)
+- **Run every example from Tutorials 2.8–2.14:** [Open the Lecture 4 Examples notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb)
+- **Practise Tutorials 2.8–2.14:** [Open the Exercises notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Exercises.ipynb)
+- **Review the numbered answers for Tutorials 2.8–2.14:** [Open the Solutions notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb)
+- **Complete the situational exercises in Tutorial 2.15:** [Open the Applied Exercises notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- **Review the Tutorial 2.15 answers:** [Open the Applied Solutions notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- **Browse all Lecture 4 files on GitHub:** [Open the Lecture 4 folder](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 - **Report a problem:** [Open a GitHub issue](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/issues)
 
 ---
 
-# 1. What you will learn
+# Before you start: course files and coding options
+
+Lecture 4 uses only the Python standard library. No third-party package, dataset, virtual environment or `requirements.txt` installation is required for Tutorials 2.8–2.15. The supplied notebooks run in Google Colab and can also be opened locally in Jupyter or PyCharm with Python 3.
+
+Use the tutorial number in each notebook heading to match it with the website. Start with the Examples notebook during teaching, use the Exercises notebook before consulting the numbered Solutions notebook, and keep Tutorial 2.15 for the longer situational problems that combine learning from both Python foundation sections.
+
+In Colab, choose **File > Save a copy in Drive** before editing. Run individual cells with the play button or **Shift+Enter**, and use **Runtime > Run all** to confirm that the entire notebook works from a fresh state. On a local computer, clone or download the repository, open the `notebooks/lecture_04` folder and run the notebooks with Python 3; the import examples use built-in modules such as `math`, `random` and `statistics`.
+
+Use this cycle for every example: **predict → run → inspect → explain → modify → break → repair → test → reflect**. When code asks for keyboard input, test ordinary values, boundary values, unsuitable text and logically impossible values separately.
+
+---
+
+## What you will learn
 
 By the end of this tutorial, you should be able to:
 
@@ -55,9 +68,9 @@ You are **not** expected to memorise every line. You should be able to:
 
 ---
 
-# 2. Before you begin
+## Before you begin
 
-## 2.1 Required knowledge from Python Foundations I
+## Required knowledge from Python Foundations I
 
 You should already recognise the following ideas:
 
@@ -78,7 +91,7 @@ You should be able to explain that:
 - `print()` displays a result;
 - the code is executed from top to bottom.
 
-## 2.2 Quick readiness check
+## Quick readiness check
 
 Predict the output before running the code:
 
@@ -115,7 +128,7 @@ Usable rows: 112
 
 ---
 
-# 3. The recurring case used in this tutorial
+## The recurring situation used in this tutorial
 
 Throughout this tutorial, we will use small examples connected to a fictional case called the **Green Mobility Consultation**.
 
@@ -142,9 +155,11 @@ These are simplified teaching examples. Real data-quality decisions require cont
 
 ---
 
-# 4. Boolean values and comparison operators
+# Tutorial 2.8 — Booleans, comparisons and decisions
 
-## 4.1 What is a Boolean value?
+## Boolean values and comparison operators
+
+## What is a Boolean value?
 
 A Boolean value represents one of two logical states:
 
@@ -196,7 +211,7 @@ print(record_complete)
 
 ---
 
-## 4.2 Comparison operators
+## Comparison operators
 
 Comparison operators compare two values. The result is normally `True` or `False`.
 
@@ -237,7 +252,7 @@ The expressions do not merely describe a comparison. Python evaluates them and p
 
 ---
 
-## 4.3 Assignment and equality are different
+## Assignment and equality are different
 
 This distinction is essential:
 
@@ -289,7 +304,7 @@ The value is 125
 
 ---
 
-## 4.4 Comparing strings
+## Comparing strings
 
 Python can also compare strings.
 
@@ -337,7 +352,7 @@ Change the value of `topic` to `"Public Transport"` and create three comparisons
 
 ---
 
-## 4.5 Storing the result of a comparison
+## Storing the result of a comparison
 
 A comparison can be stored in a variable.
 
@@ -425,11 +440,11 @@ False
 
 ---
 
-# 5. Conditional execution with `if`
+## Conditional execution with `if`
 
 Programs often need to make decisions. A condition allows Python to execute code only when a logical test is true.
 
-## 5.1 A one-way decision
+## A one-way decision
 
 ```python
 missing_values = 14
@@ -461,7 +476,7 @@ Important parts:
 
 ---
 
-## 5.2 When the condition is false
+## When the condition is false
 
 ```python
 missing_values = 4
@@ -482,7 +497,7 @@ The review message is not printed because the condition is false. The final line
 
 ---
 
-## 5.3 Indentation is part of Python syntax
+## Indentation is part of Python syntax
 
 Python uses indentation to show which lines belong together.
 
@@ -530,7 +545,7 @@ if engagement > 100:
 
 ---
 
-## 5.4 Multiple lines inside one `if` block
+## Multiple lines inside one `if` block
 
 ```python
 engagement = 220
@@ -557,7 +572,7 @@ All three indented lines belong to the same decision.
 
 ---
 
-## 5.5 A condition using a string
+## A condition using a string
 
 ```python
 position = "Support"
@@ -625,11 +640,11 @@ if duplicate_rows > 0:
 
 ---
 
-# 6. Two-way decisions with `if` and `else`
+## Two-way decisions with `if` and `else`
 
 An `else` block provides an alternative action when the condition is false.
 
-## 6.1 Basic example
+## Basic example
 
 ```python
 missing_values = 14
@@ -656,7 +671,7 @@ Exactly one branch runs.
 
 ---
 
-## 6.2 Understanding the flow
+## Understanding the flow
 
 ```python
 if condition:
@@ -674,7 +689,7 @@ Python:
 
 ---
 
-## 6.3 Example with user input
+## Example with user input
 
 ```python
 answer = input("Is the source verified? Type yes or no: ")
@@ -727,7 +742,7 @@ This is an early example of data cleaning.
 
 ---
 
-## 6.4 Deliberate break-and-repair activity
+## Deliberate break-and-repair activity
 
 Broken code:
 
@@ -761,11 +776,11 @@ Normal engagement
 
 ---
 
-# 7. Multi-way decisions with `elif`
+## Multi-way decisions with `elif`
 
 Sometimes there are more than two meaningful outcomes.
 
-## 7.1 Classifying engagement
+## Classifying engagement
 
 ```python
 engagement = 125
@@ -797,7 +812,7 @@ Only the first matching branch is executed.
 
 ---
 
-## 7.2 Order matters
+## Order matters
 
 Consider this incorrect order:
 
@@ -837,7 +852,7 @@ Check the most restrictive or highest threshold first.
 
 ---
 
-## 7.3 A more detailed classification
+## A more detailed classification
 
 ```python
 missing_percentage = 18
@@ -877,7 +892,7 @@ if status == "Substantial missingness":
 
 ---
 
-## 7.4 Boundary testing
+## Boundary testing
 
 When writing thresholds, test values directly around the boundaries.
 
@@ -954,11 +969,13 @@ else:
 
 ---
 
-# 8. Combining conditions with logical operators
+# Tutorial 2.9 — Logical operators and nested decisions
+
+## Combining conditions with logical operators
 
 Logical operators allow a program to combine or reverse conditions.
 
-## 8.1 `and`
+## `and`
 
 Both conditions must be true.
 
@@ -987,7 +1004,7 @@ Truth pattern for `and`:
 
 ---
 
-## 8.2 `or`
+## `or`
 
 At least one condition must be true.
 
@@ -1009,7 +1026,7 @@ The first condition is false, but the second condition is true.
 
 ---
 
-## 8.3 `not`
+## `not`
 
 `not` reverses a Boolean value.
 
@@ -1032,7 +1049,7 @@ The condition reads:
 
 ---
 
-## 8.4 A combined example
+## A combined example
 
 ```python
 actor_type = "Citizen Group"
@@ -1053,7 +1070,7 @@ Include in the high-engagement citizen-group review
 
 ---
 
-## 8.5 Parentheses for clarity
+## Parentheses for clarity
 
 Python has rules for evaluating logical expressions, but parentheses make your intention clearer.
 
@@ -1080,7 +1097,7 @@ Use parentheses when combining several conditions.
 
 ---
 
-## 8.6 Common mistake: repeating the variable incorrectly
+## Common mistake: repeating the variable incorrectly
 
 Incorrect:
 
@@ -1135,11 +1152,11 @@ if engagement >= 150 and (actor_type == "Citizen Group" or actor_type == "NGO"):
 
 ---
 
-# 9. Nested decisions
+## Nested decisions
 
 A nested decision is an `if` statement inside another decision.
 
-## 9.1 Basic nested example
+## Basic nested example
 
 ```python
 source_verified = True
@@ -1163,7 +1180,7 @@ The second decision is checked only when the first decision passes.
 
 ---
 
-## 9.2 Nested decision with alternatives
+## Nested decision with alternatives
 
 ```python
 source_verified = True
@@ -1186,7 +1203,7 @@ Verified record with normal engagement
 
 ---
 
-## 9.3 Avoid unnecessary nesting
+## Avoid unnecessary nesting
 
 This nested code:
 
@@ -1209,11 +1226,13 @@ Nested decisions are useful when the second question only makes sense after the 
 
 ---
 
-# 10. User input, type conversion and validation
+# Tutorial 2.10 — User input, validation and exceptions
+
+## User input, type conversion and validation
 
 The `input()` function always returns a string.
 
-## 10.1 Why conversion is necessary
+## Why conversion is necessary
 
 ```python
 engagement = input("Enter the engagement value: ")
@@ -1253,7 +1272,7 @@ if engagement > 100:
 
 ---
 
-## 10.2 Conversion in one line
+## Conversion in one line
 
 ```python
 engagement = int(input("Enter the engagement value: "))
@@ -1268,7 +1287,7 @@ This is concise, but a conversion error will stop the program when the user ente
 
 ---
 
-## 10.3 Input assumptions
+## Input assumptions
 
 Consider:
 
@@ -1291,9 +1310,9 @@ Good programming requires thinking about the assumptions behind input.
 
 ---
 
-# 11. Handling errors with `try` and `except`
+## Handling errors with `try` and `except`
 
-## 11.1 Why error handling matters
+## Why error handling matters
 
 Without error handling:
 
@@ -1323,7 +1342,7 @@ Error: enter a whole number
 
 ---
 
-## 11.2 Understanding the structure
+## Understanding the structure
 
 ```python
 try:
@@ -1336,7 +1355,7 @@ Python first attempts the `try` block. When an error occurs, it moves to the `ex
 
 ---
 
-## 11.3 Catching a specific error
+## Catching a specific error
 
 It is usually better to name the expected error.
 
@@ -1352,7 +1371,7 @@ This handles `ValueError` without hiding every possible problem.
 
 ---
 
-## 11.4 Adding a decision after valid input
+## Adding a decision after valid input
 
 ```python
 try:
@@ -1371,7 +1390,7 @@ except ValueError:
 
 ---
 
-## 11.5 Valid type but invalid range
+## Valid type but invalid range
 
 A value can be correctly converted but still be unreasonable.
 
@@ -1398,7 +1417,7 @@ This distinguishes:
 
 ---
 
-## 11.6 Avoid a completely empty `except`
+## Avoid a completely empty `except`
 
 A broad `except:` can hide unexpected problems. In beginner exercises, it may be used to introduce the concept, but prefer specific errors where possible.
 
@@ -1451,7 +1470,68 @@ except ValueError:
 
 ---
 
-# 12. Repetition and loops
+# Tutorial 2.11 — Collections, for loops and counters
+
+# Collections needed before CSV and JSON
+
+CSV and JSON tutorials introduce new file formats, but the values read from them are normally organised with Python collections. A **list** keeps an ordered sequence, a **dictionary** connects keys with values, and a **set** keeps unique values. A list of dictionaries is especially important because each dictionary can represent one record before the same structure is written to or read from a file.
+
+## Lists: ordered values
+
+```python
+campuses = ["Aalborg", "Copenhagen"]
+campuses.append("Online")
+
+print(campuses[0])
+print(len(campuses))
+print(campuses)
+```
+
+Lists use square brackets. Index positions begin at zero, `append()` adds one value at the end and `len()` reports the number of items.
+
+## Dictionaries: labelled values
+
+```python
+registration = {
+    "participant_id": "CPH-014",
+    "campus": "Copenhagen",
+    "attending": True,
+}
+
+print(registration["campus"])
+registration["group"] = 3
+print(registration)
+```
+
+Dictionary keys make a record easier to interpret than a sequence of unexplained positions. Accessing a missing key with square brackets raises `KeyError`; `registration.get("email")` would instead return `None` when the key is absent.
+
+## Sets: unique values
+
+```python
+submitted_ids = ["A12", "B07", "A12", "C03"]
+unique_ids = set(submitted_ids)
+
+print(unique_ids)
+print(len(unique_ids))
+```
+
+A set removes repeated values and is useful for membership checks. Sets are not a substitute for preserving the original ordered records, because they discard duplicate occurrences and do not communicate why a duplicate appeared.
+
+## A list of dictionaries: records ready for later file work
+
+```python
+observations = [
+    {"record_id": 1, "category": "Bus", "minutes": 12},
+    {"record_id": 2, "category": "Cycle", "minutes": 8},
+]
+
+for observation in observations:
+    print(observation["record_id"], observation["category"], observation["minutes"])
+```
+
+Every dictionary uses the same keys, which is the structure students will meet again as CSV column names and JSON object properties. Before moving on, practise reading, updating and looping through this structure without changing the raw source records accidentally.
+
+## Repetition and loops
 
 A loop repeats a block of code.
 
@@ -1464,9 +1544,9 @@ A `for` loop is normally used when you have a known sequence, range or collectio
 
 ---
 
-# 13. `for` loops
+## `for` loops
 
-## 13.1 A simple definite loop
+## A simple definite loop
 
 ```python
 for number in [1, 2, 3]:
@@ -1497,7 +1577,7 @@ Each time through the loop, `number` receives the next value.
 
 ---
 
-## 13.2 Looping through strings
+## Looping through strings
 
 ```python
 topics = ["Cycling", "Public Transport", "Accessibility"]
@@ -1526,7 +1606,7 @@ The indented line runs once for each value.
 
 ---
 
-## 13.3 The code after the loop
+## The code after the loop
 
 ```python
 topics = ["Cycling", "Public Transport", "Accessibility"]
@@ -1550,7 +1630,7 @@ The final line is not indented, so it runs after the loop finishes.
 
 ---
 
-## 13.4 Using `range()`
+## Using `range()`
 
 `range()` generates a sequence of integers.
 
@@ -1573,7 +1653,7 @@ for number in range(5):
 
 ---
 
-## 13.5 Starting and stopping a range
+## Starting and stopping a range
 
 ```python
 for number in range(1, 6):
@@ -1594,7 +1674,7 @@ The first argument is the starting value. The second is the stopping point, whic
 
 ---
 
-## 13.6 Adding a step
+## Adding a step
 
 ```python
 for number in range(0, 11, 2):
@@ -1622,7 +1702,7 @@ increase by 2
 
 ---
 
-## 13.7 Repeating a message
+## Repeating a message
 
 ```python
 for repetition in range(3):
@@ -1648,7 +1728,7 @@ for _ in range(3):
 
 ---
 
-## 13.8 Conditions inside a loop
+## Conditions inside a loop
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -1675,7 +1755,7 @@ This combines repetition with decision-making.
 
 ---
 
-## 13.9 Counting values that meet a condition
+## Counting values that meet a condition
 
 ```python
 engagement_values = [35, 120, 240, 80, 310]
@@ -1728,7 +1808,7 @@ high_count += 1
 
 ---
 
-## 13.10 Accumulating a total
+## Accumulating a total
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -1765,7 +1845,7 @@ Later, pandas will calculate summaries more directly. This example helps you und
 
 ---
 
-## 13.11 Deliberate indentation error
+## Deliberate indentation error
 
 Broken:
 
@@ -1819,11 +1899,13 @@ for topic in topics:
 
 ---
 
-# 14. `while` loops
+# Tutorial 2.12 — While loops and loop control
+
+## `while` loops
 
 A `while` loop repeats while a condition remains true.
 
-## 14.1 Countdown example
+## Countdown example
 
 ```python
 number = 5
@@ -1876,7 +1958,7 @@ is the update.
 
 ---
 
-## 14.2 An infinite loop
+## An infinite loop
 
 This code never changes `number`:
 
@@ -1905,7 +1987,7 @@ while number > 0:
 
 ---
 
-## 14.3 A loop that never starts
+## A loop that never starts
 
 ```python
 number = 0
@@ -1926,7 +2008,7 @@ The condition is false before the first iteration.
 
 ---
 
-## 14.4 Repeating until valid input
+## Repeating until valid input
 
 ```python
 valid_input = False
@@ -1953,7 +2035,7 @@ This is a meaningful use of a `while` loop because the number of attempts is unk
 
 ---
 
-## 14.5 `for` or `while`?
+## `for` or `while`?
 
 Use a `for` loop when you know the sequence or number of repetitions:
 
@@ -1973,11 +2055,11 @@ For beginners, `for` loops are usually safer and more common in data processing.
 
 ---
 
-# 15. Loop-control statements
+## Loop-control statements
 
 This section is useful, but it can be treated as **recommended rather than essential**.
 
-## 15.1 `break`
+## `break`
 
 `break` ends the loop immediately.
 
@@ -2005,7 +2087,7 @@ When `"STOP"` is reached, the loop ends.
 
 ---
 
-## 15.2 `continue`
+## `continue`
 
 `continue` skips the rest of the current iteration and moves to the next one.
 
@@ -2031,13 +2113,15 @@ The missing value is skipped.
 
 ---
 
-## 15.3 Use with care
+## Use with care
 
 `break` and `continue` can be helpful, but too many control statements can make a loop difficult to follow. Prefer clear conditions and meaningful variable names.
 
 ---
 
-# 16. Functions
+# Tutorial 2.13 — Functions, parameters and return values
+
+## Functions
 
 A function is a named block of reusable code.
 
@@ -2051,7 +2135,7 @@ Functions help you:
 
 ---
 
-## 16.1 Defining and calling a function
+## Defining and calling a function
 
 ```python
 def show_welcome():
@@ -2093,7 +2177,7 @@ Defining a function does not automatically run it.
 
 ---
 
-## 16.2 Meaningful function names
+## Meaningful function names
 
 Good names:
 
@@ -2117,7 +2201,7 @@ A function name should describe the action.
 
 ---
 
-## 16.3 Parameters and arguments
+## Parameters and arguments
 
 ```python
 def greet_actor(actor_name):
@@ -2154,7 +2238,7 @@ greet_actor("Green Streets Association")
 
 ---
 
-## 16.4 Multiple parameters
+## Multiple parameters
 
 ```python
 def show_record(actor_name, topic, engagement):
@@ -2177,7 +2261,7 @@ The order of arguments should match the order of parameters.
 
 ---
 
-## 16.5 Returning a value
+## Returning a value
 
 A function can calculate and return a result.
 
@@ -2212,7 +2296,7 @@ stores the returned value in `result`.
 
 ---
 
-## 16.6 `print()` and `return` are not the same
+## `print()` and `return` are not the same
 
 Printing:
 
@@ -2241,7 +2325,7 @@ When a function only prints, the printed result is visible but is not automatica
 
 ---
 
-## 16.7 A function with conditional logic
+## A function with conditional logic
 
 ```python
 def classify_engagement(engagement):
@@ -2269,7 +2353,7 @@ The function can be reused with different values.
 
 ---
 
-## 16.8 A function with validation
+## A function with validation
 
 ```python
 def classify_percentage(percentage):
@@ -2297,7 +2381,7 @@ Invalid percentage
 
 ---
 
-## 16.9 Local and global variables
+## Local and global variables
 
 This is an important idea, but it does not need advanced treatment yet.
 
@@ -2329,7 +2413,7 @@ Avoid relying heavily on global variables.
 
 ---
 
-## 16.10 Deliberate function errors
+## Deliberate function errors
 
 ### Error 1: Function not called
 
@@ -2414,9 +2498,9 @@ Expected output:
 
 ---
 
-# 17. Combining loops and functions
+## Combining loops and functions
 
-## 17.1 Apply one function to several values
+## Apply one function to several values
 
 ```python
 def classify_engagement(engagement):
@@ -2451,7 +2535,7 @@ Later, data-processing libraries will perform similar repeated operations across
 
 ---
 
-## 17.2 Count function results
+## Count function results
 
 ```python
 def classify_engagement(engagement):
@@ -2482,7 +2566,7 @@ High-engagement count: 2
 
 ---
 
-## 17.3 More advanced example: produce a simple report
+## More advanced example: produce a simple report
 
 ```python
 def classify_engagement(engagement):
@@ -2540,7 +2624,9 @@ This example combines:
 
 ---
 
-# 18. Modules and libraries
+# Tutorial 2.14 — Imports, libraries and systematic debugging
+
+## Modules and libraries
 
 A module contains reusable Python code. A library is a broader collection of tools. In beginner practice, the terms are sometimes used informally, but the core idea is the same:
 
@@ -2548,7 +2634,7 @@ A module contains reusable Python code. A library is a broader collection of too
 
 ---
 
-## 18.1 Importing a standard module
+## Importing a standard module
 
 ```python
 import math
@@ -2581,7 +2667,7 @@ The dot connects the module name and the function.
 
 ---
 
-## 18.2 Importing one item
+## Importing one item
 
 ```python
 from math import sqrt
@@ -2608,15 +2694,9 @@ shows that `sqrt()` comes from `math`.
 
 ---
 
-## 18.3 Using an alias
+## Using an alias
 
-Later you will see:
-
-```python
-import pandas as pd
-```
-
-`pd` is an alias, or shorter name, for pandas.
+Later, the pandas tutorial will use `import pandas as pd` after its package setup. `pd` is the conventional alias, or shorter name, for pandas. Do not run that preview in this standard-library-only foundation tutorial.
 
 A standard example:
 
@@ -2642,7 +2722,7 @@ Python allows it, but it makes the code harder to understand.
 
 ---
 
-## 18.4 Example with the `random` module
+## Example with the `random` module
 
 ```python
 import random
@@ -2659,7 +2739,7 @@ For reproducible data analysis, randomness must be controlled and documented. Th
 
 ---
 
-## 18.5 Import errors
+## Import errors
 
 This code contains a spelling error:
 
@@ -2697,7 +2777,7 @@ print(math.sqrt(16))
 
 ---
 
-# 19. Reading and responding to errors
+## Reading and responding to errors
 
 Errors are normal evidence that Python reached something it could not interpret or execute.
 
@@ -2713,7 +2793,7 @@ A useful debugging routine is:
 
 ---
 
-## 19.1 `SyntaxError`
+## `SyntaxError`
 
 Example:
 
@@ -2733,7 +2813,7 @@ if engagement > 100:
 
 ---
 
-## 19.2 `IndentationError`
+## `IndentationError`
 
 Example:
 
@@ -2751,7 +2831,7 @@ for topic in topics:
 
 ---
 
-## 19.3 `NameError`
+## `NameError`
 
 Example:
 
@@ -2771,7 +2851,7 @@ print(engagement)
 
 ---
 
-## 19.4 `TypeError`
+## `TypeError`
 
 Example:
 
@@ -2793,7 +2873,7 @@ print(result)
 
 ---
 
-## 19.5 `ValueError`
+## `ValueError`
 
 Example:
 
@@ -2814,25 +2894,25 @@ except ValueError:
 
 ---
 
-## 19.6 `ModuleNotFoundError`
+## `ModuleNotFoundError`
 
 Example:
 
 ```python
-import pandass
+import statisticss
 ```
 
 Possible repair:
 
 ```python
-import pandas
+import statistics
 ```
 
-Check both spelling and whether the package exists in the environment.
+Check the spelling first. `statistics` is part of the Python standard library, so this repair does not require a package installation.
 
 ---
 
-## 19.7 `TypeError` from a missing function argument
+## `TypeError` from a missing function argument
 
 Example:
 
@@ -2851,7 +2931,7 @@ result = classify(120)
 
 ---
 
-## 19.8 Logic errors
+## Logic errors
 
 A logic error does not necessarily produce an error message. The program runs, but the result is wrong.
 
@@ -2884,7 +2964,7 @@ Logic errors require testing and domain understanding.
 
 ---
 
-# 20. Tracing code manually
+## Tracing code manually
 
 Tracing means following how variables change line by line.
 
@@ -2925,11 +3005,13 @@ Tracing is particularly helpful for:
 
 ---
 
-# 21. Integrated case: Green Mobility data-quality checker
+# Tutorial 2.15 — Applied Python problem solving
+
+## Worked example A — Green Mobility data-quality checker
 
 This case combines the core ideas from the tutorial.
 
-## 21.1 Case description
+### Situation description
 
 A municipality is preparing consultation records for analysis. Before continuing, staff want a simple Python script that:
 
@@ -2945,7 +3027,7 @@ This is not a complete professional data-quality system. It is a bounded learnin
 
 ---
 
-## 21.2 Step 1: Write the process in plain language
+### Step 1: Write the process in plain language
 
 ```text
 START
@@ -2961,7 +3043,7 @@ END
 
 ---
 
-## 21.3 Step 2: Create the classification function
+### Step 2: Create the classification function
 
 ```python
 def classify_missingness(percentage):
@@ -2991,7 +3073,7 @@ Minor missingness
 
 ---
 
-## 21.4 Step 3: Add input and error handling
+### Step 3: Add input and error handling
 
 ```python
 try:
@@ -3006,7 +3088,7 @@ This catches conversion errors, but it does not yet calculate anything.
 
 ---
 
-## 21.5 Step 4: Add validation
+### Step 4: Add validation
 
 ```python
 try:
@@ -3028,7 +3110,7 @@ except ValueError:
 
 ---
 
-## 21.6 Step 5: Complete the script
+### Step 5: Complete the script
 
 ```python
 def classify_missingness(percentage):
@@ -3085,7 +3167,7 @@ Classification: Moderate missingness
 
 ---
 
-## 21.7 Line-by-line review
+### Line-by-line review
 
 ### Function definition
 
@@ -3165,7 +3247,7 @@ Runs when conversion to an integer fails.
 
 ---
 
-## 21.8 Test plan
+### Test plan
 
 Do not test only one successful example.
 
@@ -3185,7 +3267,7 @@ Do not test only one successful example.
 
 ---
 
-## 21.9 Critical reflection
+### Critical reflection
 
 The thresholds in this example are invented for teaching. They should not be treated as universal standards.
 
@@ -3201,7 +3283,7 @@ A script can apply rules consistently, but it cannot decide whether the rules ar
 
 ---
 
-# 22. Advanced example: reviewing several records
+## Worked example B — Reviewing several records
 
 This example is more challenging. It combines a list, a function, a loop, conditions and counters.
 
@@ -3274,7 +3356,181 @@ Later, pandas will represent this kind of tabular information more clearly.
 
 ---
 
-# 23. Student activities
+## Ten situational exercises combining Python Foundations I and II
+
+The ten exercises below are longer than the focused checkpoints. Each one requires you to translate a situation into variables, decisions, repetition and functions before writing the final program. The instruction notebook contains the situations and ordered code plans without the finished answers; the solution notebook contains a separate, fully commented answer for every number.
+
+## Exercise 2.15.1 — Allocate TAN7 project groups across two campuses
+
+AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. Copenhagen has 45 students and Aalborg has 36 students, and the coordinators want groups of four or five without mixing campuses. A group of fewer than four should be reported for manual coordination rather than silently accepted. The coordinators also need a readable campus-by-campus summary showing group sizes, the number of groups and whether anyone remains unassigned.
+
+**Code plan**
+
+1. Store the two campus names and student counts in a dictionary.
+2. Write a function that first tries groups of five and then redistributes students so every group has four or five members.
+3. Loop through the campuses and call the function for each count.
+4. Validate that every generated size is four or five and that the sizes add back to the original count.
+5. Print a transparent report and state that accessibility, student preferences and prior collaboration still require human coordination.
+
+- [Open Exercise 2.15.1 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.1 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.2 — Check a municipal mobility dataset before analysis
+
+A municipality expects 240 consultation records, but the received extract contains 233 records. Seven records have missing consent information, three identifiers are duplicated and the team has not yet established whether those categories overlap. The analyst must calculate transparent quality indicators without calling the remaining records automatically “good”. A compact report should flag impossible counts, calculate a provisional retention rate and preserve a note about the unresolved overlap assumption.
+
+**Code plan**
+
+1. Store the expected, received, missing-consent and duplicate counts with meaningful names.
+2. Write a validation function that rejects negative values and problem counts greater than received records.
+3. Ask explicitly whether the two problem categories overlap, and keep the answer as a documented assumption.
+4. Calculate the retained count and rate only when the inputs are logically valid.
+5. Print the indicators, flags and limitation note with clear labels.
+
+- [Open Exercise 2.15.2 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.2 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.3 — Build a bounded course-keyword guessing activity
+
+A lecturer wants a short guessing activity that helps students recognise Python keywords. The program should choose from a documented list, reveal correctly guessed letters and stop after six incorrect attempts. Invalid entries such as numbers, symbols or more than one letter should not consume an attempt. The final message must reveal the word and show whether the learner completed it within the stated limit.
+
+**Code plan**
+
+1. Import `random`, store the allowed words and select one reproducibly with a fixed seed.
+2. Write one function that builds the visible word from the secret word and guessed letters.
+3. Use a bounded `while` loop for the attempts and a set for letters already tried.
+4. Validate each simulated or keyboard entry before updating the game state.
+5. Test a successful path, repeated-letter input and an unsuccessful path.
+
+**Adaptation note:** This exercise adapts the word-guessing structure in Rodrigo Pinheiro’s [`hangman.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/hangman.py). The teaching version is rewritten for deterministic Colab execution and the learning scope of Tutorials 2.1–2.15.
+
+- [Open Exercise 2.15.3 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.3 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.4 — Scale ingredients for a community cooking workshop
+
+A community centre offers three recipes and needs an ingredient list for a chosen number of participants. Every recipe contains ingredient names, quantities and units, but quantities must be multiplied consistently and ingredients with different units must remain separate. The organiser may enter a recipe name with extra spaces or different capitalisation. The program should either produce a scaled list or display the available recipe names without crashing.
+
+**Code plan**
+
+1. Represent the cookbook as a dictionary whose values are lists of ingredient dictionaries.
+2. Write a normalisation function for the requested recipe name.
+3. Write a scaling function that validates the portion count and returns new result records.
+4. Loop through the scaled records and display quantities with their units.
+5. Test a known recipe, an unknown recipe, zero portions and a decimal quantity.
+
+**Adaptation note:** The data-structure idea is adapted from Rodrigo Pinheiro’s [`session03_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session03_exercises.py). The situation, recipe records, validation and complete solution are newly written.
+
+- [Open Exercise 2.15.4 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.4 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.5 — Design an ethical feedback collector
+
+A project team wants to collect a product name, a rating from one to five and an optional comment. A previous design repeatedly pressured respondents who selected fewer than four stars, which would distort the evidence and disrespect participants. The replacement must accept every valid rating, reject only values outside the scale and let the participant skip the comment. The final summary should count ratings without changing them and include a warning when the sample is too small for strong claims.
+
+**Code plan**
+
+1. Write a function that converts a rating and validates the one-to-five range.
+2. Process several simulated responses so the notebook can run from top to bottom without waiting for input.
+3. Preserve each valid response as a dictionary and record invalid responses separately.
+4. Use a loop to count rating frequencies and calculate a mean only when valid responses exist.
+5. Print the summary and a short methodological warning.
+
+**Adaptation note:** This exercise critically redesigns the manipulative rating prompt in Rodrigo Pinheiro’s [`session02_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session02_exercises.py). It uses the original as an ethical discussion point rather than reproducing its behaviour.
+
+- [Open Exercise 2.15.5 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.5 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.6 — Convert and classify fieldwork temperatures
+
+A fieldwork team records temperatures in either Celsius or Fahrenheit and wants a common Celsius summary. Each record includes a place label, a numerical value and a unit entered as text. Unit labels may contain spaces or lower-case letters, while unknown units must be sent for review. The program should preserve the original record, create converted records and classify Celsius values as freezing, cool, moderate or hot using documented project thresholds.
+
+**Code plan**
+
+1. Store several observations as a list of dictionaries.
+2. Write one function to normalise the unit and another to convert a value to Celsius.
+3. Write a classification function with explicit boundary tests.
+4. Loop through the observations, catch unsuitable numerical values and preserve invalid records for review.
+5. Display both original and converted values so the transformation remains traceable.
+
+**Adaptation note:** The conversion idea is adapted from Rodrigo Pinheiro’s [`session01_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session01_exercises.py) and [`session05_functions_in_class.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session05_functions_in_class.py). The record-based workflow and validation are newly written.
+
+- [Open Exercise 2.15.6 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.6 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.7 — Validate workshop registrations and waiting-list priority
+
+An AAU workshop has 24 places and receives registrations containing a participant code, campus and accessibility-support flag. Duplicate participant codes must not receive a second place, and incomplete records must be kept for human review. When capacity is reached, later valid registrations enter a waiting list without being deleted. The output should show accepted, waiting and review lists while making clear that accessibility needs are not a basis for exclusion.
+
+**Code plan**
+
+1. Store registrations as a list of dictionaries and prepare three empty output lists.
+2. Write a validation function for required fields and recognised campuses.
+3. Use a set to identify duplicate participant codes.
+4. Loop through every registration and assign it to review, accepted or waiting according to the documented order.
+5. Print counts and identifiers, then test the exact-capacity boundary.
+
+- [Open Exercise 2.15.7 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.7 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.8 — Triage municipal service requests transparently
+
+A municipal help desk receives requests with an identifier, category, urgency label and location status. Safety-related requests without a confirmed location require human review rather than automatic prioritisation. Valid urgent or accessibility-related requests enter a priority queue, while other valid requests enter a standard queue. The program must process every record once, preserve its identifier and explain the rule that produced each destination.
+
+**Code plan**
+
+1. Represent requests as a list of dictionaries with consistent keys.
+2. Write a function that returns both a destination and a reason.
+3. Validate the identifier and required fields before applying the routing rules.
+4. Loop through the records and append an annotated result to the appropriate queue.
+5. Print queue summaries and test missing, urgent, accessibility and ordinary inputs.
+
+- [Open Exercise 2.15.8 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.8 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.9 — Review confidence scores without hiding uncertainty
+
+A research team assigns confidence scores from zero to one hundred to coded interview excerpts. Scores at or above 80 are provisionally labelled high confidence, scores from 50 to 79 require review and lower scores receive a low-confidence flag. Missing or out-of-range scores must not be forced into one of the three categories. The report should count each outcome, list the records needing human attention and state that the thresholds do not measure truth.
+
+**Code plan**
+
+1. Store coded records as dictionaries containing an identifier and score.
+2. Write a classification function that returns an invalid status for missing or out-of-range values.
+3. Loop through every record and maintain counters in a dictionary.
+4. Collect the identifiers requiring review or correction.
+5. Print a summary and test 49, 50, 79, 80, `None` and 101 as boundaries.
+
+- [Open Exercise 2.15.9 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.9 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+## Exercise 2.15.10 — Prepare structured records for the next CSV and JSON lesson
+
+A team has received five service observations represented as dictionaries with the same intended fields: identifier, category, minutes and resolved status. Some values contain outer spaces, one duration is numerical-looking text and one record is missing a category. Before writing any CSV or JSON file, students must normalise the records in memory and keep rejected records separate. The final program should produce a clean list of dictionaries whose keys and types are consistent enough for the next tutorial.
+
+**Code plan**
+
+1. Store the raw list without overwriting it and define the required keys.
+2. Write small functions to normalise text, convert duration and validate one record.
+3. Loop through the raw records, building clean copies or documented rejection records.
+4. Verify that every clean record has the same keys and intended value types.
+5. Print clean and rejected summaries, then explain how the structure maps naturally to CSV rows and JSON objects.
+
+- [Open Exercise 2.15.10 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Exercise 2.15.10 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
+---
+
+## Focused student activities
 
 ## Activity 1: Predict and run
 
@@ -3392,7 +3648,7 @@ Requirements:
 
 ---
 
-## Activity 7: Meaningful mini-case
+## Activity 7: Confidence-score classification exercise
 
 A research team has assigned confidence scores from `0` to `100` to several coded records:
 
@@ -3418,7 +3674,7 @@ Then reflect:
 
 ---
 
-# 24. Self-test
+## Self-test
 
 Answer without running code first.
 
@@ -3527,7 +3783,7 @@ Why can a program run without an error message and still be wrong?
 
 ---
 
-# 25. Common mistakes checklist
+## Common mistakes checklist
 
 Before asking for help, check:
 
@@ -3547,7 +3803,7 @@ Before asking for help, check:
 
 ---
 
-# 26. Responsible use of AI for this tutorial
+## Responsible use of AI for this tutorial
 
 AI tools may help you:
 
@@ -3589,7 +3845,7 @@ The first prompt supports learning. The second encourages blind replacement.
 
 ---
 
-# 27. Original Colab screenshots used by the website
+## Original Colab screenshots used by the website
 
 These are original captures from the published Lecture 4 course notebook. Code remains selectable in the tutorial and is also available through the linked GitHub and Colab companions.
 
@@ -3611,7 +3867,7 @@ The screenshots exclude personal information, private browser details, API keys 
 
 ---
 
-# 28. Suggested lecture delivery plan
+## Suggested lecture delivery plan
 
 The tutorial is intentionally more detailed than can be covered line by line during one class. Students can use it before, during and after the lecture.
 
@@ -3651,12 +3907,12 @@ The tutorial is intentionally more detailed than can be covered line by line dur
 - functions with conditions
 - functions inside loops
 - importing modules
-- integrated mini-case
+- applied problem-solving exercise
 - debugging and reflection
 
 ---
 
-# 29. What comes next
+## What comes next
 
 In the next part of the course, you will begin working with CSV files and pandas.
 
@@ -3682,7 +3938,7 @@ Pandas introduces new structures and syntax, but it builds on the Python ideas y
 
 ---
 
-# 30. Glossary
+## Glossary
 
 | Term | Beginner-friendly meaning |
 |---|---|
@@ -3711,7 +3967,7 @@ Pandas introduces new structures and syntax, but it builds on the Python ideas y
 
 ---
 
-# 31. Source and scope note
+## Source and scope note
 
 The topic selection for this tutorial follows the earlier course materials on:
 
@@ -3728,7 +3984,7 @@ The material has been reorganised and expanded for the 2026 beginner-oriented co
 
 ---
 
-# 32. Completion checklist
+## Completion checklist
 
 Before moving to CSV and pandas, you should be able to say:
 

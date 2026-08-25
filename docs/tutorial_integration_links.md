@@ -12,7 +12,7 @@ Use this map when adding repository and Google Colab buttons to the scripting tu
 
 ## Part II — Python Foundations
 
-The previous Section 1.3 becomes the start of Part II. Its seven website tutorials are numbered 2.1–2.7. Python Foundations II then continues without restarting, using 2.8–2.14.
+The previous Section 1.3 becomes the start of Part II. Its seven website tutorials are numbered 2.1–2.7. Python Foundations II then continues without restarting, using 2.8–2.15.
 
 ### Tutorials 2.1–2.7 — Python Foundations I / Lecture 3
 
@@ -23,12 +23,14 @@ The previous Section 1.3 becomes the start of Part II. Its seven website tutoria
 
 Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `2.1.1`; each exercise and practice case is placed directly under its matching website subsection.
 
-### Tutorials 2.8–2.14 — Python Foundations II / Lecture 4
+### Tutorials 2.8–2.15 — Python Foundations II / Lecture 4
 
-- Complete website-code companion: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_complete_python_foundations_II_tutorial.ipynb
-- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L04_examples_control_flow_collections_functions.ipynb
-- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L04_exercises_control_flow_collections_functions.ipynb
-- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L04_solutions_control_flow_collections_functions.ipynb
+- Website examples for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb
+- Focused exercises for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Exercises.ipynb
+- Numbered solutions for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb
+- Ten situational exercises for Tutorial 2.15: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb
+- Fully commented solutions for Tutorial 2.15: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb
+- Lecture 4 GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04
 
 ## Part III — Data Handling, Text Analysis and Visualisation
 
