@@ -29,7 +29,8 @@ Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `
 - Focused exercises for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Exercises.ipynb
 - Numbered solutions for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb
 - Ten situational exercises for Tutorial 2.15: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb
-- Fully commented solutions for Tutorial 2.15: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb
+- Website worked examples and fully commented solutions for Tutorial 2.15: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb
+- Answers and executable checks for the 24-question cumulative self-test: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb
 - Lecture 4 GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04
 
 ## Part III — Data Handling, Text Analysis and Visualisation

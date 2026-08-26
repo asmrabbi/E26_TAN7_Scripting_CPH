@@ -2,9 +2,7 @@
 
 **Course:** Introduction to Scripting, Data Mining and Machine Learning  
 **Audience:** Programming beginners in Techno-Anthropology and related social-science programmes  
-**Tutorial status:** Core  
-**Estimated study time:** 8 to 10 hours, including exercises and independent practice
-**Suggested lecture use:** Four 45-minute teaching slots, supported by pre-lecture and post-lecture practice  
+**Estimated study time:** 12 to 16 hours, including the situational exercises and self-test
 **Primary environment:** Google Colab  
 **Prerequisite:** Python Foundations I, including variables, values, data types, expressions, `print()`, type conversion, user input and comments  
 
@@ -18,7 +16,8 @@
 - **Practise Tutorials 2.8–2.14:** [Open the Exercises notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Exercises.ipynb)
 - **Review the numbered answers for Tutorials 2.8–2.14:** [Open the Solutions notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb)
 - **Complete the situational exercises in Tutorial 2.15:** [Open the Applied Exercises notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- **Review the Tutorial 2.15 answers:** [Open the Applied Solutions notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- **Review the Tutorial 2.15 worked examples and answers:** [Open the Applied Solutions notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- **Check the cumulative self-test after attempting every question:** [Open the Self-test Answers notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb)
 - **Browse all Lecture 4 files on GitHub:** [Open the Lecture 4 folder](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 - **Report a problem:** [Open a GitHub issue](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/issues)
 
@@ -30,7 +29,7 @@ Lecture 4 uses only the Python standard library. No third-party package, dataset
 
 Use the tutorial number in each notebook heading to match it with the website. Start with the Examples notebook during teaching, use the Exercises notebook before consulting the numbered Solutions notebook, and keep Tutorial 2.15 for the longer situational problems that combine learning from both Python foundation sections.
 
-In Colab, choose **File > Save a copy in Drive** before editing. Run individual cells with the play button or **Shift+Enter**, and use **Runtime > Run all** to confirm that the entire notebook works from a fresh state. On a local computer, clone or download the repository, open the `notebooks/lecture_04` folder and run the notebooks with Python 3; the import examples use built-in modules such as `math`, `random` and `statistics`.
+In Colab, choose **File > Save a copy in Drive** before editing. Run individual cells with the play button or **Shift+Enter**. The Examples notebook pauses at clearly labelled interactive cells so that you can enter a value; the other notebooks can be checked with **Runtime > Run all** from a fresh state. On a local computer, clone or download the repository, open the `notebooks/lecture_04` folder and run the notebooks with Python 3; the import examples use built-in modules such as `math`, `random` and `statistics`.
 
 Use this cycle for every example: **predict → run → inspect → explain → modify → break → repair → test → reflect**. When code asks for keyboard input, test ordinary values, boundary values, unsuitable text and logically impossible values separately.
 
@@ -156,6 +155,12 @@ These are simplified teaching examples. Real data-quality decisions require cont
 ---
 
 # Tutorial 2.8 — Booleans, comparisons and decisions
+
+## Tutorial 2.8 overview
+
+A Boolean is a Python value that is either `True` or `False`, and comparisons are expressions that produce those values. Operators such as `==`, `!=`, `<`, `<=`, `>` and `>=` ask precise questions about numbers, text or other comparable values. An `if` statement runs its indented block only when its condition is true. An `elif` branch asks another question only after earlier branches were false, while `else` provides a fallback that has no condition of its own. Python executes only the first matching branch in an `if`–`elif`–`else` chain, so threshold order and boundary symbols matter. Indentation defines which statements belong to each branch and is part of Python syntax rather than optional formatting.
+
+**Core Python vocabulary:** Boolean, `True`, `False`, comparison, condition, `if`, `elif`, `else`, branch, equality, boundary and indentation.
 
 ## Boolean values and comparison operators
 
@@ -405,7 +410,7 @@ Both work. The second version gives a meaningful name to the condition.
 
 ---
 
-## Practice checkpoint 1
+## Practice checkpoint — Predict a Boolean boundary
 
 Predict the output:
 
@@ -613,7 +618,7 @@ You do not need to memorise every string method yet. The important idea is that 
 
 ---
 
-## Practice checkpoint 2
+## Practice checkpoint — Complete a one-way duplicate decision
 
 Complete the missing condition:
 
@@ -935,7 +940,7 @@ else:
 
 ---
 
-## Practice checkpoint 3
+## Practice checkpoint — Build a multi-way dataset-size decision
 
 Write a multi-way decision that classifies the number of records:
 
@@ -970,6 +975,12 @@ else:
 ---
 
 # Tutorial 2.9 — Logical operators and nested decisions
+
+## Tutorial 2.9 overview
+
+Logical operators combine or change Boolean expressions so a decision can use more than one rule. `and` is true only when both of its conditions are true, while `or` is true when at least one condition is true. `not` reverses a Boolean result and is often clearest when applied to a well-named Boolean variable. Parentheses make the intended grouping visible and prevent readers from guessing how several comparisons belong together. Python uses short-circuit evaluation, meaning it may stop evaluating an `and` or `or` expression as soon as the final result is already known. Nested decisions can represent dependent questions, but a flatter combined condition is often easier to trace when the questions are independent.
+
+**Core Python vocabulary:** logical operator, `and`, `or`, `not`, combined condition, parentheses, truth table, short-circuit evaluation and nested decision.
 
 ## Combining conditions with logical operators
 
@@ -1130,7 +1141,7 @@ The second version uses a list and the `in` operator.
 
 ---
 
-## Practice checkpoint 4
+## Practice checkpoint — Combine priority-review rules
 
 Create a condition that prints `"Priority review"` when:
 
@@ -1227,6 +1238,12 @@ Nested decisions are useful when the second question only makes sense after the 
 ---
 
 # Tutorial 2.10 — User input, validation and exceptions
+
+## Tutorial 2.10 overview
+
+The built-in `input()` function pauses a script and returns the learner's response as a string. Functions such as `int()` and `float()` convert suitable numerical text, but conversion alone does not prove that the number is possible in the situation. A `try` block contains an operation that may raise an expected exception, and an `except ValueError` block explains what to do when numerical conversion fails. Catching the specific error keeps unrelated programming mistakes visible instead of hiding them behind a broad `except`. Range checks and relationship checks belong after successful conversion because values such as `-5` or `120` may be valid numbers but invalid percentages. A robust input pathway therefore separates prompting, conversion, exception handling, situational validation and final use.
+
+**Core Python vocabulary:** `input()`, prompt, string input, conversion, validation, exception, `try`, `except`, `ValueError`, range check and relationship check.
 
 ## User input, type conversion and validation
 
@@ -1437,7 +1454,7 @@ except ValueError:
 
 ---
 
-## Practice checkpoint 5
+## Practice checkpoint — Repair numerical input handling
 
 Repair this program so that non-numeric input produces a helpful message:
 
@@ -1471,6 +1488,12 @@ except ValueError:
 ---
 
 # Tutorial 2.11 — Collections, for loops and counters
+
+## Tutorial 2.11 overview
+
+Collections let one variable organise several related values before the course moves to CSV and JSON data. A list preserves order and can contain repeated values, a dictionary connects keys with values, and a set stores unique values without relying on a meaningful position. A list of dictionaries can represent several records that share the same fields, which closely resembles rows and columns in later data work. A `for` loop visits each item in a collection or generated range and temporarily assigns that item to an iteration variable. Counters and totals must normally be initialised before the loop so each iteration updates rather than resets the accumulated result. Conditions inside a loop allow each item to be classified, counted or preserved for review.
+
+**Core Python vocabulary:** collection, list, dictionary, key, value, set, record, `for`, iteration variable, `range()`, counter and accumulator.
 
 # Collections needed before CSV and JSON
 
@@ -1867,7 +1890,7 @@ for topic in topics:
 
 ---
 
-## Practice checkpoint 6
+## Practice checkpoint — Loop through review topics
 
 Write a loop that prints each item with the phrase `"Topic under review:"`.
 
@@ -1900,6 +1923,12 @@ for topic in topics:
 ---
 
 # Tutorial 2.12 — While loops and loop control
+
+## Tutorial 2.12 overview
+
+A `while` loop repeats as long as its condition remains true, making it suitable when the number of repetitions is not known in advance. Every safe loop needs an initial state, a condition, a progress update and a reachable stopping point. If the condition never becomes false, the script enters an infinite loop and must be interrupted before it can continue. `break` exits the nearest loop immediately, while `continue` skips the rest of the current iteration and starts the next condition check. These statements can be useful, but they should not hide where progress and termination occur. Use a `for` loop for a known collection and a `while` loop for a genuinely condition-controlled process such as repeating until input is valid.
+
+**Core Python vocabulary:** `while`, loop condition, initial state, update, termination, infinite loop, `break`, `continue`, iteration and sentinel value.
 
 ## `while` loops
 
@@ -2120,6 +2149,12 @@ The missing value is skipped.
 ---
 
 # Tutorial 2.13 — Functions, parameters and return values
+
+## Tutorial 2.13 overview
+
+A function gives a reusable piece of logic a name and a clear boundary. The `def` keyword begins a function definition, parameters name the values the function expects, and arguments are the actual values supplied when the function is called. Statements inside the indented function body do not run until a call is made. `return` sends a result back to the caller so it can be stored, tested or used in another expression, whereas `print()` only displays information. Variables created inside a function are normally local to that call and should not be assumed to exist elsewhere. Small functions are easier to test when each one performs one calculation, classification or validation responsibility.
+
+**Core Python vocabulary:** function, `def`, function body, call, parameter, argument, `return`, return value, local variable and reusable logic.
 
 ## Functions
 
@@ -2466,7 +2501,7 @@ def greet(name):
 
 ---
 
-## Practice checkpoint 7
+## Practice checkpoint — Write a reusable completion-rate function
 
 Create a function called `calculate_completion_rate()` that:
 
@@ -2625,6 +2660,12 @@ This example combines:
 ---
 
 # Tutorial 2.14 — Imports, libraries and systematic debugging
+
+## Tutorial 2.14 overview
+
+An import makes code from another module available instead of requiring every operation to be written again. `import module` keeps the module name visible, `from module import name` imports a selected item, and `as` creates a local alias. Python's standard library is installed with Python, while third-party packages such as pandas require a separate installation step in an appropriate environment. A traceback reports where execution failed and names the exception that Python raised. Systematic debugging starts with the final traceback line, inspects the highlighted location, makes one justified repair and reruns a focused test. Logic errors need predicted outputs and boundary cases because a plausible but incorrect result may produce no traceback.
+
+**Core Python vocabulary:** module, library, standard library, third-party package, `import`, `from`, `as`, alias, traceback, exception and logic error.
 
 ## Modules and libraries
 
@@ -3006,6 +3047,14 @@ Tracing is particularly helpful for:
 ---
 
 # Tutorial 2.15 — Applied Python problem solving
+
+## Tutorial 2.15 overview
+
+Applied problem solving combines the separate ideas from Tutorials 2.1–2.14 into a complete and testable process. Begin by describing the situation in ordinary language, identifying inputs and rules, and separating calculations, decisions and repeated work into manageable responsibilities. Functions make those responsibilities reusable, while collections organise several records and loops apply the same process consistently. A useful solution includes normal cases, exact boundaries, unsuitable types, impossible relationships and explicit limitation notes rather than only one successful demonstration. The ten exercises below prepare students for later CSV and JSON work by producing consistent lists of dictionaries without yet reading or writing external files. The cumulative self-test then asks you to trace unfamiliar logic, diagnose errors and justify design choices before consulting its dedicated answer notebook.
+
+**Core Python vocabulary:** decomposition, requirement, validation function, structured record, list of dictionaries, test case, boundary case, exception path, reproducibility and limitation.
+
+The fully commented versions of Worked Examples A and B are included at the beginning of the [Tutorial 2.15 Applied Solutions notebook](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb).
 
 ## Worked example A — Green Mobility data-quality checker
 
@@ -3674,112 +3723,48 @@ Then reflect:
 
 ---
 
-## Self-test
+## Cumulative self-test
 
-Answer without running code first.
+Answer every question in ordinary language before running any Python. For tracing questions, write the value of each relevant variable after every step. The questions deliberately combine ideas from several tutorials, so an answer should explain the reasoning rather than provide only a final word or number.
 
-## Question 1
+### A. Conditions, logic and validation
 
-What is the difference between:
+1. Explain the different purposes of `records = 5` and `records == 5`. What type of value does the second expression produce?
+2. A decision checks `score >= 80`, then `score >= 60`, then uses `else`. Which branch is selected for scores `59`, `60`, `79` and `80`, and why is only one branch executed?
+3. A programmer checks `score >= 50` before an `elif score >= 80`. Explain why a score of `92` receives the wrong category and state the smallest structural repair.
+4. Evaluate the rule `consent_recorded and age >= 18 or staff_override` for the combinations `(True, 17, False)`, `(False, 21, False)` and `(False, 16, True)`. Explain how parentheses could make the intended policy clearer.
+5. Explain why `total_records > 0 and missing_records / total_records > 0.10` avoids division by zero when `total_records` is zero. Name the Python behaviour that makes this possible.
+6. A learner enters `12.5` when a program calls `int(input(...))`. Identify the exception path, then explain why changing to `float()` solves only the conversion question and not range validation.
 
-```python
-x = 5
-```
+### B. Collections and loop tracing
 
-and:
+7. Choose a list, dictionary or set for each purpose: preserving six responses in order, connecting one record identifier with named fields, and identifying unique category labels. Justify every choice and name one kind of information each structure could lose.
+8. Without running Python, list the values produced by `range(2, 11, 3)` and explain why `11` is not included.
+9. A counter is assigned zero inside a `for` loop immediately before it is increased. Explain the final result and move the initialisation to the correct conceptual location.
+10. Three records contain engagement values `80`, `120` and `200`. Trace a loop that adds every value to a total and increases `high_count` for values at least `100`. State the total, count and value of both variables after each iteration.
+11. A list of dictionaries is expected to use the key `"campus"`, but one record omits it. Compare the effect of `record["campus"]` with `record.get("campus")` and explain when silently accepting `None` would itself be risky.
+12. A `while` loop begins with `attempts = 3` and repeats while `attempts > 0`, but the body never changes `attempts`. Diagnose the problem, describe a repair and state one boundary test.
+13. A loop uses `continue` before the statement that updates its progress variable. Explain how this can create an infinite loop and reorganise the steps conceptually so every repeated path makes progress.
+14. Explain the difference between `break` and `continue` in a record-review loop. Give one situation where each is appropriate and one situation where it would hide unprocessed data.
 
-```python
-x == 5
-```
+### C. Functions, imports and debugging
 
-## Question 2
+15. A function displays a calculated percentage with `print()` but the caller tries to store its result and compare it with `80`. Explain the resulting value and replace the display responsibility with a reusable return responsibility.
+16. Distinguish a parameter from an argument using a function that classifies a missing-data percentage. What error occurs when the required argument is omitted?
+17. A variable named `status` is created inside a function and then printed outside the function without storing the returned result. Explain the scope problem and show the required flow in words.
+18. A classification function uses the boundaries below `50`, from `50` to `79`, and at least `80`. Specify tests for `49`, `50`, `79`, `80`, `None` and `101`, including which inputs require validation rather than classification.
+19. Compare `import statistics`, `from statistics import mean` and `import statistics as stats`. State how the call to `mean()` differs in each case and identify which names become available locally.
+20. Match each problem with its most likely error type: a missing colon, inconsistent indentation, an undefined variable, adding a string to an integer, converting `"many"` with `int()`, importing a misspelled module and calling a function without a required argument.
 
-What values can a Boolean have?
+### D. Integrated reasoning and critical testing
 
-## Question 3
+21. A dataset contains 500 records, 30 missing-consent records and 20 duplicates, but the categories may overlap. Calculate the provisional retained count under a non-overlap assumption, then explain why the same arithmetic may double-count exclusions.
+22. A group-allocation function claims to make groups of four or five for 36 students. Design at least four tests that check the group sizes, sum, exact boundary and an impossible small cohort. State what the function cannot decide about actual students.
+23. Five cleaned records will later become CSV rows or JSON objects. Describe the checks needed to confirm identical keys, stable value types, preserved identifiers and a separate rejection record for invalid input.
+24. A rule labels confidence scores at least `80` as high confidence. Explain how you would test its code, document its threshold and communicate why consistent classification does not prove that the scores or rule are valid.
 
-Why is indentation important?
-
-## Question 4
-
-What is printed?
-
-```python
-score = 75
-
-if score >= 80:
-    print("A")
-elif score >= 60:
-    print("B")
-else:
-    print("C")
-```
-
-## Question 5
-
-Why does this fail?
-
-```python
-number = input("Enter a number: ")
-print(number + 1)
-```
-
-## Question 6
-
-When is a `for` loop normally preferable to a `while` loop?
-
-## Question 7
-
-What is wrong?
-
-```python
-count = 5
-
-while count > 0:
-    print(count)
-```
-
-## Question 8
-
-What is a function parameter?
-
-## Question 9
-
-What does `return` do?
-
-## Question 10
-
-What error type is likely here?
-
-```python
-int("hello")
-```
-
-## Question 11
-
-What is the role of `import`?
-
-## Question 12
-
-Why can a program run without an error message and still be wrong?
-
-<details>
-<summary>Suggested self-test answers</summary>
-
-1. `=` assigns a value. `==` compares values.
-2. `True` and `False`.
-3. It defines code blocks and is part of Python syntax.
-4. `B`.
-5. `input()` returns a string, and the code tries to add an integer.
-6. When iterating through a known range or collection.
-7. The loop variable is never updated, so it becomes an infinite loop.
-8. A named input in a function definition.
-9. It sends a result back to the caller.
-10. `ValueError`.
-11. It makes code from a module or library available.
-12. It may contain a logic error or incorrect assumption.
-
-</details>
+- [Open the dedicated self-test answers in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb)
+- [View the self-test answer notebook on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb)
 
 ---
 
@@ -3842,73 +3827,6 @@ Fix everything.
 ```
 
 The first prompt supports learning. The second encourages blind replacement.
-
----
-
-## Original Colab screenshots used by the website
-
-These are original captures from the published Lecture 4 course notebook. Code remains selectable in the tutorial and is also available through the linked GitHub and Colab companions.
-
-![A complete if, elif and else decision with its output.](assets/PF2-01-colab-decisions.png)
-
-![Boundary values demonstrate how a rule treats values around each threshold.](assets/PF2-02-colab-boundaries.png)
-
-![A for loop accumulates several resolution-time observations.](assets/PF2-03-colab-for-loop.png)
-
-![A bounded while loop updates its counter and stops predictably.](assets/PF2-04-colab-while-loop.png)
-
-![Lists, sets and dictionaries organise values before validation.](assets/PF2-05-colab-collections.png)
-
-![A reusable validation function with normal and invalid tests.](assets/PF2-06-colab-function.png)
-
-![The integrated case applies the validation function to several records.](assets/PF2-07-colab-integrated-case.png)
-
-The screenshots exclude personal information, private browser details, API keys and secrets.
-
----
-
-## Suggested lecture delivery plan
-
-The tutorial is intentionally more detailed than can be covered line by line during one class. Students can use it before, during and after the lecture.
-
-## Slot 1: Conditions
-
-- Recap variables and types
-- Boolean values
-- Comparison operators
-- `if`, `else`, `elif`
-- Indentation
-- Predict-and-run tasks
-
-## Slot 2: Logical operators and input validation
-
-- `and`, `or`, `not`
-- Nested decisions
-- User input
-- Type conversion
-- `try` and `except`
-- Data-quality decision exercise
-
-## Slot 3: Loops
-
-- `for`
-- lists as short sequences
-- `range()`
-- counters and totals
-- conditions inside loops
-- `while`
-- infinite-loop awareness
-
-## Slot 4: Functions, imports and integration
-
-- define and call functions
-- parameters
-- return values
-- functions with conditions
-- functions inside loops
-- importing modules
-- applied problem-solving exercise
-- debugging and reflection
 
 ---
 

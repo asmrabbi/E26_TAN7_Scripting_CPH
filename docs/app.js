@@ -23,6 +23,7 @@ const pythonResourceLinks = {
     solutions: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb",
     appliedExercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb",
     appliedSolutions: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb",
+    selfTestAnswers: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb",
     github: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04"
   }
 };
@@ -61,15 +62,6 @@ const tutorialScreenshotAssets = {
   "PF1-05": { src: "assets/PF1-05-colab-code-text-toolbar.png?v=2", caption: "The + Code, + Text and Run all controls in the published course notebook." },
   "PF1-06": { src: "assets/PF1-06-colab-runtime-menu.png?v=2", caption: "The published notebook's Colab Runtime menu, including run-all and restart actions." },
   "PF1-07": { src: "assets/PF1-07-colab-traceback.png", caption: "A real, safely caught ValueError traceback from the Lecture 3 notebook." }
-};
-
-const pythonIIModuleScreenshots = {
-  "2.8": { src: "assets/PF2-01-colab-decisions.png", caption: "A complete if, elif and else decision with its output." },
-  "2.9": { src: "assets/PF2-02-colab-boundaries.png", caption: "Boundary values demonstrate how a rule treats values around each threshold." },
-  "2.11": { src: "assets/PF2-05-colab-collections.png", caption: "Lists, sets and dictionaries organise values before repeated processing." },
-  "2.12": { src: "assets/PF2-04-colab-while-loop.png", caption: "A bounded while loop updates its counter and stops predictably." },
-  "2.13": { src: "assets/PF2-06-colab-function.png", caption: "A reusable validation function with normal and invalid tests." },
-  "2.15": { src: "assets/PF2-07-colab-integrated-case.png", caption: "An applied exercise uses a validation function to process several records." }
 };
 
 function resolveTutorialResource(placeholder) {
@@ -1264,14 +1256,14 @@ function renderPythonFoundationIIOverview() {
       <section class="package-ilos foundation-ilos"><div><p class="eyebrow">Section 2.2 outcomes</p><h2>Intended learning outcomes</h2><p>These outcomes align with the syllabus emphasis on simple Python scripts, structured debugging and transparent explanation.</p></div><ul class="learning-list">${pythonFoundationIIIlos.map(ilo => `<li>${ilo}</li>`).join("")}</ul></section>
 
       <details class="foundation-guide">
-        <summary>Open course files, coding options and learning conventions</summary>
+        <summary>Open Lecture 4 course files and coding guide</summary>
         <div>${pythonFoundationIIGuide}</div>
       </details>
 
       <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Eight connected tutorials</p><h2 class="section-title">From Boolean questions to applied Python problem solving</h2></div><p>Study Tutorials 2.8–2.14 in order if decisions, collections, loops and functions are new. Tutorial 2.15 combines both Python foundation sections in ten situational exercises.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
       <section class="reading-panel python-resources">
-        <div><p class="eyebrow">Lecture 4 notebooks</p><h2>Match every tutorial with runnable material</h2><p>The examples notebook mirrors Tutorials 2.8–2.14. Numbered exercise and solution notebooks support focused practice, while Tutorial 2.15 has separate instruction and fully commented solution notebooks.</p><div class="reading-links"><a href="${pythonResourceLinks.foundationsII.examples}" target="_blank" rel="noreferrer">Tutorial Examples</a><a href="${pythonResourceLinks.foundationsII.exercises}" target="_blank" rel="noreferrer">Exercises</a><a href="${pythonResourceLinks.foundationsII.solutions}" target="_blank" rel="noreferrer">Numbered Solutions</a><a href="${pythonResourceLinks.foundationsII.appliedExercises}" target="_blank" rel="noreferrer">Tutorial 2.15 Instructions</a><a href="${pythonResourceLinks.foundationsII.appliedSolutions}" target="_blank" rel="noreferrer">Tutorial 2.15 Solutions</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code coverage map</a></div></div>
+        <div><p class="eyebrow">Lecture 4 notebooks</p><h2>Match every tutorial with runnable material</h2><p>The Examples notebook mirrors Tutorials 2.8–2.14. Focused exercises and solutions remain separate, Tutorial 2.15 has situational instructions and fully commented answers, and the cumulative self-test has its own answer notebook.</p><div class="reading-links"><a href="${pythonResourceLinks.foundationsII.examples}" target="_blank" rel="noreferrer">Tutorial Examples</a><a href="${pythonResourceLinks.foundationsII.exercises}" target="_blank" rel="noreferrer">Exercises</a><a href="${pythonResourceLinks.foundationsII.solutions}" target="_blank" rel="noreferrer">Numbered Solutions</a><a href="${pythonResourceLinks.foundationsII.appliedExercises}" target="_blank" rel="noreferrer">Tutorial 2.15 Instructions</a><a href="${pythonResourceLinks.foundationsII.appliedSolutions}" target="_blank" rel="noreferrer">Tutorial 2.15 Worked Examples and Solutions</a><a href="${pythonResourceLinks.foundationsII.selfTestAnswers}" target="_blank" rel="noreferrer">Self-test Answers</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code coverage map</a></div></div>
         <a class="resource-button reading-button" href="python-foundations-ii.md" download>↓ Download full Markdown</a>
       </section>
 
@@ -1331,13 +1323,12 @@ function showModule(id) {
       </header>
       <div class="main-column compact-column">
         ${tutorialContent}
-        ${pythonFoundationII && pythonIIModuleScreenshots[module.id] ? `<figure class="tutorial-screenshot module-screenshot"><img src="${pythonIIModuleScreenshots[module.id].src}" alt="${pythonIIModuleScreenshots[module.id].caption}" loading="lazy" /><figcaption>${pythonIIModuleScreenshots[module.id].caption} This is an original capture from the published Lecture 4 Colab notebook.</figcaption></figure>` : ""}
         <section class="practice-grid"><div class="activity"><span class="activity-tag">Activity ${module.id}</span><h3>Apply the method</h3><p>${module.task}</p></div><div class="error-box"><h3>${conceptual ? "Design issue to notice" : "Common problem"}</h3><p>${module.problem[0]}</p><div class="repair"><strong>Improve it:</strong> ${module.problem[1]}</div></div></section>
         <section class="check-card compact-check"><div><p class="eyebrow">Quick check</p><h2>Before continuing</h2></div><div class="check-options">${module.check.map((item, itemIndex) => `<label class="check-option"><input type="checkbox" data-check="${itemIndex}" /> <span>${item}</span></label>`).join("")}</div></section>
         ${flow ? `<section class="case-contribution"><p class="eyebrow">Continuing case</p><h3>What this adds</h3><p>${module.contribution}</p></section><details class="model-answer"><summary>Open the model answer</summary><div><p>${module.model}</p><p class="answer-note">A different layout can also be valid when it preserves the same logic and course notation.</p></div></details>` : ""}
         <section class="reflection compact-reflection"><strong>${conceptual ? "Critical reflection" : "Responsible practice"}:</strong> ${module.reflection}</section>
         ${foundation ? renderTutorialReferences(module.id, foundationReferences) : flow ? renderTutorialReferences(module.id, flowReferences) : pythonFoundation ? renderTutorialReferences(module.id, pythonFoundationReferences) : pythonFoundationII ? renderTutorialReferences(module.id, pythonFoundationIIReferences) : ""}
-        ${conceptual || pythonFoundation ? "" : pythonFoundationII ? (() => { const links = pythonResourceLinks.foundationsII; return `<section class="resource-panel compact-resources"><div><p class="eyebrow">Lecture 4 files</p><h2>Open the matching numbered notebook</h2></div><div class="resource-row"><a class="resource-button" href="python-foundations-ii.md" download>↓ Full Markdown</a><a class="resource-button" href="${links.examples}" target="_blank" rel="noreferrer">↗ Examples</a><a class="resource-button" href="${links.exercises}" target="_blank" rel="noreferrer">✎ Exercises 2.8–2.14</a><a class="resource-button" href="${links.solutions}" target="_blank" rel="noreferrer">✓ Solutions 2.8–2.14</a><a class="resource-button" href="${links.appliedExercises}" target="_blank" rel="noreferrer">✎ Tutorial 2.15</a><a class="resource-button" href="${links.appliedSolutions}" target="_blank" rel="noreferrer">✓ 2.15 Solutions</a><a class="resource-button" href="${links.github}" target="_blank" rel="noreferrer">⌘ GitHub folder</a></div></section>`; })() : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><button class="resource-button" data-toast="Colab link placeholder.">↗ Colab</button><a class="resource-button" href="${courseRepositoryUrl}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${courseDatasetUrl}" target="_blank" rel="noreferrer">↓ Dataset</a><button class="resource-button" data-toast="Solution link placeholder.">✓ Solution</button></div></section>`}
+        ${conceptual || pythonFoundation || pythonFoundationII ? "" : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><button class="resource-button" data-toast="Colab link placeholder.">↗ Colab</button><a class="resource-button" href="${courseRepositoryUrl}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${courseDatasetUrl}" target="_blank" rel="noreferrer">↓ Dataset</a><button class="resource-button" data-toast="Solution link placeholder.">✓ Solution</button></div></section>`}
         <nav class="next-row" aria-label="Module navigation">
           ${previous ? `<button class="next-button" data-previous="${previous.id}"><span>←</span><span><small>Previous</small><strong>${previous.id} ${previous.title}</strong></span></button>` : `<button class="next-button" data-overview><span>←</span><span><small>Return to</small><strong>${sectionLabel}</strong></span></button>`}
           <button class="next-button complete-button ${state.completed.has(module.id) ? "done" : ""}" data-complete="${module.id}"><span>${state.completed.has(module.id) ? "✓" : "○"}</span><span><small>${state.completed.has(module.id) ? "Completed" : "Progress"}</small><strong>${state.completed.has(module.id) ? "Mark incomplete" : "Mark complete"}</strong></span></button>
@@ -1353,7 +1344,6 @@ function showModule(id) {
 function attachModuleEvents(module) {
   replaceTutorialScreenshotPlaceholders();
   addCodeCompanionLinks();
-  replacePythonIIScreenshotPlan();
   page.querySelectorAll("[data-toast]").forEach(button => button.addEventListener("click", () => showToast(button.dataset.toast)));
   page.querySelectorAll("[data-link-placeholder]").forEach(link => {
     const resolvedUrl = resolveTutorialResource(link.dataset.linkPlaceholder);
@@ -1425,20 +1415,6 @@ function addCodeCompanionLinks() {
         : `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 4 Examples</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`;
     codeBlockElement.insertAdjacentElement("afterend", resourceLinks);
   });
-}
-
-function replacePythonIIScreenshotPlan() {
-  if (state.section !== "python-ii") return;
-  const screenshotPlanHeading = [...page.querySelectorAll("h2")].find(heading => heading.textContent.includes("Suggested screenshot plan"));
-  if (!screenshotPlanHeading) return;
-  screenshotPlanHeading.textContent = "Original Colab screenshots used in this tutorial";
-  let candidate = screenshotPlanHeading.nextElementSibling;
-  while (candidate && !candidate.classList.contains("table-wrap")) candidate = candidate.nextElementSibling;
-  if (!candidate) return;
-  const gallery = document.createElement("div");
-  gallery.className = "tutorial-screenshot-gallery";
-  gallery.innerHTML = Object.values(pythonIIModuleScreenshots).map(asset => `<figure class="tutorial-screenshot"><img src="${asset.src}" alt="${asset.caption}" loading="lazy" /><figcaption>${asset.caption}</figcaption></figure>`).join("");
-  candidate.replaceWith(gallery);
 }
 
 async function copyToClipboard(text) {
