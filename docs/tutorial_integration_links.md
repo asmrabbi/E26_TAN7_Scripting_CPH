@@ -17,11 +17,11 @@ The previous Section 1.3 becomes the start of Part II. Its seven website tutoria
 ### Tutorials 2.1–2.7 — Python Foundations I / Lecture 3
 
 - Tutorial Examples: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb
-- Exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb
+- Exercises and fully commented solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb
 - Practice Materials: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb
 - GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_03
 
-Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `2.1.1`; each exercise and practice case is placed directly under its matching website subsection.
+Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `2.1.1`; all 22 website exercises appear with the same number, a starter cell and a separate fully commented solution.
 
 ### Tutorials 2.8–2.15 — Python Foundations II / Lecture 4
 

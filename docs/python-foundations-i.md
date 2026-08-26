@@ -46,7 +46,7 @@ Use the tutorial number in each notebook to match it with the website:
 | File | What it contains | When to use it |
 |---|---|---|
 | [Tutorial Examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) | Every code example shown in Tutorials 2.1–2.7, in website order | During the lecture and when reviewing an explanation |
-| [Exercises](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | One runnable exercise for each tutorial subsection | After the examples on the matching page |
+| [Exercises and solutions](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | Every numbered website exercise, followed by a separate fully commented solution | Attempt the matching starter before opening its solution |
 | [Practice Materials](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) | Additional case questions, code-logic steps and fully commented examples | For extra classroom demonstrations or independent practice |
 
 [Open the complete AAU course repository on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH). The repository is the organised course folder: `notebooks/lecture_03` contains these three files, `docs` contains the tutorial website and later lecture folders contain later materials.
@@ -225,17 +225,17 @@ Why is notebook execution order part of debugging?
 
 ### Exercise 2.1.1 - Run, restart and repair the cell order
 
-Without copying the worked example exactly:
+**Context:** A fictional Techno-Anthropology student is preparing a notebook for an Inclusive Mobility Review project. The notebook must display the student and programme labels, store the project title, and demonstrate what happens when a display cell is run after the runtime has been restarted.
 
-1. Create a new code cell.
-2. Display your first name and programme name on separate output lines using two `print()` calls.
-3. Add another code cell that stores a fictional project title in a variable.
-4. Display the stored title.
-5. Restart the runtime, run only the display cell, and record the error type.
-6. Repair the execution order.
+**Your task**
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+1. Use two `print()` calls to display a fictional first name and the programme name on separate lines.
+2. In a second code cell, store the fictional project title in a meaningful variable.
+3. In a third code cell, display the stored project title with a clear label.
+4. Restart the runtime and run only the third cell; record that the missing variable produces `NameError`.
+5. Repair the notebook state by running the assignment cell before the display cell, then explain why execution order matters.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -409,23 +409,17 @@ Why does `\n` change the layout even though `print()` is called only once on the
 
 ### Exercise 2.1.2 - Format and explain a short report
 
-Write a four-line printed summary for a fictional dataset:
+**Context:** A fictional community-mobility survey received 280 rows and retained 263 after an initial exclusion step. A colleague needs a four-line summary whose labels make the calculation understandable without seeing the code.
 
-- dataset title;
-- number of rows received;
-- number of rows retained;
-- number excluded, calculated from the first two counts.
+**Your task**
 
-Requirements:
+1. Store the dataset title, received rows and retained rows in meaningful variables.
+2. Calculate excluded rows without changing either source count.
+3. Print a four-line report containing the title and all three labelled counts.
+4. Predict the output, then create and repair one deliberate `NameError` in your notes.
+5. Explain why correct arithmetic does not establish that the exclusion rule was fair or appropriate.
 
-- Store all case-specific values in variables.
-- Use labels that a colleague could understand.
-- Predict the result before running.
-- Create one `NameError`, then repair it.
-- Explain why a successful calculation does not prove that the exclusion rule was fair or appropriate.
-
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -612,18 +606,18 @@ Change the completion rate to `84.0`. Predict the output. Then change the label 
 
 What social or organisational question should accompany any coded threshold?
 
-### Exercise 2.2.1
+### Exercise 2.2.1 - Define constants for a monthly report
 
-Create three constants-by-convention for a fictional monthly report:
+**Context:** A fictional monthly service report expects 12 columns, uses “Not reported” when a category is absent, and states that at least 200 responses are desired. These project settings should be visibly different from ordinary working variables.
 
-- the expected number of columns;
-- the label used for an unreported category;
-- the stated minimum number of responses.
+**Your task**
 
-Display all three with clear labels. Then write two sentences explaining why uppercase names communicate intent but do not prevent reassignment.
+1. Store the three project settings as uppercase constants-by-convention.
+2. Display every setting with a clear label.
+3. Write two sentences explaining what uppercase naming communicates.
+4. State why Python still allows one of these values to be reassigned.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -861,20 +855,35 @@ Change the counts to `1000`, `65` and `15`. Predict the usable count and percent
 
 Which assumption in this calculation should be checked against the real dataset?
 
-### Exercise 2.2.2
+### Exercise 2.2.2 - Preserve source counts in a municipal service summary
 
-Create a short script about a fictional organisation that receives, excludes and retains records. Your script must:
+**Context:** A fictional housing-support service received 85 cases and has resolved 80. The team needs the unresolved count and a short audit trail, while keeping both supplied counts unchanged for later checking.
 
-- use at least four meaningful variables;
-- use `+=` once to extend a short text audit trail or update a count;
-- preserve the original total;
-- calculate one new count and one percentage;
-- display labelled results;
-- include one deliberate `NameError` and its repair in your notes;
-- state one assumption that the arithmetic makes about the categories.
+**Your task**
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+1. Store the service name, received count and resolved count with meaningful names.
+2. Calculate the unresolved count in a new variable.
+3. Create an audit-trail string and extend it once with `+=`.
+4. Display the original counts, derived count and audit trail with labels.
+5. Change one source count and confirm that every later use of its variable name remains consistent.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+---
+
+### Exercise 2.2.3 - Calculate retained records without losing the originals
+
+**Context:** A fictional Harbour Access Unit received 520 records, including 18 incomplete records and 7 duplicates. For this teaching calculation, assume the two exclusion categories do not overlap and make that assumption visible.
+
+**Your task**
+
+1. Use at least four meaningful variables and preserve all supplied source counts.
+2. Use `+=` once to extend a text audit trail or update a separate count.
+3. Calculate the retained count and retained percentage.
+4. Display labelled inputs, results and the audit trail.
+5. Document one deliberate `NameError` and its repair, plus the non-overlap assumption.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1058,21 +1067,18 @@ Add a float variable called `completion_percentage` and use `type()` to inspect 
 
 Why can a legal variable name still be a bad variable name?
 
-### Exercise 2.2.3
+### Exercise 2.2.4 - Classify proposed Python names
 
-For each proposed name, classify it as:
+**Context:** A project team proposes several variable names before writing its script: `if`, `data`, `input`, `missing_record_count`, `class`, `class_label`, `x`, `float` and `survey_year`. Some are invalid, some hide built-ins, and others differ in clarity.
 
-- invalid keyword;
-- valid but unwise built-in name;
-- valid and meaningful;
-- valid but unclear.
+**Your task**
 
-Names: `if`, `data`, `input`, `missing_record_count`, `class`, `class_label`, `x`, `float`, `survey_year`.
+1. Classify every proposed name as an invalid keyword, an unwise built-in name, a meaningful valid name or an unclear valid name.
+2. Explain why a name can be technically valid but still unsuitable.
+3. Import the standard-library `keyword` module.
+4. Run `keyword.iskeyword()` for at least four proposed names and compare the result with your classification.
 
-Then write and run a short check using the `keyword` module for at least four names.
-
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1271,23 +1277,18 @@ Replace the three confusing names with `total_records`, `flagged_records` and `M
 
 Are two names that differ only in capitalisation the same variable in Python?
 
-### Exercise 2.2.4
+### Exercise 2.2.5 - Rewrite unclear or invalid names
 
-Rewrite these unclear or invalid names as valid, meaningful snake-case names:
+**Context:** A draft data-cleaning script contains the names `1stMonth`, `Missing Values`, `case-type`, `x`, `DATA` and `final final count`. Rewrite them so another researcher can infer what each stored value means.
 
-```text
-1stMonth
-Missing Values
-case-type
-x
-DATA
-final final count
-```
+**Your task**
 
-For each rewritten name, add a one-sentence definition of what the value represents. A name is not fully meaningful if its underlying concept remains undefined.
+1. Rewrite every proposed name as valid snake case.
+2. Do not rely only on shortening or lowercasing; make the underlying concept explicit.
+3. Add a one-sentence definition for every rewritten name.
+4. Use at least three rewritten names in assignments and print their values.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1473,22 +1474,18 @@ Change the raw label to `"  SERVICE   Access? "`. Predict the proposed name. Ide
 
 Why is preserving `raw_field_label` useful when reviewing a data-cleaning decision?
 
-### Exercise 2.3.1
+### Exercise 2.3.1 - Distinguish expressions from statements
 
-For each line below, decide whether its main role is an expression, an assignment statement or a print statement containing an expression:
+**Context:** A research assistant is learning how Python turns supplied counts into a derived value. Classify the roles of `42`, `total = 42`, `total - missing`, `complete = total - missing` and `print(total - missing)`, then apply the pattern to 90 received and 7 excluded records.
 
-```text
-42
-total = 42
-total - missing
-complete = total - missing
-print(total - missing)
-```
+**Your task**
 
-Then write a short script that creates two source variables, derives one new variable through an expression, and displays it.
+1. Classify each supplied line by its main role: expression, assignment statement or print statement containing an expression.
+2. Store the received and excluded counts in two source variables.
+3. Derive the retained count in a third variable without changing the sources.
+4. Display the retained count with a clear label and explain which expression produced it.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1733,21 +1730,19 @@ Change the number of periods to `3` and predict whether the result will be below
 
 Why is a compounded scenario analytically different from simply adding 5 twice?
 
-### Exercise 2.3.2
+### Exercise 2.3.2 - Calculate complete review batches and a remainder
 
-An organisation has `387` records and reviews them in batches of `25`.
+**Context:** An organisation has 387 records and reviews them in batches of 25. It needs the exact division result, the number of complete batches, the remaining records and the remainder as a percentage of all records.
 
-Calculate and display:
+**Your task**
 
-- the exact division result;
-- the number of complete batches;
-- the number of remaining records;
-- the percentage represented by the remainder.
+1. Predict all four numerical results before running Python.
+2. Use `/`, `//` and `%` for their distinct purposes.
+3. Calculate the remainder percentage using 387 as the denominator.
+4. Display every result with a label and unit where relevant.
+5. Replace one numerical value with text, record the resulting error type, and repair it.
 
-Predict the output first. Then deliberately replace one numerical value with a string, record the resulting error type, and repair it.
-
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -1970,24 +1965,18 @@ Change the exponent from `2` to `3`. Predict both results before running.
 
 What is the base of the exponent in `(-3) ** 2`?
 
-### Exercise 2.3.3
+### Exercise 2.3.3 - Predict and verify operator precedence
 
-Predict the values without running Python first:
+**Context:** A colleague has written seven unlabelled arithmetic expressions and needs to know how Python groups them. Predict each result before execution, then connect one expression to a realistic calculation and state its assumption.
 
-```text
-10 + 5 * 2
-(10 + 5) * 2
-100 / 5 + 5
-100 / (5 + 5)
-2 ** 3 * 4
-(-2) ** 4
--2 ** 4
-```
+**Your task**
 
-Then run each as part of a labelled `print()` statement. For one expression, explain a realistic case meaning and identify any assumption.
+1. Predict the results of `10 + 5 * 2`, `(10 + 5) * 2`, `100 / 5 + 5`, `100 / (5 + 5)`, `2 ** 3 * 4`, `(-2) ** 4` and `-2 ** 4`.
+2. Run every expression inside a labelled `print()` statement.
+3. Explain two differences caused by parentheses or exponentiation precedence.
+4. Give one expression a realistic case interpretation and identify one assumption.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2168,19 +2157,19 @@ Display the completion rate with two decimal places. Add the reporting month as 
 
 Does `:.1f` change the stored value or only its displayed format?
 
-### Exercise 2.4.1
+### Exercise 2.4.1 - Build a readable report heading
 
-Create a report heading from separate variables for:
+**Context:** Copenhagen Community Lab is preparing an October 2026 summary of its Mobility Feedback dataset containing 275 records. Build the same readable heading once with string concatenation and once with an f-string.
 
-- organisation;
-- dataset name;
-- reporting month;
-- number of records.
+**Your task**
 
-Produce one version with concatenation and one with an f-string. Add an apostrophe to one piece of text and choose quotation marks that keep the code readable.
+1. Store the organisation, dataset, reporting month and record count in separate variables.
+2. Create one heading with concatenation, converting the count only where necessary.
+3. Create an equivalent heading with an f-string.
+4. Add an apostrophe to one text value and choose quotation marks that keep the code readable.
+5. Display both headings and confirm that they communicate the same information.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2472,22 +2461,18 @@ Create a second display line with two decimal places. Then round the numerical v
 
 Which line creates a new rounded number, and which line only controls presentation?
 
-### Exercise 2.4.2
+### Exercise 2.4.2 - Choose types that preserve meaning
 
-For each value, decide whether `int`, `float` or `str` best represents its intended role, and explain why:
+**Context:** A fictional interview record contains 24 interviews, an average duration of 47.5 minutes, postcode `0700`, a 4.5 satisfaction score, reporting year 2026, participant ID `0042` and a 91.5 per cent completion rate. Choose types that preserve each value’s intended role.
 
-- number of interviews;
-- interview duration in minutes;
-- postcode;
-- satisfaction score with half-points;
-- reporting year;
-- participant identifier with leading zeros;
-- completion percentage.
+**Your task**
 
-Then create and inspect at least one example of each of the three types.
+1. Classify each value as best represented by `int`, `float` or `str` and explain why.
+2. Keep identifiers with leading zeros as strings.
+3. Create at least one value of each of the three types.
+4. Use `type()` to inspect the created values and compare the output with your predictions.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2677,20 +2662,19 @@ Change `duplicate_record_count` to `2`. Predict the combined result. Then rename
 
 Does a `True` result prove that the dataset is reliable, representative or ethically appropriate?
 
-### Exercise 2.4.3
+### Exercise 2.4.3 - Create and test Boolean data-quality checks
 
-Create Boolean variables that answer these questions for a fictional dataset:
+**Context:** A fictional dataset contains 540 records, zero known duplicates, an 80.0 per cent completion rate and recorded consent. Create transparent Boolean checks and then test the exact record-count and completion-rate boundaries.
 
-- Are there more than 500 records?
-- Are there exactly zero duplicate records?
-- Is the completion rate at least 80 per cent?
-- Is consent recorded?
-- Do all four conditions hold together?
+**Your task**
 
-Display every Boolean with a clear label. Test at least one boundary value, such as exactly `500` or exactly `80.0`.
+1. Create Booleans for more than 500 records, exactly zero duplicates, at least 80 per cent completion and recorded consent.
+2. Create one combined Boolean showing whether all four conditions hold.
+3. Display every Boolean with a clear label.
+4. Test exactly 500 records and exactly 80.0 per cent, then explain the `>` and `>=` boundary difference.
+5. State why `True` does not prove general data quality.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -2932,29 +2916,18 @@ Add `review_note = "Not yet checked"`. Compare its meaning and type with `None` 
 
 Why would replacing a missing waiting time with `0` change the meaning of the record?
 
-### Exercise 2.4.4
+### Exercise 2.4.4 - Predict the types produced by expressions
 
-Before running, predict the type produced by each expression:
+**Context:** A learner sees values that look similar on screen but behave differently in Python. Predict the type of each supplied literal or expression, verify it with `type()`, and explain every incorrect prediction.
 
-```text
-25
-25.0
-"25"
-None
-""
-25 / 5
-25 // 5
-10 + 0.5
-round(93.756, 1)
-f"{93.756:.1f}"
-"A" + "B"
-25 >= 20
-```
+**Your task**
 
-Then verify with `type()`. For every incorrect prediction, write one sentence explaining the rule you had misunderstood.
+1. Predict the type of `25`, `25.0`, `"25"`, `None`, `""`, `25 / 5`, `25 // 5`, `10 + 0.5`, `round(93.756, 1)`, `f"{93.756:.1f}"`, `"A" + "B"` and `25 >= 20`.
+2. Verify every prediction with `type()`.
+3. Record the actual value as well as the type.
+4. For each mismatch, write one sentence explaining the misunderstood rule.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -3198,25 +3171,19 @@ Before converting, ask:
 5. What should happen to missing, empty or invalid text?
 6. Does conversion change the interpretation of the data?
 
-### Exercise 2.5.1
+### Exercise 2.5.1 - Predict safe and unsafe conversions
 
-For each source string, predict whether `int()`, `float()` or neither converter will work directly:
+**Context:** A form exports the strings `42`, `42.0`, `42.5`, ` 42 `, `forty-two`, an empty string, `0042` and `93,5`. Decide which converter can be used directly and which values should remain text because their role or formatting matters.
 
-```text
-"42"
-"42.0"
-"42.5"
-" 42 "
-"forty-two"
-""
-"0042"
-"93,5"
-```
+**Your task**
 
-Run each prediction in a separate cell so one error does not prevent later tests. Record the error type for failed conversions. Then explain which values should possibly remain strings even if conversion is technically possible.
+1. Predict whether `int()`, `float()` or neither works directly for every source string.
+2. Run successful conversions separately so one failure cannot stop later checks.
+3. Record `ValueError` for the failed direct conversions without hiding the source string.
+4. Explain why `0042` may need to remain a string when it is an identifier.
+5. Explain why decimal-comma text requires an explicit data-format decision.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -3459,146 +3426,19 @@ Try inputs `5` and `10`. Predict both lines of output. Rename the source variabl
 
 Why is converting the joined text not equivalent to adding converted inputs?
 
-### Exercise 2.5.2
+### Exercise 2.5.2 - Build and test an interactive project summary
 
-Create an interactive script for a fictional project that asks for:
+**Context:** A fictional Neighbourhood Workshop invites 120 participants, receives 96 completed responses and reports an average completion time of 7.5 minutes. Build an input-based summary, then test text, zero and impossible-count cases separately.
 
-- project title;
-- number of invited participants;
-- number of completed responses;
-- average completion time in minutes.
+**Your task**
 
-The script must display a labelled summary and calculate a completion percentage. Record what happens when you enter:
+1. Ask for the project title, invited count, completed count and average minutes with clear prompts.
+2. Convert the two counts with `int()` and the duration with `float()`.
+3. Calculate and display the completion percentage for the normal data.
+4. Test a word where an integer is expected and record the `ValueError`.
+5. Test zero invited participants and completed responses above invited participants; explain why these require validation decisions.
 
-- valid values;
-- a word where an integer is expected;
-- zero invited participants;
-- completed responses greater than invited participants.
-
-Do not hide these problems. Explain which ones produce Python errors and which ones produce logically questionable results.
-
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-
-### Example 2.5.9 - Transfer the input pattern to a gross-pay estimate
-
-**Level:** Intermediate transfer
-
-**Source note:** Adapted from Exercise 3 in Charles R. Severance's open textbook [*Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables). The variable names, reporting context, formatting, explanation and critical questions below are course adaptations. This Day 1 version intentionally excludes overtime rules because decisions belong in Python Foundations II.
-
-**Code**
-
-```python
-role_label = input("Role label: ")
-hours_worked = float(input("Hours worked: "))
-hourly_rate_dkk = float(input("Hourly rate in DKK: "))
-
-gross_pay_dkk = hours_worked * hourly_rate_dkk
-pay_note = f"{role_label}: estimated gross pay is {gross_pay_dkk:.2f} DKK"
-
-print(pay_note)
-```
-
-**Expected output for this sample interaction**
-
-```text
-Role label: Student assistant
-Hours worked: 12.5
-Hourly rate in DKK: 145
-Student assistant: estimated gross pay is 1812.50 DKK
-```
-
-**Line-by-line explanation**
-
-- The role label remains a string because it is descriptive text.
-- `float(input(...))` collects text and converts suitable decimal input to a float.
-- Using a float permits half-hours and rates containing øre.
-- Multiplication produces a gross-pay estimate before tax, pension, supplements or other rules.
-- The f-string combines the label and value while displaying exactly two decimal places.
-- The calculation is sequential Day 1 code. Overtime or role-dependent rates require later decision logic.
-
-**Common mistakes**
-
-- Forgetting to convert input and then multiplying text in an unintended way.
-- Using a comma as a decimal separator even though `float()` expects a full stop in this simple example.
-- Treating two displayed decimal places as proof that the payroll rules are correct.
-- Calling the result net pay or final salary when the code only multiplies hours by one rate.
-
-**Modify it**
-
-Add a string input for the reporting period and include it in the final note. Then test `7.25` hours at `152.50` DKK and predict the result before running.
-
-**Break it, observe it, repair it**
-
-1. Remove `float()` from `hours_worked` but leave the rate as a float.
-2. Run the program and enter the sample values. Observe `TypeError` when Python tries to multiply a string by a float.
-3. Restore the conversion.
-4. Confirm both numeric types before calculating.
-
-**Check your understanding**
-
-Why does this program calculate only a basic estimate rather than a complete payroll result?
-
-### Example 2.5.10 - Transfer the input pattern to a temperature conversion
-
-**Level:** More advanced transfer
-
-**Source note:** Adapted from Exercise 5 in Charles R. Severance's [*Python for Everybody*, Chapter 2](https://www.py4e.com/html3/02-variables). The sensor-check scenario, traceable raw value, formatted report and data-quality discussion are original course adaptations.
-
-**Code**
-
-```python
-sensor_id = input("Sensor identifier: ")
-celsius_text = input("Temperature in degrees Celsius: ")
-celsius = float(celsius_text)
-
-fahrenheit = celsius * 9 / 5 + 32
-report_line = f"Sensor {sensor_id}: {celsius:.1f} °C equals {fahrenheit:.1f} °F"
-
-print(report_line)
-print("Original temperature text:", celsius_text)
-```
-
-**Expected output for this sample interaction**
-
-```text
-Sensor identifier: CPH-07
-Temperature in degrees Celsius: 21.5
-Sensor CPH-07: 21.5 °C equals 70.7 °F
-Original temperature text: 21.5
-```
-
-**Line-by-line explanation**
-
-- `sensor_id` remains a string because letters, punctuation and leading zeros are meaningful parts of the identifier.
-- `celsius_text` preserves the input as typed.
-- `float(celsius_text)` creates a numerical value for conversion.
-- `celsius * 9 / 5 + 32` applies the temperature-scale formula. Multiplication and division occur before addition.
-- The f-string reports both values to one decimal place and includes their units.
-- The final line preserves visible evidence of the original text input.
-- The calculation cannot establish that the sensor was calibrated, correctly positioned or associated with the right location.
-
-**Common mistakes**
-
-- Converting the sensor identifier to a number and losing letters or a leading zero.
-- Omitting the `+ 32` part of the formula.
-- Reporting a temperature without its scale or unit.
-- Treating a successfully converted sensor reading as automatically trustworthy.
-
-**Modify it**
-
-Change the sample input to `0` °C and then `-10` °C. Predict the Fahrenheit results. Add a string variable for the non-sensitive sensor location and include it in the report.
-
-**Break it, observe it, repair it**
-
-1. Change the formula to `fahrenheit = celsius * (9 / (5 + 32))`.
-2. Run the code. Python produces a number without a traceback, but the grouping changes the formula.
-3. Repair the formula to `celsius * 9 / 5 + 32`.
-4. Use the known boundary test `0 °C = 32 °F` to verify the repair.
-
-**Check your understanding**
-
-Which value should remain text even though it contains digits, and why?
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -3790,19 +3630,19 @@ Before keeping a comment, ask:
 - Does it reveal confidential or personal information?
 - Does it distinguish a confirmed fact from an assumption or pending decision?
 
-### Exercise 2.6.1
+### Exercise 2.6.1 - Write comments that explain purpose and assumptions
 
-Add comments to a short script of your own. Include:
+**Context:** A fictional monthly report contains 200 total records and 176 complete records. Add comments that help another student understand the purpose, percentage unit, denominator assumption and one item still requiring review.
 
-- one purpose comment;
-- one unit comment;
-- one assumption comment;
-- one pending-review comment.
+**Your task**
 
-Then delete any comment that merely repeats an obvious assignment. Ask another student whether the remaining comments help them explain the code.
+1. Write one purpose comment before the calculation.
+2. Write one unit comment and one assumption comment beside relevant values.
+3. Write one pending-review comment that identifies an unresolved decision.
+4. Delete comments that only repeat obvious assignments.
+5. Ask another student whether the remaining comments help them explain the script.
 
-- [Open the numbered exercise and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -4283,22 +4123,19 @@ What evidence helped you recognise the wrong formula without a traceback?
 | `IndentationError` | Leading spaces do not fit Python's structure | Tabs, spaces, copied code, block alignment |
 | No traceback | Python ran, but the logic may be wrong | Expected output, units, formula direction, boundaries, assumptions |
 
-### Exercise 2.6.2 - Error laboratory
+### Exercise 2.6.2 - Complete a safe seven-problem error laboratory
 
-Create a fresh notebook section with seven deliberately broken cells, one for each error clinic above. For each cell, record:
+**Context:** A class error laboratory covers `SyntaxError`, `NameError`, `TypeError`, `ValueError`, `ZeroDivisionError`, `IndentationError` and a logical error with no traceback. Diagnose each problem separately so one broken cell cannot prevent the other investigations.
 
-1. your prediction;
-2. the exact error type or wrong output;
-3. the likely cause;
-4. the smallest repair;
-5. the repaired output;
-6. one test that supports the repair.
+**Your task**
 
-Do not paste personal data into error screenshots.
+1. For every problem, predict the error or wrong output before running the broken version.
+2. Record the exact error type or logical mismatch and its likely cause.
+3. Make the smallest repair and record the repaired output.
+4. Add one normal or boundary test supporting each repair.
+5. Keep broken code in separate cells or notes and never include personal data in screenshots.
 
-- [Open the error-laboratory starter and hints in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb)
-- [Open the matching exercise in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -4615,24 +4452,19 @@ Add `raw_source_label = "  MOBILE portal "`. Produce a cleaned presentation labe
 
 Which variables preserve evidence, which variables contain proposed standardisations, and which variable records workflow state?
 
-### Exercise 2.7.1 - Integrate the foundation
+### Exercise 2.7.1 - Integrate the foundation in a community-programme report
 
-Choose one of the four integrated scripts. Without looking at the explanation, annotate:
+**Context:** A fictional Neighbourhood Workshops programme expected 320 monthly records and has 24 missing records. Create a traceable report that preserves the source values, calculates completeness and states what the percentage cannot establish.
 
-- every literal;
-- every variable;
-- every assignment statement;
-- every arithmetic expression;
-- every Boolean expression;
-- every conversion;
-- every comment;
-- every `print()` call;
-- every assumption that Python cannot verify.
+**Your task**
 
-Then explain the script aloud in no more than two minutes.
+1. Store the programme label, total count and missing count with meaningful names.
+2. Calculate complete records and the completion rate without changing the source counts.
+3. Format the rate to one decimal place in a readable evidence statement.
+4. Add purpose and non-overlap assumption comments.
+5. Explain the literals, variables, assignments, expressions and output, then state one conclusion the script cannot support.
 
-- [Open the annotation exercise in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 
@@ -4640,184 +4472,51 @@ Then explain the script aloud in no more than two minutes.
 
 These exercises bring several Python Foundations I ideas together. Read the situation, follow the numbered requirements and try your own solution before opening the fully commented answer in the Lecture 3 Exercises notebook.
 
-### Exercise 2.7.2 - Municipal consultation intake
+### Exercise 2.7.2 - Prepare a municipal consultation intake report
 
-**Estimated time:** 40 to 60 minutes
-
-**Context**
-
-A fictional municipality has received a file containing public consultation responses about a mobility plan. Before loading the future CSV file, the project team wants a small script that documents the monthly intake counts.
-
-**Given values**
-
-| Item | Value |
-|---|---:|
-| Responses received | 640 |
-| Responses missing consent information | 18 |
-| Duplicate responses | 7 |
-| Expected columns | 11 |
-| Received columns | 10 |
+**Context:** A fictional municipality received 640 mobility-plan consultation responses. Eighteen lack consent information, seven are duplicates, and the file has 10 of the 11 expected columns; assume the two exclusion categories do not overlap.
 
 **Your task**
 
-Create a script that:
+1. Store the expected column count as a constant-by-convention and preserve all supplied counts.
+2. Calculate retained responses, the retention rate and the column difference.
+3. Create Booleans for whether exclusions exist and whether the structure matches expectation.
+4. Display a labelled report and inspect at least two values with `type()`.
+5. Document the non-overlap assumption and explain why a column-count match is not full validation.
 
-1. stores the expected column count as a constant-by-convention;
-2. uses meaningful variables for all other values;
-3. calculates the number of retained responses;
-4. calculates and displays a retention percentage to one decimal place;
-5. calculates the difference between expected and received columns;
-6. creates Boolean values for "has exclusions" and "structure matches expectation";
-7. includes a purpose comment and an assumption comment;
-8. displays a readable report;
-9. uses `type()` to inspect at least two values;
-10. documents whether exclusion categories are assumed to overlap.
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
-**Target output content**
+---
 
-Your wording may differ, but the report should communicate these results:
+### Exercise 2.7.3 - Prepare a university feedback summary
 
-```text
-Retained responses: 615
-Retention rate: 96.1%
-Column difference: 1
-Has exclusions: True
-Structure matches expectation: False
-```
-
-**Common mistakes to watch for**
-
-- subtracting only one exclusion category;
-- dividing the total by the retained count;
-- confusing `=` and `==`;
-- treating a column-count match as full validation;
-- failing to state whether categories overlap.
-
-**Modification task**
-
-Change the case so the file has all expected columns and no duplicates. Predict every affected output before running.
-
-**Break-and-repair requirement**
-
-Create and repair one `NameError`, one `TypeError` and one logical error. Record the broken line, the observed message or output, and the repaired line in a text cell.
-
-- [Open Exercise 2.7.2 and its fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [View the exercise and solution notebook on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-
-### Exercise 2.7.3 - University feedback preparation
-
-**Estimated time:** 45 to 70 minutes
-
-**Context**
-
-A fictional university unit wants a simple interactive script that records non-sensitive aggregate information about a feedback round. The script will later be replaced by a CSV workflow.
-
-**Required user inputs**
-
-- course label as text;
-- reporting period as text;
-- invited students as a whole number;
-- completed responses as a whole number;
-- average completion time as a decimal number.
+**Context:** A fictional TAN7 Copenhagen feedback round invited 100 students, received 72 responses and recorded an average completion time of 8.5 minutes. Use only non-sensitive aggregate information and preserve the original text inputs before conversion.
 
 **Your task**
 
-Create a script that:
+1. Store the course label, reporting period, invited count, completed count and average minutes as source values.
+2. Convert whole-number counts and the decimal duration appropriately.
+3. Calculate the response rate and a Boolean for whether everyone responded.
+4. Display a labelled summary with units and inspect at least three types.
+5. Test zero invited students, completions above invitations and unsuitable numerical text in separate notes.
 
-1. collects all five values with clear prompts;
-2. applies `int()` or `float()` only where appropriate;
-3. calculates the response rate;
-4. creates a Boolean showing whether completed responses equal invited students;
-5. displays a heading built with an f-string;
-6. displays all numerical results with units;
-7. adds a comment defining the denominator;
-8. checks at least three types;
-9. avoids collecting names, email addresses or other personal data.
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
-**Test cases**
+---
 
-Use all four test cases and record what happens:
+### Exercise 2.7.4 - Communicate a societal indicator transparently
 
-| Test | Invited | Completed | Average minutes | Purpose |
-|---|---:|---:|---:|---|
-| Normal | 100 | 72 | 8.5 | Expected ordinary result |
-| Boundary | 100 | 100 | 7.0 | Equality boundary |
-| Invalid denominator | 0 | 0 | 0.0 | Division-by-zero case |
-| Impossible count | 100 | 105 | 6.5 | Logical validation problem |
-
-**Expected result for the normal test**
-
-```text
-Response rate: 72.0%
-All invited students responded: False
-```
-
-**Modification task**
-
-Change the prompts and labels so the same script could support a fictional community workshop instead of a university course.
-
-**Break-and-repair requirement**
-
-Enter a word for one numerical prompt, capture the `ValueError`, and repair the interaction by rerunning with suitable input. Do not add exception handling yet.
-
-- [Open Exercise 2.7.3 and its fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [View the exercise and solution notebook on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-
-### Exercise 2.7.4 - Communicating a societal indicator
-
-**Estimated time:** 50 to 75 minutes
-
-**Context**
-
-A fictional public report uses a threshold to describe neighbourhood access to a service. The technical team needs a transparent calculation, while the research team wants the threshold and limitations to remain visible.
-
-**Given values**
-
-| Item | Value |
-|---|---:|
-| Residents surveyed | 800 |
-| Residents reporting access | 596 |
-| Stated threshold | 75.0 per cent |
+**Context:** A fictional public report surveys 800 residents, of whom 596 report access to a service. The project’s stated threshold is 75.0 per cent; keep that human choice and the indicator’s limitations visible.
 
 **Your task**
 
-Create a script that:
+1. Calculate the reported-access rate and its percentage-point difference from the stated threshold.
+2. Use `>=` to create a Boolean showing whether the threshold is met.
+3. Display the rate and difference to one decimal place with accurate units.
+4. Test access counts of 600 and 604 to inspect the exact boundary and an above-boundary case.
+5. Print a limitation note and explain why one percentage cannot show whose experiences are absent.
 
-1. calculates the reported-access percentage;
-2. calculates the difference from the stated threshold;
-3. creates a Boolean comparison using `>=`;
-4. displays the result to one decimal place;
-5. uses comments to identify the threshold as a stated project choice;
-6. uses variable names that distinguish counts, rates and thresholds;
-7. prints a short limitation note stored as a string;
-8. explains why a percentage does not show whose experiences are absent.
-
-**Expected numerical values**
-
-```text
-Reported access rate: 74.5%
-Difference from threshold: -0.5 percentage points
-Meets stated threshold: False
-```
-
-**Modification task**
-
-Change the access count to `600`. Predict what happens at the exact threshold boundary. Then test `604`.
-
-**Break-and-repair requirement**
-
-Reverse the comparison or rate formula deliberately, inspect the plausible but incorrect output, and repair it using a boundary test.
-
-**Critical reflection prompts**
-
-- Who chose the threshold?
-- Is the survey sample representative?
-- Does "access" have a clear and consistent definition?
-- Can a single percentage hide differences between groups or locations?
-- What evidence is missing from the script?
-
-- [Open Exercise 2.7.4 and its fully commented solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [View the exercise and solution notebook on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ---
 

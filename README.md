@@ -2,7 +2,7 @@
 
 Beginner-friendly, lecture-ready Python notebooks for the Copenhagen delivery of the AAU Techno-Anthropology course. Every executable code line has a plain-language comment so an instructor can run individual sections during class and students can follow what each line does.
 
-The notebooks use Google Colab, so students do not need a local Python installation. Lecture 3 is organised into exactly three student-facing files: tutorial examples, exercises, and extra practice materials. The same notebooks also open in Jupyter and PyCharm.
+The notebooks use Google Colab, so students do not need a local Python installation. Lecture 3 is organised into exactly three student-facing files: tutorial examples, all numbered exercises with fully commented solutions, and extra practice materials. The same notebooks also open in Jupyter and PyCharm.
 
 ## Course links
 
@@ -16,7 +16,7 @@ The website subsection sequence is continuous: Python Foundations I uses Tutoria
 
 | Lecture | Tutorial examples | Student exercises | Practice or solutions |
 |---|---|---|---|
-| L03 — Python basics (Tutorials 2.1–2.7) | [Tutorial Examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) | [Exercises](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | [Practice Materials](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) |
+| L03 — Python basics (Tutorials 2.1–2.7) | [Tutorial Examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) | [Exercises and Solutions](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | [Practice Materials](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) |
 | L04 — Decisions, collections, loops, functions and applied problem solving (Tutorials 2.8–2.15) | [Examples 2.8–2.14](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb) | [Exercises 2.8–2.14](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Exercises.ipynb) · [Applied Exercises 2.15](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb) | [Solutions 2.8–2.14](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb) · [Applied Solutions 2.15](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb) |
 
 The deployable tutorial website is stored in [`docs/`](docs/) and is ready for GitHub Pages to publish from the `main` branch. Once Pages is enabled, the expected address is https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/.
