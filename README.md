@@ -8,7 +8,7 @@ The notebooks use Google Colab, so students do not need a local Python installat
 
 - Copenhagen Moodle: https://www.moodle.aau.dk/course/view.php?id=60166
 - Tutorial integration map: [docs/tutorial_integration_links.md](docs/tutorial_integration_links.md)
-- Synthetic teaching dataset: [data/monthly_service_report.csv](data/monthly_service_report.csv)
+- Lecture 5 synthetic raw dataset: [data/E26_TAN7_service_experience_raw.csv](data/E26_TAN7_service_experience_raw.csv)
 
 ## Part II — Python Foundations
 
@@ -23,11 +23,13 @@ The deployable tutorial website is stored in [`docs/`](docs/) and is ready for G
 
 The Lecture 4 Examples notebook contains the complete scripts for all 16 keyboard-input examples. Those cells display a manual-run instruction and then pause for a learner response; all non-interactive examples are stored with verified output. Tutorial 2.15 also has two website worked examples at the beginning of its solution notebook, ten numbered situational exercises and a separate 24-question cumulative self-test answer notebook.
 
-## Part III — Data Handling, Text Analysis and Visualisation
+## Part III — Data Handling, Text Analysis and Visualization
 
-| Lecture | Examples and case | Student exercises | Worked solutions |
+Lecture 5 is Section 3.1 of the website and contains Tutorials 3.1–3.14. Its three canonical notebooks mirror the website: all worked/reference examples, all 33 numbered exercises followed by solutions, and all eight applied activities followed by a model walkthrough.
+
+| Lecture | Tutorial examples | Exercises and solutions | Applied activities and model walkthrough |
 |---|---|---|---|
-| L05 — CSV and pandas inspection | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L05_examples_csv_pandas_inspection.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L05_exercises_csv_pandas_inspection.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L05_solutions_csv_pandas_inspection.ipynb) |
+| L05 — Data Handling, Text Analysis and Visualization I (Tutorials 3.1–3.14) | [Tutorial Examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb) | [Exercises and Solutions](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) | [Applied Activities and Model Walkthrough](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb) |
 | L06 — Data cleaning and text preparation | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L06_examples_data_cleaning_text_preparation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L06_exercises_data_cleaning_text_preparation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L06_solutions_data_cleaning_text_preparation.ipynb) |
 | L07 — Analysis and visualisation | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L07_examples_analysis_visualisation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L07_exercises_analysis_visualisation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L07_solutions_analysis_visualisation.ipynb) |
 

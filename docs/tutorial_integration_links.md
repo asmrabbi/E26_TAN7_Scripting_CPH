@@ -33,14 +33,19 @@ Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `
 - Answers and executable checks for the 24-question cumulative self-test: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb
 - Lecture 4 GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04
 
-## Part III — Data Handling, Text Analysis and Visualisation
+## Part III — Data Handling, Text Analysis and Visualization
 
-### Lecture 5 — CSV and pandas inspection
+### Section 3.1 / Lecture 5 — Data Handling, Text Analysis and Visualization I
 
-- Examples and recurring case: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L05_examples_csv_pandas_inspection.ipynb
-- Student exercises: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L05_exercises_csv_pandas_inspection.ipynb
-- Worked solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L05_solutions_csv_pandas_inspection.ipynb
-- Dataset: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/data/monthly_service_report.csv
+- Website Tutorials 3.1–3.14: https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/
+- Tutorial examples: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb
+- All 33 numbered exercises followed by fully commented solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb
+- Eight Tutorial 3.14 applied activities followed by a model walkthrough: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb
+- Raw dataset: https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv
+- Lecture 5 GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_05
+- Full website Markdown: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/docs/data-handling-text-analysis-visualization-i.md
+
+The examples notebook preserves every website Python block from Tutorials 3.1–3.13 in order. The Exercises notebook keeps student tasks before a clear solution divider. The Applied Activities notebook follows the same separation. All solution code is executed against the supplied raw file, and every executable code line has a learner-facing comment.
 
 ### Lecture 6 — Data cleaning and text preparation
 

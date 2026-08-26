@@ -8,6 +8,7 @@ const packageIlos = [
 
 const courseRepositoryUrl = "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH";
 const courseDatasetUrl = "https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/monthly_service_report.csv";
+const lecture5DatasetUrl = "https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv";
 const pythonResourceLinks = {
   foundationsI: {
     examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb",
@@ -25,6 +26,14 @@ const pythonResourceLinks = {
     appliedSolutions: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb",
     selfTestAnswers: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb",
     github: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04"
+  },
+  dataHandlingI: {
+    examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    examplesGithub: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    exercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    cases: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb",
+    dataset: lecture5DatasetUrl,
+    github: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_05"
   }
 };
 
@@ -1022,8 +1031,11 @@ function updateSidebar() {
   const flow = state.section === "flow";
   const pythonFoundation = state.section === "python";
   const pythonFoundationII = state.section === "python-ii";
+  const dataHandlingI = state.section === "data-i";
   document.getElementById("sidebar-kicker").textContent = foundation || flow
     ? "Part 1 · Computational Foundations"
+    : dataHandlingI
+    ? "Part III · Data Handling and Analysis"
     : pythonFoundationII
     ? "Part II · Python Foundations"
     : pythonFoundation
@@ -1033,6 +1045,8 @@ function updateSidebar() {
     ? "Section 1.1"
     : flow
       ? "Section 1.2"
+      : dataHandlingI
+        ? "Section 3.1"
       : pythonFoundationII
         ? "Section 2.2"
       : pythonFoundation
@@ -1042,6 +1056,8 @@ function updateSidebar() {
     ? "Understand and specify computational problems before writing Python."
     : flow
       ? "Represent, test and translate logic using flowcharts and Python-flavoured pseudocode."
+      : dataHandlingI
+        ? "Load, inspect, calculate from and critically assess the raw Lecture 5 CSV with pandas."
       : pythonFoundationII
         ? "Make decisions, repeat work, organise functions and handle errors."
       : pythonFoundation
@@ -1080,6 +1096,8 @@ function selectSection(section) {
       ? flowModules
       : section === "python-ii"
         ? pythonFoundationIIModules
+      : section === "data-i"
+        ? dataHandlingIModules
       : section === "python"
         ? pythonFoundationModules
         : startModules;
@@ -1117,6 +1135,10 @@ function renderOverview() {
   }
   if (state.section === "python-ii") {
     renderPythonFoundationIIOverview();
+    return;
+  }
+  if (state.section === "data-i") {
+    renderDataHandlingIOverview();
     return;
   }
   if (state.section === "python") {
@@ -1276,6 +1298,44 @@ function renderPythonFoundationIIOverview() {
   page.querySelectorAll("[data-toast]").forEach(button => button.addEventListener("click", event => { event.preventDefault(); showToast(button.dataset.toast); }));
 }
 
+function renderDataHandlingIOverview() {
+  page.innerHTML = `
+    <div class="page compact-page foundation-page python-page data-handling-page">
+      <section class="hero compact-hero python-hero data-handling-hero">
+        <div class="meta-row"><span class="pill">Part III · Section 3.1 · Lecture 5</span><span class="time">About 15 to 18 hours with applied practice</span></div>
+        <h1>Data Handling, Text Analysis and Visualization I</h1>
+        <p>Move from Python values to a reproducible first exploration of a real tabular structure: load the supplied CSV, inspect it, calculate cautiously, explore categories and text, and document quality before cleaning.</p>
+        <div class="hero-actions"><button class="primary-button" data-start="3.1">Begin tutorial 3.1 <span>→</span></button><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
+      </section>
+
+      <section class="section-introduction">
+        <div><p class="eyebrow">From Python scripts to datasets</p><h2>Question first, calculation second, interpretation last</h2><p>This section keeps the learning pattern used in both Python Foundations sections while introducing pandas and CSV data. Every tutorial connects code to the underlying records, variable meaning, denominator, quality concern and limitation. The supplied file is deliberately raw: Lecture 5 detects and documents its problems without silently cleaning them.</p></div>
+        <div class="key-idea"><strong>Learning cycle</strong><p>Question → load → inspect → calculate → verify rows → document quality → interpret cautiously → reproduce.</p></div>
+      </section>
+
+      <section class="package-ilos foundation-ilos"><div><p class="eyebrow">Section 3.1 outcomes</p><h2>Intended learning outcomes</h2><p>These outcomes prepare students for cleaning, richer analysis and visualization in the following lectures.</p></div><ul class="learning-list">${dataHandlingIIlOs.map(ilo => `<li>${ilo}</li>`).join("")}</ul></section>
+
+      <details class="foundation-guide">
+        <summary>Open Lecture 5 course files and coding guide</summary>
+        <div>${dataHandlingIGuide}</div>
+      </details>
+
+      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Fourteen connected tutorials</p><h2 class="section-title">From datasets and CSV structure to a documented applied exploration</h2></div><p>Study Tutorials 3.1–3.13 in order when pandas is new. Tutorial 3.14 combines the complete workflow in eight applied activities.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
+
+      <section class="reading-panel python-resources">
+        <div><p class="eyebrow">Lecture 5 notebooks and dataset</p><h2>Match the website with runnable, verified material</h2><p>The Examples notebook follows the website sequence. The Exercises notebook contains all 33 numbered tasks before its separate answer section. The Applied Activities notebook contains eight cumulative tasks before its model walkthrough.</p><div class="reading-links"><a href="${pythonResourceLinks.dataHandlingI.examples}" target="_blank" rel="noreferrer">Tutorial Examples</a><a href="${pythonResourceLinks.dataHandlingI.exercises}" target="_blank" rel="noreferrer">Exercises and Solutions</a><a href="${pythonResourceLinks.dataHandlingI.cases}" target="_blank" rel="noreferrer">Applied Activities and Model Walkthrough</a><a href="${pythonResourceLinks.dataHandlingI.dataset}" target="_blank" rel="noreferrer">Raw Lecture 5 CSV</a><a href="${pythonResourceLinks.dataHandlingI.github}" target="_blank" rel="noreferrer">Lecture 5 GitHub Folder</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code Coverage Map</a></div></div>
+        <a class="resource-button reading-button" href="data-handling-text-analysis-visualization-i.md" download>↓ Download full Markdown</a>
+      </section>
+
+      <section class="section-footer-grid">
+        <div class="checkpoint-card"><p class="eyebrow">Tutorial 3.14</p><h3>Eight applied exploration activities</h3><p>Produce a reproducible initial data-exploration report without overwriting or silently repairing the raw source.</p></div>
+        <div class="checkpoint-card"><p class="eyebrow">Next course part</p><h3>Ready for cleaning and visualization</h3><p>Variable expectations, quality flags, grouped calculations and text rules provide an auditable starting point for the next lecture.</p></div>
+      </section>
+    </div>`;
+  bindOverview();
+  page.querySelectorAll("[data-toast]").forEach(button => button.addEventListener("click", event => { event.preventDefault(); showToast(button.dataset.toast); }));
+}
+
 function codeBlock(module) {
   if (!module.code) return "";
   return `<div class="code-shell"><div class="code-toolbar"><span>Python · selectable code</span><button class="copy-button" data-copy="${module.id}">Copy code</button></div><pre><code>${escapeHtml(module.code)}</code></pre></div><div class="expected"><strong>Expected output</strong><code>${escapeHtml(module.output)}</code></div>`;
@@ -1294,8 +1354,9 @@ function showModule(id) {
   const flow = state.section === "flow";
   const pythonFoundation = state.section === "python";
   const pythonFoundationII = state.section === "python-ii";
+  const dataHandlingI = state.section === "data-i";
   const conceptual = foundation || flow;
-  const sectionLabel = foundation ? "Section 1.1" : flow ? "Section 1.2" : pythonFoundation ? "Section 2.1" : pythonFoundationII ? "Section 2.2" : "Start Here";
+  const sectionLabel = foundation ? "Section 1.1" : flow ? "Section 1.2" : pythonFoundation ? "Section 2.1" : pythonFoundationII ? "Section 2.2" : dataHandlingI ? "Section 3.1" : "Start Here";
   state.current = id;
   renderNav();
   const index = modules.findIndex(item => item.id === id);
@@ -1303,21 +1364,21 @@ function showModule(id) {
   const next = modules[index + 1];
   const visualLabel = "Screenshot placeholder";
   const visualDescription = "An annotated interface screenshot will be inserted here.";
-  const chapterSource = foundation ? foundationChapters : flow ? flowChapters : pythonFoundation ? pythonFoundationChapters : pythonFoundationII ? pythonFoundationIIChapters : null;
+  const chapterSource = foundation ? foundationChapters : flow ? flowChapters : pythonFoundation ? pythonFoundationChapters : pythonFoundationII ? pythonFoundationIIChapters : dataHandlingI ? dataHandlingIChapters : null;
   const chapterContent = chapterSource
-    ? chapterSource[module.id].map(section => pythonFoundation || pythonFoundationII ? section.html : `<section class="chapter-section"><h2>${section.title}</h2>${section.html}</section>`).join("")
+    ? chapterSource[module.id].map(section => pythonFoundation || pythonFoundationII || dataHandlingI ? section.html : `<section class="chapter-section"><h2>${section.title}</h2>${section.html}</section>`).join("")
     : "";
   const tutorialContent = foundation
     ? `<section class="chapter-paper"><p class="eyebrow">Discussion tutorial</p>${chapterContent}${foundationVisuals[module.id] || ""}</section>`
     : flow
       ? `<section class="chapter-paper flow-chapter"><p class="eyebrow">Guided visual tutorial</p>${chapterContent}</section>`
-      : pythonFoundation || pythonFoundationII
-        ? `<section class="chapter-paper python-chapter"><p class="eyebrow">Hands-on Python tutorial</p>${chapterContent}</section>`
+      : pythonFoundation || pythonFoundationII || dataHandlingI
+        ? `<section class="chapter-paper python-chapter"><p class="eyebrow">${dataHandlingI ? "Hands-on data tutorial" : "Hands-on Python tutorial"}</p>${chapterContent}</section>`
         : `<section class="content-card compact-card" id="steps"><p class="eyebrow">Practical guide</p><h2>What to do</h2><div class="step-list compact-steps">${module.steps.map(step => `<div class="step"><h3>${step[0]}</h3><p>${step[1]}</p></div>`).join("")}</div>${codeBlock(module)}<figure class="compact-figure"><div class="screenshot-placeholder compact-placeholder"><div class="placeholder-inner"><div class="placeholder-icon">▣</div><span class="placeholder-label">${visualLabel} ${module.screenshot[0]}</span><strong>${module.screenshot[1]}</strong><p>${visualDescription}</p></div></div><figcaption class="screenshot-caption"><strong>Caption:</strong> ${module.screenshot[1]}. <strong>Alt text:</strong> ${module.screenshot[2]}</figcaption></figure></section>`;
   page.innerHTML = `
     <article class="page compact-page">
       <header class="module-header compact-module-header">
-        <div class="module-meta"><span class="pill">Core</span><span class="time">◷ ${module.time}</span>${conceptual ? `<span class="time">No programming</span>` : pythonFoundation || pythonFoundationII ? `<span class="time">Google Colab · beginner</span>` : ""}</div>
+        <div class="module-meta"><span class="pill">Core</span><span class="time">◷ ${module.time}</span>${conceptual ? `<span class="time">No programming</span>` : pythonFoundation || pythonFoundationII ? `<span class="time">Google Colab · beginner</span>` : dataHandlingI ? `<span class="time">Google Colab · pandas · raw CSV</span>` : ""}</div>
         <h1>${module.id} ${module.title}</h1>
         <p class="lead">${module.intro}</p>
       </header>
@@ -1327,8 +1388,8 @@ function showModule(id) {
         <section class="check-card compact-check"><div><p class="eyebrow">Quick check</p><h2>Before continuing</h2></div><div class="check-options">${module.check.map((item, itemIndex) => `<label class="check-option"><input type="checkbox" data-check="${itemIndex}" /> <span>${item}</span></label>`).join("")}</div></section>
         ${flow ? `<section class="case-contribution"><p class="eyebrow">Continuing case</p><h3>What this adds</h3><p>${module.contribution}</p></section><details class="model-answer"><summary>Open the model answer</summary><div><p>${module.model}</p><p class="answer-note">A different layout can also be valid when it preserves the same logic and course notation.</p></div></details>` : ""}
         <section class="reflection compact-reflection"><strong>${conceptual ? "Critical reflection" : "Responsible practice"}:</strong> ${module.reflection}</section>
-        ${foundation ? renderTutorialReferences(module.id, foundationReferences) : flow ? renderTutorialReferences(module.id, flowReferences) : pythonFoundation ? renderTutorialReferences(module.id, pythonFoundationReferences) : pythonFoundationII ? renderTutorialReferences(module.id, pythonFoundationIIReferences) : ""}
-        ${conceptual || pythonFoundation || pythonFoundationII ? "" : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><button class="resource-button" data-toast="Colab link placeholder.">↗ Colab</button><a class="resource-button" href="${courseRepositoryUrl}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${courseDatasetUrl}" target="_blank" rel="noreferrer">↓ Dataset</a><button class="resource-button" data-toast="Solution link placeholder.">✓ Solution</button></div></section>`}
+        ${foundation ? renderTutorialReferences(module.id, foundationReferences) : flow ? renderTutorialReferences(module.id, flowReferences) : pythonFoundation ? renderTutorialReferences(module.id, pythonFoundationReferences) : pythonFoundationII ? renderTutorialReferences(module.id, pythonFoundationIIReferences) : dataHandlingI ? renderTutorialReferences(module.id, dataHandlingIReferences) : ""}
+        ${conceptual || pythonFoundation || pythonFoundationII || dataHandlingI ? "" : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><button class="resource-button" data-toast="Colab link placeholder.">↗ Colab</button><a class="resource-button" href="${courseRepositoryUrl}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${courseDatasetUrl}" target="_blank" rel="noreferrer">↓ Dataset</a><button class="resource-button" data-toast="Solution link placeholder.">✓ Solution</button></div></section>`}
         <nav class="next-row" aria-label="Module navigation">
           ${previous ? `<button class="next-button" data-previous="${previous.id}"><span>←</span><span><small>Previous</small><strong>${previous.id} ${previous.title}</strong></span></button>` : `<button class="next-button" data-overview><span>←</span><span><small>Return to</small><strong>${sectionLabel}</strong></span></button>`}
           <button class="next-button complete-button ${state.completed.has(module.id) ? "done" : ""}" data-complete="${module.id}"><span>${state.completed.has(module.id) ? "✓" : "○"}</span><span><small>${state.completed.has(module.id) ? "Completed" : "Progress"}</small><strong>${state.completed.has(module.id) ? "Mark incomplete" : "Mark complete"}</strong></span></button>
@@ -1402,13 +1463,21 @@ function replaceTutorialScreenshotPlaceholders() {
 }
 
 function addCodeCompanionLinks() {
-  if (state.section !== "python" && state.section !== "python-ii") return;
-  const links = state.section === "python-ii" ? pythonResourceLinks.foundationsII : pythonResourceLinks.foundationsI;
+  if (state.section !== "python" && state.section !== "python-ii" && state.section !== "data-i") return;
+  const links = state.section === "python-ii"
+    ? pythonResourceLinks.foundationsII
+    : state.section === "data-i"
+      ? pythonResourceLinks.dataHandlingI
+      : pythonResourceLinks.foundationsI;
   page.querySelectorAll(".md-code.md-python").forEach(codeBlockElement => {
     if (codeBlockElement.nextElementSibling?.classList.contains("code-companion-links")) return;
     const resourceLinks = document.createElement("div");
     resourceLinks.className = "code-companion-links";
-    resourceLinks.innerHTML = state.section === "python"
+    resourceLinks.innerHTML = state.section === "data-i"
+      ? state.current === "3.14"
+        ? `<span>Run the matching applied activity:</span><a href="${links.cases}" target="_blank" rel="noreferrer">Open Lecture 5 Applied Activities</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 5 on GitHub</a>`
+        : `<span>Run the matching numbered material:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 5 Examples</a><a href="${links.exercises}" target="_blank" rel="noreferrer">Open Exercises and Solutions</a>`
+      : state.section === "python"
       ? `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 3 Examples in Colab</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`
       : state.current === "2.15"
         ? `<span>Run the matching applied solution:</span><a href="${links.appliedSolutions}" target="_blank" rel="noreferrer">Open Tutorial 2.15 Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 4 on GitHub</a>`
@@ -1449,7 +1518,10 @@ document.getElementById("menu-button").addEventListener("click", () => sidebar.c
 document.querySelectorAll("[data-package]").forEach(button => button.addEventListener("click", () => selectSection(button.dataset.package)));
 document.querySelectorAll(".top-actions [data-toast]").forEach(button => button.addEventListener("click", () => showToast(button.dataset.toast)));
 document.getElementById("glossary-button").addEventListener("click", () => {
-  if (state.section === "python-ii") {
+  if (state.section === "data-i") {
+    modules = dataHandlingIModules;
+    showModule("3.13");
+  } else if (state.section === "python-ii") {
     modules = pythonFoundationIIModules;
     showModule("2.15");
     setTimeout(() => document.getElementById("python-ii-glossary")?.scrollIntoView({ block: "start" }), 80);

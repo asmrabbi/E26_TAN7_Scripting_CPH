@@ -1,6 +1,6 @@
 # Tutorial code coverage
 
-This report lists the canonical GitHub/Colab notebooks for Python Foundations I and II after the final numbering and exercise reorganisation.
+This report lists the canonical GitHub/Colab notebooks for Python Foundations I, Python Foundations II and Lecture 5 after the numbering and exercise reorganisation.
 
 | Notebook | Tutorials | Code cells | Automatically executed | Manual input cells | Uncommented executable lines |
 |---|---|---:|---:|---:|---:|
@@ -13,6 +13,9 @@ This report lists the canonical GitHub/Colab notebooks for Python Foundations I 
 | [L04_Tutorial_2_15_Applied_Exercises.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)) | 2.15.1–2.15.10 | 10 | 10 | 0 | 0 |
 | [L04_Tutorial_2_15_Applied_Solutions.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)) | Worked Examples A–B and 2.15.1–2.15.10 | 44 | 43 | 1 | 0 |
 | [L04_Python_Foundations_II_Self_Test_Answers.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb)) | Cumulative questions 1–24 | 4 | 4 | 0 | 0 |
+| [L05_Tutorial_3_1_to_3_14_Examples.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb)) | Website Python blocks in 3.1–3.13 | 162 | 162 | 0 | 0 |
+| [L05_Tutorial_3_1_to_3_14_Exercises.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb)) | Exercises and solutions 3.1.1–3.13.3 | 58 | 58 | 0 | 0 |
+| [L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb)) | Applied activities and models 3.14.1–3.14.8 | 17 | 17 | 0 | 0 |
 
 ## Organisation decisions
 
@@ -24,3 +27,6 @@ This report lists the canonical GitHub/Colab notebooks for Python Foundations I 
 - The 24 difficult cumulative questions use a dedicated answer notebook with reasoned explanations and executable checks.
 - Adapted Rodrigo patterns are attributed in both the website text and the relevant solution code. No complete source file is reproduced verbatim.
 - All Lecture 3 and Lecture 4 code uses Python 3 and the standard library only; no package installation is required.
+- Lecture 5 uses pandas and the supplied 121 × 14 synthetic raw CSV. Google Colab includes pandas; local learners can install the repository requirements.
+- Lecture 5 contains exactly three canonical notebooks. All 33 exercises and eight applied activities appear before their separate solution/model sections.
+- Every Lecture 5 website Python block is represented in the Examples notebook. Fifteen deliberately broken, local-path or Colab-upload demonstrations are retained as safe reference cells so Run all completes without concealing their intended error or environment boundary.

@@ -1,0 +1,122 @@
+record_id,report_month,city,service_type,cases_received,cases_resolved,resolution_days,satisfaction_score,digital_cases,in_person_cases,repeat_contacts,complaints_received,staff_hours,feedback
+SR2026-0001,2026-01-01,Copenhagen,Housing,130,116,8.0,3.5,88,42,17,10,87.8,"The guidance was clear, but the supporting-document requirements caused delays."
+SR2026-0002,2026-01-01,Copenhagen,Transport,124,110,5.1,3.9,92,32,10,8,54.7,Several users asked for clearer information about service changes.
+SR2026-0003,2026-01-01,Copenhagen,Employment,105,93,5.5,3.9,73,32,14,5,58.2,Useful advice and a friendly response from staff.
+SR2026-0004,2026-01-01,Copenhagen,Waste,104,94,4.9,4.2,80,24,6,4,34.3,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0005,2026-01-01,Copenhagen,Citizen Services,166,152,3.1,4.3,137,29,9,6,48.9,The response was fast and the information was useful.
+SR2026-0006,2026-01-01,Aarhus,Housing,111,96,7.5,3.6,69,42,16,8,72.0,"Helpful staff explained the housing process, although the waiting time felt long."
+SR2026-0007,2026-01-01, copenhagen ,Transport,95,88,5.1,4.0,64,31,6,5,32.4,Several users asked for clearer information about service changes.
+SR2026-0008,2026-01-01,Aarhus,Employment,87,80,5.5,3.9,57,30,8,3,49.0,"The answer was useful, although the waiting time was longer than expected."
+SR2026-0009,2026-01-01,Aarhus,Waste,97,89,2.7,4.2,68,29,4,2,30.1,Collection information was easy to understand and the response was quick.
+SR2026-0010,2026-01-01,Aarhus,Citizen Services,123,113,3.0,4.4,92,31,10,2,37.5,Friendly staff and a clear answer.
+SR2026-0011,2026-01-01,Odense,Transport ,107,92,6.8,3.5,61,46,14,7,71.7,"The online application was useful, but several steps were difficult to understand."
+SR2026-0012,2026-01-01,Odense,Transport,80,87,4.2,4.3,55,25,6,3,33.7,"The response was quick, but route-change information was difficult to find online."
+SR2026-0013,2026-01-01,Odense,Employment,69,63,4.4,4.1,44,25,6,3,39.5,Useful advice and a friendly response from staff.
+SR2026-0014,2026-01-01,Odense,Waste,82,73,3.0,4.5,54,28,7,3,28.6,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0015,2026-01-01,Odense,Citizen Services,110,100,unknown,4.2,79,31,6,4,31.3,The response was fast and the information was useful.
+SR2026-0016,2026-01-01,Aalborg,Housing,86,73,6.8,3.6,48,38,11,7,56.4,"The guidance was clear, but the supporting-document requirements caused delays."
+SR2026-0017,2026-01-01,Aalborg,Transport,80,71,3.5,4.1,48,32,7,6,31.8,"The digital form worked well, although some instructions were confusing."
+SR2026-0018,2026-01-01,Aalborg,Employment,70,62,5.4,4.1,42,28,8,3,40.7,
+SR2026-0019,2026-01-01,Aalborg,Waste,62,54,3.5,4.5,41,21,3,2,20.1,The issue was resolved quickly after the first contact.
+SR2026-0020,2026-01-01,Aalborg,Citizen Services,100,93,2.8,4.3,59,41,7,3,30.4,The digital form was convenient and staff explained the process clearly.
+SR2026-0021,2026-02-01,Copenhagen,Housing,157,143,7.3,3.6,111,46,21,13,101.3,"Helpful staff explained the housing process, although the waiting time felt long."
+SR2026-0022,2026-02-01,Copenhagen,Transport,126,118,4.8,,94,32,8,7,54.7,Clear information and a helpful answer about the transport service.
+SR2026-0023,2026-02-01,Copenhagen,Employment,120,112,6.1,3.9,92,28,16,6,70.2,"The answer was useful, although the waiting time was longer than expected."
+SR2026-0024,2026-02-01,Copenhagen,Waste,112,100,3.8,4.1,93,19,9,2,39.6,Some users found the collection instructions confusing.
+SR2026-0025,2026-02-01,Copenhagen,Citizen Services,161,151,2.9,4.3,142,19,10,5,46.8,Quick and helpful service with clear instructions.
+SR2026-0026,2026-02-01,Aarhus,Housing,136,124,7.2,3.6,88,48,17,8,89.4,"Helpful staff explained the housing process, although the waiting time felt long."
+SR2026-0027,2026-02-01,Aarhus,Transport,110,102,4.9,4.2,79,31,6,7,42.5,"The digital form worked well, although some instructions were confusing."
+SR2026-0028,2026-02-01,Aarhus,Employment,96,87,5.4,3.9,65,31,10,5,58.1,The guidance was clear but the process required repeated contact.
+SR2026-0029,2026-02-01,Aarhus,Waste,103,95,3.9,4.1,78,25,6,4,36.7,Collection information was easy to understand and the response was quick.
+SR2026-0030,2026-02-01,Aarhus,Citizen Services,121,113,2.6,4.6,90,31,7,3,39.0,The digital form was convenient and staff explained the process clearly.
+SR2026-0031,2026-02-01,Odense,Housing,100,90,6.8,3.6,61,39,13,7,73.9,"The wait was not long, and the final response was clear and helpful."
+SR2026-0032,2026-02-01,Odense,Transport,80,74,3.8,4.2,53,27,7,5,31.0,Fast response and useful guidance.
+SR2026-0033,2026-02-01,AALBORG,Employment,76,71,4.6,4.0,51,25,6,2,40.9,"The online information was helpful, but some users wanted more detailed instructions."
+SR2026-0034,2026-02-01,Odense,Waste,82,77,2.6,4.4,57,43,5,4,27.2,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0035,2026-02-01,Odense,Citizen Services,115,108,2.3,4.2,84,31,6,3,36.4,The digital form was convenient and staff explained the process clearly.
+SR2026-0036,2026-02-01,Aalborg,Citizen services,99,88,6.5,3.9,54,45,16,6,67.3,Staff were friendly and the final answer was helpful.
+SR2026-0037,2026-02-01,Aalborg,Transport,89,82,4.2,4.3,54,35,8,4,39.4,Fast response and useful guidance.
+SR2026-0038,2026-02-01,Aalborg,Employment,69,63,3.8,4.0,42,27,7,4,41.9,"The answer was useful, although the waiting time was longer than expected."
+SR2026-0039,2026-02-01,Aalborg,Waste,72,65,2.6,6.2,48,24,5,3,24.2,The issue was resolved quickly after the first contact.
+SR2026-0040,2026-02-01,Aalborg,Citizen Services,99,95,1.8,4.6,68,31,5,3,29.1,The digital form was convenient and staff explained the process clearly.
+SR2026-0041,2026-03-01,Copenhagen,Housing,140,126,7.5,3.7,106,34,18,10,92.4,"The online application was useful, but several steps were difficult to understand."
+SR2026-0042,2026-03-01,Copenhagen,Transport,132,122,5.2,3.9,105,27,13,7,52.6,Several users asked for clearer information about service changes.
+SR2026-0043,2026-03-01,Copenhagen,Employment,129,123,5.3,3.9,93,36,14,5,67.7,"Staff were helpful, though appointment availability varied."
+SR2026-0044,2026-13-01,Copenhagen,Waste,122,117,3.1,4.3,98,24,8,6,40.1,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0045,2026-03-01,Copenhagen,Citizen Services,185,174,2.6,4.2,154,31,10,6,56.2,"The online process was easy to use, although one step was confusing."
+SR2026-0046,2026-03-01,Aarhus,Housing,122,110,6.9,3.7,84,38,16,12,84.8,"The answer solved the problem, but repeated contact was needed before everything was clear."
+SR2026-0047,2026-03-01,Aarhus,Transport,119,112,3.8,4.0,92,27,9,6,49.1,"The response was quick, but route-change information was difficult to find online."
+SR2026-0048,2026-03-01,Aarhus,Employment,96,90,4.4,3.9,70,26,12,5,55.1,"The online information was helpful, but some users wanted more detailed instructions."
+SR2026-0049,2026-03-01,Aarhus,Waste,109,101,2.5,,84,25,5,4,37.7,The issue was resolved quickly after the first contact.
+SR2026-0050,2026-03-01,Aarhus,Citizen Services,157,154,3.1,4.4,128,29,10,5,51.1,The response was fast and the information was useful.
+SR2026-0051,2026-03-01,Odense,Housing,121,108,7.2,3.5,76,45,15,9,82.9,Staff were friendly and the final answer was helpful.
+SR2026-0052,2026-03-01,Odense,Transport,93,89,4.0,4.1,65,28,7,5,40.4,Clear information and a helpful answer about the transport service.
+SR2026-0053,2026-03-01,Odense,Employment,86,79,5.7,4.0,59,27,8,5,49.3,"The online information was helpful, but some users wanted more detailed instructions."
+SR2026-0054,2026-03-01,Odense,Waste,-4,0,3.0,4.1,0,0,0,0,29.7,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0055,2026-03-01,Odense,Citizen Services,124,116,1.5,4.3,93,31,8,4,38.3,The digital form was convenient and staff explained the process clearly.
+SR2026-0056,2026-03-01,Aalborg,Housing,93,82,5.5,3.7,56,37,11,7,54.9,"Helpful staff explained the housing process, although the waiting time felt long."
+SR2026-0057,2026-03-01,Aalborg,Transport,86,79,3.8,4.2,58,28,7,6,37.1,"The response was quick, but route-change information was difficult to find online."
+SR2026-0058,2026-03-01,Odense ,Employment,78,72,4.2,4.0,47,31,7,3,43.8,"The answer was useful, although the waiting time was longer than expected."
+SR2026-0059,2026-03-01,Aalborg,Waste,77,72,2.2,4.4,53,24,3,3,26.6,The issue was resolved quickly after the first contact.
+SR2026-0060,2026-03-01,Aalborg,Citizen Services,114,111,1.4,4.9,83,31,9,3,33.5,The response was fast and the information was useful.
+SR2026-0061,2026-04-01,Copenhagen,Housing,132,120,24.7,3.7,101,31,18,9,90.8,"The guidance was clear, but the supporting-document requirements caused delays."
+SR2026-0062,2026-04-01,Copenhagen,Transport,129,124,4.5,4.0,103,26,11,5,52.6,"The response was quick, but route-change information was difficult to find online."
+SR2026-0063,2026-04-01,Copenhagen,Employment,106,103,5.4,3.9,79,27,11,5,60.4,"Staff were helpful, though appointment availability varied."
+SR2026-0064,2026-04-01,Copenhagen,Waste,117,113,2.8,4.3,98,19,3,4,37.1,The issue was resolved quickly after the first contact.
+SR2026-0065,2026-04-01,Copenhagen,Citizen Services,158,152,3.0,4.3,139,19,7,7,47.5,The response was fast and the information was useful.
+SR2026-0066,2026-04-01,Aarhus,Housing,113,106,6.1,3.8,74,39,13,10,68.3,"The guidance was clear, but the supporting-document requirements caused delays."
+SR2026-0067,2026-04-01,Aarhus,Transport,102,99,unknown,4.3,75,27,8,4,40.6,"The response was quick, but route-change information was difficult to find online."
+SR2026-0068,2026-04-01,Aarhus,Employment,88,84,5.2,4.1,66,22,9,5,45.4,"Staff were helpful, though appointment availability varied."
+SR2026-0069,2026-04-01,Aarhus,Waste,98,93,3.4,4.5,78,20,107,3,30.9,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0070,2026-04-01,Aarhus,Citizen Services,136,133,1.7,4.5,111,25,6,4,36.1,Quick and helpful service with clear instructions.
+SR2026-0071,2026-04-01,Odense,WASTE,90,83,6.4,3.8,58,32,11,6,55.7,"The answer solved the problem, but repeated contact was needed before everything was clear."
+SR2026-0072,2026-04-01,Odense,Transport,85,82,4.2,4.4,57,28,3,4,34.9,"The response was quick, but route-change information was difficult to find online."
+SR2026-0073,2026-04-01,Odense,Employment,77,74,4.4,0.0,53,24,7,2,41.0,"The answer was useful, although the waiting time was longer than expected."
+SR2026-0074,2026-04-01,Odense,Waste,82,77,3.0,4.3,57,25,3,2,29.1,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0075,2026-04-01,Odense,Citizen Services,102,98,1.7,4.7,80,22,8,2,32.6,Friendly staff and a clear answer.
+SR2026-0076,2026-04-01,Aalborg,Housing,96,88,5.6,3.7,58,38,12,7,67.5,
+SR2026-0077,2026-04-01,Aalborg,Transport,83,81,2.9,4.1,56,27,4,3,36.7,"The response was quick, but route-change information was difficult to find online."
+SR2026-0078,2026-04-01,Aalborg,Employment,62,60,4.5,3.9,41,21,8,2,33.5,The guidance was clear but the process required repeated contact.
+SR2026-0079,2026-04-01,Aalborg,Waste,75,71,2.5,4.2,52,23,5,2,26.4,Some users found the collection instructions confusing.
+SR2026-0079,2026-04-01,Aalborg,Citizen Services,103,102,1.9,4.6,74,29,6,3,33.5,Friendly staff and a clear answer.
+SR2026-0081,2026-05-01,Copenhagen,Housing,133,123,7.7,3.7,94,39,20,10,90.9,"The online application was useful, but several steps were difficult to understand."
+SR2026-0082,2026-05-01,aarhus,Transport,144,142,3.8,4.1,119,25,6,8,57.9,Fast response and useful guidance.
+SR2026-0083,2026-05-01,Copenhagen,Employment,110,108,5.6,3.9,84,26,11,5,61.5,Useful advice and a friendly response from staff.
+SR2026-0084,2026-05-01,Copenhagen,Waste,138,131,3.1,4.4,110,28,8,3,47.2,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0085,2026-05-01,Copenhagen,Citizen Services,178,176,3.5,4.5,149,29,6,4,50.9,"The process took forever, although the staff member was helpful."
+SR2026-0086,2026-05-01,Aarhus,Housing,127,118,7.0,3.7,87,40,15,10,88.2,"The online application was useful, but several steps were difficult to understand."
+SR2026-0087,2026-05-01,Aarhus,Transport,122,118,3.6,4.1,91,31,10,5,51.3,Clear information and a helpful answer about the transport service.
+SR2026-0088,2026-05-01,Aarhus,Employment,99,96,4.0,,75,24,11,7,52.7,"Staff were helpful, though appointment availability varied."
+SR2026-0089,2026-05-01,Aarhus,Waste,103,101,3.0,4.3,83,20,5,3,36.0,"Helpful guidance, but some users reported delayed follow-up."
+SR2026-0090,2026-05-01,Aarhus,Citizen Services,159,162,2.5,4.6,128,31,4,6,46.4,The response was fast and the information was useful.
+SR2026-0091,2026-05-01,Odense,Housing,113,110,7.4,3.6,74,39,15,9,77.0,"The online application was useful, but several steps were difficult to understand."
+SR2026-0092,2026-05-01,Odense,Transport,92,91,3.5,4.0,66,26,4,6,35.3,Fast response and useful guidance.
+SR2026-0093,2026-05-01,Odense,Employment,87,86,5.0,4.1,64,23,10,4,45.2,The guidance was clear but the process required repeated contact.
+SR2026-0094,2026-05-01,Odense,Waste,89,86,2.4,4.3,66,23,5,-2,27.3,The online information was clear and easy to find.
+SR2026-0095,2026-05-01,Odense,Citizen Services,141,140,1.9,4.6,107,34,9,4,42.7,Friendly staff and a clear answer.
+SR2026-0096,2026-05-01,Aalborg,Housing,100,93,6.9,3.8,57,43,12,7,64.2,"The guidance was clear, but the supporting-document requirements caused delays."
+SR2026-0097,2026-05-01,Aalborg,Employment Services,97,94,3.1,4.2,67,30,6,8,43.0,Clear information and a helpful answer about the transport service.
+SR2026-0098,2026-05-01,Aalborg,Employment,72,70,4.8,4.1,46,26,6,3,40.1,Useful advice and a friendly response from staff.
+SR2026-0099,2026-05-01,Koebenhavn,Waste,76,75,3.0,4.6,50,26,5,3,24.5,The online information was clear and easy to find.
+SR2026-0100,2026-05-01,Aalborg,Citizen Services,102,101,2.1,4.5,74,28,5,3,27.3,Quick and helpful service with clear instructions.
+SR2026-0101,2026-06-01,Copenhagen,Housing,131,129,7.9,3.6,87,44,16,9,82.0,"The guidance was clear, but the supporting-document requirements caused delays."
+SR2026-0102,2026-06-01,Copenhagen,Transport,123,119,4.7,4.2,105,18,8,6,49.3,Several users asked for clearer information about service changes.
+SR2026-0103,2026-06-01,Copenhagen,Employment,101,100,unknown,4.1,76,25,7,4,59.2,"The online information was helpful, but some users wanted more detailed instructions."
+SR2026-0104,2026-06-01,Copenhagen,Waste,97,94,3.2,4.4,79,18,5,4,33.3,The issue was resolved quickly after the first contact.
+SR2026-0105,2026-06-01,Copenhagen,Citizen Services,141,140,3.1,4.4,122,19,7,4,40.7,The digital form was convenient and staff explained the process clearly.
+SR2026-0106,2026-06-01,Aarhus,Housing,109,106,6.9,3.8,79,30,15,8,0.0,Staff were friendly and the final answer was helpful.
+SR2026-0107,2026-06-01,Aarhus,Transport,102,101,3.4,4.2,75,27,6,5,40.8,Fast response and useful guidance.
+SR2026-0108,2026-06-01,Aarhus,Employment,86,85,4.8,4.1,65,21,8,4,50.1,Useful advice and a friendly response from staff.
+SR2026-0109,2026-06-01,Aarhus,Waste,90,88,3.0,4.4,71,19,6,2,32.5,The issue was resolved quickly after the first contact.
+SR2026-0110,2026-06-01,Aarhus,Citizen Services,118,117,2.1,4.6,94,24,6,3,33.3,Friendly staff and a clear answer.
+SR2026-0111,2026-06-01,Odense,Housing,94,89,6.5,,62,32,12,7,59.2,"Helpful staff explained the housing process, although the waiting time felt long."
+SR2026-0112,2026-06-01,Odense,Transport,75,73,3.7,4.2,53,22,6,4,31.7,Clear information and a helpful answer about the transport service.
+SR2026-0113,2026-06-01,Odense,Employment,78,75,4.5,4.4,55,23,8,2,44.1,The guidance was clear but the process required repeated contact.
+SR2026-0114,2026-06-01,Odense,Waste,81,80,2.8,4.6,58,23,6,4,28.0,The online information was clear and easy to find.
+SR2026-0115,2026-06-01,Odense,Citizen Services,111,110,2.5,4.5,88,23,4,3,37.3,Friendly staff and a clear answer.
+SR2026-0116,2026-06-01,Aalborg,Housing,89,85,5.9,3.9,53,36,13,8,56.8,Staff were friendly and the final answer was helpful.
+SR2026-0117,2026-06-01,Aalborg,Transport,80,79,3.4,4.2,56,24,6,4,32.4,"The digital form worked well, although some instructions were confusing."
+SR2026-0118,2026-06-01,Aalborg,Employment,66,65,4.2,4.2,42,24,6,3,37.5,
+SR2026-0119,2026-06-01,Aalborg,Waste,71,70,2.3,4.3,49,22,4,4,23.3,Collection information was easy to understand and the response was quick.
+SR2026-0120,2026-06-01,Aalborg,Citizen Services,94,93,1.8,4.7,67,27,4,3,29.8,The response was fast and the information was useful.
+SR2026-0027,2026-02-01,Aarhus,Transport,110,102,4.9,4.2,79,31,6,7,42.5,"The digital form worked well, although some instructions were confusing."
