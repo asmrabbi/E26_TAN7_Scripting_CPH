@@ -113,6 +113,12 @@ Code appears in Python blocks, output appears in text blocks and comments begin 
 
 # Part A. Start coding in Google Colab
 
+## Tutorial 2.1 overview
+
+Python code is a sequence of instructions that the Python interpreter reads and executes. In a Colab notebook, each code cell is a small runnable part of that sequence, and its output normally appears directly underneath it. The built-in `print()` function makes a value visible by receiving that value inside parentheses and sending a readable representation to the output area. A variable created in one cell can be used by a later cell only while the notebook runtime still remembers it, so execution order matters. Restarting the runtime clears those remembered values and is therefore a useful way to test whether a notebook can be run from the beginning. By the end of this tutorial, you should be able to predict, run, inspect, deliberately break and repair a short sequence of cells.
+
+**Core Python vocabulary:** code cell, runtime, statement, function call, argument, string, variable, output and `print()`.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 1: Why should you learn to write programs?](https://www.py4e.com/html3/01-intro) | Read **Words and sentences**, **Conversing with Python**, **Writing a program**, **What could possibly go wrong?** and **Debugging**. These sections support first output, execution order and a constructive response to errors. |
@@ -123,7 +129,6 @@ The prerequisite panel on the Python Foundations I homepage explains how to open
 
 ### Example 2.1.1 - Run your first code cell
 
-**Level:** Simple
 
 **Code**
 
@@ -168,7 +173,6 @@ Which characters tell Python that `Python is running` should be treated as text?
 
 ### Example 2.1.2 - Run cells in sequence
 
-**Level:** Intermediate
 
 **Code cell 1**
 
@@ -245,7 +249,6 @@ Why is notebook execution order part of debugging?
 
 ### Example 2.1.3 - Display several pieces of information
 
-**Level:** Simple
 
 **Code**
 
@@ -295,7 +298,6 @@ What job is the comma performing inside the second `print()` call?
 
 ### Example 2.1.4 - Display a small organisational summary
 
-**Level:** Intermediate
 
 **Code**
 
@@ -353,7 +355,6 @@ Does the final subtraction happen before or after `print()` displays the result?
 
 ### Example 2.1.5 - Format a readable report with newline characters
 
-**Level:** More advanced
 
 **Code**
 
@@ -425,6 +426,12 @@ Why does `\n` change the layout even though `print()` is called only once on the
 
 # Part B. Values, variables and names
 
+## Tutorial 2.2 overview
+
+Python works with values such as numbers, text, Boolean states and the special value `None`. A value written directly in code is a **literal**, while a **variable** is a meaningful name that refers to a value so it can be reused. The assignment operator `=` makes the name on its left refer to the value produced on its right; it does not mean permanent mathematical equality. Uppercase names such as `EXPECTED_COLUMNS` communicate a constant-by-convention, although Python does not prevent reassignment. Python keywords such as `if` and `class` belong to the language grammar and cannot be ordinary variable names, while names such as `input` and `float` are legal but would hide useful built-in functions. Clear snake-case names make later calculations, debugging and data work easier to explain and verify.
+
+**Core Python vocabulary:** literal, value, variable, assignment, reassignment, constant-by-convention, keyword, built-in name and snake case.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Values and types**, **Variables**, **Variable names and keywords**, and **Choosing mnemonic variable names**. These sections directly support literals, assignment, reserved words and meaningful names. |
@@ -449,7 +456,6 @@ Compare these roles:
 
 ### Example 2.2.1 - Use literals directly
 
-**Level:** Simple
 
 **Code**
 
@@ -501,7 +507,6 @@ Which of the four literals requires quotation marks?
 
 ### Example 2.2.2 - Use constants by convention
 
-**Level:** Intermediate
 
 **Code**
 
@@ -556,7 +561,6 @@ Is an uppercase Python name technically protected from reassignment?
 
 ### Example 2.2.3 - Recognise the risk of unexplained literals
 
-**Level:** More advanced
 
 **Code**
 
@@ -633,7 +637,6 @@ Read `=` in an assignment as "is assigned" or "now refers to", not as "is mathem
 
 ### Example 2.2.4 - Assign and display values
 
-**Level:** Simple
 
 **Code**
 
@@ -688,7 +691,6 @@ Which side of `=` normally contains the variable name in a basic assignment?
 
 ### Example 2.2.5 - Reassign a variable
 
-**Level:** Intermediate
 
 **Code**
 
@@ -745,7 +747,6 @@ Why can the same variable name appear on both sides of `=` during an update?
 
 ### Example 2.2.6 - Extend an audit trail with `+=`
 
-**Level:** More advanced
 
 The augmented assignment operator `+=` updates a variable using its current value. With numbers it can increase a count. With strings it can extend text. This example uses text so that the update records a sequence of data-preparation actions.
 
@@ -799,7 +800,6 @@ Why is this break especially important to test even though Python produces no tr
 
 ### Example 2.2.7 - Derive new variables without losing originals
 
-**Level:** More advanced
 
 **Code**
 
@@ -908,7 +908,6 @@ Current Python versions also have **soft keywords** such as `match`, `case`, `_`
 
 ### Example 2.2.8 - Use a reserved word inside a meaningful name
 
-**Level:** Simple
 
 **Code**
 
@@ -962,7 +961,6 @@ Why is `class_size` allowed even though `class` is a keyword?
 
 ### Example 2.2.9 - Check whether words are Python keywords
 
-**Level:** More advanced
 
 Python includes a small standard module named `keyword` that can check a word for you.
 
@@ -1018,7 +1016,6 @@ Why does `keyword.iskeyword("print")` return `False` even though you should avoi
 
 ### Example 2.2.10 - Avoid hiding a built-in function
 
-**Level:** Intermediate
 
 **Code**
 
@@ -1121,7 +1118,6 @@ Avoid names such as `x`, `thing`, `data1`, `temp` and `final_final` unless the c
 
 ### Example 2.2.11 - Use valid snake-case names
 
-**Level:** Simple
 
 **Code**
 
@@ -1175,7 +1171,6 @@ Why can output labels contain spaces while variable names cannot?
 
 ### Example 2.2.12 - Replace vague names with meaningful ones
 
-**Level:** Intermediate
 
 **Code**
 
@@ -1225,7 +1220,6 @@ How can a precise variable name expose an assumption in a data-cleaning decision
 
 ### Example 2.2.13 - Notice case sensitivity
 
-**Level:** More advanced
 
 **Code**
 
@@ -1294,6 +1288,12 @@ Are two names that differ only in capitalisation the same variable in Python?
 
 # Part C. Expressions and calculations
 
+## Tutorial 2.3 overview
+
+An **expression** is Python code that produces a value, while a **statement** is an instruction Python carries out. Arithmetic expressions use operators such as `+`, `-`, `*`, `/`, `//`, `%` and `**` to combine numerical values. Ordinary division `/` produces a floating-point result, floor division `//` gives the number of complete whole groups, and modulo `%` gives the remainder. Python follows an order of operations, so exponentiation and multiplication are evaluated before addition unless parentheses specify another order. Parentheses are therefore not only mathematical punctuation; they also make the intended calculation easier for another reader to audit. Every rate or percentage must be connected to a defensible numerator, denominator, unit and case assumption.
+
+**Core Python vocabulary:** expression, statement, operator, operand, arithmetic, floor division, modulo, exponentiation, precedence and parentheses.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Statements**, **Operators and operands**, **Expressions**, **Order of operations**, **Modulus operator** and **String operations**. These sections match the Part C sequence closely. |
@@ -1316,7 +1316,6 @@ At beginner level, use this practical distinction:
 
 ### Example 2.3.1 - Put an expression inside a statement
 
-**Level:** Simple
 
 **Code**
 
@@ -1364,7 +1363,6 @@ Which part of the final line produces the numerical value?
 
 ### Example 2.3.2 - Store the result of an expression
 
-**Level:** Intermediate
 
 **Code**
 
@@ -1418,7 +1416,6 @@ Why is `completion_rate` assigned a float even though the source counts are inte
 
 ### Example 2.3.3 - Turn a messy field label into a consistent name
 
-**Level:** More advanced
 
 **Code**
 
@@ -1512,7 +1509,6 @@ Important points:
 
 ### Example 2.3.4 - Calculate basic data-quality counts
 
-**Level:** Simple
 
 **Code**
 
@@ -1567,7 +1563,6 @@ Which assumption determines whether the addition is valid?
 
 ### Example 2.3.5 - Compare division, floor division and remainder
 
-**Level:** Intermediate
 
 **Code**
 
@@ -1624,7 +1619,6 @@ Which operator tells you how many records remain after creating complete batches
 
 ### Example 2.3.6 - Calculate a rate and a projected count
 
-**Level:** More advanced
 
 **Code**
 
@@ -1680,7 +1674,6 @@ What assumption is encoded in `next_round_multiplier`?
 
 ### Example 2.3.7 - Use exponentiation in a simple growth scenario
 
-**Level:** Optional advanced example
 
 **Code**
 
@@ -1761,7 +1754,6 @@ Operators at the same level are usually evaluated from left to right. Exponentia
 
 ### Example 2.3.8 - See how multiplication happens before addition
 
-**Level:** Simple
 
 **Code**
 
@@ -1812,7 +1804,6 @@ Which operation is performed first in `1200 + 350 * 4`?
 
 ### Example 2.3.9 - Make a percentage formula explicit
 
-**Level:** Intermediate
 
 **Code**
 
@@ -1864,7 +1855,6 @@ What value is the complete numerator in the repaired expression?
 
 ### Example 2.3.10 - Use nested parentheses for a weighted scenario
 
-**Level:** More advanced
 
 **Code**
 
@@ -1916,7 +1906,6 @@ Who is responsible for justifying the value of a weight used in a metric?
 
 ### Example 2.3.11 - Understand a subtle negative-number case
 
-**Level:** Optional advanced example
 
 **Code**
 
@@ -1982,6 +1971,12 @@ What is the base of the exponent in `(-3) ** 2`?
 
 # Part D. Foundational Python data types
 
+## Tutorial 2.4 overview
+
+A Python value has a **type**, and that type determines which operations are meaningful. Strings (`str`) represent text, integers (`int`) represent whole numbers, floats (`float`) represent decimal or continuous numerical values, and Booleans (`bool`) represent `True` or `False`. Quotation marks matter because `"25"` is text while `25` is a number, even though both may look similar when displayed. The built-in `type()` function reports how Python currently treats a value and is especially helpful when a calculation fails. Python may combine compatible numerical types automatically, but identifiers with leading zeros often need to remain strings so their meaning is preserved. `None`, zero, empty text and the string `"None"` are different states and must not be treated as interchangeable missing values.
+
+**Core Python vocabulary:** data type, string, integer, float, Boolean, comparison, `type()`, implicit conversion and `None`.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Values and types** and **String operations**. Pay particular attention to the difference between numerical values and digits inside quotation marks. |
@@ -2001,7 +1996,6 @@ The quotation marks define the value but are not part of the displayed output. D
 
 ### Example 2.4.1 - Choose quotation marks that fit the text
 
-**Level:** Simple
 
 **Code**
 
@@ -2052,7 +2046,6 @@ Why are double quotation marks convenient for the first string?
 
 ### Example 2.4.2 - Join and repeat strings
 
-**Level:** Intermediate
 
 **Code**
 
@@ -2105,7 +2098,6 @@ What does `+` do when both operands are strings?
 
 ### Example 2.4.3 - Build clear messages with f-strings
 
-**Level:** More advanced
 
 An **f-string** lets you place expressions inside a string by writing `f` before the opening quotation mark and placing expressions inside braces `{}`.
 
@@ -2183,7 +2175,6 @@ Use integers for counts when partial units are impossible. Use floats for measur
 
 ### Example 2.4.4 - Use counts and measurements appropriately
 
-**Level:** Simple
 
 **Code**
 
@@ -2239,7 +2230,6 @@ Why should a count normally be stored as an integer?
 
 ### Example 2.4.5 - Notice that division produces a float
 
-**Level:** Intermediate
 
 **Code**
 
@@ -2291,7 +2281,6 @@ Can dividing two integers produce a float?
 
 ### Example 2.4.6 - Understand floating-point representation
 
-**Level:** More advanced
 
 Computers store many decimal fractions as binary approximations. This can produce a small representation surprise.
 
@@ -2345,7 +2334,6 @@ Why might a simple decimal calculation display more digits than expected?
 
 ### Example 2.4.7 - Recognise implicit conversion from integer to float
 
-**Level:** Intermediate
 
 Python can combine an integer and a float in one arithmetic expression. It automatically represents the numerical result as a float so that a fractional part is not lost. This is called **implicit conversion** or **type promotion**.
 
@@ -2402,7 +2390,6 @@ After the calculation, what is the type of `whole_hours`, and what is the type o
 
 ### Example 2.4.8 - Separate rounding a value from formatting its display
 
-**Level:** More advanced
 
 Rounding and display formatting answer different questions. `round()` creates a rounded numerical value. An f-string can control how a number looks without changing the stored source value.
 
@@ -2495,7 +2482,6 @@ Do not confuse assignment `=` with equality comparison `==`.
 
 ### Example 2.4.9 - Store Boolean flags directly
 
-**Level:** Simple
 
 **Code**
 
@@ -2548,7 +2534,6 @@ What are the only two Boolean literal values in Python?
 
 ### Example 2.4.10 - Produce Booleans with comparisons
 
-**Level:** Intermediate
 
 **Code**
 
@@ -2606,7 +2591,6 @@ Why are `>= 250` and `== 250` different questions?
 
 ### Example 2.4.11 - Combine Boolean conditions
 
-**Level:** More advanced
 
 **Code**
 
@@ -2693,7 +2677,6 @@ Common results in this tutorial are:
 
 ### Example 2.4.12 - Inspect the four foundation types
 
-**Level:** Simple
 
 **Code**
 
@@ -2750,7 +2733,6 @@ Does `type()` report the role of a value in your research design or only its Pyt
 
 ### Example 2.4.13 - Use `type()` to investigate a failed calculation
 
-**Level:** Intermediate
 
 **Code**
 
@@ -2800,7 +2782,6 @@ What evidence in the code tells you that `"250"` is not an integer?
 
 ### Example 2.4.14 - Inspect expressions, not only variables
 
-**Level:** More advanced
 
 **Code**
 
@@ -2856,7 +2837,6 @@ Python uses the special value `None` to represent the absence of a value. It is 
 
 ### Example 2.4.15 - Preserve three different states
 
-**Level:** More advanced
 
 **Code**
 
@@ -2933,6 +2913,12 @@ Why would replacing a missing waiting time with `0` change the meaning of the re
 
 # Part E. Type conversion and user input
 
+## Tutorial 2.5 overview
+
+Type conversion creates a new value of another type when the conversion is possible and appropriate. The functions `int()`, `float()` and `str()` convert suitable values to an integer, float or string, but a successful conversion does not prove that the result is plausible or ethically appropriate. The built-in `input()` function displays a prompt, pauses the script and returns everything the user types as a string. Numerical keyboard input must therefore be converted before arithmetic, while identifiers and categories may need to remain text. Clear prompts should state what information and unit the script expects, and raw input should be preserved when traceability matters. The interactive examples in this tutorial print a manual-run instruction first, then wait for the learner to enter the requested values.
+
+**Core Python vocabulary:** type conversion, `int()`, `float()`, `str()`, `input()`, prompt, raw input, validation and `ValueError`.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Asking the user for input** and the surrounding type-conversion discussion. This directly supports `input()`, `int()` and the `ValueError` produced by unsuitable text. |
@@ -2953,7 +2939,6 @@ Conversion is not the same as data validation. Successfully converting `"999"` t
 
 ### Example 2.5.1 - Convert whole-number text to an integer
 
-**Level:** Simple
 
 **Code**
 
@@ -3007,7 +2992,6 @@ Which variable retains the original string after conversion?
 
 ### Example 2.5.2 - Convert decimal text to a float
 
-**Level:** Intermediate
 
 **Code**
 
@@ -3060,7 +3044,6 @@ Why is `float()` the appropriate converter for `"93.5"`?
 
 ### Example 2.5.3 - Convert numbers to text for concatenation
 
-**Level:** Intermediate
 
 **Code**
 
@@ -3111,7 +3094,6 @@ Does calling `str(report_year)` change the type stored under `report_year`?
 
 ### Example 2.5.4 - Understand that `int()` truncates floats
 
-**Level:** More advanced
 
 **Code**
 
@@ -3199,11 +3181,11 @@ Even when the user types digits, the returned value is a string. Numerical input
 
 ### Example 2.5.5 - Collect and display text input
 
-**Level:** Simple
 
 **Code**
 
 ```python
+print("Run this cell manually. Enter the requested value when Python prompts you, then inspect the output.")
 organisation = input("Enter the organisation name: ")
 print("Organisation recorded:", organisation)
 print("Input type:", type(organisation))
@@ -3212,6 +3194,7 @@ print("Input type:", type(organisation))
 **Expected output for this sample interaction**
 
 ```text
+Run this cell manually. Enter the requested value when Python prompts you, then inspect the output.
 Enter the organisation name: North Harbour Council
 Organisation recorded: North Harbour Council
 Input type: <class 'str'>
@@ -3249,11 +3232,11 @@ What type does `input()` return?
 
 ### Example 2.5.6 - Convert numerical input before calculating
 
-**Level:** Intermediate
 
 **Code**
 
 ```python
+print("Run this cell manually. Enter the requested value when Python prompts you, then inspect the output.")
 records_text = input("Enter the number of records received: ")
 records_received = int(records_text)
 records_missing = 8
@@ -3265,6 +3248,7 @@ print("Complete records:", records_complete)
 **Expected output for this sample interaction**
 
 ```text
+Run this cell manually. Enter the requested value when Python prompts you, then inspect the output.
 Enter the number of records received: 120
 Complete records: 112
 ```
@@ -3302,11 +3286,11 @@ Why does typing `120` not automatically create an integer?
 
 ### Example 2.5.7 - Turn messy text input into a traceable file label
 
-**Level:** More advanced
 
 **Code**
 
 ```python
+print("Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.")
 organisation_raw = input("Organisation: ")
 dataset_raw = input("Dataset title: ")
 period_raw = input("Reporting period: ")
@@ -3326,6 +3310,7 @@ print("Draft file name:", file_name)
 **Expected output for this sample interaction**
 
 ```text
+Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.
 Organisation:   north harbour council  
 Dataset title:   Mobility Feedback  
 Reporting period: OCTOBER 2026
@@ -3372,11 +3357,11 @@ Why does this script keep both `dataset_raw` and `dataset_label`?
 
 ### Example 2.5.8 - Compare text joining before and after conversion
 
-**Level:** More advanced
 
 **Code**
 
 ```python
+print("Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.")
 first_text = input("First count: ")
 second_text = input("Second count: ")
 
@@ -3390,6 +3375,7 @@ print("Numbers added:", numerical_total)
 **Expected output for this sample interaction**
 
 ```text
+Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.
 First count: 12
 Second count: 8
 Text joined: 128
@@ -3426,6 +3412,125 @@ Try inputs `5` and `10`. Predict both lines of output. Rename the source variabl
 
 Why is converting the joined text not equivalent to adding converted inputs?
 
+### Example 2.5.9 - Estimate gross pay from typed values
+
+This example adapts the input-and-conversion pattern from [*Python for Everybody*, Chapter 2, Exercise 3](https://www.py4e.com/html3/02-variables). The organisation, labels, prompts and output have been rewritten for this course.
+
+**Code**
+
+```python
+print("Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.")
+role_label = input("Role label: ")
+hours_worked = float(input("Hours worked: "))
+hourly_rate_dkk = float(input("Hourly rate in DKK: "))
+
+gross_pay_dkk = hours_worked * hourly_rate_dkk
+pay_note = f"{role_label}: estimated gross pay is {gross_pay_dkk:.2f} DKK"
+
+print(pay_note)
+```
+
+**Expected output for this sample interaction**
+
+```text
+Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.
+Role label: Student assistant
+Hours worked: 12.5
+Hourly rate in DKK: 145
+Student assistant: estimated gross pay is 1812.50 DKK
+```
+
+**How it works**
+
+- The first input remains text because it is a descriptive label.
+- The two numerical prompts are passed directly to `float()` so decimal values such as `12.5` are permitted.
+- Multiplication creates the estimated gross-pay value from hours and rate.
+- The f-string inserts both the role label and the calculated amount into one sentence.
+- The format instruction `.2f` displays two decimal places without changing the stored float.
+- The calculation is a teaching estimate; taxes, supplements, overtime rules and employment conditions are outside this script.
+
+**Common mistakes**
+
+- Calculating with unconverted input strings.
+- Typing units such as `12.5 hours` or `145 DKK` inside a numerical response.
+- Confusing formatted display with a complete payroll calculation.
+- Failing to state whether the hourly rate and result are before or after deductions.
+
+**Modify it**
+
+Run the script with a different role, hours and hourly rate. Display the original numerical inputs as well as the estimate, then inspect their types.
+
+**Break it, observe it, repair it**
+
+1. Remove `float()` from `hours_worked` and run the example.
+2. Observe that multiplying text by a float raises `TypeError`.
+3. Restore the conversion and enter a valid decimal value.
+4. Explain why successful conversion still does not verify a real employment claim.
+
+**Check your understanding**
+
+Why does this example use `float()` rather than `int()` for hours and rate?
+
+### Example 2.5.10 - Convert a typed temperature
+
+This example adapts the conversion formula practice from [*Python for Everybody*, Chapter 2, Exercise 5](https://www.py4e.com/html3/02-variables). It adds a sensor identifier, preserves the original text and produces a traceable report line.
+
+**Code**
+
+```python
+print("Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.")
+sensor_id = input("Sensor identifier: ")
+celsius_text = input("Temperature in degrees Celsius: ")
+celsius = float(celsius_text)
+
+fahrenheit = celsius * 9 / 5 + 32
+report_line = f"Sensor {sensor_id}: {celsius:.1f} °C equals {fahrenheit:.1f} °F"
+
+print(report_line)
+print("Original temperature text:", celsius_text)
+```
+
+**Expected output for this sample interaction**
+
+```text
+Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.
+Sensor identifier: CPH-07
+Temperature in degrees Celsius: 21.5
+Sensor CPH-07: 21.5 °C equals 70.7 °F
+Original temperature text: 21.5
+```
+
+**How it works**
+
+- `sensor_id` remains text because identifiers can contain letters, punctuation or leading zeros.
+- `celsius_text` preserves exactly what the user typed.
+- `float(celsius_text)` creates a numerical value for the conversion formula.
+- Multiplication and division are evaluated before the final addition of 32.
+- The f-string labels both units and displays one decimal place.
+- The last line preserves traceability by showing the original source text separately from the converted value.
+
+**Common mistakes**
+
+- Converting the sensor identifier because it contains digits.
+- Reversing the order of the conversion formula.
+- Typing the degree symbol or unit inside the numerical input.
+- Treating a calculated conversion as evidence that a sensor measurement is accurate.
+
+**Modify it**
+
+Try `0`, `-10` and `37.5` degrees Celsius. Predict the Fahrenheit value before each run and compare the observed result.
+
+**Break it, observe it, repair it**
+
+1. Enter `twenty` for the temperature.
+2. Observe the `ValueError` raised by `float()`.
+3. Rerun the complete cell and enter numerical text.
+4. Explain why later tutorials will need input validation rather than assuming every response is suitable.
+
+**Check your understanding**
+
+Why does the script preserve both `celsius_text` and `celsius`?
+
 ### Exercise 2.5.2 - Build and test an interactive project summary
 
 **Context:** A fictional Neighbourhood Workshop invites 120 participants, receives 96 completed responses and reports an average completion time of 7.5 minutes. Build an input-based summary, then test text, zero and impossible-count cases separately.
@@ -3443,6 +3548,12 @@ Why is converting the joined text not equivalent to adding converted inputs?
 ---
 
 # Part F. Comments and beginner debugging
+
+## Tutorial 2.6 overview
+
+Comments are notes for human readers that begin with `#`; Python ignores the rest of that line during execution. A useful comment explains purpose, units, assumptions, data decisions or an unusual repair instead of simply repeating the code. Debugging is the normal process of comparing what should happen with what actually happens and then locating the smallest relevant cause. When Python cannot continue, its traceback identifies the error type and points toward the line that needs investigation. `SyntaxError`, `NameError`, `TypeError`, `ValueError`, `ZeroDivisionError` and `IndentationError` describe different kinds of problem and therefore suggest different checks. Some logical errors produce no traceback at all, so known-answer tests, boundary tests and careful interpretation remain necessary even when a script runs.
+
+**Core Python vocabulary:** comment, debugging, traceback, error type, syntax error, name error, type error, value error, logical error and test case.
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -3467,7 +3578,6 @@ Avoid comments that merely repeat obvious syntax.
 
 ### Example 2.6.1 - Explain purpose and assumptions
 
-**Level:** Simple
 
 **Code**
 
@@ -3521,7 +3631,6 @@ Why is the assumption comment more useful than a comment saying `# subtract`?
 
 ### Example 2.6.2 - Use end-of-line comments carefully
 
-**Level:** Intermediate
 
 **Code**
 
@@ -3571,7 +3680,6 @@ What unit must both operands use for the gap calculation to be meaningful?
 
 ### Example 2.6.3 - Do not confuse strings with comments
 
-**Level:** More advanced
 
 **Code**
 
@@ -4141,6 +4249,12 @@ What evidence helped you recognise the wrong formula without a traceback?
 
 # Part G. Integrate and apply the foundations
 
+## Tutorial 2.7 overview
+
+An integrated script connects source values, meaningful names, conversions, expressions, comparisons, comments and labelled output into one traceable pathway. The first step is to identify what information is supplied, which values are raw observations, and which values the script will derive. Each calculation should preserve the original values and make its denominator, unit and assumptions visible. Boolean checks can state whether a technical rule is met, but Python does not decide whether the rule itself is fair, complete or socially meaningful. Input-based scripts should use non-sensitive teaching data and clearly tell the learner when the cell will pause for input. The examples and exercises in this tutorial ask you to explain both what the code establishes and what remains a matter for human judgement or further evidence.
+
+**Core Python vocabulary:** source value, derived value, audit trail, conversion, evidence statement, Boolean check, boundary test, limitation and reproducibility.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core consolidation | [Severance, *Python for Everybody*, Chapter 1](https://www.py4e.com/html3/01-intro) and [Chapter 2](https://www.py4e.com/html3/02-variables) | Review only the sections connected to a self-test error or uncertainty. Then use the Chapter 2 exercises as additional transfer practice rather than rereading both chapters from beginning to end. |
@@ -4153,7 +4267,6 @@ The next examples combine the ideas from the whole tutorial. Do not rush to run 
 
 ### Example 2.7.1 - Produce a monthly data-quality summary
 
-**Level:** Intermediate integration
 
 **Code**
 
@@ -4228,7 +4341,6 @@ Which line creates the Boolean, and which line merely displays it?
 
 ### Example 2.7.2 - Compare expected and received file structure
 
-**Level:** More advanced integration
 
 **Code**
 
@@ -4303,12 +4415,12 @@ Why is a correct column count only one part of a structural check?
 
 ### Example 2.7.3 - Create an interactive organisational intake note
 
-**Level:** More advanced integration
 
 **Code**
 
 ```python
 # Collect a small, non-sensitive teaching example.
+print("Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.")
 organisation = input("Organisation: ")
 reporting_period = input("Reporting period: ")
 records_received = int(input("Records received: "))
@@ -4327,6 +4439,7 @@ print("Has exclusions:", has_exclusions)
 **Expected output for this sample interaction**
 
 ```text
+Run this cell manually. Enter each requested value when Python prompts you, then inspect the output.
 Organisation: Community Services Unit
 Reporting period: October 2026
 Records received: 320
@@ -4374,7 +4487,6 @@ Which types are returned by the four `input()` calls before conversion is applie
 
 ### Example 2.7.4 - Preserve raw metadata and publish a standardisation note
 
-**Level:** More advanced non-mathematical integration
 
 This example combines assignment, strings, method-call expressions, `None`, Booleans, `type()` and an f-string. It does not use conditions, loops or custom functions.
 
@@ -4515,6 +4627,86 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 3. Display the rate and difference to one decimal place with accurate units.
 4. Test access counts of 600 and 604 to inspect the exact boundary and an above-boundary case.
 5. Print a limitation note and explain why one percentage cannot show whose experiences are absent.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+---
+
+### Exercise 2.7.5 - Plan balanced teaching groups across two campuses
+
+**Context:** Aalborg University teaches a fictional TAN7 activity in Copenhagen with 45 students and in Aalborg with 36 students. The coordinators want groups containing four or five students so each campus can use the same workshop format. Calculate a transparent group plan without assigning or identifying individual students.
+
+**Your task**
+
+1. Store both campus labels, both student counts and the maximum group size as preserved source values.
+2. Calculate the number of groups needed at each campus with `(students + maximum_size - 1) // maximum_size`.
+3. Calculate the average students per planned group and create Booleans checking whether each average lies from four to five inclusive.
+4. Display the campus counts, planned group counts, averages and Boolean checks with clear labels.
+5. Explain why a numerical plan cannot decide the fairest allocation of particular students or support needs.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+---
+
+### Exercise 2.7.6 - Audit a library digitisation intake
+
+**Context:** A fictional municipal library receives 1,250 digitised catalogue records. Forty-six records are incomplete, 21 appear to be duplicates and 13 have unclear reuse rights. For this first technical estimate, assume the three review categories do not overlap and keep that assumption visible.
+
+**Your task**
+
+1. Preserve the received count and all three review-category counts under meaningful names.
+2. Calculate the usable count, review workload and usable percentage without overwriting any source value.
+3. Compare the usable percentage with a stated technical threshold of 92.0 per cent.
+4. Print a labelled audit summary, the non-overlap assumption and the threshold Boolean.
+5. Explain why a high usable percentage does not settle questions about metadata quality, rights or representation.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+---
+
+### Exercise 2.7.7 - Summarise a community workshop programme
+
+**Context:** A fictional digital-inclusion programme has 160 registrations and records 124 attendances across four workshops. Facilitators work 14.5 hours at 350 DKK per hour, and the rooms cost 7,200 DKK in total. Treat attendances as attendance records rather than verified unique participants.
+
+**Your task**
+
+1. Store the registrations, attendances, workshop count, facilitator hours, hourly rate and room cost with units visible in their names.
+2. Calculate the attendance rate, average attendances per workshop, facilitator cost and combined direct cost.
+3. Calculate direct cost per attendance record and format currency and percentage outputs appropriately.
+4. Use `type()` to inspect one count, one decimal measurement and one calculated value.
+5. Print the attendance-record limitation and explain why cost per attendance is not automatically cost per unique person.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+---
+
+### Exercise 2.7.8 - Create a traceable dataset file label
+
+**Context:** A fictional intake form supplies the organisation text `  Harbour Community Lab  `, the dataset title `Mobility Access Notes`, the period `October 2026` and the record-count text `420`. Prepare a simple draft file label while preserving every raw value. The label is a teaching convention, not complete file-name validation.
+
+**Your task**
+
+1. Store all four supplied values as raw strings and display them before conversion or standardisation.
+2. Create separate cleaned labels with `strip()`, `lower()` and `replace()` while preserving the raw strings.
+3. Convert only the record-count text to an integer and create a Boolean checking that it is positive.
+4. Build and display a draft `.csv` file name containing the three cleaned labels and record count.
+5. Explain why the script does not guarantee uniqueness, permitted characters or a correct organisational naming policy.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+---
+
+### Exercise 2.7.9 - Compare two denominators in a public-service survey
+
+**Context:** A fictional public-service survey contacts 950 residents, receives 812 completed answers and records 603 respondents reporting access to the service. The project uses a stated access threshold of 70.0 per cent. Calculate both the response rate and the access rate without confusing their different denominators.
+
+**Your task**
+
+1. Preserve the contacted, completed-answer and reported-access counts as separate source values.
+2. Calculate the response rate using contacted residents as the denominator.
+3. Calculate the reported-access rate using completed answers as the denominator and compare it with the stated threshold.
+4. Display both percentages, their denominators and the threshold Boolean in a readable evidence statement.
+5. Explain how using all contacted residents as the access-rate denominator would answer a different question and could mislead readers.
 
 - [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
@@ -4875,52 +5067,31 @@ Do not worry if `pd` and CSV loading are not yet familiar. Their full explanatio
 
 ---
 
-## Published assets and quality checks
+## Published course resources
 
-The tutorial links to separate example, exercise and solution notebooks, plus a complete companion containing every website code block. The original Colab screenshots below contain no personal account details.
+The former planning placeholders have been replaced by the files that students and teachers can actually open. The examples notebook contains every tutorial example in website order. The exercises notebook combines each numbered task, a starter cell and its fully commented solution so students do not have to search across different files. The practice notebook provides additional short applications after the numbered work. Interactive examples are kept as real `input()` scripts and clearly state that they must be run manually.
 
-- [x] Colab and GitHub links point to the Copenhagen course repository.
-- [x] The synthetic dataset link points to the repository's teaching dataset.
-- [x] Exercise and solution notebooks remain separate.
-- [x] Screenshots PF1-01 to PF1-07 include descriptive alternative text.
-- [x] Code is checked in a fresh notebook runtime from top to bottom.
-- [x] Deliberate error examples are labelled and isolated from the runnable pathway.
-- [x] Notebook examples contain no personal or sensitive data.
-
-### Screenshot specification
-
-| ID | Required image | Required annotation |
+| Resource | What it contains | Open it |
 |---|---|---|
-| PF1-01 | Colab course notebook | File menu location |
-| PF1-02 | File menu open | Save a copy in Drive |
-| PF1-03 | Notebook header | Renamed student copy |
-| PF1-04 | Code cell | Play button, code and output |
-| PF1-05 | Notebook controls | + Code and + Text |
-| PF1-06 | Runtime controls | Restart clears live state |
-| PF1-07 | Beginner traceback | Line, error type and message |
+| Tutorial Examples | Examples 2.1.1–2.7.4, including manually runnable input examples | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) |
+| Exercises and Solutions | Every numbered Python Foundations I exercise, starter and fully commented answer | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) |
+| Practice Materials | Additional short situations for Tutorials 2.1–2.7 | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) |
+| Lecture 3 GitHub folder | Downloadable notebook files and version history | [Open on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_03) |
+| Coverage record | Latest execution and comment audit for the published notebooks | [Open the coverage report](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/docs/tutorial_code_coverage.md) |
 
-### Repository placeholders
+### Colab support images already used in the tutorial
 
-Suggested structure:
+| Image | What the image helps a learner find |
+|---|---|
+| PF1-01 | The File menu in the public course notebook |
+| PF1-02 | **Save a copy in Drive** |
+| PF1-03 | The notebook title field for renaming a student copy |
+| PF1-04 | The play button, code cell and visible output |
+| PF1-05 | The **+ Code** and **+ Text** controls |
+| PF1-06 | Runtime controls for running or restarting a notebook |
+| PF1-07 | The line, error type and message in a beginner traceback |
 
-```text
-python-foundations-i/
-├── README.md
-├── notebooks/
-│   ├── python_foundations_i_starter.ipynb
-│   ├── python_foundations_i_complete_examples.ipynb
-│   └── python_foundations_i_error_lab.ipynb
-├── scripts/
-│   └── python_foundations_i_examples.py
-├── activities/
-│   ├── mini_case_1.md
-│   ├── mini_case_2.md
-│   └── mini_case_3.md
-├── solutions/
-│   └── INSTRUCTOR_OR_RESTRICTED_STUDENT_ACCESS.md
-└── assets/
-    └── screenshots/
-```
+The images are stored in the public [`docs/assets` folder](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/docs/assets) and are displayed beside the instructions they support. They contain no personal account details. The course code uses standard Python 3 and no third-party package is required for Tutorials 2.1–2.7.
 
 ---
 

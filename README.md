@@ -2,7 +2,7 @@
 
 Beginner-friendly, lecture-ready Python notebooks for the Copenhagen delivery of the AAU Techno-Anthropology course. Every executable code line has a plain-language comment so an instructor can run individual sections during class and students can follow what each line does.
 
-The notebooks use Google Colab, so students do not need a local Python installation. Lecture 3 is organised into exactly three student-facing files: tutorial examples, all numbered exercises with fully commented solutions, and extra practice materials. The same notebooks also open in Jupyter and PyCharm.
+The notebooks use Google Colab, so students do not need a local Python installation. Lecture 3 is organised into exactly three student-facing files: tutorial examples, all 27 numbered exercises with fully commented solutions, and extra practice materials. Interactive Examples 2.5.5–2.5.10 and 2.7.3 contain their complete `input()` scripts and are run manually; the same notebooks also open in Jupyter and PyCharm.
 
 ## Course links
 

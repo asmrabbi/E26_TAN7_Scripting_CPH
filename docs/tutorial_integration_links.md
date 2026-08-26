@@ -21,7 +21,7 @@ The previous Section 1.3 becomes the start of Part II. Its seven website tutoria
 - Practice Materials: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb
 - GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_03
 
-Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `2.1.1`; all 22 website exercises appear with the same number, a starter cell and a separate fully commented solution.
+Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `2.1.1`; all 27 website exercises appear with the same number, a starter cell and a separate fully commented solution. Examples 2.5.5–2.5.10 and 2.7.3 contain complete manually runnable `input()` scripts rather than status placeholders.
 
 ### Tutorials 2.8–2.15 — Python Foundations II / Lecture 4
 
