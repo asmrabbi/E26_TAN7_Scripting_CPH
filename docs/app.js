@@ -20,6 +20,8 @@ const pythonResourceLinks = {
   foundationsII: {
     examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb",
     examplesGithub: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb",
+    workExercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Work_Exercise.ipynb",
+    workExercisesGithub: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Work_Exercise.ipynb",
     exercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Exercises.ipynb",
     solutions: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb",
     appliedExercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb",
@@ -1476,6 +1478,8 @@ function addCodeCompanionLinks() {
       ? `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 3 Examples in Colab</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`
       : state.current === "2.15"
         ? `<span>Run the matching applied solution:</span><a href="${links.appliedSolutions}" target="_blank" rel="noreferrer">Open Tutorial 2.15 Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 4 on GitHub</a>`
+        : state.current === "2.8"
+          ? `<span>Run the matching Tutorial 2.8 material:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Examples</a><a href="${links.workExercises}" target="_blank" rel="noreferrer">Open Worked Exercises</a><a href="${links.workExercisesGithub}" target="_blank" rel="noreferrer">View Worked Exercises on GitHub</a>`
         : `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 4 Examples</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`;
     codeBlockElement.insertAdjacentElement("afterend", resourceLinks);
   });

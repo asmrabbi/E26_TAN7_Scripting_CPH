@@ -814,6 +814,11 @@ else:
 
 This is an early example of data cleaning.
 
+<figure class="tutorial-screenshot">
+<img src="assets/PF2-01-colab-decisions.png?v=3" alt="Examples 2.8.23 and 2.8.24 shown with exactly the same Python code as the tutorial" loading="lazy">
+<figcaption>Examples 2.8.23 and 2.8.24 repeat the website code character for character, so students can compare the ordinary input with the cleaned input line by line.</figcaption>
+</figure>
+
 ---
 
 ## Deliberate break-and-repair activity
@@ -975,25 +980,64 @@ Substantial missingness
 
 ### Why assign the result to a variable?
 
-Instead of printing inside every branch, we store the classification in `status`. This makes it easier to use the result later.
+Instead of printing inside every branch, we store the classification in `status`. This makes it easier to reuse the result later. The next two examples repeat the complete classification so that each code block can be copied and run on its own.
 
 <a id="example-2-8-31"></a>
 
 #### Example 2.8.31 — Why assign the result to a variable?
 
 ```python
+missing_percentage = 18
+
+if missing_percentage == 0:
+    status = "No missing values"
+elif missing_percentage <= 5:
+    status = "Minor missingness"
+elif missing_percentage <= 15:
+    status = "Moderate missingness"
+else:
+    status = "Substantial missingness"
+
 print("Data-quality status:", status)
 ```
 
-or:
+**Expected output:**
+
+```text
+Data-quality status: Substantial missingness
+```
+
+The complete code makes the origin of `status` visible.
 
 <a id="example-2-8-32"></a>
 
 #### Example 2.8.32 — Why assign the result to a variable?
 
 ```python
+missing_percentage = 18
+
+if missing_percentage == 0:
+    status = "No missing values"
+elif missing_percentage <= 5:
+    status = "Minor missingness"
+elif missing_percentage <= 15:
+    status = "Moderate missingness"
+else:
+    status = "Substantial missingness"
+
+print("Data-quality status:", status)
+
 if status == "Substantial missingness":
     print("Human review required")
+else:
+    print("Continue with the documented checks")
+```
+
+**Expected output:**
+
+```text
+Data-quality status: Substantial missingness
+Human review required
 ```
 
 ---
@@ -1002,20 +1046,36 @@ if status == "Substantial missingness":
 
 When writing thresholds, test values directly around the boundaries.
 
-For the earlier classification, try:
+The earlier version only assigned six values one after another, so Python kept only the final value and displayed nothing. This repaired example runs the full decision for one boundary value and prints the result.
 
 <a id="example-2-8-33"></a>
 
 #### Example 2.8.33 — Boundary testing
 
 ```python
-missing_percentage = 0
-missing_percentage = 1
 missing_percentage = 5
-missing_percentage = 6
-missing_percentage = 15
-missing_percentage = 16
+
+if missing_percentage == 0:
+    status = "No missing values"
+elif missing_percentage <= 5:
+    status = "Minor missingness"
+elif missing_percentage <= 15:
+    status = "Moderate missingness"
+else:
+    status = "Substantial missingness"
+
+print("Missing percentage:", missing_percentage)
+print("Classification:", status)
 ```
+
+**Expected output:**
+
+```text
+Missing percentage: 5
+Classification: Minor missingness
+```
+
+Change only the first line and rerun the complete example with `0`, `1`, `5`, `6`, `15` and `16`. The printed classification should change at the intended boundaries.
 
 Boundary testing helps reveal mistakes such as gaps or overlaps.
 
@@ -1026,70 +1086,247 @@ For example, this code contains a gap:
 #### Example 2.8.34 — Boundary testing
 
 ```python
-score = 70
+observation_minutes = 20
 
-if score > 70:
-    print("High")
-elif score < 70:
-    print("Low")
+if observation_minutes > 20:
+    print("Standard or extended fieldnote")
+elif observation_minutes < 20:
+    print("Brief fieldnote")
 ```
 
-Nothing happens when `score` is exactly `70`.
+Nothing happens when `observation_minutes` is exactly `20`.
 
-A repair could be:
+A repair needs to include the boundary value. The worked exercises below continue with complete, beginner-friendly decisions that use `input()`, comparison operators, `if`, `elif` and `else`. They focus on branching, so assume that each learner enters a sensible value in the range described; Tutorial 2.10 adds input validation and exception handling.
 
 <a id="example-2-8-35"></a>
 
-#### Example 2.8.35 — Boundary testing
+#### Worked Exercise 2.8.35 — Classify an online fieldnote
+
+**Story:** A Digital Anthropology group observes a public livestream about local cultural life.<br>
+One student records how many minutes the group observed.<br>
+The group calls 45 minutes or more an extended fieldnote, 20 to 44 minutes a standard fieldnote, and anything shorter a brief fieldnote.<br>
+These labels organise the class notes; they do not measure the quality of the ethnography.
+
+**Question:** Ask the student for the number of observation minutes and print the matching fieldnote label.
+
+**Steps to solve it:**
+
+1. Use `input()` to ask for the number of minutes.
+2. Convert the answer to an integer.
+3. Check the highest threshold first with `if`.
+4. Check the second threshold with `elif`.
+5. Use `else` for every smaller value and print the selected label.
+
+<details>
+<summary>Show the worked solution</summary>
 
 ```python
-score = 70
+observation_minutes = int(input("Minutes observed: "))
 
-if score >= 70:
-    print("High")
+if observation_minutes >= 45:
+    print("Extended fieldnote")
+elif observation_minutes >= 20:
+    print("Standard fieldnote")
 else:
-    print("Low")
+    print("Brief fieldnote")
 ```
+
+For an input of `32`, the program prints `Standard fieldnote`.
+
+</details>
 
 ---
 
-## Practice checkpoint — Build a multi-way dataset-size decision
-
-Write a multi-way decision that classifies the number of records:
-
-- `200` or more: `"Large dataset"`
-- `100` to `199`: `"Medium dataset"`
-- fewer than `100`: `"Small dataset"`
-
-Starter code:
-
 <a id="example-2-8-36"></a>
 
-#### Example 2.8.36 — Practice checkpoint 3
+#### Worked Exercise 2.8.36 — Review a stakeholder map
 
-```python
-number_of_records = 145
+**Story:** A group in Framing Techno-Anthropological Transformation is preparing a fictional neighbourhood heat-plan case.<br>
+They count the different stakeholder groups represented on their map.<br>
+Eight or more groups is labelled broad, four to seven is developing, and fewer than four needs expansion.<br>
+The labels help the group plan its next discussion; they do not prove that every voice is represented.
 
-# Write your decision below
-```
+**Question:** Ask for the number of stakeholder groups and print the matching map label.
+
+**Steps to solve it:**
+
+1. Collect the group count with `input()` and convert it to an integer.
+2. Test `8` or more first.
+3. Use `elif` to test `4` or more.
+4. Use `else` for a count below `4`.
+5. Print one clear message for the group.
 
 <details>
-<summary>Suggested solution</summary>
+<summary>Show the worked solution</summary>
+
+```python
+stakeholder_groups = int(input("Number of stakeholder groups: "))
+
+if stakeholder_groups >= 8:
+    print("Broad stakeholder map")
+elif stakeholder_groups >= 4:
+    print("Developing stakeholder map")
+else:
+    print("Expand the stakeholder map")
+```
+
+For an input of `6`, the program prints `Developing stakeholder map`.
+
+</details>
+
+---
 
 <a id="example-2-8-37"></a>
 
-#### Example 2.8.37 — Practice checkpoint 3
+#### Worked Exercise 2.8.37 — Classify a wayfinding test
+
+**Story:** A TAN7 group tests a fictional wayfinding kiosk before discussing the design.<br>
+A participant tries to find the accessibility information, and the group records the time in seconds.<br>
+Thirty seconds or less is labelled quick, 31 to 60 seconds is workable, and more than 60 seconds suggests revision.<br>
+The time is one observation and does not by itself prove that the kiosk is usable.
+
+**Question:** Ask for the completion time and print the matching test label.
+
+**Steps to solve it:**
+
+1. Ask for the number of seconds and convert the answer to an integer.
+2. Check the lowest upper boundary first: `30` seconds or less.
+3. Use `elif` for `60` seconds or less.
+4. Use `else` for every longer time.
+5. Print the result in plain language.
+
+<details>
+<summary>Show the worked solution</summary>
 
 ```python
-number_of_records = 145
+completion_seconds = int(input("Seconds needed to find the information: "))
 
-if number_of_records >= 200:
-    print("Large dataset")
-elif number_of_records >= 100:
-    print("Medium dataset")
+if completion_seconds <= 30:
+    print("Quick completion")
+elif completion_seconds <= 60:
+    print("Workable completion time")
 else:
-    print("Small dataset")
+    print("The wayfinding design needs revision")
 ```
+
+For an input of `52`, the program prints `Workable completion time`.
+
+</details>
+
+---
+
+<a id="example-2-8-38"></a>
+
+#### Worked Exercise 2.8.38 — Check a seven-day media diary
+
+**Story:** A Digital Anthropology exercise asks a participant to make one media-diary entry on each of seven days.<br>
+The student enters how many daily entries were completed.<br>
+Seven entries is complete, four to six is usable but incomplete, and fewer than four is too limited for this classroom task.<br>
+This teaching rule organises follow-up work; it is not a universal research standard.
+
+**Question:** Ask for the number of completed days and print the diary status.
+
+**Steps to solve it:**
+
+1. Use `input()` and convert the number of completed days to an integer.
+2. Use `if` with `==` to identify exactly seven entries.
+3. Use `elif` with `>=` for four to six entries.
+4. Use `else` for fewer than four entries.
+5. Print one diary status.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+completed_days = int(input("Completed diary days: "))
+
+if completed_days == 7:
+    print("Complete media diary")
+elif completed_days >= 4:
+    print("Usable but incomplete media diary")
+else:
+    print("Media diary is too limited for this task")
+```
+
+For an input of `5`, the program prints `Usable but incomplete media diary`.
+
+</details>
+
+---
+
+<a id="example-2-8-39"></a>
+
+#### Worked Exercise 2.8.39 — Interpret an AI explanation rating
+
+**Story:** A class tests a fictional explanation shown after an automated application-sorting decision.<br>
+One participant rates the explanation from `1` to `5`, where `5` is the highest rating.<br>
+A rating of `5` is labelled very clear, `3` or `4` is partly clear, and a lower rating is unclear.<br>
+One rating describes one response; it cannot establish that the system is fair.
+
+**Question:** Ask for the clarity rating and print the matching interpretation.
+
+**Steps to solve it:**
+
+1. Ask for the rating and convert it to an integer.
+2. Use `if` with `==` for the highest rating.
+3. Use `elif` with `>=` for ratings `3` and `4`.
+4. Use `else` for lower ratings.
+5. Print the interpretation without making a fairness claim.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+clarity_rating = int(input("Explanation clarity rating (1-5): "))
+
+if clarity_rating == 5:
+    print("Very clear explanation")
+elif clarity_rating >= 3:
+    print("Partly clear explanation")
+else:
+    print("Unclear explanation")
+```
+
+For an input of `3`, the program prints `Partly clear explanation`.
+
+</details>
+
+---
+
+<a id="example-2-8-40"></a>
+
+#### Worked Exercise 2.8.40 — Classify a moderation response
+
+**Story:** A student studies a fictional online community with a published safety-report process.<br>
+The student records how many hours passed before a moderator acknowledged one report.<br>
+Six hours or less is labelled quick, more than six but no more than 24 hours is same-day, and a longer wait is delayed.<br>
+Response speed is useful to record, but it does not show whether the moderation decision was fair.
+
+**Question:** Ask for the response time in hours and print the matching response label.
+
+**Steps to solve it:**
+
+1. Ask for the number of hours and convert the answer to a float.
+2. Test `6` hours or less first.
+3. Use `elif` to test `24` hours or less.
+4. Use `else` for a longer response time.
+5. Print the label that matches the entered value.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+response_hours = float(input("Hours before acknowledgement: "))
+
+if response_hours <= 6:
+    print("Quick acknowledgement")
+elif response_hours <= 24:
+    print("Same-day acknowledgement")
+else:
+    print("Delayed acknowledgement")
+```
+
+For an input of `30`, the program prints `Delayed acknowledgement`.
 
 </details>
 

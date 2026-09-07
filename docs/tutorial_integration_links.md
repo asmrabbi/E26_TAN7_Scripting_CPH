@@ -26,6 +26,7 @@ Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `
 ### Tutorials 2.8–2.15 — Python Foundations II / Lecture 4
 
 - Website examples for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb
+- Contextual worked exercises for Tutorials 2.8–2.14 (beginning with 2.8.35–2.8.40): https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Work_Exercise.ipynb
 - Focused exercises for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Exercises.ipynb
 - Numbered solutions for Tutorials 2.8–2.14: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Solutions.ipynb
 - Ten situational exercises for Tutorial 2.15: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb
