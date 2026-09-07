@@ -1320,7 +1320,6 @@ function renderDataHandlingIOverview() {
 
       <section class="reading-panel python-resources">
         <div><p class="eyebrow">Lecture 5 notebooks and dataset</p><h2>Match the website with runnable, verified material</h2><p>The Examples notebook follows the website sequence. The Exercises notebook contains all 33 numbered tasks before its separate answer section. The Applied Activities notebook contains eight cumulative tasks before its model walkthrough.</p><div class="reading-links"><a href="${pythonResourceLinks.dataHandlingI.examples}" target="_blank" rel="noreferrer">Tutorial Examples</a><a href="${pythonResourceLinks.dataHandlingI.exercises}" target="_blank" rel="noreferrer">Exercises and Solutions</a><a href="${pythonResourceLinks.dataHandlingI.cases}" target="_blank" rel="noreferrer">Applied Activities and Model Walkthrough</a><a href="${pythonResourceLinks.dataHandlingI.dataset}" target="_blank" rel="noreferrer">Raw Lecture 5 CSV</a><a href="${pythonResourceLinks.dataHandlingI.github}" target="_blank" rel="noreferrer">Lecture 5 GitHub Folder</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code Coverage Map</a></div></div>
-        <a class="resource-button reading-button" href="data-handling-text-analysis-visualization-i.md" download>↓ Download full Markdown</a>
       </section>
 
       <section class="section-footer-grid">

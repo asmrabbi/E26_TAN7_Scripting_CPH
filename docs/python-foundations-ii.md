@@ -380,64 +380,30 @@ A comparison can be stored in a variable.
 missing_values = 14
 too_many_missing = missing_values > 10
 
+print(missing_values > 10)
 print(too_many_missing)
+
+if missing_values > 10:
+    print("Review the data")
+
+if too_many_missing:
+    print("Review the data")
 ```
 
 **Expected output:**
 
 ```text
 True
+True
+Review the data
+Review the data
 ```
 
 ### Explanation
 
-Python first evaluates:
-
-<a id="example-2-8-8"></a>
-
-#### Example 2.8.8 — Explanation
-
-```python
-missing_values > 10
-```
-
-The result is `True`. That result is then assigned to:
-
-<a id="example-2-8-9"></a>
-
-#### Example 2.8.9 — Explanation
-
-```python
-too_many_missing
-```
-
-This can make later code easier to read.
-
-Compare:
-
-<a id="example-2-8-10"></a>
-
-#### Example 2.8.10 — Explanation
-
-```python
-if missing_values > 10:
-    print("Review the data")
-```
-
-with:
-
-<a id="example-2-8-11"></a>
-
-#### Example 2.8.11 — Explanation
-
-```python
-too_many_missing = missing_values > 10
-
-if too_many_missing:
-    print("Review the data")
-```
-
-Both work. The second version gives a meaningful name to the condition.
+Python first evaluates `missing_values > 10`. The result is `True`, which is
+assigned to `too_many_missing`. The two decisions produce the same output, but
+the second gives the condition a meaningful name that can be reused.
 
 ---
 
@@ -445,9 +411,9 @@ Both work. The second version gives a meaningful name to the condition.
 
 Predict the output:
 
-<a id="example-2-8-12"></a>
+<a id="example-2-8-8"></a>
 
-#### Example 2.8.12 — Practice checkpoint 1
+#### Example 2.8.8 — Practice checkpoint 1
 
 ```python
 records = 75
@@ -486,9 +452,9 @@ Programs often need to make decisions. A condition allows Python to execute code
 
 ## A one-way decision
 
-<a id="example-2-8-13"></a>
+<a id="example-2-8-9"></a>
 
-#### Example 2.8.13 — A one-way decision
+#### Example 2.8.9 — A one-way decision
 
 ```python
 missing_values = 14
@@ -505,9 +471,9 @@ Review the missing data
 
 ### Structure
 
-<a id="example-2-8-14"></a>
+<a id="example-2-8-10"></a>
 
-#### Example 2.8.14 — Structure
+#### Example 2.8.10 — Structure
 
 ```python
 if condition:
@@ -526,9 +492,9 @@ Important parts:
 
 ## When the condition is false
 
-<a id="example-2-8-15"></a>
+<a id="example-2-8-11"></a>
 
-#### Example 2.8.15 — When the condition is false
+#### Example 2.8.11 — When the condition is false
 
 ```python
 missing_values = 4
@@ -555,9 +521,9 @@ Python uses indentation to show which lines belong together.
 
 Correct:
 
-<a id="example-2-8-16"></a>
+<a id="example-2-8-12"></a>
 
-#### Example 2.8.16 — Indentation is part of Python syntax
+#### Example 2.8.12 — Indentation is part of Python syntax
 
 ```python
 engagement = 150
@@ -579,9 +545,9 @@ Finished
 
 Incorrect:
 
-<a id="example-2-8-17"></a>
+<a id="example-2-8-13"></a>
 
-#### Example 2.8.17 — Indentation is part of Python syntax
+#### Example 2.8.13 — Indentation is part of Python syntax
 
 ```python
 engagement = 150
@@ -596,9 +562,9 @@ This produces an `IndentationError`.
 
 Add four spaces before the action:
 
-<a id="example-2-8-18"></a>
+<a id="example-2-8-14"></a>
 
-#### Example 2.8.18 — Repair
+#### Example 2.8.14 — Repair
 
 ```python
 engagement = 150
@@ -611,9 +577,9 @@ if engagement > 100:
 
 ## Multiple lines inside one `if` block
 
-<a id="example-2-8-19"></a>
+<a id="example-2-8-15"></a>
 
-#### Example 2.8.19 — Multiple lines inside one `if` block
+#### Example 2.8.15 — Multiple lines inside one `if` block
 
 ```python
 engagement = 220
@@ -642,9 +608,9 @@ All three indented lines belong to the same decision.
 
 ## A condition using a string
 
-<a id="example-2-8-20"></a>
+<a id="example-2-8-16"></a>
 
-#### Example 2.8.20 — A condition using a string
+#### Example 2.8.16 — A condition using a string
 
 ```python
 position = "Support"
@@ -661,9 +627,9 @@ This record supports the proposal
 
 ### Common mistake
 
-<a id="example-2-8-21"></a>
+<a id="example-2-8-17"></a>
 
-#### Example 2.8.21 — Common mistake
+#### Example 2.8.17 — Common mistake
 
 ```python
 position = "Support"
@@ -676,9 +642,9 @@ This prints nothing because string comparison is case-sensitive.
 
 One possible repair is:
 
-<a id="example-2-8-22"></a>
+<a id="example-2-8-18"></a>
 
-#### Example 2.8.22 — Common mistake
+#### Example 2.8.18 — Common mistake
 
 ```python
 position = "Support"
@@ -697,9 +663,9 @@ You do not need to memorise every string method yet. The important idea is that 
 
 Complete the missing condition:
 
-<a id="example-2-8-23"></a>
+<a id="example-2-8-19"></a>
 
-#### Example 2.8.23 — Practice checkpoint 2
+#### Example 2.8.19 — Practice checkpoint 2
 
 ```python
 duplicate_rows = 7
@@ -713,9 +679,9 @@ The message should be printed when there is at least one duplicate row.
 <details>
 <summary>Suggested answer</summary>
 
-<a id="example-2-8-24"></a>
+<a id="example-2-8-20"></a>
 
-#### Example 2.8.24 — Practice checkpoint 2
+#### Example 2.8.20 — Practice checkpoint 2
 
 ```python
 duplicate_rows = 7
@@ -734,9 +700,9 @@ An `else` block provides an alternative action when the condition is false.
 
 ## Basic example
 
-<a id="example-2-8-25"></a>
+<a id="example-2-8-21"></a>
 
-#### Example 2.8.25 — Basic example
+#### Example 2.8.21 — Basic example
 
 ```python
 missing_values = 14
@@ -765,9 +731,9 @@ Exactly one branch runs.
 
 ## Understanding the flow
 
-<a id="example-2-8-26"></a>
+<a id="example-2-8-22"></a>
 
-#### Example 2.8.26 — Understanding the flow
+#### Example 2.8.22 — Understanding the flow
 
 ```python
 if condition:
@@ -787,9 +753,9 @@ Python:
 
 ## Example with user input
 
-<a id="example-2-8-27"></a>
+<a id="example-2-8-23"></a>
 
-#### Example 2.8.27 — Example with user input
+#### Example 2.8.23 — Example with user input
 
 ```python
 answer = input("Is the source verified? Type yes or no: ")
@@ -822,9 +788,9 @@ These values are not exactly equal to `"yes"`.
 
 A more robust version is:
 
-<a id="example-2-8-28"></a>
+<a id="example-2-8-24"></a>
 
-#### Example 2.8.28 — Problem with this version
+#### Example 2.8.24 — Problem with this version
 
 ```python
 answer = input("Is the source verified? Type yes or no: ")
@@ -850,9 +816,9 @@ This is an early example of data cleaning.
 
 Broken code:
 
-<a id="example-2-8-29"></a>
+<a id="example-2-8-25"></a>
 
-#### Example 2.8.29 — Deliberate break-and-repair activity
+#### Example 2.8.25 — Deliberate break-and-repair activity
 
 ```python
 engagement = 80
@@ -867,9 +833,9 @@ There are two missing colons.
 
 Repaired code:
 
-<a id="example-2-8-30"></a>
+<a id="example-2-8-26"></a>
 
-#### Example 2.8.30 — Deliberate break-and-repair activity
+#### Example 2.8.26 — Deliberate break-and-repair activity
 
 ```python
 engagement = 80
@@ -894,9 +860,9 @@ Sometimes there are more than two meaningful outcomes.
 
 ## Classifying engagement
 
-<a id="example-2-8-31"></a>
+<a id="example-2-8-27"></a>
 
-#### Example 2.8.31 — Classifying engagement
+#### Example 2.8.27 — Classifying engagement
 
 ```python
 engagement = 125
@@ -932,9 +898,9 @@ Only the first matching branch is executed.
 
 Consider this incorrect order:
 
-<a id="example-2-8-32"></a>
+<a id="example-2-8-28"></a>
 
-#### Example 2.8.32 — Order matters
+#### Example 2.8.28 — Order matters
 
 ```python
 engagement = 250
@@ -957,9 +923,9 @@ The second condition is never reached because `250 >= 100` is already true.
 
 A better order is:
 
-<a id="example-2-8-33"></a>
+<a id="example-2-8-29"></a>
 
-#### Example 2.8.33 — Order matters
+#### Example 2.8.29 — Order matters
 
 ```python
 engagement = 250
@@ -978,9 +944,9 @@ Check the most restrictive or highest threshold first.
 
 ## A more detailed classification
 
-<a id="example-2-8-34"></a>
+<a id="example-2-8-30"></a>
 
-#### Example 2.8.34 — A more detailed classification
+#### Example 2.8.30 — A more detailed classification
 
 ```python
 missing_percentage = 18
@@ -1007,9 +973,9 @@ Substantial missingness
 
 Instead of printing inside every branch, we store the classification in `status`. This makes it easier to use the result later.
 
-<a id="example-2-8-35"></a>
+<a id="example-2-8-31"></a>
 
-#### Example 2.8.35 — Why assign the result to a variable?
+#### Example 2.8.31 — Why assign the result to a variable?
 
 ```python
 print("Data-quality status:", status)
@@ -1017,9 +983,9 @@ print("Data-quality status:", status)
 
 or:
 
-<a id="example-2-8-36"></a>
+<a id="example-2-8-32"></a>
 
-#### Example 2.8.36 — Why assign the result to a variable?
+#### Example 2.8.32 — Why assign the result to a variable?
 
 ```python
 if status == "Substantial missingness":
@@ -1034,9 +1000,9 @@ When writing thresholds, test values directly around the boundaries.
 
 For the earlier classification, try:
 
-<a id="example-2-8-37"></a>
+<a id="example-2-8-33"></a>
 
-#### Example 2.8.37 — Boundary testing
+#### Example 2.8.33 — Boundary testing
 
 ```python
 missing_percentage = 0
@@ -1051,9 +1017,9 @@ Boundary testing helps reveal mistakes such as gaps or overlaps.
 
 For example, this code contains a gap:
 
-<a id="example-2-8-38"></a>
+<a id="example-2-8-34"></a>
 
-#### Example 2.8.38 — Boundary testing
+#### Example 2.8.34 — Boundary testing
 
 ```python
 score = 70
@@ -1068,9 +1034,9 @@ Nothing happens when `score` is exactly `70`.
 
 A repair could be:
 
-<a id="example-2-8-39"></a>
+<a id="example-2-8-35"></a>
 
-#### Example 2.8.39 — Boundary testing
+#### Example 2.8.35 — Boundary testing
 
 ```python
 score = 70
@@ -1093,9 +1059,9 @@ Write a multi-way decision that classifies the number of records:
 
 Starter code:
 
-<a id="example-2-8-40"></a>
+<a id="example-2-8-36"></a>
 
-#### Example 2.8.40 — Practice checkpoint 3
+#### Example 2.8.36 — Practice checkpoint 3
 
 ```python
 number_of_records = 145
@@ -1106,9 +1072,9 @@ number_of_records = 145
 <details>
 <summary>Suggested solution</summary>
 
-<a id="example-2-8-41"></a>
+<a id="example-2-8-37"></a>
 
-#### Example 2.8.41 — Practice checkpoint 3
+#### Example 2.8.37 — Practice checkpoint 3
 
 ```python
 number_of_records = 145
@@ -3660,7 +3626,7 @@ Example:
 
 <a id="example-2-14-29"></a>
 
-#### Example 2.14.29 — 20. Tracing code manually
+#### Example 2.14.29 — Tracing code manually
 
 ```python
 count = 0
