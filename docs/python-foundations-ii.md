@@ -162,6 +162,10 @@ A Boolean is a Python value that is either `True` or `False`, and comparisons ar
 
 **Core Python vocabulary:** Boolean, `True`, `False`, comparison, condition, `if`, `elif`, `else`, branch, equality, boundary and indentation.
 
+### Why this matters in this course
+
+Many social-science classifications begin as questions with two possible answers: does a record meet a criterion, is consent documented or is a value outside an expected range? Python represents these answers as `True` or `False` and uses them to choose an action. The difficult part is usually not the syntax but deciding and justifying the thresholds and boundaries.
+
 ## Boolean values and comparison operators
 
 ## What is a Boolean value?
@@ -1099,6 +1103,10 @@ Logical operators combine or change Boolean expressions so a decision can use mo
 
 **Core Python vocabulary:** logical operator, `and`, `or`, `not`, combined condition, parentheses, truth table, short-circuit evaluation and nested decision.
 
+### Why this matters in this course
+
+Real rules often depend on more than one fact. For example, a record might need review when a source is unverified or when both engagement and missingness meet stated conditions. Logical operators make these rules executable, while parentheses and complete comparisons make them readable enough to question.
+
 ## Combining conditions with logical operators
 
 Logical operators allow a program to combine or reverse conditions.
@@ -1418,6 +1426,10 @@ The built-in `input()` function pauses a script and returns the learner's respon
 
 **Core Python vocabulary:** `input()`, prompt, string input, conversion, validation, exception, `try`, `except`, `ValueError`, range check and relationship check.
 
+### Why this matters in this course
+
+Human-entered data is rarely perfectly tidy. A response can be convertible to a number and still be impossible, inappropriate or outside the study's agreed range. Good validation therefore distinguishes what Python can read from what the research context permits.
+
 ## User input, type conversion and validation
 
 The `input()` function always returns a string.
@@ -1727,6 +1739,10 @@ except ValueError:
 Collections let one variable organise several related values before the course moves to CSV and JSON data. A list preserves order and can contain repeated values, a dictionary connects keys with values, and a set stores unique values without relying on a meaningful position. A list of dictionaries can represent several records that share the same fields, which closely resembles rows and columns in later data work. A `for` loop visits each item in a collection or generated range and temporarily assigns that item to an iteration variable. Counters and totals must normally be initialised before the loop so each iteration updates rather than resets the accumulated result. Conditions inside a loop allow each item to be classified, counted or preserved for review.
 
 **Core Python vocabulary:** collection, list, dictionary, key, value, set, record, `for`, iteration variable, `range()`, counter and accumulator.
+
+### Why this matters in this course
+
+Collections let a script represent several observations rather than one isolated value. A list keeps an order, a dictionary gives fields meaningful labels and a set keeps unique values. Loops then apply the same documented step to each item, which supports systematic inspection but can hide individual detail when results are reduced to totals.
 
 # Collections needed before CSV and JSON
 
@@ -2267,6 +2283,10 @@ A `while` loop repeats as long as its condition remains true, making it suitable
 
 **Core Python vocabulary:** `while`, loop condition, initial state, update, termination, infinite loop, `break`, `continue`, iteration and sentinel value.
 
+### Why this matters in this course
+
+A `while` loop is useful when a process should continue until something changes, such as asking again until an acceptable response is entered. Before running it, you should be able to explain the starting state, the stopping condition and how progress occurs. This makes the automation understandable and prevents a process that never ends.
+
 ## `while` loops
 
 A `while` loop repeats while a condition remains true.
@@ -2540,6 +2560,10 @@ The missing value is skipped.
 A function gives a reusable piece of logic a name and a clear boundary. The `def` keyword begins a function definition, parameters name the values the function expects, and arguments are the actual values supplied when the function is called. Statements inside the indented function body do not run until a call is made. `return` sends a result back to the caller so it can be stored, tested or used in another expression, whereas `print()` only displays information. Variables created inside a function are normally local to that call and should not be assumed to exist elsewhere. Small functions are easier to test when each one performs one calculation, classification or validation responsibility.
 
 **Core Python vocabulary:** function, `def`, function body, call, parameter, argument, `return`, return value, local variable and reusable logic.
+
+### Why this matters in this course
+
+A function gives a repeated procedure a name. In research code, one function might calculate a rate, apply a documented classification or format a report consistently across many records. Parameters make the procedure adaptable, and return values let later steps use the result without hiding how it was produced.
 
 ## Functions
 
@@ -3168,6 +3192,10 @@ An import makes code from another module available instead of requiring every op
 
 **Core Python vocabulary:** module, library, standard library, third-party package, `import`, `from`, `as`, alias, traceback, exception and logic error.
 
+### Why this matters in this course
+
+Imports let you use tested tools that Python or another package already provides, while debugging helps you understand failures in your own use of those tools. A traceback can show where execution stopped, but a program that finishes can still implement the wrong rule. Technical success and meaningful validity must therefore be checked separately.
+
 ## Modules and libraries
 
 A module contains reusable Python code. A library is a broader collection of tools. In beginner practice, the terms are sometimes used informally, but the core idea is the same:
@@ -3670,6 +3698,10 @@ Tracing is particularly helpful for:
 Applied problem solving combines the separate ideas from Tutorials 2.1–2.14 into a complete and testable process. Begin by describing the situation in ordinary language, identifying inputs and rules, and separating calculations, decisions and repeated work into manageable responsibilities. Functions make those responsibilities reusable, while collections organise several records and loops apply the same process consistently. A useful solution includes normal cases, exact boundaries, unsuitable types, impossible relationships and explicit limitation notes rather than only one successful demonstration. The ten exercises below prepare students for later CSV and JSON work by producing consistent lists of dictionaries without yet reading or writing external files. The cumulative self-test then asks you to trace unfamiliar logic, diagnose errors and justify design choices before consulting its dedicated answer notebook.
 
 **Core Python vocabulary:** decomposition, requirement, validation function, structured record, list of dictionaries, test case, boundary case, exception path, reproducibility and limitation.
+
+### Why this matters in this course
+
+Applied scripting starts with describing the situation clearly, not immediately typing code. Breaking the task into inputs, rules, functions, tests and outputs creates an audit trail that others can follow. A complete solution should also state its assumptions, edge cases and decisions that still require human review.
 
 The fully commented versions of Worked Examples 2.15.1 and 2.15.2 are included at the beginning of the [Tutorial 2.15 Applied Solutions notebook](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb).
 

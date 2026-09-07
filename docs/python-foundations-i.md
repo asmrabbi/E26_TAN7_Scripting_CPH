@@ -9,7 +9,7 @@ prerequisites:
   - "No previous programming experience"
   - "A modern web browser"
   - "Access to the course Google Colab notebook, when published"
-last_reviewed: "2026-08-03"
+last_reviewed: "2026-09-07"
 ---
 
 # Python Foundations I
@@ -118,6 +118,10 @@ Code appears in Python blocks, output appears in text blocks and comments begin 
 Python code is a sequence of instructions that the Python interpreter reads and executes. In a Colab notebook, each code cell is a small runnable part of that sequence, and its output normally appears directly underneath it. The built-in `print()` function makes a value visible by receiving that value inside parentheses and sending a readable representation to the output area. A variable created in one cell can be used by a later cell only while the notebook runtime still remembers it, so execution order matters. Restarting the runtime clears those remembered values and is therefore a useful way to test whether a notebook can be run from the beginning. By the end of this tutorial, you should be able to predict, run, inspect, deliberately break and repair a short sequence of cells.
 
 **Core Python vocabulary:** code cell, runtime, statement, function call, argument, string, variable, output and `print()`.
+
+### Why this matters in this course
+
+Think of a notebook as a transparent research scratchpad. Each cell records one step, and the output shows what Python produced at that moment. Running cells in order matters because another person should be able to repeat your process and obtain the same result.
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -431,6 +435,10 @@ Why does `\n` change the layout even though `print()` is called only once on the
 Python works with values such as numbers, text, Boolean states and the special value `None`. A value written directly in code is a **literal**, while a **variable** is a meaningful name that refers to a value so it can be reused. The assignment operator `=` makes the name on its left refer to the value produced on its right; it does not mean permanent mathematical equality. Uppercase names such as `EXPECTED_COLUMNS` communicate a constant-by-convention, although Python does not prevent reassignment. Python keywords such as `if` and `class` belong to the language grammar and cannot be ordinary variable names, while names such as `input` and `float` are legal but would hide useful built-in functions. Clear snake-case names make later calculations, debugging and data work easier to explain and verify.
 
 **Core Python vocabulary:** literal, value, variable, assignment, reassignment, constant-by-convention, keyword, built-in name and snake case.
+
+### Why this matters in this course
+
+Variables are labels that help code retain the meaning of a value. A name such as `interview_count` says more than `x` and makes it easier to check whether the script matches the research question. Reassignment is useful when a value changes, but the reason for that change should remain clear.
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -1294,6 +1302,10 @@ An **expression** is Python code that produces a value, while a **statement** is
 
 **Core Python vocabulary:** expression, statement, operator, operand, arithmetic, floor division, modulo, exponentiation, precedence and parentheses.
 
+### Why this matters in this course
+
+Expressions turn stored values into new information. In a social-science project, that might mean calculating a response rate, a difference between groups or a percentage of missing records. The arithmetic may be simple, but the chosen formula, unit and denominator affect the meaning of the result.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Statements**, **Operators and operands**, **Expressions**, **Order of operations**, **Modulus operator** and **String operations**. These sections match the Part C sequence closely. |
@@ -1976,6 +1988,10 @@ What is the base of the exponent in `(-3) ** 2`?
 A Python value has a **type**, and that type determines which operations are meaningful. Strings (`str`) represent text, integers (`int`) represent whole numbers, floats (`float`) represent decimal or continuous numerical values, and Booleans (`bool`) represent `True` or `False`. Quotation marks matter because `"25"` is text while `25` is a number, even though both may look similar when displayed. The built-in `type()` function reports how Python currently treats a value and is especially helpful when a calculation fails. Python may combine compatible numerical types automatically, but identifiers with leading zeros often need to remain strings so their meaning is preserved. `None`, zero, empty text and the string `"None"` are different states and must not be treated as interchangeable missing values.
 
 **Core Python vocabulary:** data type, string, integer, float, Boolean, comparison, `type()`, implicit conversion and `None`.
+
+### Why this matters in this course
+
+A data type tells Python how a value may be used, and it also reflects what the value represents. A postcode may look numeric but should usually be text because leading zeros matter, while a count is normally an integer because arithmetic is meaningful. Choosing a type therefore belongs to interpreting data as well as writing Python.
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -2919,6 +2935,10 @@ Type conversion creates a new value of another type when the conversion is possi
 
 **Core Python vocabulary:** type conversion, `int()`, `float()`, `str()`, `input()`, prompt, raw input, validation and `ValueError`.
 
+### Why this matters in this course
+
+Data collected from people often arrives as text, even when it represents an age, duration, rating or count. Conversion asks Python to reinterpret that text as another type; validation asks whether the result is plausible and acceptable for the situation. Keeping those questions separate helps avoid turning unsuitable input into apparently clean data.
+
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Asking the user for input** and the surrounding type-conversion discussion. This directly supports `input()`, `int()` and the `ValueError` produced by unsuitable text. |
@@ -3554,6 +3574,10 @@ Why does the script preserve both `celsius_text` and `celsius`?
 Comments are notes for human readers that begin with `#`; Python ignores the rest of that line during execution. A useful comment explains purpose, units, assumptions, data decisions or an unusual repair instead of simply repeating the code. Debugging is the normal process of comparing what should happen with what actually happens and then locating the smallest relevant cause. When Python cannot continue, its traceback identifies the error type and points toward the line that needs investigation. `SyntaxError`, `NameError`, `TypeError`, `ValueError`, `ZeroDivisionError` and `IndentationError` describe different kinds of problem and therefore suggest different checks. Some logical errors produce no traceback at all, so known-answer tests, boundary tests and careful interpretation remain necessary even when a script runs.
 
 **Core Python vocabulary:** comment, debugging, traceback, error type, syntax error, name error, type error, value error, logical error and test case.
+
+### Why this matters in this course
+
+Debugging is the practice of finding where code and intention diverge. A traceback identifies a technical failure, while test cases can reveal a rule that runs but produces the wrong meaning. Comments make the reasoning visible so classmates, collaborators and your future self can inspect the choices behind the script.
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
@@ -4254,6 +4278,10 @@ What evidence helped you recognise the wrong formula without a traceback?
 An integrated script connects source values, meaningful names, conversions, expressions, comparisons, comments and labelled output into one traceable pathway. The first step is to identify what information is supplied, which values are raw observations, and which values the script will derive. Each calculation should preserve the original values and make its denominator, unit and assumptions visible. Boolean checks can state whether a technical rule is met, but Python does not decide whether the rule itself is fair, complete or socially meaningful. Input-based scripts should use non-sensitive teaching data and clearly tell the learner when the cell will pause for input. The examples and exercises in this tutorial ask you to explain both what the code establishes and what remains a matter for human judgement or further evidence.
 
 **Core Python vocabulary:** source value, derived value, audit trail, conversion, evidence statement, Boolean check, boundary test, limitation and reproducibility.
+
+### Why this matters in this course
+
+This tutorial brings the small pieces into a traceable workflow. The aim is not a large program; it is a sequence in which inputs, transformations, checks and conclusions can be explained. That structure supports reproducibility and makes it easier to identify where human judgement is still required.
 
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
