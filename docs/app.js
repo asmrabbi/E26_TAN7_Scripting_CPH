@@ -1282,12 +1282,8 @@ function renderPythonFoundationIIOverview() {
         <div>${pythonFoundationIIGuide}</div>
       </details>
 
-      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Eight connected tutorials</p><h2 class="section-title">From Boolean questions to applied Python problem solving</h2></div><p>Study Tutorials 2.8–2.14 in order if decisions, collections, loops and functions are new. Tutorial 2.15 combines both Python foundation sections in ten situational exercises.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
+      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><h2 class="section-title">From Boolean questions to applied Python problem solving</h2></div><p>Study Tutorials 2.8–2.14 in order if decisions, collections, loops and functions are new. Tutorial 2.15 combines both Python foundation sections in ten situational exercises.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
-      <section class="reading-panel python-resources">
-        <div><p class="eyebrow">Lecture 4 notebooks</p><h2>Match every tutorial with runnable material</h2><p>The Examples notebook mirrors Tutorials 2.8–2.14. Focused exercises and solutions remain separate, Tutorial 2.15 has situational instructions and fully commented answers, and the cumulative self-test has its own answer notebook.</p><div class="reading-links"><a href="${pythonResourceLinks.foundationsII.examples}" target="_blank" rel="noreferrer">Tutorial Examples</a><a href="${pythonResourceLinks.foundationsII.exercises}" target="_blank" rel="noreferrer">Exercises</a><a href="${pythonResourceLinks.foundationsII.solutions}" target="_blank" rel="noreferrer">Numbered Solutions</a><a href="${pythonResourceLinks.foundationsII.appliedExercises}" target="_blank" rel="noreferrer">Tutorial 2.15 Instructions</a><a href="${pythonResourceLinks.foundationsII.appliedSolutions}" target="_blank" rel="noreferrer">Tutorial 2.15 Worked Examples and Solutions</a><a href="${pythonResourceLinks.foundationsII.selfTestAnswers}" target="_blank" rel="noreferrer">Self-test Answers</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code coverage map</a></div></div>
-        <a class="resource-button reading-button" href="python-foundations-ii.md" download>↓ Download full Markdown</a>
-      </section>
 
       <section class="section-footer-grid">
         <div class="checkpoint-card"><p class="eyebrow">Tutorial 2.15</p><h3>Ten situational exercises</h3><p>Combine input, collections, validation, branching, loops, functions, imports and documented tests in bounded programs.</p></div>
@@ -1373,7 +1369,7 @@ function showModule(id) {
     : flow
       ? `<section class="chapter-paper flow-chapter"><p class="eyebrow">Guided visual tutorial</p>${chapterContent}</section>`
       : pythonFoundation || pythonFoundationII || dataHandlingI
-        ? `<section class="chapter-paper python-chapter"><p class="eyebrow">${dataHandlingI ? "Hands-on data tutorial" : "Hands-on Python tutorial"}</p>${chapterContent}</section>`
+        ? `<section class="chapter-paper python-chapter">${pythonFoundationII ? "" : `<p class="eyebrow">${dataHandlingI ? "Hands-on data tutorial" : "Hands-on Python tutorial"}</p>`}${chapterContent}</section>`
         : `<section class="content-card compact-card" id="steps"><p class="eyebrow">Practical guide</p><h2>What to do</h2><div class="step-list compact-steps">${module.steps.map(step => `<div class="step"><h3>${step[0]}</h3><p>${step[1]}</p></div>`).join("")}</div>${codeBlock(module)}<figure class="compact-figure"><div class="screenshot-placeholder compact-placeholder"><div class="placeholder-inner"><div class="placeholder-icon">▣</div><span class="placeholder-label">${visualLabel} ${module.screenshot[0]}</span><strong>${module.screenshot[1]}</strong><p>${visualDescription}</p></div></div><figcaption class="screenshot-caption"><strong>Caption:</strong> ${module.screenshot[1]}. <strong>Alt text:</strong> ${module.screenshot[2]}</figcaption></figure></section>`;
   page.innerHTML = `
     <article class="page compact-page">

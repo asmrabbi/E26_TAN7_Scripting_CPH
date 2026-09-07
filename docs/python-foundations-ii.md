@@ -168,12 +168,13 @@ A Boolean is a Python value that is either `True` or `False`, and comparisons ar
 
 A Boolean value represents one of two logical states:
 
-```python
-True
-False
-```
+`True` or `False`
 
 The capital letters matter. Python recognises `True` and `False` as reserved Boolean values.
+
+<a id="example-2-8-1"></a>
+
+#### Example 2.8.1 — What is a Boolean value?
 
 ```python
 record_complete = True
@@ -192,25 +193,19 @@ False
 
 ### Line-by-line explanation
 
-```python
-record_complete = True
-```
+`record_complete = True`
 
 - `record_complete` is a variable.
 - `=` assigns a value.
 - `True` is a Boolean value.
 - The line records the decision that the record is complete.
 
-```python
-needs_review = False
-```
+`needs_review = False`
 
 - `needs_review` is another variable.
 - Its value is `False`.
 
-```python
-print(record_complete)
-```
+`print(record_complete)`
 
 - `print()` displays the current value stored in `record_complete`.
 
@@ -229,7 +224,11 @@ Comparison operators compare two values. The result is normally `True` or `False
 | `>=` | greater than or equal to | `score >= 5` |
 | `<=` | less than or equal to | `score <= 5` |
 
-### Example 1: Comparing a number
+### Comparing a number
+
+<a id="example-2-8-2"></a>
+
+#### Example 2.8.2 — Comparing a number
 
 ```python
 engagement = 125
@@ -261,9 +260,7 @@ The expressions do not merely describe a comparison. Python evaluates them and p
 
 This distinction is essential:
 
-```python
-engagement = 125
-```
+`engagement = 125`
 
 means:
 
@@ -271,9 +268,7 @@ means:
 
 By contrast:
 
-```python
-engagement == 125
-```
+`engagement == 125`
 
 means:
 
@@ -282,6 +277,10 @@ means:
 ### Deliberate error
 
 Run this code:
+
+<a id="example-2-8-3"></a>
+
+#### Example 2.8.3 — Deliberate error
 
 ```python
 engagement = 125
@@ -293,6 +292,10 @@ if engagement = 125:
 You should receive a syntax error because `=` cannot be used as the equality comparison inside the condition.
 
 ### Repair
+
+<a id="example-2-8-4"></a>
+
+#### Example 2.8.4 — Repair
 
 ```python
 engagement = 125
@@ -313,6 +316,10 @@ The value is 125
 
 Python can also compare strings.
 
+<a id="example-2-8-5"></a>
+
+#### Example 2.8.5 — Comparing strings
+
 ```python
 actor_type = "Municipality"
 
@@ -330,6 +337,10 @@ True
 ```
 
 String comparisons are case-sensitive:
+
+<a id="example-2-8-6"></a>
+
+#### Example 2.8.6 — Comparing strings
 
 ```python
 topic = "Cycling"
@@ -361,6 +372,10 @@ Change the value of `topic` to `"Public Transport"` and create three comparisons
 
 A comparison can be stored in a variable.
 
+<a id="example-2-8-7"></a>
+
+#### Example 2.8.7 — Storing the result of a comparison
+
 ```python
 missing_values = 14
 too_many_missing = missing_values > 10
@@ -378,11 +393,19 @@ True
 
 Python first evaluates:
 
+<a id="example-2-8-8"></a>
+
+#### Example 2.8.8 — Explanation
+
 ```python
 missing_values > 10
 ```
 
 The result is `True`. That result is then assigned to:
+
+<a id="example-2-8-9"></a>
+
+#### Example 2.8.9 — Explanation
 
 ```python
 too_many_missing
@@ -392,12 +415,20 @@ This can make later code easier to read.
 
 Compare:
 
+<a id="example-2-8-10"></a>
+
+#### Example 2.8.10 — Explanation
+
 ```python
 if missing_values > 10:
     print("Review the data")
 ```
 
 with:
+
+<a id="example-2-8-11"></a>
+
+#### Example 2.8.11 — Explanation
 
 ```python
 too_many_missing = missing_values > 10
@@ -413,6 +444,10 @@ Both work. The second version gives a meaningful name to the condition.
 ## Practice checkpoint — Predict a Boolean boundary
 
 Predict the output:
+
+<a id="example-2-8-12"></a>
+
+#### Example 2.8.12 — Practice checkpoint 1
 
 ```python
 records = 75
@@ -451,6 +486,10 @@ Programs often need to make decisions. A condition allows Python to execute code
 
 ## A one-way decision
 
+<a id="example-2-8-13"></a>
+
+#### Example 2.8.13 — A one-way decision
+
 ```python
 missing_values = 14
 
@@ -465,6 +504,10 @@ Review the missing data
 ```
 
 ### Structure
+
+<a id="example-2-8-14"></a>
+
+#### Example 2.8.14 — Structure
 
 ```python
 if condition:
@@ -482,6 +525,10 @@ Important parts:
 ---
 
 ## When the condition is false
+
+<a id="example-2-8-15"></a>
+
+#### Example 2.8.15 — When the condition is false
 
 ```python
 missing_values = 4
@@ -508,6 +555,10 @@ Python uses indentation to show which lines belong together.
 
 Correct:
 
+<a id="example-2-8-16"></a>
+
+#### Example 2.8.16 — Indentation is part of Python syntax
+
 ```python
 engagement = 150
 
@@ -528,6 +579,10 @@ Finished
 
 Incorrect:
 
+<a id="example-2-8-17"></a>
+
+#### Example 2.8.17 — Indentation is part of Python syntax
+
 ```python
 engagement = 150
 
@@ -541,6 +596,10 @@ This produces an `IndentationError`.
 
 Add four spaces before the action:
 
+<a id="example-2-8-18"></a>
+
+#### Example 2.8.18 — Repair
+
 ```python
 engagement = 150
 
@@ -551,6 +610,10 @@ if engagement > 100:
 ---
 
 ## Multiple lines inside one `if` block
+
+<a id="example-2-8-19"></a>
+
+#### Example 2.8.19 — Multiple lines inside one `if` block
 
 ```python
 engagement = 220
@@ -579,6 +642,10 @@ All three indented lines belong to the same decision.
 
 ## A condition using a string
 
+<a id="example-2-8-20"></a>
+
+#### Example 2.8.20 — A condition using a string
+
 ```python
 position = "Support"
 
@@ -594,6 +661,10 @@ This record supports the proposal
 
 ### Common mistake
 
+<a id="example-2-8-21"></a>
+
+#### Example 2.8.21 — Common mistake
+
 ```python
 position = "Support"
 
@@ -604,6 +675,10 @@ if position == "support":
 This prints nothing because string comparison is case-sensitive.
 
 One possible repair is:
+
+<a id="example-2-8-22"></a>
+
+#### Example 2.8.22 — Common mistake
 
 ```python
 position = "Support"
@@ -622,6 +697,10 @@ You do not need to memorise every string method yet. The important idea is that 
 
 Complete the missing condition:
 
+<a id="example-2-8-23"></a>
+
+#### Example 2.8.23 — Practice checkpoint 2
+
 ```python
 duplicate_rows = 7
 
@@ -633,6 +712,10 @@ The message should be printed when there is at least one duplicate row.
 
 <details>
 <summary>Suggested answer</summary>
+
+<a id="example-2-8-24"></a>
+
+#### Example 2.8.24 — Practice checkpoint 2
 
 ```python
 duplicate_rows = 7
@@ -650,6 +733,10 @@ if duplicate_rows > 0:
 An `else` block provides an alternative action when the condition is false.
 
 ## Basic example
+
+<a id="example-2-8-25"></a>
+
+#### Example 2.8.25 — Basic example
 
 ```python
 missing_values = 14
@@ -678,6 +765,10 @@ Exactly one branch runs.
 
 ## Understanding the flow
 
+<a id="example-2-8-26"></a>
+
+#### Example 2.8.26 — Understanding the flow
+
 ```python
 if condition:
     action_when_true
@@ -695,6 +786,10 @@ Python:
 ---
 
 ## Example with user input
+
+<a id="example-2-8-27"></a>
+
+#### Example 2.8.27 — Example with user input
 
 ```python
 answer = input("Is the source verified? Type yes or no: ")
@@ -727,6 +822,10 @@ These values are not exactly equal to `"yes"`.
 
 A more robust version is:
 
+<a id="example-2-8-28"></a>
+
+#### Example 2.8.28 — Problem with this version
+
 ```python
 answer = input("Is the source verified? Type yes or no: ")
 answer = answer.strip().lower()
@@ -751,6 +850,10 @@ This is an early example of data cleaning.
 
 Broken code:
 
+<a id="example-2-8-29"></a>
+
+#### Example 2.8.29 — Deliberate break-and-repair activity
+
 ```python
 engagement = 80
 
@@ -763,6 +866,10 @@ else
 There are two missing colons.
 
 Repaired code:
+
+<a id="example-2-8-30"></a>
+
+#### Example 2.8.30 — Deliberate break-and-repair activity
 
 ```python
 engagement = 80
@@ -786,6 +893,10 @@ Normal engagement
 Sometimes there are more than two meaningful outcomes.
 
 ## Classifying engagement
+
+<a id="example-2-8-31"></a>
+
+#### Example 2.8.31 — Classifying engagement
 
 ```python
 engagement = 125
@@ -821,6 +932,10 @@ Only the first matching branch is executed.
 
 Consider this incorrect order:
 
+<a id="example-2-8-32"></a>
+
+#### Example 2.8.32 — Order matters
+
 ```python
 engagement = 250
 
@@ -842,6 +957,10 @@ The second condition is never reached because `250 >= 100` is already true.
 
 A better order is:
 
+<a id="example-2-8-33"></a>
+
+#### Example 2.8.33 — Order matters
+
 ```python
 engagement = 250
 
@@ -858,6 +977,10 @@ Check the most restrictive or highest threshold first.
 ---
 
 ## A more detailed classification
+
+<a id="example-2-8-34"></a>
+
+#### Example 2.8.34 — A more detailed classification
 
 ```python
 missing_percentage = 18
@@ -884,11 +1007,19 @@ Substantial missingness
 
 Instead of printing inside every branch, we store the classification in `status`. This makes it easier to use the result later.
 
+<a id="example-2-8-35"></a>
+
+#### Example 2.8.35 — Why assign the result to a variable?
+
 ```python
 print("Data-quality status:", status)
 ```
 
 or:
+
+<a id="example-2-8-36"></a>
+
+#### Example 2.8.36 — Why assign the result to a variable?
 
 ```python
 if status == "Substantial missingness":
@@ -903,6 +1034,10 @@ When writing thresholds, test values directly around the boundaries.
 
 For the earlier classification, try:
 
+<a id="example-2-8-37"></a>
+
+#### Example 2.8.37 — Boundary testing
+
 ```python
 missing_percentage = 0
 missing_percentage = 1
@@ -916,6 +1051,10 @@ Boundary testing helps reveal mistakes such as gaps or overlaps.
 
 For example, this code contains a gap:
 
+<a id="example-2-8-38"></a>
+
+#### Example 2.8.38 — Boundary testing
+
 ```python
 score = 70
 
@@ -928,6 +1067,10 @@ elif score < 70:
 Nothing happens when `score` is exactly `70`.
 
 A repair could be:
+
+<a id="example-2-8-39"></a>
+
+#### Example 2.8.39 — Boundary testing
 
 ```python
 score = 70
@@ -950,6 +1093,10 @@ Write a multi-way decision that classifies the number of records:
 
 Starter code:
 
+<a id="example-2-8-40"></a>
+
+#### Example 2.8.40 — Practice checkpoint 3
+
 ```python
 number_of_records = 145
 
@@ -958,6 +1105,10 @@ number_of_records = 145
 
 <details>
 <summary>Suggested solution</summary>
+
+<a id="example-2-8-41"></a>
+
+#### Example 2.8.41 — Practice checkpoint 3
 
 ```python
 number_of_records = 145
@@ -990,6 +1141,10 @@ Logical operators allow a program to combine or reverse conditions.
 
 Both conditions must be true.
 
+<a id="example-2-9-1"></a>
+
+#### Example 2.9.1 — `and`
+
 ```python
 missing_values = 4
 duplicate_rows = 0
@@ -1019,6 +1174,10 @@ Truth pattern for `and`:
 
 At least one condition must be true.
 
+<a id="example-2-9-2"></a>
+
+#### Example 2.9.2 — `or`
+
 ```python
 missing_values = 3
 duplicate_rows = 7
@@ -1041,6 +1200,10 @@ The first condition is false, but the second condition is true.
 
 `not` reverses a Boolean value.
 
+<a id="example-2-9-3"></a>
+
+#### Example 2.9.3 — `not`
+
 ```python
 source_verified = False
 
@@ -1061,6 +1224,10 @@ The condition reads:
 ---
 
 ## A combined example
+
+<a id="example-2-9-4"></a>
+
+#### Example 2.9.4 — A combined example
 
 ```python
 actor_type = "Citizen Group"
@@ -1087,12 +1254,20 @@ Python has rules for evaluating logical expressions, but parentheses make your i
 
 Less clear:
 
+<a id="example-2-9-5"></a>
+
+#### Example 2.9.5 — Parentheses for clarity
+
 ```python
 if topic == "Cycling" or topic == "Public Transport" and engagement > 100:
     print("Selected")
 ```
 
 Clearer:
+
+<a id="example-2-9-6"></a>
+
+#### Example 2.9.6 — Parentheses for clarity
 
 ```python
 if (topic == "Cycling" or topic == "Public Transport") and engagement > 100:
@@ -1112,6 +1287,10 @@ Use parentheses when combining several conditions.
 
 Incorrect:
 
+<a id="example-2-9-7"></a>
+
+#### Example 2.9.7 — Common mistake: repeating the variable incorrectly
+
 ```python
 topic = "Cycling"
 
@@ -1123,6 +1302,10 @@ This condition does not mean what it appears to mean. The non-empty string `"Pub
 
 Correct:
 
+<a id="example-2-9-8"></a>
+
+#### Example 2.9.8 — Common mistake: repeating the variable incorrectly
+
 ```python
 topic = "Cycling"
 
@@ -1131,6 +1314,10 @@ if topic == "Cycling" or topic == "Public Transport":
 ```
 
 A later alternative is:
+
+<a id="example-2-9-9"></a>
+
+#### Example 2.9.9 — Common mistake: repeating the variable incorrectly
 
 ```python
 if topic in ["Cycling", "Public Transport"]:
@@ -1151,6 +1338,10 @@ Create a condition that prints `"Priority review"` when:
 <details>
 <summary>Suggested solution</summary>
 
+<a id="example-2-9-10"></a>
+
+#### Example 2.9.10 — Practice checkpoint 4
+
 ```python
 engagement = 180
 actor_type = "NGO"
@@ -1168,6 +1359,10 @@ if engagement >= 150 and (actor_type == "Citizen Group" or actor_type == "NGO"):
 A nested decision is an `if` statement inside another decision.
 
 ## Basic nested example
+
+<a id="example-2-9-11"></a>
+
+#### Example 2.9.11 — Basic nested example
 
 ```python
 source_verified = True
@@ -1192,6 +1387,10 @@ The second decision is checked only when the first decision passes.
 ---
 
 ## Nested decision with alternatives
+
+<a id="example-2-9-12"></a>
+
+#### Example 2.9.12 — Nested decision with alternatives
 
 ```python
 source_verified = True
@@ -1218,6 +1417,10 @@ Verified record with normal engagement
 
 This nested code:
 
+<a id="example-2-9-13"></a>
+
+#### Example 2.9.13 — Avoid unnecessary nesting
+
 ```python
 if source_verified:
     if engagement >= 200:
@@ -1225,6 +1428,10 @@ if source_verified:
 ```
 
 can also be written as:
+
+<a id="example-2-9-14"></a>
+
+#### Example 2.9.14 — Avoid unnecessary nesting
 
 ```python
 if source_verified and engagement >= 200:
@@ -1251,6 +1458,10 @@ The `input()` function always returns a string.
 
 ## Why conversion is necessary
 
+<a id="example-2-10-1"></a>
+
+#### Example 2.10.1 — Why conversion is necessary
+
 ```python
 engagement = input("Enter the engagement value: ")
 
@@ -1268,6 +1479,10 @@ Even though the user typed digits, the result is a string.
 
 This fails:
 
+<a id="example-2-10-2"></a>
+
+#### Example 2.10.2 — Why conversion is necessary
+
 ```python
 engagement = input("Enter the engagement value: ")
 
@@ -1278,6 +1493,10 @@ if engagement > 100:
 Python cannot directly compare a string with an integer.
 
 Repair:
+
+<a id="example-2-10-3"></a>
+
+#### Example 2.10.3 — Why conversion is necessary
 
 ```python
 engagement = input("Enter the engagement value: ")
@@ -1290,6 +1509,10 @@ if engagement > 100:
 ---
 
 ## Conversion in one line
+
+<a id="example-2-10-4"></a>
+
+#### Example 2.10.4 — Conversion in one line
 
 ```python
 engagement = int(input("Enter the engagement value: "))
@@ -1307,6 +1530,10 @@ This is concise, but a conversion error will stop the program when the user ente
 ## Input assumptions
 
 Consider:
+
+<a id="example-2-10-5"></a>
+
+#### Example 2.10.5 — Input assumptions
 
 ```python
 age = int(input("Enter age: "))
@@ -1333,6 +1560,10 @@ Good programming requires thinking about the assumptions behind input.
 
 Without error handling:
 
+<a id="example-2-10-6"></a>
+
+#### Example 2.10.6 — Why error handling matters
+
 ```python
 engagement = int(input("Enter engagement: "))
 print("Recorded:", engagement)
@@ -1341,6 +1572,10 @@ print("Recorded:", engagement)
 Entering `high` produces a `ValueError` and stops the program.
 
 With error handling:
+
+<a id="example-2-10-7"></a>
+
+#### Example 2.10.7 — Why error handling matters
 
 ```python
 try:
@@ -1361,6 +1596,10 @@ Error: enter a whole number
 
 ## Understanding the structure
 
+<a id="example-2-10-8"></a>
+
+#### Example 2.10.8 — Understanding the structure
+
 ```python
 try:
     code_that_might_fail
@@ -1376,6 +1615,10 @@ Python first attempts the `try` block. When an error occurs, it moves to the `ex
 
 It is usually better to name the expected error.
 
+<a id="example-2-10-9"></a>
+
+#### Example 2.10.9 — Catching a specific error
+
 ```python
 try:
     engagement = int(input("Enter engagement: "))
@@ -1389,6 +1632,10 @@ This handles `ValueError` without hiding every possible problem.
 ---
 
 ## Adding a decision after valid input
+
+<a id="example-2-10-10"></a>
+
+#### Example 2.10.10 — Adding a decision after valid input
 
 ```python
 try:
@@ -1410,6 +1657,10 @@ except ValueError:
 ## Valid type but invalid range
 
 A value can be correctly converted but still be unreasonable.
+
+<a id="example-2-10-11"></a>
+
+#### Example 2.10.11 — Valid type but invalid range
 
 ```python
 try:
@@ -1440,12 +1691,20 @@ A broad `except:` can hide unexpected problems. In beginner exercises, it may be
 
 Less informative:
 
+<a id="example-2-10-12"></a>
+
+#### Example 2.10.12 — Avoid a completely empty `except`
+
 ```python
 except:
     print("Something went wrong")
 ```
 
 More informative:
+
+<a id="example-2-10-13"></a>
+
+#### Example 2.10.13 — Avoid a completely empty `except`
 
 ```python
 except ValueError:
@@ -1458,6 +1717,10 @@ except ValueError:
 
 Repair this program so that non-numeric input produces a helpful message:
 
+<a id="example-2-10-14"></a>
+
+#### Example 2.10.14 — Practice checkpoint 5
+
 ```python
 number_of_records = int(input("Enter number of records: "))
 
@@ -1469,6 +1732,10 @@ else:
 
 <details>
 <summary>Suggested solution</summary>
+
+<a id="example-2-10-15"></a>
+
+#### Example 2.10.15 — Practice checkpoint 5
 
 ```python
 try:
@@ -1501,6 +1768,10 @@ CSV and JSON tutorials introduce new file formats, but the values read from them
 
 ## Lists: ordered values
 
+<a id="example-2-11-1"></a>
+
+#### Example 2.11.1 — Lists: ordered values
+
 ```python
 campuses = ["Aalborg", "Copenhagen"]
 campuses.append("Online")
@@ -1513,6 +1784,10 @@ print(campuses)
 Lists use square brackets. Index positions begin at zero, `append()` adds one value at the end and `len()` reports the number of items.
 
 ## Dictionaries: labelled values
+
+<a id="example-2-11-2"></a>
+
+#### Example 2.11.2 — Dictionaries: labelled values
 
 ```python
 registration = {
@@ -1530,6 +1805,10 @@ Dictionary keys make a record easier to interpret than a sequence of unexplained
 
 ## Sets: unique values
 
+<a id="example-2-11-3"></a>
+
+#### Example 2.11.3 — Sets: unique values
+
 ```python
 submitted_ids = ["A12", "B07", "A12", "C03"]
 unique_ids = set(submitted_ids)
@@ -1541,6 +1820,10 @@ print(len(unique_ids))
 A set removes repeated values and is useful for membership checks. Sets are not a substitute for preserving the original ordered records, because they discard duplicate occurrences and do not communicate why a duplicate appeared.
 
 ## A list of dictionaries: records ready for later file work
+
+<a id="example-2-11-4"></a>
+
+#### Example 2.11.4 — A list of dictionaries: records ready for later file work
 
 ```python
 observations = [
@@ -1571,6 +1854,10 @@ A `for` loop is normally used when you have a known sequence, range or collectio
 
 ## A simple definite loop
 
+<a id="example-2-11-5"></a>
+
+#### Example 2.11.5 — A simple definite loop
+
 ```python
 for number in [1, 2, 3]:
     print(number)
@@ -1585,6 +1872,10 @@ for number in [1, 2, 3]:
 ```
 
 ### Explanation
+
+<a id="example-2-11-6"></a>
+
+#### Example 2.11.6 — Explanation
 
 ```python
 for number in [1, 2, 3]:
@@ -1601,6 +1892,10 @@ Each time through the loop, `number` receives the next value.
 ---
 
 ## Looping through strings
+
+<a id="example-2-11-7"></a>
+
+#### Example 2.11.7 — Looping through strings
 
 ```python
 topics = ["Cycling", "Public Transport", "Accessibility"]
@@ -1631,6 +1926,10 @@ The indented line runs once for each value.
 
 ## The code after the loop
 
+<a id="example-2-11-8"></a>
+
+#### Example 2.11.8 — The code after the loop
+
 ```python
 topics = ["Cycling", "Public Transport", "Accessibility"]
 
@@ -1657,6 +1956,10 @@ The final line is not indented, so it runs after the loop finishes.
 
 `range()` generates a sequence of integers.
 
+<a id="example-2-11-9"></a>
+
+#### Example 2.11.9 — Using `range()`
+
 ```python
 for number in range(5):
     print(number)
@@ -1678,6 +1981,10 @@ for number in range(5):
 
 ## Starting and stopping a range
 
+<a id="example-2-11-10"></a>
+
+#### Example 2.11.10 — Starting and stopping a range
+
 ```python
 for number in range(1, 6):
     print(number)
@@ -1698,6 +2005,10 @@ The first argument is the starting value. The second is the stopping point, whic
 ---
 
 ## Adding a step
+
+<a id="example-2-11-11"></a>
+
+#### Example 2.11.11 — Adding a step
 
 ```python
 for number in range(0, 11, 2):
@@ -1727,6 +2038,10 @@ increase by 2
 
 ## Repeating a message
 
+<a id="example-2-11-12"></a>
+
+#### Example 2.11.12 — Repeating a message
+
 ```python
 for repetition in range(3):
     print("Check the dataset")
@@ -1744,6 +2059,10 @@ The iteration variable exists even when it is not printed.
 
 A conventional name for an unused variable is `_`:
 
+<a id="example-2-11-13"></a>
+
+#### Example 2.11.13 — Repeating a message
+
 ```python
 for _ in range(3):
     print("Check the dataset")
@@ -1752,6 +2071,10 @@ for _ in range(3):
 ---
 
 ## Conditions inside a loop
+
+<a id="example-2-11-14"></a>
+
+#### Example 2.11.14 — Conditions inside a loop
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -1780,6 +2103,10 @@ This combines repetition with decision-making.
 
 ## Counting values that meet a condition
 
+<a id="example-2-11-15"></a>
+
+#### Example 2.11.15 — Counting values that meet a condition
+
 ```python
 engagement_values = [35, 120, 240, 80, 310]
 high_count = 0
@@ -1799,11 +2126,19 @@ High-engagement records: 2
 
 ### Step-by-step explanation
 
+<a id="example-2-11-16"></a>
+
+#### Example 2.11.16 — Step-by-step explanation
+
 ```python
 high_count = 0
 ```
 
 The counter begins at zero.
+
+<a id="example-2-11-17"></a>
+
+#### Example 2.11.17 — Step-by-step explanation
 
 ```python
 for engagement in engagement_values:
@@ -1811,11 +2146,19 @@ for engagement in engagement_values:
 
 Python processes each engagement value.
 
+<a id="example-2-11-18"></a>
+
+#### Example 2.11.18 — Step-by-step explanation
+
 ```python
 if engagement >= 200:
 ```
 
 The program checks whether the current value meets the threshold.
+
+<a id="example-2-11-19"></a>
+
+#### Example 2.11.19 — Step-by-step explanation
 
 ```python
 high_count = high_count + 1
@@ -1825,6 +2168,10 @@ When the condition is true, the counter increases by one.
 
 An equivalent shorter form is:
 
+<a id="example-2-11-20"></a>
+
+#### Example 2.11.20 — Step-by-step explanation
+
 ```python
 high_count += 1
 ```
@@ -1832,6 +2179,10 @@ high_count += 1
 ---
 
 ## Accumulating a total
+
+<a id="example-2-11-21"></a>
+
+#### Example 2.11.21 — Accumulating a total
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -1850,6 +2201,10 @@ Total engagement: 475
 ```
 
 Then calculate the mean:
+
+<a id="example-2-11-22"></a>
+
+#### Example 2.11.22 — Accumulating a total
 
 ```python
 average_engagement = total_engagement / len(engagement_values)
@@ -1872,6 +2227,10 @@ Later, pandas will calculate summaries more directly. This example helps you und
 
 Broken:
 
+<a id="example-2-11-23"></a>
+
+#### Example 2.11.23 — Deliberate indentation error
+
 ```python
 topics = ["Cycling", "Accessibility"]
 
@@ -1880,6 +2239,10 @@ print(topic)
 ```
 
 Repair:
+
+<a id="example-2-11-24"></a>
+
+#### Example 2.11.24 — Deliberate indentation error
 
 ```python
 topics = ["Cycling", "Accessibility"]
@@ -1896,6 +2259,10 @@ Write a loop that prints each item with the phrase `"Topic under review:"`.
 
 Starter code:
 
+<a id="example-2-11-25"></a>
+
+#### Example 2.11.25 — Practice checkpoint 6
+
 ```python
 topics = ["Cycling", "Parking", "Accessibility"]
 ```
@@ -1910,6 +2277,10 @@ Topic under review: Accessibility
 
 <details>
 <summary>Suggested solution</summary>
+
+<a id="example-2-11-26"></a>
+
+#### Example 2.11.26 — Practice checkpoint 6
 
 ```python
 topics = ["Cycling", "Parking", "Accessibility"]
@@ -1935,6 +2306,10 @@ A `while` loop repeats as long as its condition remains true, making it suitable
 A `while` loop repeats while a condition remains true.
 
 ## Countdown example
+
+<a id="example-2-12-1"></a>
+
+#### Example 2.12.1 — Countdown example
 
 ```python
 number = 5
@@ -1967,17 +2342,29 @@ Most `while` loops need:
 
 In the example:
 
+<a id="example-2-12-2"></a>
+
+#### Example 2.12.2 — Three essential parts
+
 ```python
 number = 5
 ```
 
 is the initial value.
 
+<a id="example-2-12-3"></a>
+
+#### Example 2.12.3 — Three essential parts
+
 ```python
 while number > 0:
 ```
 
 is the condition.
+
+<a id="example-2-12-4"></a>
+
+#### Example 2.12.4 — Three essential parts
 
 ```python
 number = number - 1
@@ -1990,6 +2377,10 @@ is the update.
 ## An infinite loop
 
 This code never changes `number`:
+
+<a id="example-2-12-5"></a>
+
+#### Example 2.12.5 — An infinite loop
 
 ```python
 number = 5
@@ -2006,6 +2397,10 @@ Use the stop button beside the running cell.
 
 ### Repair
 
+<a id="example-2-12-6"></a>
+
+#### Example 2.12.6 — Repair
+
 ```python
 number = 5
 
@@ -2017,6 +2412,10 @@ while number > 0:
 ---
 
 ## A loop that never starts
+
+<a id="example-2-12-7"></a>
+
+#### Example 2.12.7 — A loop that never starts
 
 ```python
 number = 0
@@ -2038,6 +2437,10 @@ The condition is false before the first iteration.
 ---
 
 ## Repeating until valid input
+
+<a id="example-2-12-8"></a>
+
+#### Example 2.12.8 — Repeating until valid input
 
 ```python
 valid_input = False
@@ -2068,12 +2471,20 @@ This is a meaningful use of a `while` loop because the number of attempts is unk
 
 Use a `for` loop when you know the sequence or number of repetitions:
 
+<a id="example-2-12-9"></a>
+
+#### Example 2.12.9 — `for` or `while`?
+
 ```python
 for topic in topics:
     print(topic)
 ```
 
 Use a `while` loop when repetition depends on a changing condition:
+
+<a id="example-2-12-10"></a>
+
+#### Example 2.12.10 — `for` or `while`?
 
 ```python
 while not valid_input:
@@ -2091,6 +2502,10 @@ This section is useful, but it can be treated as **recommended rather than essen
 ## `break`
 
 `break` ends the loop immediately.
+
+<a id="example-2-12-11"></a>
+
+#### Example 2.12.11 — `break`
 
 ```python
 topics = ["Cycling", "Accessibility", "STOP", "Parking"]
@@ -2119,6 +2534,10 @@ When `"STOP"` is reached, the loop ends.
 ## `continue`
 
 `continue` skips the rest of the current iteration and moves to the next one.
+
+<a id="example-2-12-12"></a>
+
+#### Example 2.12.12 — `continue`
 
 ```python
 values = [120, None, 75, 240]
@@ -2172,6 +2591,10 @@ Functions help you:
 
 ## Defining and calling a function
 
+<a id="example-2-13-1"></a>
+
+#### Example 2.13.1 — Defining and calling a function
+
 ```python
 def show_welcome():
     print("Welcome to the data-quality checker")
@@ -2187,6 +2610,10 @@ Welcome to the data-quality checker
 
 ### Explanation
 
+<a id="example-2-13-2"></a>
+
+#### Example 2.13.2 — Explanation
+
 ```python
 def show_welcome():
 ```
@@ -2196,11 +2623,19 @@ def show_welcome():
 - Parentheses are required.
 - The colon starts the function body.
 
+<a id="example-2-13-3"></a>
+
+#### Example 2.13.3 — Explanation
+
 ```python
     print("Welcome to the data-quality checker")
 ```
 
 The indented line belongs to the function.
+
+<a id="example-2-13-4"></a>
+
+#### Example 2.13.4 — Explanation
 
 ```python
 show_welcome()
@@ -2216,6 +2651,10 @@ Defining a function does not automatically run it.
 
 Good names:
 
+<a id="example-2-13-5"></a>
+
+#### Example 2.13.5 — Meaningful function names
+
 ```python
 calculate_percentage()
 classify_engagement()
@@ -2224,6 +2663,10 @@ show_summary()
 ```
 
 Less useful names:
+
+<a id="example-2-13-6"></a>
+
+#### Example 2.13.6 — Meaningful function names
 
 ```python
 do_it()
@@ -2237,6 +2680,10 @@ A function name should describe the action.
 ---
 
 ## Parameters and arguments
+
+<a id="example-2-13-7"></a>
+
+#### Example 2.13.7 — Parameters and arguments
 
 ```python
 def greet_actor(actor_name):
@@ -2257,6 +2704,10 @@ Record submitted by: Local Business Council
 
 In the definition:
 
+<a id="example-2-13-8"></a>
+
+#### Example 2.13.8 — Terminology
+
 ```python
 def greet_actor(actor_name):
 ```
@@ -2264,6 +2715,10 @@ def greet_actor(actor_name):
 `actor_name` is a **parameter**.
 
 In the call:
+
+<a id="example-2-13-9"></a>
+
+#### Example 2.13.9 — Terminology
 
 ```python
 greet_actor("Green Streets Association")
@@ -2274,6 +2729,10 @@ greet_actor("Green Streets Association")
 ---
 
 ## Multiple parameters
+
+<a id="example-2-13-10"></a>
+
+#### Example 2.13.10 — Multiple parameters
 
 ```python
 def show_record(actor_name, topic, engagement):
@@ -2300,6 +2759,10 @@ The order of arguments should match the order of parameters.
 
 A function can calculate and return a result.
 
+<a id="example-2-13-11"></a>
+
+#### Example 2.13.11 — Returning a value
+
 ```python
 def calculate_missing_percentage(missing_values, total_values):
     percentage = missing_values / total_values * 100
@@ -2317,11 +2780,19 @@ print(result)
 
 ### Explanation
 
+<a id="example-2-13-12"></a>
+
+#### Example 2.13.12 — Explanation
+
 ```python
 return percentage
 ```
 
 sends the result back to the place where the function was called.
+
+<a id="example-2-13-13"></a>
+
+#### Example 2.13.13 — Explanation
 
 ```python
 result = calculate_missing_percentage(18, 200)
@@ -2335,6 +2806,10 @@ stores the returned value in `result`.
 
 Printing:
 
+<a id="example-2-13-14"></a>
+
+#### Example 2.13.14 — `print()` and `return` are not the same
+
 ```python
 def calculate_total(a, b):
     print(a + b)
@@ -2342,12 +2817,20 @@ def calculate_total(a, b):
 
 Returning:
 
+<a id="example-2-13-15"></a>
+
+#### Example 2.13.15 — `print()` and `return` are not the same
+
 ```python
 def calculate_total(a, b):
     return a + b
 ```
 
 A returned value can be stored and used later:
+
+<a id="example-2-13-16"></a>
+
+#### Example 2.13.16 — `print()` and `return` are not the same
 
 ```python
 total = calculate_total(5, 7)
@@ -2361,6 +2844,10 @@ When a function only prints, the printed result is visible but is not automatica
 ---
 
 ## A function with conditional logic
+
+<a id="example-2-13-17"></a>
+
+#### Example 2.13.17 — A function with conditional logic
 
 ```python
 def classify_engagement(engagement):
@@ -2389,6 +2876,10 @@ The function can be reused with different values.
 ---
 
 ## A function with validation
+
+<a id="example-2-13-18"></a>
+
+#### Example 2.13.18 — A function with validation
 
 ```python
 def classify_percentage(percentage):
@@ -2419,6 +2910,10 @@ Invalid percentage
 ## Local and global variables
 
 This is an important idea, but it does not need advanced treatment yet.
+
+<a id="example-2-13-19"></a>
+
+#### Example 2.13.19 — Local and global variables
 
 ```python
 status = "Global status"
@@ -2452,6 +2947,10 @@ Avoid relying heavily on global variables.
 
 ### Error 1: Function not called
 
+<a id="example-2-13-20"></a>
+
+#### Example 2.13.20 — Error 1: Function not called
+
 ```python
 def show_message():
     print("Hello")
@@ -2461,6 +2960,10 @@ No output appears because the function is defined but not called.
 
 Repair:
 
+<a id="example-2-13-21"></a>
+
+#### Example 2.13.21 — Error 1: Function not called
+
 ```python
 def show_message():
     print("Hello")
@@ -2469,6 +2972,10 @@ show_message()
 ```
 
 ### Error 2: Missing argument
+
+<a id="example-2-13-22"></a>
+
+#### Example 2.13.22 — Error 2: Missing argument
 
 ```python
 def greet(name):
@@ -2481,11 +2988,19 @@ This produces a `TypeError` because the required argument is missing.
 
 Repair:
 
+<a id="example-2-13-23"></a>
+
+#### Example 2.13.23 — Error 2: Missing argument
+
 ```python
 greet("Amina")
 ```
 
 ### Error 3: Incorrect indentation
+
+<a id="example-2-13-24"></a>
+
+#### Example 2.13.24 — Error 3: Incorrect indentation
 
 ```python
 def greet(name):
@@ -2493,6 +3008,10 @@ print("Hello", name)
 ```
 
 Repair:
+
+<a id="example-2-13-25"></a>
+
+#### Example 2.13.25 — Error 3: Incorrect indentation
 
 ```python
 def greet(name):
@@ -2513,6 +3032,10 @@ Test it with `180` complete records out of `200`.
 
 <details>
 <summary>Suggested solution</summary>
+
+<a id="example-2-13-26"></a>
+
+#### Example 2.13.26 — Practice checkpoint 7
 
 ```python
 def calculate_completion_rate(complete_records, total_records):
@@ -2536,6 +3059,10 @@ Expected output:
 ## Combining loops and functions
 
 ## Apply one function to several values
+
+<a id="example-2-13-27"></a>
+
+#### Example 2.13.27 — Apply one function to several values
 
 ```python
 def classify_engagement(engagement):
@@ -2572,6 +3099,10 @@ Later, data-processing libraries will perform similar repeated operations across
 
 ## Count function results
 
+<a id="example-2-13-28"></a>
+
+#### Example 2.13.28 — Count function results
+
 ```python
 def classify_engagement(engagement):
     if engagement >= 200:
@@ -2602,6 +3133,10 @@ High-engagement count: 2
 ---
 
 ## More advanced example: produce a simple report
+
+<a id="example-2-13-29"></a>
+
+#### Example 2.13.29 — More advanced example: produce a simple report
 
 ```python
 def classify_engagement(engagement):
@@ -2677,6 +3212,10 @@ A module contains reusable Python code. A library is a broader collection of too
 
 ## Importing a standard module
 
+<a id="example-2-14-1"></a>
+
+#### Example 2.14.1 — Importing a standard module
+
 ```python
 import math
 
@@ -2692,11 +3231,19 @@ print(result)
 
 ### Explanation
 
+<a id="example-2-14-2"></a>
+
+#### Example 2.14.2 — Explanation
+
 ```python
 import math
 ```
 
 makes the `math` module available.
+
+<a id="example-2-14-3"></a>
+
+#### Example 2.14.3 — Explanation
 
 ```python
 math.sqrt(16)
@@ -2709,6 +3256,10 @@ The dot connects the module name and the function.
 ---
 
 ## Importing one item
+
+<a id="example-2-14-4"></a>
+
+#### Example 2.14.4 — Importing one item
 
 ```python
 from math import sqrt
@@ -2727,6 +3278,10 @@ Now `sqrt()` can be used without writing `math.`.
 
 For beginners, importing the full module can make the origin of a function clearer:
 
+<a id="example-2-14-5"></a>
+
+#### Example 2.14.5 — Importing one item
+
 ```python
 math.sqrt()
 ```
@@ -2740,6 +3295,10 @@ shows that `sqrt()` comes from `math`.
 Later, the pandas tutorial will use `import pandas as pd` after its package setup. `pd` is the conventional alias, or shorter name, for pandas. Do not run that preview in this standard-library-only foundation tutorial.
 
 A standard example:
+
+<a id="example-2-14-6"></a>
+
+#### Example 2.14.6 — Using an alias
 
 ```python
 import math as m
@@ -2755,6 +3314,10 @@ print(m.sqrt(36))
 
 Aliases should follow common conventions. Do not create confusing aliases such as:
 
+<a id="example-2-14-7"></a>
+
+#### Example 2.14.7 — Using an alias
+
 ```python
 import math as banana
 ```
@@ -2764,6 +3327,10 @@ Python allows it, but it makes the code harder to understand.
 ---
 
 ## Example with the `random` module
+
+<a id="example-2-14-8"></a>
+
+#### Example 2.14.8 — Example with the `random` module
 
 ```python
 import random
@@ -2784,6 +3351,10 @@ For reproducible data analysis, randomness must be controlled and documented. Th
 
 This code contains a spelling error:
 
+<a id="example-2-14-9"></a>
+
+#### Example 2.14.9 — Import errors
+
 ```python
 import maths
 ```
@@ -2796,11 +3367,19 @@ ModuleNotFoundError: No module named 'maths'
 
 Repair:
 
+<a id="example-2-14-10"></a>
+
+#### Example 2.14.10 — Import errors
+
 ```python
 import math
 ```
 
 Another common error:
+
+<a id="example-2-14-11"></a>
+
+#### Example 2.14.11 — Import errors
 
 ```python
 import math
@@ -2811,6 +3390,10 @@ print(math.squareroot(16))
 This produces an `AttributeError` because the function is called `sqrt()`, not `squareroot()`.
 
 Repair:
+
+<a id="example-2-14-12"></a>
+
+#### Example 2.14.12 — Import errors
 
 ```python
 print(math.sqrt(16))
@@ -2838,6 +3421,10 @@ A useful debugging routine is:
 
 Example:
 
+<a id="example-2-14-13"></a>
+
+#### Example 2.14.13 — `SyntaxError`
+
 ```python
 if engagement > 100
     print("High")
@@ -2846,6 +3433,10 @@ if engagement > 100
 The colon is missing.
 
 Repair:
+
+<a id="example-2-14-14"></a>
+
+#### Example 2.14.14 — `SyntaxError`
 
 ```python
 if engagement > 100:
@@ -2858,12 +3449,20 @@ if engagement > 100:
 
 Example:
 
+<a id="example-2-14-15"></a>
+
+#### Example 2.14.15 — `IndentationError`
+
 ```python
 for topic in topics:
 print(topic)
 ```
 
 Repair:
+
+<a id="example-2-14-16"></a>
+
+#### Example 2.14.16 — `IndentationError`
 
 ```python
 for topic in topics:
@@ -2876,6 +3475,10 @@ for topic in topics:
 
 Example:
 
+<a id="example-2-14-17"></a>
+
+#### Example 2.14.17 — `NameError`
+
 ```python
 engagment = 120
 print(engagement)
@@ -2884,6 +3487,10 @@ print(engagement)
 The variable was assigned using one spelling and printed using another.
 
 Repair:
+
+<a id="example-2-14-18"></a>
+
+#### Example 2.14.18 — `NameError`
 
 ```python
 engagement = 120
@@ -2896,6 +3503,10 @@ print(engagement)
 
 Example:
 
+<a id="example-2-14-19"></a>
+
+#### Example 2.14.19 — `TypeError`
+
 ```python
 engagement = "120"
 result = engagement + 10
@@ -2904,6 +3515,10 @@ result = engagement + 10
 A string and integer cannot be added in this way.
 
 Repair:
+
+<a id="example-2-14-20"></a>
+
+#### Example 2.14.20 — `TypeError`
 
 ```python
 engagement = "120"
@@ -2918,6 +3533,10 @@ print(result)
 
 Example:
 
+<a id="example-2-14-21"></a>
+
+#### Example 2.14.21 — `ValueError`
+
 ```python
 engagement = int("high")
 ```
@@ -2925,6 +3544,10 @@ engagement = int("high")
 The string cannot be converted to an integer.
 
 Possible repair:
+
+<a id="example-2-14-22"></a>
+
+#### Example 2.14.22 — `ValueError`
 
 ```python
 try:
@@ -2939,11 +3562,19 @@ except ValueError:
 
 Example:
 
+<a id="example-2-14-23"></a>
+
+#### Example 2.14.23 — `ModuleNotFoundError`
+
 ```python
 import statisticss
 ```
 
 Possible repair:
+
+<a id="example-2-14-24"></a>
+
+#### Example 2.14.24 — `ModuleNotFoundError`
 
 ```python
 import statistics
@@ -2957,6 +3588,10 @@ Check the spelling first. `statistics` is part of the Python standard library, s
 
 Example:
 
+<a id="example-2-14-25"></a>
+
+#### Example 2.14.25 — `TypeError` from a missing function argument
+
 ```python
 def classify(value):
     return value > 100
@@ -2965,6 +3600,10 @@ result = classify()
 ```
 
 Repair:
+
+<a id="example-2-14-26"></a>
+
+#### Example 2.14.26 — `TypeError` from a missing function argument
 
 ```python
 result = classify(120)
@@ -2978,6 +3617,10 @@ A logic error does not necessarily produce an error message. The program runs, b
 
 Example:
 
+<a id="example-2-14-27"></a>
+
+#### Example 2.14.27 — Logic errors
+
 ```python
 missing_values = 10
 total_values = 200
@@ -2989,6 +3632,10 @@ print(missing_percentage)
 The code runs, but the formula is reversed.
 
 Correct:
+
+<a id="example-2-14-28"></a>
+
+#### Example 2.14.28 — Logic errors
 
 ```python
 missing_percentage = missing_values / total_values * 100
@@ -3010,6 +3657,10 @@ Logic errors require testing and domain understanding.
 Tracing means following how variables change line by line.
 
 Example:
+
+<a id="example-2-14-29"></a>
+
+#### Example 2.14.29 — 20. Tracing code manually
 
 ```python
 count = 0
@@ -3054,9 +3705,9 @@ Applied problem solving combines the separate ideas from Tutorials 2.1–2.14 in
 
 **Core Python vocabulary:** decomposition, requirement, validation function, structured record, list of dictionaries, test case, boundary case, exception path, reproducibility and limitation.
 
-The fully commented versions of Worked Examples A and B are included at the beginning of the [Tutorial 2.15 Applied Solutions notebook](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb).
+The fully commented versions of Worked Examples 2.15.1 and 2.15.2 are included at the beginning of the [Tutorial 2.15 Applied Solutions notebook](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb).
 
-## Worked example A — Green Mobility data-quality checker
+## Worked example 2.15.1 — Green Mobility data-quality checker
 
 This case combines the core ideas from the tutorial.
 
@@ -3332,7 +3983,7 @@ A script can apply rules consistently, but it cannot decide whether the rules ar
 
 ---
 
-## Worked example B — Reviewing several records
+## Worked example 2.15.2 — Reviewing several records
 
 This example is more challenging. It combines a list, a function, a loop, conditions and counters.
 
