@@ -1653,6 +1653,226 @@ Use the form that is easiest to understand.
 
 Nested decisions are useful when the second question only makes sense after the first. Combined logical conditions are useful when the criteria form one clear test.
 
+## Worked exercises with different kinds of logic
+
+The fictional situations below are inspired by current TAN7 Moodle themes: critical data studies and counter-mapping, digital archives, infrastructures and platforms, Responsible Innovation, AI ethics and digital participation. They are new teaching cases rather than copies of assessed activities. Each exercise uses `input()`, `if`, `elif` and `else`, while the sequence deliberately changes the logical structure:
+
+- 2.9.15 combines a numeric threshold with a missing prerequisite;
+- 2.9.16 allows two access routes but applies one restriction;
+- 2.9.17 uses a nested decision because impact is assessed only after an outage is confirmed;
+- 2.9.18 checks an ethical stop signal before considering continuation;
+- 2.9.19 applies `not` to a grouped pair of participation options.
+
+Assume that number inputs are sensible and that yes/no answers use those words. Tutorial 2.10 adds fuller input validation.
+
+<a id="example-2-9-15"></a>
+
+#### Worked Exercise 2.9.15 — Prepare a critical counter-map
+
+**Story:** A Digital Anthropology group is preparing a small counter-map about places affected by a fictional redevelopment plan.<br>
+The students enter how many local places appear on the map and whether they added a short note explaining the local context.<br>
+The map is ready for discussion only when it contains at least four places and includes local context.<br>
+If four places are present but the context is missing, the program should name that specific next step.
+
+**Question:** Ask for the number of mapped places and whether local context was added, then print the correct preparation message.
+
+**Steps to solve it:**
+
+1. Collect the place count with `input()` and convert it to an integer.
+2. Collect the yes/no context answer and convert it to a Boolean comparison.
+3. Use `and` in the first branch because both readiness conditions must be true.
+4. Use `not` in the `elif` branch to identify the missing context.
+5. Use `else` when the map still needs more local places.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+mapped_places = int(input("Number of local places on the map: "))
+local_context_added = input("Was local context added? yes/no: ").strip().lower() == "yes"
+
+if mapped_places >= 4 and local_context_added:
+    print("Counter-map is ready for discussion")
+elif mapped_places >= 4 and not local_context_added:
+    print("Add local context before the discussion")
+else:
+    print("Map more local places first")
+```
+
+For inputs `5` and `no`, the program prints `Add local context before the discussion`.
+
+</details>
+
+---
+
+<a id="example-2-9-16"></a>
+
+#### Worked Exercise 2.9.16 — Decide whether an archival item can be used
+
+**Story:** A student finds a fictional digitised item while studying how the digital can work as an archive.<br>
+The item may be available through public access or through university permission.<br>
+A separate rights note can restrict classroom reuse even when one access route exists.<br>
+The program must distinguish permitted use, a rights review, and missing access.
+
+**Question:** Ask three yes/no questions and decide what the student should do with the archival item.
+
+**Steps to solve it:**
+
+1. Convert each yes/no answer into a Boolean value.
+2. Group the two possible access routes with parentheses and `or`.
+3. Add `and not rights_restricted` because access alone is insufficient.
+4. Use `elif` to give a restriction the specific review message.
+5. Use `else` when neither access route is available.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+public_access = input("Is the item publicly accessible? yes/no: ").strip().lower() == "yes"
+university_permission = input("Is university permission available? yes/no: ").strip().lower() == "yes"
+rights_restricted = input("Does the item have a reuse restriction? yes/no: ").strip().lower() == "yes"
+
+if (public_access or university_permission) and not rights_restricted:
+    print("The item may be used for the classroom task")
+elif rights_restricted:
+    print("Pause and review the rights note")
+else:
+    print("Access permission is needed")
+```
+
+For inputs `no`, `yes` and `no`, the program prints `The item may be used for the classroom task`.
+
+</details>
+
+---
+
+<a id="example-2-9-17"></a>
+
+#### Worked Exercise 2.9.17 — Respond to a platform outage
+
+**Story:** A Digital Anthropology group treats a fictional campus platform as infrastructure and records a service interruption.<br>
+The students enter whether an outage is confirmed, how many services are affected, and whether a backup channel is available.<br>
+The impact question matters only after the outage has been confirmed, so the decision should be nested.<br>
+Three affected services and no backup require the strongest response.
+
+**Question:** Build a nested decision that prints the appropriate outage response.
+
+**Steps to solve it:**
+
+1. Keep the first yes/no answer as cleaned text so `yes`, `no` and another answer can take different branches.
+2. In the outer `if`, continue only when the outage answer is `yes`.
+3. Ask for the affected-service count and backup channel only inside that confirmed-outage branch.
+4. Inside that branch, use `and`, `or` and `not` to distinguish urgent, priority and routine responses.
+5. Use the outer `elif` and `else` for `no` and an unclear answer.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+outage_answer = input("Is the outage confirmed? yes/no: ").strip().lower()
+
+if outage_answer == "yes":
+    affected_services = int(input("Number of affected services: "))
+    backup_available = input("Is a backup channel available? yes/no: ").strip().lower() == "yes"
+
+    if affected_services >= 3 and not backup_available:
+        print("Urgent infrastructure response")
+    elif affected_services >= 3 or not backup_available:
+        print("Priority infrastructure review")
+    else:
+        print("Routine outage documentation")
+elif outage_answer == "no":
+    print("Record that no outage is confirmed")
+else:
+    print("Enter yes or no for the outage question")
+```
+
+For inputs `yes`, `4` and `no`, the program prints `Urgent infrastructure response`.
+
+</details>
+
+---
+
+<a id="example-2-9-18"></a>
+
+#### Worked Exercise 2.9.18 — Apply a responsible-innovation stop rule
+
+**Story:** A class discusses a fictional AI pilot using themes from Responsible Innovation and AI ethics.<br>
+The students record whether a possible harm has been reported, whether human review is complete, and whether an appeal route exists.<br>
+A harm signal or missing human review must pause the pilot before other conditions are considered.<br>
+Only a reviewed pilot with an appeal route receives the continuation message.
+
+**Question:** Ask the three questions and print whether to pause, continue carefully, or add an appeal route.
+
+**Steps to solve it:**
+
+1. Convert the three yes/no answers into Boolean values.
+2. Put the stop rule first and join its alternatives with `or`.
+3. Use `not` to test for missing human review.
+4. In `elif`, use `and` for the two requirements that support limited continuation.
+5. Use `else` for a reviewed pilot that still lacks an appeal route.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+harm_reported = input("Has a possible harm been reported? yes/no: ").strip().lower() == "yes"
+human_review_complete = input("Is human review complete? yes/no: ").strip().lower() == "yes"
+appeal_route_available = input("Is an appeal route available? yes/no: ").strip().lower() == "yes"
+
+if harm_reported or not human_review_complete:
+    print("Pause the AI pilot for review")
+elif human_review_complete and appeal_route_available:
+    print("The limited pilot may continue with monitoring")
+else:
+    print("Add an appeal route before continuing")
+```
+
+For inputs `no`, `yes` and `no`, the program prints `Add an appeal route before continuing`.
+
+</details>
+
+---
+
+<a id="example-2-9-19"></a>
+
+#### Worked Exercise 2.9.19 — Check a digital-participation plan
+
+**Story:** A group designs a fictional public discussion inspired by the Digital Participation topic.<br>
+People may join through an online session or a room-based session, and the information should be available in an accessible format.<br>
+The first decision asks whether neither participation route exists by applying `not` to the grouped alternatives.<br>
+If a route exists, the next decision checks whether the accessible material is ready.
+
+**Question:** Ask about the two participation routes and the accessible material, then print the plan's next action.
+
+**Steps to solve it:**
+
+1. Convert all three yes/no answers into Boolean values.
+2. Put the two participation routes inside parentheses with `or`.
+3. Place `not` before the parentheses to test whether both routes are absent.
+4. Use `elif` to check the material only after a route exists.
+5. Use `else` when a route exists but the accessible material is missing.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+online_session = input("Is an online session available? yes/no: ").strip().lower() == "yes"
+room_session = input("Is a room-based session available? yes/no: ").strip().lower() == "yes"
+accessible_material = input("Is accessible information ready? yes/no: ").strip().lower() == "yes"
+
+if not (online_session or room_session):
+    print("Create at least one participation route")
+elif accessible_material:
+    print("Participation plan is ready to review")
+else:
+    print("Add accessible information before inviting participants")
+```
+
+For inputs `yes`, `no` and `no`, the program prints `Add accessible information before inviting participants`.
+
+</details>
+
 ---
 
 # Tutorial 2.10 — User input, validation and exceptions

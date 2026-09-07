@@ -1478,8 +1478,8 @@ function addCodeCompanionLinks() {
       ? `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 3 Examples in Colab</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`
       : state.current === "2.15"
         ? `<span>Run the matching applied solution:</span><a href="${links.appliedSolutions}" target="_blank" rel="noreferrer">Open Tutorial 2.15 Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 4 on GitHub</a>`
-        : state.current === "2.8"
-          ? `<span>Run the matching Tutorial 2.8 material:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Examples</a><a href="${links.workExercises}" target="_blank" rel="noreferrer">Open Worked Exercises</a><a href="${links.workExercisesGithub}" target="_blank" rel="noreferrer">View Worked Exercises on GitHub</a>`
+        : ["2.8", "2.9"].includes(state.current)
+          ? `<span>Run the matching ${state.current} material:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Examples</a><a href="${links.workExercises}" target="_blank" rel="noreferrer">Open Worked Exercises</a><a href="${links.workExercisesGithub}" target="_blank" rel="noreferrer">View Worked Exercises on GitHub</a>`
         : `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 4 Examples</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`;
     codeBlockElement.insertAdjacentElement("afterend", resourceLinks);
   });

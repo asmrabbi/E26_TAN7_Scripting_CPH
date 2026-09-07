@@ -21,7 +21,7 @@ The website subsection sequence is continuous: Python Foundations I uses Tutoria
 
 The deployable tutorial website is stored in [`docs/`](docs/) and is ready for GitHub Pages to publish from the `main` branch. Once Pages is enabled, the expected address is https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/.
 
-The Lecture 4 Examples notebook contains the complete scripts for all 16 keyboard-input examples. Those cells display a manual-run instruction and then pause for a learner response; all non-interactive examples are stored with verified output. The Work Exercises notebook begins with the contextual Tutorial 2.8 sequence, 2.8.35–2.8.40, and is ready to receive equivalent exercises for Tutorials 2.9–2.14. Tutorial 2.15 also has two website worked examples at the beginning of its solution notebook, ten numbered situational exercises and a separate 24-question cumulative self-test answer notebook.
+The Lecture 4 Examples notebook contains the complete scripts for all 16 keyboard-input examples. Those cells display a manual-run instruction and then pause for a learner response; all non-interactive examples are stored with verified output. The Work Exercises notebook contains the contextual Tutorial 2.8 sequence, 2.8.35–2.8.40, and five logically distinct Tutorial 2.9 exercises, 2.9.15–2.9.19. It is ready to receive equivalent exercises for Tutorials 2.10–2.14. Tutorial 2.15 also has two website worked examples at the beginning of its solution notebook, ten numbered situational exercises and a separate 24-question cumulative self-test answer notebook.
 
 ## Part III — Data Handling, Text Analysis and Visualization
 
