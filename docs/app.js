@@ -241,6 +241,14 @@ const courseLectures = [
   ["10", "Course wrap-up, examination and mini-project discussion", "Connect the full course process, practise explaining code, outputs, errors and data decisions, clarify the oral examination, and discuss suitable mini-project scope and presentation."]
 ];
 
+const lectureTutorialRoutes = {
+  "1": "#foundation",
+  "2": "#flow",
+  "3": "#python",
+  "4": "#python-ii",
+  "5": "#data-i"
+};
+
 const foundationIlos = [
   "Explain the difference between a problem, algorithm, program, script and code.",
   "Recognise tasks that can be fully or partly addressed computationally.",
@@ -1258,7 +1266,7 @@ function renderOverview() {
       </section>
 
       <section id="course-parts" class="course-parts-section">
-        <div class="roadmap-heading compact-heading"><div><p class="eyebrow">Four connected parts</p><h2 class="section-title">How the course develops</h2></div><p>Each part gives you the concepts and practical skills needed for the next.</p></div>
+        <div class="roadmap-heading compact-heading"><div><h2 class="section-title">How the course develops</h2></div></div>
         <div class="course-part-grid">${courseParts.map(part => `
           <article class="course-part-card">
             <div class="part-heading"><span>Part ${part.number}</span><small>${part.lectures}</small></div>
@@ -1270,11 +1278,11 @@ function renderOverview() {
       </section>
 
       <section id="lecture-journey" class="lecture-journey-section">
-        <div class="roadmap-heading compact-heading"><div><p class="eyebrow">Lecture 1 to Lecture 10</p><h2 class="section-title">One learning journey</h2></div><p>The sequence moves from planning without code to explaining a complete, critically assessed workflow.</p></div>
+        <div class="roadmap-heading compact-heading"><div><h2 class="section-title">One learning journey</h2></div></div>
         <div class="lecture-journey">${courseLectures.map(([number, title, description]) => `
           <article class="lecture-card" id="lecture-${number}">
             <span class="lecture-number">${number}</span>
-            <div><div class="lecture-title-row"><h3>${title}</h3><a class="lecture-anchor" href="#start/lecture-${number}" aria-label="Direct link to Lecture ${number}">#</a></div><p>${description}</p></div>
+            <div><div class="lecture-title-row"><h3>${title}</h3><a class="lecture-anchor" href="${lectureTutorialRoutes[number] || `#start/lecture-${number}`}" aria-label="${lectureTutorialRoutes[number] ? `Open the Lecture ${number} tutorials` : `Direct link to Lecture ${number}`}">#</a></div><p>${description}</p></div>
           </article>
         `).join("")}</div>
       </section>
