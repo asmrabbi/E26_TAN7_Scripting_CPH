@@ -191,6 +191,56 @@ const startModules = [
   }
 ];
 
+const courseParts = [
+  {
+    number: "I",
+    lectures: "Lectures 1–2",
+    title: "Computational Foundations",
+    description: "Define computational problems, map inputs, processes and outputs, and test logic with flow diagrams and pseudocode.",
+    routes: [
+      ["Computational problems", "#foundation"],
+      ["Flowcharts and pseudocode", "#flow"]
+    ]
+  },
+  {
+    number: "II",
+    lectures: "Lectures 3–4",
+    title: "Python Foundations",
+    description: "Move from first Python statements in Google Colab to conditions, loops, lists, functions and systematic debugging.",
+    routes: [
+      ["Python Foundations I", "#python"],
+      ["Python Foundations II", "#python-ii"]
+    ]
+  },
+  {
+    number: "III",
+    lectures: "Lectures 5–7",
+    title: "Data Handling, Text Analysis and Visualisation",
+    description: "Inspect CSV data with pandas, assess and clean data, prepare text, explore patterns and communicate results through visualisations.",
+    routes: [["Data Handling I", "#data-i"]]
+  },
+  {
+    number: "IV",
+    lectures: "Lectures 8–9",
+    title: "Machine Learning, Automation and Agents",
+    description: "Understand basic machine-learning processes, then examine automation and agentic AI with attention to control, reliability and responsibility.",
+    routes: []
+  }
+];
+
+const courseLectures = [
+  ["1", "Computational problems, inputs, processes and outputs", "Start without code: define a problem, identify its inputs, processes and outputs, break it into manageable tasks, and make assumptions and human responsibilities visible."],
+  ["2", "Flow diagrams, pseudocode and logical errors", "Turn the Lecture 1 task into a visual and written plan. Trace normal and unexpected cases, find logical errors, and revise the process before coding."],
+  ["3", "Python basics in Google Colab", "Create and save a notebook; work with print(), variables, strings, numbers, Boolean values, type conversion and simple input; then read and repair common errors."],
+  ["4", "Conditions, loops, lists, functions and debugging", "Translate decisions and repetition into Python, organise reusable code with functions, test edge cases, and distinguish syntax, runtime and logical errors."],
+  ["5", "CSV files, pandas and dataset inspection", "Load a CSV into a pandas DataFrame, inspect rows, columns and data types, identify visible quality concerns, and document the dataset’s structure and provenance."],
+  ["6", "Data quality, cleaning and introductory text preparation", "Assess completeness, consistency and validity; make justified cleaning decisions; prepare text with NLTK; and keep the original data and a transformation log."],
+  ["7", "Exploratory analysis, text analysis and data visualisation", "Use statistics, counts, grouping, filtering and word frequencies to investigate a question, create clear visualisations, and state what the data does—and does not—establish."],
+  ["8", "Introduction to artificial intelligence and machine learning", "Learn how machine learning relates to AI, follow a prepared model from data and features to training, testing and evaluation, and assess bias, reliability and generalisability."],
+  ["9", "Automation and agentic AI", "Compare scripts, generative-AI responses and agentic workflows. Examine goals, tools, feedback, stopping conditions and human approval through a bounded data task."],
+  ["10", "Course wrap-up, examination and mini-project discussion", "Connect the full course process, practise explaining code, outputs, errors and data decisions, clarify the oral examination, and discuss suitable mini-project scope and presentation."]
+];
+
 const foundationIlos = [
   "Explain the difference between a problem, algorithm, program, script and code.",
   "Recognise tasks that can be fully or partly addressed computationally.",
@@ -1011,7 +1061,7 @@ const preMergeFlowReferences = {
   ]
 };
 
-let modules = startModules;
+let modules = [];
 
 const state = {
   section: "start",
@@ -1023,6 +1073,51 @@ const nav = document.getElementById("module-nav");
 const page = document.getElementById("page-content");
 const sidebar = document.getElementById("sidebar");
 const toast = document.getElementById("toast");
+
+const sectionModules = {
+  start: [],
+  foundation: foundationModules,
+  flow: flowModules,
+  python: pythonFoundationModules,
+  "python-ii": pythonFoundationIIModules,
+  "data-i": dataHandlingIModules
+};
+
+function routeHref(section, id = "overview") {
+  return `#${section}${id === "overview" ? "" : `/${id}`}`;
+}
+
+function navigateTo(section, id = "overview") {
+  const target = routeHref(section, id);
+  if (window.location.hash === target) {
+    applyRouteFromHash();
+    return;
+  }
+  window.location.hash = target;
+}
+
+function applyRouteFromHash() {
+  const rawRoute = decodeURIComponent(window.location.hash.slice(1));
+  const [requestedSection = "start", requestedPage = "overview"] = rawRoute.split("/");
+  const section = Object.prototype.hasOwnProperty.call(sectionModules, requestedSection) ? requestedSection : "start";
+  const sectionSet = sectionModules[section];
+  state.section = section;
+  modules = sectionSet;
+
+  if (sectionSet.some(module => module.id === requestedPage)) {
+    showModule(requestedPage);
+    return;
+  }
+
+  renderOverview();
+  if (section === "start" && /^lecture-(?:10|[1-9])$/.test(requestedPage)) {
+    window.setTimeout(() => {
+      const target = document.getElementById(requestedPage);
+      target?.classList.add("linked-target");
+      target?.scrollIntoView({ block: "start" });
+    }, 60);
+  }
+}
 
 function escapeHtml(value) {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -1064,11 +1159,17 @@ function updateSidebar() {
         ? "Make decisions, repeat work, organise functions and handle errors."
       : pythonFoundation
         ? "Run, explain, modify and repair foundational Python in Google Colab."
-        : "Prepare your browser workspace and essential learning habits.";
+        : "See what the course is for and how Lectures 1–10 build on one another.";
   document.querySelectorAll("[data-package]").forEach(button => button.classList.toggle("active", button.dataset.package === state.section));
 }
 
 function updateProgress() {
+  const progressChip = document.querySelector(".progress-chip");
+  const sidebarProgress = document.querySelector(".sidebar-progress");
+  const hasTutorials = modules.length > 0;
+  progressChip.hidden = !hasTutorials;
+  sidebarProgress.hidden = !hasTutorials;
+  if (!hasTutorials) return;
   const count = modules.filter(module => state.completed.has(module.id)).length;
   const percent = Math.round((count / modules.length) * 100);
   document.getElementById("progress-value").textContent = count;
@@ -1080,47 +1181,33 @@ function updateProgress() {
 function renderNav() {
   updateSidebar();
   nav.innerHTML = modules.map(module => `
-    <button class="module-link ${state.current === module.id ? "active" : ""} ${state.completed.has(module.id) ? "completed" : ""}" data-module="${module.id}">
+    <a class="module-link ${state.current === module.id ? "active" : ""} ${state.completed.has(module.id) ? "completed" : ""}" href="${routeHref(state.section, module.id)}">
       <span class="module-number">${module.id}</span>
       <span class="module-title">${module.title}</span>
       <span class="completion-dot">${state.completed.has(module.id) ? "✓" : ""}</span>
-    </button>
+    </a>
   `).join("");
-  nav.querySelectorAll("[data-module]").forEach(button => button.addEventListener("click", () => showModule(button.dataset.module)));
   updateProgress();
 }
 
 function selectSection(section) {
-  state.section = section;
-  modules = section === "foundation"
-    ? foundationModules
-    : section === "flow"
-      ? flowModules
-      : section === "python-ii"
-        ? pythonFoundationIIModules
-      : section === "data-i"
-        ? dataHandlingIModules
-      : section === "python"
-        ? pythonFoundationModules
-        : startModules;
-  renderOverview();
+  navigateTo(section);
   sidebar.classList.remove("open");
 }
 
 function moduleCards() {
   return modules.map(module => `
-    <button class="route-card" data-module-card="${module.id}">
+    <a class="route-card" href="${routeHref(state.section, module.id)}">
       <span class="route-number">${module.id}</span>
       <span><h3>${module.title}</h3><p>${module.summary}</p></span>
       <span class="route-time">${module.time}</span>
-    </button>
+    </a>
   `).join("");
 }
 
 function bindOverview() {
-  page.querySelector("[data-start]").addEventListener("click", event => showModule(event.currentTarget.dataset.start));
-  page.querySelector("[data-scroll-roadmap]").addEventListener("click", () => document.getElementById("roadmap").scrollIntoView());
-  page.querySelectorAll("[data-module-card]").forEach(button => button.addEventListener("click", () => showModule(button.dataset.moduleCard)));
+  const roadmapButton = page.querySelector("[data-scroll-roadmap]");
+  if (roadmapButton) roadmapButton.addEventListener("click", () => document.getElementById("roadmap").scrollIntoView());
   setTimeout(() => { page.focus({ preventScroll: true }); window.scrollTo(0, 0); }, 40);
 }
 
@@ -1148,15 +1235,66 @@ function renderOverview() {
     return;
   }
   page.innerHTML = `
-    <div class="page compact-page">
-      <section class="hero compact-hero">
-        <div class="meta-row"><span class="pill">Start Here</span><span class="time">5 practical modules</span></div>
-        <h1>Prepare once, then start learning scripting.</h1>
-        <p>This short section gives you the browser skills, terminology and troubleshooting routine required by the rest of the course.</p>
-        <div class="hero-actions"><button class="primary-button" data-start="0.1">Begin 0.1 <span>→</span></button><button class="secondary-button" data-scroll-roadmap>View modules</button></div>
+    <div class="page compact-page course-overview-page">
+      <section class="hero compact-hero course-overview-hero">
+        <div class="meta-row"><span class="pill">Start Here</span><span class="time">Autumn 2026 · Copenhagen · English</span></div>
+        <h1>Introduction to Scripting, Data Mining and Machine Learning</h1>
+        <p>A beginner-friendly, hands-on course for Techno-Anthropology students who want to understand how data, scripts and AI-supported systems work—and how to use them critically.</p>
+        <div class="course-facts" aria-label="Course facts"><span><strong>5</strong> ECTS</span><span><strong>10</strong> lectures</span><span><strong>ESNANKK1K1</strong> module</span></div>
       </section>
-      <section class="package-ilos"><div><p class="eyebrow">Start Here package</p><h2>Intended learning outcomes</h2><p>These outcomes apply to the complete package and are not repeated on each tutorial page.</p></div><ul class="learning-list">${packageIlos.map(ilo => `<li>${ilo}</li>`).join("")}</ul></section>
-      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Five modules</p><h2 class="section-title">Start Here</h2></div><p>Complete these once, then return only when you need the guidance.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
+
+      <section class="overview-purpose">
+        <div>
+          <p class="eyebrow">What the course is for</p>
+          <h2>From a real-world problem to a transparent computational process</h2>
+          <p>You are not expected to know Python before the course begins or to approach the course as a computer scientist. The course demystifies programming logic, data analysis and machine learning by connecting them to practical questions in Techno-Anthropology.</p>
+          <p>You will learn to express a problem as clear steps, translate those steps into simple Python, inspect and prepare data, analyse and visualise results, follow a basic machine-learning process, and examine the limits and responsibilities of automation and AI-supported workflows.</p>
+        </div>
+        <aside>
+          <p class="eyebrow">A recurring question</p>
+          <blockquote>What do the data and the program make visible—and what do they leave uncertain?</blockquote>
+          <p>The course treats debugging, data quality, documentation and critical reflection as part of the same process.</p>
+        </aside>
+      </section>
+
+      <section id="course-parts" class="course-parts-section">
+        <div class="roadmap-heading compact-heading"><div><p class="eyebrow">Four connected parts</p><h2 class="section-title">How the course develops</h2></div><p>Each part gives you the concepts and practical skills needed for the next.</p></div>
+        <div class="course-part-grid">${courseParts.map(part => `
+          <article class="course-part-card">
+            <div class="part-heading"><span>Part ${part.number}</span><small>${part.lectures}</small></div>
+            <h3>${part.title}</h3>
+            <p>${part.description}</p>
+            ${part.routes.length ? `<div class="part-links">${part.routes.map(([label, href]) => `<a href="${href}">${label} <span aria-hidden="true">→</span></a>`).join("")}</div>` : `<span class="part-status">Course overview</span>`}
+          </article>
+        `).join("")}</div>
+      </section>
+
+      <section id="lecture-journey" class="lecture-journey-section">
+        <div class="roadmap-heading compact-heading"><div><p class="eyebrow">Lecture 1 to Lecture 10</p><h2 class="section-title">One learning journey</h2></div><p>The sequence moves from planning without code to explaining a complete, critically assessed workflow.</p></div>
+        <div class="lecture-journey">${courseLectures.map(([number, title, description]) => `
+          <article class="lecture-card" id="lecture-${number}">
+            <span class="lecture-number">${number}</span>
+            <div><div class="lecture-title-row"><h3>${title}</h3><a class="lecture-anchor" href="#start/lecture-${number}" aria-label="Direct link to Lecture ${number}">#</a></div><p>${description}</p></div>
+          </article>
+        `).join("")}</div>
+      </section>
+
+      <section class="course-practice-panel">
+        <div><p class="eyebrow">How you will work</p><h2>Practical, cumulative and critically reflective</h2></div>
+        <ul>
+          <li>Use browser-based notebooks and prepared examples, especially Google Colab.</li>
+          <li>Predict, run, inspect, explain, modify, test and debug short pieces of code.</li>
+          <li>Keep original data, document transformations and separate evidence from interpretation.</li>
+          <li>Connect technical choices to organisational context, privacy, reliability and accountability.</li>
+        </ul>
+      </section>
+
+      <section class="course-finish-panel">
+        <p class="eyebrow">Where the journey leads</p>
+        <h2>By Lecture 10, you can explain the whole process</h2>
+        <p>You will bring together problem definition, Python, structured and textual data, analysis, visualisation, introductory machine learning and automation. The final lecture consolidates the course, clarifies the oral examination and discusses optional mini-project scope, documentation and presentation.</p>
+        <p class="course-update-note"><strong>Keep checking Moodle:</strong> slides, tutorials and supporting materials are shared continuously as topics are introduced and may be updated in response to class activities and learning progress.</p>
+      </section>
     </div>`;
   bindOverview();
 }
@@ -1168,7 +1306,7 @@ function renderFoundationOverview() {
         <div class="meta-row"><span class="pill">Part 1 · Section 1.1</span><span class="time">160 minutes · no programming</span></div>
         <h1>Understanding computational problems</h1>
         <p>Before writing Python, learn to define the problem, information, rules, outputs and human responsibilities that a computational process must represent.</p>
-        <div class="hero-actions"><button class="primary-button" data-start="1.1">Begin tutorial 1.1 <span>→</span></button><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
+        <div class="hero-actions"><a class="primary-button" href="#foundation/1.1">Begin tutorial 1.1 <span>→</span></a><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
       </section>
 
       <section class="section-introduction">
@@ -1200,7 +1338,7 @@ function renderFlowOverview() {
         <div class="meta-row"><span class="pill">Part 1 · Section 1.2</span><span class="time">About 4 hours 35 minutes</span></div>
         <h1>Flowcharts and Pseudocode</h1>
         <p>Make the CivicConnect process visible, test its paths and begin translating its logic towards Python.</p>
-        <div class="hero-actions"><button class="primary-button" data-start="1.7">Begin tutorial 1.7 <span>→</span></button><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
+        <div class="hero-actions"><a class="primary-button" href="#flow/1.7">Begin tutorial 1.7 <span>→</span></a><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
       </section>
 
       <section class="section-introduction">
@@ -1236,7 +1374,7 @@ function renderPythonFoundationOverview() {
         <div class="meta-row"><span class="pill">Part II · Section 2.1</span><span class="time">About 10 to 12 hours</span></div>
         <h1>Python Foundations I</h1>
         <p>Learn your first Python by running, explaining, modifying, deliberately breaking and repairing meaningful examples in Google Colab.</p>
-        <div class="hero-actions"><button class="primary-button" data-start="2.1">Begin tutorial 2.1 <span>→</span></button><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
+        <div class="hero-actions"><a class="primary-button" href="#python/2.1">Begin tutorial 2.1 <span>→</span></a><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
       </section>
 
       <section class="section-introduction">
@@ -1269,7 +1407,7 @@ function renderPythonFoundationIIOverview() {
         <div class="meta-row"><span class="pill">Part II · Section 2.2</span><span class="time">About 12 to 16 hours with applied practice</span></div>
         <h1>Make Python decide, repeat and respond.</h1>
         <p>Build rule-based programs with conditions, loops, functions, imports and structured error handling, then test what those programs can and cannot establish.</p>
-        <div class="hero-actions"><button class="primary-button" data-start="2.8">Begin tutorial 2.8 <span>→</span></button><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
+        <div class="hero-actions"><a class="primary-button" href="#python-ii/2.8">Begin tutorial 2.8 <span>→</span></a><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
       </section>
 
       <section class="section-introduction">
@@ -1303,7 +1441,7 @@ function renderDataHandlingIOverview() {
         <div class="meta-row"><span class="pill">Part III · Section 3.1 · Lecture 5</span><span class="time">About 15 to 18 hours with applied practice</span></div>
         <h1>Data Handling, Text Analysis and Visualization I</h1>
         <p>Move from Python values to a reproducible first exploration of a real tabular structure: load the supplied CSV, inspect it, calculate cautiously, explore categories and text, and document quality before cleaning.</p>
-        <div class="hero-actions"><button class="primary-button" data-start="3.1">Begin tutorial 3.1 <span>→</span></button><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
+        <div class="hero-actions"><a class="primary-button" href="#data-i/3.1">Begin tutorial 3.1 <span>→</span></a><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
       </section>
 
       <section class="section-introduction">
@@ -1388,9 +1526,9 @@ function showModule(id) {
         ${foundation ? renderTutorialReferences(module.id, foundationReferences) : flow ? renderTutorialReferences(module.id, flowReferences) : pythonFoundation ? renderTutorialReferences(module.id, pythonFoundationReferences) : pythonFoundationII ? renderTutorialReferences(module.id, pythonFoundationIIReferences) : dataHandlingI ? renderTutorialReferences(module.id, dataHandlingIReferences) : ""}
         ${conceptual || pythonFoundation || pythonFoundationII || dataHandlingI ? "" : `<section class="resource-panel compact-resources"><div><p class="eyebrow">Resources</p><h2>Open or download</h2></div><div class="resource-row"><button class="resource-button" data-toast="Colab link placeholder.">↗ Colab</button><a class="resource-button" href="${courseRepositoryUrl}" target="_blank" rel="noreferrer">⌘ GitHub</a><a class="resource-button" href="${courseDatasetUrl}" target="_blank" rel="noreferrer">↓ Dataset</a><button class="resource-button" data-toast="Solution link placeholder.">✓ Solution</button></div></section>`}
         <nav class="next-row" aria-label="Module navigation">
-          ${previous ? `<button class="next-button" data-previous="${previous.id}"><span>←</span><span><small>Previous</small><strong>${previous.id} ${previous.title}</strong></span></button>` : `<button class="next-button" data-overview><span>←</span><span><small>Return to</small><strong>${sectionLabel}</strong></span></button>`}
+          ${previous ? `<a class="next-button" href="${routeHref(state.section, previous.id)}"><span>←</span><span><small>Previous</small><strong>${previous.id} ${previous.title}</strong></span></a>` : `<a class="next-button" href="${routeHref(state.section)}"><span>←</span><span><small>Return to</small><strong>${sectionLabel}</strong></span></a>`}
           <button class="next-button complete-button ${state.completed.has(module.id) ? "done" : ""}" data-complete="${module.id}"><span>${state.completed.has(module.id) ? "✓" : "○"}</span><span><small>${state.completed.has(module.id) ? "Completed" : "Progress"}</small><strong>${state.completed.has(module.id) ? "Mark incomplete" : "Mark complete"}</strong></span></button>
-          ${next ? `<button class="next-button" data-next="${next.id}"><span><small>Next</small><strong>${next.id} ${next.title}</strong></span><span>→</span></button>` : `<button class="next-button" data-overview><span><small>Finish</small><strong>Return to ${sectionLabel}</strong></span><span>→</span></button>`}
+          ${next ? `<a class="next-button" href="${routeHref(state.section, next.id)}"><span><small>Next</small><strong>${next.id} ${next.title}</strong></span><span>→</span></a>` : `<a class="next-button" href="${routeHref(state.section)}"><span><small>Finish</small><strong>Return to ${sectionLabel}</strong></span><span>→</span></a>`}
         </nav>
       </div>
     </article>`;
@@ -1440,11 +1578,6 @@ function attachModuleEvents(module) {
     localStorage.setItem("aau-course-completed-v1", JSON.stringify([...state.completed]));
     showModule(module.id);
   });
-  page.querySelectorAll("[data-overview]").forEach(button => button.addEventListener("click", renderOverview));
-  const previous = page.querySelector("[data-previous]");
-  const next = page.querySelector("[data-next]");
-  if (previous) previous.addEventListener("click", () => showModule(previous.dataset.previous));
-  if (next) next.addEventListener("click", () => showModule(next.dataset.next));
 }
 
 function replaceTutorialScreenshotPlaceholders() {
@@ -1512,23 +1645,21 @@ function showToast(message) {
 }
 
 document.documentElement.classList.toggle("local-file", window.location.protocol === "file:");
-document.getElementById("home-button").addEventListener("click", renderOverview);
+document.getElementById("home-button").addEventListener("click", () => navigateTo("start"));
 document.getElementById("menu-button").addEventListener("click", () => sidebar.classList.toggle("open"));
-document.querySelectorAll("[data-package]").forEach(button => button.addEventListener("click", () => selectSection(button.dataset.package)));
+document.querySelectorAll("[data-package]").forEach(link => link.addEventListener("click", () => sidebar.classList.remove("open")));
 document.querySelectorAll(".top-actions [data-toast]").forEach(button => button.addEventListener("click", () => showToast(button.dataset.toast)));
 document.getElementById("glossary-button").addEventListener("click", () => {
   if (state.section === "data-i") {
-    modules = dataHandlingIModules;
-    showModule("3.13");
+    navigateTo("data-i", "3.13");
   } else if (state.section === "python-ii") {
-    modules = pythonFoundationIIModules;
-    showModule("2.15");
+    navigateTo("python-ii", "2.15");
     setTimeout(() => document.getElementById("python-ii-glossary")?.scrollIntoView({ block: "start" }), 80);
   } else {
-    state.section = "python";
-    modules = pythonFoundationModules;
-    showModule("2.7");
+    navigateTo("python", "2.7");
     setTimeout(() => document.getElementById("python-glossary")?.scrollIntoView({ block: "start" }), 80);
   }
 });
-renderOverview();
+window.addEventListener("hashchange", applyRouteFromHash);
+if (!window.location.hash) window.history.replaceState(null, "", "#start");
+applyRouteFromHash();
