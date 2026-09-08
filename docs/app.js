@@ -1656,18 +1656,6 @@ document.documentElement.classList.toggle("local-file", window.location.protocol
 document.getElementById("home-button").addEventListener("click", () => navigateTo("start"));
 document.getElementById("menu-button").addEventListener("click", () => sidebar.classList.toggle("open"));
 document.querySelectorAll("[data-package]").forEach(link => link.addEventListener("click", () => sidebar.classList.remove("open")));
-document.querySelectorAll(".top-actions [data-toast]").forEach(button => button.addEventListener("click", () => showToast(button.dataset.toast)));
-document.getElementById("glossary-button").addEventListener("click", () => {
-  if (state.section === "data-i") {
-    navigateTo("data-i", "3.13");
-  } else if (state.section === "python-ii") {
-    navigateTo("python-ii", "2.15");
-    setTimeout(() => document.getElementById("python-ii-glossary")?.scrollIntoView({ block: "start" }), 80);
-  } else {
-    navigateTo("python", "2.7");
-    setTimeout(() => document.getElementById("python-glossary")?.scrollIntoView({ block: "start" }), 80);
-  }
-});
 window.addEventListener("hashchange", applyRouteFromHash);
 if (!window.location.hash) window.history.replaceState(null, "", "#start");
 applyRouteFromHash();
