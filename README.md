@@ -35,6 +35,10 @@ Lecture 5 is Section 3.1 of the website and contains Tutorials 3.1–3.14. Lectu
 | L06 — Data Quality, Cleaning and Text Preparation (Tutorials 3.15–3.29) | [Examples 3.15–3.28](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_06/L06_Tutorial_3_15_to_3_28_Examples.ipynb) | [Exercises and Solutions 3.15–3.28](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_06/L06_Tutorial_3_15_to_3_28_Exercises.ipynb) | [Integrated Problems 3.29](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_06/L06_Tutorial_3_29_Integrated_Problems.ipynb) |
 | L07 — Analysis, Text Analysis and Visualisation (Tutorials 3.30–3.45) | [Examples 3.30–3.44](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_07/L07_Tutorial_3_30_to_3_44_Examples.ipynb) | [Exercises and Solutions 3.30–3.44](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_07/L07_Tutorial_3_30_to_3_44_Exercises.ipynb) | [Integrated Problems 3.45](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_07/L07_Tutorial_3_45_Integrated_Problems.ipynb) |
 
+### Safe, repeatable notebook use
+
+The Lecture 6 and 7 notebooks load course CSV files through read-only GitHub raw URLs and perform transformations on separate in-memory copies. They do not commit, push, call the GitHub API or mount Google Drive. The one export demonstration writes new student-copy filenames only inside a separate `tutorial_outputs` folder in the current Colab runtime. Restarting the runtime and running all cells therefore begins again from the unchanged canonical course files.
+
 ## Part IV — Machine Learning, Automation and Agents
 
 | Lecture | Examples and case | Student exercises | Worked solutions |
