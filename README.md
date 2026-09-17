@@ -9,6 +9,8 @@ The notebooks use Google Colab, so students do not need a local Python installat
 - Copenhagen Moodle: https://www.moodle.aau.dk/course/view.php?id=60166
 - Tutorial integration map: [docs/tutorial_integration_links.md](docs/tutorial_integration_links.md)
 - Lecture 5 synthetic raw dataset: [data/E26_TAN7_service_experience_raw.csv](data/E26_TAN7_service_experience_raw.csv)
+- Lecture 6–7 cleaned recurring dataset: [data/E26_TAN7_service_experience_cleaned.csv](data/E26_TAN7_service_experience_cleaned.csv)
+- Lecture 6–7 applied datasets: [data/applied/](data/applied/)
 
 ## Part II — Python Foundations
 
@@ -25,13 +27,13 @@ The Lecture 4 Examples notebook contains the complete scripts for all 16 keyboar
 
 ## Part III — Data Handling, Text Analysis and Visualization
 
-Lecture 5 is Section 3.1 of the website and contains Tutorials 3.1–3.14. Its three canonical notebooks mirror the website: all worked/reference examples, all 33 numbered exercises followed by solutions, and all eight applied activities followed by a model walkthrough.
+Lecture 5 is Section 3.1 of the website and contains Tutorials 3.1–3.14. Lectures 6 and 7 continue the same sequence through Tutorials 3.15–3.45. Each lecture has a worked examples notebook, an exercises notebook with solutions, and a notebook of integrated applied problems.
 
 | Lecture | Tutorial examples | Exercises and solutions | Applied activities and model walkthrough |
 |---|---|---|---|
 | L05 — Data Handling, Text Analysis and Visualization I (Tutorials 3.1–3.14) | [Tutorial Examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb) | [Exercises and Solutions](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) | [Applied Activities and Model Walkthrough](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb) |
-| L06 — Data cleaning and text preparation | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L06_examples_data_cleaning_text_preparation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L06_exercises_data_cleaning_text_preparation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L06_solutions_data_cleaning_text_preparation.ipynb) |
-| L07 — Analysis and visualisation | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/examples/L07_examples_analysis_visualisation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/exercises/L07_exercises_analysis_visualisation.ipynb) | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/solutions/L07_solutions_analysis_visualisation.ipynb) |
+| L06 — Data Quality, Cleaning and Text Preparation (Tutorials 3.15–3.29) | [Examples 3.15–3.28](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_06/L06_Tutorial_3_15_to_3_28_Examples.ipynb) | [Exercises and Solutions 3.15–3.28](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_06/L06_Tutorial_3_15_to_3_28_Exercises.ipynb) | [Integrated Problems 3.29](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_06/L06_Tutorial_3_29_Integrated_Problems.ipynb) |
+| L07 — Analysis, Text Analysis and Visualisation (Tutorials 3.30–3.45) | [Examples 3.30–3.44](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_07/L07_Tutorial_3_30_to_3_44_Examples.ipynb) | [Exercises and Solutions 3.30–3.44](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_07/L07_Tutorial_3_30_to_3_44_Exercises.ipynb) | [Integrated Problems 3.45](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_07/L07_Tutorial_3_45_Integrated_Problems.ipynb) |
 
 ## Part IV — Machine Learning, Automation and Agents
 

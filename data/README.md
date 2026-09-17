@@ -6,6 +6,10 @@ The raw file includes, among other planned issues, seven pandas-recognised missi
 
 `monthly_service_report.csv` is an earlier compact teaching dataset retained for older notebooks. Do not substitute it for the Lecture 5 file because its structure and expected results differ.
 
+`E26_TAN7_service_experience_cleaned.csv` and its transformation log are the verified outputs of the Lecture 6 cleaning workflow. Lecture 7 uses the cleaned file for aggregation, visualisation and introductory text analysis.
+
+The [`applied/`](applied/) folder contains three pairs of synthetic raw and cleaned datasets for the integrated problems in Tutorials 3.29 and 3.45. The included generator recreates every file deterministically and documents the intended data-quality issues.
+
 The datasets contain no real people, organisations or operational results. They must not be presented as evidence about Copenhagen, Aarhus, Odense, Aalborg or Aalborg University services.
 
 The course design was informed by the examples and file-based exercises in Rodrigo Pérez Iragorri's Aalborg class-notes repository: https://github.com/roedorpi/TAN7_Scripting_classnotes. No file from that repository is reproduced verbatim here.
