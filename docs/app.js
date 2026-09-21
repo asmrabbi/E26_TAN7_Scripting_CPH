@@ -217,7 +217,7 @@ const courseParts = [
     lectures: "Lectures 5–7",
     title: "Data Handling, Text Analysis and Visualisation",
     description: "Inspect CSV data with pandas, assess and clean data, prepare text, explore patterns and communicate results through visualisations.",
-    routes: [["Data Handling I", "#data-i"]]
+    routes: [["Data Handling I · draft", "#data-i"], ["Data Handling II · draft", "#data-ii"], ["Data Handling III · draft", "#data-iii"]]
   },
   {
     number: "IV",
@@ -246,7 +246,9 @@ const lectureTutorialRoutes = {
   "2": "#flow",
   "3": "#python",
   "4": "#python-ii",
-  "5": "#data-i"
+  "5": "#data-i",
+  "6": "#data-ii",
+  "7": "#data-iii"
 };
 
 const foundationIlos = [
@@ -1074,13 +1076,14 @@ let modules = [];
 const state = {
   section: "start",
   current: "overview",
-  completed: new Set(JSON.parse(localStorage.getItem("aau-course-completed-v1") || "[]").map(id => tutorialIdMigrations[id] || id))
+  completed: new Set(readDraftProgress().map(id => tutorialIdMigrations[id] || id))
 };
 
 const nav = document.getElementById("module-nav");
 const page = document.getElementById("page-content");
 const sidebar = document.getElementById("sidebar");
 const toast = document.getElementById("toast");
+const dataDraftBanner = document.getElementById("data-draft-banner");
 
 const sectionModules = {
   start: [],
@@ -1088,7 +1091,9 @@ const sectionModules = {
   flow: flowModules,
   python: pythonFoundationModules,
   "python-ii": pythonFoundationIIModules,
-  "data-i": dataHandlingIModules
+  "data-i": dataHandlingIModules,
+  "data-ii": draftSections["data-ii"].modules,
+  "data-iii": draftSections["data-iii"].modules
 };
 
 function routeHref(section, id = "overview") {
@@ -1111,6 +1116,7 @@ function applyRouteFromHash() {
   const sectionSet = sectionModules[section];
   state.section = section;
   modules = sectionSet;
+  if (dataDraftBanner) dataDraftBanner.hidden = !["data-i", "data-ii", "data-iii"].includes(section);
 
   if (sectionSet.some(module => module.id === requestedPage)) {
     showModule(requestedPage);
@@ -1132,6 +1138,7 @@ function escapeHtml(value) {
 }
 
 function updateSidebar() {
+  if (draftSections[state.section]) { updateDraftSidebar(draftSections[state.section]); return; }
   const foundation = state.section === "foundation";
   const flow = state.section === "flow";
   const pythonFoundation = state.section === "python";
@@ -1222,6 +1229,7 @@ function bindOverview() {
 function renderOverview() {
   state.current = "overview";
   renderNav();
+  if (draftSections[state.section]) { renderDraftOverview(draftSections[state.section]); return; }
   if (state.section === "foundation") {
     renderFoundationOverview();
     return;
@@ -1467,7 +1475,7 @@ function renderDataHandlingIOverview() {
       <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Fourteen connected tutorials</p><h2 class="section-title">From datasets and CSV structure to a documented applied exploration</h2></div><p>Study Tutorials 3.1–3.13 in order when pandas is new. Tutorial 3.14 combines the complete workflow in eight applied activities.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
       <section class="reading-panel python-resources">
-        <div><p class="eyebrow">Lecture 5 notebooks and dataset</p><h2>Match the website with runnable, verified material</h2><p>The Examples notebook follows the website sequence. The Exercises notebook contains all 33 numbered tasks before its separate answer section. The Applied Activities notebook contains eight cumulative tasks before its model walkthrough.</p><div class="reading-links"><a href="${pythonResourceLinks.dataHandlingI.examples}" target="_blank" rel="noreferrer">Tutorial Examples</a><a href="${pythonResourceLinks.dataHandlingI.exercises}" target="_blank" rel="noreferrer">Exercises and Solutions</a><a href="${pythonResourceLinks.dataHandlingI.cases}" target="_blank" rel="noreferrer">Applied Activities and Model Walkthrough</a><a href="${pythonResourceLinks.dataHandlingI.dataset}" target="_blank" rel="noreferrer">Raw Lecture 5 CSV</a><a href="${pythonResourceLinks.dataHandlingI.github}" target="_blank" rel="noreferrer">Lecture 5 GitHub Folder</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code Coverage Map</a></div></div>
+        <div><p class="eyebrow">Lecture 5 notebooks and dataset</p><h2>Match the website with the current draft material</h2><p>The Examples notebook follows the website sequence. The Exercises notebook contains all 33 numbered tasks before its separate answer section. The Applied Activities notebook contains eight cumulative tasks before its model walkthrough. These remain draft teaching materials while the red notice is displayed.</p><div class="reading-links"><a href="${pythonResourceLinks.dataHandlingI.examples}" target="_blank" rel="noreferrer">Tutorial Examples</a><a href="${pythonResourceLinks.dataHandlingI.exercises}" target="_blank" rel="noreferrer">Exercises and Solutions</a><a href="${pythonResourceLinks.dataHandlingI.cases}" target="_blank" rel="noreferrer">Applied Activities and Model Walkthrough</a><a href="${pythonResourceLinks.dataHandlingI.dataset}" target="_blank" rel="noreferrer">Raw Lecture 5 CSV</a><a href="${pythonResourceLinks.dataHandlingI.github}" target="_blank" rel="noreferrer">Lecture 5 GitHub Folder</a><a href="${tutorialCodeCoverageUrl}" target="_blank" rel="noreferrer">Code Coverage Map</a></div></div>
       </section>
 
       <section class="section-footer-grid">
@@ -1493,6 +1501,7 @@ function renderTutorialReferences(id, source) {
 function showModule(id) {
   const module = modules.find(item => item.id === id);
   if (!module) return;
+  if (draftSections[state.section]) { renderDraftModule(module, draftSections[state.section]); return; }
   const foundation = state.section === "foundation";
   const flow = state.section === "flow";
   const pythonFoundation = state.section === "python";
@@ -1583,7 +1592,7 @@ function attachModuleEvents(module) {
   if (copy) copy.addEventListener("click", async () => { await navigator.clipboard.writeText(module.code); copy.textContent = "Copied"; showToast("Code copied."); });
   page.querySelector("[data-complete]").addEventListener("click", () => {
     state.completed.has(module.id) ? state.completed.delete(module.id) : state.completed.add(module.id);
-    localStorage.setItem("aau-course-completed-v1", JSON.stringify([...state.completed]));
+    saveDraftProgress([...state.completed]);
     showModule(module.id);
   });
 }
@@ -1657,5 +1666,5 @@ document.getElementById("home-button").addEventListener("click", () => navigateT
 document.getElementById("menu-button").addEventListener("click", () => sidebar.classList.toggle("open"));
 document.querySelectorAll("[data-package]").forEach(link => link.addEventListener("click", () => sidebar.classList.remove("open")));
 window.addEventListener("hashchange", applyRouteFromHash);
-if (!window.location.hash) window.history.replaceState(null, "", "#start");
+if (!window.location.hash) window.history.replaceState(null, "", "#data-ii");
 applyRouteFromHash();
