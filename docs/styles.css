@@ -644,6 +644,10 @@ pre { margin: 0; padding: 20px; overflow-x: auto; color: #e9f5f3; font: 14px/1.7
 .md-output .md-code-label { color: #c8e4d8; background: #11261e; }
 .table-wrap { width: 100%; margin: 16px 0 22px; overflow-x: auto; border: 1px solid #d7dedb; border-radius: 11px; }
 .python-chapter table { width: 100%; min-width: 560px; border-collapse: collapse; background: #fff; font-size: 13px; }
+.foundation-ilos { align-items: center; }
+.foundation-ilos > div { align-self: center; }
+:where(a:visited) { color: inherit; }
+.foundation-guide .table-wrap table { font-size: 14px; }
 .python-chapter th, .python-chapter td { padding: 10px 12px; border-right: 1px solid #e1e5e3; border-bottom: 1px solid #e1e5e3; text-align: left; vertical-align: top; }
 .python-chapter th { color: var(--navy); background: #edf6f3; font-weight: 800; }
 .python-chapter tr:last-child td { border-bottom: 0; }

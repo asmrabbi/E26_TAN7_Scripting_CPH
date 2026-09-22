@@ -1426,98 +1426,38 @@ Add `duplicate_records = 9` and modify the complete-record calculation to subtra
 
 Why is `completion_rate` assigned a float even though the source counts are integers?
 
-### Example 2.3.3 - Turn a messy field label into a consistent name
-
+### Example 2.3.3 - Check the order of operations in a rate calculation
 
 **Code**
 
 ```python
-raw_field_label = "  Preferred TRANSPORT mode  "
-trimmed_label = raw_field_label.strip()
-lowercase_label = trimmed_label.lower()
-field_name = lowercase_label.replace(" ", "_")
+completed = 84
+total = 120
+rate_without_parentheses = completed / total * 100
+rate_with_parentheses = (completed / total) * 100
 
-print("Raw label:", raw_field_label)
-print("Trimmed label:", trimmed_label)
-print("Proposed field name:", field_name)
+print("Rate without parentheses:", rate_without_parentheses)
+print("Rate with parentheses:", rate_with_parentheses)
 ```
 
 **Expected output**
 
 ```text
-Raw label:   Preferred TRANSPORT mode  
-Trimmed label: Preferred TRANSPORT mode
-Proposed field name: preferred_transport_mode
+Rate without parentheses: 70.0
+Rate with parentheses: 70.0
 ```
 
-**Line-by-line explanation**
+**Explanation**
 
-- Line 1 preserves the original label, including its uneven capitalisation and extra spaces.
-- `raw_field_label.strip()` is a method-call expression. It produces a new string without spaces at the beginning or end.
-- `trimmed_label.lower()` produces another string in lowercase.
-- `lowercase_label.replace(" ", "_")` replaces each ordinary space with an underscore.
-- Each expression result is assigned to a new variable, so the transformation can be inspected stage by stage.
-- The final three statements display evidence of the original value, the intermediate value and the proposed Python-friendly name.
-- `strip()`, `lower()` and `replace()` are ready-made string methods. You are calling existing tools, not writing your own function yet.
-- This mechanical transformation is only a proposal. A human still needs to check spelling, meaning, abbreviations and whether two distinct source labels would be collapsed into one category.
-
-**Common mistakes**
-
-- Overwriting the raw value and losing evidence of what was received.
-- Forgetting the parentheses after a method name, such as writing `.strip` instead of `.strip()`.
-- Assuming one space replacement handles tabs, punctuation or repeated internal spaces perfectly.
-- Treating standardisation as a neutral operation when it may merge meaningful distinctions.
+Python evaluates multiplication and division from left to right. Parentheses make the intended numerator-and-denominator calculation visible, which helps another reader check the meaning of the rate. The code produces a number, but it cannot decide whether these are the correct records or whether the percentage is a fair measure for the research question.
 
 **Modify it**
 
-Change the raw label to `"  SERVICE   Access? "`. Predict the proposed name. Identify what remains imperfect, then add one more documented `replace()` call to remove the question mark.
+Change the completed count and total count. Predict the new percentage before running the code, then check that the denominator is still the total number of relevant records.
 
-**Break it, observe it, repair it**
+**Common mistake**
 
-1. Change `trimmed_label = raw_field_label.strip()` to `trimmed_label = raw_field_label.strip` by removing the parentheses.
-2. Run the cell and observe that `trimmed_label` now refers to a method rather than the cleaned string. A later line raises an error because a method object has no `.lower()` string operation.
-3. Repair the call by restoring `strip()`.
-4. Use `type(trimmed_label)` before and after the repair to compare the values.
-
-**Check your understanding**
-
-Why is preserving `raw_field_label` useful when reviewing a data-cleaning decision?
-
-### Exercise 2.3.1 - Distinguish expressions from statements
-
-**Context:** A research assistant is learning how Python turns supplied counts into a derived value. Classify the roles of `42`, `total = 42`, `total - missing`, `complete = total - missing` and `print(total - missing)`, then apply the pattern to 90 received and 7 excluded records.
-
-**Your task**
-
-1. Classify each supplied line by its main role: expression, assignment statement or print statement containing an expression.
-2. Store the received and excluded counts in two source variables.
-3. Derive the retained count in a third variable without changing the sources.
-4. Display the retained count with a clear label and explain which expression produced it.
-
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-
----
-
-## Arithmetic operators
-
-Python uses arithmetic operators to build numerical expressions.
-
-| Operator | Meaning | Example | Result |
-|---|---|---|---:|
-| `+` | Addition | `7 + 3` | `10` |
-| `-` | Subtraction | `7 - 3` | `4` |
-| `*` | Multiplication | `7 * 3` | `21` |
-| `/` | Division | `7 / 2` | `3.5` |
-| `//` | Floor division | `7 // 2` | `3` |
-| `%` | Remainder, modulo | `7 % 2` | `1` |
-| `**` | Exponentiation | `2 ** 3` | `8` |
-
-Important points:
-
-- `/` produces a float in ordinary Python 3 division.
-- `//` discards the fractional part by rounding down to the next whole-number boundary.
-- `%` means remainder. It does not mean percentage.
-- `**` means "raised to the power of". Python does not use `^` for exponentiation.
+Using the wrong denominator can produce a plausible percentage with the wrong meaning.
 
 ### Example 2.3.4 - Calculate basic data-quality counts
 
@@ -2178,6 +2118,33 @@ Does `:.1f` change the stored value or only its displayed format?
 5. Display both headings and confirm that they communicate the same information.
 
 - [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+### String operations preserve or transform text
+
+String methods create a new text value while leaving the original value available unless you assign the result back to the same name. This is useful when a field label arrives with extra spaces, mixed capitalisation or punctuation.
+
+### Example 2.4.16 - Standardise a field label without losing the original
+
+**Code**
+
+```python
+raw_field_label = "  Preferred TRANSPORT mode  "
+trimmed_label = raw_field_label.strip()
+lowercase_label = trimmed_label.lower()
+field_name = lowercase_label.replace(" ", "_")
+
+print("Raw label:", raw_field_label)
+print("Proposed field name:", field_name)
+```
+
+**Expected output**
+
+```text
+Raw label:   Preferred TRANSPORT mode
+Proposed field name: preferred_transport_mode
+```
+
+`strip()`, `lower()` and `replace()` remove outer whitespace, change letters to lowercase and change ordinary spaces to underscores. Keep the raw value so you can audit what was received. A human must still check whether the proposed name preserves the intended meaning.
 
 ---
 
@@ -2912,20 +2879,31 @@ Add `review_note = "Not yet checked"`. Compare its meaning and type with `None` 
 
 Why would replacing a missing waiting time with `0` change the meaning of the record?
 
-### Exercise 2.4.4 - Predict the types produced by expressions
+### Exercise 2.4.4 - Inspect a small report before trusting it
 
-**Context:** A learner sees values that look similar on screen but behave differently in Python. Predict the type of each supplied literal or expression, verify it with `type()`, and explain every incorrect prediction.
-
-**Your task**
-
-1. Predict the type of `25`, `25.0`, `"25"`, `None`, `""`, `25 / 5`, `25 // 5`, `10 + 0.5`, `round(93.756, 1)`, `f"{93.756:.1f}"`, `"A" + "B"` and `25 >= 20`.
-2. Verify every prediction with `type()`.
-3. Record the actual value as well as the type.
-4. For each mismatch, write one sentence explaining the misunderstood rule.
+You are checking a small report before sharing it with your group. The report contains the values `25`, `25.0`, `"25"`, `None` and an empty string, and values that look similar may still mean different things to Python. Create a separate variable for each of those values, then create four more variables containing `25 / 5`, `round(93.756, 1)`, `f"{93.756:.1f}"` and `25 >= 20`. Before running the code, predict whether each variable contains an integer, float, string, Boolean or missing value. Print every value together with its type and a clear label so another student can check your work. Finish by explaining why division produces a float, formatting produces a string, comparison produces a Boolean, and visual similarity does not guarantee the same meaning.
 
 - [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
----
+### Exercise 2.4.5 - Prepare a clear event message
+
+Your student group is preparing a short message about a workshop. Store the workshop name as a string, the number of participants as an integer and the average rating as a float. Use an f-string to print one readable sentence containing all three values. Show the rating with one decimal place, but keep the original float unchanged. Change the participant count and run the code again. Explain which part of the sentence changed and why formatting the rating does not change the stored value.
+
+### Exercise 2.4.6 - Check whether a service record is ready
+
+A small service record is ready for review only when it has a participant ID, a non-empty comment and a rating of at least 4.0. Store the ID and comment as strings and the rating as a float. Create one Boolean for each condition, then combine the three Booleans into one readiness result. Test the boundary case by setting the rating to exactly 4.0. Print every result with a clear label. Explain why a `True` readiness result shows only that the written checks passed and does not prove that the comment is truthful or complete.
+
+### Exercise 2.4.7 - Compare a rounded value with the original measurement
+
+A researcher records a travel time of 12.678 minutes and wants to show it in a short report. Store the original measurement as a float and create a second numerical value rounded to two decimal places with `round()`. Print both values and use `type()` to check that both are floats. Create an f-string that displays the original value with two decimal places and inspect the type of that formatted result. Change the original time to another decimal value and run the code again. Explain the difference between creating a rounded number for later calculation and changing only how a number is displayed as text.
+
+### Exercise 2.4.8 - Keep missing, zero and empty text separate
+
+A survey record has no waiting-time measurement, reports zero complaints and leaves an optional comment blank. Represent these situations with `None`, `0` and an empty string. Print each value with a clear label and use `type()` to inspect it. Create a Boolean named `waiting_time_recorded` that checks whether the waiting-time value is not `None`. Change the waiting time to `0` and observe how the Boolean changes. Explain why a recorded wait of zero minutes is different from a waiting time that was not recorded.
+
+### Exercise 2.4.9 - Build a small data-quality summary
+
+You are checking a file before discussing it with your group. The file has 125 rows, zero duplicate rows, an 86.5 percent completion rate and recorded consent. Store the four facts with suitable types, then create Booleans for more than 100 rows, exactly zero duplicates, at least 80 percent completion and consent recorded. Combine those checks into one final readiness Boolean and print a short f-string summary with the completion rate shown to one decimal place. Change the completion rate to 79.9 and run the checks again. Explain why the readiness result changes and what the result still cannot prove about the quality of the file.
 
 # Part E. Type conversion and user input
 

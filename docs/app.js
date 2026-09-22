@@ -94,7 +94,7 @@ const startModules = [
     steps: [
       ["Understand the course journey", "The course moves from describing computational processes to working with Python, data, visualisations, machine learning and simple automation. Each section introduces only the concepts needed for the next stage."],
       ["Use the tutorial as a working guide", "Tutorial pages combine short explanations, practical steps, code that remains copyable, expected results and troubleshooting advice. Use the left menu to move between tutorials and return to earlier guidance when needed."],
-      ["Interpret the labels", "Core activities support the basic course requirements. Recommended activities strengthen your practice. Optional activities are extensions. Estimated times are guidance, not deadlines."],
+      ["Use the expected time as a guide", "The expected time helps you plan your work, but it is not a deadline. Take more time when you need to rerun an example, read an error message or ask for help."],
       ["Organise your work", "Create one course folder with clear subfolders for notebooks, datasets, charts and project notes. Clear filenames make later project work and submission much easier."],
       ["Use support in the right order", "First read the expected result and common problem. Try one repair. Then ask a classmate, teacher or AI tool with the relevant code, error and intended result."]
     ],
@@ -1096,6 +1096,22 @@ const sectionModules = {
   "data-iii": draftSections["data-iii"].modules
 };
 
+const sectionPageTitles = {
+  start: "Introduction to Scripting, Data Mining and Machine Learning",
+  foundation: "Understanding Computational Problems",
+  flow: "Flowcharts and Pseudocode",
+  python: "Python Foundations I",
+  "python-ii": "Python Foundations II",
+  "data-i": "Data Handling, Text Analysis and Visualization I"
+};
+
+function updateDocumentTitle(module = null) {
+  const sectionTitle = sectionPageTitles[state.section] || sectionPageTitles.start;
+  document.title = module
+    ? `Tutorial ${module.id}: ${module.title} | ${sectionTitle}`
+    : `${sectionTitle} | AAU Tutorial`;
+}
+
 function routeHref(section, id = "overview") {
   return `#${section}${id === "overview" ? "" : `/${id}`}`;
 }
@@ -1228,6 +1244,7 @@ function bindOverview() {
 
 function renderOverview() {
   state.current = "overview";
+  updateDocumentTitle();
   renderNav();
   if (draftSections[state.section]) { renderDraftOverview(draftSections[state.section]); return; }
   if (state.section === "foundation") {
@@ -1395,7 +1412,6 @@ function renderPythonFoundationOverview() {
 
       <section class="section-introduction">
         <div><p class="eyebrow">Your first Python section</p><h2>Learn by working with complete examples</h2><p>Each subsection includes executable Python, expected output, a line-by-line explanation, common mistakes, a modification task and a deliberate break-and-repair activity. Examples connect to data quality, CSV preparation and organisational or societal cases wherever suitable.</p></div>
-        <div class="key-idea"><strong>Learning cycle</strong><p>Run → explain → modify → break → repair → apply.</p></div>
       </section>
 
       <section class="package-ilos foundation-ilos"><div><p class="eyebrow">Section 2.1</p><h2>Intended learning outcomes</h2><p>These outcomes apply across Tutorials 2.1 to 2.7.</p></div><ul class="learning-list">${pythonFoundationIlos.map(ilo => `<li>${ilo}</li>`).join("")}</ul></section>
@@ -1405,7 +1421,7 @@ function renderPythonFoundationOverview() {
         <div>${pythonFoundationGuide}</div>
       </details>
 
-      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Seven connected tutorials</p><h2 class="section-title">From your first Colab cell to a complete script</h2></div><p>Study in order if Python is new to you. Each page builds on the vocabulary and skills introduced earlier.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
+      <section id="roadmap"><div class="roadmap-heading compact-heading"><div><h2 class="section-title">From your first Colab cell to a complete script</h2></div><p>Study in order if Python is new to you. Each page builds on the vocabulary and skills introduced earlier.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
       <section class="section-footer-grid">
         <div class="checkpoint-card"><p class="eyebrow">End of section</p><h3>Applied problem-solving exercises</h3><p>Bring together input, conversion, calculations, clear output, comments and systematic debugging in bounded scripts.</p></div>
@@ -1510,6 +1526,7 @@ function showModule(id) {
   const conceptual = foundation || flow;
   const sectionLabel = foundation ? "Section 1.1" : flow ? "Section 1.2" : pythonFoundation ? "Section 2.1" : pythonFoundationII ? "Section 2.2" : dataHandlingI ? "Section 3.1" : "Start Here";
   state.current = id;
+  updateDocumentTitle(module);
   renderNav();
   const index = modules.findIndex(item => item.id === id);
   const previous = modules[index - 1];
@@ -1530,7 +1547,7 @@ function showModule(id) {
   page.innerHTML = `
     <article class="page compact-page">
       <header class="module-header compact-module-header">
-        <div class="module-meta"><span class="pill">Core</span><span class="time">◷ ${module.time}</span>${conceptual ? `<span class="time">No programming</span>` : pythonFoundation || pythonFoundationII ? `<span class="time">Google Colab · beginner</span>` : dataHandlingI ? `<span class="time">Google Colab · pandas · raw CSV</span>` : ""}</div>
+        <div class="module-meta"><span class="time">Expected time: ${module.time}</span></div>
         <h1>${module.id} ${module.title}</h1>
         <p class="lead">${module.intro}</p>
       </header>
