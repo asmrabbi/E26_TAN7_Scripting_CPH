@@ -4569,7 +4569,7 @@ Which line creates the Boolean, and which line merely displays it?
 **Code**
 
 ```python
-# Expected structure agreed for this fictional teaching case.
+# Expected structure agreed for this teaching case.
 EXPECTED_COLUMNS = 12
 
 dataset_name = "October service log"
@@ -4603,7 +4603,7 @@ Converted input type: <class 'int'>
 
 **Line-by-line explanation**
 
-- The first comment explains the origin of the expectation within the fictional case.
+- The first comment explains the origin of the expectation within the teaching case.
 - `EXPECTED_COLUMNS` stores the fixed structural expectation.
 - `dataset_name` is a string label.
 - `received_columns_text` simulates numerical-looking text from an input or file.
@@ -4717,7 +4717,7 @@ This example combines assignment, strings, method-call expressions, `None`, Bool
 **Code**
 
 ```python
-# Raw metadata copied from a fictional intake form.
+# Raw metadata copied from a teaching intake form.
 raw_project_title = "  neighbourhood ACCESS study  "
 raw_field_label = "Service Access?"
 raw_missing_marker = " n/a "
@@ -4790,7 +4790,7 @@ Which variables preserve evidence, which variables contain proposed standardisat
 
 ### Exercise 2.7.1 - Integrate the foundation in a community-programme report
 
-**Context:** A fictional Neighbourhood Workshops programme expected 320 monthly records and has 24 missing records. Create a traceable report that preserves the source values, calculates completeness and states what the percentage cannot establish.
+**Context:** A Neighbourhood Workshops programme expected 320 monthly records and has 24 missing records. Create a traceable report that preserves the source values, calculates completeness and states what the percentage cannot establish.
 
 **Your task**
 
@@ -4810,7 +4810,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.2 - Prepare a municipal consultation intake report
 
-**Context:** A fictional municipality received 640 mobility-plan consultation responses. Eighteen lack consent information, seven are duplicates, and the file has 10 of the 11 expected columns; assume the two exclusion categories do not overlap.
+**Context:** A municipality received 640 mobility-plan consultation responses. Eighteen lack consent information, seven are duplicates, and the file has 10 of the 11 expected columns; assume the two exclusion categories do not overlap.
 
 **Your task**
 
@@ -4826,7 +4826,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.3 - Prepare a university feedback summary
 
-**Context:** A fictional TAN7 Copenhagen feedback round invited 100 students, received 72 responses and recorded an average completion time of 8.5 minutes. Use only non-sensitive aggregate information and preserve the original text inputs before conversion.
+**Context:** A TAN7 Copenhagen feedback round invited 100 students, received 72 responses and recorded an average completion time of 8.5 minutes. Use only non-sensitive aggregate information and preserve the original text inputs before conversion.
 
 **Your task**
 
@@ -4842,7 +4842,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.4 - Communicate a societal indicator transparently
 
-**Context:** A fictional public report surveys 800 residents, of whom 596 report access to a service. The project’s stated threshold is 75.0 per cent; keep that human choice and the indicator’s limitations visible.
+**Context:** A public report surveys 800 residents, of whom 596 report access to a service. The project’s stated threshold is 75.0 per cent; keep that human choice and the indicator’s limitations visible.
 
 **Your task**
 
@@ -4858,7 +4858,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.5 - Plan balanced teaching groups across two campuses
 
-**Context:** Aalborg University teaches a fictional TAN7 activity in Copenhagen with 45 students and in Aalborg with 36 students. The coordinators want groups containing four or five students so each campus can use the same workshop format. Calculate a transparent group plan without assigning or identifying individual students.
+**Context:** Aalborg University teaches a TAN7 activity in Copenhagen with 45 students and in Aalborg with 36 students. The coordinators want groups containing four or five students so each campus can use the same workshop format. Calculate a transparent group plan without assigning or identifying individual students.
 
 **Your task**
 
@@ -4874,7 +4874,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.6 - Audit a library digitisation intake
 
-**Context:** A fictional municipal library receives 1,250 digitised catalogue records. Forty-six records are incomplete, 21 appear to be duplicates and 13 have unclear reuse rights. For this first technical estimate, assume the three review categories do not overlap and keep that assumption visible.
+**Context:** A municipal library receives 1,250 digitised catalogue records. Forty-six records are incomplete, 21 appear to be duplicates and 13 have unclear reuse rights. For this first technical estimate, assume the three review categories do not overlap and keep that assumption visible.
 
 **Your task**
 
@@ -4890,7 +4890,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.7 - Summarise a community workshop programme
 
-**Context:** A fictional digital-inclusion programme has 160 registrations and records 124 attendances across four workshops. Facilitators work 14.5 hours at 350 DKK per hour, and the rooms cost 7,200 DKK in total. Treat attendances as attendance records rather than verified unique participants.
+**Context:** A digital-inclusion programme has 160 registrations and records 124 attendances across four workshops. Facilitators work 14.5 hours at 350 DKK per hour, and the rooms cost 7,200 DKK in total. Treat attendances as attendance records rather than verified unique participants.
 
 **Your task**
 
@@ -4906,7 +4906,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.8 - Create a traceable dataset file label
 
-**Context:** A fictional intake form supplies the organisation text `  Harbour Community Lab  `, the dataset title `Mobility Access Notes`, the period `October 2026` and the record-count text `420`. Prepare a simple draft file label while preserving every raw value. The label is a teaching convention, not complete file-name validation.
+**Context:** An intake form supplies the organisation text `  Harbour Community Lab  `, the dataset title `Mobility Access Notes`, the period `October 2026` and the record-count text `420`. Prepare a simple draft file label while preserving every raw value. The label is a teaching convention, not complete file-name validation.
 
 **Your task**
 
@@ -4922,7 +4922,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 
 ### Exercise 2.7.9 - Compare two denominators in a public-service survey
 
-**Context:** A fictional public-service survey contacts 950 residents, receives 812 completed answers and records 603 respondents reporting access to the service. The project uses a stated access threshold of 70.0 per cent. Calculate both the response rate and the access rate without confusing their different denominators.
+**Context:** A public-service survey contacts 950 residents, receives 812 completed answers and records 603 respondents reporting access to the service. The project uses a stated access threshold of 70.0 per cent. Calculate both the response rate and the access rate without confusing their different denominators.
 
 **Your task**
 
