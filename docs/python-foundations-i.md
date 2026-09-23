@@ -3539,6 +3539,190 @@ Try `0`, `-10` and `37.5` degrees Celsius. Predict the Fahrenheit value before e
 
 Why does the script preserve both `celsius_text` and `celsius`?
 
+### Example 2.5.11 - Build an easy addition-and-subtraction calculator
+
+This short calculator collects two numbers once and uses them for both addition and subtraction. It is intentionally limited to operations already introduced in Python Foundations I.
+
+**Code**
+
+```python
+print("Run this cell manually. Enter two numbers when Python prompts you, then inspect both results.")
+first_number_text = input("First number: ")
+second_number_text = input("Second number: ")
+
+first_number = float(first_number_text)
+second_number = float(second_number_text)
+
+addition_result = first_number + second_number
+subtraction_result = first_number - second_number
+
+print(f"{first_number} + {second_number} = {addition_result}")
+print(f"{first_number} - {second_number} = {subtraction_result}")
+```
+
+**Expected output for this sample interaction**
+
+```text
+Run this cell manually. Enter two numbers when Python prompts you, then inspect both results.
+First number: 12.5
+Second number: 4
+12.5 + 4.0 = 16.5
+12.5 - 4.0 = 8.5
+```
+
+**How it works**
+
+- Both responses first arrive as strings and are preserved in variables ending with `_text`.
+- `float()` accepts whole-number or decimal text and creates numerical values.
+- The same two converted values are used in two separate arithmetic expressions.
+- The addition follows `first_number + second_number`.
+- The subtraction follows `first_number - second_number`, so input order matters.
+- The f-strings label every value and operator so the output can be checked visually.
+
+**Common mistakes**
+
+- Adding the two original strings and joining their characters instead of calculating.
+- Converting only one input and then mixing a string with a float.
+- Reversing the subtraction order without noticing that the result changes.
+- Calling this a complete calculator even though it supports only two operations and does not validate input.
+
+**Modify it**
+
+Run the calculator with `5` and `10`, then with `-3.5` and `2`. Predict both results before pressing Enter. Add a third calculation for multiplication if you can explain the operator used.
+
+**Break it, observe it, repair it**
+
+1. Remove `float()` from the first conversion and use `first_number_text` in the addition.
+2. Run the cell and observe `TypeError` because Python cannot add a string and a float.
+3. Repair the calculation by using two converted numerical values.
+4. Use `type()` to confirm both values before calculating again.
+
+**Check your understanding**
+
+Why can the same two converted inputs be used for both addition and subtraction?
+
+### Example 2.5.12 - Calculate a workshop attendance percentage from input
+
+This example combines one text response with two whole-number responses and produces a percentage summary.
+
+**Code**
+
+```python
+print("Run this cell manually. Enter the workshop details when Python prompts you, then inspect the summary.")
+workshop_name = input("Workshop name: ")
+registered_participants = int(input("Number registered: "))
+attended_participants = int(input("Number who attended: "))
+
+attendance_rate = attended_participants / registered_participants * 100
+summary = f"{workshop_name}: {attended_participants} of {registered_participants} attended ({attendance_rate:.1f}%)."
+
+print(summary)
+```
+
+**Expected output for this sample interaction**
+
+```text
+Run this cell manually. Enter the workshop details when Python prompts you, then inspect the summary.
+Workshop name: Python Basics
+Number registered: 40
+Number who attended: 34
+Python Basics: 34 of 40 attended (85.0%).
+```
+
+**How it works**
+
+- The workshop name stays as text because it is a label.
+- Each count is converted with `int()` because participants are counted as whole people.
+- The attendance count is divided by the registered count and multiplied by 100.
+- The f-string combines the label, source counts and calculated percentage.
+- `.1f` controls only the displayed precision of the percentage.
+- The script assumes a positive registration count and does not yet validate impossible values.
+
+**Common mistakes**
+
+- Dividing registered participants by attended participants and reversing the rate.
+- Forgetting to multiply the fraction by 100.
+- Entering a word, unit or decimal where `int()` expects whole-number text.
+- Treating a plausible percentage as proof that the attendance figures are accurate.
+
+**Modify it**
+
+Run the example with 25 registered participants and 25 attendees. Then use 25 registered and 20 attendees. Predict the two percentages before running the cell.
+
+**Break it, observe it, repair it**
+
+1. Enter `0` for the number registered.
+2. Observe `ZeroDivisionError` when the percentage is calculated.
+3. Rerun the cell with a positive registration count.
+4. Explain why later decision logic should check the denominator before division.
+
+**Check your understanding**
+
+Which value is the denominator in the attendance percentage, and why?
+
+### Example 2.5.13 - Estimate a shared travel cost from typed values
+
+This example collects a text label, two decimal measurements and a whole-number participant count. It calculates both a total estimate and an equal per-person estimate.
+
+**Code**
+
+```python
+print("Run this cell manually. Enter the trip details when Python prompts you, then inspect the estimates.")
+trip_name = input("Trip label: ")
+distance_km = float(input("Distance in kilometres: "))
+cost_per_km_dkk = float(input("Estimated cost per kilometre in DKK: "))
+traveller_count = int(input("Number of travellers: "))
+
+total_cost_dkk = distance_km * cost_per_km_dkk
+cost_per_person_dkk = total_cost_dkk / traveller_count
+
+print(f"{trip_name}: estimated total cost {total_cost_dkk:.2f} DKK")
+print(f"Equal share per traveller: {cost_per_person_dkk:.2f} DKK")
+```
+
+**Expected output for this sample interaction**
+
+```text
+Run this cell manually. Enter the trip details when Python prompts you, then inspect the estimates.
+Trip label: Harbour field visit
+Distance in kilometres: 18.5
+Estimated cost per kilometre in DKK: 2.75
+Number of travellers: 4
+Harbour field visit: estimated total cost 50.88 DKK
+Equal share per traveller: 12.72 DKK
+```
+
+**How it works**
+
+- `trip_name` remains a string because it identifies the situation.
+- The distance and cost rate use `float()` because they may contain decimal values.
+- The number of travellers uses `int()` because the example counts whole people.
+- Multiplication produces the total estimate.
+- Division produces an equal-share estimate for the stated participant count.
+- Two decimal places make the currency display readable without changing the stored floats.
+
+**Common mistakes**
+
+- Typing `km` or `DKK` inside a numerical response.
+- Converting distance with `int()` and losing a meaningful decimal part.
+- Dividing by zero travellers.
+- Presenting the estimate as an actual reimbursement rule without checking the organisation's policy.
+
+**Modify it**
+
+Run the script with a different distance, rate and traveller count. Print the stored numerical values and their types before calculating. Compare the displayed two-decimal estimates with the underlying floats.
+
+**Break it, observe it, repair it**
+
+1. Remove `float()` from `cost_per_km_dkk` and run the cell.
+2. Observe `TypeError` when Python tries to multiply a float by numerical-looking text.
+3. Restore the conversion and enter a suitable number without a unit.
+4. Explain why successful conversion still does not verify the cost policy.
+
+**Check your understanding**
+
+Why is the traveller count converted with `int()` while distance and rate use `float()`?
+
 ### Exercise 2.5.2 - Build and test an interactive project summary
 
 **Context:** A fictional Neighbourhood Workshop invites 120 participants, receives 96 completed responses and reports an average completion time of 7.5 minutes. Build an input-based summary, then test text, zero and impossible-count cases separately.
@@ -3550,6 +3734,30 @@ Why does the script preserve both `celsius_text` and `celsius`?
 3. Calculate and display the completion percentage for the normal data.
 4. Test a word where an integer is expected and record the `ValueError`.
 5. Test zero invited participants and completed responses above invited participants; explain why these require validation decisions.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+### Exercise 2.5.3 - Create a two-number plus-and-minus calculator
+
+You are preparing a tiny calculator for a classmate who wants to check two numbers quickly. Ask the user to enter a first number and a second number, and preserve both original responses as strings. Convert both responses to floats so the calculator accepts whole numbers and decimal numbers. Calculate the sum and the result of subtracting the second number from the first number. Print both calculations as clearly labelled f-strings, then run the program with `15` and `4.5`. Explain why calculation requires converted values and why reversing the subtraction order would produce a different answer.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+### Exercise 2.5.4 - Prepare an input-based workshop attendance summary
+
+A community workshop needs a short attendance summary after registration closes. Ask for the workshop name, the number of registered participants and the number who attended. Keep the name as a string and convert both counts to integers. Calculate the attendance percentage by dividing attendance by registrations and multiplying by 100. Print one readable sentence containing the name, both counts and the percentage shown with one decimal place. Test the program with 50 registrations and 42 attendees, then explain why zero registrations or more attendees than registrations would require additional validation.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+### Exercise 2.5.5 - Estimate a shared field-visit cost
+
+Your study group is planning a field visit and wants a simple shared-cost estimate. Ask for a trip label, distance in kilometres, estimated cost per kilometre and number of travellers. Keep the label as text, convert distance and cost to floats, and convert the traveller count to an integer. Calculate the total estimated cost and the equal cost per traveller. Display both amounts with two decimal places and run the program once with 24.5 kilometres, 3.20 DKK per kilometre and five travellers. Explain why the result is only an estimate and why a traveller count of zero cannot be used as a divisor.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
+### Exercise 2.5.6 - Turn typed project details into a file label
+
+A student team needs a consistent draft filename for a project export. Ask the user to type an organisation name, a dataset title and a reporting month while preserving all three raw responses. Create cleaned versions by removing outer spaces, changing letters to lowercase and replacing ordinary spaces with underscores. Join the three cleaned values with underscores and add the `.csv` ending. Print the raw responses and the proposed filename so another student can compare the transformation. Test the program with extra spaces and mixed capitalisation, then explain why a clean-looking filename still requires a human check for meaning, punctuation and naming policy.
 
 - [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
