@@ -2889,21 +2889,31 @@ You are checking a small report before sharing it with your group. The report co
 
 Your student group is preparing a short message about a workshop. Store the workshop name as a string, the number of participants as an integer and the average rating as a float. Use an f-string to print one readable sentence containing all three values. Show the rating with one decimal place, but keep the original float unchanged. Change the participant count and run the code again. Explain which part of the sentence changed and why formatting the rating does not change the stored value.
 
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
 ### Exercise 2.4.6 - Check whether a service record is ready
 
 A small service record is ready for review only when it has a participant ID, a non-empty comment and a rating of at least 4.0. Store the ID and comment as strings and the rating as a float. Create one Boolean for each condition, then combine the three Booleans into one readiness result. Test the boundary case by setting the rating to exactly 4.0. Print every result with a clear label. Explain why a `True` readiness result shows only that the written checks passed and does not prove that the comment is truthful or complete.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 ### Exercise 2.4.7 - Compare a rounded value with the original measurement
 
 A researcher records a travel time of 12.678 minutes and wants to show it in a short report. Store the original measurement as a float and create a second numerical value rounded to two decimal places with `round()`. Print both values and use `type()` to check that both are floats. Create an f-string that displays the original value with two decimal places and inspect the type of that formatted result. Change the original time to another decimal value and run the code again. Explain the difference between creating a rounded number for later calculation and changing only how a number is displayed as text.
 
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
 ### Exercise 2.4.8 - Keep missing, zero and empty text separate
 
 A survey record has no waiting-time measurement, reports zero complaints and leaves an optional comment blank. Represent these situations with `None`, `0` and an empty string. Print each value with a clear label and use `type()` to inspect it. Create a Boolean named `waiting_time_recorded` that checks whether the waiting-time value is not `None`. Change the waiting time to `0` and observe how the Boolean changes. Explain why a recorded wait of zero minutes is different from a waiting time that was not recorded.
 
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+
 ### Exercise 2.4.9 - Build a small data-quality summary
 
 You are checking a file before discussing it with your group. The file has 125 rows, zero duplicate rows, an 86.5 percent completion rate and recorded consent. Store the four facts with suitable types, then create Booleans for more than 100 rows, exactly zero duplicates, at least 80 percent completion and consent recorded. Combine those checks into one final readiness Boolean and print a short f-string summary with the completion rate shown to one decimal place. Change the completion rate to 79.9 and run the checks again. Explain why the readiness result changes and what the result still cannot prove about the quality of the file.
+
+- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
 
 # Part E. Type conversion and user input
 
