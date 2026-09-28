@@ -4,8 +4,8 @@ This report lists the canonical GitHub/Colab notebooks for Python Foundations I,
 
 | Notebook | Tutorials | Code cells | Automatically executed | Manual input cells | Uncommented executable lines |
 |---|---|---:|---:|---:|---:|
-| [L03_Tutorial_2_1_to_2_7_Examples.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb)) | 2.1–2.7 | 79 | 72 | 7 | 0 |
-| [L03_Tutorial_2_1_to_2_7_Exercises.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)) | 2.1–2.7 | 54 | 54 | 0 | 0 |
+| [L03_Tutorial_2_1_to_2_7_Examples.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb)) | 2.1–2.7 | 83 | 73 | 10 | 0 |
+| [L03_Tutorial_2_1_to_2_7_Exercises.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)) | 2.1–2.7 | 72 | 68 | 4 | 0 |
 | [L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb)) | 2.1–2.7 | 7 | 7 | 0 | 0 |
 | [L04_Tutorial_2_8_to_2_14_Examples.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Examples.ipynb)) | 2.8–2.14 | 159 | 143 | 16 | 0 |
 | [L04_Tutorial_2_8_to_2_14_Work_Exercise.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Work_Exercise.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_8_to_2_14_Work_Exercise.ipynb)) | Worked Exercises 2.8.35–2.8.40 and 2.9.15–2.9.19 | 11 | 0 | 11 | 0 |
@@ -20,8 +20,8 @@ This report lists the canonical GitHub/Colab notebooks for Python Foundations I,
 
 ## Organisation decisions
 
-- All 27 Python Foundations I website exercises, starters and fully commented answers are merged into the Lecture 3 Exercises notebook.
-- Examples 2.5.5–2.5.10 and 2.7.3 are complete interactive scripts. They are intentionally run manually because each `input()` call pauses for a learner response; all other Lecture 3 example cells were automatically executed.
+- All 36 Python Foundations I website exercises, starters and fully commented answers are merged into the Lecture 3 Exercises notebook.
+- Examples 2.5.5–2.5.13, Exercise solutions 2.5.3–2.5.6 and Example 2.7.3 are complete interactive scripts. They are intentionally run manually because each `input()` call pauses for a learner response; all other Lecture 3 cells were automatically executed.
 - Tutorials 2.8–2.14 use separate examples, exercises and numbered solutions notebooks.
 - The 16 Lecture 4 examples that use `input()` contain their complete scripts and an opening manual-run message; all other Lecture 4 example cells have verified output.
 - Tutorial 2.15 uses a separate instruction notebook and a separate fully commented solution notebook with two website worked examples and ten situational exercises.

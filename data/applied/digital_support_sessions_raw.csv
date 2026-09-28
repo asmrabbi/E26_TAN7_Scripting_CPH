@@ -1,0 +1,541 @@
+session_id,session_date,city,centre,support_topic,age_band,access_mode,wait_minutes,session_minutes,resolved,follow_up_needed,satisfaction_score,staff_role,notes
+SES-0001,2026-01-01,Copenhagen,Library Hub,Digital ID,18–29,Own device,14.0,68.5,No,Yes,5.0,Volunteer,User needed clear steps for digital login.
+SES-0002,2026-01-06,Aalborg,Library Hub,Digital ID,30–44,Centre device,23.9,39.7,Yes,No,4.1,Advisor,Issue resolved after password guidance.
+SES-0003,2026-01-11,Odense,Library Hub,Digital ID,45–59,Phone support,10.1,14.1,No,Yes,4.7,Librarian,The form was not easy to find.
+SES-0004,2026-01-16,Aarhus,Library Hub,Digital ID,60+,Own device,15.3,35.6,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0005,2026-01-21,Copenhagen,Citizen Centre,Digital ID,18–29,Centre device,8.6,31.0,No,No,4.9,Advisor,Staff explained email attachments and document upload.
+SES-0006,2026-01-26, århus ,Citizen Centre,Online Benefits,30–44,Phone support,10.1,39.9,No,Yes,3.5,Librarian,Connection failed and another visit was needed.
+SES-0007,2026-01-04,Odense,Citizen Centre,Online Benefits,45–59,Own device,5.8,45.0,No,Yes,4.5,Volunteer,User needed clear steps for digital login.
+SES-0008,2026-01-09,Aarhus,Citizen Centre,Online Benefits,60+,Centre device,8.8,13.9,No,Yes,3.3,Advisor,Issue resolved after password guidance.
+SES-0009,2026-01-14,Copenhagen,Community Lab,Online Benefits,18–29,Phone support,15.2,15.7,Yes,No,3.2,Librarian,The form was not easy to find.
+SES-0010,2026-01-19,Aalborg,Community Lab,Online Benefits,30–44,Own device,0.0,30.0,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0011,2026-01-24,Odense,Community Lab,Job Portal,45–59,Centre device,16.3,50.7,Yes,No,3.7,Advisor,Staff explained email attachments and document upload.
+SES-0012,2026-01-02,Aarhus,library hub ,Job Portal,60+,Own device,15.5,44.8,No,No,4.0,Librarian,Connection failed and another visit was needed.
+SES-0013,2026-01-07,Copenhagen,Mobile Desk,Job Portal,18–29,Centre device,18.7,22.2,Yes,No,3.9,Volunteer,User needed clear steps for digital login.
+SES-0014,2026-01-12,Aalborg,Mobile Desk,Job Portal,30–44,Phone support,20.2,39.8,Yes,No,4.1,Advisor,Issue resolved after password guidance.
+SES-0015,2026-01-17,Odense,Mobile Desk,Job Portal,45–59,Own device,7.7,10.7,Yes,No,5.0,Librarian,
+SES-0016,2026-01-22,Aarhus,Mobile Desk,Health Booking,60+,Centre device,31.6,26.1,Yes,No,3.3,Volunteer,No follow-up needed after the session.
+SES-0016,2026-01-27,Copenhagen,Library Hub,Health Booking,18–29,Phone support,9.8,57.7,No,No,4.1,Advisor,Staff explained email attachments and document upload.
+SES-0018,2026-01-05,Aalborg,Library Hub,Health Booking,30–44,Own device,8.2,44.9,Yes,No,4.4,Librarian,Connection failed and another visit was needed.
+SES-0019,2026-02-10,Odense,Library Hub,Health Booking,45–59,Centre device,26.6,59.3,Yes,No,2.6,Volunteer,User needed clear steps for digital login.
+SES-0020,2026-02-15,Aarhus,Library Hub,Health Booking,60+,Phone support,11.2,43.5,Yes,No,3.6,Advisor,Issue resolved after password guidance.
+SES-0021,2026-02-20,Copenhagen,Citizen Centre,Email & Documents,18–29,Own device,4.0,34.8,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0022,2026-02-25,Aalborg,Citizen Centre,Email & Documents,30–44,Centre device,14.1,29.7,Yes,No,2.8,Volunteer,No follow-up needed after the session.
+SES-0023,2026-02-03,Odense,Citizen Centre,e-mail & documents,45–59,Own device,0.0,29.9,No,Yes,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0024,2026-02-08,Aarhus,Citizen Centre,Email & Documents,60+,Centre device,8.6,69.6,No,Yes,4.3,Librarian,Connection failed and another visit was needed.
+SES-0025,2026-02-13,Copenhagen,Community Lab,Email & Documents,18–29,Phone support,9.2,45.0,Yes,No,4.3,Volunteer,User needed clear steps for digital login.
+SES-0026,2026-02-18,Aalborg,Community Lab,Digital ID,30–44,Own device,21.2,50.0,Yes,No,3.0,Advisor,Issue resolved after password guidance.
+SES-0027,2026-02-23,Odense,Community Lab,Digital ID,45–59,Centre device,12.9,45.0,Yes,No,3.6,Librarian,The form was not easy to find.
+SES-0028,2026-02-01,Aarhus,Community Lab,Digital ID,60+,Phone support,10.7,38.8,Yes,No,4.9,Volunteer,No follow-up needed after the session.
+SES-0029,2026-02-06,Copenhagen,Mobile Desk,Digital ID,18–29,Own device,14.4,55.8,Yes,No,3.5,Advisor,Staff explained email attachments and document upload.
+SES-0030,2026-02-11,Aalborg,Mobile Desk,Digital ID,30–44,Centre device,14.2,43.3,Yes,No,3.8,Librarian,Connection failed and another visit was needed.
+SES-0031,2026-02-16,Odense,Mobile Desk,Online Benefits,45–59,Phone support,26.5,36.1,Yes,No,3.6,Volunteer,User needed clear steps for digital login.
+SES-0032,2026-02-21,Aarhus,Mobile Desk,Online Benefits,60+,Own device,11.7,43.8,Yes,No,4.2,Advisor,Issue resolved after password guidance.
+SES-0033,2026-02-26,Copenhagen,Library Hub,Online Benefits,18–29,Centre device,12.7,29.2,Yes,No,4.0,Librarian,The form was not easy to find.
+SES-0034,2026-02-04,Aalborg,Library Hub,Online Benefits,30-44,Own device,3.3,52.8,Yes,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0035,2026-02-09,Odense,Library Hub,Online Benefits,45–59,Centre device,8.6,58.7,Yes,No,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0036,2026-02-14,Aarhus,Library Hub,Job Portal,60+,Phone support,9.6,41.2,No,Yes,3.5,Librarian,Connection failed and another visit was needed.
+SES-0037,2026-03-19,Copenhagen,Citizen Centre,Job Portal,18–29,Own device,0.4,56.0,Yes,No,3.3,Volunteer,User needed clear steps for digital login.
+SES-0038,2026-03-24,Aalborg,Citizen Centre,Job Portal,30–44,Centre device,13.4,24.5,Yes,No,4.5,Advisor,Issue resolved after password guidance.
+SES-0039,2026-03-02,Odense,Citizen Centre,Job Portal,45–59,Phone support,9.3,68.9,Yes,No,3.2,Librarian,The form was not easy to find.
+SES-0040,2026-03-07,Aarhus,Citizen Centre,Job Portal,60+,Own device,0.0,25.0,Yes,No,4.5,Volunteer,No follow-up needed after the session.
+SES-0041,2026-03-12,Copenhagen,Community Lab,Health Booking,18–29,Centre device,7.4,45.0,No,No,4.8,Advisor,Staff explained email attachments and document upload.
+SES-0042,2026-03-17,Aalborg,Community Lab,Health Booking,30–44,Phone support,14.4,52.9,No,No,4.1,Librarian,Connection failed and another visit was needed.
+SES-0043,2026-03-22,Odense,Community Lab,Health Booking,45–59,Own device,25.2,54.7,Yes,No,3.4,Volunteer,User needed clear steps for digital login.
+SES-0044,2026-03-27,Aarhus,Community Lab,Health Booking,60+,Centre device,10.5,52.5,Yes,No,4.6,Advisor,Issue resolved after password guidance.
+SES-0045,2026-03-05,Copenhagen,Mobile Desk,Health Booking,18–29,centre-device,7.8,24.3,Yes,No,4.9,Librarian,The form was not easy to find.
+SES-0046,2026-03-10,Aalborg,Mobile Desk,Email & Documents,30–44,Centre device,19.0,27.6,Yes,No,4.3,Volunteer,No follow-up needed after the session.
+SES-0047,2026-03-15,Odense,Mobile Desk,Email & Documents,45–59,Phone support,16.6,39.5,Yes,No,4.4,Advisor,Staff explained email attachments and document upload.
+SES-0048,2026-03-20,Aarhus,Mobile Desk,Email & Documents,60+,Own device,0.0,44.5,Yes,No,4.3,Librarian,Connection failed and another visit was needed.
+SES-0049,2026-03-25,Copenhagen,Library Hub,Email & Documents,18–29,Centre device,18.0,40.3,Yes,No,4.0,Volunteer,User needed clear steps for digital login.
+SES-0050,2026-03-03,Aalborg,Library Hub,Email & Documents,30–44,Phone support,11.2,46.3,Yes,No,4.1,Advisor,Issue resolved after password guidance.
+SES-0051,2026-03-08,Odense,Library Hub,Digital ID,45–59,Own device,20.0,27.1,No,Yes,4.0,Librarian,The form was not easy to find.
+SES-0052,2026-03-13,Aarhus,Library Hub,Digital ID,60+,Centre device,28.0,55.7,Yes,No,3.0,Volunteer,No follow-up needed after the session.
+SES-0053,2026-03-18,Copenhagen,Citizen Centre,Digital ID,18–29,Phone support,4.0,40.4,Yes,No,4.3,Advisor,Staff explained email attachments and document upload.
+SES-0054,2026-03-23,Aalborg,Citizen Centre,Digital ID,30–44,Own device,17.0,52.8,Yes,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0055,2026-04-01,Odense,Citizen Centre,Digital ID,45–59,Centre device,13.8,38.1,No,Yes,3.8,Volunteer,User needed clear steps for digital login.
+SES-0056,2026-04-06,Aarhus,Citizen Centre,Online Benefits,60+,Own device,5.1,47.3,resolved,No,4.6,Advisor,Issue resolved after password guidance.
+SES-0057,2026-04-11,Copenhagen,Community Lab,Online Benefits,18–29,Centre device,13.8,28.3,Yes,No,3.5,Librarian,The form was not easy to find.
+SES-0058,2026-04-16,Aalborg,Community Lab,Online Benefits,30–44,Phone support,10.0,34.0,Yes,No,4.5,Volunteer,No follow-up needed after the session.
+SES-0059,2026-04-21,Odense,Community Lab,Online Benefits,45–59,Own device,0.1,46.6,Yes,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0060,2026-04-26,Aarhus,Community Lab,Online Benefits,60+,Centre device,14.1,40.3,Yes,No,3.9,Librarian,Connection failed and another visit was needed.
+SES-0061,2026-04-04,Copenhagen,Mobile Desk,Job Portal,18–29,Phone support,17.6,21.7,Yes,No,3.6,Volunteer,User needed clear steps for digital login.
+SES-0062,2026-04-09,Aalborg,Mobile Desk,Job Portal,30–44,Own device,10.5,46.8,Yes,No,3.7,Advisor,Issue resolved after password guidance.
+SES-0063,2026-04-14,Odense,Mobile Desk,Job Portal,45–59,Centre device,16.8,66.6,Yes,No,4.4,Librarian,The form was not easy to find.
+SES-0064,2026-04-19,Aarhus,Mobile Desk,Job Portal,60+,Phone support,10.0,23.8,Yes,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0065,2026-04-24,Copenhagen,Library Hub,Job Portal,18–29,Own device,2.8,57.9,Yes,No,4.6,Advisor,Staff explained email attachments and document upload.
+SES-0066,2026-04-02,Aalborg,Library Hub,Health Booking,30–44,Centre device,12.0,37.4,No,Yes,3.5,Librarian,Connection failed and another visit was needed.
+SES-0067,2026-04-07,Odense,Library Hub,Health Booking,45–59,Own device,21.7,39.2,Yes,needed,4.1,Volunteer,User needed clear steps for digital login.
+SES-0068,2026-04-12,Aarhus,Library Hub,Health Booking,60+,Centre device,8.9,55.3,Yes,No,4.5,Advisor,Issue resolved after password guidance.
+SES-0069,2026-04-17,Copenhagen,Citizen Centre,Health Booking,18–29,Phone support,11.3,32.6,Yes,No,4.7,Librarian,The form was not easy to find.
+SES-0070,2026-04-22,Aalborg,Citizen Centre,Health Booking,30–44,Own device,5.2,28.8,No,No,4.6,Volunteer,No follow-up needed after the session.
+SES-0071,2026-13-01,Odense,Citizen Centre,Email & Documents,45–59,Centre device,12.6,45.0,No,No,3.4,Advisor,Staff explained email attachments and document upload.
+SES-0072,2026-04-05,Aarhus,Citizen Centre,Email & Documents,60+,Phone support,unknown,61.3,Yes,No,3.7,Librarian,Connection failed and another visit was needed.
+SES-0073,2026-05-10,Copenhagen,Community Lab,Email & Documents,18–29,Own device,-4,48.6,No,Yes,4.7,Volunteer,User needed clear steps for digital login.
+SES-0074,2026-05-15,Aalborg,Community Lab,Email & Documents,30–44,Centre device,11.6,300.0,Yes,No,4.2,Advisor,Issue resolved after password guidance.
+SES-0075,2026-05-20,Odense,Community Lab,Email & Documents,45–59,Phone support,12.2,43.4,Yes,No,0.0,Librarian,The form was not easy to find.
+SES-0076,2026-05-25,Aarhus,Community Lab,Digital ID,60+,Own device,0.0,70.0,Yes,Yes,4.0,Volunteer,No follow-up needed after the session.
+SES-0077,2026-05-03,Copenhagen,Mobile Desk,Digital ID,18–29,Centre device,19.4,39.0,Yes,No,3.1,Advisor,Staff explained email attachments and document upload.
+SES-0078,2026-05-08,Aalborg,Mobile Desk,Digital ID,30–44,Own device,11.4,60.7,Yes,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0079,2026-05-13,Odense,Mobile Desk,Digital ID,45–59,Centre device,33.9,30.8,Yes,No,3.4,Volunteer,User needed clear steps for digital login.
+SES-0080,2026-05-18,Aarhus,Mobile Desk,Digital ID,60+,Phone support,10.8,52.8,Yes,No,4.0,Advisor,Issue resolved after password guidance.
+SES-0081,2026-05-23,Copenhagen,Library Hub,Online Benefits,18–29,Own device,10.4,65.7,Yes,No,4.4,Librarian,The form was not easy to find.
+SES-0082,2026-05-01,Aalborg,Library Hub,Online Benefits,30–44,Centre device,18.5,22.5,Yes,No,3.6,Volunteer,No follow-up needed after the session.
+SES-0083,2026-05-06,Odense,Library Hub,Online Benefits,45–59,Phone support,17.3,30.6,Yes,No,3.4,Advisor,Staff explained email attachments and document upload.
+SES-0084,2026-05-11,Aarhus,Library Hub,Online Benefits,60+,Own device,10.5,23.0,Yes,No,4.4,Librarian,Connection failed and another visit was needed.
+SES-0085,2026-05-16,Copenhagen,Citizen Centre,Online Benefits,18–29,Centre device,16.6,35.1,No,No,4.3,Volunteer,User needed clear steps for digital login.
+SES-0086,2026-05-21,Aalborg,Citizen Centre,Job Portal,30–44,Phone support,0.0,43.6,Yes,No,5.0,Advisor,Issue resolved after password guidance.
+SES-0087,2026-05-26,Odense,Citizen Centre,Job Portal,45–59,Own device,6.7,53.2,Yes,No,4.2,Librarian,The form was not easy to find.
+SES-0088,2026-05-04,Aarhus,Citizen Centre,Job Portal,60+,Centre device,16.0,61.3,No,Yes,4.7,Volunteer,No follow-up needed after the session.
+SES-0089,2026-05-09,Copenhagen,Community Lab,Job Portal,18–29,Own device,13.3,26.1,Yes,No,4.3,Advisor,Staff explained email attachments and document upload.
+SES-0090,2026-05-14,Aalborg,Community Lab,Job Portal,30–44,Centre device,15.2,38.2,Yes,No,4.4,Librarian,Connection failed and another visit was needed.
+SES-0091,2026-06-19,Odense,Community Lab,Health Booking,45–59,Phone support,30.0,48.1,Yes,No,4.3,Volunteer,User needed clear steps for digital login.
+SES-0092,2026-06-24,Aarhus,Community Lab,Health Booking,60+,Own device,15.0,27.6,Yes,No,3.7,Advisor,Issue resolved after password guidance.
+SES-0093,2026-06-02,Copenhagen,Mobile Desk,Health Booking,18–29,Centre device,22.4,26.3,Yes,No,2.4,Librarian,The form was not easy to find.
+SES-0094,2026-06-07,Aalborg,Mobile Desk,Health Booking,30–44,Phone support,11.7,46.7,Yes,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0095,2026-06-12,Odense,Mobile Desk,Health Booking,45–59,Own device,17.4,40.3,Yes,No,3.5,Advisor,Staff explained email attachments and document upload.
+SES-0096,2026-06-17,Aarhus,Mobile Desk,Email & Documents,60+,Centre device,16.5,43.3,Yes,No,4.1,Librarian,Connection failed and another visit was needed.
+SES-0097,2026-06-22,Copenhagen,Library Hub,Email & Documents,18–29,Phone support,17.7,60.4,Yes,No,3.4,Volunteer,User needed clear steps for digital login.
+SES-0098,2026-06-27,Aalborg,Library Hub,Email & Documents,30–44,Own device,8.2,69.8,Yes,No,4.0,Advisor,Issue resolved after password guidance.
+SES-0099,2026-06-05,Odense,Library Hub,Email & Documents,45–59,Centre device,20.5,40.8,Yes,No,3.9,Librarian,The form was not easy to find.
+SES-0100,2026-06-10,Aarhus,Library Hub,Email & Documents,60+,Own device,7.6,50.1,No,Yes,4.5,Volunteer,No follow-up needed after the session.
+SES-0101,2026-06-15,Copenhagen,Citizen Centre,Digital ID,18–29,Centre device,13.8,54.5,Yes,No,3.2,Advisor,Staff explained email attachments and document upload.
+SES-0102,2026-06-20,Aalborg,Citizen Centre,Digital ID,30–44,Phone support,12.6,22.1,Yes,No,4.1,Librarian,Connection failed and another visit was needed.
+SES-0103,2026-06-25,Odense,Citizen Centre,Digital ID,45–59,Own device,18.0,37.9,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0104,2026-06-03,Aarhus,Citizen Centre,Digital ID,60+,Centre device,15.0,65.6,Yes,No,4.0,Advisor,Issue resolved after password guidance.
+SES-0105,2026-06-08,Copenhagen,Community Lab,Digital ID,18–29,Phone support,3.6,62.3,Yes,No,4.7,Librarian,The form was not easy to find.
+SES-0106,2026-06-13,Aalborg,Community Lab,Online Benefits,30–44,Own device,14.4,78.0,No,No,3.2,Volunteer,No follow-up needed after the session.
+SES-0107,2026-06-18,Odense,Community Lab,Online Benefits,45–59,Centre device,12.2,39.6,Yes,No,4.5,Advisor,Staff explained email attachments and document upload.
+SES-0108,2026-06-23,Aarhus,Community Lab,Online Benefits,60+,Phone support,6.7,51.7,No,Yes,3.6,Librarian,Connection failed and another visit was needed.
+SES-0109,2026-01-01,Copenhagen,Mobile Desk,Online Benefits,18–29,Own device,6.2,15.4,No,Yes,5.0,Volunteer,User needed clear steps for digital login.
+SES-0110,2026-01-06,Aalborg,Mobile Desk,Online Benefits,30–44,Centre device,7.4,24.6,Yes,No,4.2,Advisor,Issue resolved after password guidance.
+SES-0111,2026-01-11,Odense,Mobile Desk,Job Portal,45–59,Own device,13.6,51.1,Yes,No,3.4,Librarian,The form was not easy to find.
+SES-0112,2026-01-16,Aarhus,Mobile Desk,Job Portal,60+,Centre device,23.6,26.2,No,Yes,3.7,Volunteer,No follow-up needed after the session.
+SES-0113,2026-01-21,Copenhagen,Library Hub,Job Portal,18–29,Phone support,5.2,49.7,No,Yes,4.1,Advisor,Staff explained email attachments and document upload.
+SES-0114,2026-01-26,Aalborg,Library Hub,Job Portal,30–44,Own device,5.6,50.2,Yes,No,3.9,Librarian,Connection failed and another visit was needed.
+SES-0115,2026-01-04,Odense,Library Hub,Job Portal,45–59,Centre device,7.9,24.2,Yes,No,4.3,Volunteer,User needed clear steps for digital login.
+SES-0116,2026-01-09,Aarhus,Library Hub,Health Booking,60+,Phone support,19.8,26.9,Yes,No,3.0,Advisor,Issue resolved after password guidance.
+SES-0117,2026-01-14,Copenhagen,Citizen Centre,Health Booking,18–29,Own device,6.8,31.3,Yes,No,4.2,Librarian,The form was not easy to find.
+SES-0118,2026-01-19,Aalborg,Citizen Centre,Health Booking,30–44,Centre device,26.2,24.4,Yes,No,4.2,Volunteer,No follow-up needed after the session.
+SES-0119,2026-01-24,Odense,Citizen Centre,Health Booking,45–59,Phone support,11.3,59.9,Yes,No,4.9,Advisor,Staff explained email attachments and document upload.
+SES-0120,2026-01-02,Aarhus,Citizen Centre,Health Booking,60+,Own device,21.1,26.4,Yes,No,3.2,Librarian,Connection failed and another visit was needed.
+SES-0121,2026-01-07,Copenhagen,Community Lab,Email & Documents,18–29,Centre device,14.0,74.5,Yes,No,4.4,Volunteer,User needed clear steps for digital login.
+SES-0122,2026-01-12,Aalborg,Community Lab,Email & Documents,30–44,Own device,18.4,26.0,Yes,No,3.3,Advisor,Issue resolved after password guidance.
+SES-0123,2026-01-17,Odense,Community Lab,Email & Documents,45–59,Centre device,17.6,45.3,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0124,2026-01-22,Aarhus,Community Lab,Email & Documents,60+,Phone support,9.0,43.2,Yes,No,4.8,Volunteer,No follow-up needed after the session.
+SES-0125,2026-01-27,Copenhagen,Mobile Desk,Email & Documents,18–29,Own device,7.3,61.1,No,Yes,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0126,2026-01-05,Aalborg,Mobile Desk,Digital ID,30–44,Centre device,27.3,61.3,No,Yes,3.8,Librarian,Connection failed and another visit was needed.
+SES-0127,2026-02-10,Odense,Mobile Desk,Digital ID,45–59,Phone support,8.0,22.3,Yes,No,4.9,Volunteer,User needed clear steps for digital login.
+SES-0128,2026-02-15,Aarhus,Mobile Desk,Digital ID,60+,Own device,10.7,50.9,Yes,No,3.1,Advisor,Issue resolved after password guidance.
+SES-0129,2026-02-20,Copenhagen,Library Hub,Digital ID,18–29,Centre device,21.0,22.5,Yes,No,3.4,Librarian,The form was not easy to find.
+SES-0130,2026-02-25,Aalborg,Library Hub,Digital ID,30–44,Phone support,19.5,47.9,Yes,No,4.8,Volunteer,No follow-up needed after the session.
+SES-0131,2026-02-03,Odense,Library Hub,Online Benefits,45–59,Own device,2.2,50.1,Yes,No,4.3,Advisor,Staff explained email attachments and document upload.
+SES-0132,2026-02-08,Aarhus,Library Hub,Online Benefits,60+,Centre device,8.8,17.8,No,Yes,3.6,Librarian,Connection failed and another visit was needed.
+SES-0133,2026-02-13,Copenhagen,Citizen Centre,Online Benefits,18–29,Own device,2.7,34.5,Yes,No,4.6,Volunteer,User needed clear steps for digital login.
+SES-0134,2026-02-18,Aalborg,Citizen Centre,Online Benefits,30–44,Centre device,20.9,35.7,Yes,No,2.4,Advisor,Issue resolved after password guidance.
+SES-0135,2026-02-23,Odense,Citizen Centre,Online Benefits,45–59,Phone support,8.7,70.4,Yes,No,4.4,Librarian,The form was not easy to find.
+SES-0136,2026-02-01,Aarhus,Citizen Centre,Job Portal,60+,Own device,4.8,50.3,Yes,No,3.6,Volunteer,No follow-up needed after the session.
+SES-0137,2026-02-06,Copenhagen,Community Lab,Job Portal,18–29,Centre device,21.7,29.2,Yes,No,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0138,2026-02-11,Aalborg,Community Lab,Job Portal,30–44,Phone support,16.5,22.4,No,Yes,4.1,Librarian,Connection failed and another visit was needed.
+SES-0139,2026-02-16,Odense,Community Lab,Job Portal,45–59,Own device,0.0,27.5,Yes,No,4.6,Volunteer,User needed clear steps for digital login.
+SES-0140,2026-02-21,Aarhus,Community Lab,Job Portal,60+,Centre device,18.2,45.0,Yes,No,4.9,Advisor,Issue resolved after password guidance.
+SES-0141,2026-02-26,Copenhagen,Mobile Desk,Health Booking,18–29,Phone support,14.4,36.9,Yes,No,3.8,Librarian,The form was not easy to find.
+SES-0142,2026-02-04,Aalborg,Mobile Desk,Health Booking,30–44,Own device,14.6,60.3,No,Yes,4.4,Volunteer,No follow-up needed after the session.
+SES-0143,2026-02-09,Odense,Mobile Desk,Health Booking,45–59,Centre device,10.4,31.6,Yes,No,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0144,2026-02-14,Aarhus,Mobile Desk,Health Booking,60+,Own device,27.7,40.0,Yes,No,2.9,Librarian,Connection failed and another visit was needed.
+SES-0145,2026-03-19,Copenhagen,Library Hub,Health Booking,18–29,Centre device,20.4,81.2,Yes,No,4.2,Volunteer,User needed clear steps for digital login.
+SES-0146,2026-03-24,Aalborg,Library Hub,Email & Documents,30–44,Phone support,16.8,35.2,Yes,No,3.5,Advisor,Issue resolved after password guidance.
+SES-0147,2026-03-02,Odense,Library Hub,Email & Documents,45–59,Own device,0.0,30.8,No,Yes,4.8,Librarian,The form was not easy to find.
+SES-0148,2026-03-07,Aarhus,Library Hub,Email & Documents,60+,Centre device,16.1,43.1,Yes,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0149,2026-03-12,Copenhagen,Citizen Centre,Email & Documents,18–29,Phone support,8.5,51.5,Yes,No,4.1,Advisor,Staff explained email attachments and document upload.
+SES-0150,2026-03-17,Aalborg,Citizen Centre,Email & Documents,30–44,Own device,9.3,52.2,Yes,No,4.3,Librarian,Connection failed and another visit was needed.
+SES-0151,2026-03-22,Odense,Citizen Centre,Digital ID,45–59,Centre device,22.9,8.0,Yes,No,4.4,Volunteer,User needed clear steps for digital login.
+SES-0152,2026-03-27,Aarhus,Citizen Centre,Digital ID,60+,Phone support,9.0,25.7,Yes,No,3.6,Advisor,Issue resolved after password guidance.
+SES-0153,2026-03-05,Copenhagen,Community Lab,Digital ID,18–29,Own device,9.6,46.1,Yes,No,4.4,Librarian,The form was not easy to find.
+SES-0154,2026-03-10,Aalborg,Community Lab,Digital ID,30–44,Centre device,12.4,14.0,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0155,2026-03-15,Odense,Community Lab,Digital ID,45–59,Own device,10.6,44.2,No,No,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0156,2026-03-20,Aarhus,Community Lab,Online Benefits,60+,Centre device,20.4,64.7,No,No,4.2,Librarian,Connection failed and another visit was needed.
+SES-0157,2026-03-25,Copenhagen,Mobile Desk,Online Benefits,18–29,Phone support,11.4,12.8,Yes,No,3.7,Volunteer,User needed clear steps for digital login.
+SES-0158,2026-03-03,Aalborg,Mobile Desk,Online Benefits,30–44,Own device,0.0,41.6,No,No,4.7,Advisor,Issue resolved after password guidance.
+SES-0159,2026-03-08,Odense,Mobile Desk,Online Benefits,45–59,Centre device,30.5,30.6,Yes,No,2.4,Librarian,The form was not easy to find.
+SES-0160,2026-03-13,Aarhus,Mobile Desk,Online Benefits,60+,Phone support,4.1,68.9,No,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0161,2026-03-18,Copenhagen,Library Hub,Job Portal,18–29,Own device,24.9,50.0,No,Yes,4.1,Advisor,Staff explained email attachments and document upload.
+SES-0162,2026-03-23,Aalborg,Library Hub,Job Portal,30–44,Centre device,12.8,48.5,Yes,No,3.7,Librarian,Connection failed and another visit was needed.
+SES-0163,2026-04-01,Odense,Library Hub,Job Portal,45–59,Phone support,18.9,43.1,Yes,No,4.6,Volunteer,User needed clear steps for digital login.
+SES-0164,2026-04-06,Aarhus,Library Hub,Job Portal,60+,Own device,5.3,72.0,Yes,No,4.8,Advisor,Issue resolved after password guidance.
+SES-0165,2026-04-11,Copenhagen,Citizen Centre,Job Portal,18–29,Centre device,1.2,64.0,Yes,No,4.7,Librarian,The form was not easy to find.
+SES-0166,2026-04-16,Aalborg,Citizen Centre,Health Booking,30–44,Own device,18.3,29.9,Yes,No,3.7,Volunteer,No follow-up needed after the session.
+SES-0167,2026-04-21,Odense,Citizen Centre,Health Booking,45–59,Centre device,10.9,52.2,Yes,No,4.3,Advisor,Staff explained email attachments and document upload.
+SES-0168,2026-04-26,Aarhus,Citizen Centre,Health Booking,60+,Phone support,5.6,50.1,Yes,No,4.9,Librarian,Connection failed and another visit was needed.
+SES-0169,2026-04-04,Copenhagen,Community Lab,Health Booking,18–29,Own device,7.9,51.7,Yes,No,4.9,Volunteer,User needed clear steps for digital login.
+SES-0170,2026-04-09,Aalborg,Community Lab,Health Booking,30–44,Centre device,17.7,45.2,No,Yes,3.1,Advisor,Issue resolved after password guidance.
+SES-0171,2026-04-14,Odense,Community Lab,Email & Documents,45–59,Phone support,13.1,44.6,Yes,No,3.7,Librarian,The form was not easy to find.
+SES-0172,2026-04-19,Aarhus,Community Lab,Email & Documents,60+,Own device,0.0,40.0,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0173,2026-04-24,Copenhagen,Mobile Desk,Email & Documents,18–29,Centre device,9.5,41.1,Yes,No,4.7,Advisor,Staff explained email attachments and document upload.
+SES-0174,2026-04-02,Aalborg,Mobile Desk,Email & Documents,30–44,Phone support,8.2,67.6,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0175,2026-04-07,Odense,Mobile Desk,Email & Documents,45–59,Own device,12.1,50.0,No,No,3.9,Volunteer,User needed clear steps for digital login.
+SES-0176,2026-04-12,Aarhus,Mobile Desk,Digital ID,60+,Centre device,29.3,8.0,Yes,No,2.7,Advisor,Issue resolved after password guidance.
+SES-0177,2026-04-17,Copenhagen,Library Hub,Digital ID,18–29,Own device,13.0,45.6,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0178,2026-04-22,Aalborg,Library Hub,Digital ID,30–44,Centre device,24.0,52.1,Yes,No,3.2,Volunteer,No follow-up needed after the session.
+SES-0179,2026-04-27,Odense,Library Hub,Digital ID,45–59,Phone support,28.2,34.9,Yes,No,3.6,Advisor,Staff explained email attachments and document upload.
+SES-0180,2026-04-05,Aarhus,Library Hub,Digital ID,60+,Own device,13.8,45.6,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0181,2026-05-10,Copenhagen,Citizen Centre,Online Benefits,18–29,Centre device,5.5,55.9,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0182,2026-05-15,Aalborg,Citizen Centre,Online Benefits,30–44,Phone support,13.4,44.5,Yes,No,4.1,Advisor,Issue resolved after password guidance.
+SES-0183,2026-05-20,Odense,Citizen Centre,Online Benefits,45–59,Own device,6.6,50.8,Yes,No,4.5,Librarian,The form was not easy to find.
+SES-0184,2026-05-25,Aarhus,Citizen Centre,Online Benefits,60+,Centre device,6.8,45.7,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0185,2026-05-03,Copenhagen,Community Lab,Online Benefits,18–29,Phone support,18.0,30.0,Yes,No,4.3,Advisor,Staff explained email attachments and document upload.
+SES-0186,2026-05-08,Aalborg,Community Lab,Job Portal,30–44,Own device,3.2,34.6,Yes,No,4.6,Librarian,Connection failed and another visit was needed.
+SES-0187,2026-05-13,Odense,Community Lab,Job Portal,45–59,Centre device,15.9,48.3,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0188,2026-05-18,Aarhus,Community Lab,Job Portal,60+,Own device,21.5,51.9,Yes,No,3.4,Advisor,Issue resolved after password guidance.
+SES-0189,2026-05-23,Copenhagen,Mobile Desk,Job Portal,18–29,Centre device,13.1,43.8,Yes,No,4.2,Librarian,The form was not easy to find.
+SES-0190,2026-05-01,Aalborg,Mobile Desk,Job Portal,30–44,Phone support,8.7,13.8,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0191,2026-05-06,Odense,Mobile Desk,Health Booking,45–59,Own device,17.3,32.8,Yes,No,3.5,Advisor,Staff explained email attachments and document upload.
+SES-0192,2026-05-11,Aarhus,Mobile Desk,Health Booking,60+,Centre device,14.2,49.7,Yes,No,3.8,Librarian,Connection failed and another visit was needed.
+SES-0193,2026-05-16,Copenhagen,Library Hub,Health Booking,18–29,Phone support,7.4,31.7,Yes,No,4.8,Volunteer,User needed clear steps for digital login.
+SES-0194,2026-05-21,Aalborg,Library Hub,Health Booking,30–44,Own device,6.9,50.8,Yes,No,3.6,Advisor,Issue resolved after password guidance.
+SES-0195,2026-05-26,Odense,Library Hub,Health Booking,45–59,Centre device,24.8,44.9,Yes,No,3.8,Librarian,The form was not easy to find.
+SES-0196,2026-05-04,Aarhus,Library Hub,Email & Documents,60+,Phone support,14.6,31.7,No,Yes,4.7,Volunteer,No follow-up needed after the session.
+SES-0197,2026-05-09,Copenhagen,Citizen Centre,Email & Documents,18–29,Own device,4.3,51.3,Yes,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0198,2026-05-14,Aalborg,Citizen Centre,Email & Documents,30–44,Centre device,27.1,54.0,No,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0199,2026-06-19,Odense,Citizen Centre,Email & Documents,45–59,Own device,7.9,36.1,No,Yes,4.2,Volunteer,User needed clear steps for digital login.
+SES-0200,2026-06-24,Aarhus,Citizen Centre,Email & Documents,60+,Centre device,21.4,44.9,No,No,3.7,Advisor,Issue resolved after password guidance.
+SES-0201,2026-06-02,Copenhagen,Community Lab,Digital ID,18–29,Phone support,10.1,33.2,Yes,No,3.5,Librarian,The form was not easy to find.
+SES-0202,2026-06-07,Aalborg,Community Lab,Digital ID,30–44,Own device,8.3,37.4,No,No,3.5,Volunteer,No follow-up needed after the session.
+SES-0203,2026-06-12,Odense,Community Lab,Digital ID,45–59,Centre device,15.7,58.0,No,No,4.8,Advisor,Staff explained email attachments and document upload.
+SES-0204,2026-06-17,Aarhus,Community Lab,Digital ID,60+,Phone support,14.2,30.1,No,Yes,4.2,Librarian,Connection failed and another visit was needed.
+SES-0205,2026-06-22,Copenhagen,Mobile Desk,Digital ID,18–29,Own device,14.2,71.3,No,No,3.7,Volunteer,User needed clear steps for digital login.
+SES-0206,2026-06-27,Aalborg,Mobile Desk,Online Benefits,30–44,Centre device,8.5,68.8,No,Yes,4.8,Advisor,Issue resolved after password guidance.
+SES-0207,2026-06-05,Odense,Mobile Desk,Online Benefits,45–59,Phone support,10.8,47.3,No,No,4.3,Librarian,The form was not easy to find.
+SES-0208,2026-06-10,Aarhus,Mobile Desk,Online Benefits,60+,Own device,3.0,60.3,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0209,2026-06-15,Copenhagen,Library Hub,Online Benefits,18–29,Centre device,24.6,10.3,Yes,No,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0210,2026-06-20,Aalborg,Library Hub,Online Benefits,30–44,Own device,8.3,45.3,Yes,No,4.1,Librarian,Connection failed and another visit was needed.
+SES-0211,2026-06-25,Odense,Library Hub,Job Portal,45–59,Centre device,14.6,31.0,Yes,No,3.2,Volunteer,User needed clear steps for digital login.
+SES-0212,2026-06-03,Aarhus,Library Hub,Job Portal,60+,Phone support,25.3,47.9,Yes,No,4.4,Advisor,Issue resolved after password guidance.
+SES-0213,2026-06-08,Copenhagen,Citizen Centre,Job Portal,18–29,Own device,0.0,43.7,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0214,2026-06-13,Aalborg,Citizen Centre,Job Portal,30–44,Centre device,24.2,63.1,No,Yes,3.3,Volunteer,No follow-up needed after the session.
+SES-0215,2026-06-18,Odense,Citizen Centre,Job Portal,45–59,Phone support,5.9,31.8,Yes,No,5.0,Advisor,
+SES-0216,2026-06-23,Aarhus,Citizen Centre,Health Booking,60+,Own device,4.3,44.3,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0217,2026-01-01,Copenhagen,Community Lab,Health Booking,18–29,Centre device,0.0,45.8,No,Yes,4.8,Volunteer,User needed clear steps for digital login.
+SES-0218,2026-01-06,Aalborg,Community Lab,Health Booking,30–44,Phone support,13.2,46.4,Yes,No,4.1,Advisor,Issue resolved after password guidance.
+SES-0219,2026-01-11,Odense,Community Lab,Health Booking,45–59,Own device,11.4,42.6,Yes,No,3.0,Librarian,The form was not easy to find.
+SES-0220,2026-01-16,Aarhus,Community Lab,Health Booking,60+,Centre device,22.3,51.3,Yes,No,4.1,Volunteer,No follow-up needed after the session.
+SES-0221,2026-01-21,Copenhagen,Mobile Desk,Email & Documents,18–29,Own device,16.1,49.9,Yes,No,4.6,Advisor,Staff explained email attachments and document upload.
+SES-0222,2026-01-26,Aalborg,Mobile Desk,Email & Documents,30–44,Centre device,21.7,39.3,Yes,No,4.5,Librarian,Connection failed and another visit was needed.
+SES-0223,2026-01-04,Odense,Mobile Desk,Email & Documents,45–59,Phone support,8.9,34.7,Yes,No,4.9,Volunteer,User needed clear steps for digital login.
+SES-0224,2026-01-09,Aarhus,Mobile Desk,Email & Documents,60+,Own device,15.0,43.4,Yes,No,3.6,Advisor,Issue resolved after password guidance.
+SES-0225,2026-01-14,Copenhagen,Library Hub,Email & Documents,18–29,Centre device,22.6,38.0,Yes,No,4.1,Librarian,The form was not easy to find.
+SES-0226,2026-01-19,Aalborg,Library Hub,Digital ID,30–44,Phone support,4.1,42.1,Yes,No,4.5,Volunteer,No follow-up needed after the session.
+SES-0227,2026-01-24,Odense,Library Hub,Digital ID,45–59,Own device,0.0,28.5,No,Yes,4.8,Advisor,Staff explained email attachments and document upload.
+SES-0228,2026-01-02,Aarhus,Library Hub,Digital ID,60+,Centre device,23.8,13.5,No,Yes,3.5,Librarian,Connection failed and another visit was needed.
+SES-0229,2026-01-07,Copenhagen,Citizen Centre,Digital ID,18–29,Phone support,7.6,56.2,Yes,No,4.7,Volunteer,User needed clear steps for digital login.
+SES-0230,2026-01-12,Aalborg,Citizen Centre,Digital ID,30–44,Own device,16.5,28.1,Yes,No,3.8,Advisor,Issue resolved after password guidance.
+SES-0231,2026-01-17,Odense,Citizen Centre,Online Benefits,45–59,Centre device,1.4,38.5,No,No,4.5,Librarian,The form was not easy to find.
+SES-0232,2026-01-22,Aarhus,Citizen Centre,Online Benefits,60+,Own device,15.4,50.5,No,Yes,4.1,Volunteer,No follow-up needed after the session.
+SES-0233,2026-01-27,Copenhagen,Community Lab,Online Benefits,18–29,Centre device,25.6,63.8,Yes,No,2.3,Advisor,Staff explained email attachments and document upload.
+SES-0234,2026-01-05,Aalborg,Community Lab,Online Benefits,30–44,Phone support,4.2,14.2,Yes,No,4.5,Librarian,Connection failed and another visit was needed.
+SES-0235,2026-02-10,Odense,Community Lab,Online Benefits,45–59,Own device,6.2,39.6,Yes,No,4.5,Volunteer,User needed clear steps for digital login.
+SES-0236,2026-02-15,Aarhus,Community Lab,Job Portal,60+,Centre device,20.6,43.5,Yes,No,4.3,Advisor,Issue resolved after password guidance.
+SES-0237,2026-02-20,Copenhagen,Mobile Desk,Job Portal,18–29,Phone support,14.4,70.7,Yes,No,3.9,Librarian,The form was not easy to find.
+SES-0238,2026-02-25,Aalborg,Mobile Desk,Job Portal,30–44,Own device,28.6,19.0,Yes,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0239,2026-02-03,Odense,Mobile Desk,Job Portal,45–59,Centre device,24.3,39.0,Yes,No,2.6,Advisor,Staff explained email attachments and document upload.
+SES-0240,2026-02-08,Aarhus,Mobile Desk,Job Portal,60+,Phone support,15.9,42.8,Yes,No,4.0,Librarian,Connection failed and another visit was needed.
+SES-0241,2026-02-13,Copenhagen,Library Hub,Health Booking,18–29,Own device,15.5,41.5,Yes,No,4.2,Volunteer,User needed clear steps for digital login.
+SES-0242,2026-02-18,Aalborg,Library Hub,Health Booking,30–44,Centre device,13.2,31.2,Yes,No,3.6,Advisor,Issue resolved after password guidance.
+SES-0243,2026-02-23,Odense,Library Hub,Health Booking,45–59,Own device,6.1,31.7,Yes,No,4.8,Librarian,The form was not easy to find.
+SES-0244,2026-02-01,Aarhus,Library Hub,Health Booking,60+,Centre device,8.3,39.4,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0245,2026-02-06,Copenhagen,Citizen Centre,Health Booking,18–29,Phone support,3.0,42.2,Yes,No,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0246,2026-02-11,Aalborg,Citizen Centre,Email & Documents,30–44,Own device,4.7,44.7,Yes,No,3.8,Librarian,Connection failed and another visit was needed.
+SES-0247,2026-02-16,Odense,Citizen Centre,Email & Documents,45–59,Centre device,17.7,40.2,Yes,No,4.1,Volunteer,User needed clear steps for digital login.
+SES-0248,2026-02-21,Aarhus,Citizen Centre,Email & Documents,60+,Phone support,17.0,37.7,Yes,No,3.4,Advisor,Issue resolved after password guidance.
+SES-0249,2026-02-26,Copenhagen,Community Lab,Email & Documents,18–29,Own device,16.4,47.4,Yes,No,3.7,Librarian,The form was not easy to find.
+SES-0250,2026-02-04,Aalborg,Community Lab,Email & Documents,30–44,Centre device,4.7,44.8,No,Yes,5.0,Volunteer,No follow-up needed after the session.
+SES-0251,2026-02-09,Odense,Community Lab,Digital ID,45–59,Phone support,9.1,66.8,No,Yes,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0252,2026-02-14,Aarhus,Community Lab,Digital ID,60+,Own device,5.7,8.0,Yes,No,4.4,Librarian,Connection failed and another visit was needed.
+SES-0253,2026-03-19,Copenhagen,Mobile Desk,Digital ID,18–29,Centre device,13.5,50.3,No,Yes,3.4,Volunteer,User needed clear steps for digital login.
+SES-0254,2026-03-24,Aalborg,Mobile Desk,Digital ID,30–44,Own device,4.8,18.1,No,No,4.8,Advisor,Issue resolved after password guidance.
+SES-0255,2026-03-02,Odense,Mobile Desk,Digital ID,45–59,Centre device,19.0,59.0,Yes,No,3.8,Librarian,The form was not easy to find.
+SES-0256,2026-03-07,Aarhus,Mobile Desk,Online Benefits,60+,Phone support,10.4,54.1,Yes,No,4.4,Volunteer,No follow-up needed after the session.
+SES-0257,2026-03-12,Copenhagen,Library Hub,Online Benefits,18–29,Own device,0.0,31.6,No,Yes,4.4,Advisor,Staff explained email attachments and document upload.
+SES-0258,2026-03-17,Aalborg,Library Hub,Online Benefits,30–44,Centre device,7.0,42.0,Yes,No,4.2,Librarian,Connection failed and another visit was needed.
+SES-0259,2026-03-22,Odense,Library Hub,Online Benefits,45–59,Phone support,8.1,41.7,Yes,No,4.2,Volunteer,User needed clear steps for digital login.
+SES-0260,2026-03-27,Aarhus,Library Hub,Online Benefits,60+,Own device,13.0,32.9,Yes,No,3.1,Advisor,Issue resolved after password guidance.
+SES-0261,2026-03-05,Copenhagen,Citizen Centre,Job Portal,18–29,Centre device,11.8,68.0,Yes,No,4.3,Librarian,The form was not easy to find.
+SES-0262,2026-03-10,Aalborg,Citizen Centre,Job Portal,30–44,Phone support,11.4,34.8,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0263,2026-03-15,Odense,Citizen Centre,Job Portal,45–59,Own device,0.0,65.8,Yes,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0264,2026-03-20,Aarhus,Citizen Centre,Job Portal,60+,Centre device,0.0,54.7,Yes,No,4.5,Librarian,Connection failed and another visit was needed.
+SES-0265,2026-03-25,Copenhagen,Community Lab,Job Portal,18–29,Own device,9.7,46.4,Yes,No,4.5,Volunteer,User needed clear steps for digital login.
+SES-0266,2026-03-03,Aalborg,Community Lab,Health Booking,30–44,Centre device,3.6,70.3,No,Yes,5.0,Advisor,Issue resolved after password guidance.
+SES-0267,2026-03-08,Odense,Community Lab,Health Booking,45–59,Phone support,16.6,55.6,Yes,No,4.0,Librarian,The form was not easy to find.
+SES-0268,2026-03-13,Aarhus,Community Lab,Health Booking,60+,Own device,7.5,44.4,No,Yes,4.3,Volunteer,No follow-up needed after the session.
+SES-0269,2026-03-18,Copenhagen,Mobile Desk,Health Booking,18–29,Centre device,13.0,88.4,Yes,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0270,2026-03-23,Aalborg,Mobile Desk,Health Booking,30–44,Phone support,4.4,52.8,Yes,No,4.2,Librarian,Connection failed and another visit was needed.
+SES-0271,2026-04-01,Odense,Mobile Desk,Email & Documents,45–59,Own device,21.4,76.6,Yes,No,3.7,Volunteer,User needed clear steps for digital login.
+SES-0272,2026-04-06,Aarhus,Mobile Desk,Email & Documents,60+,Centre device,10.4,40.2,Yes,No,4.2,Advisor,Issue resolved after password guidance.
+SES-0273,2026-04-11,Copenhagen,Library Hub,Email & Documents,18–29,Phone support,8.8,40.3,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0274,2026-04-16,Aalborg,Library Hub,Email & Documents,30–44,Own device,11.9,27.8,No,Yes,3.4,Volunteer,No follow-up needed after the session.
+SES-0275,2026-04-21,Odense,Library Hub,Email & Documents,45–59,Centre device,15.4,26.7,Yes,No,4.5,Advisor,Staff explained email attachments and document upload.
+SES-0276,2026-04-26,Aarhus,Library Hub,Digital ID,60+,Own device,11.5,35.5,Yes,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0277,2026-04-04,Copenhagen,Citizen Centre,Digital ID,18–29,Centre device,15.6,32.0,Yes,No,4.7,Volunteer,User needed clear steps for digital login.
+SES-0278,2026-04-09,Aalborg,Citizen Centre,Digital ID,30–44,Phone support,22.5,43.0,Yes,No,3.7,Advisor,Issue resolved after password guidance.
+SES-0279,2026-04-14,Odense,Citizen Centre,Digital ID,45–59,Own device,5.4,33.2,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0280,2026-04-19,Aarhus,Citizen Centre,Digital ID,60+,Centre device,14.4,64.2,Yes,No,4.5,Volunteer,No follow-up needed after the session.
+SES-0281,2026-04-24,Copenhagen,Community Lab,Online Benefits,18–29,Phone support,0.0,41.6,Yes,No,4.9,Advisor,Staff explained email attachments and document upload.
+SES-0282,2026-04-02,Aalborg,Community Lab,Online Benefits,30–44,Own device,13.2,30.4,Yes,No,3.3,Librarian,Connection failed and another visit was needed.
+SES-0283,2026-04-07,Odense,Community Lab,Online Benefits,45–59,Centre device,12.4,68.8,Yes,No,4.4,Volunteer,User needed clear steps for digital login.
+SES-0284,2026-04-12,Aarhus,Community Lab,Online Benefits,60+,Phone support,12.9,32.7,Yes,No,2.9,Advisor,Issue resolved after password guidance.
+SES-0285,2026-04-17,Copenhagen,Mobile Desk,Online Benefits,18–29,Own device,5.3,8.0,Yes,No,4.2,Librarian,The form was not easy to find.
+SES-0286,2026-04-22,Aalborg,Mobile Desk,Job Portal,30–44,Centre device,24.7,50.5,Yes,No,4.2,Volunteer,No follow-up needed after the session.
+SES-0287,2026-04-27,Odense,Mobile Desk,Job Portal,45–59,Own device,4.6,41.7,Yes,No,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0288,2026-04-05,Aarhus,Mobile Desk,Job Portal,60+,Centre device,19.7,18.5,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0289,2026-05-10,Copenhagen,Library Hub,Job Portal,18–29,Phone support,3.0,53.5,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0290,2026-05-15,Aalborg,Library Hub,Job Portal,30–44,Own device,0.0,78.9,Yes,No,4.2,Advisor,Issue resolved after password guidance.
+SES-0291,2026-05-20,Odense,Library Hub,Health Booking,45–59,Centre device,14.5,45.6,No,Yes,4.0,Librarian,The form was not easy to find.
+SES-0292,2026-05-25,Aarhus,Library Hub,Health Booking,60+,Phone support,10.1,53.1,Yes,No,3.9,Volunteer,No follow-up needed after the session.
+SES-0293,2026-05-03,Copenhagen,Citizen Centre,Health Booking,18–29,Own device,8.8,39.6,Yes,No,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0294,2026-05-08,Aalborg,Citizen Centre,Health Booking,30–44,Centre device,12.4,62.5,No,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0295,2026-05-13,Odense,Citizen Centre,Health Booking,45–59,Phone support,9.4,58.3,Yes,No,4.3,Volunteer,User needed clear steps for digital login.
+SES-0296,2026-05-18,Aarhus,Citizen Centre,Email & Documents,60+,Own device,13.5,55.5,Yes,No,3.8,Advisor,Issue resolved after password guidance.
+SES-0297,2026-05-23,Copenhagen,Community Lab,Email & Documents,18–29,Centre device,3.2,24.8,Yes,No,4.1,Librarian,The form was not easy to find.
+SES-0298,2026-05-01,Aalborg,Community Lab,Email & Documents,30–44,Own device,9.4,36.1,Yes,No,3.5,Volunteer,No follow-up needed after the session.
+SES-0299,2026-05-06,Odense,Community Lab,Email & Documents,45–59,Centre device,10.6,22.5,No,Yes,4.0,Advisor,Staff explained email attachments and document upload.
+SES-0300,2026-05-11,Aarhus,Community Lab,Email & Documents,60+,Phone support,16.4,42.5,No,Yes,3.1,Librarian,Connection failed and another visit was needed.
+SES-0301,2026-05-16,Copenhagen,Mobile Desk,Digital ID,18–29,Own device,0.0,38.2,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0302,2026-05-21,Aalborg,Mobile Desk,Digital ID,30–44,Centre device,8.9,33.9,Yes,No,3.9,Advisor,Issue resolved after password guidance.
+SES-0303,2026-05-26,Odense,Mobile Desk,Digital ID,45–59,Phone support,14.6,55.5,Yes,No,3.7,Librarian,The form was not easy to find.
+SES-0304,2026-05-04,Aarhus,Mobile Desk,Digital ID,60+,Own device,14.3,48.3,Yes,No,2.8,Volunteer,No follow-up needed after the session.
+SES-0305,2026-05-09,Copenhagen,Library Hub,Digital ID,18–29,Centre device,14.7,25.3,No,Yes,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0306,2026-05-14,Aalborg,Library Hub,Online Benefits,30–44,Phone support,7.8,33.4,Yes,No,4.2,Librarian,Connection failed and another visit was needed.
+SES-0307,2026-06-19,Odense,Library Hub,Online Benefits,45–59,Own device,7.9,39.2,Yes,No,3.9,Volunteer,User needed clear steps for digital login.
+SES-0308,2026-06-24,Aarhus,Library Hub,Online Benefits,60+,Centre device,17.8,46.5,Yes,No,3.9,Advisor,Issue resolved after password guidance.
+SES-0309,2026-06-02,Copenhagen,Citizen Centre,Online Benefits,18–29,Own device,11.4,39.5,Yes,No,3.9,Librarian,The form was not easy to find.
+SES-0310,2026-06-07,Aalborg,Citizen Centre,Online Benefits,30–44,Centre device,10.7,76.6,Yes,No,4.5,Volunteer,No follow-up needed after the session.
+SES-0311,2026-06-12,Odense,Citizen Centre,Job Portal,45–59,Phone support,17.4,37.9,Yes,No,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0312,2026-06-17,Aarhus,Citizen Centre,Job Portal,60+,Own device,17.0,34.7,Yes,No,5.0,Librarian,Connection failed and another visit was needed.
+SES-0313,2026-06-22,Copenhagen,Community Lab,Job Portal,18–29,Centre device,5.0,52.5,Yes,No,4.5,Volunteer,User needed clear steps for digital login.
+SES-0314,2026-06-27,Aalborg,Community Lab,Job Portal,30–44,Phone support,2.3,50.3,Yes,No,4.7,Advisor,Issue resolved after password guidance.
+SES-0315,2026-06-05,Odense,Community Lab,Job Portal,45–59,Own device,12.6,42.9,Yes,No,4.4,Librarian,The form was not easy to find.
+SES-0316,2026-06-10,Aarhus,Community Lab,Health Booking,60+,Centre device,15.8,64.7,Yes,No,4.2,Volunteer,No follow-up needed after the session.
+SES-0317,2026-06-15,Copenhagen,Mobile Desk,Health Booking,18–29,Phone support,12.9,45.7,Yes,No,4.5,Advisor,Staff explained email attachments and document upload.
+SES-0318,2026-06-20,Aalborg,Mobile Desk,Health Booking,30–44,Own device,23.8,45.6,Yes,No,3.6,Librarian,Connection failed and another visit was needed.
+SES-0319,2026-06-25,Odense,Mobile Desk,Health Booking,45–59,Centre device,14.3,50.5,Yes,No,4.5,Volunteer,User needed clear steps for digital login.
+SES-0320,2026-06-03,Aarhus,Mobile Desk,Health Booking,60+,Own device,15.2,30.4,Yes,No,4.6,Advisor,Issue resolved after password guidance.
+SES-0321,2026-06-08,Copenhagen,Library Hub,Email & Documents,18–29,Centre device,1.9,27.5,Yes,No,4.5,Librarian,The form was not easy to find.
+SES-0322,2026-06-13,Aalborg,Library Hub,Email & Documents,30–44,Phone support,15.2,47.7,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0323,2026-06-18,Odense,Library Hub,Email & Documents,45–59,Own device,15.8,78.3,Yes,No,4.2,Advisor,Staff explained email attachments and document upload.
+SES-0324,2026-06-23,Aarhus,Library Hub,Email & Documents,60+,Centre device,17.6,44.7,Yes,No,3.4,Librarian,Connection failed and another visit was needed.
+SES-0325,2026-01-01,Copenhagen,Citizen Centre,Email & Documents,18–29,Phone support,15.8,8.0,No,Yes,3.5,Volunteer,User needed clear steps for digital login.
+SES-0326,2026-01-06,Aalborg,Citizen Centre,Digital ID,30–44,Own device,5.2,33.6,Yes,No,4.4,Advisor,Issue resolved after password guidance.
+SES-0327,2026-01-11,Odense,Citizen Centre,Digital ID,45–59,Centre device,18.9,23.3,No,Yes,3.5,Librarian,The form was not easy to find.
+SES-0328,2026-01-16,Aarhus,Citizen Centre,Digital ID,60+,Phone support,14.9,47.6,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0329,2026-01-21,Copenhagen,Community Lab,Digital ID,18–29,Own device,10.9,58.6,No,Yes,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0330,2026-01-26,Aalborg,Community Lab,Digital ID,30–44,Centre device,16.8,37.0,Yes,No,4.3,Librarian,Connection failed and another visit was needed.
+SES-0331,2026-01-04,Odense,Community Lab,Online Benefits,45–59,Own device,12.0,47.3,Yes,No,3.5,Volunteer,User needed clear steps for digital login.
+SES-0332,2026-01-09,Aarhus,Community Lab,Online Benefits,60+,Centre device,10.0,39.3,No,Yes,5.0,Advisor,Issue resolved after password guidance.
+SES-0333,2026-01-14,Copenhagen,Mobile Desk,Online Benefits,18–29,Phone support,11.7,45.3,Yes,No,3.7,Librarian,The form was not easy to find.
+SES-0334,2026-01-19,Aalborg,Mobile Desk,Online Benefits,30–44,Own device,7.6,31.2,Yes,No,4.1,Volunteer,No follow-up needed after the session.
+SES-0335,2026-01-24,Odense,Mobile Desk,Online Benefits,45–59,Centre device,22.9,37.2,Yes,No,3.1,Advisor,Staff explained email attachments and document upload.
+SES-0336,2026-01-02,Aarhus,Mobile Desk,Job Portal,60+,Phone support,17.8,37.0,Yes,No,3.6,Librarian,Connection failed and another visit was needed.
+SES-0337,2026-01-07,Copenhagen,Library Hub,Job Portal,18–29,Own device,7.2,12.9,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0338,2026-01-12,Aalborg,Library Hub,Job Portal,30–44,Centre device,20.4,44.9,No,No,3.9,Advisor,Issue resolved after password guidance.
+SES-0339,2026-01-17,Odense,Library Hub,Job Portal,45–59,Phone support,3.5,50.2,Yes,No,3.9,Librarian,The form was not easy to find.
+SES-0340,2026-01-22,Aarhus,Library Hub,Job Portal,60+,Own device,8.2,55.4,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0341,2026-01-27,Copenhagen,Citizen Centre,Health Booking,18–29,Centre device,11.6,54.9,No,Yes,4.3,Advisor,Staff explained email attachments and document upload.
+SES-0342,2026-01-05,Aalborg,Citizen Centre,Health Booking,30–44,Own device,12.7,22.2,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0343,2026-02-10,Odense,Citizen Centre,Health Booking,45–59,Centre device,12.9,23.5,No,Yes,4.0,Volunteer,User needed clear steps for digital login.
+SES-0344,2026-02-15,Aarhus,Citizen Centre,Health Booking,60+,Phone support,14.4,65.5,Yes,No,3.5,Advisor,Issue resolved after password guidance.
+SES-0345,2026-02-20,Copenhagen,Community Lab,Health Booking,18–29,Own device,25.1,37.9,Yes,No,4.0,Librarian,The form was not easy to find.
+SES-0346,2026-02-25,Aalborg,Community Lab,Email & Documents,30–44,Centre device,12.7,41.1,Yes,No,3.4,Volunteer,No follow-up needed after the session.
+SES-0347,2026-02-03,Odense,Community Lab,Email & Documents,45–59,Phone support,0.0,41.7,Yes,No,4.8,Advisor,Staff explained email attachments and document upload.
+SES-0348,2026-02-08,Aarhus,Community Lab,Email & Documents,60+,Own device,13.7,40.8,Yes,No,4.1,Librarian,Connection failed and another visit was needed.
+SES-0349,2026-02-13,Copenhagen,Mobile Desk,Email & Documents,18–29,Centre device,19.2,57.8,Yes,No,4.1,Volunteer,User needed clear steps for digital login.
+SES-0350,2026-02-18,Aalborg,Mobile Desk,Email & Documents,30–44,Phone support,0.0,42.0,No,No,4.8,Advisor,Issue resolved after password guidance.
+SES-0351,2026-02-23,Odense,Mobile Desk,Digital ID,45–59,Own device,23.9,31.0,No,Yes,3.3,Librarian,The form was not easy to find.
+SES-0352,2026-02-01,Aarhus,Mobile Desk,Digital ID,60+,Centre device,13.4,61.7,Yes,No,4.3,Volunteer,No follow-up needed after the session.
+SES-0353,2026-02-06,Copenhagen,Library Hub,Digital ID,18–29,Own device,0.0,41.8,Yes,No,4.7,Advisor,Staff explained email attachments and document upload.
+SES-0354,2026-02-11,Aalborg,Library Hub,Digital ID,30–44,Centre device,15.7,31.6,Yes,No,3.6,Librarian,Connection failed and another visit was needed.
+SES-0355,2026-02-16,Odense,Library Hub,Digital ID,45–59,Phone support,20.3,35.6,Yes,No,3.8,Volunteer,User needed clear steps for digital login.
+SES-0356,2026-02-21,Aarhus,Library Hub,Online Benefits,60+,Own device,15.7,66.1,Yes,No,3.5,Advisor,Issue resolved after password guidance.
+SES-0357,2026-02-26,Copenhagen,Citizen Centre,Online Benefits,18–29,Centre device,11.0,49.9,No,No,3.9,Librarian,The form was not easy to find.
+SES-0358,2026-02-04,Aalborg,Citizen Centre,Online Benefits,30–44,Phone support,13.0,61.6,Yes,No,4.5,Volunteer,No follow-up needed after the session.
+SES-0359,2026-02-09,Odense,Citizen Centre,Online Benefits,45–59,Own device,5.1,50.3,Yes,No,4.6,Advisor,Staff explained email attachments and document upload.
+SES-0360,2026-02-14,Aarhus,Citizen Centre,Online Benefits,60+,Centre device,13.1,58.3,Yes,No,4.1,Librarian,Connection failed and another visit was needed.
+SES-0361,2026-03-19,Copenhagen,Community Lab,Job Portal,18–29,Phone support,10.6,48.3,Yes,No,4.2,Volunteer,User needed clear steps for digital login.
+SES-0362,2026-03-24,Aalborg,Community Lab,Job Portal,30–44,Own device,25.5,65.5,No,Yes,2.5,Advisor,Issue resolved after password guidance.
+SES-0363,2026-03-02,Odense,Community Lab,Job Portal,45–59,Centre device,10.6,54.5,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0364,2026-03-07,Aarhus,Community Lab,Job Portal,60+,Own device,5.2,39.4,Yes,No,4.6,Volunteer,No follow-up needed after the session.
+SES-0365,2026-03-12,Copenhagen,Mobile Desk,Job Portal,18–29,Centre device,21.4,56.6,No,Yes,3.5,Advisor,Staff explained email attachments and document upload.
+SES-0366,2026-03-17,Aalborg,Mobile Desk,Health Booking,30–44,Phone support,10.8,47.6,Yes,No,3.4,Librarian,Connection failed and another visit was needed.
+SES-0367,2026-03-22,Odense,Mobile Desk,Health Booking,45–59,Own device,13.0,54.9,Yes,No,4.7,Volunteer,User needed clear steps for digital login.
+SES-0368,2026-03-27,Aarhus,Mobile Desk,Health Booking,60+,Centre device,18.2,47.2,No,No,3.4,Advisor,Issue resolved after password guidance.
+SES-0369,2026-03-05,Copenhagen,Library Hub,Health Booking,18–29,Phone support,22.0,28.6,No,Yes,3.2,Librarian,The form was not easy to find.
+SES-0370,2026-03-10,Aalborg,Library Hub,Health Booking,30–44,Own device,0.0,24.4,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0371,2026-03-15,Odense,Library Hub,Email & Documents,45–59,Centre device,5.6,31.0,No,Yes,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0372,2026-03-20,Aarhus,Library Hub,Email & Documents,60+,Phone support,9.3,30.6,Yes,No,4.5,Librarian,Connection failed and another visit was needed.
+SES-0373,2026-03-25,Copenhagen,Citizen Centre,Email & Documents,18–29,Own device,8.9,39.1,No,Yes,4.8,Volunteer,User needed clear steps for digital login.
+SES-0374,2026-03-03,Aalborg,Citizen Centre,Email & Documents,30–44,Centre device,23.0,44.4,Yes,No,2.9,Advisor,Issue resolved after password guidance.
+SES-0375,2026-03-08,Odense,Citizen Centre,Email & Documents,45–59,Own device,9.6,58.5,Yes,No,4.1,Librarian,The form was not easy to find.
+SES-0376,2026-03-13,Aarhus,Citizen Centre,Digital ID,60+,Centre device,11.5,44.7,Yes,No,4.1,Volunteer,No follow-up needed after the session.
+SES-0377,2026-03-18,Copenhagen,Community Lab,Digital ID,18–29,Phone support,25.2,48.8,Yes,No,3.8,Advisor,Staff explained email attachments and document upload.
+SES-0378,2026-03-23,Aalborg,Community Lab,Digital ID,30–44,Own device,19.9,63.7,Yes,No,4.6,Librarian,Connection failed and another visit was needed.
+SES-0379,2026-04-01,Odense,Community Lab,Digital ID,45–59,Centre device,14.5,16.6,No,No,2.9,Volunteer,User needed clear steps for digital login.
+SES-0380,2026-04-06,Aarhus,Community Lab,Digital ID,60+,Phone support,13.4,30.6,Yes,No,3.7,Advisor,Issue resolved after password guidance.
+SES-0381,2026-04-11,Copenhagen,Mobile Desk,Online Benefits,18–29,Own device,16.7,40.6,Yes,No,3.4,Librarian,The form was not easy to find.
+SES-0382,2026-04-16,Aalborg,Mobile Desk,Online Benefits,30–44,Centre device,12.7,40.2,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0383,2026-04-21,Odense,Mobile Desk,Online Benefits,45–59,Phone support,9.9,23.8,Yes,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0384,2026-04-26,Aarhus,Mobile Desk,Online Benefits,60+,Own device,0.9,43.9,No,Yes,4.5,Librarian,Connection failed and another visit was needed.
+SES-0385,2026-04-04,Copenhagen,Library Hub,Online Benefits,18–29,Centre device,15.9,28.3,Yes,No,3.8,Volunteer,User needed clear steps for digital login.
+SES-0386,2026-04-09,Aalborg,Library Hub,Job Portal,30–44,Own device,0.0,47.8,Yes,No,4.5,Advisor,Issue resolved after password guidance.
+SES-0387,2026-04-14,Odense,Library Hub,Job Portal,45–59,Centre device,10.4,31.3,Yes,No,4.3,Librarian,The form was not easy to find.
+SES-0388,2026-04-19,Aarhus,Library Hub,Job Portal,60+,Phone support,0.0,23.4,Yes,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0389,2026-04-24,Copenhagen,Citizen Centre,Job Portal,18–29,Own device,0.0,27.9,No,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0390,2026-04-02,Aalborg,Citizen Centre,Job Portal,30–44,Centre device,24.8,37.9,No,Yes,3.1,Librarian,Connection failed and another visit was needed.
+SES-0391,2026-04-07,Odense,Citizen Centre,Health Booking,45–59,Phone support,18.6,26.9,Yes,No,2.8,Volunteer,User needed clear steps for digital login.
+SES-0392,2026-04-12,Aarhus,Citizen Centre,Health Booking,60+,Own device,4.7,14.9,No,No,3.7,Advisor,Issue resolved after password guidance.
+SES-0393,2026-04-17,Copenhagen,Community Lab,Health Booking,18–29,Centre device,6.4,22.4,No,No,5.0,Librarian,The form was not easy to find.
+SES-0394,2026-04-22,Aalborg,Community Lab,Health Booking,30–44,Phone support,5.0,42.2,No,No,4.7,Volunteer,No follow-up needed after the session.
+SES-0395,2026-04-27,Odense,Community Lab,Health Booking,45–59,Own device,6.3,46.3,Yes,No,4.8,Advisor,Staff explained email attachments and document upload.
+SES-0396,2026-04-05,Aarhus,Community Lab,Email & Documents,60+,Centre device,15.4,51.4,No,No,3.6,Librarian,Connection failed and another visit was needed.
+SES-0397,2026-05-10,Copenhagen,Mobile Desk,Email & Documents,18–29,Own device,6.5,43.7,Yes,No,4.3,Volunteer,User needed clear steps for digital login.
+SES-0398,2026-05-15,Aalborg,Mobile Desk,Email & Documents,30–44,Centre device,22.0,25.6,Yes,No,4.0,Advisor,Issue resolved after password guidance.
+SES-0399,2026-05-20,Odense,Mobile Desk,Email & Documents,45–59,Phone support,7.8,43.4,Yes,No,4.9,Librarian,The form was not easy to find.
+SES-0400,2026-05-25,Aarhus,Mobile Desk,Email & Documents,60+,Own device,6.5,25.4,Yes,No,4.4,Volunteer,No follow-up needed after the session.
+SES-0401,2026-05-03,Copenhagen,Library Hub,Digital ID,18–29,Centre device,19.3,49.0,Yes,No,3.7,Advisor,Staff explained email attachments and document upload.
+SES-0402,2026-05-08,Aalborg,Library Hub,Digital ID,30–44,Phone support,12.4,41.1,Yes,No,4.2,Librarian,Connection failed and another visit was needed.
+SES-0403,2026-05-13,Odense,Library Hub,Digital ID,45–59,Own device,11.1,24.1,Yes,No,4.7,Volunteer,User needed clear steps for digital login.
+SES-0404,2026-05-18,Aarhus,Library Hub,Digital ID,60+,Centre device,14.0,33.1,Yes,No,4.4,Advisor,Issue resolved after password guidance.
+SES-0405,2026-05-23,Copenhagen,Citizen Centre,Digital ID,18–29,Phone support,25.3,56.6,Yes,No,3.0,Librarian,The form was not easy to find.
+SES-0406,2026-05-01,Aalborg,Citizen Centre,Online Benefits,30–44,Own device,9.9,56.6,No,Yes,3.4,Volunteer,No follow-up needed after the session.
+SES-0407,2026-05-06,Odense,Citizen Centre,Online Benefits,45–59,Centre device,18.9,8.0,Yes,No,3.3,Advisor,Staff explained email attachments and document upload.
+SES-0408,2026-05-11,Aarhus,Citizen Centre,Online Benefits,60+,Own device,17.6,59.6,Yes,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0409,2026-05-16,Copenhagen,Community Lab,Online Benefits,18–29,Centre device,11.7,37.0,Yes,No,4.1,Volunteer,User needed clear steps for digital login.
+SES-0410,2026-05-21,Aalborg,Community Lab,Online Benefits,30–44,Phone support,25.7,24.7,Yes,No,3.4,Advisor,Issue resolved after password guidance.
+SES-0411,2026-05-26,Odense,Community Lab,Job Portal,45–59,Own device,11.3,37.1,Yes,No,4.2,Librarian,The form was not easy to find.
+SES-0412,2026-05-04,Aarhus,Community Lab,Job Portal,60+,Centre device,22.1,54.0,Yes,No,3.8,Volunteer,No follow-up needed after the session.
+SES-0413,2026-05-09,Copenhagen,Mobile Desk,Job Portal,18–29,Phone support,0.8,94.1,Yes,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0414,2026-05-14,Aalborg,Mobile Desk,Job Portal,30–44,Own device,11.0,38.7,Yes,No,4.1,Librarian,Connection failed and another visit was needed.
+SES-0415,2026-06-19,Odense,Mobile Desk,Job Portal,45–59,Centre device,22.4,67.9,Yes,No,3.2,Volunteer,User needed clear steps for digital login.
+SES-0416,2026-06-24,Aarhus,Mobile Desk,Health Booking,60+,Phone support,0.5,69.4,Yes,No,5.0,Advisor,Issue resolved after password guidance.
+SES-0417,2026-06-02,Copenhagen,Library Hub,Health Booking,18–29,Own device,0.0,57.9,Yes,No,4.0,Librarian,The form was not easy to find.
+SES-0418,2026-06-07,Aalborg,Library Hub,Health Booking,30–44,Centre device,25.7,36.0,Yes,No,2.8,Volunteer,No follow-up needed after the session.
+SES-0419,2026-06-12,Odense,Library Hub,Health Booking,45–59,Own device,19.0,23.4,No,Yes,3.2,Advisor,Staff explained email attachments and document upload.
+SES-0420,2026-06-17,Aarhus,Library Hub,Health Booking,60+,Centre device,12.8,32.1,No,Yes,4.0,Librarian,Connection failed and another visit was needed.
+SES-0421,2026-06-22,Copenhagen,Citizen Centre,Email & Documents,18–29,Phone support,0.0,21.4,No,Yes,4.7,Volunteer,User needed clear steps for digital login.
+SES-0422,2026-06-27,Aalborg,Citizen Centre,Email & Documents,30–44,Own device,1.4,36.9,Yes,No,4.1,Advisor,Issue resolved after password guidance.
+SES-0423,2026-06-05,Odense,Citizen Centre,Email & Documents,45–59,Centre device,27.7,37.6,Yes,No,2.8,Librarian,The form was not easy to find.
+SES-0424,2026-06-10,Aarhus,Citizen Centre,Email & Documents,60+,Phone support,11.6,43.4,Yes,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0425,2026-06-15,Copenhagen,Community Lab,Email & Documents,18–29,Own device,0.0,39.1,Yes,No,3.9,Advisor,Staff explained email attachments and document upload.
+SES-0426,2026-06-20,Aalborg,Community Lab,Digital ID,30–44,Centre device,9.4,45.6,Yes,No,4.4,Librarian,Connection failed and another visit was needed.
+SES-0427,2026-06-25,Odense,Community Lab,Digital ID,45–59,Phone support,9.9,45.3,Yes,No,4.1,Volunteer,User needed clear steps for digital login.
+SES-0428,2026-06-03,Aarhus,Community Lab,Digital ID,60+,Own device,14.9,57.4,Yes,No,3.6,Advisor,Issue resolved after password guidance.
+SES-0429,2026-06-08,Copenhagen,Mobile Desk,Digital ID,18–29,Centre device,22.7,36.9,No,Yes,3.9,Librarian,The form was not easy to find.
+SES-0430,2026-06-13,Aalborg,Mobile Desk,Digital ID,30–44,Own device,0.0,31.4,No,No,5.0,Volunteer,No follow-up needed after the session.
+SES-0431,2026-06-18,Odense,Mobile Desk,Online Benefits,45–59,Centre device,15.2,15.0,Yes,No,4.3,Advisor,Staff explained email attachments and document upload.
+SES-0432,2026-06-23,Aarhus,Mobile Desk,Online Benefits,60+,Phone support,4.8,48.7,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0433,2026-01-01,Copenhagen,Library Hub,Online Benefits,18–29,Own device,21.1,33.4,Yes,No,3.8,Volunteer,User needed clear steps for digital login.
+SES-0434,2026-01-06,Aalborg,Library Hub,Online Benefits,30–44,Centre device,3.1,55.4,Yes,No,4.3,Advisor,Issue resolved after password guidance.
+SES-0435,2026-01-11,Odense,Library Hub,Online Benefits,45–59,Phone support,16.7,54.6,Yes,No,4.4,Librarian,The form was not easy to find.
+SES-0436,2026-01-16,Aarhus,Library Hub,Job Portal,60+,Own device,2.6,50.8,Yes,No,3.7,Volunteer,No follow-up needed after the session.
+SES-0437,2026-01-21,Copenhagen,Citizen Centre,Job Portal,18–29,Centre device,13.2,35.1,Yes,No,3.7,Advisor,Staff explained email attachments and document upload.
+SES-0438,2026-01-26,Aalborg,Citizen Centre,Job Portal,30–44,Phone support,14.0,38.9,Yes,No,2.9,Librarian,Connection failed and another visit was needed.
+SES-0439,2026-01-04,Odense,Citizen Centre,Job Portal,45–59,Own device,16.0,44.6,Yes,No,3.7,Volunteer,User needed clear steps for digital login.
+SES-0440,2026-01-09,Aarhus,Citizen Centre,Job Portal,60+,Centre device,13.1,31.9,Yes,No,4.2,Advisor,Issue resolved after password guidance.
+SES-0441,2026-01-14,Copenhagen,Community Lab,Health Booking,18–29,Own device,8.1,46.5,No,No,3.5,Librarian,The form was not easy to find.
+SES-0442,2026-01-19,Aalborg,Community Lab,Health Booking,30–44,Centre device,17.6,43.8,Yes,No,3.7,Volunteer,No follow-up needed after the session.
+SES-0443,2026-01-24,Odense,Community Lab,Health Booking,45–59,Phone support,24.4,19.2,Yes,No,3.4,Advisor,Staff explained email attachments and document upload.
+SES-0444,2026-01-02,Aarhus,Community Lab,Health Booking,60+,Own device,6.9,64.0,Yes,No,4.6,Librarian,Connection failed and another visit was needed.
+SES-0445,2026-01-07,Copenhagen,Mobile Desk,Health Booking,18–29,Centre device,8.0,40.0,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0446,2026-01-12,Aalborg,Mobile Desk,Email & Documents,30–44,Phone support,19.6,44.5,Yes,No,3.0,Advisor,Issue resolved after password guidance.
+SES-0447,2026-01-17,Odense,Mobile Desk,Email & Documents,45–59,Own device,6.3,31.7,Yes,No,4.3,Librarian,The form was not easy to find.
+SES-0448,2026-01-22,Aarhus,Mobile Desk,Email & Documents,60+,Centre device,15.6,35.2,Yes,No,4.2,Volunteer,No follow-up needed after the session.
+SES-0449,2026-01-27,Copenhagen,Library Hub,Email & Documents,18–29,Phone support,6.2,41.9,No,Yes,4.4,Advisor,Staff explained email attachments and document upload.
+SES-0450,2026-01-05,Aalborg,Library Hub,Email & Documents,30–44,Own device,1.4,18.3,Yes,No,4.6,Librarian,Connection failed and another visit was needed.
+SES-0451,2026-02-10,Odense,Library Hub,Digital ID,45–59,Centre device,20.5,20.1,Yes,No,3.7,Volunteer,User needed clear steps for digital login.
+SES-0452,2026-02-15,Aarhus,Library Hub,Digital ID,60+,Own device,0.0,39.1,Yes,No,4.8,Advisor,Issue resolved after password guidance.
+SES-0453,2026-02-20,Copenhagen,Citizen Centre,Digital ID,18–29,Centre device,21.4,34.8,Yes,No,3.3,Librarian,The form was not easy to find.
+SES-0454,2026-02-25,Aalborg,Citizen Centre,Digital ID,30–44,Phone support,19.3,47.1,Yes,No,3.6,Volunteer,No follow-up needed after the session.
+SES-0455,2026-02-03,Odense,Citizen Centre,Digital ID,45–59,Own device,0.0,34.9,Yes,No,4.1,Advisor,Staff explained email attachments and document upload.
+SES-0456,2026-02-08,Aarhus,Citizen Centre,Online Benefits,60+,Centre device,16.7,21.6,No,Yes,2.8,Librarian,Connection failed and another visit was needed.
+SES-0457,2026-02-13,Copenhagen,Community Lab,Online Benefits,18–29,Phone support,28.2,55.1,Yes,No,4.2,Volunteer,User needed clear steps for digital login.
+SES-0458,2026-02-18,Aalborg,Community Lab,Online Benefits,30–44,Own device,3.6,24.7,Yes,No,4.0,Advisor,Issue resolved after password guidance.
+SES-0459,2026-02-23,Odense,Community Lab,Online Benefits,45–59,Centre device,13.8,12.5,Yes,No,4.1,Librarian,The form was not easy to find.
+SES-0460,2026-02-01,Aarhus,Community Lab,Online Benefits,60+,Phone support,3.3,29.1,Yes,No,4.5,Volunteer,No follow-up needed after the session.
+SES-0461,2026-02-06,Copenhagen,Mobile Desk,Job Portal,18–29,Own device,4.8,33.5,No,Yes,4.7,Advisor,Staff explained email attachments and document upload.
+SES-0462,2026-02-11,Aalborg,Mobile Desk,Job Portal,30–44,Centre device,8.2,64.4,Yes,No,5.0,Librarian,Connection failed and another visit was needed.
+SES-0463,2026-02-16,Odense,Mobile Desk,Job Portal,45–59,Own device,9.6,29.1,Yes,No,4.4,Volunteer,User needed clear steps for digital login.
+SES-0464,2026-02-21,Aarhus,Mobile Desk,Job Portal,60+,Centre device,33.5,34.5,Yes,No,2.9,Advisor,Issue resolved after password guidance.
+SES-0465,2026-02-26,Copenhagen,Library Hub,Job Portal,18–29,Phone support,14.3,56.9,Yes,No,4.2,Librarian,The form was not easy to find.
+SES-0466,2026-02-04,Aalborg,Library Hub,Health Booking,30–44,Own device,20.9,56.0,Yes,No,3.3,Volunteer,No follow-up needed after the session.
+SES-0467,2026-02-09,Odense,Library Hub,Health Booking,45–59,Centre device,16.3,31.7,Yes,No,3.1,Advisor,Staff explained email attachments and document upload.
+SES-0468,2026-02-14,Aarhus,Library Hub,Health Booking,60+,Phone support,18.6,49.1,No,Yes,3.8,Librarian,Connection failed and another visit was needed.
+SES-0469,2026-03-19,Copenhagen,Citizen Centre,Health Booking,18–29,Own device,0.0,53.6,Yes,No,4.7,Volunteer,User needed clear steps for digital login.
+SES-0470,2026-03-24,Aalborg,Citizen Centre,Health Booking,30–44,Centre device,15.1,31.7,No,No,3.9,Advisor,Issue resolved after password guidance.
+SES-0471,2026-03-02,Odense,Citizen Centre,Email & Documents,45–59,Phone support,13.3,33.6,Yes,No,4.5,Librarian,The form was not easy to find.
+SES-0472,2026-03-07,Aarhus,Citizen Centre,Email & Documents,60+,Own device,4.7,40.2,Yes,No,4.7,Volunteer,No follow-up needed after the session.
+SES-0473,2026-03-12,Copenhagen,Community Lab,Email & Documents,18–29,Centre device,11.7,34.2,Yes,No,5.0,Advisor,Staff explained email attachments and document upload.
+SES-0474,2026-03-17,Aalborg,Community Lab,Email & Documents,30–44,Own device,0.0,29.2,No,No,3.8,Librarian,Connection failed and another visit was needed.
+SES-0475,2026-03-22,Odense,Community Lab,Email & Documents,45–59,Centre device,19.9,48.8,Yes,No,3.6,Volunteer,User needed clear steps for digital login.
+SES-0476,2026-03-27,Aarhus,Community Lab,Digital ID,60+,Phone support,15.4,22.5,Yes,No,3.7,Advisor,Issue resolved after password guidance.
+SES-0477,2026-03-05,Copenhagen,Mobile Desk,Digital ID,18–29,Own device,9.9,41.8,Yes,No,4.5,Librarian,The form was not easy to find.
+SES-0478,2026-03-10,Aalborg,Mobile Desk,Digital ID,30–44,Centre device,17.5,29.7,Yes,No,4.3,Volunteer,No follow-up needed after the session.
+SES-0479,2026-03-15,Odense,Mobile Desk,Digital ID,45–59,Phone support,9.3,30.6,Yes,No,4.4,Advisor,Staff explained email attachments and document upload.
+SES-0480,2026-03-20,Aarhus,Mobile Desk,Digital ID,60+,Own device,11.9,38.8,Yes,No,3.6,Librarian,Connection failed and another visit was needed.
+SES-0481,2026-03-25,Copenhagen,Library Hub,Online Benefits,18–29,Centre device,10.4,38.8,Yes,No,4.2,Volunteer,User needed clear steps for digital login.
+SES-0482,2026-03-03,Aalborg,Library Hub,Online Benefits,30–44,Phone support,9.0,20.8,Yes,No,4.3,Advisor,Issue resolved after password guidance.
+SES-0483,2026-03-08,Odense,Library Hub,Online Benefits,45–59,Own device,10.9,21.7,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0484,2026-03-13,Aarhus,Library Hub,Online Benefits,60+,Centre device,22.5,59.6,No,No,3.2,Volunteer,No follow-up needed after the session.
+SES-0485,2026-03-18,Copenhagen,Citizen Centre,Online Benefits,18–29,Own device,0.8,14.9,Yes,No,4.0,Advisor,Staff explained email attachments and document upload.
+SES-0486,2026-03-23,Aalborg,Citizen Centre,Job Portal,30–44,Centre device,6.8,72.8,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0487,2026-04-01,Odense,Citizen Centre,Job Portal,45–59,Phone support,28.6,53.5,Yes,No,3.1,Volunteer,User needed clear steps for digital login.
+SES-0488,2026-04-06,Aarhus,Citizen Centre,Job Portal,60+,Own device,12.8,25.8,Yes,No,4.8,Advisor,Issue resolved after password guidance.
+SES-0489,2026-04-11,Copenhagen,Community Lab,Job Portal,18–29,Centre device,11.5,36.2,Yes,No,3.8,Librarian,The form was not easy to find.
+SES-0490,2026-04-16,Aalborg,Community Lab,Job Portal,30–44,Phone support,20.7,43.5,Yes,No,4.0,Volunteer,No follow-up needed after the session.
+SES-0491,2026-04-21,Odense,Community Lab,Health Booking,45–59,Own device,10.5,55.4,Yes,No,4.8,Advisor,Staff explained email attachments and document upload.
+SES-0492,2026-04-26,Aarhus,Community Lab,Health Booking,60+,Centre device,21.3,46.5,Yes,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0493,2026-04-04,Copenhagen,Mobile Desk,Health Booking,18–29,Phone support,8.3,25.9,Yes,No,4.7,Volunteer,User needed clear steps for digital login.
+SES-0494,2026-04-09,Aalborg,Mobile Desk,Health Booking,30–44,Own device,4.5,65.8,No,Yes,3.6,Advisor,Issue resolved after password guidance.
+SES-0495,2026-04-14,Odense,Mobile Desk,Health Booking,45–59,Centre device,21.5,60.4,No,Yes,4.4,Librarian,The form was not easy to find.
+SES-0496,2026-04-19,Aarhus,Mobile Desk,Email & Documents,60+,Own device,0.0,52.7,No,Yes,4.8,Volunteer,No follow-up needed after the session.
+SES-0497,2026-04-24,Copenhagen,Library Hub,Email & Documents,18–29,Centre device,27.3,28.3,Yes,No,2.6,Advisor,Staff explained email attachments and document upload.
+SES-0498,2026-04-02,Aalborg,Library Hub,Email & Documents,30–44,Phone support,6.7,49.6,Yes,No,4.7,Librarian,Connection failed and another visit was needed.
+SES-0499,2026-04-07,Odense,Library Hub,Email & Documents,45–59,Own device,12.1,45.1,Yes,No,4.1,Volunteer,User needed clear steps for digital login.
+SES-0500,2026-04-12,Aarhus,Library Hub,Email & Documents,60+,Centre device,21.3,35.4,No,No,3.5,Advisor,Issue resolved after password guidance.
+SES-0501,2026-04-17,Copenhagen,Citizen Centre,Digital ID,18–29,Phone support,5.9,39.3,No,Yes,5.0,Librarian,The form was not easy to find.
+SES-0502,2026-04-22,Aalborg,Citizen Centre,Digital ID,30–44,Own device,9.2,37.2,Yes,No,4.1,Volunteer,No follow-up needed after the session.
+SES-0503,2026-04-27,Odense,Citizen Centre,Digital ID,45–59,Centre device,2.4,24.6,No,Yes,4.4,Advisor,Staff explained email attachments and document upload.
+SES-0504,2026-04-05,Aarhus,Citizen Centre,Digital ID,60+,Phone support,20.1,29.2,Yes,No,3.8,Librarian,Connection failed and another visit was needed.
+SES-0505,2026-05-10,Copenhagen,Community Lab,Digital ID,18–29,Own device,2.9,47.3,No,Yes,4.6,Volunteer,User needed clear steps for digital login.
+SES-0506,2026-05-15,Aalborg,Community Lab,Online Benefits,30–44,Centre device,12.0,35.3,No,No,3.9,Advisor,Issue resolved after password guidance.
+SES-0507,2026-05-20,Odense,Community Lab,Online Benefits,45–59,Own device,18.1,56.0,No,Yes,3.2,Librarian,The form was not easy to find.
+SES-0508,2026-05-25,Aarhus,Community Lab,Online Benefits,60+,Centre device,31.7,32.3,Yes,No,3.1,Volunteer,No follow-up needed after the session.
+SES-0509,2026-05-03,Copenhagen,Mobile Desk,Online Benefits,18–29,Phone support,7.1,42.2,Yes,No,4.8,Advisor,Staff explained email attachments and document upload.
+SES-0510,2026-05-08,Aalborg,Mobile Desk,Online Benefits,30–44,Own device,11.7,55.6,No,No,3.9,Librarian,Connection failed and another visit was needed.
+SES-0511,2026-05-13,Odense,Mobile Desk,Job Portal,45–59,Centre device,11.5,48.4,No,Yes,4.7,Volunteer,User needed clear steps for digital login.
+SES-0512,2026-05-18,Aarhus,Mobile Desk,Job Portal,60+,Phone support,8.0,32.8,Yes,No,5.0,Advisor,Issue resolved after password guidance.
+SES-0513,2026-05-23,Copenhagen,Library Hub,Job Portal,18–29,Own device,17.7,46.5,Yes,No,3.3,Librarian,The form was not easy to find.
+SES-0514,2026-05-01,Aalborg,Library Hub,Job Portal,30–44,Centre device,16.8,45.2,Yes,No,4.3,Volunteer,No follow-up needed after the session.
+SES-0515,2026-05-06,Odense,Library Hub,Job Portal,45–59,Phone support,13.1,44.0,Yes,No,3.3,Advisor,Staff explained email attachments and document upload.
+SES-0516,2026-05-11,Aarhus,Library Hub,Health Booking,60+,Own device,19.1,71.3,Yes,No,3.4,Librarian,Connection failed and another visit was needed.
+SES-0517,2026-05-16,Copenhagen,Citizen Centre,Health Booking,18–29,Centre device,9.7,61.3,Yes,No,4.7,Volunteer,User needed clear steps for digital login.
+SES-0518,2026-05-21,Aalborg,Citizen Centre,Health Booking,30–44,Own device,0.0,37.6,Yes,No,4.0,Advisor,Issue resolved after password guidance.
+SES-0519,2026-05-26,Odense,Citizen Centre,Health Booking,45–59,Centre device,14.6,41.3,No,Yes,4.0,Librarian,The form was not easy to find.
+SES-0520,2026-05-04,Aarhus,Citizen Centre,Health Booking,60+,Phone support,20.1,69.4,Yes,No,4.2,Volunteer,No follow-up needed after the session.
+SES-0521,2026-05-09,Copenhagen,Community Lab,Email & Documents,18–29,Own device,0.1,26.2,Yes,No,4.7,Advisor,Staff explained email attachments and document upload.
+SES-0522,2026-05-14,Aalborg,Community Lab,Email & Documents,30–44,Centre device,6.8,58.5,Yes,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0523,2026-06-19,Odense,Community Lab,Email & Documents,45–59,Phone support,11.2,31.1,Yes,No,4.0,Volunteer,User needed clear steps for digital login.
+SES-0524,2026-06-24,Aarhus,Community Lab,Email & Documents,60+,Own device,4.6,34.6,No,No,4.4,Advisor,Issue resolved after password guidance.
+SES-0525,2026-06-02,Copenhagen,Mobile Desk,Email & Documents,18–29,Centre device,13.2,11.9,Yes,No,4.8,Librarian,The form was not easy to find.
+SES-0526,2026-06-07,Aalborg,Mobile Desk,Digital ID,30–44,Phone support,13.4,42.0,Yes,No,3.7,Volunteer,No follow-up needed after the session.
+SES-0527,2026-06-12,Odense,Mobile Desk,Digital ID,45–59,Own device,9.8,22.7,Yes,No,3.4,Advisor,Staff explained email attachments and document upload.
+SES-0528,2026-06-17,Aarhus,Mobile Desk,Digital ID,60+,Centre device,15.3,35.9,Yes,No,3.5,Librarian,Connection failed and another visit was needed.
+SES-0529,2026-06-22,Copenhagen,Library Hub,Digital ID,18–29,Own device,0.0,22.8,Yes,No,3.9,Volunteer,User needed clear steps for digital login.
+SES-0530,2026-06-27,Aalborg,Library Hub,Digital ID,30–44,Centre device,12.3,44.8,Yes,No,3.8,Advisor,Issue resolved after password guidance.
+SES-0531,2026-06-05,Odense,Library Hub,Online Benefits,45–59,Phone support,5.2,15.7,Yes,No,5.0,Librarian,The form was not easy to find.
+SES-0532,2026-06-10,Aarhus,Library Hub,Online Benefits,60+,Own device,4.5,61.4,Yes,No,4.3,Volunteer,No follow-up needed after the session.
+SES-0533,2026-06-15,Copenhagen,Citizen Centre,Online Benefits,18–29,Centre device,21.0,49.3,Yes,No,3.6,Advisor,Staff explained email attachments and document upload.
+SES-0534,2026-06-20,Aalborg,Citizen Centre,Online Benefits,30–44,Phone support,0.0,56.7,No,No,4.8,Librarian,Connection failed and another visit was needed.
+SES-0535,2026-06-25,Odense,Citizen Centre,Online Benefits,45–59,Own device,8.5,53.3,No,No,4.2,Volunteer,User needed clear steps for digital login.
+SES-0536,2026-06-03,Aarhus,Citizen Centre,Job Portal,60+,Centre device,8.6,33.3,Yes,No,4.1,Advisor,Issue resolved after password guidance.
+SES-0537,2026-06-08,Copenhagen,Community Lab,Job Portal,18–29,Phone support,6.5,56.1,No,Yes,4.9,Librarian,The form was not easy to find.
+SES-0009,2026-01-14,Copenhagen,Community Lab,Online Benefits,18–29,Phone support,15.2,15.7,Yes,No,3.2,Librarian,The form was not easy to find.
+SES-0181,2026-05-10,Copenhagen,Citizen Centre,Online Benefits,18–29,Centre device,5.5,55.9,Yes,No,5.0,Volunteer,User needed clear steps for digital login.
+SES-0401,2026-05-03,Copenhagen,Library Hub,Digital ID,18–29,Centre device,19.3,49.0,Yes,No,3.7,Advisor,Staff explained email attachments and document upload.

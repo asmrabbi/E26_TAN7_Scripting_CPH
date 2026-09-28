@@ -1,0 +1,561 @@
+request_id,city,service_type,channel,opened_date,closed_date,status,priority,resolution_hours,satisfaction_score,repeat_contact,feedback
+REQ-0001,Copenhagen,Housing Advice,Digital,2026-01-01,,Open,Low,8.2,4.2,No,The guidance was clear and helpful.
+REQ-0002,Aalborg,Housing Advice,Phone,2026-01-08,2026-01-09,Closed,Normal,32.8,3.0,Yes,The wait was not long.
+REQ-0003,Odense,Housing Advice,In Person,2026-01-15,2026-01-16,Closed,High,41.0,3.2,Yes,The form was difficult but staff were helpful.
+REQ-0004,Aarhus,Housing Advice,Digital,2026-01-22,2026-01-23,Closed,Low,34.9,2.4,Yes,Quick response and clear information.
+REQ-0005,Copenhagen,Waste Collection,Phone,2026-01-02,2026-01-03,Closed,Normal,31.4,4.2,No,I could not understand the online instructions.
+REQ-0006,Aalborg,Waste Collection,In Person,2026-01-09,2026-01-10,Closed,High,35.9,3.0,No,Friendly service but the process was slow.
+REQ-0007, copenhagen ,Waste Collection,Digital,2026-01-16,2026-01-17,Closed,Low,37.2,3.3,No,No problem after the staff explained the next step.
+REQ-0008,Aarhus,Waste Collection,In Person,2026-01-23,2026-01-25,Closed,Normal,47.7,3.0,No,The issue was resolved quickly.
+REQ-0009,Copenhagen,Citizen ID,Digital,2026-01-03,2026-01-03,Closed,High,18.5,4.1,No,The guidance was clear and helpful.
+REQ-0010,Aalborg,citizen-id,Phone,2026-01-10,,Open,Low,22.8,3.6,No,The wait was not long.
+REQ-0011,Odense,Citizen ID,In Person,2026-01-17,2026-01-18,Closed,Normal,29.1,3.3,Yes,
+REQ-0012,Aarhus,Citizen ID,Digital,2026-01-24,2026-01-24,Closed,High,12.5,4.5,No,Quick response and clear information.
+REQ-0013,Copenhagen,Parking,Phone,2026-01-04,2026-01-05,Closed,Low,27.4,4.0,No,I could not understand the online instructions.
+REQ-0014,Aalborg,Parking,In Person,2026-01-11,2026-01-12,Closed,Normal,44.1,3.0,Yes,Friendly service but the process was slow.
+REQ-0015,Odense,Parking,Phone,2026-01-18,2026-01-19,Closed,High,29.4,3.4,Yes,No problem after the staff explained the next step.
+REQ-0016,Aarhus,Parking,In Person,2026-01-25,2026-01-26,Closed,Low,24.9,3.5,No,The issue was resolved quickly.
+REQ-0017,Copenhagen,Family Support,Digital,2026-01-05,2026-01-05,Closed,Normal,16.0,3.9,No,The guidance was clear and helpful.
+REQ-0017,Aalborg,Family Support,Phone,2026-01-12,2026-01-13,Closed,High,30.1,3.5,No,The wait was not long.
+REQ-0019,Odense,Family Support,In Person,2026-01-19,,Open,Low,48.3,1.8,Yes,The form was difficult but staff were helpful.
+REQ-0020,CPH,Family Support,Digital,2026-01-26,2026-01-27,Closed,Normal,30.1,3.9,Yes,Quick response and clear information.
+REQ-0021,Copenhagen,Housing Advice,Phone,2026-02-06,2026-02-07,Closed,High,31.3,4.2,No,I could not understand the online instructions.
+REQ-0022,Aalborg,Housing Advice,in-person,2026-02-13,2026-02-13,Closed,Low,2.8,4.7,No,Friendly service but the process was slow.
+REQ-0023,Odense,Housing Advice,Phone,2026-02-20,2026-02-21,Closed,Normal,23.9,3.7,No,No problem after the staff explained the next step.
+REQ-0024,Aarhus,Housing Advice,In Person,2026-02-27,2026-02-28,Closed,High,35.5,2.6,No,The issue was resolved quickly.
+REQ-0025,Copenhagen,Waste Collection,Digital,2026-02-07,2026-02-07,Closed,Low,22.0,3.4,No,The guidance was clear and helpful.
+REQ-0026,Aalborg,Waste Collection,Phone,2026-02-14,2026-02-15,Closed,Normal,38.9,3.6,No,The wait was not long.
+REQ-0027,Odense,Waste Collection,In Person,2026-02-21,2026-02-22,Closed,High,30.4,4.3,No,The form was difficult but staff were helpful.
+REQ-0028,Aarhus,Waste Collection,Digital,2026-02-01,,Open,Low,27.4,3.6,No,Quick response and clear information.
+REQ-0029,Copenhagen,Citizen ID,In Person,2026-02-30,2026-02-09,Closed,Normal,37.5,2.7,Yes,I could not understand the online instructions.
+REQ-0030,Aalborg,Citizen ID,Digital,2026-02-15,2025-12-31,Closed,High,44.8,3.3,Yes,Friendly service but the process was slow.
+REQ-0031,Odense,Citizen ID,Phone,2026-02-22,,Closed,Low,22.1,2.9,No,No problem after the staff explained the next step.
+REQ-0032,Ålborg,Citizen ID,In Person,2026-02-02,2026-02-03,Closed,Normal,43.7,2.2,No,The issue was resolved quickly.
+REQ-0033,Copenhagen,Parking,Digital,2026-02-09,2026-02-09,Closed,High,22.5,4.2,No,The guidance was clear and helpful.
+REQ-0034,Aalborg,Parking,Phone,2026-02-16,2026-02-16,Closed,Low,22.1,4.4,No,The wait was not long.
+REQ-0035,Odense,Parking,In Person,2026-02-23,2026-02-24,Closed,Normal,46.3,3.2,No,The form was difficult but staff were helpful.
+REQ-0036,Aarhus,Parking,Phone,2026-02-03,2026-02-03,Closed,High,20.6,3.8,No,Quick response and clear information.
+REQ-0037,Copenhagen,Family Support,In Person,2026-02-10,,Open,Low,36.3,2.9,Yes,I could not understand the online instructions.
+REQ-0038,Aalborg,Family Support,Digital,2026-02-17,2026-02-17,Closed,Normal,12.7,4.6,Yes,Friendly service but the process was slow.
+REQ-0039,Odense,Family Support,Phone,2026-02-24,2026-02-25,Closed,High,26.5,3.2,Yes,No problem after the staff explained the next step.
+REQ-0040,Aarhus,Family Support,In Person,2026-02-04,2026-02-04,Closed,Low,21.1,3.6,No,The issue was resolved quickly.
+REQ-0041,Copenhagen,Housing Advice,Digital,2026-03-11,2026-03-12,Closed,Normal,29.3,3.4,No,The guidance was clear and helpful.
+REQ-0042,Aalborg,Housing Advice,Phone,2026-03-18,2026-03-19,Closed,High,unknown,3.6,Yes,The wait was not long.
+REQ-0043,Odense,Housing Advice,Digital,2026-03-25,2026-03-25,Closed,Low,-8,4.8,No,The form was difficult but staff were helpful.
+REQ-0044,Aarhus,Housing Advice,Phone,2026-03-05,2026-03-06,Closed,Normal,35.7,7.0,No,Quick response and clear information.
+REQ-0045,Copenhagen,Waste Collection,In Person,2026-03-12,2026-03-13,Closed,High,39.5,2.9,Y,I could not understand the online instructions.
+REQ-0046,Aalborg,Waste Collection,Digital,2026-03-19,,Open,Low,34.1,3.1,No,Friendly service but the process was slow.
+REQ-0047,Odense,Waste Collection,Phone,2026-03-26,2026-03-27,Closed,Normal,25.4,4.0,No,No problem after the staff explained the next step.
+REQ-0048,Aarhus,Waste Collection,In Person,2026-03-06,2026-03-07,Closed,High,35.4,2.5,Yes,The issue was resolved quickly.
+REQ-0049,Copenhagen,Citizen ID,Digital,2026-03-13,2026-03-13,Closed,Low,10.2,4.4,No,The guidance was clear and helpful.
+REQ-0050,Aalborg,Citizen ID,In Person,2026-03-20,2026-03-21,Closed,Normal,27.5,4.7,No,The wait was not long.
+REQ-0051,Odense,Citizen ID,Digital,2026-03-27,2026-03-27,Closed,High,17.7,4.0,No,The form was difficult but staff were helpful.
+REQ-0052,Aarhus,Citizen ID,Phone,2026-03-07,2026-03-08,Closed,Low,33.9,2.6,No,Quick response and clear information.
+REQ-0053,Copenhagen,Parking,In Person,2026-03-14,2026-03-15,Closed,Normal,24.1,3.6,No,I could not understand the online instructions.
+REQ-0054,Aalborg,Parking,Digital,2026-03-21,2026-03-21,Closed,High,6.3,5.0,No,Friendly service but the process was slow.
+REQ-0055,Odense,Parking,Phone,2026-03-01,,Open,Low,41.7,3.1,Yes,No problem after the staff explained the next step.
+REQ-0056,Aarhus,Parking,In Person,2026-03-08,2026-03-10,Closed,Normal,54.1,2.3,Yes,The issue was resolved quickly.
+REQ-0057,Copenhagen,Family Support,Phone,2026-03-15,2026-03-16,Closed,High,33.2,3.2,Yes,The guidance was clear and helpful.
+REQ-0058,Aalborg,Family Support,In Person,2026-03-22,2026-03-23,Closed,Low,36.0,2.8,No,The wait was not long.
+REQ-0059,Odense,Family Support,Digital,2026-03-02,2026-03-02,Closed,Normal,18.5,4.8,No,The form was difficult but staff were helpful.
+REQ-0060,Aarhus,Family Support,Phone,2026-03-09,2026-03-09,Closed,High,16.3,4.6,No,Quick response and clear information.
+REQ-0061,Copenhagen,Housing Advice,In Person,2026-04-16,2026-04-17,Closed,Low,24.8,3.6,No,I could not understand the online instructions.
+REQ-0062,Aalborg,Housing Advice,Digital,2026-04-23,2026-04-23,Closed,Normal,4.7,5.0,No,Friendly service but the process was slow.
+REQ-0063,Odense,Housing Advice,Phone,2026-04-03,2026-04-03,Closed,High,15.8,4.9,Yes,No problem after the staff explained the next step.
+REQ-0064,Aarhus,Housing Advice,Digital,2026-04-10,,Open,Low,5.5,5.0,No,The issue was resolved quickly.
+REQ-0065,Copenhagen,Waste Collection,Phone,2026-04-17,2026-04-18,Closed,Normal,37.9,2.9,No,The guidance was clear and helpful.
+REQ-0066,Aalborg,Waste Collection,In Person,2026-04-24,2026-04-24,Closed,High,22.6,4.4,No,The wait was not long.
+REQ-0067,Odense,Waste Collection,Digital,2026-04-04,2026-04-04,Closed,Low,21.5,4.2,Yes,The form was difficult but staff were helpful.
+REQ-0068,Aarhus,Waste Collection,Phone,2026-04-11,2026-04-11,Closed,Normal,18.4,3.2,No,Quick response and clear information.
+REQ-0069,Copenhagen,Citizen ID,In Person,2026-04-18,2026-04-18,Closed,High,18.7,3.8,No,I could not understand the online instructions.
+REQ-0070,Aalborg,Citizen ID,Digital,2026-04-25,2026-04-26,Closed,Low,24.0,3.2,Yes,Friendly service but the process was slow.
+REQ-0071,Odense,Citizen ID,In Person,2026-04-05,2026-04-06,Closed,Normal,40.7,3.3,Yes,No problem after the staff explained the next step.
+REQ-0072,Aarhus,Citizen ID,Digital,2026-04-12,2026-04-13,Closed,High,36.0,3.5,Yes,The issue was resolved quickly.
+REQ-0073,Copenhagen,Parking,Phone,2026-04-19,,Open,Low,32.2,2.9,No,The guidance was clear and helpful.
+REQ-0074,Aalborg,Parking,In Person,2026-04-26,2026-04-28,Closed,Normal,47.8,3.3,Yes,The wait was not long.
+REQ-0075,Odense,Parking,Digital,2026-04-06,2026-04-07,Closed,High,26.5,3.3,No,The form was difficult but staff were helpful.
+REQ-0076,Aarhus,Parking,Phone,2026-04-13,2026-04-13,Closed,Low,21.0,4.3,Yes,Quick response and clear information.
+REQ-0077,Copenhagen,Family Support,In Person,2026-04-20,2026-04-20,Closed,Normal,16.8,4.1,No,I could not understand the online instructions.
+REQ-0078,Aalborg,Family Support,Phone,2026-04-27,2026-04-28,Closed,High,24.4,3.8,No,Friendly service but the process was slow.
+REQ-0079,Odense,Family Support,In Person,2026-04-07,2026-04-08,Closed,Low,35.5,3.9,No,No problem after the staff explained the next step.
+REQ-0080,Aarhus,Family Support,Digital,2026-04-14,2026-04-14,Closed,Normal,1.0,5.0,No,The issue was resolved quickly.
+REQ-0081,Copenhagen,Housing Advice,Phone,2026-05-21,2026-05-22,Closed,High,26.3,3.7,No,The guidance was clear and helpful.
+REQ-0082,Aalborg,Housing Advice,In Person,2026-05-01,,Open,Low,36.7,3.2,Yes,The wait was not long.
+REQ-0083,Odense,Housing Advice,Digital,2026-05-08,2026-05-08,Closed,Normal,1.0,4.6,No,The form was difficult but staff were helpful.
+REQ-0084,Aarhus,Housing Advice,Phone,2026-05-15,2026-05-15,Closed,High,18.7,4.9,No,Quick response and clear information.
+REQ-0085,Copenhagen,Waste Collection,Digital,2026-05-22,2026-05-22,Closed,Low,19.5,3.8,No,I could not understand the online instructions.
+REQ-0086,Aalborg,Waste Collection,Phone,2026-05-02,2026-05-03,Closed,Normal,33.0,3.1,Yes,Friendly service but the process was slow.
+REQ-0087,Odense,Waste Collection,In Person,2026-05-09,2026-05-10,Closed,High,40.2,3.0,No,No problem after the staff explained the next step.
+REQ-0088,Aarhus,Waste Collection,Digital,2026-05-16,2026-05-16,Closed,Low,12.9,4.6,No,The issue was resolved quickly.
+REQ-0089,Copenhagen,Citizen ID,Phone,2026-05-23,2026-05-24,Closed,Normal,38.9,2.9,Yes,The guidance was clear and helpful.
+REQ-0090,Aalborg,Citizen ID,In Person,2026-05-03,2026-05-05,Closed,High,49.8,3.2,Yes,The wait was not long.
+REQ-0091,Odense,Citizen ID,Digital,2026-05-10,,Open,Low,27.9,3.8,No,The form was difficult but staff were helpful.
+REQ-0092,Aarhus,Citizen ID,In Person,2026-05-17,2026-05-18,Closed,Normal,36.3,3.7,No,Quick response and clear information.
+REQ-0093,Copenhagen,Parking,Digital,2026-05-24,2026-05-24,Closed,High,15.0,4.1,No,I could not understand the online instructions.
+REQ-0094,Aalborg,Parking,Phone,2026-05-04,2026-05-04,Closed,Low,15.3,3.7,No,Friendly service but the process was slow.
+REQ-0095,Odense,Parking,In Person,2026-05-11,2026-05-12,Closed,Normal,26.6,3.4,Yes,No problem after the staff explained the next step.
+REQ-0096,Aarhus,Parking,Digital,2026-05-18,2026-05-18,Closed,High,22.4,3.5,No,The issue was resolved quickly.
+REQ-0097,Copenhagen,Family Support,Phone,2026-05-25,2026-05-25,Closed,Low,1.3,5.0,No,The guidance was clear and helpful.
+REQ-0098,Aalborg,Family Support,In Person,2026-05-05,2026-05-06,Closed,Normal,44.3,2.9,Yes,The wait was not long.
+REQ-0099,Odense,Family Support,Phone,2026-05-12,2026-05-12,Closed,High,21.0,3.6,No,The form was difficult but staff were helpful.
+REQ-0100,Aarhus,Family Support,In Person,2026-05-19,,Open,Low,43.9,3.2,Yes,Quick response and clear information.
+REQ-0101,Copenhagen,Housing Advice,Digital,2026-06-26,2026-06-26,Closed,Normal,15.4,3.6,No,I could not understand the online instructions.
+REQ-0102,Aalborg,Housing Advice,Phone,2026-06-06,2026-06-07,Closed,High,30.1,3.4,No,Friendly service but the process was slow.
+REQ-0103,Odense,Housing Advice,In Person,2026-06-13,2026-06-14,Closed,Low,33.2,3.1,No,No problem after the staff explained the next step.
+REQ-0104,Aarhus,Housing Advice,Digital,2026-06-20,2026-06-21,Closed,Normal,36.4,3.6,Yes,The issue was resolved quickly.
+REQ-0105,Copenhagen,Waste Collection,Phone,2026-06-27,2026-06-27,Closed,High,22.5,3.9,No,The guidance was clear and helpful.
+REQ-0106,Aalborg,Waste Collection,Digital,2026-06-07,2026-06-07,Closed,Low,21.8,4.2,No,The wait was not long.
+REQ-0107,Odense,Waste Collection,Phone,2026-06-14,2026-06-14,Closed,Normal,21.8,3.4,No,The form was difficult but staff were helpful.
+REQ-0108,Aarhus,Waste Collection,In Person,2026-06-21,2026-06-22,Closed,High,30.8,3.1,No,Quick response and clear information.
+REQ-0109,Copenhagen,Citizen ID,Digital,2026-06-01,,Open,Low,14.7,3.3,No,I could not understand the online instructions.
+REQ-0110,Aalborg,Citizen ID,Phone,2026-06-08,2026-06-09,Closed,Normal,39.0,2.7,No,Friendly service but the process was slow.
+REQ-0111,Odense,Citizen ID,In Person,2026-06-15,2026-06-16,Closed,High,44.6,2.8,No,
+REQ-0112,Aarhus,Citizen ID,Digital,2026-06-22,2026-06-23,Closed,Low,32.1,3.2,No,The issue was resolved quickly.
+REQ-0113,Copenhagen,Parking,In Person,2026-06-02,2026-06-04,Closed,Normal,48.6,2.1,No,The guidance was clear and helpful.
+REQ-0114,Aalborg,Parking,Digital,2026-06-09,2026-06-10,Closed,High,35.7,3.1,No,The wait was not long.
+REQ-0115,Odense,Parking,Phone,2026-06-16,2026-06-16,Closed,Low,17.6,4.3,Yes,The form was difficult but staff were helpful.
+REQ-0116,Aarhus,Parking,In Person,2026-06-23,2026-06-24,Closed,Normal,42.3,2.8,Yes,Quick response and clear information.
+REQ-0117,Copenhagen,Family Support,Digital,2026-06-03,2026-06-03,Closed,High,8.8,5.0,Yes,I could not understand the online instructions.
+REQ-0118,Aalborg,Family Support,Phone,2026-06-10,,Open,Low,29.3,3.1,Yes,Friendly service but the process was slow.
+REQ-0119,Odense,Family Support,In Person,2026-06-17,2026-06-19,Closed,Normal,64.1,1.2,Yes,No problem after the staff explained the next step.
+REQ-0120,Aarhus,Family Support,Phone,2026-06-24,2026-06-25,Closed,High,30.0,3.5,Yes,The issue was resolved quickly.
+REQ-0121,Copenhagen,Housing Advice,In Person,2026-01-04,2026-01-05,Closed,Low,37.0,2.6,No,The guidance was clear and helpful.
+REQ-0122,Aalborg,Housing Advice,Digital,2026-01-11,2026-01-12,Closed,Normal,34.0,3.7,No,The wait was not long.
+REQ-0123,Odense,Housing Advice,Phone,2026-01-18,2026-01-19,Closed,High,26.9,3.3,No,The form was difficult but staff were helpful.
+REQ-0124,Aarhus,Housing Advice,In Person,2026-01-25,2026-01-26,Closed,Low,42.8,2.2,Yes,Quick response and clear information.
+REQ-0125,Copenhagen,Waste Collection,Digital,2026-01-05,2026-01-05,Closed,Normal,13.5,3.6,No,I could not understand the online instructions.
+REQ-0126,Aalborg,Waste Collection,Phone,2026-01-12,2026-01-13,Closed,High,26.8,3.6,No,Friendly service but the process was slow.
+REQ-0127,Odense,Waste Collection,Digital,2026-01-19,,Open,Low,11.8,3.8,No,No problem after the staff explained the next step.
+REQ-0128,Aarhus,Waste Collection,Phone,2026-01-26,2026-01-26,Closed,Normal,19.1,4.8,No,The issue was resolved quickly.
+REQ-0129,Copenhagen,Citizen ID,In Person,2026-01-06,2026-01-07,Closed,High,35.6,3.5,No,The guidance was clear and helpful.
+REQ-0130,Aalborg,Citizen ID,Digital,2026-01-13,2026-01-14,Closed,Low,24.5,3.4,No,The wait was not long.
+REQ-0131,Odense,Citizen ID,Phone,2026-01-20,2026-01-21,Closed,Normal,30.1,3.6,No,The form was difficult but staff were helpful.
+REQ-0132,Aarhus,Citizen ID,In Person,2026-01-27,2026-01-27,Closed,High,18.4,4.3,No,Quick response and clear information.
+REQ-0133,Copenhagen,Parking,Digital,2026-01-07,2026-01-08,Closed,Low,41.5,2.0,No,I could not understand the online instructions.
+REQ-0134,Aalborg,Parking,In Person,2026-01-14,2026-01-15,Closed,Normal,44.9,2.8,Yes,Friendly service but the process was slow.
+REQ-0135,Odense,Parking,Digital,2026-01-21,2026-01-21,Closed,High,5.2,3.6,No,No problem after the staff explained the next step.
+REQ-0136,Aarhus,Parking,Phone,2026-01-01,,Open,Low,27.5,3.6,No,The issue was resolved quickly.
+REQ-0137,Copenhagen,Family Support,In Person,2026-01-08,2026-01-09,Closed,Normal,29.4,3.4,Yes,The guidance was clear and helpful.
+REQ-0138,Aalborg,Family Support,Digital,2026-01-15,2026-01-15,Closed,High,20.9,2.8,No,The wait was not long.
+REQ-0139,Odense,Family Support,Phone,2026-01-22,2026-01-22,Closed,Low,20.5,3.5,No,The form was difficult but staff were helpful.
+REQ-0140,Aarhus,Family Support,In Person,2026-01-02,2026-01-03,Closed,Normal,43.6,2.4,Yes,Quick response and clear information.
+REQ-0141,Copenhagen,Housing Advice,Phone,2026-02-09,2026-02-09,Closed,High,9.6,4.3,No,I could not understand the online instructions.
+REQ-0142,Aalborg,Housing Advice,In Person,2026-02-16,2026-02-17,Closed,Low,25.9,3.3,No,Friendly service but the process was slow.
+REQ-0143,Odense,Housing Advice,Digital,2026-02-23,2026-02-23,Closed,Normal,18.5,4.0,No,No problem after the staff explained the next step.
+REQ-0144,Aarhus,Housing Advice,Phone,2026-02-03,2026-02-03,Closed,High,21.8,3.7,No,The issue was resolved quickly.
+REQ-0145,Copenhagen,Waste Collection,In Person,2026-02-10,,Open,Low,48.2,2.2,Yes,The guidance was clear and helpful.
+REQ-0146,Aalborg,Waste Collection,Digital,2026-02-17,2026-02-17,Closed,Normal,10.8,4.3,No,The wait was not long.
+REQ-0147,Odense,Waste Collection,Phone,2026-02-24,2026-02-25,Closed,High,27.2,4.4,No,The form was difficult but staff were helpful.
+REQ-0148,Aarhus,Waste Collection,Digital,2026-02-04,2026-02-05,Closed,Low,26.2,3.1,No,Quick response and clear information.
+REQ-0149,Copenhagen,Citizen ID,Phone,2026-02-11,2026-02-12,Closed,Normal,28.1,3.9,No,I could not understand the online instructions.
+REQ-0150,Aalborg,Citizen ID,In Person,2026-02-18,2026-02-19,Closed,High,44.8,2.8,Yes,Friendly service but the process was slow.
+REQ-0151,Odense,Citizen ID,Digital,2026-02-25,2026-02-25,Closed,Low,9.2,4.3,Yes,No problem after the staff explained the next step.
+REQ-0152,Aarhus,Citizen ID,Phone,2026-02-05,2026-02-06,Closed,Normal,43.8,2.8,No,The issue was resolved quickly.
+REQ-0153,Copenhagen,Parking,In Person,2026-02-12,2026-02-13,Closed,High,25.4,3.0,Yes,The guidance was clear and helpful.
+REQ-0154,Aalborg,Parking,Digital,2026-02-19,,Open,Low,21.4,3.4,No,The wait was not long.
+REQ-0155,Odense,Parking,In Person,2026-02-26,2026-02-27,Closed,Normal,25.2,4.0,No,The form was difficult but staff were helpful.
+REQ-0156,Aarhus,Parking,Digital,2026-02-06,2026-02-07,Closed,High,41.0,3.2,No,Quick response and clear information.
+REQ-0157,Copenhagen,Family Support,Phone,2026-02-13,2026-02-14,Closed,Low,31.8,3.8,No,I could not understand the online instructions.
+REQ-0158,Aalborg,Family Support,In Person,2026-02-20,2026-02-22,Closed,Normal,56.4,1.7,Yes,Friendly service but the process was slow.
+REQ-0159,Odense,Family Support,Digital,2026-02-27,2026-02-27,Closed,High,5.9,4.7,No,No problem after the staff explained the next step.
+REQ-0160,Aarhus,Family Support,Phone,2026-02-07,2026-02-07,Closed,Low,16.0,3.6,No,The issue was resolved quickly.
+REQ-0161,Copenhagen,Housing Advice,In Person,2026-03-14,2026-03-15,Closed,Normal,46.9,2.8,Yes,The guidance was clear and helpful.
+REQ-0162,Aalborg,Housing Advice,Phone,2026-03-21,2026-03-21,Closed,High,21.8,3.6,Yes,The wait was not long.
+REQ-0163,Odense,Housing Advice,In Person,2026-03-01,,Open,Low,19.2,4.5,No,The form was difficult but staff were helpful.
+REQ-0164,Aarhus,Housing Advice,Digital,2026-03-08,2026-03-08,Closed,Normal,13.3,5.0,No,Quick response and clear information.
+REQ-0165,Copenhagen,Waste Collection,Phone,2026-03-15,2026-03-15,Closed,High,11.3,4.1,No,I could not understand the online instructions.
+REQ-0166,Aalborg,Waste Collection,In Person,2026-03-22,2026-03-23,Closed,Low,24.4,2.5,No,Friendly service but the process was slow.
+REQ-0167,Odense,Waste Collection,Digital,2026-03-02,2026-03-02,Closed,Normal,23.4,4.0,No,No problem after the staff explained the next step.
+REQ-0168,Aarhus,Waste Collection,Phone,2026-03-09,2026-03-10,Closed,High,43.5,2.6,Yes,The issue was resolved quickly.
+REQ-0169,Copenhagen,Citizen ID,Digital,2026-03-16,2026-03-17,Closed,Low,33.5,3.6,No,The guidance was clear and helpful.
+REQ-0170,Aalborg,Citizen ID,Phone,2026-03-23,2026-03-24,Closed,Normal,34.7,3.7,Yes,The wait was not long.
+REQ-0171,Odense,Citizen ID,In Person,2026-03-03,2026-03-05,Closed,High,49.2,2.4,Yes,The form was difficult but staff were helpful.
+REQ-0172,Aarhus,Citizen ID,Digital,2026-03-10,,Open,Low,23.7,4.2,Yes,Quick response and clear information.
+REQ-0173,Copenhagen,Parking,Phone,2026-03-17,2026-03-18,Closed,Normal,41.1,3.1,No,I could not understand the online instructions.
+REQ-0174,Aalborg,Parking,In Person,2026-03-24,2026-03-25,Closed,High,40.9,2.9,Yes,Friendly service but the process was slow.
+REQ-0175,Odense,Parking,Digital,2026-03-04,2026-03-04,Closed,Low,5.0,5.0,No,No problem after the staff explained the next step.
+REQ-0176,Aarhus,Parking,In Person,2026-03-11,2026-03-12,Closed,Normal,39.7,3.0,No,The issue was resolved quickly.
+REQ-0177,Copenhagen,Family Support,Digital,2026-03-18,2026-03-18,Closed,High,21.9,2.9,No,The guidance was clear and helpful.
+REQ-0178,Aalborg,Family Support,Phone,2026-03-25,2026-03-25,Closed,Low,21.7,4.6,No,The wait was not long.
+REQ-0179,Odense,Family Support,In Person,2026-03-05,2026-03-06,Closed,Normal,30.0,3.6,No,The form was difficult but staff were helpful.
+REQ-0180,Aarhus,Family Support,Digital,2026-03-12,2026-03-13,Closed,High,31.1,3.2,No,Quick response and clear information.
+REQ-0181,Copenhagen,Housing Advice,Phone,2026-04-19,,Open,Low,18.7,3.7,No,I could not understand the online instructions.
+REQ-0182,Aalborg,Housing Advice,In Person,2026-04-26,2026-04-27,Closed,Normal,27.7,3.6,No,Friendly service but the process was slow.
+REQ-0183,Odense,Housing Advice,Phone,2026-04-06,2026-04-06,Closed,High,14.0,4.9,No,No problem after the staff explained the next step.
+REQ-0184,Aarhus,Housing Advice,In Person,2026-04-13,2026-04-14,Closed,Low,27.2,3.1,Yes,The issue was resolved quickly.
+REQ-0185,Copenhagen,Waste Collection,Digital,2026-04-20,2026-04-20,Closed,Normal,19.3,3.6,No,The guidance was clear and helpful.
+REQ-0186,Aalborg,Waste Collection,Phone,2026-04-27,2026-04-28,Closed,High,30.8,3.5,No,The wait was not long.
+REQ-0187,Odense,Waste Collection,In Person,2026-04-07,2026-04-08,Closed,Low,37.7,2.0,No,The form was difficult but staff were helpful.
+REQ-0188,Aarhus,Waste Collection,Digital,2026-04-14,2026-04-14,Closed,Normal,11.2,5.0,No,Quick response and clear information.
+REQ-0189,Copenhagen,Citizen ID,Phone,2026-04-21,2026-04-21,Closed,High,20.9,3.9,No,I could not understand the online instructions.
+REQ-0190,Aalborg,Citizen ID,Digital,2026-04-01,,Open,Low,38.6,3.6,No,Friendly service but the process was slow.
+REQ-0191,Odense,Citizen ID,Phone,2026-04-08,2026-04-08,Closed,Normal,22.9,3.9,No,No problem after the staff explained the next step.
+REQ-0192,Aarhus,Citizen ID,In Person,2026-04-15,2026-04-16,Closed,High,44.9,1.8,No,The issue was resolved quickly.
+REQ-0193,Copenhagen,Parking,Digital,2026-04-22,2026-04-22,Closed,Low,3.2,5.0,No,The guidance was clear and helpful.
+REQ-0194,Aalborg,Parking,Phone,2026-04-02,2026-04-03,Closed,Normal,40.0,2.6,No,The wait was not long.
+REQ-0195,Odense,Parking,In Person,2026-04-09,2026-04-09,Closed,High,22.2,4.2,No,The form was difficult but staff were helpful.
+REQ-0196,Aarhus,Parking,Digital,2026-04-16,2026-04-16,Closed,Low,23.1,3.7,No,Quick response and clear information.
+REQ-0197,Copenhagen,Family Support,In Person,2026-04-23,2026-04-23,Closed,Normal,18.0,4.7,No,I could not understand the online instructions.
+REQ-0198,Aalborg,Family Support,Digital,2026-04-03,2026-04-03,Closed,High,4.9,5.0,No,Friendly service but the process was slow.
+REQ-0199,Odense,Family Support,Phone,2026-04-10,,Open,Low,22.9,4.2,No,No problem after the staff explained the next step.
+REQ-0200,Aarhus,Family Support,In Person,2026-04-17,2026-04-17,Closed,Normal,16.8,4.9,Yes,The issue was resolved quickly.
+REQ-0201,Copenhagen,Housing Advice,Digital,2026-05-24,2026-05-24,Closed,High,13.3,4.8,No,The guidance was clear and helpful.
+REQ-0202,Aalborg,Housing Advice,Phone,2026-05-04,2026-05-04,Closed,Low,8.7,4.3,No,The wait was not long.
+REQ-0203,Odense,Housing Advice,In Person,2026-05-11,2026-05-12,Closed,Normal,38.2,3.4,No,The form was difficult but staff were helpful.
+REQ-0204,Aarhus,Housing Advice,Phone,2026-05-18,2026-05-19,Closed,High,33.4,3.2,Yes,Quick response and clear information.
+REQ-0205,Copenhagen,Waste Collection,In Person,2026-05-25,2026-05-25,Closed,Low,18.3,3.3,No,I could not understand the online instructions.
+REQ-0206,Aalborg,Waste Collection,Digital,2026-05-05,2026-05-06,Closed,Normal,34.8,3.3,No,Friendly service but the process was slow.
+REQ-0207,Odense,Waste Collection,Phone,2026-05-12,2026-05-13,Closed,High,29.1,2.7,Yes,No problem after the staff explained the next step.
+REQ-0208,Aarhus,Waste Collection,In Person,2026-05-19,,Open,Low,11.4,5.0,No,The issue was resolved quickly.
+REQ-0209,Copenhagen,Citizen ID,Digital,2026-05-26,2026-05-26,Closed,Normal,16.2,3.5,No,The guidance was clear and helpful.
+REQ-0210,Aalborg,Citizen ID,Phone,2026-05-06,2026-05-06,Closed,High,21.8,4.0,No,The wait was not long.
+REQ-0211,Odense,Citizen ID,Digital,2026-05-13,2026-05-14,Closed,Low,25.3,3.2,No,The form was difficult but staff were helpful.
+REQ-0212,Aarhus,Citizen ID,Phone,2026-05-20,2026-05-20,Closed,Normal,21.0,4.4,No,Quick response and clear information.
+REQ-0213,Copenhagen,Parking,In Person,2026-05-27,2026-05-28,Closed,High,36.5,2.3,No,I could not understand the online instructions.
+REQ-0214,Aalborg,Parking,Digital,2026-05-07,2026-05-07,Closed,Low,4.1,5.0,No,Friendly service but the process was slow.
+REQ-0215,Odense,Parking,Phone,2026-05-14,2026-05-15,Closed,Normal,30.8,3.4,No,No problem after the staff explained the next step.
+REQ-0216,Aarhus,Parking,In Person,2026-05-21,2026-05-23,Closed,High,48.5,2.5,Yes,The issue was resolved quickly.
+REQ-0217,Copenhagen,Family Support,Digital,2026-05-01,,Open,Low,11.6,4.6,No,The guidance was clear and helpful.
+REQ-0218,Aalborg,Family Support,In Person,2026-05-08,2026-05-09,Closed,Normal,31.8,3.3,No,The wait was not long.
+REQ-0219,Odense,Family Support,Digital,2026-05-15,2026-05-16,Closed,High,30.1,3.6,Yes,The form was difficult but staff were helpful.
+REQ-0220,Aarhus,Family Support,Phone,2026-05-22,2026-05-22,Closed,Low,7.5,4.9,No,Quick response and clear information.
+REQ-0221,Copenhagen,Housing Advice,In Person,2026-06-02,2026-06-03,Closed,Normal,29.5,3.1,Yes,I could not understand the online instructions.
+REQ-0222,Aalborg,Housing Advice,Digital,2026-06-09,2026-06-10,Closed,High,27.4,4.2,No,Friendly service but the process was slow.
+REQ-0223,Odense,Housing Advice,Phone,2026-06-16,2026-06-17,Closed,Low,33.0,3.0,Yes,No problem after the staff explained the next step.
+REQ-0224,Aarhus,Housing Advice,In Person,2026-06-23,2026-06-24,Closed,Normal,36.4,2.7,Yes,The issue was resolved quickly.
+REQ-0225,Copenhagen,Waste Collection,Phone,2026-06-03,2026-06-03,Closed,High,5.1,4.1,No,The guidance was clear and helpful.
+REQ-0226,Aalborg,Waste Collection,In Person,2026-06-10,,Open,Low,35.6,3.3,No,The wait was not long.
+REQ-0227,Odense,Waste Collection,Digital,2026-06-17,2026-06-17,Closed,Normal,14.9,4.3,No,The form was difficult but staff were helpful.
+REQ-0228,Aarhus,Waste Collection,Phone,2026-06-24,2026-06-24,Closed,High,18.3,3.9,Yes,Quick response and clear information.
+REQ-0229,Copenhagen,Citizen ID,In Person,2026-06-04,2026-06-05,Closed,Low,24.9,4.1,No,I could not understand the online instructions.
+REQ-0230,Aalborg,Citizen ID,Digital,2026-06-11,2026-06-11,Closed,Normal,15.7,3.6,No,Friendly service but the process was slow.
+REQ-0231,Odense,Citizen ID,Phone,2026-06-18,2026-06-19,Closed,High,25.4,3.4,No,No problem after the staff explained the next step.
+REQ-0232,Aarhus,Citizen ID,Digital,2026-06-25,2026-06-26,Closed,Low,26.5,3.8,No,The issue was resolved quickly.
+REQ-0233,Copenhagen,Parking,Phone,2026-06-05,2026-06-06,Closed,Normal,36.3,2.9,No,The guidance was clear and helpful.
+REQ-0234,Aalborg,Parking,In Person,2026-06-12,2026-06-13,Closed,High,46.9,2.7,No,The wait was not long.
+REQ-0235,Odense,Parking,Digital,2026-06-19,,Open,Low,9.0,4.9,No,The form was difficult but staff were helpful.
+REQ-0236,Aarhus,Parking,Phone,2026-06-26,2026-06-26,Closed,Normal,21.6,4.4,No,Quick response and clear information.
+REQ-0237,Copenhagen,Family Support,In Person,2026-06-06,2026-06-08,Closed,High,50.2,1.7,Yes,I could not understand the online instructions.
+REQ-0238,Aalborg,Family Support,Digital,2026-06-13,2026-06-14,Closed,Low,33.6,3.3,No,Friendly service but the process was slow.
+REQ-0239,Odense,Family Support,In Person,2026-06-20,2026-06-21,Closed,Normal,38.2,2.9,Yes,No problem after the staff explained the next step.
+REQ-0240,Aarhus,Family Support,Digital,2026-06-27,2026-06-27,Closed,High,22.9,3.3,No,The issue was resolved quickly.
+REQ-0241,Copenhagen,Housing Advice,Phone,2026-01-07,2026-01-08,Closed,Low,34.4,2.7,No,The guidance was clear and helpful.
+REQ-0242,Aalborg,Housing Advice,In Person,2026-01-14,2026-01-14,Closed,Normal,20.9,3.7,No,The wait was not long.
+REQ-0243,Odense,Housing Advice,Digital,2026-01-21,2026-01-21,Closed,High,23.3,3.2,No,The form was difficult but staff were helpful.
+REQ-0244,Aarhus,Housing Advice,Phone,2026-01-01,,Open,Low,38.3,2.9,No,Quick response and clear information.
+REQ-0245,Copenhagen,Waste Collection,In Person,2026-01-08,2026-01-09,Closed,Normal,34.2,3.7,No,I could not understand the online instructions.
+REQ-0246,Aalborg,Waste Collection,Phone,2026-01-15,2026-01-16,Closed,High,37.4,3.4,No,Friendly service but the process was slow.
+REQ-0247,Odense,Waste Collection,In Person,2026-01-22,2026-01-23,Closed,Low,32.7,3.8,No,No problem after the staff explained the next step.
+REQ-0248,Aarhus,Waste Collection,Digital,2026-01-02,2026-01-03,Closed,Normal,29.0,3.3,No,The issue was resolved quickly.
+REQ-0249,Copenhagen,Citizen ID,Phone,2026-01-09,2026-01-10,Closed,High,29.5,2.8,Yes,The guidance was clear and helpful.
+REQ-0250,Aalborg,Citizen ID,In Person,2026-01-16,2026-01-17,Closed,Low,37.3,3.0,Yes,The wait was not long.
+REQ-0251,Odense,Citizen ID,Digital,2026-01-23,2026-01-24,Closed,Normal,35.0,3.0,No,The form was difficult but staff were helpful.
+REQ-0252,Aarhus,Citizen ID,Phone,2026-01-03,2026-01-04,Closed,High,36.6,2.5,Yes,Quick response and clear information.
+REQ-0253,Copenhagen,Parking,Digital,2026-01-10,,Open,Low,21.1,4.1,No,I could not understand the online instructions.
+REQ-0254,Aalborg,Parking,Phone,2026-01-17,2026-01-17,Closed,Normal,22.3,4.2,No,Friendly service but the process was slow.
+REQ-0255,Odense,Parking,In Person,2026-01-24,2026-01-25,Closed,High,35.3,3.4,Yes,No problem after the staff explained the next step.
+REQ-0256,Aarhus,Parking,Digital,2026-01-04,2026-01-04,Closed,Low,17.4,4.0,No,The issue was resolved quickly.
+REQ-0257,Copenhagen,Family Support,Phone,2026-01-11,2026-01-12,Closed,Normal,31.8,3.4,No,The guidance was clear and helpful.
+REQ-0258,Aalborg,Family Support,In Person,2026-01-18,2026-01-19,Closed,High,33.2,4.1,Yes,The wait was not long.
+REQ-0259,Odense,Family Support,Digital,2026-01-25,2026-01-25,Closed,Low,19.0,3.4,No,The form was difficult but staff were helpful.
+REQ-0260,Aarhus,Family Support,In Person,2026-01-05,2026-01-06,Closed,Normal,35.1,3.7,No,Quick response and clear information.
+REQ-0261,Copenhagen,Housing Advice,Digital,2026-02-12,2026-02-13,Closed,High,32.3,3.5,Yes,I could not understand the online instructions.
+REQ-0262,Aalborg,Housing Advice,Phone,2026-02-19,,Open,Low,10.2,5.0,No,Friendly service but the process was slow.
+REQ-0263,Odense,Housing Advice,In Person,2026-02-26,2026-02-27,Closed,Normal,43.0,2.5,No,No problem after the staff explained the next step.
+REQ-0264,Aarhus,Housing Advice,Digital,2026-02-06,2026-02-06,Closed,High,3.0,4.9,No,The issue was resolved quickly.
+REQ-0265,Copenhagen,Waste Collection,Phone,2026-02-13,2026-02-14,Closed,Low,37.1,2.9,Yes,The guidance was clear and helpful.
+REQ-0266,Aalborg,Waste Collection,In Person,2026-02-20,2026-02-21,Closed,Normal,32.7,3.5,Yes,The wait was not long.
+REQ-0267,Odense,Waste Collection,Phone,2026-02-27,2026-02-27,Closed,High,14.4,4.4,No,The form was difficult but staff were helpful.
+REQ-0268,Aarhus,Waste Collection,In Person,2026-02-07,2026-02-08,Closed,Low,37.2,2.6,No,Quick response and clear information.
+REQ-0269,Copenhagen,Citizen ID,Digital,2026-02-14,2026-02-15,Closed,Normal,27.0,3.1,No,I could not understand the online instructions.
+REQ-0270,Aalborg,Citizen ID,Phone,2026-02-21,2026-02-21,Closed,High,20.9,3.7,Yes,Friendly service but the process was slow.
+REQ-0271,Odense,Citizen ID,In Person,2026-02-01,,Open,Low,43.1,2.7,No,No problem after the staff explained the next step.
+REQ-0272,Aarhus,Citizen ID,Digital,2026-02-08,2026-02-08,Closed,Normal,19.0,3.7,No,The issue was resolved quickly.
+REQ-0273,Copenhagen,Parking,Phone,2026-02-15,2026-02-16,Closed,High,41.2,2.7,Yes,The guidance was clear and helpful.
+REQ-0274,Aalborg,Parking,Digital,2026-02-22,2026-02-22,Closed,Low,1.0,4.9,No,The wait was not long.
+REQ-0275,Odense,Parking,Phone,2026-02-02,2026-02-03,Closed,Normal,25.5,3.6,No,The form was difficult but staff were helpful.
+REQ-0276,Aarhus,Parking,In Person,2026-02-09,2026-02-10,Closed,High,34.2,2.9,No,Quick response and clear information.
+REQ-0277,Copenhagen,Family Support,Digital,2026-02-16,2026-02-16,Closed,Low,16.2,4.5,No,I could not understand the online instructions.
+REQ-0278,Aalborg,Family Support,Phone,2026-02-23,2026-02-24,Closed,Normal,41.5,2.6,No,Friendly service but the process was slow.
+REQ-0279,Odense,Family Support,In Person,2026-02-03,2026-02-04,Closed,High,42.6,2.7,No,No problem after the staff explained the next step.
+REQ-0280,Aarhus,Family Support,Digital,2026-02-10,,Open,Low,19.7,5.0,No,The issue was resolved quickly.
+REQ-0281,Copenhagen,Housing Advice,In Person,2026-03-17,2026-03-18,Closed,Normal,36.4,2.9,No,The guidance was clear and helpful.
+REQ-0282,Aalborg,Housing Advice,Digital,2026-03-24,2026-03-24,Closed,High,11.2,4.1,No,The wait was not long.
+REQ-0283,Odense,Housing Advice,Phone,2026-03-04,2026-03-05,Closed,Low,39.7,3.0,Yes,The form was difficult but staff were helpful.
+REQ-0284,Aarhus,Housing Advice,In Person,2026-03-11,2026-03-12,Closed,Normal,32.8,3.1,No,Quick response and clear information.
+REQ-0285,Copenhagen,Waste Collection,Digital,2026-03-18,2026-03-19,Closed,High,23.8,4.7,No,I could not understand the online instructions.
+REQ-0286,Aalborg,Waste Collection,Phone,2026-03-25,2026-03-26,Closed,Low,40.7,2.4,No,Friendly service but the process was slow.
+REQ-0287,Odense,Waste Collection,In Person,2026-03-05,2026-03-05,Closed,Normal,20.5,3.7,Yes,No problem after the staff explained the next step.
+REQ-0288,Aarhus,Waste Collection,Phone,2026-03-12,2026-03-12,Closed,High,15.6,4.3,Yes,The issue was resolved quickly.
+REQ-0289,Copenhagen,Citizen ID,In Person,2026-03-19,,Open,Low,34.0,4.2,No,The guidance was clear and helpful.
+REQ-0290,Aalborg,Citizen ID,Digital,2026-03-26,2026-03-26,Closed,Normal,17.2,4.8,No,The wait was not long.
+REQ-0291,Odense,Citizen ID,Phone,2026-03-06,2026-03-07,Closed,High,30.2,3.4,No,The form was difficult but staff were helpful.
+REQ-0292,Aarhus,Citizen ID,In Person,2026-03-13,2026-03-13,Closed,Low,19.5,3.4,No,Quick response and clear information.
+REQ-0293,Copenhagen,Parking,Digital,2026-03-20,2026-03-20,Closed,Normal,19.4,3.3,No,I could not understand the online instructions.
+REQ-0294,Aalborg,Parking,Phone,2026-03-27,2026-03-27,Closed,High,17.2,4.0,No,Friendly service but the process was slow.
+REQ-0295,Odense,Parking,Digital,2026-03-07,2026-03-07,Closed,Low,1.0,5.0,No,No problem after the staff explained the next step.
+REQ-0296,Aarhus,Parking,Phone,2026-03-14,2026-03-15,Closed,Normal,38.2,2.4,Yes,The issue was resolved quickly.
+REQ-0297,Copenhagen,Family Support,In Person,2026-03-21,2026-03-22,Closed,High,29.4,3.6,Yes,The guidance was clear and helpful.
+REQ-0298,Aalborg,Family Support,Digital,2026-03-01,,Open,Low,19.1,3.3,No,The wait was not long.
+REQ-0299,Odense,Family Support,Phone,2026-03-08,2026-03-09,Closed,Normal,26.4,3.6,No,The form was difficult but staff were helpful.
+REQ-0300,Aarhus,Family Support,In Person,2026-03-15,2026-03-16,Closed,High,30.0,3.3,No,Quick response and clear information.
+REQ-0301,Copenhagen,Housing Advice,Digital,2026-04-22,2026-04-23,Closed,Low,33.6,3.2,No,I could not understand the online instructions.
+REQ-0302,Aalborg,Housing Advice,In Person,2026-04-02,2026-04-03,Closed,Normal,37.5,3.1,No,Friendly service but the process was slow.
+REQ-0303,Odense,Housing Advice,Digital,2026-04-09,2026-04-09,Closed,High,15.8,4.2,No,No problem after the staff explained the next step.
+REQ-0304,Aarhus,Housing Advice,Phone,2026-04-16,2026-04-17,Closed,Low,25.9,3.6,No,The issue was resolved quickly.
+REQ-0305,Copenhagen,Waste Collection,In Person,2026-04-23,2026-04-24,Closed,Normal,27.7,3.1,No,The guidance was clear and helpful.
+REQ-0306,Aalborg,Waste Collection,Digital,2026-04-03,2026-04-04,Closed,High,24.7,4.4,No,The wait was not long.
+REQ-0307,Odense,Waste Collection,Phone,2026-04-10,,Open,Low,38.0,3.6,Yes,The form was difficult but staff were helpful.
+REQ-0308,Aarhus,Waste Collection,In Person,2026-04-17,2026-04-17,Closed,Normal,17.1,4.2,Yes,Quick response and clear information.
+REQ-0309,Copenhagen,Citizen ID,Phone,2026-04-24,2026-04-25,Closed,High,32.3,3.4,No,I could not understand the online instructions.
+REQ-0310,Aalborg,Citizen ID,In Person,2026-04-04,2026-04-05,Closed,Low,32.1,3.1,Yes,Friendly service but the process was slow.
+REQ-0311,Odense,Citizen ID,Digital,2026-04-11,2026-04-11,Closed,Normal,13.0,4.4,No,
+REQ-0312,Aarhus,Citizen ID,Phone,2026-04-18,2026-04-19,Closed,High,28.2,3.1,Yes,The issue was resolved quickly.
+REQ-0313,Copenhagen,Parking,In Person,2026-04-25,2026-04-26,Closed,Low,40.9,3.0,No,The guidance was clear and helpful.
+REQ-0314,Aalborg,Parking,Digital,2026-04-05,2026-04-06,Closed,Normal,37.0,3.6,Yes,The wait was not long.
+REQ-0315,Odense,Parking,Phone,2026-04-12,2026-04-13,Closed,High,32.4,2.7,No,The form was difficult but staff were helpful.
+REQ-0316,Aarhus,Parking,Digital,2026-04-19,,Open,Low,20.5,4.3,No,Quick response and clear information.
+REQ-0317,Copenhagen,Family Support,Phone,2026-04-26,2026-04-26,Closed,Normal,21.8,3.7,No,I could not understand the online instructions.
+REQ-0318,Aalborg,Family Support,In Person,2026-04-06,2026-04-07,Closed,High,24.0,4.0,No,Friendly service but the process was slow.
+REQ-0319,Odense,Family Support,Digital,2026-04-13,2026-04-13,Closed,Low,13.3,4.3,No,No problem after the staff explained the next step.
+REQ-0320,Aarhus,Family Support,Phone,2026-04-20,2026-04-21,Closed,Normal,29.7,3.9,No,The issue was resolved quickly.
+REQ-0321,Copenhagen,Housing Advice,In Person,2026-05-27,2026-05-28,Closed,High,37.2,3.4,Yes,The guidance was clear and helpful.
+REQ-0322,Aalborg,Housing Advice,Digital,2026-05-07,2026-05-08,Closed,Low,29.7,3.9,No,The wait was not long.
+REQ-0323,Odense,Housing Advice,In Person,2026-05-14,2026-05-15,Closed,Normal,43.0,2.4,No,The form was difficult but staff were helpful.
+REQ-0324,Aarhus,Housing Advice,Digital,2026-05-21,2026-05-21,Closed,High,5.1,4.8,No,Quick response and clear information.
+REQ-0325,Copenhagen,Waste Collection,Phone,2026-05-01,,Open,Low,37.4,3.4,No,I could not understand the online instructions.
+REQ-0326,Aalborg,Waste Collection,In Person,2026-05-08,2026-05-09,Closed,Normal,36.1,2.6,No,Friendly service but the process was slow.
+REQ-0327,Odense,Waste Collection,Digital,2026-05-15,2026-05-15,Closed,High,13.0,5.0,No,No problem after the staff explained the next step.
+REQ-0328,Aarhus,Waste Collection,Phone,2026-05-22,2026-05-22,Closed,Low,13.5,4.1,No,The issue was resolved quickly.
+REQ-0329,Copenhagen,Citizen ID,In Person,2026-05-02,2026-05-02,Closed,Normal,23.1,3.6,No,The guidance was clear and helpful.
+REQ-0330,Aalborg,Citizen ID,Phone,2026-05-09,2026-05-10,Closed,High,43.6,2.4,No,The wait was not long.
+REQ-0331,Odense,Citizen ID,In Person,2026-05-16,2026-05-17,Closed,Low,46.5,2.2,No,The form was difficult but staff were helpful.
+REQ-0332,Aarhus,Citizen ID,Digital,2026-05-23,2026-05-23,Closed,Normal,22.5,3.2,No,Quick response and clear information.
+REQ-0333,Copenhagen,Parking,Phone,2026-05-03,2026-05-03,Closed,High,19.4,3.7,Yes,I could not understand the online instructions.
+REQ-0334,Aalborg,Parking,In Person,2026-05-10,,Open,Low,24.0,3.2,No,Friendly service but the process was slow.
+REQ-0335,Odense,Parking,Digital,2026-05-17,2026-05-18,Closed,Normal,26.6,3.5,Yes,No problem after the staff explained the next step.
+REQ-0336,Aarhus,Parking,Phone,2026-05-24,2026-05-24,Closed,High,17.0,4.5,Yes,The issue was resolved quickly.
+REQ-0337,Copenhagen,Family Support,Digital,2026-05-04,2026-05-04,Closed,Low,14.2,4.3,No,The guidance was clear and helpful.
+REQ-0338,Aalborg,Family Support,Phone,2026-05-11,2026-05-11,Closed,Normal,4.5,4.8,No,The wait was not long.
+REQ-0339,Odense,Family Support,In Person,2026-05-18,2026-05-19,Closed,High,24.5,3.7,No,The form was difficult but staff were helpful.
+REQ-0340,Aarhus,Family Support,Digital,2026-05-25,2026-05-25,Closed,Low,16.4,3.7,No,Quick response and clear information.
+REQ-0341,Copenhagen,Housing Advice,Phone,2026-06-05,2026-06-05,Closed,Normal,20.4,4.0,No,I could not understand the online instructions.
+REQ-0342,Aalborg,Housing Advice,In Person,2026-06-12,2026-06-12,Closed,High,9.5,4.6,No,Friendly service but the process was slow.
+REQ-0343,Odense,Housing Advice,Digital,2026-06-19,,Open,Low,13.6,3.9,Yes,No problem after the staff explained the next step.
+REQ-0344,Aarhus,Housing Advice,In Person,2026-06-26,2026-06-27,Closed,Normal,45.5,1.6,Yes,The issue was resolved quickly.
+REQ-0345,Copenhagen,Waste Collection,Digital,2026-06-06,2026-06-06,Closed,High,9.1,4.4,No,The guidance was clear and helpful.
+REQ-0346,Aalborg,Waste Collection,Phone,2026-06-13,2026-06-13,Closed,Low,22.5,3.8,Yes,The wait was not long.
+REQ-0347,Odense,Waste Collection,In Person,2026-06-20,2026-06-20,Closed,Normal,23.3,4.1,Yes,The form was difficult but staff were helpful.
+REQ-0348,Aarhus,Waste Collection,Digital,2026-06-27,2026-06-27,Closed,High,18.6,3.7,Yes,Quick response and clear information.
+REQ-0349,Copenhagen,Citizen ID,Phone,2026-06-07,2026-06-07,Closed,Low,22.4,4.1,No,I could not understand the online instructions.
+REQ-0350,Aalborg,Citizen ID,In Person,2026-06-14,2026-06-14,Closed,Normal,23.3,4.1,No,Friendly service but the process was slow.
+REQ-0351,Odense,Citizen ID,Phone,2026-06-21,2026-06-22,Closed,High,29.2,3.4,No,No problem after the staff explained the next step.
+REQ-0352,Aarhus,Citizen ID,In Person,2026-06-01,,Open,Low,32.7,3.3,Yes,The issue was resolved quickly.
+REQ-0353,Copenhagen,Parking,Digital,2026-06-08,2026-06-09,Closed,Normal,39.1,3.0,No,The guidance was clear and helpful.
+REQ-0354,Aalborg,Parking,Phone,2026-06-15,2026-06-15,Closed,High,12.9,4.3,No,The wait was not long.
+REQ-0355,Odense,Parking,In Person,2026-06-22,2026-06-23,Closed,Low,35.2,3.2,No,The form was difficult but staff were helpful.
+REQ-0356,Aarhus,Parking,Digital,2026-06-02,2026-06-02,Closed,Normal,15.9,4.2,No,Quick response and clear information.
+REQ-0357,Copenhagen,Family Support,Phone,2026-06-09,2026-06-10,Closed,High,30.4,2.8,No,I could not understand the online instructions.
+REQ-0358,Aalborg,Family Support,Digital,2026-06-16,2026-06-16,Closed,Low,8.9,4.8,No,Friendly service but the process was slow.
+REQ-0359,Odense,Family Support,Phone,2026-06-23,2026-06-25,Closed,Normal,48.3,2.2,Yes,No problem after the staff explained the next step.
+REQ-0360,Aarhus,Family Support,In Person,2026-06-03,2026-06-03,Closed,High,23.4,3.7,No,The issue was resolved quickly.
+REQ-0361,Copenhagen,Housing Advice,Digital,2026-01-10,,Open,Low,11.6,4.5,No,The guidance was clear and helpful.
+REQ-0362,Aalborg,Housing Advice,Phone,2026-01-17,2026-01-18,Closed,Normal,24.6,4.0,Yes,The wait was not long.
+REQ-0363,Odense,Housing Advice,In Person,2026-01-24,2026-01-25,Closed,High,34.3,2.1,No,The form was difficult but staff were helpful.
+REQ-0364,Aarhus,Housing Advice,Digital,2026-01-04,2026-01-04,Closed,Low,17.6,3.9,No,Quick response and clear information.
+REQ-0365,Copenhagen,Waste Collection,In Person,2026-01-11,2026-01-12,Closed,Normal,34.4,3.5,Yes,I could not understand the online instructions.
+REQ-0366,Aalborg,Waste Collection,Digital,2026-01-18,2026-01-19,Closed,High,30.5,3.2,Yes,Friendly service but the process was slow.
+REQ-0367,Odense,Waste Collection,Phone,2026-01-25,2026-01-25,Closed,Low,13.5,4.5,No,No problem after the staff explained the next step.
+REQ-0368,Aarhus,Waste Collection,In Person,2026-01-05,2026-01-06,Closed,Normal,30.9,3.6,Yes,The issue was resolved quickly.
+REQ-0369,Copenhagen,Citizen ID,Digital,2026-01-12,2026-01-12,Closed,High,15.2,4.0,No,The guidance was clear and helpful.
+REQ-0370,Aalborg,Citizen ID,Phone,2026-01-19,,Open,Low,35.5,2.7,No,The wait was not long.
+REQ-0371,Odense,Citizen ID,In Person,2026-01-26,2026-01-27,Closed,Normal,28.2,3.6,No,The form was difficult but staff were helpful.
+REQ-0372,Aarhus,Citizen ID,Phone,2026-01-06,2026-01-07,Closed,High,32.5,4.3,No,Quick response and clear information.
+REQ-0373,Copenhagen,Parking,In Person,2026-01-13,2026-01-14,Closed,Low,29.5,3.1,Yes,I could not understand the online instructions.
+REQ-0374,Aalborg,Parking,Digital,2026-01-20,2026-01-20,Closed,Normal,13.0,4.3,No,Friendly service but the process was slow.
+REQ-0375,Odense,Parking,Phone,2026-01-27,2026-01-27,Closed,High,19.5,4.2,Yes,No problem after the staff explained the next step.
+REQ-0376,Aarhus,Parking,In Person,2026-01-07,2026-01-08,Closed,Low,38.9,3.2,No,The issue was resolved quickly.
+REQ-0377,Copenhagen,Family Support,Digital,2026-01-14,2026-01-14,Closed,Normal,14.6,4.8,No,The guidance was clear and helpful.
+REQ-0378,Aalborg,Family Support,Phone,2026-01-21,2026-01-22,Closed,High,28.3,3.1,Yes,The wait was not long.
+REQ-0379,Odense,Family Support,Digital,2026-01-01,,Open,Low,24.3,2.7,Yes,The form was difficult but staff were helpful.
+REQ-0380,Aarhus,Family Support,Phone,2026-01-08,2026-01-08,Closed,Normal,16.6,3.7,No,Quick response and clear information.
+REQ-0381,Copenhagen,Housing Advice,In Person,2026-02-15,2026-02-17,Closed,High,58.7,1.7,Yes,I could not understand the online instructions.
+REQ-0382,Aalborg,Housing Advice,Digital,2026-02-22,2026-02-22,Closed,Low,4.7,5.0,No,Friendly service but the process was slow.
+REQ-0383,Odense,Housing Advice,Phone,2026-02-02,2026-02-03,Closed,Normal,30.4,3.2,No,No problem after the staff explained the next step.
+REQ-0384,Aarhus,Housing Advice,In Person,2026-02-09,2026-02-10,Closed,High,45.5,2.4,Yes,The issue was resolved quickly.
+REQ-0385,Copenhagen,Waste Collection,Digital,2026-02-16,2026-02-17,Closed,Low,33.7,3.0,No,The guidance was clear and helpful.
+REQ-0386,Aalborg,Waste Collection,In Person,2026-02-23,2026-02-24,Closed,Normal,35.5,2.8,No,The wait was not long.
+REQ-0387,Odense,Waste Collection,Digital,2026-02-03,2026-02-03,Closed,High,9.0,4.6,No,The form was difficult but staff were helpful.
+REQ-0388,Aarhus,Waste Collection,Phone,2026-02-10,,Open,Low,25.6,4.1,Yes,Quick response and clear information.
+REQ-0389,Copenhagen,Citizen ID,In Person,2026-02-17,2026-02-18,Closed,Normal,28.4,4.2,No,I could not understand the online instructions.
+REQ-0390,Aalborg,Citizen ID,Digital,2026-02-24,2026-02-25,Closed,High,42.6,2.2,No,Friendly service but the process was slow.
+REQ-0391,Odense,Citizen ID,Phone,2026-02-04,2026-02-04,Closed,Low,21.5,3.0,No,No problem after the staff explained the next step.
+REQ-0392,Aarhus,Citizen ID,In Person,2026-02-11,2026-02-12,Closed,Normal,34.3,2.7,No,The issue was resolved quickly.
+REQ-0393,Copenhagen,Parking,Phone,2026-02-18,2026-02-18,Closed,High,14.4,4.7,Yes,The guidance was clear and helpful.
+REQ-0394,Aalborg,Parking,In Person,2026-02-25,2026-02-26,Closed,Low,41.0,3.3,Yes,The wait was not long.
+REQ-0395,Odense,Parking,Digital,2026-02-05,2026-02-06,Closed,Normal,28.5,3.7,No,The form was difficult but staff were helpful.
+REQ-0396,Aarhus,Parking,Phone,2026-02-12,2026-02-13,Closed,High,31.3,3.3,Yes,Quick response and clear information.
+REQ-0397,Copenhagen,Family Support,In Person,2026-02-19,,Open,Low,42.0,2.9,No,I could not understand the online instructions.
+REQ-0398,Aalborg,Family Support,Digital,2026-02-26,2026-02-26,Closed,Normal,20.1,4.1,No,Friendly service but the process was slow.
+REQ-0399,Odense,Family Support,Phone,2026-02-06,2026-02-07,Closed,High,36.6,2.8,Yes,No problem after the staff explained the next step.
+REQ-0400,Aarhus,Family Support,Digital,2026-02-13,2026-02-13,Closed,Low,21.7,3.8,No,The issue was resolved quickly.
+REQ-0401,Copenhagen,Housing Advice,Phone,2026-03-20,2026-03-20,Closed,Normal,20.3,4.5,No,The guidance was clear and helpful.
+REQ-0402,Aalborg,Housing Advice,In Person,2026-03-27,2026-03-28,Closed,High,44.3,2.9,Yes,The wait was not long.
+REQ-0403,Odense,Housing Advice,Digital,2026-03-07,2026-03-08,Closed,Low,30.1,3.5,No,The form was difficult but staff were helpful.
+REQ-0404,Aarhus,Housing Advice,Phone,2026-03-14,2026-03-15,Closed,Normal,41.4,2.6,No,Quick response and clear information.
+REQ-0405,Copenhagen,Waste Collection,In Person,2026-03-21,2026-03-22,Closed,High,44.6,2.7,Yes,I could not understand the online instructions.
+REQ-0406,Aalborg,Waste Collection,Digital,2026-03-01,,Open,Low,19.4,4.8,No,Friendly service but the process was slow.
+REQ-0407,Odense,Waste Collection,In Person,2026-03-08,2026-03-10,Closed,Normal,51.3,1.0,Yes,No problem after the staff explained the next step.
+REQ-0408,Aarhus,Waste Collection,Digital,2026-03-15,2026-03-15,Closed,High,1.0,5.0,No,The issue was resolved quickly.
+REQ-0409,Copenhagen,Citizen ID,Phone,2026-03-22,2026-03-23,Closed,Low,37.5,3.8,Yes,The guidance was clear and helpful.
+REQ-0410,Aalborg,Citizen ID,In Person,2026-03-02,2026-03-03,Closed,Normal,37.3,2.6,No,The wait was not long.
+REQ-0411,Odense,Citizen ID,Digital,2026-03-09,2026-03-09,Closed,High,21.0,4.3,No,The form was difficult but staff were helpful.
+REQ-0412,Aarhus,Citizen ID,Phone,2026-03-16,2026-03-17,Closed,Low,32.1,3.9,Yes,Quick response and clear information.
+REQ-0413,Copenhagen,Parking,In Person,2026-03-23,2026-03-24,Closed,Normal,46.2,2.7,No,I could not understand the online instructions.
+REQ-0414,Aalborg,Parking,Phone,2026-03-03,2026-03-04,Closed,High,34.0,4.2,Yes,Friendly service but the process was slow.
+REQ-0415,Odense,Parking,In Person,2026-03-10,,Open,Low,24.4,3.8,Yes,No problem after the staff explained the next step.
+REQ-0416,Aarhus,Parking,Digital,2026-03-17,2026-03-18,Closed,Normal,31.1,3.5,No,The issue was resolved quickly.
+REQ-0417,Copenhagen,Family Support,Phone,2026-03-24,2026-03-25,Closed,High,25.9,3.8,No,The guidance was clear and helpful.
+REQ-0418,Aalborg,Family Support,In Person,2026-03-04,2026-03-05,Closed,Low,41.6,2.5,Yes,The wait was not long.
+REQ-0419,Odense,Family Support,Digital,2026-03-11,2026-03-12,Closed,Normal,30.0,3.3,No,The form was difficult but staff were helpful.
+REQ-0420,Aarhus,Family Support,Phone,2026-03-18,2026-03-19,Closed,High,26.8,2.8,Yes,Quick response and clear information.
+REQ-0421,Copenhagen,Housing Advice,Digital,2026-04-25,2026-04-26,Closed,Low,28.2,2.4,Yes,I could not understand the online instructions.
+REQ-0422,Aalborg,Housing Advice,Phone,2026-04-05,2026-04-06,Closed,Normal,25.8,3.2,Yes,Friendly service but the process was slow.
+REQ-0423,Odense,Housing Advice,In Person,2026-04-12,2026-04-13,Closed,High,45.4,3.2,No,No problem after the staff explained the next step.
+REQ-0424,Aarhus,Housing Advice,Digital,2026-04-19,,Open,Low,32.5,3.8,No,The issue was resolved quickly.
+REQ-0425,Copenhagen,Waste Collection,Phone,2026-04-26,2026-04-27,Closed,Normal,23.9,3.6,No,The guidance was clear and helpful.
+REQ-0426,Aalborg,Waste Collection,In Person,2026-04-06,2026-04-07,Closed,High,32.1,3.6,No,The wait was not long.
+REQ-0427,Odense,Waste Collection,Digital,2026-04-13,2026-04-13,Closed,Low,12.1,5.0,No,The form was difficult but staff were helpful.
+REQ-0428,Aarhus,Waste Collection,In Person,2026-04-20,2026-04-21,Closed,Normal,29.0,3.4,No,Quick response and clear information.
+REQ-0429,Copenhagen,Citizen ID,Digital,2026-04-27,2026-04-27,Closed,High,5.2,4.5,No,I could not understand the online instructions.
+REQ-0430,Aalborg,Citizen ID,Phone,2026-04-07,2026-04-08,Closed,Low,34.8,3.4,No,Friendly service but the process was slow.
+REQ-0431,Odense,Citizen ID,In Person,2026-04-14,2026-04-15,Closed,Normal,41.8,3.0,No,No problem after the staff explained the next step.
+REQ-0432,Aarhus,Citizen ID,Digital,2026-04-21,2026-04-22,Closed,High,35.5,2.8,Yes,The issue was resolved quickly.
+REQ-0433,Copenhagen,Parking,Phone,2026-04-01,,Open,Low,24.2,4.3,Yes,The guidance was clear and helpful.
+REQ-0434,Aalborg,Parking,In Person,2026-04-08,2026-04-09,Closed,Normal,43.4,2.8,Yes,The wait was not long.
+REQ-0435,Odense,Parking,Phone,2026-04-15,2026-04-16,Closed,High,37.9,2.4,No,The form was difficult but staff were helpful.
+REQ-0436,Aarhus,Parking,In Person,2026-04-22,2026-04-22,Closed,Low,15.0,4.6,No,Quick response and clear information.
+REQ-0437,Copenhagen,Family Support,Digital,2026-04-02,2026-04-03,Closed,Normal,25.6,3.6,No,I could not understand the online instructions.
+REQ-0438,Aalborg,Family Support,Phone,2026-04-09,2026-04-10,Closed,High,34.6,2.8,Yes,Friendly service but the process was slow.
+REQ-0439,Odense,Family Support,In Person,2026-04-16,2026-04-16,Closed,Low,13.8,4.3,Yes,No problem after the staff explained the next step.
+REQ-0440,Aarhus,Family Support,Digital,2026-04-23,2026-04-23,Closed,Normal,6.8,4.0,No,The issue was resolved quickly.
+REQ-0441,Copenhagen,Housing Advice,Phone,2026-05-03,2026-05-03,Closed,High,15.9,4.1,Yes,The guidance was clear and helpful.
+REQ-0442,Aalborg,Housing Advice,Digital,2026-05-10,,Open,Low,13.2,3.8,No,The wait was not long.
+REQ-0443,Odense,Housing Advice,Phone,2026-05-17,2026-05-18,Closed,Normal,24.6,4.4,Yes,The form was difficult but staff were helpful.
+REQ-0444,Aarhus,Housing Advice,In Person,2026-05-24,2026-05-24,Closed,High,20.2,3.3,No,Quick response and clear information.
+REQ-0445,Copenhagen,Waste Collection,Digital,2026-05-04,2026-05-04,Closed,Low,1.0,5.0,No,I could not understand the online instructions.
+REQ-0446,Aalborg,Waste Collection,Phone,2026-05-11,2026-05-12,Closed,Normal,24.6,3.6,No,Friendly service but the process was slow.
+REQ-0447,Odense,Waste Collection,In Person,2026-05-18,2026-05-19,Closed,High,42.2,3.0,Yes,No problem after the staff explained the next step.
+REQ-0448,Aarhus,Waste Collection,Digital,2026-05-25,2026-05-25,Closed,Low,8.6,4.8,No,The issue was resolved quickly.
+REQ-0449,Copenhagen,Citizen ID,In Person,2026-05-05,2026-05-05,Closed,Normal,18.3,3.7,Yes,The guidance was clear and helpful.
+REQ-0450,Aalborg,Citizen ID,Digital,2026-05-12,2026-05-12,Closed,High,10.4,3.8,No,The wait was not long.
+REQ-0451,Odense,Citizen ID,Phone,2026-05-19,,Open,Low,14.7,4.5,No,The form was difficult but staff were helpful.
+REQ-0452,Aarhus,Citizen ID,In Person,2026-05-26,2026-05-28,Closed,Normal,47.9,2.9,No,Quick response and clear information.
+REQ-0453,Copenhagen,Parking,Digital,2026-05-06,2026-05-06,Closed,High,21.2,4.1,No,I could not understand the online instructions.
+REQ-0454,Aalborg,Parking,Phone,2026-05-13,2026-05-14,Closed,Low,30.1,3.8,Yes,Friendly service but the process was slow.
+REQ-0455,Odense,Parking,In Person,2026-05-20,2026-05-21,Closed,Normal,36.5,4.1,No,No problem after the staff explained the next step.
+REQ-0456,Aarhus,Parking,Phone,2026-05-27,2026-05-28,Closed,High,29.0,3.1,No,The issue was resolved quickly.
+REQ-0457,Copenhagen,Family Support,In Person,2026-05-07,2026-05-08,Closed,Low,26.3,3.9,Yes,The guidance was clear and helpful.
+REQ-0458,Aalborg,Family Support,Digital,2026-05-14,2026-05-14,Closed,Normal,22.0,4.6,No,The wait was not long.
+REQ-0459,Odense,Family Support,Phone,2026-05-21,2026-05-22,Closed,High,38.0,2.7,No,The form was difficult but staff were helpful.
+REQ-0460,Aarhus,Family Support,In Person,2026-05-01,,Open,Low,28.1,3.2,No,Quick response and clear information.
+REQ-0461,Copenhagen,Housing Advice,Digital,2026-06-08,2026-06-09,Closed,Normal,23.7,3.5,No,I could not understand the online instructions.
+REQ-0462,Aalborg,Housing Advice,Phone,2026-06-15,2026-06-16,Closed,High,34.8,3.3,No,Friendly service but the process was slow.
+REQ-0463,Odense,Housing Advice,Digital,2026-06-22,2026-06-23,Closed,Low,29.6,4.0,Yes,No problem after the staff explained the next step.
+REQ-0464,Aarhus,Housing Advice,Phone,2026-06-02,2026-06-03,Closed,Normal,36.7,3.3,No,The issue was resolved quickly.
+REQ-0465,Copenhagen,Waste Collection,In Person,2026-06-09,2026-06-10,Closed,High,31.7,2.4,Yes,The guidance was clear and helpful.
+REQ-0466,Aalborg,Waste Collection,Digital,2026-06-16,2026-06-16,Closed,Low,18.3,4.9,No,The wait was not long.
+REQ-0467,Odense,Waste Collection,Phone,2026-06-23,2026-06-24,Closed,Normal,28.8,3.8,No,The form was difficult but staff were helpful.
+REQ-0468,Aarhus,Waste Collection,In Person,2026-06-03,2026-06-04,Closed,High,37.7,2.5,Yes,Quick response and clear information.
+REQ-0469,Copenhagen,Citizen ID,Digital,2026-06-10,,Open,Low,15.8,4.1,No,I could not understand the online instructions.
+REQ-0470,Aalborg,Citizen ID,In Person,2026-06-17,2026-06-18,Closed,Normal,32.3,3.0,No,Friendly service but the process was slow.
+REQ-0471,Odense,Citizen ID,Digital,2026-06-24,2026-06-25,Closed,High,32.2,2.4,No,No problem after the staff explained the next step.
+REQ-0472,Aarhus,Citizen ID,Phone,2026-06-04,2026-06-05,Closed,Low,28.2,3.1,No,The issue was resolved quickly.
+REQ-0473,Copenhagen,Parking,In Person,2026-06-11,2026-06-11,Closed,Normal,12.0,4.0,No,The guidance was clear and helpful.
+REQ-0474,Aalborg,Parking,Digital,2026-06-18,2026-06-19,Closed,High,28.2,2.9,No,The wait was not long.
+REQ-0475,Odense,Parking,Phone,2026-06-25,2026-06-26,Closed,Low,31.7,3.2,No,The form was difficult but staff were helpful.
+REQ-0476,Aarhus,Parking,In Person,2026-06-05,2026-06-06,Closed,Normal,36.6,2.2,No,Quick response and clear information.
+REQ-0477,Copenhagen,Family Support,Phone,2026-06-12,2026-06-12,Closed,High,7.7,3.7,No,I could not understand the online instructions.
+REQ-0478,Aalborg,Family Support,In Person,2026-06-19,,Open,Low,26.4,3.3,Yes,Friendly service but the process was slow.
+REQ-0479,Odense,Family Support,Digital,2026-06-26,2026-06-26,Closed,Normal,1.0,5.0,No,No problem after the staff explained the next step.
+REQ-0480,Aarhus,Family Support,Phone,2026-06-06,2026-06-07,Closed,High,36.4,3.0,No,The issue was resolved quickly.
+REQ-0481,Copenhagen,Housing Advice,In Person,2026-01-13,2026-01-13,Closed,Low,21.3,4.1,No,The guidance was clear and helpful.
+REQ-0482,Aalborg,Housing Advice,Digital,2026-01-20,2026-01-20,Closed,Normal,18.7,2.9,No,The wait was not long.
+REQ-0483,Odense,Housing Advice,Phone,2026-01-27,2026-01-28,Closed,High,35.8,3.3,Yes,The form was difficult but staff were helpful.
+REQ-0484,Aarhus,Housing Advice,Digital,2026-01-07,2026-01-07,Closed,Low,20.3,3.3,Yes,Quick response and clear information.
+REQ-0485,Copenhagen,Waste Collection,Phone,2026-01-14,2026-01-15,Closed,Normal,33.8,3.2,No,I could not understand the online instructions.
+REQ-0486,Aalborg,Waste Collection,In Person,2026-01-21,2026-01-22,Closed,High,36.6,2.4,Yes,Friendly service but the process was slow.
+REQ-0487,Odense,Waste Collection,Digital,2026-01-01,,Open,Low,10.3,3.7,No,No problem after the staff explained the next step.
+REQ-0488,Aarhus,Waste Collection,Phone,2026-01-08,2026-01-09,Closed,Normal,42.1,2.0,Yes,The issue was resolved quickly.
+REQ-0489,Copenhagen,Citizen ID,In Person,2026-01-15,2026-01-16,Closed,High,27.1,2.5,Yes,The guidance was clear and helpful.
+REQ-0490,Aalborg,Citizen ID,Digital,2026-01-22,2026-01-22,Closed,Low,18.0,4.3,No,The wait was not long.
+REQ-0491,Odense,Citizen ID,In Person,2026-01-02,2026-01-03,Closed,Normal,30.9,3.1,No,The form was difficult but staff were helpful.
+REQ-0492,Aarhus,Citizen ID,Digital,2026-01-09,2026-01-10,Closed,High,25.5,3.5,No,Quick response and clear information.
+REQ-0493,Copenhagen,Parking,Phone,2026-01-16,2026-01-16,Closed,Low,13.2,4.7,No,I could not understand the online instructions.
+REQ-0494,Aalborg,Parking,In Person,2026-01-23,2026-01-24,Closed,Normal,31.2,3.1,Yes,Friendly service but the process was slow.
+REQ-0495,Odense,Parking,Digital,2026-01-03,2026-01-03,Closed,High,17.8,4.2,Yes,No problem after the staff explained the next step.
+REQ-0496,Aarhus,Parking,Phone,2026-01-10,,Open,Low,28.0,3.0,No,The issue was resolved quickly.
+REQ-0497,Copenhagen,Family Support,In Person,2026-01-17,2026-01-18,Closed,Normal,42.3,2.4,Yes,The guidance was clear and helpful.
+REQ-0498,Aalborg,Family Support,Phone,2026-01-24,2026-01-25,Closed,High,23.6,3.3,No,The wait was not long.
+REQ-0499,Odense,Family Support,In Person,2026-01-04,2026-01-05,Closed,Low,35.8,2.7,No,The form was difficult but staff were helpful.
+REQ-0500,Aarhus,Family Support,Digital,2026-01-11,2026-01-11,Closed,Normal,21.9,3.6,Yes,Quick response and clear information.
+REQ-0501,Copenhagen,Housing Advice,Phone,2026-02-18,2026-02-18,Closed,High,11.6,5.0,No,I could not understand the online instructions.
+REQ-0502,Aalborg,Housing Advice,In Person,2026-02-25,2026-02-26,Closed,Low,25.4,4.0,No,Friendly service but the process was slow.
+REQ-0503,Odense,Housing Advice,Digital,2026-02-05,2026-02-05,Closed,Normal,23.3,4.3,No,No problem after the staff explained the next step.
+REQ-0504,Aarhus,Housing Advice,Phone,2026-02-12,2026-02-13,Closed,High,40.1,2.7,No,The issue was resolved quickly.
+REQ-0505,Copenhagen,Waste Collection,Digital,2026-02-19,,Open,Low,16.2,3.4,No,The guidance was clear and helpful.
+REQ-0506,Aalborg,Waste Collection,Phone,2026-02-26,2026-02-27,Closed,Normal,37.7,3.6,Yes,The wait was not long.
+REQ-0507,Odense,Waste Collection,In Person,2026-02-06,2026-02-07,Closed,High,35.9,3.6,Yes,The form was difficult but staff were helpful.
+REQ-0508,Aarhus,Waste Collection,Digital,2026-02-13,2026-02-13,Closed,Low,11.3,4.2,No,Quick response and clear information.
+REQ-0509,Copenhagen,Citizen ID,Phone,2026-02-20,2026-02-21,Closed,Normal,38.0,2.4,No,I could not understand the online instructions.
+REQ-0510,Aalborg,Citizen ID,In Person,2026-02-27,2026-02-28,Closed,High,42.2,3.0,No,Friendly service but the process was slow.
+REQ-0511,Odense,Citizen ID,Digital,2026-02-07,2026-02-08,Closed,Low,26.8,4.5,No,No problem after the staff explained the next step.
+REQ-0512,Aarhus,Citizen ID,In Person,2026-02-14,2026-02-15,Closed,Normal,40.3,3.1,Yes,The issue was resolved quickly.
+REQ-0513,Copenhagen,Parking,Digital,2026-02-21,2026-02-21,Closed,High,21.0,4.7,No,The guidance was clear and helpful.
+REQ-0514,Aalborg,Parking,Phone,2026-02-01,,Open,Low,17.8,4.1,No,The wait was not long.
+REQ-0515,Odense,Parking,In Person,2026-02-08,2026-02-09,Closed,Normal,32.2,3.6,No,The form was difficult but staff were helpful.
+REQ-0516,Aarhus,Parking,Digital,2026-02-15,2026-02-15,Closed,High,19.4,3.9,Yes,Quick response and clear information.
+REQ-0517,Copenhagen,Family Support,Phone,2026-02-22,2026-02-22,Closed,Low,18.4,4.6,No,I could not understand the online instructions.
+REQ-0518,Aalborg,Family Support,In Person,2026-02-02,2026-02-03,Closed,Normal,29.7,4.3,No,Friendly service but the process was slow.
+REQ-0519,Odense,Family Support,Phone,2026-02-09,2026-02-10,Closed,High,31.7,3.6,No,No problem after the staff explained the next step.
+REQ-0520,Aarhus,Family Support,In Person,2026-02-16,2026-02-17,Closed,Low,36.9,3.3,Yes,The issue was resolved quickly.
+REQ-0521,Copenhagen,Housing Advice,Digital,2026-03-23,2026-03-23,Closed,Normal,2.4,5.0,No,The guidance was clear and helpful.
+REQ-0522,Aalborg,Housing Advice,Phone,2026-03-03,2026-03-04,Closed,High,25.7,3.8,No,The wait was not long.
+REQ-0523,Odense,Housing Advice,In Person,2026-03-10,,Open,Low,24.6,2.7,No,The form was difficult but staff were helpful.
+REQ-0524,Aarhus,Housing Advice,Digital,2026-03-17,2026-03-18,Closed,Normal,36.3,3.0,No,Quick response and clear information.
+REQ-0525,Copenhagen,Waste Collection,Phone,2026-03-24,2026-03-25,Closed,High,30.3,3.1,Yes,I could not understand the online instructions.
+REQ-0526,Aalborg,Waste Collection,Digital,2026-03-04,2026-03-04,Closed,Low,12.4,5.0,No,Friendly service but the process was slow.
+REQ-0527,Odense,Waste Collection,Phone,2026-03-11,2026-03-11,Closed,Normal,21.2,4.7,No,No problem after the staff explained the next step.
+REQ-0528,Aarhus,Waste Collection,In Person,2026-03-18,2026-03-19,Closed,High,29.5,3.9,Yes,The issue was resolved quickly.
+REQ-0529,Copenhagen,Citizen ID,Digital,2026-03-25,2026-03-25,Closed,Low,1.0,4.9,No,The guidance was clear and helpful.
+REQ-0530,Aalborg,Citizen ID,Phone,2026-03-05,2026-03-06,Closed,Normal,30.9,3.1,No,The wait was not long.
+REQ-0531,Odense,Citizen ID,In Person,2026-03-12,2026-03-13,Closed,High,39.8,3.2,No,The form was difficult but staff were helpful.
+REQ-0532,Aarhus,Citizen ID,Digital,2026-03-19,,Open,Low,26.3,4.2,No,Quick response and clear information.
+REQ-0533,Copenhagen,Parking,In Person,2026-03-26,2026-03-26,Closed,Normal,21.5,4.0,No,I could not understand the online instructions.
+REQ-0534,Aalborg,Parking,Digital,2026-03-06,2026-03-07,Closed,High,36.6,3.2,Yes,Friendly service but the process was slow.
+REQ-0535,Odense,Parking,Phone,2026-03-13,2026-03-13,Closed,Low,1.8,4.9,No,No problem after the staff explained the next step.
+REQ-0536,Aarhus,Parking,In Person,2026-03-20,2026-03-21,Closed,Normal,36.4,3.0,Yes,The issue was resolved quickly.
+REQ-0537,Copenhagen,Family Support,Digital,2026-03-27,2026-03-27,Closed,High,14.8,3.6,No,The guidance was clear and helpful.
+REQ-0538,Aalborg,Family Support,Phone,2026-03-07,2026-03-08,Closed,Low,27.2,3.9,No,The wait was not long.
+REQ-0539,Odense,Family Support,In Person,2026-03-14,2026-03-15,Closed,Normal,41.7,2.9,No,The form was difficult but staff were helpful.
+REQ-0540,Aarhus,Family Support,Phone,2026-03-21,2026-03-22,Closed,High,38.0,3.7,No,Quick response and clear information.
+REQ-0541,Copenhagen,Housing Advice,In Person,2026-04-01,,Open,Low,39.1,2.4,Yes,I could not understand the online instructions.
+REQ-0542,Aalborg,Housing Advice,Digital,2026-04-08,2026-04-08,Closed,Normal,11.4,4.2,No,Friendly service but the process was slow.
+REQ-0543,Odense,Housing Advice,Phone,2026-04-15,2026-04-15,Closed,High,22.2,3.8,No,No problem after the staff explained the next step.
+REQ-0544,Aarhus,Housing Advice,In Person,2026-04-22,2026-04-23,Closed,Low,40.4,3.2,No,The issue was resolved quickly.
+REQ-0545,Copenhagen,Waste Collection,Digital,2026-04-02,2026-04-02,Closed,Normal,19.4,4.2,No,The guidance was clear and helpful.
+REQ-0546,Aalborg,Waste Collection,Phone,2026-04-09,2026-04-10,Closed,High,33.5,3.1,No,The wait was not long.
+REQ-0547,Odense,Waste Collection,Digital,2026-04-16,2026-04-17,Closed,Low,24.2,3.9,No,The form was difficult but staff were helpful.
+REQ-0548,Aarhus,Waste Collection,Phone,2026-04-23,2026-04-23,Closed,Normal,20.9,3.9,No,Quick response and clear information.
+REQ-0549,Copenhagen,Citizen ID,In Person,2026-04-03,2026-04-04,Closed,High,41.2,2.2,No,I could not understand the online instructions.
+REQ-0550,Aalborg,Citizen ID,Digital,2026-04-10,,Open,Low,10.7,4.4,Yes,Friendly service but the process was slow.
+REQ-0551,Odense,Citizen ID,Phone,2026-04-17,2026-04-18,Closed,Normal,27.3,3.4,No,No problem after the staff explained the next step.
+REQ-0552,Aarhus,Citizen ID,In Person,2026-04-24,2026-04-25,Closed,High,35.3,4.0,No,The issue was resolved quickly.
+REQ-0553,Copenhagen,Parking,Digital,2026-04-04,2026-04-05,Closed,Low,25.2,3.9,No,The guidance was clear and helpful.
+REQ-0554,Aalborg,Parking,In Person,2026-04-11,2026-04-12,Closed,Normal,30.4,3.5,No,The wait was not long.
+REQ-0555,Odense,Parking,Digital,2026-04-18,2026-04-18,Closed,High,16.7,3.8,No,The form was difficult but staff were helpful.
+REQ-0556,Aarhus,Parking,Phone,2026-04-25,2026-04-26,Closed,Low,39.3,3.0,Yes,Quick response and clear information.
+REQ-0004,Aarhus,Housing Advice,Digital,2026-01-22,2026-01-23,Closed,Low,34.9,2.4,Yes,Quick response and clear information.
+REQ-0076,Aarhus,Parking,Phone,2026-04-13,2026-04-13,Closed,Low,21.0,4.3,Yes,Quick response and clear information.
+REQ-0202,Aalborg,Housing Advice,Phone,2026-05-04,2026-05-04,Closed,Low,8.7,4.3,No,The wait was not long.
+REQ-0421,Copenhagen,Housing Advice,Digital,2026-04-25,2026-04-26,Closed,Low,28.2,2.4,Yes,I could not understand the online instructions.
