@@ -2,7 +2,7 @@
 
 **Course:** Introduction to Scripting, Data Mining and Machine Learning  
 **Audience:** Programming beginners in Techno-Anthropology and related social-science programmes  
-**Estimated study time:** 12 to 16 hours, including the situational exercises and self-test
+**Estimated study time:** 12 to 16 hours, including the situational exercises and self-test<br>
 **Primary environment:** Google Colab  
 **Prerequisite:** Python Foundations I, including variables, values, data types, expressions, `print()`, type conversion, user input and comments  
 
@@ -129,7 +129,7 @@ Usable rows: 112
 
 ## The recurring situation used in this tutorial
 
-Throughout this tutorial, we will use small examples connected to a fictional case called the **Green Mobility Consultation**.
+Many early examples use a fictional **Green Mobility Consultation** so one situation can be followed across several Python ideas. The later worked exercises deliberately use other fictional TAN7-related situations so students can transfer the same syntax to different contexts.
 
 A municipality has collected public consultation records about:
 
@@ -299,7 +299,7 @@ You should receive a syntax error because `=` cannot be used as the equality com
 
 <a id="example-2-8-4"></a>
 
-#### Example 2.8.4 — Repair
+#### Example 2.8.4 — Repair assignment with equality comparison
 
 ```python
 engagement = 125
@@ -322,7 +322,7 @@ Python can also compare strings.
 
 <a id="example-2-8-5"></a>
 
-#### Example 2.8.5 — Comparing strings
+#### Example 2.8.5 — Compare two matching strings
 
 ```python
 actor_type = "Municipality"
@@ -344,7 +344,7 @@ String comparisons are case-sensitive:
 
 <a id="example-2-8-6"></a>
 
-#### Example 2.8.6 — Comparing strings
+#### Example 2.8.6 — Compare two different strings
 
 ```python
 topic = "Cycling"
@@ -480,8 +480,10 @@ Review the missing data
 #### Example 2.8.10 — Structure
 
 ```python
+condition = True
+
 if condition:
-    code_to_run
+    print("The condition is true")
 ```
 
 Important parts:
@@ -527,7 +529,7 @@ Correct:
 
 <a id="example-2-8-12"></a>
 
-#### Example 2.8.12 — Indentation is part of Python syntax
+#### Example 2.8.12 — A correctly indented decision
 
 ```python
 engagement = 150
@@ -551,7 +553,7 @@ Incorrect:
 
 <a id="example-2-8-13"></a>
 
-#### Example 2.8.13 — Indentation is part of Python syntax
+#### Example 2.8.13 — Broken indentation
 
 ```python
 engagement = 150
@@ -568,7 +570,7 @@ Add four spaces before the action:
 
 <a id="example-2-8-14"></a>
 
-#### Example 2.8.14 — Repair
+#### Example 2.8.14 — Repair the indentation
 
 ```python
 engagement = 150
@@ -633,7 +635,7 @@ This record supports the proposal
 
 <a id="example-2-8-17"></a>
 
-#### Example 2.8.17 — Common mistake
+#### Example 2.8.17 — A case-sensitive comparison
 
 ```python
 position = "Support"
@@ -648,7 +650,7 @@ One possible repair is:
 
 <a id="example-2-8-18"></a>
 
-#### Example 2.8.18 — Common mistake
+#### Example 2.8.18 — Normalise text before comparing
 
 ```python
 position = "Support"
@@ -669,7 +671,7 @@ Complete the missing condition:
 
 <a id="example-2-8-19"></a>
 
-#### Example 2.8.19 — Practice checkpoint 2
+#### Example 2.8.19 — Starter for a duplicate-review decision
 
 ```python
 duplicate_rows = 7
@@ -685,7 +687,7 @@ The message should be printed when there is at least one duplicate row.
 
 <a id="example-2-8-20"></a>
 
-#### Example 2.8.20 — Practice checkpoint 2
+#### Example 2.8.20 — Completed duplicate-review decision
 
 ```python
 duplicate_rows = 7
@@ -740,10 +742,12 @@ Exactly one branch runs.
 #### Example 2.8.22 — Understanding the flow
 
 ```python
+condition = False
+
 if condition:
-    action_when_true
+    print("Action when true")
 else:
-    action_when_false
+    print("Action when false")
 ```
 
 Python:
@@ -794,7 +798,7 @@ A more robust version is:
 
 <a id="example-2-8-24"></a>
 
-#### Example 2.8.24 — Problem with this version
+#### Example 2.8.24 — Clean the input before comparing
 
 ```python
 answer = input("Is the source verified? Type yes or no: ")
@@ -827,7 +831,7 @@ Broken code:
 
 <a id="example-2-8-25"></a>
 
-#### Example 2.8.25 — Deliberate break-and-repair activity
+#### Example 2.8.25 — Broken code with missing colons
 
 ```python
 engagement = 80
@@ -844,7 +848,7 @@ Repaired code:
 
 <a id="example-2-8-26"></a>
 
-#### Example 2.8.26 — Deliberate break-and-repair activity
+#### Example 2.8.26 — Repair the missing colons
 
 ```python
 engagement = 80
@@ -909,7 +913,7 @@ Consider this incorrect order:
 
 <a id="example-2-8-28"></a>
 
-#### Example 2.8.28 — Order matters
+#### Example 2.8.28 — Incorrect threshold order
 
 ```python
 engagement = 250
@@ -934,7 +938,7 @@ A better order is:
 
 <a id="example-2-8-29"></a>
 
-#### Example 2.8.29 — Order matters
+#### Example 2.8.29 — Correct threshold order
 
 ```python
 engagement = 250
@@ -984,7 +988,7 @@ Instead of printing inside every branch, we store the classification in `status`
 
 <a id="example-2-8-31"></a>
 
-#### Example 2.8.31 — Why assign the result to a variable?
+#### Example 2.8.31 — Reuse a stored status in a report
 
 ```python
 missing_percentage = 18
@@ -1011,7 +1015,7 @@ The complete code makes the origin of `status` visible.
 
 <a id="example-2-8-32"></a>
 
-#### Example 2.8.32 — Why assign the result to a variable?
+#### Example 2.8.32 — Use a stored status in a second decision
 
 ```python
 missing_percentage = 18
@@ -1050,7 +1054,7 @@ The earlier version only assigned six values one after another, so Python kept o
 
 <a id="example-2-8-33"></a>
 
-#### Example 2.8.33 — Boundary testing
+#### Example 2.8.33 — Test an exact boundary value
 
 ```python
 missing_percentage = 5
@@ -1083,7 +1087,7 @@ For example, this code contains a gap:
 
 <a id="example-2-8-34"></a>
 
-#### Example 2.8.34 — Boundary testing
+#### Example 2.8.34 — Reveal a missing boundary branch
 
 ```python
 observation_minutes = 20
@@ -1100,38 +1104,38 @@ A repair needs to include the boundary value. The worked exercises below continu
 
 <a id="example-2-8-35"></a>
 
-#### Worked Exercise 2.8.35 — Classify an online fieldnote
+#### Worked Exercise 2.8.35 — Decide whether an online fieldnote is ready
 
 **Story:** A Digital Anthropology group observes a public livestream about local cultural life.<br>
-One student records how many minutes the group observed.<br>
-The group calls 45 minutes or more an extended fieldnote, 20 to 44 minutes a standard fieldnote, and anything shorter a brief fieldnote.<br>
-These labels organise the class notes; they do not measure the quality of the ethnography.
+The observer records whether the fieldnote includes both a time and a place description.<br>
+For this first decision, the student enters `yes` only when both details are present.<br>
+Any answer other than `yes` or `no` should receive a clear instruction instead of being silently accepted.
 
-**Question:** Ask the student for the number of observation minutes and print the matching fieldnote label.
+**Question:** Ask whether both required details are present and print the correct next step.
 
 **Steps to solve it:**
 
-1. Use `input()` to ask for the number of minutes.
-2. Convert the answer to an integer.
-3. Check the highest threshold first with `if`.
-4. Check the second threshold with `elif`.
-5. Use `else` for every smaller value and print the selected label.
+1. Collect and clean the yes/no answer.
+2. Use `if` for `yes`.
+3. Use `elif` for `no`.
+4. Use `else` for an unclear answer.
+5. Print one plain-language next step.
 
 <details>
 <summary>Show the worked solution</summary>
 
 ```python
-observation_minutes = int(input("Minutes observed: "))
+details_answer = input("Are both time and place described? yes/no: ").strip().lower()
 
-if observation_minutes >= 45:
-    print("Extended fieldnote")
-elif observation_minutes >= 20:
-    print("Standard fieldnote")
+if details_answer == "yes":
+    print("Fieldnote is ready for group review")
+elif details_answer == "no":
+    print("Add the missing contextual detail")
 else:
-    print("Brief fieldnote")
+    print("Please enter yes or no")
 ```
 
-For an input of `32`, the program prints `Standard fieldnote`.
+For an input of `no`, the program prints `Add the missing contextual detail`.
 
 </details>
 
@@ -1141,20 +1145,20 @@ For an input of `32`, the program prints `Standard fieldnote`.
 
 #### Worked Exercise 2.8.36 — Review a stakeholder map
 
-**Story:** A group in Framing Techno-Anthropological Transformation is preparing a fictional neighbourhood heat-plan case.<br>
+**Story:** A group in Framing Techno-Anthropological Transformation prepares a fictional neighbourhood heat-plan case.<br>
 They count the different stakeholder groups represented on their map.<br>
 Eight or more groups is labelled broad, four to seven is developing, and fewer than four needs expansion.<br>
-The labels help the group plan its next discussion; they do not prove that every voice is represented.
+The labels organise discussion and do not prove that every voice is represented.
 
 **Question:** Ask for the number of stakeholder groups and print the matching map label.
 
 **Steps to solve it:**
 
-1. Collect the group count with `input()` and convert it to an integer.
-2. Test `8` or more first.
-3. Use `elif` to test `4` or more.
-4. Use `else` for a count below `4`.
-5. Print one clear message for the group.
+1. Convert the entered count to an integer.
+2. Check the highest threshold first.
+3. Use `elif` for the middle range.
+4. Use `else` for the remaining values.
+5. Print the resulting label.
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1178,22 +1182,22 @@ For an input of `6`, the program prints `Developing stakeholder map`.
 
 <a id="example-2-8-37"></a>
 
-#### Worked Exercise 2.8.37 — Classify a wayfinding test
+#### Worked Exercise 2.8.37 — Classify a wayfinding test from the lowest boundary
 
 **Story:** A TAN7 group tests a fictional wayfinding kiosk before discussing the design.<br>
 A participant tries to find the accessibility information, and the group records the time in seconds.<br>
-Thirty seconds or less is labelled quick, 31 to 60 seconds is workable, and more than 60 seconds suggests revision.<br>
-The time is one observation and does not by itself prove that the kiosk is usable.
+Thirty seconds or less is quick, 31 to 60 seconds is workable, and more than 60 seconds suggests revision.<br>
+The decision is written from the lowest upper boundary rather than from the highest value.
 
-**Question:** Ask for the completion time and print the matching test label.
+**Question:** Ask for the completion time and classify it using ascending upper boundaries.
 
 **Steps to solve it:**
 
-1. Ask for the number of seconds and convert the answer to an integer.
-2. Check the lowest upper boundary first: `30` seconds or less.
-3. Use `elif` for `60` seconds or less.
-4. Use `else` for every longer time.
-5. Print the result in plain language.
+1. Convert the entered seconds to an integer.
+2. Check `30` or less first.
+3. Use `elif` for `60` or less.
+4. Use `else` for a longer time.
+5. Print the matching observation.
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1217,30 +1221,34 @@ For an input of `52`, the program prints `Workable completion time`.
 
 <a id="example-2-8-38"></a>
 
-#### Worked Exercise 2.8.38 — Check a seven-day media diary
+#### Worked Exercise 2.8.38 — Check the valid range of a seven-day media diary
 
-**Story:** A Digital Anthropology exercise asks a participant to make one media-diary entry on each of seven days.<br>
+**Story:** A Digital Anthropology exercise asks for one media-diary entry on each of seven days.<br>
 The student enters how many daily entries were completed.<br>
-Seven entries is complete, four to six is usable but incomplete, and fewer than four is too limited for this classroom task.<br>
-This teaching rule organises follow-up work; it is not a universal research standard.
+A value below zero or above seven is impossible and must be reported separately.<br>
+Within the valid range, seven is complete, four to six is usable but incomplete, and fewer than four is limited.
 
-**Question:** Ask for the number of completed days and print the diary status.
+**Question:** Validate the possible range before classifying the diary.
 
 **Steps to solve it:**
 
-1. Use `input()` and convert the number of completed days to an integer.
-2. Use `if` with `==` to identify exactly seven entries.
-3. Use `elif` with `>=` for four to six entries.
-4. Use `else` for fewer than four entries.
-5. Print one diary status.
+1. Convert the entered days to an integer.
+2. Check a negative value first.
+3. Use `elif` to check a value above seven separately.
+4. Continue with exact and threshold branches for the valid range.
+5. Use `else` for the remaining valid values.
 
 <details>
 <summary>Show the worked solution</summary>
 
 ```python
-completed_days = int(input("Completed diary days: "))
+completed_days = int(input("Completed diary days (0-7): "))
 
-if completed_days == 7:
+if completed_days < 0:
+    print("Diary days cannot be negative")
+elif completed_days > 7:
+    print("A seven-day diary cannot contain more than seven daily entries")
+elif completed_days == 7:
     print("Complete media diary")
 elif completed_days >= 4:
     print("Usable but incomplete media diary")
@@ -1248,7 +1256,7 @@ else:
     print("Media diary is too limited for this task")
 ```
 
-For an input of `5`, the program prints `Usable but incomplete media diary`.
+For an input of `8`, the program prints `Invalid number of diary days`.
 
 </details>
 
@@ -1256,38 +1264,40 @@ For an input of `5`, the program prints `Usable but incomplete media diary`.
 
 <a id="example-2-8-39"></a>
 
-#### Worked Exercise 2.8.39 — Interpret an AI explanation rating
+#### Worked Exercise 2.8.39 — Interpret a written AI-explanation rating
 
-**Story:** A class tests a fictional explanation shown after an automated application-sorting decision.<br>
-One participant rates the explanation from `1` to `5`, where `5` is the highest rating.<br>
-A rating of `5` is labelled very clear, `3` or `4` is partly clear, and a lower rating is unclear.<br>
-One rating describes one response; it cannot establish that the system is fair.
+**Story:** A class discusses a fictional explanation shown after an automated application-sorting decision.<br>
+Instead of entering a number, one participant chooses the word `clear`, `partial`, or `unclear`.<br>
+The program should preserve these three meanings and reject an unrecognised category.<br>
+One response cannot establish that the underlying system is fair.
 
-**Question:** Ask for the clarity rating and print the matching interpretation.
+**Question:** Ask for the word rating and print the matching interpretation.
 
 **Steps to solve it:**
 
-1. Ask for the rating and convert it to an integer.
-2. Use `if` with `==` for the highest rating.
-3. Use `elif` with `>=` for ratings `3` and `4`.
-4. Use `else` for lower ratings.
-5. Print the interpretation without making a fairness claim.
+1. Clean the text with `strip()` and `lower()`.
+2. Use `if` for `clear`.
+3. Use `elif` for `partial` and another `elif` for `unclear`.
+4. Use `else` for an unsupported word.
+5. Print one message.
 
 <details>
 <summary>Show the worked solution</summary>
 
 ```python
-clarity_rating = int(input("Explanation clarity rating (1-5): "))
+clarity_label = input("Explanation rating (clear/partial/unclear): ").strip().lower()
 
-if clarity_rating == 5:
-    print("Very clear explanation")
-elif clarity_rating >= 3:
-    print("Partly clear explanation")
+if clarity_label == "clear":
+    print("The explanation was reported as clear")
+elif clarity_label == "partial":
+    print("The explanation needs more detail")
+elif clarity_label == "unclear":
+    print("The explanation needs substantial revision")
 else:
-    print("Unclear explanation")
+    print("Use clear, partial, or unclear")
 ```
 
-For an input of `3`, the program prints `Partly clear explanation`.
+For an input of `partial`, the program prints `The explanation needs more detail`.
 
 </details>
 
@@ -1295,22 +1305,22 @@ For an input of `3`, the program prints `Partly clear explanation`.
 
 <a id="example-2-8-40"></a>
 
-#### Worked Exercise 2.8.40 — Classify a moderation response
+#### Worked Exercise 2.8.40 — Reuse a moderation-response classification
 
 **Story:** A student studies a fictional online community with a published safety-report process.<br>
 The student records how many hours passed before a moderator acknowledged one report.<br>
-Six hours or less is labelled quick, more than six but no more than 24 hours is same-day, and a longer wait is delayed.<br>
-Response speed is useful to record, but it does not show whether the moderation decision was fair.
+The first decision stores a response-speed label instead of printing inside every branch.<br>
+A second decision uses that stored result to add a follow-up action.
 
-**Question:** Ask for the response time in hours and print the matching response label.
+**Question:** Classify the response time, print the stored label, and add a follow-up when the response is delayed.
 
 **Steps to solve it:**
 
-1. Ask for the number of hours and convert the answer to a float.
-2. Test `6` hours or less first.
-3. Use `elif` to test `24` hours or less.
-4. Use `else` for a longer response time.
-5. Print the label that matches the entered value.
+1. Convert the entered hours to a float.
+2. Assign one of three labels inside `if`, `elif`, and `else`.
+3. Print the stored label after the branch.
+4. Use a second `if` to test the stored result.
+5. Print the follow-up only for the delayed category.
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1319,14 +1329,19 @@ Response speed is useful to record, but it does not show whether the moderation 
 response_hours = float(input("Hours before acknowledgement: "))
 
 if response_hours <= 6:
-    print("Quick acknowledgement")
+    response_status = "Quick acknowledgement"
 elif response_hours <= 24:
-    print("Same-day acknowledgement")
+    response_status = "Same-day acknowledgement"
 else:
-    print("Delayed acknowledgement")
+    response_status = "Delayed acknowledgement"
+
+print("Response status:", response_status)
+
+if response_status == "Delayed acknowledgement":
+    print("Add the case to the follow-up review")
 ```
 
-For an input of `30`, the program prints `Delayed acknowledgement`.
+For an input of `30`, the program prints the delayed status and the follow-up instruction.
 
 </details>
 
@@ -1467,9 +1482,12 @@ Less clear:
 
 <a id="example-2-9-5"></a>
 
-#### Example 2.9.5 — Parentheses for clarity
+#### Example 2.9.5 — Ambiguous grouping without parentheses
 
 ```python
+topic = "Cycling"
+engagement = 120
+
 if topic == "Cycling" or topic == "Public Transport" and engagement > 100:
     print("Selected")
 ```
@@ -1478,9 +1496,12 @@ Clearer:
 
 <a id="example-2-9-6"></a>
 
-#### Example 2.9.6 — Parentheses for clarity
+#### Example 2.9.6 — Explicit grouping with parentheses
 
 ```python
+topic = "Cycling"
+engagement = 120
+
 if (topic == "Cycling" or topic == "Public Transport") and engagement > 100:
     print("Selected")
 ```
@@ -1500,7 +1521,7 @@ Incorrect:
 
 <a id="example-2-9-7"></a>
 
-#### Example 2.9.7 — Common mistake: repeating the variable incorrectly
+#### Example 2.9.7 — Incorrect or condition
 
 ```python
 topic = "Cycling"
@@ -1515,7 +1536,7 @@ Correct:
 
 <a id="example-2-9-8"></a>
 
-#### Example 2.9.8 — Common mistake: repeating the variable incorrectly
+#### Example 2.9.8 — Repeat the comparison correctly
 
 ```python
 topic = "Cycling"
@@ -1528,14 +1549,17 @@ A later alternative is:
 
 <a id="example-2-9-9"></a>
 
-#### Example 2.9.9 — Common mistake: repeating the variable incorrectly
+#### Example 2.9.9 — Use membership in a list
 
 ```python
-if topic in ["Cycling", "Public Transport"]:
+topic = "Cycling"
+selected_topics = ["Cycling", "Public Transport"]
+
+if topic in selected_topics:
     print("Selected topic")
 ```
 
-The second version uses a list and the `in` operator.
+This alternative uses a short list and the `in` membership operator. Lists are introduced fully in Tutorial 2.11; here, read the condition as “if the topic appears among these allowed values.”
 
 ---
 
@@ -1630,9 +1654,12 @@ This nested code:
 
 <a id="example-2-9-13"></a>
 
-#### Example 2.9.13 — Avoid unnecessary nesting
+#### Example 2.9.13 — Nested version of the rule
 
 ```python
+source_verified = True
+engagement = 230
+
 if source_verified:
     if engagement >= 200:
         print("Selected")
@@ -1642,9 +1669,12 @@ can also be written as:
 
 <a id="example-2-9-14"></a>
 
-#### Example 2.9.14 — Avoid unnecessary nesting
+#### Example 2.9.14 — Combined-condition version of the rule
 
 ```python
+source_verified = True
+engagement = 230
+
 if source_verified and engagement >= 200:
     print("Selected")
 ```
@@ -1895,7 +1925,7 @@ The `input()` function always returns a string.
 
 <a id="example-2-10-1"></a>
 
-#### Example 2.10.1 — Why conversion is necessary
+#### Example 2.10.1 — Input returns a string
 
 ```python
 engagement = input("Enter the engagement value: ")
@@ -1916,7 +1946,7 @@ This fails:
 
 <a id="example-2-10-2"></a>
 
-#### Example 2.10.2 — Why conversion is necessary
+#### Example 2.10.2 — A string–integer comparison error
 
 ```python
 engagement = input("Enter the engagement value: ")
@@ -1931,7 +1961,7 @@ Repair:
 
 <a id="example-2-10-3"></a>
 
-#### Example 2.10.3 — Why conversion is necessary
+#### Example 2.10.3 — Convert before comparing
 
 ```python
 engagement = input("Enter the engagement value: ")
@@ -1997,7 +2027,7 @@ Without error handling:
 
 <a id="example-2-10-6"></a>
 
-#### Example 2.10.6 — Why error handling matters
+#### Example 2.10.6 — Conversion without error handling
 
 ```python
 engagement = int(input("Enter engagement: "))
@@ -2010,7 +2040,7 @@ With error handling:
 
 <a id="example-2-10-7"></a>
 
-#### Example 2.10.7 — Why error handling matters
+#### Example 2.10.7 — A broad error handler
 
 ```python
 try:
@@ -2037,9 +2067,10 @@ Error: enter a whole number
 
 ```python
 try:
-    code_that_might_fail
-except:
-    code_to_run_if_an_error_occurs
+    engagement = int("high")
+    print("Recorded:", engagement)
+except ValueError:
+    print("Error: enter a whole number")
 ```
 
 Python first attempts the `try` block. When an error occurs, it moves to the `except` block.
@@ -2128,9 +2159,12 @@ Less informative:
 
 <a id="example-2-10-12"></a>
 
-#### Example 2.10.12 — Avoid a completely empty `except`
+#### Example 2.10.12 — A broad except block
 
 ```python
+try:
+    engagement = int("high")
+    print("Recorded:", engagement)
 except:
     print("Something went wrong")
 ```
@@ -2139,9 +2173,12 @@ More informative:
 
 <a id="example-2-10-13"></a>
 
-#### Example 2.10.13 — Avoid a completely empty `except`
+#### Example 2.10.13 — A specific ValueError handler
 
 ```python
+try:
+    engagement = int("high")
+    print("Recorded:", engagement)
 except ValueError:
     print("Enter a numeric value")
 ```
@@ -2154,7 +2191,7 @@ Repair this program so that non-numeric input produces a helpful message:
 
 <a id="example-2-10-14"></a>
 
-#### Example 2.10.14 — Practice checkpoint 5
+#### Example 2.10.14 — Unprotected starter program
 
 ```python
 number_of_records = int(input("Enter number of records: "))
@@ -2170,7 +2207,7 @@ else:
 
 <a id="example-2-10-15"></a>
 
-#### Example 2.10.15 — Practice checkpoint 5
+#### Example 2.10.15 — Repaired input handling
 
 ```python
 try:
@@ -2189,6 +2226,218 @@ except ValueError:
 
 ---
 
+---
+
+## Contextual worked exercises for Tutorial 2.10
+
+These five exercises use different TAN7-related situations and different program structures. Attempt each question and write a short plan before opening the worked solution.
+
+<a id="example-2-10-16"></a>
+
+#### Worked Exercise 2.10.16 — Validate an interview duration
+
+**Story:** A student records the duration of a semi-structured interview in minutes.<br>
+The teaching plan allows durations from 1 to 240 minutes.<br>
+Text such as `one hour` cannot be converted directly to an integer.<br>
+A numerical value outside the range is a different problem from a conversion error.
+
+**Question:** Ask for the duration and distinguish conversion errors from invalid ranges.
+
+**Steps to solve it:**
+
+1. Put the conversion inside `try`.
+2. Catch `ValueError` specifically.
+3. Reject values below 1 or above 240.
+4. Accept values inside the documented range.
+5. Print a message that identifies the type of problem.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+try:
+    interview_minutes = int(input("Interview duration in minutes: "))
+    if interview_minutes < 1 or interview_minutes > 240:
+        print("Duration must be between 1 and 240 minutes")
+    else:
+        print("Duration recorded:", interview_minutes)
+except ValueError:
+    print("Enter the duration as a whole number")
+```
+
+An input of `one hour` produces the whole-number message.
+
+</details>
+
+---
+
+<a id="example-2-10-17"></a>
+
+#### Worked Exercise 2.10.17 — Validate a survey response percentage
+
+**Story:** A community survey reports a response percentage that may include a decimal.<br>
+The value must be between 0 and 100 inclusive.<br>
+Using `float()` accepts `62.5`, while unsuitable text still raises `ValueError`.<br>
+A valid number above 100 remains logically impossible.
+
+**Question:** Read a decimal percentage and validate both its type and range.
+
+**Steps to solve it:**
+
+1. Convert with `float()` inside `try`.
+2. Catch `ValueError`.
+3. Check the lower and upper limits.
+4. Classify an accepted value as below or at least 60 per cent.
+5. Keep range validation separate from conversion.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+try:
+    response_percentage = float(input("Survey response percentage: "))
+    if response_percentage < 0 or response_percentage > 100:
+        print("Percentage must be between 0 and 100")
+    elif response_percentage >= 60:
+        print("Response target reached")
+    else:
+        print("Response target not yet reached")
+except ValueError:
+    print("Enter a numerical percentage")
+```
+
+An input of `62.5` prints `Response target reached`.
+
+</details>
+
+---
+
+<a id="example-2-10-18"></a>
+
+#### Worked Exercise 2.10.18 — Check workshop capacity relationships
+
+**Story:** A participatory workshop has a stated number of places and a number of registrations.<br>
+Both values must be whole numbers and neither may be negative.<br>
+The registrations may exceed capacity, but capacity itself cannot be zero for this planned event.<br>
+The relationship between the two valid inputs determines whether a waiting list is needed.
+
+**Question:** Read both counts and validate their relationship before reporting capacity.
+
+**Steps to solve it:**
+
+1. Convert both inputs inside one focused `try` block.
+2. Reject a non-positive capacity.
+3. Reject a negative registration count.
+4. Compare registrations with capacity.
+5. Catch `ValueError` for unsuitable text.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+try:
+    available_places = int(input("Available workshop places: "))
+    registrations = int(input("Number of registrations: "))
+    if available_places <= 0:
+        print("Available places must be greater than zero")
+    elif registrations < 0:
+        print("Registrations cannot be negative")
+    elif registrations > available_places:
+        print("Create a waiting list")
+    else:
+        print("All registrations fit within capacity")
+except ValueError:
+    print("Enter both counts as whole numbers")
+```
+
+Inputs `24` and `29` print `Create a waiting list`.
+
+</details>
+
+---
+
+<a id="example-2-10-19"></a>
+
+#### Worked Exercise 2.10.19 — Validate an archival year
+
+**Story:** A student enters the stated year of a digitised archival item.<br>
+The classroom collection covers years from 1900 through 2026.<br>
+A year written as text causes a conversion error.<br>
+A converted year such as 3026 is numerical but outside the collection scope.
+
+**Question:** Validate the entered year and report whether it belongs to the stated collection period.
+
+**Steps to solve it:**
+
+1. Convert the input to an integer.
+2. Catch `ValueError`.
+3. Check the earliest year.
+4. Check the latest year.
+5. Accept only a year inside both boundaries.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+try:
+    archive_year = int(input("Year shown on the archival item: "))
+    if archive_year < 1900:
+        print("Year is earlier than this teaching collection")
+    elif archive_year > 2026:
+        print("Year is later than this teaching collection")
+    else:
+        print("Year is within the teaching collection")
+except ValueError:
+    print("Enter the year as a whole number")
+```
+
+An input of `1987` is accepted as within the collection.
+
+</details>
+
+---
+
+<a id="example-2-10-20"></a>
+
+#### Worked Exercise 2.10.20 — Validate an outage duration with an optional decimal
+
+**Story:** A group documents the duration of a fictional platform outage in hours.<br>
+A decimal such as `1.5` is valid, while negative time is impossible.<br>
+Durations above 72 hours require confirmation because the unit may have been entered incorrectly.<br>
+The program must distinguish these cases from unsuitable text.
+
+**Question:** Read the duration as a float and print the appropriate validation message.
+
+**Steps to solve it:**
+
+1. Convert with `float()` inside `try`.
+2. Reject a negative duration.
+3. Flag values above 72 for confirmation.
+4. Accept the remaining range.
+5. Catch `ValueError` separately.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+try:
+    outage_hours = float(input("Platform outage duration in hours: "))
+    if outage_hours < 0:
+        print("Outage duration cannot be negative")
+    elif outage_hours > 72:
+        print("Confirm the value and its unit")
+    else:
+        print("Outage duration recorded:", outage_hours)
+except ValueError:
+    print("Enter the duration as a number")
+```
+
+An input of `1.5` records the decimal duration.
+
+</details>
+
+---
+
 # Tutorial 2.11 — Collections, for loops and counters
 
 ## Tutorial 2.11 overview
@@ -2201,7 +2450,7 @@ Collections let one variable organise several related values before the course m
 
 Collections let a script represent several observations rather than one isolated value. A list keeps an order, a dictionary gives fields meaningful labels and a set keeps unique values. Loops then apply the same documented step to each item, which supports systematic inspection but can hide individual detail when results are reduced to totals.
 
-# Collections needed before CSV and JSON
+## Collections needed before CSV and JSON
 
 CSV and JSON tutorials introduce new file formats, but the values read from them are normally organised with Python collections. A **list** keeps an ordered sequence, a **dictionary** connects keys with values, and a **set** keeps unique values. A list of dictionaries is especially important because each dictionary can represent one record before the same structure is written to or read from a file.
 
@@ -2240,7 +2489,7 @@ registration["group"] = 3
 print(registration)
 ```
 
-Dictionary keys make a record easier to interpret than a sequence of unexplained positions. Accessing a missing key with square brackets raises `KeyError`; `registration.get("email")` would instead return `None` when the key is absent.
+Dictionary keys make a record easier to interpret than a sequence of unexplained positions. Accessing a missing key with square brackets raises `KeyError`; `registration.get("email")` would instead return `None` when the key is absent. `None` is Python’s special value for “no value is present”; it should normally trigger an explicit missing-data check rather than be treated as an ordinary response.
 
 ## Sets: unique values
 
@@ -2317,7 +2566,10 @@ for number in [1, 2, 3]:
 #### Example 2.11.6 — Explanation
 
 ```python
-for number in [1, 2, 3]:
+numbers = [1, 2, 3]
+
+for number in numbers:
+    print("Current number:", number)
 ```
 
 - `for` begins the loop.
@@ -2479,7 +2731,7 @@ increase by 2
 
 <a id="example-2-11-12"></a>
 
-#### Example 2.11.12 — Repeating a message
+#### Example 2.11.12 — Repeat with a named variable
 
 ```python
 for repetition in range(3):
@@ -2500,7 +2752,7 @@ A conventional name for an unused variable is `_`:
 
 <a id="example-2-11-13"></a>
 
-#### Example 2.11.13 — Repeating a message
+#### Example 2.11.13 — Use an underscore for an unused value
 
 ```python
 for _ in range(3):
@@ -2567,40 +2819,57 @@ High-engagement records: 2
 
 <a id="example-2-11-16"></a>
 
-#### Example 2.11.16 — Step-by-step explanation
+#### Example 2.11.16 — Initialise the counter
 
 ```python
+engagement_values = [35, 120, 240]
 high_count = 0
+
+print("Counter before the loop:", high_count)
 ```
 
 The counter begins at zero.
 
 <a id="example-2-11-17"></a>
 
-#### Example 2.11.17 — Step-by-step explanation
+#### Example 2.11.17 — Visit every engagement value
 
 ```python
+engagement_values = [35, 120, 240]
+
 for engagement in engagement_values:
+    print("Current engagement:", engagement)
 ```
 
 Python processes each engagement value.
 
 <a id="example-2-11-18"></a>
 
-#### Example 2.11.18 — Step-by-step explanation
+#### Example 2.11.18 — Test the current value
 
 ```python
-if engagement >= 200:
+engagement_values = [35, 120, 240]
+
+for engagement in engagement_values:
+    if engagement >= 200:
+        print(engagement, "meets the high threshold")
 ```
 
 The program checks whether the current value meets the threshold.
 
 <a id="example-2-11-19"></a>
 
-#### Example 2.11.19 — Step-by-step explanation
+#### Example 2.11.19 — Increase the counter explicitly
 
 ```python
-high_count = high_count + 1
+engagement_values = [35, 120, 240]
+high_count = 0
+
+for engagement in engagement_values:
+    if engagement >= 200:
+        high_count = high_count + 1
+
+print("High-engagement records:", high_count)
 ```
 
 When the condition is true, the counter increases by one.
@@ -2609,10 +2878,17 @@ An equivalent shorter form is:
 
 <a id="example-2-11-20"></a>
 
-#### Example 2.11.20 — Step-by-step explanation
+#### Example 2.11.20 — Increase the counter with +=
 
 ```python
-high_count += 1
+engagement_values = [35, 120, 240]
+high_count = 0
+
+for engagement in engagement_values:
+    if engagement >= 200:
+        high_count += 1
+
+print("High-engagement records:", high_count)
 ```
 
 ---
@@ -2621,7 +2897,7 @@ high_count += 1
 
 <a id="example-2-11-21"></a>
 
-#### Example 2.11.21 — Accumulating a total
+#### Example 2.11.21 — Accumulate a total
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -2643,9 +2919,15 @@ Then calculate the mean:
 
 <a id="example-2-11-22"></a>
 
-#### Example 2.11.22 — Accumulating a total
+#### Example 2.11.22 — Calculate a mean from complete data
 
 ```python
+engagement_values = [35, 120, 240, 80]
+total_engagement = 0
+
+for engagement in engagement_values:
+    total_engagement += engagement
+
 average_engagement = total_engagement / len(engagement_values)
 print("Average engagement:", average_engagement)
 ```
@@ -2656,7 +2938,7 @@ print("Average engagement:", average_engagement)
 Average engagement: 118.75
 ```
 
-`len()` returns the number of items in the list.
+`len()` returns the number of items in the list. The complete example repeats the list and total calculation so it can run independently.
 
 Later, pandas will calculate summaries more directly. This example helps you understand the repeated process behind a total and mean.
 
@@ -2668,7 +2950,7 @@ Broken:
 
 <a id="example-2-11-23"></a>
 
-#### Example 2.11.23 — Deliberate indentation error
+#### Example 2.11.23 — Broken loop indentation
 
 ```python
 topics = ["Cycling", "Accessibility"]
@@ -2681,7 +2963,7 @@ Repair:
 
 <a id="example-2-11-24"></a>
 
-#### Example 2.11.24 — Deliberate indentation error
+#### Example 2.11.24 — Repaired loop indentation
 
 ```python
 topics = ["Cycling", "Accessibility"]
@@ -2700,7 +2982,7 @@ Starter code:
 
 <a id="example-2-11-25"></a>
 
-#### Example 2.11.25 — Practice checkpoint 6
+#### Example 2.11.25 — Starter list for the topic loop
 
 ```python
 topics = ["Cycling", "Parking", "Accessibility"]
@@ -2719,7 +3001,7 @@ Topic under review: Accessibility
 
 <a id="example-2-11-26"></a>
 
-#### Example 2.11.26 — Practice checkpoint 6
+#### Example 2.11.26 — Completed topic loop
 
 ```python
 topics = ["Cycling", "Parking", "Accessibility"]
@@ -2727,6 +3009,216 @@ topics = ["Cycling", "Parking", "Accessibility"]
 for topic in topics:
     print("Topic under review:", topic)
 ```
+
+</details>
+
+---
+
+---
+
+## Contextual worked exercises for Tutorial 2.11
+
+These five exercises use different TAN7-related situations and different program structures. Attempt each question and write a short plan before opening the worked solution.
+
+<a id="example-2-11-27"></a>
+
+#### Worked Exercise 2.11.27 — Number media-diary themes
+
+**Story:** A student has identified four themes in a media diary.<br>
+The original order reflects when the themes were first recorded.<br>
+A loop should print every theme with a counter beginning at one.<br>
+The counter must be initialised before the loop and updated once per theme.
+
+**Question:** Loop through the ordered list and print a numbered theme list.
+
+**Steps to solve it:**
+
+1. Create the list in the intended order.
+2. Initialise the counter before the loop.
+3. Print the counter and current theme.
+4. Increase the counter inside the loop.
+5. Check that every theme appears once.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+themes = ["Work", "Family", "News", "Entertainment"]
+theme_number = 1
+
+for theme in themes:
+    print(theme_number, theme)
+    theme_number += 1
+```
+
+The output numbers the four themes from 1 to 4.
+
+</details>
+
+---
+
+<a id="example-2-11-28"></a>
+
+#### Worked Exercise 2.11.28 — Add a review status to an archival record
+
+**Story:** A digitised archival item is represented by a dictionary with named fields.<br>
+The student needs to read the title and then add a review status.<br>
+Using keys communicates what each value means more clearly than relying on positions.<br>
+The original identifier must remain unchanged.
+
+**Question:** Read one dictionary value, add a new key, and print the updated record.
+
+**Steps to solve it:**
+
+1. Create a dictionary with identifier, title, and year.
+2. Access the title by its key.
+3. Add a `review_status` key.
+4. Print the unchanged identifier.
+5. Print the complete updated dictionary.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+archive_item = {
+    "item_id": "ARC-07",
+    "title": "Neighbourhood meeting poster",
+    "year": 1987,
+}
+
+print("Title:", archive_item["title"])
+archive_item["review_status"] = "Context note required"
+print("Identifier:", archive_item["item_id"])
+print(archive_item)
+```
+
+The output preserves `ARC-07` and includes the new review status.
+
+</details>
+
+---
+
+<a id="example-2-11-29"></a>
+
+#### Worked Exercise 2.11.29 — Find repeated workshop registrations
+
+**Story:** A workshop list contains participant codes, including accidental repeats.<br>
+The original list must be preserved because repetition is itself information.<br>
+A set can identify unique codes, while the difference in lengths shows how many repeated entries exist.<br>
+The program should report both totals.
+
+**Question:** Use a list and a set to calculate the number of repeated registration entries.
+
+**Steps to solve it:**
+
+1. Store the original codes in a list.
+2. Create a set from the list.
+3. Calculate the difference between the two lengths.
+4. Print the original and unique totals.
+5. Print the repeated-entry count.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+registration_codes = ["CPH-01", "AAL-02", "CPH-01", "CPH-03", "AAL-02"]
+unique_codes = set(registration_codes)
+repeated_entries = len(registration_codes) - len(unique_codes)
+
+print("Original entries:", len(registration_codes))
+print("Unique codes:", len(unique_codes))
+print("Repeated entries:", repeated_entries)
+```
+
+The program reports five entries, three unique codes, and two repeated entries.
+
+</details>
+
+---
+
+<a id="example-2-11-30"></a>
+
+#### Worked Exercise 2.11.30 — Review structured transport observations
+
+**Story:** A fieldwork group stores three transport observations as dictionaries inside a list.<br>
+Each record has an identifier, a mode, and a duration in minutes.<br>
+A loop should classify observations lasting at least 15 minutes for extended review.<br>
+The program must count the selected records without losing their identifiers.
+
+**Question:** Loop through the records, print each decision, and count extended-review observations.
+
+**Steps to solve it:**
+
+1. Create a list of dictionaries with consistent keys.
+2. Initialise the counter before the loop.
+3. Read named values from each dictionary.
+4. Apply the duration decision.
+5. Print the identifier and final count.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+observations = [
+    {"record_id": "T-01", "mode": "Bus", "minutes": 12},
+    {"record_id": "T-02", "mode": "Cycle", "minutes": 18},
+    {"record_id": "T-03", "mode": "Walk", "minutes": 21},
+]
+extended_count = 0
+
+for observation in observations:
+    if observation["minutes"] >= 15:
+        print(observation["record_id"], "Extended review")
+        extended_count += 1
+    else:
+        print(observation["record_id"], "Standard review")
+
+print("Extended-review observations:", extended_count)
+```
+
+Records `T-02` and `T-03` enter extended review.
+
+</details>
+
+---
+
+<a id="example-2-11-31"></a>
+
+#### Worked Exercise 2.11.31 — Calculate a mean only when responses exist
+
+**Story:** A small community survey stores completion times in a list.<br>
+The total must be accumulated with a loop before calculating a mean.<br>
+An empty list would make the denominator zero.<br>
+The program should therefore check the list before dividing.
+
+**Question:** Calculate the mean completion time and handle an empty list safely.
+
+**Steps to solve it:**
+
+1. Create the list and initialise a total.
+2. Loop through the values and add each to the total.
+3. Check whether the list contains any values.
+4. Divide only when the length is greater than zero.
+5. Print a clear message for either path.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+completion_times = [8, 11, 9, 12]
+total_time = 0
+
+for completion_time in completion_times:
+    total_time += completion_time
+
+if len(completion_times) > 0:
+    mean_time = total_time / len(completion_times)
+    print("Mean completion time:", mean_time)
+else:
+    print("No completion times are available")
+```
+
+The mean of the four values is `10.0`.
 
 </details>
 
@@ -2787,30 +3279,42 @@ In the example:
 
 <a id="example-2-12-2"></a>
 
-#### Example 2.12.2 — Three essential parts
+#### Example 2.12.2 — Set the initial loop state
 
 ```python
 number = 5
+print("Initial value:", number)
 ```
 
 is the initial value.
 
 <a id="example-2-12-3"></a>
 
-#### Example 2.12.3 — Three essential parts
+#### Example 2.12.3 — Use the condition in a complete loop
 
 ```python
+number = 3
+
 while number > 0:
+    print(number)
+    number -= 1
+
+print("Condition is now false")
 ```
 
 is the condition.
 
 <a id="example-2-12-4"></a>
 
-#### Example 2.12.4 — Three essential parts
+#### Example 2.12.4 — Update the state in a complete loop
 
 ```python
-number = number - 1
+number = 3
+
+while number > 0:
+    print("Before update:", number)
+    number = number - 1
+    print("After update:", number)
 ```
 
 is the update.
@@ -2916,9 +3420,11 @@ Use a `for` loop when you know the sequence or number of repetitions:
 
 <a id="example-2-12-9"></a>
 
-#### Example 2.12.9 — `for` or `while`?
+#### Example 2.12.9 — Choose a for loop for known items
 
 ```python
+topics = ["Cycling", "Accessibility", "Public Transport"]
+
 for topic in topics:
     print(topic)
 ```
@@ -2927,11 +3433,21 @@ Use a `while` loop when repetition depends on a changing condition:
 
 <a id="example-2-12-10"></a>
 
-#### Example 2.12.10 — `for` or `while`?
+#### Example 2.12.10 — Choose a while loop for an unknown number of attempts
 
 ```python
+answers = ["maybe", "yes"]
+answer_index = 0
+valid_input = False
+
 while not valid_input:
-    ...
+    answer = answers[answer_index]
+    print("Checking:", answer)
+    answer_index += 1
+    if answer == "yes" or answer == "no":
+        valid_input = True
+
+print("Accepted:", answer)
 ```
 
 For beginners, `for` loops are usually safer and more common in data processing.
@@ -3010,6 +3526,223 @@ The missing value is skipped.
 
 ---
 
+---
+
+## Contextual worked exercises for Tutorial 2.12
+
+These five exercises use different TAN7-related situations and different program structures. Attempt each question and write a short plan before opening the worked solution.
+
+<a id="example-2-12-13"></a>
+
+#### Worked Exercise 2.12.13 — Repeat a consent-status question until it is clear
+
+**Story:** A classroom simulation asks whether consent documentation is present.<br>
+Only `yes` or `no` is accepted, but the number of attempts is unknown.<br>
+The loop should explain an unclear answer and then ask again.<br>
+It stops immediately after a valid response.
+
+**Question:** Use a while loop to repeat until the answer is `yes` or `no`.
+
+**Steps to solve it:**
+
+1. Start with a Boolean flag set to `False`.
+2. Ask and clean the answer inside the loop.
+3. Set the flag to `True` only for accepted words.
+4. Print guidance for another word.
+5. Print the accepted answer after the loop.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+valid_answer = False
+
+while not valid_answer:
+    consent_answer = input("Is consent documentation present? yes/no: ").strip().lower()
+    if consent_answer == "yes" or consent_answer == "no":
+        valid_answer = True
+    else:
+        print("Please enter yes or no")
+
+print("Accepted answer:", consent_answer)
+```
+
+The loop continues after `maybe` and stops after `yes` or `no`.
+
+</details>
+
+---
+
+<a id="example-2-12-14"></a>
+
+#### Worked Exercise 2.12.14 — Limit attempts to enter a participant code
+
+**Story:** A workshop check accepts the fictional code `TAN7`.<br>
+To avoid an endless prompt, the student receives at most three attempts.<br>
+The loop condition must track both success and remaining attempts.<br>
+The final message distinguishes success from using all attempts.
+
+**Question:** Build a bounded while loop with a maximum of three attempts.
+
+**Steps to solve it:**
+
+1. Initialise the attempt counter and success flag.
+2. Repeat while attempts remain and success is false.
+3. Increase the attempt count on every path.
+4. Set success when the code matches.
+5. Print the final result after the loop.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+attempts = 0
+code_accepted = False
+
+while attempts < 3 and not code_accepted:
+    entered_code = input("Enter participant code: ").strip().upper()
+    attempts += 1
+    if entered_code == "TAN7":
+        code_accepted = True
+    else:
+        print("Code not recognised")
+
+if code_accepted:
+    print("Participant code accepted")
+else:
+    print("Maximum attempts reached")
+```
+
+The loop cannot continue beyond three attempts.
+
+</details>
+
+---
+
+<a id="example-2-12-15"></a>
+
+#### Worked Exercise 2.12.15 — Collect fieldnote tags until a sentinel word
+
+**Story:** A student adds short tags while reviewing a fieldnote.<br>
+The number of tags is not known before the review begins.<br>
+Typing `done` is a sentinel that ends collection and should not become a tag.<br>
+Empty text should be ignored with a helpful message.
+
+**Question:** Collect valid tags until the student enters `done`.
+
+**Steps to solve it:**
+
+1. Start with an empty tag list.
+2. Use `while True` for the prompt cycle.
+3. Use `break` for the documented sentinel.
+4. Append non-empty tags.
+5. Print the final list after the loop.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+fieldnote_tags = []
+
+while True:
+    tag = input("Add a fieldnote tag, or type done: ").strip().lower()
+    if tag == "done":
+        break
+    if tag == "":
+        print("Empty tags are not recorded")
+        continue
+    fieldnote_tags.append(tag)
+
+print("Recorded tags:", fieldnote_tags)
+```
+
+Entering `mobility`, `access`, and `done` stores the first two tags.
+
+</details>
+
+---
+
+<a id="example-2-12-16"></a>
+
+#### Worked Exercise 2.12.16 — Stop at an explicit review marker
+
+**Story:** A list represents records arriving in a documented order.<br>
+The marker `STOP FOR REVIEW` means later records must not be processed automatically.<br>
+A `for` loop is appropriate because the records already exist.<br>
+A `break` statement ends the loop at the marker.
+
+**Question:** Process records until the explicit review marker appears.
+
+**Steps to solve it:**
+
+1. Store the ordered records in a list.
+2. Loop through each value.
+3. Test for the marker before printing a processed message.
+4. Use `break` when the marker is reached.
+5. Print a final message after the loop.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+review_queue = ["R-01", "R-02", "STOP FOR REVIEW", "R-03"]
+
+for record_id in review_queue:
+    if record_id == "STOP FOR REVIEW":
+        print("Automatic processing stopped")
+        break
+    print("Processed:", record_id)
+
+print("Review the remaining queue manually")
+```
+
+`R-03` is not processed automatically.
+
+</details>
+
+---
+
+<a id="example-2-12-17"></a>
+
+#### Worked Exercise 2.12.17 — Skip missing values while preserving a count
+
+**Story:** A list of observation durations contains two missing values represented by `None`.<br>
+`None` means that no duration value is stored for that position.<br>
+The loop should skip numerical processing for those entries but count them for review.<br>
+Valid values must still be printed.
+
+**Question:** Use `continue` to skip missing values without hiding how many were found.
+
+**Steps to solve it:**
+
+1. Initialise a missing-value counter.
+2. Loop through every value.
+3. Increase the counter before `continue`.
+4. Print valid numerical values.
+5. Print the missing-value count after the loop.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+observation_minutes = [12, None, 8, None, 21]
+missing_count = 0
+
+for minutes in observation_minutes:
+    if minutes is None:
+        missing_count += 1
+        continue
+    print("Recorded minutes:", minutes)
+
+print("Missing durations:", missing_count)
+```
+
+The program reports three valid durations and two missing values.
+
+</details>
+
+---
+
 # Tutorial 2.13 — Functions, parameters and return values
 
 ## Tutorial 2.13 overview
@@ -3059,10 +3792,13 @@ Welcome to the data-quality checker
 
 <a id="example-2-13-2"></a>
 
-#### Example 2.13.2 — Explanation
+#### Example 2.13.2 — Write a complete function definition
 
 ```python
 def show_welcome():
+    print("Welcome to the data-quality checker")
+
+show_welcome()
 ```
 
 - `def` is a reserved word that defines a function.
@@ -3072,19 +3808,26 @@ def show_welcome():
 
 <a id="example-2-13-3"></a>
 
-#### Example 2.13.3 — Explanation
+#### Example 2.13.3 — Put the function body inside the definition
 
 ```python
-    print("Welcome to the data-quality checker")
+def show_welcome():
+    message = "Welcome to the data-quality checker"
+    print(message)
+
+show_welcome()
 ```
 
 The indented line belongs to the function.
 
 <a id="example-2-13-4"></a>
 
-#### Example 2.13.4 — Explanation
+#### Example 2.13.4 — Call the function after defining it
 
 ```python
+def show_welcome():
+    print("Welcome to the data-quality checker")
+
 show_welcome()
 ```
 
@@ -3100,26 +3843,28 @@ Good names:
 
 <a id="example-2-13-5"></a>
 
-#### Example 2.13.5 — Meaningful function names
+#### Example 2.13.5 — Use a descriptive function name
 
 ```python
-calculate_percentage()
-classify_engagement()
-check_missing_values()
-show_summary()
+def classify_engagement(engagement):
+    if engagement >= 200:
+        return "High"
+    return "Standard"
+
+print(classify_engagement(240))
 ```
 
 Less useful names:
 
 <a id="example-2-13-6"></a>
 
-#### Example 2.13.6 — Meaningful function names
+#### Example 2.13.6 — Why a vague function name is unhelpful
 
 ```python
-do_it()
-thing()
-f1()
-xyz()
+def do_it(value):
+    return value >= 200
+
+print(do_it(240))
 ```
 
 A function name should describe the action.
@@ -3153,10 +3898,13 @@ In the definition:
 
 <a id="example-2-13-8"></a>
 
-#### Example 2.13.8 — Terminology
+#### Example 2.13.8 — Identify a parameter in a complete function
 
 ```python
 def greet_actor(actor_name):
+    print("Record submitted by:", actor_name)
+
+greet_actor("Green Streets Association")
 ```
 
 `actor_name` is a **parameter**.
@@ -3165,9 +3913,12 @@ In the call:
 
 <a id="example-2-13-9"></a>
 
-#### Example 2.13.9 — Terminology
+#### Example 2.13.9 — Supply an argument in a complete call
 
 ```python
+def greet_actor(actor_name):
+    print("Record submitted by:", actor_name)
+
 greet_actor("Green Streets Association")
 ```
 
@@ -3212,11 +3963,16 @@ A function can calculate and return a result.
 
 ```python
 def calculate_missing_percentage(missing_values, total_values):
-    percentage = missing_values / total_values * 100
-    return percentage
+    if total_values <= 0:
+        return None
+    return missing_values / total_values * 100
 
 result = calculate_missing_percentage(18, 200)
-print(result)
+
+if result is None:
+    print("Invalid total")
+else:
+    print(result)
 ```
 
 **Expected output:**
@@ -3229,20 +3985,32 @@ print(result)
 
 <a id="example-2-13-12"></a>
 
-#### Example 2.13.12 — Explanation
+#### Example 2.13.12 — Return a value from a complete function
 
 ```python
-return percentage
+def calculate_missing_percentage(missing_values, total_values):
+    if total_values <= 0:
+        return None
+    percentage = missing_values / total_values * 100
+    return percentage
+
+print(calculate_missing_percentage(18, 200))
 ```
 
 sends the result back to the place where the function was called.
 
 <a id="example-2-13-13"></a>
 
-#### Example 2.13.13 — Explanation
+#### Example 2.13.13 — Store a returned value
 
 ```python
+def calculate_missing_percentage(missing_values, total_values):
+    if total_values <= 0:
+        return None
+    return missing_values / total_values * 100
+
 result = calculate_missing_percentage(18, 200)
+print("Stored result:", result)
 ```
 
 stores the returned value in `result`.
@@ -3255,7 +4023,7 @@ Printing:
 
 <a id="example-2-13-14"></a>
 
-#### Example 2.13.14 — `print()` and `return` are not the same
+#### Example 2.13.14 — A function that only prints
 
 ```python
 def calculate_total(a, b):
@@ -3266,7 +4034,7 @@ Returning:
 
 <a id="example-2-13-15"></a>
 
-#### Example 2.13.15 — `print()` and `return` are not the same
+#### Example 2.13.15 — A function that returns a value
 
 ```python
 def calculate_total(a, b):
@@ -3277,12 +4045,14 @@ A returned value can be stored and used later:
 
 <a id="example-2-13-16"></a>
 
-#### Example 2.13.16 — `print()` and `return` are not the same
+#### Example 2.13.16 — Use a returned value in another calculation
 
 ```python
+def calculate_total(a, b):
+    return a + b
+
 total = calculate_total(5, 7)
 average = total / 2
-
 print(average)
 ```
 
@@ -3396,7 +4166,7 @@ Avoid relying heavily on global variables.
 
 <a id="example-2-13-20"></a>
 
-#### Example 2.13.20 — Error 1: Function not called
+#### Example 2.13.20 — Define a function without calling it
 
 ```python
 def show_message():
@@ -3409,7 +4179,7 @@ Repair:
 
 <a id="example-2-13-21"></a>
 
-#### Example 2.13.21 — Error 1: Function not called
+#### Example 2.13.21 — Define and call the function
 
 ```python
 def show_message():
@@ -3422,7 +4192,7 @@ show_message()
 
 <a id="example-2-13-22"></a>
 
-#### Example 2.13.22 — Error 2: Missing argument
+#### Example 2.13.22 — Call a function without its argument
 
 ```python
 def greet(name):
@@ -3437,9 +4207,12 @@ Repair:
 
 <a id="example-2-13-23"></a>
 
-#### Example 2.13.23 — Error 2: Missing argument
+#### Example 2.13.23 — Repair the missing argument
 
 ```python
+def greet(name):
+    print("Hello", name)
+
 greet("Amina")
 ```
 
@@ -3447,7 +4220,7 @@ greet("Amina")
 
 <a id="example-2-13-24"></a>
 
-#### Example 2.13.24 — Error 3: Incorrect indentation
+#### Example 2.13.24 — Broken function indentation
 
 ```python
 def greet(name):
@@ -3458,7 +4231,7 @@ Repair:
 
 <a id="example-2-13-25"></a>
 
-#### Example 2.13.25 — Error 3: Incorrect indentation
+#### Example 2.13.25 — Repaired function indentation
 
 ```python
 def greet(name):
@@ -3473,9 +4246,10 @@ Create a function called `calculate_completion_rate()` that:
 
 - receives `complete_records`;
 - receives `total_records`;
-- returns the completion percentage.
+- returns `"Invalid total"` when the total is zero or negative;
+- otherwise returns the completion percentage.
 
-Test it with `180` complete records out of `200`.
+Test it with `180` complete records out of `200`, then test a total of `0`.
 
 <details>
 <summary>Suggested solution</summary>
@@ -3486,11 +4260,12 @@ Test it with `180` complete records out of `200`.
 
 ```python
 def calculate_completion_rate(complete_records, total_records):
-    rate = complete_records / total_records * 100
-    return rate
+    if total_records <= 0:
+        return "Invalid total"
+    return complete_records / total_records * 100
 
-result = calculate_completion_rate(180, 200)
-print(result)
+print(calculate_completion_rate(180, 200))
+print(calculate_completion_rate(5, 0))
 ```
 
 Expected output:
@@ -3641,6 +4416,213 @@ This example combines:
 
 ---
 
+---
+
+## Contextual worked exercises for Tutorial 2.13
+
+These five exercises use different TAN7-related situations and different program structures. Attempt each question and write a short plan before opening the worked solution.
+
+<a id="example-2-13-30"></a>
+
+#### Worked Exercise 2.13.30 — Normalise a project label with a function
+
+**Story:** A project label may contain outer spaces or inconsistent capitalisation.<br>
+The same cleaning rule will be needed for several labels.<br>
+A function can receive one label and return a normalised result.<br>
+The caller should decide when to print or store it.
+
+**Question:** Create and test a function that returns a cleaned project label.
+
+**Steps to solve it:**
+
+1. Define one parameter for the label.
+2. Apply `strip()` and `title()` inside the function.
+3. Return the cleaned value.
+4. Call the function with an untidy label.
+5. Store and print the returned result.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+def normalise_project_label(project_label):
+    cleaned_label = project_label.strip().title()
+    return cleaned_label
+
+normalised_label = normalise_project_label("  digital participation  ")
+print(normalised_label)
+```
+
+The function returns `Digital Participation`.
+
+</details>
+
+---
+
+<a id="example-2-13-31"></a>
+
+#### Worked Exercise 2.13.31 — Check two consent requirements
+
+**Story:** A fictional record may be used in a classroom exercise only when consent is documented and withdrawal has not been requested.<br>
+The function receives two Boolean arguments.<br>
+It returns a Boolean result instead of printing inside the function.<br>
+The caller turns that result into a message.
+
+**Question:** Write a Boolean validation function with two parameters.
+
+**Steps to solve it:**
+
+1. Define parameters for consent and withdrawal.
+2. Combine the conditions with `and` and `not`.
+3. Return the Boolean result.
+4. Call the function with a test case.
+5. Print the caller’s decision.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+def record_may_be_used(consent_documented, withdrawal_requested):
+    return consent_documented and not withdrawal_requested
+
+use_allowed = record_may_be_used(True, False)
+
+if use_allowed:
+    print("Record may be used for the classroom exercise")
+else:
+    print("Record requires review")
+```
+
+Arguments `True` and `False` return `True`.
+
+</details>
+
+---
+
+<a id="example-2-13-32"></a>
+
+#### Worked Exercise 2.13.32 — Calculate a completion rate safely
+
+**Story:** A team needs a reusable completion-rate calculation.<br>
+The number of complete records is divided by the total and multiplied by 100.<br>
+A total of zero cannot be used as a denominator.<br>
+The function should return `None` for that invalid case so the caller can explain it.
+
+**Question:** Write and test a rate function that guards against a zero total.
+
+**Steps to solve it:**
+
+1. Define parameters for the part and whole.
+2. Check the denominator first.
+3. Return `None` for a non-positive total.
+4. Otherwise return the percentage.
+5. Test one valid and one zero-total call.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+def calculate_completion_rate(complete_records, total_records):
+    if total_records <= 0:
+        return None
+    return complete_records / total_records * 100
+
+print(calculate_completion_rate(72, 80))
+print(calculate_completion_rate(0, 0))
+```
+
+The calls return `90.0` and `None`.
+
+</details>
+
+---
+
+<a id="example-2-13-33"></a>
+
+#### Worked Exercise 2.13.33 — Apply a classification function to several observations
+
+**Story:** A mobility observation list contains several durations.<br>
+One function should classify a duration as brief, standard, or extended.<br>
+A loop then applies the same documented rule to every value.<br>
+The rule remains in one place, which makes later changes easier to test.
+
+**Question:** Define the classification function and apply it in a loop.
+
+**Steps to solve it:**
+
+1. Define one duration parameter.
+2. Return a category from `if`, `elif`, and `else`.
+3. Create a list of test durations.
+4. Loop through the list and call the function.
+5. Print each value and returned category.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+def classify_observation(minutes):
+    if minutes >= 45:
+        return "Extended"
+    elif minutes >= 20:
+        return "Standard"
+    return "Brief"
+
+observation_durations = [12, 32, 51]
+
+for duration in observation_durations:
+    print(duration, "->", classify_observation(duration))
+```
+
+The three values produce Brief, Standard, and Extended.
+
+</details>
+
+---
+
+<a id="example-2-13-34"></a>
+
+#### Worked Exercise 2.13.34 — Build a structured review record
+
+**Story:** A later CSV or JSON lesson will need records with consistent named fields.<br>
+A function can receive an identifier, category, and review flag.<br>
+It returns a new dictionary rather than relying on a global variable.<br>
+Two calls should produce independent records with the same keys.
+
+**Question:** Create a function that returns a dictionary with consistent fields.
+
+**Steps to solve it:**
+
+1. Define three parameters.
+2. Create the dictionary inside the function.
+3. Return the dictionary.
+4. Call the function twice.
+5. Print both returned records and compare their keys.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+def build_review_record(record_id, category, needs_review):
+    return {
+        "record_id": record_id,
+        "category": category,
+        "needs_review": needs_review,
+    }
+
+first_record = build_review_record("R-01", "Mobility", False)
+second_record = build_review_record("R-02", "Accessibility", True)
+
+print(first_record)
+print(second_record)
+print("Same keys:", set(first_record) == set(second_record))
+```
+
+Both records have the same three keys.
+
+</details>
+
+---
+
 # Tutorial 2.14 — Imports, libraries and systematic debugging
 
 ## Tutorial 2.14 overview
@@ -3684,7 +4666,7 @@ print(result)
 
 <a id="example-2-14-2"></a>
 
-#### Example 2.14.2 — Explanation
+#### Example 2.14.2 — Import the math module
 
 ```python
 import math
@@ -3694,10 +4676,13 @@ makes the `math` module available.
 
 <a id="example-2-14-3"></a>
 
-#### Example 2.14.3 — Explanation
+#### Example 2.14.3 — Call a function through its module
 
 ```python
-math.sqrt(16)
+import math
+
+result = math.sqrt(16)
+print(result)
 ```
 
 uses the `sqrt()` function from that module.
@@ -3710,7 +4695,7 @@ The dot connects the module name and the function.
 
 <a id="example-2-14-4"></a>
 
-#### Example 2.14.4 — Importing one item
+#### Example 2.14.4 — Import sqrt directly
 
 ```python
 from math import sqrt
@@ -3731,10 +4716,13 @@ For beginners, importing the full module can make the origin of a function clear
 
 <a id="example-2-14-5"></a>
 
-#### Example 2.14.5 — Importing one item
+#### Example 2.14.5 — Keep the module origin visible
 
 ```python
-math.sqrt()
+import math
+
+result = math.sqrt(25)
+print(result)
 ```
 
 shows that `sqrt()` comes from `math`.
@@ -3749,7 +4737,7 @@ A standard example:
 
 <a id="example-2-14-6"></a>
 
-#### Example 2.14.6 — Using an alias
+#### Example 2.14.6 — Use a conventional short alias
 
 ```python
 import math as m
@@ -3767,7 +4755,7 @@ Aliases should follow common conventions. Do not create confusing aliases such a
 
 <a id="example-2-14-7"></a>
 
-#### Example 2.14.7 — Using an alias
+#### Example 2.14.7 — Avoid a confusing alias
 
 ```python
 import math as banana
@@ -3804,7 +4792,7 @@ This code contains a spelling error:
 
 <a id="example-2-14-9"></a>
 
-#### Example 2.14.9 — Import errors
+#### Example 2.14.9 — Misspell a module name
 
 ```python
 import maths
@@ -3820,7 +4808,7 @@ Repair:
 
 <a id="example-2-14-10"></a>
 
-#### Example 2.14.10 — Import errors
+#### Example 2.14.10 — Repair the module name
 
 ```python
 import math
@@ -3830,7 +4818,7 @@ Another common error:
 
 <a id="example-2-14-11"></a>
 
-#### Example 2.14.11 — Import errors
+#### Example 2.14.11 — Misspell a module attribute
 
 ```python
 import math
@@ -3844,9 +4832,11 @@ Repair:
 
 <a id="example-2-14-12"></a>
 
-#### Example 2.14.12 — Import errors
+#### Example 2.14.12 — Repair the attribute call
 
 ```python
+import math
+
 print(math.sqrt(16))
 ```
 
@@ -3874,7 +4864,7 @@ Example:
 
 <a id="example-2-14-13"></a>
 
-#### Example 2.14.13 — `SyntaxError`
+#### Example 2.14.13 — SyntaxError from a missing colon
 
 ```python
 if engagement > 100
@@ -3887,9 +4877,11 @@ Repair:
 
 <a id="example-2-14-14"></a>
 
-#### Example 2.14.14 — `SyntaxError`
+#### Example 2.14.14 — Repair the missing colon
 
 ```python
+engagement = 120
+
 if engagement > 100:
     print("High")
 ```
@@ -3902,7 +4894,7 @@ Example:
 
 <a id="example-2-14-15"></a>
 
-#### Example 2.14.15 — `IndentationError`
+#### Example 2.14.15 — IndentationError from an unindented body
 
 ```python
 for topic in topics:
@@ -3913,9 +4905,11 @@ Repair:
 
 <a id="example-2-14-16"></a>
 
-#### Example 2.14.16 — `IndentationError`
+#### Example 2.14.16 — Repair the loop indentation
 
 ```python
+topics = ["Cycling", "Accessibility"]
+
 for topic in topics:
     print(topic)
 ```
@@ -3928,7 +4922,7 @@ Example:
 
 <a id="example-2-14-17"></a>
 
-#### Example 2.14.17 — `NameError`
+#### Example 2.14.17 — NameError from inconsistent spelling
 
 ```python
 engagment = 120
@@ -3941,7 +4935,7 @@ Repair:
 
 <a id="example-2-14-18"></a>
 
-#### Example 2.14.18 — `NameError`
+#### Example 2.14.18 — Repair the variable spelling
 
 ```python
 engagement = 120
@@ -3956,7 +4950,7 @@ Example:
 
 <a id="example-2-14-19"></a>
 
-#### Example 2.14.19 — `TypeError`
+#### Example 2.14.19 — TypeError from adding unlike types
 
 ```python
 engagement = "120"
@@ -3969,7 +4963,7 @@ Repair:
 
 <a id="example-2-14-20"></a>
 
-#### Example 2.14.20 — `TypeError`
+#### Example 2.14.20 — Repair the type mismatch
 
 ```python
 engagement = "120"
@@ -3986,7 +4980,7 @@ Example:
 
 <a id="example-2-14-21"></a>
 
-#### Example 2.14.21 — `ValueError`
+#### Example 2.14.21 — ValueError from unsuitable numerical text
 
 ```python
 engagement = int("high")
@@ -3998,7 +4992,7 @@ Possible repair:
 
 <a id="example-2-14-22"></a>
 
-#### Example 2.14.22 — `ValueError`
+#### Example 2.14.22 — Handle the ValueError
 
 ```python
 try:
@@ -4015,7 +5009,7 @@ Example:
 
 <a id="example-2-14-23"></a>
 
-#### Example 2.14.23 — `ModuleNotFoundError`
+#### Example 2.14.23 — ModuleNotFoundError from a misspelling
 
 ```python
 import statisticss
@@ -4025,7 +5019,7 @@ Possible repair:
 
 <a id="example-2-14-24"></a>
 
-#### Example 2.14.24 — `ModuleNotFoundError`
+#### Example 2.14.24 — Repair the standard-library import
 
 ```python
 import statistics
@@ -4041,7 +5035,7 @@ Example:
 
 <a id="example-2-14-25"></a>
 
-#### Example 2.14.25 — `TypeError` from a missing function argument
+#### Example 2.14.25 — TypeError from a missing function argument
 
 ```python
 def classify(value):
@@ -4054,10 +5048,14 @@ Repair:
 
 <a id="example-2-14-26"></a>
 
-#### Example 2.14.26 — `TypeError` from a missing function argument
+#### Example 2.14.26 — Repair the missing argument
 
 ```python
+def classify(value):
+    return value > 100
+
 result = classify(120)
+print(result)
 ```
 
 ---
@@ -4070,7 +5068,7 @@ Example:
 
 <a id="example-2-14-27"></a>
 
-#### Example 2.14.27 — Logic errors
+#### Example 2.14.27 — A formula that runs but is wrong
 
 ```python
 missing_values = 10
@@ -4086,9 +5084,12 @@ Correct:
 
 <a id="example-2-14-28"></a>
 
-#### Example 2.14.28 — Logic errors
+#### Example 2.14.28 — Repair the reversed formula
 
 ```python
+missing_values = 10
+total_values = 200
+
 missing_percentage = missing_values / total_values * 100
 print(missing_percentage)
 ```
@@ -4148,11 +5149,212 @@ Tracing is particularly helpful for:
 
 ---
 
+---
+
+## Contextual worked exercises for Tutorial 2.14
+
+These five exercises use different TAN7-related situations and different program structures. Attempt each question and write a short plan before opening the worked solution.
+
+<a id="example-2-14-30"></a>
+
+#### Worked Exercise 2.14.30 — Calculate a map distance with math
+
+**Story:** A simplified classroom map uses horizontal and vertical distances measured in kilometres.<br>
+The straight-line distance follows the square-root rule.<br>
+The `math` module provides `sqrt()`.<br>
+The result should be rounded for display while the original values remain visible.
+
+**Question:** Import `math`, calculate the straight-line distance, and print the rounded result.
+
+**Steps to solve it:**
+
+1. Import the full module.
+2. Store the two component distances.
+3. Calculate the sum of their squares.
+4. Call `math.sqrt()`.
+5. Round only the displayed value.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+import math
+
+horizontal_km = 3
+vertical_km = 4
+distance_km = math.sqrt(horizontal_km ** 2 + vertical_km ** 2)
+
+print("Straight-line distance:", round(distance_km, 2), "km")
+```
+
+The displayed distance is `5.0 km`.
+
+</details>
+
+---
+
+<a id="example-2-14-31"></a>
+
+#### Worked Exercise 2.14.31 — Summarise response times with statistics
+
+**Story:** A small pilot study records five response times in minutes.<br>
+The standard-library `statistics` module can calculate a mean and median.<br>
+The two summaries answer different questions when unusual values appear.<br>
+The code should keep the module name visible in both calls.
+
+**Question:** Calculate and print the mean and median response times.
+
+**Steps to solve it:**
+
+1. Import `statistics`.
+2. Store the five values in a list.
+3. Call `statistics.mean()`.
+4. Call `statistics.median()`.
+5. Print both results with labels.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+import statistics
+
+response_times = [8, 9, 10, 11, 32]
+mean_time = statistics.mean(response_times)
+median_time = statistics.median(response_times)
+
+print("Mean response time:", mean_time)
+print("Median response time:", median_time)
+```
+
+The median remains `10` even though the value `32` raises the mean.
+
+</details>
+
+---
+
+<a id="example-2-14-32"></a>
+
+#### Worked Exercise 2.14.32 — Make a reproducible random classroom selection
+
+**Story:** A lecturer demonstrates random selection from fictional discussion topics.<br>
+A fixed seed makes the teaching output reproducible when the cell is rerun.<br>
+The selection is suitable for demonstration and is not a fairness guarantee.<br>
+The available topics should remain visible in the code.
+
+**Question:** Use `random.seed()` and `random.choice()` to make a reproducible selection.
+
+**Steps to solve it:**
+
+1. Import `random`.
+2. Set a documented seed.
+3. Create the topic list.
+4. Select one topic.
+5. Print the selected value and limitation note.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+import random
+
+random.seed(7)
+discussion_topics = ["Data ethics", "Platform infrastructure", "Digital participation"]
+selected_topic = random.choice(discussion_topics)
+
+print("Selected topic:", selected_topic)
+print("A reproducible random draw does not establish a fair allocation")
+```
+
+Rerunning the cell with seed `7` produces the same selection.
+
+</details>
+
+---
+
+<a id="example-2-14-33"></a>
+
+#### Worked Exercise 2.14.33 — Repair a fieldnote summary error
+
+**Story:** A student intends to add two observation durations.<br>
+One value was entered as the string `"18"`, so adding it to an integer raises `TypeError`.<br>
+The debugging task is to read the error type, inspect the values, and make one justified conversion.<br>
+The repaired code should display both the converted value and the total.
+
+**Question:** Repair the type mismatch and explain why the conversion is appropriate.
+
+**Steps to solve it:**
+
+1. Inspect both values with `type()`.
+2. Identify the string–integer addition.
+3. Convert the numerical-looking string with `int()`.
+4. Calculate the total.
+5. Print the types and repaired result.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+first_duration = "18"
+second_duration = 22
+
+print(type(first_duration), type(second_duration))
+first_duration = int(first_duration)
+total_duration = first_duration + second_duration
+
+print("Converted first duration:", first_duration)
+print("Total duration:", total_duration)
+```
+
+The repaired total is `40`.
+
+</details>
+
+---
+
+<a id="example-2-14-34"></a>
+
+#### Worked Exercise 2.14.34 — Trace and repair a counter logic error
+
+**Story:** A script should count confidence scores of at least 80.<br>
+The original comparison uses `<= 80`, so the program runs but counts the wrong values.<br>
+No traceback appears because the syntax and types are valid.<br>
+A manual trace of boundary values reveals the logic error.
+
+**Question:** Trace the original rule, correct the comparison, and print the repaired count.
+
+**Steps to solve it:**
+
+1. List the values including 79 and 80.
+2. Predict which values the intended rule should count.
+3. Locate the reversed comparison.
+4. Change it to `>= 80`.
+5. Run and compare the final count with the prediction.
+
+<details>
+<summary>Show the worked solution</summary>
+
+```python
+confidence_scores = [42, 79, 80, 91]
+high_confidence_count = 0
+
+for confidence_score in confidence_scores:
+    if confidence_score >= 80:
+        high_confidence_count += 1
+
+print("High-confidence scores:", high_confidence_count)
+```
+
+The repaired program counts `80` and `91`, producing `2`.
+
+</details>
+
+---
+
 # Tutorial 2.15 — Applied Python problem solving
 
 ## Tutorial 2.15 overview
 
-Applied problem solving combines the separate ideas from Tutorials 2.1–2.14 into a complete and testable process. Begin by describing the situation in ordinary language, identifying inputs and rules, and separating calculations, decisions and repeated work into manageable responsibilities. Functions make those responsibilities reusable, while collections organise several records and loops apply the same process consistently. A useful solution includes normal cases, exact boundaries, unsuitable types, impossible relationships and explicit limitation notes rather than only one successful demonstration. The ten exercises below prepare students for later CSV and JSON work by producing consistent lists of dictionaries without yet reading or writing external files. The cumulative self-test then asks you to trace unfamiliar logic, diagnose errors and justify design choices before consulting its dedicated answer notebook.
+Applied problem solving combines the separate ideas from Tutorials 2.1–2.14 into a complete and testable process. Begin by describing the situation in ordinary language, identifying inputs and rules, and separating calculations, decisions and repeated work into manageable responsibilities. Functions make those responsibilities reusable, while collections organise several records and loops apply the same process consistently. A useful solution includes normal cases, exact boundaries, unsuitable types, impossible relationships and explicit limitation notes rather than only one successful demonstration. The ten exercises below prepare students for later CSV and JSON work by combining structured records, lists, dictionaries, sets, functions, loops, validation and documented assumptions without yet reading or writing external files. The cumulative self-test then asks you to trace unfamiliar logic, diagnose errors and justify design choices before consulting its dedicated answer notebook.
 
 **Core Python vocabulary:** decomposition, requirement, validation function, structured record, list of dictionaries, test case, boundary case, exception path, reproducibility and limitation.
 
@@ -4160,9 +5362,9 @@ Applied problem solving combines the separate ideas from Tutorials 2.1–2.14 in
 
 Applied scripting starts with describing the situation clearly, not immediately typing code. Breaking the task into inputs, rules, functions, tests and outputs creates an audit trail that others can follow. A complete solution should also state its assumptions, edge cases and decisions that still require human review.
 
-The fully commented versions of Worked Examples 2.15.1 and 2.15.2 are included at the beginning of the [Tutorial 2.15 Applied Solutions notebook](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb).
+The fully commented versions of Worked Examples A and B are included at the beginning of the [Tutorial 2.15 Applied Solutions notebook](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb).
 
-## Worked example 2.15.1 — Green Mobility data-quality checker
+## Worked example A — Green Mobility data-quality checker
 
 This case combines the core ideas from the tutorial.
 
@@ -4438,7 +5640,7 @@ A script can apply rules consistently, but it cannot decide whether the rules ar
 
 ---
 
-## Worked example 2.15.2 — Reviewing several records
+## Worked example B — Reviewing several records
 
 This example is more challenging. It combines a list, a function, a loop, conditions and counters.
 
@@ -4457,19 +5659,19 @@ def review_record(actor_type, engagement, source_verified):
 
 
 records = [
-    ["Citizen Group", 240, True],
-    ["Business", 130, True],
-    ["NGO", 260, False],
-    ["Municipality", 75, True]
+    {"actor_type": "Citizen Group", "engagement": 240, "source_verified": True},
+    {"actor_type": "Business", "engagement": 130, "source_verified": True},
+    {"actor_type": "NGO", "engagement": 260, "source_verified": False},
+    {"actor_type": "Municipality", "engagement": 75, "source_verified": True},
 ]
 
 priority_count = 0
 source_review_count = 0
 
 for record in records:
-    actor_type = record[0]
-    engagement = record[1]
-    source_verified = record[2]
+    actor_type = record["actor_type"]
+    engagement = record["engagement"]
+    source_verified = record["source_verified"]
 
     decision = review_record(actor_type, engagement, source_verified)
 
@@ -4499,7 +5701,7 @@ Source reviews: 1
 
 ## Why this is advanced
 
-This example introduces a list containing smaller lists. You do not need to master this structure yet. Focus on the larger logic:
+This example uses a list of dictionaries, the structured-record pattern introduced in Tutorial 2.11. Focus on the larger logic:
 
 1. the function contains the decision rules;
 2. the loop processes each record;
@@ -4507,7 +5709,7 @@ This example introduces a list containing smaller lists. You do not need to mast
 4. the returned decision is printed;
 5. counters produce a summary.
 
-Later, pandas will represent this kind of tabular information more clearly.
+The named keys make each field visible now, and later pandas will represent this kind of tabular information more directly.
 
 ---
 
@@ -4515,9 +5717,15 @@ Later, pandas will represent this kind of tabular information more clearly.
 
 The ten exercises below are longer than the focused checkpoints. Each one requires you to translate a situation into variables, decisions, repetition and functions before writing the final program. The instruction notebook contains the situations and ordered code plans without the finished answers; the solution notebook contains a separate, fully commented answer for every number.
 
+The same two notebooks serve all ten exercises:
+
+- [Open the Tutorial 2.15 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
+- [Open the fully commented Tutorial 2.15 solutions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
+- [View the Lecture 4 notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
+
 ## Exercise 2.15.1 — Allocate TAN7 project groups across two campuses
 
-AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. Copenhagen has 45 students and Aalborg has 36 students, and the coordinators want groups of four or five without mixing campuses. A group of fewer than four should be reported for manual coordination rather than silently accepted. The coordinators also need a readable campus-by-campus summary showing group sizes, the number of groups and whether anyone remains unassigned.
+AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. In this fictional teaching cohort, Copenhagen has 45 students and Aalborg has 36 students, and the coordinators want groups of four or five without mixing campuses. A group of fewer than four should be reported for manual coordination rather than silently accepted. The coordinators also need a readable campus-by-campus summary showing group sizes, the number of groups and whether anyone remains unassigned.
 
 **Code plan**
 
@@ -4527,9 +5735,6 @@ AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. Copenhag
 4. Validate that every generated size is four or five and that the sizes add back to the original count.
 5. Print a transparent report and state that accessibility, student preferences and prior collaboration still require human coordination.
 
-- [Open Exercise 2.15.1 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.1 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.2 — Check a municipal mobility dataset before analysis
 
@@ -4543,9 +5748,6 @@ A municipality expects 240 consultation records, but the received extract contai
 4. Calculate the retained count and rate only when the inputs are logically valid.
 5. Print the indicators, flags and limitation note with clear labels.
 
-- [Open Exercise 2.15.2 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.2 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.3 — Build a bounded course-keyword guessing activity
 
@@ -4561,9 +5763,6 @@ A lecturer wants a short guessing activity that helps students recognise Python 
 
 **Adaptation note:** This exercise adapts the word-guessing structure in Rodrigo Pinheiro’s [`hangman.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/hangman.py). The teaching version is rewritten for deterministic Colab execution and the learning scope of Tutorials 2.1–2.15.
 
-- [Open Exercise 2.15.3 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.3 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.4 — Scale ingredients for a community cooking workshop
 
@@ -4579,9 +5778,6 @@ A community centre offers three recipes and needs an ingredient list for a chose
 
 **Adaptation note:** The data-structure idea is adapted from Rodrigo Pinheiro’s [`session03_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session03_exercises.py). The situation, recipe records, validation and complete solution are newly written.
 
-- [Open Exercise 2.15.4 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.4 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.5 — Design an ethical feedback collector
 
@@ -4597,9 +5793,6 @@ A project team wants to collect a product name, a rating from one to five and an
 
 **Adaptation note:** This exercise critically redesigns the manipulative rating prompt in Rodrigo Pinheiro’s [`session02_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session02_exercises.py). It uses the original as an ethical discussion point rather than reproducing its behaviour.
 
-- [Open Exercise 2.15.5 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.5 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.6 — Convert and classify fieldwork temperatures
 
@@ -4615,9 +5808,6 @@ A fieldwork team records temperatures in either Celsius or Fahrenheit and wants 
 
 **Adaptation note:** The conversion idea is adapted from Rodrigo Pinheiro’s [`session01_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session01_exercises.py) and [`session05_functions_in_class.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session05_functions_in_class.py). The record-based workflow and validation are newly written.
 
-- [Open Exercise 2.15.6 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.6 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.7 — Validate workshop registrations and waiting-list priority
 
@@ -4631,9 +5821,6 @@ An AAU workshop has 24 places and receives registrations containing a participan
 4. Loop through every registration and assign it to review, accepted or waiting according to the documented order.
 5. Print counts and identifiers, then test the exact-capacity boundary.
 
-- [Open Exercise 2.15.7 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.7 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.8 — Triage municipal service requests transparently
 
@@ -4647,9 +5834,6 @@ A municipal help desk receives requests with an identifier, category, urgency la
 4. Loop through the records and append an annotated result to the appropriate queue.
 5. Print queue summaries and test missing, urgent, accessibility and ordinary inputs.
 
-- [Open Exercise 2.15.8 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.8 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.9 — Review confidence scores without hiding uncertainty
 
@@ -4663,9 +5847,6 @@ A research team assigns confidence scores from zero to one hundred to coded inte
 4. Collect the identifiers requiring review or correction.
 5. Print a summary and test 49, 50, 79, 80, `None` and 101 as boundaries.
 
-- [Open Exercise 2.15.9 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.9 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ## Exercise 2.15.10 — Prepare structured records for the next CSV and JSON lesson
 
@@ -4679,9 +5860,6 @@ A team has received five service observations represented as dictionaries with t
 4. Verify that every clean record has the same keys and intended value types.
 5. Print clean and rejected summaries, then explain how the structure maps naturally to CSV rows and JSON objects.
 
-- [Open Exercise 2.15.10 instructions in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Exercises.ipynb)
-- [Open the fully commented Exercise 2.15.10 solution in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)
-- [View both notebooks on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_04)
 
 ---
 
@@ -4984,6 +6162,7 @@ Pandas introduces new structures and syntax, but it builds on the Python ideas y
 | Logic error | A mistake that produces an incorrect result without necessarily stopping the program |
 | Logical operator | `and`, `or` or `not` |
 | Module | A reusable unit of Python code |
+| None | Python’s special value meaning that no value is present |
 | Parameter | A named input in a function definition |
 | Return value | A result sent back by a function |
 | Traceback | Python’s report showing where an error occurred |

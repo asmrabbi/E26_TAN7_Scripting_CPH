@@ -1624,7 +1624,9 @@ function addCodeCompanionLinks() {
     : state.section === "data-i"
       ? pythonResourceLinks.dataHandlingI
       : pythonResourceLinks.foundationsI;
-  page.querySelectorAll(".md-code.md-python").forEach(codeBlockElement => {
+  const codeBlocks = [...page.querySelectorAll(".md-code.md-python")];
+  const linkTargets = state.section === "python-ii" ? codeBlocks.slice(0, 1) : codeBlocks;
+  linkTargets.forEach(codeBlockElement => {
     if (codeBlockElement.nextElementSibling?.classList.contains("code-companion-links")) return;
     const resourceLinks = document.createElement("div");
     resourceLinks.className = "code-companion-links";
@@ -1636,9 +1638,7 @@ function addCodeCompanionLinks() {
       ? `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 3 Examples in Colab</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`
       : state.current === "2.15"
         ? `<span>Run the matching applied solution:</span><a href="${links.appliedSolutions}" target="_blank" rel="noreferrer">Open Tutorial 2.15 Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 4 on GitHub</a>`
-        : ["2.8", "2.9"].includes(state.current)
-          ? `<span>Run the matching ${state.current} material:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Examples</a><a href="${links.workExercises}" target="_blank" rel="noreferrer">Open Worked Exercises</a><a href="${links.workExercisesGithub}" target="_blank" rel="noreferrer">View Worked Exercises on GitHub</a>`
-        : `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 4 Examples</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`;
+        : `<span>Open the Tutorial ${state.current} companion files:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Examples</a><a href="${links.workExercises}" target="_blank" rel="noreferrer">Worked Exercises</a><a href="${links.workExercisesGithub}" target="_blank" rel="noreferrer">Worked Exercises on GitHub</a>`;
     codeBlockElement.insertAdjacentElement("afterend", resourceLinks);
   });
 }
