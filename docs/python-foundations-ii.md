@@ -1484,9 +1484,6 @@ A repair needs to include the boundary value. The worked exercises below continu
 
 #### Worked Exercise 2.8.35 — Decide whether an online fieldnote is ready
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A Digital Anthropology group observes a public livestream about local cultural life.<br>
 The observer records whether the fieldnote includes both a time and a place description.<br>
 For this first decision, the student enters `yes` only when both details are present.<br>
@@ -1501,8 +1498,6 @@ Any answer other than `yes` or `no` should receive a clear instruction instead o
 3. Use `elif` for `no`.
 4. Use `else` for an unclear answer.
 5. Print one plain-language next step.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1528,9 +1523,6 @@ For an input of `no`, the program prints `Add the missing contextual detail`.
 
 #### Worked Exercise 2.8.36 — Review a stakeholder map
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A group in Framing Techno-Anthropological Transformation prepares a fictional neighbourhood heat-plan case.<br>
 They count the different stakeholder groups represented on their map.<br>
 Eight or more groups is labelled broad, four to seven is developing, and fewer than four needs expansion.<br>
@@ -1545,8 +1537,6 @@ The labels organise discussion and do not prove that every voice is represented.
 3. Use `elif` for the middle range.
 4. Use `else` for the remaining values.
 5. Print the resulting label.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1572,9 +1562,6 @@ For an input of `6`, the program prints `Developing stakeholder map`.
 
 #### Worked Exercise 2.8.37 — Classify a wayfinding test from the lowest boundary
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A TAN7 group tests a fictional wayfinding kiosk before discussing the design.<br>
 A participant tries to find the accessibility information, and the group records the time in seconds.<br>
 Thirty seconds or less is quick, 31 to 60 seconds is workable, and more than 60 seconds suggests revision.<br>
@@ -1589,8 +1576,6 @@ The decision is written from the lowest upper boundary rather than from the high
 3. Use `elif` for `60` or less.
 4. Use `else` for a longer time.
 5. Print the matching observation.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1616,9 +1601,6 @@ For an input of `52`, the program prints `Workable completion time`.
 
 #### Worked Exercise 2.8.38 — Check the valid range of a seven-day media diary
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A Digital Anthropology exercise asks for one media-diary entry on each of seven days.<br>
 The student enters how many daily entries were completed.<br>
 A value below zero or above seven is impossible and must be reported separately.<br>
@@ -1633,8 +1615,6 @@ Within the valid range, seven is complete, four to six is usable but incomplete,
 3. Use `elif` to check a value above seven separately.
 4. Continue with exact and threshold branches for the valid range.
 5. Use `else` for the remaining valid values.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1664,9 +1644,6 @@ For an input of `8`, the program prints `Invalid number of diary days`.
 
 #### Worked Exercise 2.8.39 — Interpret a written AI-explanation rating
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A class discusses a fictional explanation shown after an automated application-sorting decision.<br>
 Instead of entering a number, one participant chooses the word `clear`, `partial`, or `unclear`.<br>
 The program should preserve these three meanings and reject an unrecognised category.<br>
@@ -1681,8 +1658,6 @@ One response cannot establish that the underlying system is fair.
 3. Use `elif` for `partial` and another `elif` for `unclear`.
 4. Use `else` for an unsupported word.
 5. Print one message.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1710,9 +1685,6 @@ For an input of `partial`, the program prints `The explanation needs more detail
 
 #### Worked Exercise 2.8.40 — Reuse a moderation-response classification
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A student studies a fictional online community with a published safety-report process.<br>
 The student records how many hours passed before a moderator acknowledged one report.<br>
 The first decision stores a response-speed label instead of printing inside every branch.<br>
@@ -1727,8 +1699,6 @@ A second decision uses that stored result to add a follow-up action.
 3. Print the stored label after the branch.
 4. Use a second `if` to test the stored result.
 5. Print the follow-up only for the delayed category.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2261,9 +2231,6 @@ Assume that number inputs are sensible and that yes/no answers use those words. 
 
 #### Worked Exercise 2.9.15 — Prepare a critical counter-map
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A Digital Anthropology group is preparing a small counter-map about places affected by a fictional redevelopment plan.<br>
 The students enter how many local places appear on the map and whether they added a short note explaining the local context.<br>
 The map is ready for discussion only when it contains at least four places and includes local context.<br>
@@ -2278,8 +2245,6 @@ If four places are present but the context is missing, the program should name t
 3. Use `and` in the first branch because both readiness conditions must be true.
 4. Use `not` in the `elif` branch to identify the missing context.
 5. Use `else` when the map still needs more local places.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2306,9 +2271,6 @@ For inputs `5` and `no`, the program prints `Add local context before the discus
 
 #### Worked Exercise 2.9.16 — Decide whether an archival item can be used
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A student finds a fictional digitised item while studying how the digital can work as an archive.<br>
 The item may be available through public access or through university permission.<br>
 A separate rights note can restrict classroom reuse even when one access route exists.<br>
@@ -2323,8 +2285,6 @@ The program must distinguish permitted use, a rights review, and missing access.
 3. Add `and not rights_restricted` because access alone is insufficient.
 4. Use `elif` to give a restriction the specific review message.
 5. Use `else` when neither access route is available.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2352,9 +2312,6 @@ For inputs `no`, `yes` and `no`, the program prints `The item may be used for th
 
 #### Worked Exercise 2.9.17 — Respond to a platform outage
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A Digital Anthropology group treats a fictional campus platform as infrastructure and records a service interruption.<br>
 The students enter whether an outage is confirmed, how many services are affected, and whether a backup channel is available.<br>
 The impact question matters only after the outage has been confirmed, so the decision should be nested.<br>
@@ -2369,8 +2326,6 @@ Three affected services and no backup require the strongest response.
 3. Ask for the affected-service count and backup channel only inside that confirmed-outage branch.
 4. Inside that branch, use `and`, `or` and `not` to distinguish urgent, priority and routine responses.
 5. Use the outer `elif` and `else` for `no` and an unclear answer.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2404,9 +2359,6 @@ For inputs `yes`, `4` and `no`, the program prints `Urgent infrastructure respon
 
 #### Worked Exercise 2.9.18 — Apply a responsible-innovation stop rule
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A class discusses a fictional AI pilot using themes from Responsible Innovation and AI ethics.<br>
 The students record whether a possible harm has been reported, whether human review is complete, and whether an appeal route exists.<br>
 A harm signal or missing human review must pause the pilot before other conditions are considered.<br>
@@ -2421,8 +2373,6 @@ Only a reviewed pilot with an appeal route receives the continuation message.
 3. Use `not` to test for missing human review.
 4. In `elif`, use `and` for the two requirements that support limited continuation.
 5. Use `else` for a reviewed pilot that still lacks an appeal route.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2450,9 +2400,6 @@ For inputs `no`, `yes` and `no`, the program prints `Add an appeal route before 
 
 #### Worked Exercise 2.9.19 — Check a digital-participation plan
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A group designs a fictional public discussion inspired by the Digital Participation topic.<br>
 People may join through an online session or a room-based session, and the information should be available in an accessible format.<br>
 The first decision asks whether neither participation route exists by applying `not` to the grouped alternatives.<br>
@@ -2467,8 +2414,6 @@ If a route exists, the next decision checks whether the accessible material is r
 3. Place `not` before the parentheses to test whether both routes are absent.
 4. Use `elif` to check the material only after a route exists.
 5. Use `else` when a route exists but the accessible material is missing.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2988,9 +2933,6 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.10.16 — Validate an interview duration
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A student records the duration of a semi-structured interview in minutes.<br>
 The teaching plan allows durations from 1 to 240 minutes.<br>
 Text such as `one hour` cannot be converted directly to an integer.<br>
@@ -3005,8 +2947,6 @@ A numerical value outside the range is a different problem from a conversion err
 3. Reject values below 1 or above 240.
 4. Accept values inside the documented range.
 5. Print a message that identifies the type of problem.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3032,9 +2972,6 @@ An input of `one hour` produces the whole-number message.
 
 #### Worked Exercise 2.10.17 — Validate a survey response percentage
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A community survey reports a response percentage that may include a decimal.<br>
 The value must be between 0 and 100 inclusive.<br>
 Using `float()` accepts `62.5`, while unsuitable text still raises `ValueError`.<br>
@@ -3049,8 +2986,6 @@ A valid number above 100 remains logically impossible.
 3. Check the lower and upper limits.
 4. Classify an accepted value as below or at least 60 per cent.
 5. Keep range validation separate from conversion.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3078,9 +3013,6 @@ An input of `62.5` prints `Response target reached`.
 
 #### Worked Exercise 2.10.18 — Check workshop capacity relationships
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A participatory workshop has a stated number of places and a number of registrations.<br>
 Both values must be whole numbers and neither may be negative.<br>
 The registrations may exceed capacity, but capacity itself cannot be zero for this planned event.<br>
@@ -3095,8 +3027,6 @@ The relationship between the two valid inputs determines whether a waiting list 
 3. Reject a negative registration count.
 4. Compare registrations with capacity.
 5. Catch `ValueError` for unsuitable text.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3127,9 +3057,6 @@ Inputs `24` and `29` print `Create a waiting list`.
 
 #### Worked Exercise 2.10.19 — Validate an archival year
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A student enters the stated year of a digitised archival item.<br>
 The classroom collection covers years from 1900 through 2026.<br>
 A year written as text causes a conversion error.<br>
@@ -3144,8 +3071,6 @@ A converted year such as 3026 is numerical but outside the collection scope.
 3. Check the earliest year.
 4. Check the latest year.
 5. Accept only a year inside both boundaries.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3173,9 +3098,6 @@ An input of `1987` is accepted as within the collection.
 
 #### Worked Exercise 2.10.20 — Validate an outage duration with an optional decimal
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A group documents the duration of a fictional platform outage in hours.<br>
 A decimal such as `1.5` is valid, while negative time is impossible.<br>
 Durations above 72 hours require confirmation because the unit may have been entered incorrectly.<br>
@@ -3190,8 +3112,6 @@ The program must distinguish these cases from unsuitable text.
 3. Flag values above 72 for confirmation.
 4. Accept the remaining range.
 5. Catch `ValueError` separately.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4087,9 +4007,6 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.11.27 — Number media-diary themes
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A student has identified four themes in a media diary.<br>
 The original order reflects when the themes were first recorded.<br>
 A loop should print every theme with a counter beginning at one.<br>
@@ -4104,8 +4021,6 @@ The counter must be initialised before the loop and updated once per theme.
 3. Print the counter and current theme.
 4. Increase the counter inside the loop.
 5. Check that every theme appears once.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4129,9 +4044,6 @@ The output numbers the four themes from 1 to 4.
 
 #### Worked Exercise 2.11.28 — Add a review status to an archival record
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A digitised archival item is represented by a dictionary with named fields.<br>
 The student needs to read the title and then add a review status.<br>
 Using keys communicates what each value means more clearly than relying on positions.<br>
@@ -4146,8 +4058,6 @@ The original identifier must remain unchanged.
 3. Add a `review_status` key.
 4. Print the unchanged identifier.
 5. Print the complete updated dictionary.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4175,9 +4085,6 @@ The output preserves `ARC-07` and includes the new review status.
 
 #### Worked Exercise 2.11.29 — Find repeated workshop registrations
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A workshop list contains participant codes, including accidental repeats.<br>
 The original list must be preserved because repetition is itself information.<br>
 A set can identify unique codes, while the difference in lengths shows how many repeated entries exist.<br>
@@ -4192,8 +4099,6 @@ The program should report both totals.
 3. Calculate the difference between the two lengths.
 4. Print the original and unique totals.
 5. Print the repeated-entry count.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4218,9 +4123,6 @@ The program reports five entries, three unique codes, and two repeated entries.
 
 #### Worked Exercise 2.11.30 — Review structured transport observations
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A fieldwork group stores three transport observations as dictionaries inside a list.<br>
 Each record has an identifier, a mode, and a duration in minutes.<br>
 A loop should classify observations lasting at least 15 minutes for extended review.<br>
@@ -4235,8 +4137,6 @@ The program must count the selected records without losing their identifiers.
 3. Read named values from each dictionary.
 4. Apply the duration decision.
 5. Print the identifier and final count.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4269,9 +4169,6 @@ Records `T-02` and `T-03` enter extended review.
 
 #### Worked Exercise 2.11.31 — Calculate a mean only when responses exist
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A small community survey stores completion times in a list.<br>
 The total must be accumulated with a loop before calculating a mean.<br>
 An empty list would make the denominator zero.<br>
@@ -4286,8 +4183,6 @@ The program should therefore check the list before dividing.
 3. Check whether the list contains any values.
 4. Divide only when the length is greater than zero.
 5. Print a clear message for either path.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4756,9 +4651,6 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.12.13 — Repeat a consent-status question until it is clear
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A classroom simulation asks whether consent documentation is present.<br>
 Only `yes` or `no` is accepted, but the number of attempts is unknown.<br>
 The loop should explain an unclear answer and then ask again.<br>
@@ -4773,8 +4665,6 @@ It stops immediately after a valid response.
 3. Set the flag to `True` only for accepted words.
 4. Print guidance for another word.
 5. Print the accepted answer after the loop.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4802,9 +4692,6 @@ The loop continues after `maybe` and stops after `yes` or `no`.
 
 #### Worked Exercise 2.12.14 — Limit attempts to enter a participant code
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A workshop check accepts the fictional code `TAN7`.<br>
 To avoid an endless prompt, the student receives at most three attempts.<br>
 The loop condition must track both success and remaining attempts.<br>
@@ -4819,8 +4706,6 @@ The final message distinguishes success from using all attempts.
 3. Increase the attempt count on every path.
 4. Set success when the code matches.
 5. Print the final result after the loop.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4853,9 +4738,6 @@ The loop cannot continue beyond three attempts.
 
 #### Worked Exercise 2.12.15 — Collect fieldnote tags until a sentinel word
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A student adds short tags while reviewing a fieldnote.<br>
 The number of tags is not known before the review begins.<br>
 Typing `done` is a sentinel that ends collection and should not become a tag.<br>
@@ -4870,8 +4752,6 @@ Empty text should be ignored with a helpful message.
 3. Use `break` for the documented sentinel.
 4. Append non-empty tags.
 5. Print the final list after the loop.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4901,9 +4781,6 @@ Entering `mobility`, `access`, and `done` stores the first two tags.
 
 #### Worked Exercise 2.12.16 — Stop at an explicit review marker
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A list represents records arriving in a documented order.<br>
 The marker `STOP FOR REVIEW` means later records must not be processed automatically.<br>
 A `for` loop is appropriate because the records already exist.<br>
@@ -4918,8 +4795,6 @@ A `break` statement ends the loop at the marker.
 3. Test for the marker before printing a processed message.
 4. Use `break` when the marker is reached.
 5. Print a final message after the loop.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4946,9 +4821,6 @@ print("Review the remaining queue manually")
 
 #### Worked Exercise 2.12.17 — Skip missing values while preserving a count
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A list of observation durations contains two missing values represented by `None`.<br>
 `None` means that no duration value is stored for that position.<br>
 The loop should skip numerical processing for those entries but count them for review.<br>
@@ -4963,8 +4835,6 @@ Valid values must still be printed.
 3. Increase the counter before `continue`.
 4. Print valid numerical values.
 5. Print the missing-value count after the loop.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -5990,9 +5860,6 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.13.30 — Normalise a project label with a function
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A project label may contain outer spaces or inconsistent capitalisation.<br>
 The same cleaning rule will be needed for several labels.<br>
 A function can receive one label and return a normalised result.<br>
@@ -6007,8 +5874,6 @@ The caller should decide when to print or store it.
 3. Return the cleaned value.
 4. Call the function with an untidy label.
 5. Store and print the returned result.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -6032,9 +5897,6 @@ The function returns `Digital Participation`.
 
 #### Worked Exercise 2.13.31 — Check two consent requirements
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A fictional record may be used in a classroom exercise only when consent is documented and withdrawal has not been requested.<br>
 The function receives two Boolean arguments.<br>
 It returns a Boolean result instead of printing inside the function.<br>
@@ -6049,8 +5911,6 @@ The caller turns that result into a message.
 3. Return the Boolean result.
 4. Call the function with a test case.
 5. Print the caller’s decision.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -6077,9 +5937,6 @@ Arguments `True` and `False` return `True`.
 
 #### Worked Exercise 2.13.32 — Calculate a completion rate safely
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A team needs a reusable completion-rate calculation.<br>
 The number of complete records is divided by the total and multiplied by 100.<br>
 A total of zero cannot be used as a denominator.<br>
@@ -6094,8 +5951,6 @@ The function should return `None` for that invalid case so the caller can explai
 3. Return `None` for a non-positive total.
 4. Otherwise return the percentage.
 5. Test one valid and one zero-total call.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -6120,9 +5975,6 @@ The calls return `90.0` and `None`.
 
 #### Worked Exercise 2.13.33 — Apply a classification function to several observations
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A mobility observation list contains several durations.<br>
 One function should classify a duration as brief, standard, or extended.<br>
 A loop then applies the same documented rule to every value.<br>
@@ -6137,8 +5989,6 @@ The rule remains in one place, which makes later changes easier to test.
 3. Create a list of test durations.
 4. Loop through the list and call the function.
 5. Print each value and returned category.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -6167,9 +6017,6 @@ The three values produce Brief, Standard, and Extended.
 
 #### Worked Exercise 2.13.34 — Build a structured review record
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A later CSV or JSON lesson will need records with consistent named fields.<br>
 A function can receive an identifier, category, and review flag.<br>
 It returns a new dictionary rather than relying on a global variable.<br>
@@ -6184,8 +6031,6 @@ Two calls should produce independent records with the same keys.
 3. Return the dictionary.
 4. Call the function twice.
 5. Print both returned records and compare their keys.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -7067,9 +6912,6 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.14.30 — Calculate a map distance with math
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A simplified classroom map uses horizontal and vertical distances measured in kilometres.<br>
 The straight-line distance follows the square-root rule.<br>
 The `math` module provides `sqrt()`.<br>
@@ -7084,8 +6926,6 @@ The result should be rounded for display while the original values remain visibl
 3. Calculate the sum of their squares.
 4. Call `math.sqrt()`.
 5. Round only the displayed value.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -7110,9 +6950,6 @@ The displayed distance is `5.0 km`.
 
 #### Worked Exercise 2.14.31 — Summarise response times with statistics
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A small pilot study records five response times in minutes.<br>
 The standard-library `statistics` module can calculate a mean and median.<br>
 The two summaries answer different questions when unusual values appear.<br>
@@ -7127,8 +6964,6 @@ The code should keep the module name visible in both calls.
 3. Call `statistics.mean()`.
 4. Call `statistics.median()`.
 5. Print both results with labels.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -7154,9 +6989,6 @@ The median remains `10` even though the value `32` raises the mean.
 
 #### Worked Exercise 2.14.32 — Make a reproducible random classroom selection
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A lecturer demonstrates random selection from fictional discussion topics.<br>
 A fixed seed makes the teaching output reproducible when the cell is rerun.<br>
 The selection is suitable for demonstration and is not a fairness guarantee.<br>
@@ -7171,8 +7003,6 @@ The available topics should remain visible in the code.
 3. Create the topic list.
 4. Select one topic.
 5. Print the selected value and limitation note.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -7198,9 +7028,6 @@ Rerunning the cell with seed `7` produces the same selection.
 
 #### Worked Exercise 2.14.33 — Repair a fieldnote summary error
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A student intends to add two observation durations.<br>
 One value was entered as the string `"18"`, so adding it to an integer raises `TypeError`.<br>
 The debugging task is to read the error type, inspect the values, and make one justified conversion.<br>
@@ -7215,8 +7042,6 @@ The repaired code should display both the converted value and the total.
 3. Convert the numerical-looking string with `int()`.
 4. Calculate the total.
 5. Print the types and repaired result.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -7243,9 +7068,6 @@ The repaired total is `40`.
 
 #### Worked Exercise 2.14.34 — Trace and repair a counter logic error
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 **Story:** A script should count confidence scores of at least 80.<br>
 The original comparison uses `<= 80`, so the program runs but counts the wrong values.<br>
 No traceback appears because the syntax and types are valid.<br>
@@ -7260,8 +7082,6 @@ A manual trace of boundary values reveals the logic error.
 3. Locate the reversed comparison.
 4. Change it to `>= 80`.
 5. Run and compare the final count with the prediction.
-
-</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -7658,9 +7478,6 @@ The same two notebooks serve all ten exercises:
 
 ## Exercise 2.15.1 — Allocate TAN7 project groups across two campuses
 
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
-
 AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. In this fictional teaching cohort, Copenhagen has 45 students and Aalborg has 36 students, and the coordinators want groups of four or five without mixing campuses. A group of fewer than four should be reported for manual coordination rather than silently accepted. The coordinators also need a readable campus-by-campus summary showing group sizes, the number of groups and whether anyone remains unassigned.
 
 **Code plan**
@@ -7671,14 +7488,9 @@ AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. In this 
 4. Validate that every generated size is four or five and that the sizes add back to the original count.
 5. Print a transparent report and state that accessibility, student preferences and prior collaboration still require human coordination.
 
-</details>
-
 ---
 
 ## Exercise 2.15.2 — Check a municipal mobility dataset before analysis
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A municipality expects 240 consultation records, but the received extract contains 233 records. Seven records have missing consent information, three identifiers are duplicated and the team has not yet established whether those categories overlap. The analyst must calculate transparent quality indicators without calling the remaining records automatically “good”. A compact report should flag impossible counts, calculate a provisional retention rate and preserve a note about the unresolved overlap assumption.
 
@@ -7690,14 +7502,9 @@ A municipality expects 240 consultation records, but the received extract contai
 4. Calculate the retained count and rate only when the inputs are logically valid.
 5. Print the indicators, flags and limitation note with clear labels.
 
-</details>
-
 ---
 
 ## Exercise 2.15.3 — Build a bounded course-keyword guessing activity
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A lecturer wants a short guessing activity that helps students recognise Python keywords. The program should choose from a documented list, reveal correctly guessed letters and stop after six incorrect attempts. Invalid entries such as numbers, symbols or more than one letter should not consume an attempt. The final message must reveal the word and show whether the learner completed it within the stated limit.
 
@@ -7711,14 +7518,9 @@ A lecturer wants a short guessing activity that helps students recognise Python 
 
 **Adaptation note:** This exercise adapts the word-guessing structure in Rodrigo Pinheiro’s [`hangman.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/hangman.py). The teaching version is rewritten for deterministic Colab execution and the learning scope of Tutorials 2.1–2.15.
 
-</details>
-
 ---
 
 ## Exercise 2.15.4 — Scale ingredients for a community cooking workshop
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A community centre offers three recipes and needs an ingredient list for a chosen number of participants. Every recipe contains ingredient names, quantities and units, but quantities must be multiplied consistently and ingredients with different units must remain separate. The organiser may enter a recipe name with extra spaces or different capitalisation. The program should either produce a scaled list or display the available recipe names without crashing.
 
@@ -7732,14 +7534,9 @@ A community centre offers three recipes and needs an ingredient list for a chose
 
 **Adaptation note:** The data-structure idea is adapted from Rodrigo Pinheiro’s [`session03_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session03_exercises.py). The situation, recipe records, validation and complete solution are newly written.
 
-</details>
-
 ---
 
 ## Exercise 2.15.5 — Design an ethical feedback collector
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A project team wants to collect a product name, a rating from one to five and an optional comment. A previous design repeatedly pressured respondents who selected fewer than four stars, which would distort the evidence and disrespect participants. The replacement must accept every valid rating, reject only values outside the scale and let the participant skip the comment. The final summary should count ratings without changing them and include a warning when the sample is too small for strong claims.
 
@@ -7753,14 +7550,9 @@ A project team wants to collect a product name, a rating from one to five and an
 
 **Adaptation note:** This exercise critically redesigns the manipulative rating prompt in Rodrigo Pinheiro’s [`session02_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session02_exercises.py). It uses the original as an ethical discussion point rather than reproducing its behaviour.
 
-</details>
-
 ---
 
 ## Exercise 2.15.6 — Convert and classify fieldwork temperatures
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A fieldwork team records temperatures in either Celsius or Fahrenheit and wants a common Celsius summary. Each record includes a place label, a numerical value and a unit entered as text. Unit labels may contain spaces or lower-case letters, while unknown units must be sent for review. The program should preserve the original record, create converted records and classify Celsius values as freezing, cool, moderate or hot using documented project thresholds.
 
@@ -7774,14 +7566,9 @@ A fieldwork team records temperatures in either Celsius or Fahrenheit and wants 
 
 **Adaptation note:** The conversion idea is adapted from Rodrigo Pinheiro’s [`session01_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session01_exercises.py) and [`session05_functions_in_class.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session05_functions_in_class.py). The record-based workflow and validation are newly written.
 
-</details>
-
 ---
 
 ## Exercise 2.15.7 — Validate workshop registrations and waiting-list priority
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 An AAU workshop has 24 places and receives registrations containing a participant code, campus and accessibility-support flag. Duplicate participant codes must not receive a second place, and incomplete records must be kept for human review. When capacity is reached, later valid registrations enter a waiting list without being deleted. The output should show accepted, waiting and review lists while making clear that accessibility needs are not a basis for exclusion.
 
@@ -7793,14 +7580,9 @@ An AAU workshop has 24 places and receives registrations containing a participan
 4. Loop through every registration and assign it to review, accepted or waiting according to the documented order.
 5. Print counts and identifiers, then test the exact-capacity boundary.
 
-</details>
-
 ---
 
 ## Exercise 2.15.8 — Triage municipal service requests transparently
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A municipal help desk receives requests with an identifier, category, urgency label and location status. Safety-related requests without a confirmed location require human review rather than automatic prioritisation. Valid urgent or accessibility-related requests enter a priority queue, while other valid requests enter a standard queue. The program must process every record once, preserve its identifier and explain the rule that produced each destination.
 
@@ -7812,14 +7594,9 @@ A municipal help desk receives requests with an identifier, category, urgency la
 4. Loop through the records and append an annotated result to the appropriate queue.
 5. Print queue summaries and test missing, urgent, accessibility and ordinary inputs.
 
-</details>
-
 ---
 
 ## Exercise 2.15.9 — Review confidence scores without hiding uncertainty
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A research team assigns confidence scores from zero to one hundred to coded interview excerpts. Scores at or above 80 are provisionally labelled high confidence, scores from 50 to 79 require review and lower scores receive a low-confidence flag. Missing or out-of-range scores must not be forced into one of the three categories. The report should count each outcome, list the records needing human attention and state that the thresholds do not measure truth.
 
@@ -7831,14 +7608,9 @@ A research team assigns confidence scores from zero to one hundred to coded inte
 4. Collect the identifiers requiring review or correction.
 5. Print a summary and test 49, 50, 79, 80, `None` and 101 as boundaries.
 
-</details>
-
 ---
 
 ## Exercise 2.15.10 — Prepare structured records for the next CSV and JSON lesson
-
-<details class="plain-language-task">
-<summary>Show this exercise in plain language</summary>
 
 A team has received five service observations represented as dictionaries with the same intended fields: identifier, category, minutes and resolved status. Some values contain outer spaces, one duration is numerical-looking text and one record is missing a category. Before writing any CSV or JSON file, students must normalise the records in memory and keep rejected records separate. The final program should produce a clean list of dictionaries whose keys and types are consistent enough for the next tutorial.
 
@@ -7849,9 +7621,6 @@ A team has received five service observations represented as dictionaries with t
 3. Loop through the raw records, building clean copies or documented rejection records.
 4. Verify that every clean record has the same keys and intended value types.
 5. Print clean and rejected summaries, then explain how the structure maps naturally to CSV rows and JSON objects.
-
-
-</details>
 
 ---
 
