@@ -134,6 +134,18 @@ The prerequisite panel on the Python Foundations I homepage explains how to open
 
 ### Example 2.1.1 - Run your first code cell
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A beginner is working in Google Colab and needs to understand how a notebook cell, its output and the temporary runtime fit together.</p>
+<p><strong>What this example is for:</strong> Example 2.1.1 focuses on <strong>Run your first code cell</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li><li>After the cell finishes, connect the visible output to the exact line that produced it. If no output appears, ask whether the code stored a value without using <code>print()</code>.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -177,6 +189,18 @@ Change the message so the output is `Welcome to Python Foundations I`.
 Which characters tell Python that `Python is running` should be treated as text?
 
 ### Example 2.1.2 - Run cells in sequence
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A beginner is working in Google Colab and needs to understand how a notebook cell, its output and the temporary runtime fit together.</p>
+<p><strong>What this example is for:</strong> Example 2.1.2 focuses on <strong>Run cells in sequence</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>organisation</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li><li>After the cell finishes, connect the visible output to the exact line that produced it. If no output appears, ask whether the code stored a value without using <code>print()</code>.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code cell 1**
@@ -254,6 +278,18 @@ Why is notebook execution order part of debugging?
 
 ### Example 2.1.3 - Display several pieces of information
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A beginner is working in Google Colab and needs to understand how a notebook cell, its output and the temporary runtime fit together.</p>
+<p><strong>What this example is for:</strong> Example 2.1.3 focuses on <strong>Display several pieces of information</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li><li>After the cell finishes, connect the visible output to the exact line that produced it. If no output appears, ask whether the code stored a value without using <code>print()</code>.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -302,6 +338,18 @@ Add a fourth line that displays `Duplicate rows: 6`.
 What job is the comma performing inside the second `print()` call?
 
 ### Example 2.1.4 - Display a small organisational summary
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A beginner is working in Google Colab and needs to understand how a notebook cell, its output and the temporary runtime fit together.</p>
+<p><strong>What this example is for:</strong> Example 2.1.4 focuses on <strong>Display a small organisational summary</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>organisation</code>, <code>responses_received</code>, and <code>responses_valid</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -359,6 +407,18 @@ Change `responses_valid` to `440`. Before running, predict the new number of exc
 Does the final subtraction happen before or after `print()` displays the result?
 
 ### Example 2.1.5 - Format a readable report with newline characters
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A beginner is working in Google Colab and needs to understand how a notebook cell, its output and the temporary runtime fit together.</p>
+<p><strong>What this example is for:</strong> Example 2.1.5 focuses on <strong>Format a readable report with newline characters</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>report_title</code> and <code>records_checked</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -465,6 +525,18 @@ Compare these roles:
 
 ### Example 2.2.1 - Use literals directly
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.1 focuses on <strong>Use literals directly</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li><li>After the cell finishes, connect the visible output to the exact line that produced it. If no output appears, ask whether the code stored a value without using <code>print()</code>.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -515,6 +587,18 @@ Change the heading, whole number, decimal number and Boolean value. Predict whic
 Which of the four literals requires quotation marks?
 
 ### Example 2.2.2 - Use constants by convention
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.2 focuses on <strong>Use constants by convention</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>EXPECTED_COLUMNS</code>, <code>MISSING_LABEL</code>, and <code>MAX_PREVIEW_ROWS</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -569,6 +653,18 @@ Add `REPORTING_MONTH = "October"` and display it. Then change `MAX_PREVIEW_ROWS`
 Is an uppercase Python name technically protected from reassignment?
 
 ### Example 2.2.3 - Recognise the risk of unexplained literals
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.3 focuses on <strong>Recognise the risk of unexplained literals</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>MINIMUM_ACCEPTABLE_COMPLETION</code>, <code>completion_rate</code>, and <code>gap_to_threshold</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
 
 
 **Code**
@@ -646,6 +742,18 @@ Read `=` in an assignment as "is assigned" or "now refers to", not as "is mathem
 
 ### Example 2.2.4 - Assign and display values
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.4 focuses on <strong>Assign and display values</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>city</code>, <code>survey_responses</code>, and <code>average_rating</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -699,6 +807,18 @@ Change all three values to describe a different fictional case. Add labels to th
 Which side of `=` normally contains the variable name in a basic assignment?
 
 ### Example 2.2.5 - Reassign a variable
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.5 focuses on <strong>Reassign a variable</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>records_reviewed</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -756,6 +876,18 @@ Why can the same variable name appear on both sides of `=` during an update?
 
 ### Example 2.2.6 - Extend an audit trail with `+=`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.6 focuses on <strong>Extend an audit trail with +=</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>audit_trail</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 The augmented assignment operator `+=` updates a variable using its current value. With numbers it can increase a count. With strings it can extend text. This example uses text so that the update records a sequence of data-preparation actions.
 
@@ -808,6 +940,18 @@ Add a third action stating that category labels were reviewed. Then replace the 
 Why is this break especially important to test even though Python produces no traceback?
 
 ### Example 2.2.7 - Derive new variables without losing originals
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.7 focuses on <strong>Derive new variables without losing originals</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>total_records</code>, <code>missing_records</code>, <code>duplicate_records</code>, and <code>usable_records</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -917,6 +1061,18 @@ Current Python versions also have **soft keywords** such as `match`, `case`, `_`
 
 ### Example 2.2.8 - Use a reserved word inside a meaningful name
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.8 focuses on <strong>Use a reserved word inside a meaningful name</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>class_size</code>, <code>return_rate</code>, and <code>survey_from_students</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -969,6 +1125,18 @@ Add a valid variable whose name contains the word `for`, such as `records_for_re
 Why is `class_size` allowed even though `class` is a keyword?
 
 ### Example 2.2.9 - Check whether words are Python keywords
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.9 focuses on <strong>Check whether words are Python keywords</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The first import lines make the required library tools available in the current notebook session. An import prepares the tools; it does not load or analyse the dataset by itself.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>iskeyword</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 Python includes a small standard module named `keyword` that can check a word for you.
@@ -1024,6 +1192,18 @@ Check `if`, `dataset`, `input` and `while`. Predict each result before running.
 Why does `keyword.iskeyword("print")` return `False` even though you should avoid using `print` as a variable name?
 
 ### Example 2.2.10 - Avoid hiding a built-in function
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.10 focuses on <strong>Avoid hiding a built-in function</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>record_type</code> and <code>record_count</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1127,6 +1307,18 @@ Avoid names such as `x`, `thing`, `data1`, `temp` and `final_final` unless the c
 
 ### Example 2.2.11 - Use valid snake-case names
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.11 focuses on <strong>Use valid snake-case names</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>survey_year</code>, <code>responses_received</code>, and <code>missing_response_count</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -1180,6 +1372,18 @@ Why can output labels contain spaces while variable names cannot?
 
 ### Example 2.2.12 - Replace vague names with meaningful ones
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.12 focuses on <strong>Replace vague names with meaningful ones</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>total_responses</code>, <code>invalid_responses</code>, and <code>valid_responses</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -1228,6 +1432,18 @@ Rename `invalid_responses` to a more precise name for one actual rule, such as `
 How can a precise variable name expose an assumption in a data-cleaning decision?
 
 ### Example 2.2.13 - Notice case sensitivity
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Techno-Anthropology student is turning details from a small project or organisational report into clearly named Python values.</p>
+<p><strong>What this example is for:</strong> Example 2.2.13 focuses on <strong>Notice case sensitivity</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>records</code>, <code>Records</code>, and <code>RECORDS</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1329,6 +1545,18 @@ At beginner level, use this practical distinction:
 
 ### Example 2.3.1 - Put an expression inside a statement
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.1 focuses on <strong>Put an expression inside a statement</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>received</code> and <code>excluded</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -1375,6 +1603,18 @@ Change both assigned values and predict the expression result. Then assign the r
 Which part of the final line produces the numerical value?
 
 ### Example 2.3.2 - Store the result of an expression
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.2 focuses on <strong>Store the result of an expression</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>total_records</code>, <code>missing_records</code>, <code>complete_records</code>, and <code>completion_rate</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1429,6 +1669,18 @@ Why is `completion_rate` assigned a float even though the source counts are inte
 
 ### Example 2.3.3 - Check the order of operations in a rate calculation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.3 focuses on <strong>Check the order of operations in a rate calculation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>completed</code>, <code>total</code>, <code>rate_without_parentheses</code>, and <code>rate_with_parentheses</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 **Code**
 
 ```python
@@ -1475,6 +1727,18 @@ Using the wrong denominator can produce a plausible percentage with the wrong me
 - [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Example 2.3.4 - Calculate basic data-quality counts
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.4 focuses on <strong>Calculate basic data-quality counts</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>received</code>, <code>missing</code>, <code>duplicates</code>, and <code>flagged</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1529,6 +1793,18 @@ Change the source values to `500`, `35` and `10`. Predict both derived counts. T
 Which assumption determines whether the addition is valid?
 
 ### Example 2.3.5 - Compare division, floor division and remainder
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.5 focuses on <strong>Compare division, floor division and remainder</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>records_to_review</code>, <code>batch_size</code>, <code>exact_batches</code>, and <code>full_batches</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1586,6 +1862,18 @@ Which operator tells you how many records remain after creating complete batches
 
 ### Example 2.3.6 - Calculate a rate and a projected count
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.6 focuses on <strong>Calculate a rate and a projected count</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>eligible_residents</code>, <code>responses_received</code>, <code>next_round_multiplier</code>, and <code>response_rate</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -1640,6 +1928,18 @@ Change the multiplier to represent a 5 per cent decrease. Hint: the multiplier w
 What assumption is encoded in `next_round_multiplier`?
 
 ### Example 2.3.7 - Use exponentiation in a simple growth scenario
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.7 focuses on <strong>Use exponentiation in a simple growth scenario</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>initial_count</code>, <code>growth_factor</code>, <code>number_of_periods</code>, and <code>projected_count</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1721,6 +2021,18 @@ Operators at the same level are usually evaluated from left to right. Exponentia
 
 ### Example 2.3.8 - See how multiplication happens before addition
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.8 focuses on <strong>See how multiplication happens before addition</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>without_parentheses</code> and <code>with_parentheses</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -1770,6 +2082,18 @@ Change `4` to `6`. Predict both results. Then write one sentence describing a si
 Which operation is performed first in `1200 + 350 * 4`?
 
 ### Example 2.3.9 - Make a percentage formula explicit
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.9 focuses on <strong>Make a percentage formula explicit</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>missing_records</code>, <code>duplicate_records</code>, <code>total_records</code>, and <code>problem_rate</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1822,6 +2146,18 @@ What value is the complete numerator in the repaired expression?
 
 ### Example 2.3.10 - Use nested parentheses for a weighted scenario
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.10 focuses on <strong>Use nested parentheses for a weighted scenario</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>missing_records</code>, <code>duplicate_records</code>, <code>total_records</code>, and <code>weighted_problem_rate</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -1872,6 +2208,18 @@ Create `MISSING_WEIGHT = 2` and replace the literal weight in the formula with t
 Who is responsible for justifying the value of a weight used in a metric?
 
 ### Example 2.3.11 - Understand a subtle negative-number case
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is checking a small set of counts, rates or measurements and wants the calculation to remain visible and explainable.</p>
+<p><strong>What this example is for:</strong> Example 2.3.11 focuses on <strong>Understand a subtle negative-number case</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>result_without_grouping</code> and <code>result_with_grouping</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -1967,6 +2315,18 @@ The quotation marks define the value but are not part of the displayed output. D
 
 ### Example 2.4.1 - Choose quotation marks that fit the text
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.1 focuses on <strong>Choose quotation marks that fit the text</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>case_title</code> and <code>department</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -2016,6 +2376,18 @@ Change the case title to a phrase containing an apostrophe. Try both quotation s
 Why are double quotation marks convenient for the first string?
 
 ### Example 2.4.2 - Join and repeat strings
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.2 focuses on <strong>Join and repeat strings</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>source</code>, <code>period</code>, <code>report_label</code>, and <code>separator</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -2068,6 +2440,18 @@ Add a third string for the department and join all three with ` | `. Change the 
 What does `+` do when both operands are strings?
 
 ### Example 2.4.3 - Build clear messages with f-strings
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.3 focuses on <strong>Build clear messages with f-strings</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>organisation</code>, <code>records_checked</code>, <code>completion_rate</code>, and <code>summary</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 An **f-string** lets you place expressions inside a string by writing `f` before the opening quotation mark and placing expressions inside braces `{}`.
@@ -2146,6 +2530,18 @@ Use integers for counts when partial units are impossible. Use floats for measur
 
 ### Example 2.4.4 - Use counts and measurements appropriately
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.4 focuses on <strong>Use counts and measurements appropriately</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>response_count</code> and <code>average_waiting_minutes</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -2201,6 +2597,18 @@ Why should a count normally be stored as an integer?
 
 ### Example 2.4.5 - Notice that division produces a float
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.5 focuses on <strong>Notice that division produces a float</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>total_waiting_minutes</code>, <code>people_observed</code>, and <code>average_waiting_minutes</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -2251,6 +2659,18 @@ Change the total to `48`. Predict the displayed value and result type.
 Can dividing two integers produce a float?
 
 ### Example 2.4.6 - Understand floating-point representation
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.6 focuses on <strong>Understand floating-point representation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>first_share</code>, <code>second_share</code>, and <code>combined_share</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 Computers store many decimal fractions as binary approximations. This can produce a small representation surprise.
@@ -2304,6 +2724,18 @@ Try `0.1 + 0.1 + 0.1`. Display the raw result and a version formatted to one dec
 Why might a simple decimal calculation display more digits than expected?
 
 ### Example 2.4.7 - Recognise implicit conversion from integer to float
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.7 focuses on <strong>Recognise implicit conversion from integer to float</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>whole_hours</code>, <code>additional_hours</code>, and <code>total_hours</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 Python can combine an integer and a float in one arithmetic expression. It automatically represents the numerical result as a float so that a fractional part is not lost. This is called **implicit conversion** or **type promotion**.
@@ -2360,6 +2792,18 @@ Change `additional_hours` to `2.0`. Predict both the displayed value and its typ
 After the calculation, what is the type of `whole_hours`, and what is the type of `total_hours`?
 
 ### Example 2.4.8 - Separate rounding a value from formatting its display
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.8 focuses on <strong>Separate rounding a value from formatting its display</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>raw_completion_rate</code>, <code>rounded_rate</code>, and <code>display_line</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 Rounding and display formatting answer different questions. `round()` creates a rounded numerical value. An f-string can control how a number looks without changing the stored source value.
@@ -2453,6 +2897,18 @@ Do not confuse assignment `=` with equality comparison `==`.
 
 ### Example 2.4.9 - Store Boolean flags directly
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.9 focuses on <strong>Store Boolean flags directly</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>consent_recorded</code> and <code>contains_personal_data</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -2504,6 +2960,18 @@ Add a Boolean variable called `requires_manual_review` and display it. Write one
 What are the only two Boolean literal values in Python?
 
 ### Example 2.4.10 - Produce Booleans with comparisons
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.10 focuses on <strong>Produce Booleans with comparisons</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>total_records</code>, <code>missing_records</code>, <code>minimum_required</code>, and <code>has_no_missing_records</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -2561,6 +3029,18 @@ Set `total_records` to exactly `250`. Predict which Boolean results change.
 Why are `>= 250` and `== 250` different questions?
 
 ### Example 2.4.11 - Combine Boolean conditions
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.11 focuses on <strong>Combine Boolean conditions</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>has_required_columns</code>, <code>missing_record_count</code>, <code>duplicate_record_count</code>, and <code>ready_for_initial_analysis</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -2648,6 +3128,18 @@ Common results in this tutorial are:
 
 ### Example 2.4.12 - Inspect the four foundation types
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.12 focuses on <strong>Inspect the four foundation types</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>case_name</code>, <code>record_count</code>, <code>average_engagement</code>, and <code>review_complete</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -2704,6 +3196,18 @@ Does `type()` report the role of a value in your research design or only its Pyt
 
 ### Example 2.4.13 - Use `type()` to investigate a failed calculation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.13 focuses on <strong>Use type() to investigate a failed calculation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>records_received</code> and <code>records_missing</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -2752,6 +3256,18 @@ Add `records_received_number = int(records_received)` and inspect its type. Then
 What evidence in the code tells you that `"250"` is not an integer?
 
 ### Example 2.4.14 - Inspect expressions, not only variables
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.14 focuses on <strong>Inspect expressions, not only variables</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -2807,6 +3323,18 @@ Why is intended meaning necessary when repairing a type mismatch?
 Python uses the special value `None` to represent the absence of a value. It is not the integer `0`, the empty string `""`, the Boolean `False`, or the text `"None"`. This distinction is important in later data work because "not recorded" is different from a recorded value of zero.
 
 ### Example 2.4.15 - Preserve three different states
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.15 focuses on <strong>Preserve three different states</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>waiting_time_minutes</code>, <code>complaint_count</code>, and <code>optional_comment</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -2872,6 +3400,18 @@ Why would replacing a missing waiting time with `0` change the meaning of the re
 String methods create a new text value while leaving the original value available unless you assign the result back to the same name. This is useful when a field label arrives with extra spaces, mixed capitalisation or punctuation.
 
 ### Example 2.4.16 - Standardise a field label without losing the original
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group is representing text, counts, measurements, decisions and missing information without losing what each value means.</p>
+<p><strong>What this example is for:</strong> Example 2.4.16 focuses on <strong>Standardise a field label without losing the original</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The transformation standardises selected text or categories. Compare the values before and after so clearly equivalent labels are combined without forcing uncertain meanings together.</li><li>Named results such as <code>raw_field_label</code>, <code>trimmed_label</code>, <code>lowercase_label</code>, and <code>field_name</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 **Code**
 
@@ -2964,6 +3504,18 @@ Conversion is not the same as data validation. Successfully converting `"999"` t
 
 ### Example 2.5.1 - Convert whole-number text to an integer
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.1 focuses on <strong>Convert whole-number text to an integer</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>records_text</code>, <code>records_number</code>, and <code>remaining_records</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -3017,6 +3569,18 @@ Which variable retains the original string after conversion?
 
 ### Example 2.5.2 - Convert decimal text to a float
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.2 focuses on <strong>Convert decimal text to a float</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>completion_text</code>, <code>completion_number</code>, and <code>gap_to_full_completion</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -3069,6 +3633,18 @@ Why is `float()` the appropriate converter for `"93.5"`?
 
 ### Example 2.5.3 - Convert numbers to text for concatenation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.3 focuses on <strong>Convert numbers to text for concatenation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>report_year</code>, <code>record_count</code>, and <code>file_label</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -3118,6 +3694,18 @@ Add a string variable for the reporting month and include it in the label. Use l
 Does calling `str(report_year)` change the type stored under `report_year`?
 
 ### Example 2.5.4 - Understand that `int()` truncates floats
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.4 focuses on <strong>Understand that int() truncates floats</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>projected_responses</code> and <code>whole_responses</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -3206,6 +3794,18 @@ Even when the user types digits, the returned value is a string. Numerical input
 
 ### Example 2.5.5 - Collect and display text input
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.5 focuses on <strong>Collect and display text input</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>organisation</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -3256,6 +3856,18 @@ Change the prompt to request a dataset title. Add a second input for the reporti
 What type does `input()` return?
 
 ### Example 2.5.6 - Convert numerical input before calculating
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.6 focuses on <strong>Convert numerical input before calculating</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>records_text</code>, <code>records_received</code>, <code>records_missing</code>, and <code>records_complete</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -3310,6 +3922,18 @@ Collect the missing-record count from the user as well. Convert both inputs and 
 Why does typing `120` not automatically create an integer?
 
 ### Example 2.5.7 - Turn messy text input into a traceable file label
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.7 focuses on <strong>Turn messy text input into a traceable file label</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>The transformation standardises selected text or categories. Compare the values before and after so clearly equivalent labels are combined without forcing uncertain meanings together.</li><li>Named results such as <code>organisation_raw</code>, <code>dataset_raw</code>, <code>period_raw</code>, and <code>organisation</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -3382,6 +4006,18 @@ Why does this script keep both `dataset_raw` and `dataset_label`?
 
 ### Example 2.5.8 - Compare text joining before and after conversion
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.8 focuses on <strong>Compare text joining before and after conversion</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>first_text</code>, <code>second_text</code>, <code>joined_text</code>, and <code>numerical_total</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -3438,6 +4074,18 @@ Try inputs `5` and `10`. Predict both lines of output. Rename the source variabl
 Why is converting the joined text not equivalent to adding converted inputs?
 
 ### Example 2.5.9 - Estimate gross pay from typed values
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.9 focuses on <strong>Estimate gross pay from typed values</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>role_label</code>, <code>hours_worked</code>, <code>hourly_rate_dkk</code>, and <code>gross_pay_dkk</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 This example adapts the input-and-conversion pattern from [*Python for Everybody*, Chapter 2, Exercise 3](https://www.py4e.com/html3/02-variables). The organisation, labels, prompts and output have been rewritten for this course.
 
@@ -3498,6 +4146,18 @@ Why does this example use `float()` rather than `int()` for hours and rate?
 
 ### Example 2.5.10 - Convert a typed temperature
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.10 focuses on <strong>Convert a typed temperature</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>sensor_id</code>, <code>celsius_text</code>, <code>celsius</code>, and <code>fahrenheit</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 This example adapts the conversion formula practice from [*Python for Everybody*, Chapter 2, Exercise 5](https://www.py4e.com/html3/02-variables). It adds a sensor identifier, preserves the original text and produces a traceable report line.
 
 **Code**
@@ -3557,6 +4217,18 @@ Try `0`, `-10` and `37.5` degrees Celsius. Predict the Fahrenheit value before e
 Why does the script preserve both `celsius_text` and `celsius`?
 
 ### Example 2.5.11 - Build an easy addition-and-subtraction calculator
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.11 focuses on <strong>Build an easy addition-and-subtraction calculator</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>first_number_text</code>, <code>second_number_text</code>, <code>first_number</code>, and <code>second_number</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 This short calculator collects two numbers once and uses them for both addition and subtraction. It is intentionally limited to operations already introduced in Python Foundations I.
 
@@ -3620,6 +4292,18 @@ Why can the same two converted inputs be used for both addition and subtraction?
 
 ### Example 2.5.12 - Calculate a workshop attendance percentage from input
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.12 focuses on <strong>Calculate a workshop attendance percentage from input</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>workshop_name</code>, <code>registered_participants</code>, <code>attended_participants</code>, and <code>attendance_rate</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 This example combines one text response with two whole-number responses and produces a percentage summary.
 
 **Code**
@@ -3678,6 +4362,18 @@ Run the example with 25 registered participants and 25 attendees. Then use 25 re
 Which value is the denominator in the attendance percentage, and why?
 
 ### Example 2.5.13 - Estimate a shared travel cost from typed values
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A simple interactive script collects information from a person and must convert the typed text before using it in a calculation.</p>
+<p><strong>What this example is for:</strong> Example 2.5.13 focuses on <strong>Estimate a shared travel cost from typed values</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The program pauses at <code>input()</code> and stores what the person types as text. Any numerical conversion happens in a separate step and can fail if the entered text does not match the expected form.</li><li>Named results such as <code>trip_name</code>, <code>distance_km</code>, <code>cost_per_km_dkk</code>, and <code>traveller_count</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 This example collects a text label, two decimal measurements and a whole-number participant count. It calculates both a total estimate and an equal per-person estimate.
 
@@ -3815,6 +4511,18 @@ Avoid comments that merely repeat obvious syntax.
 
 ### Example 2.6.1 - Explain purpose and assumptions
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.1 focuses on <strong>Explain purpose and assumptions</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -3868,6 +4576,18 @@ Why is the assumption comment more useful than a comment saying `# subtract`?
 
 ### Example 2.6.2 - Use end-of-line comments carefully
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.2 focuses on <strong>Use end-of-line comments carefully</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>MINIMUM_REQUIRED</code>, <code>completion_rate</code>, and <code>gap</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -3916,6 +4636,18 @@ Move one long end-of-line comment to its own line above the related code. Change
 What unit must both operands use for the gap calculation to be meaningful?
 
 ### Example 2.6.3 - Do not confuse strings with comments
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.3 focuses on <strong>Do not confuse strings with comments</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -4017,6 +4749,18 @@ When Python reports an error during execution, Colab often displays a **tracebac
 
 ### Example 2.6.4 - Error clinic: `SyntaxError`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.4 focuses on <strong>Error clinic: SyntaxError</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>case_title</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
+
 `SyntaxError` means Python cannot understand the code as valid Python grammar. Common causes include missing quotation marks, missing brackets, invalid variable names and incomplete expressions.
 
 **Deliberately broken code**
@@ -4077,6 +4821,18 @@ Change the title to a phrase containing an apostrophe and choose quotation marks
 What unfinished structure caused the first syntax error?
 
 ### Example 2.6.5 - Error clinic: `NameError`
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.5 focuses on <strong>Error clinic: NameError</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>total_records</code>, <code>missing_records</code>, and <code>complete_records</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
 
 `NameError` means Python does not currently know a name that the code tried to use. The name may be misspelt, never defined, deleted, or lost after a runtime restart.
 
@@ -4142,6 +4898,18 @@ Why can correctly spelt code still raise `NameError` in a notebook?
 
 ### Example 2.6.6 - Error clinic: `TypeError`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.6 focuses on <strong>Error clinic: TypeError</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>total_records</code>, <code>missing_records</code>, and <code>complete_records</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
+
 `TypeError` means an operation received a type of value it cannot use in that way.
 
 **Deliberately broken code**
@@ -4206,6 +4974,18 @@ How does the final error line identify the two incompatible types?
 
 ### Example 2.6.7 - Error clinic: `ValueError`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.7 focuses on <strong>Error clinic: ValueError</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>completion_text</code> and <code>completion_number</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
+
 `ValueError` means a function received the right broad type but an unsuitable value. A common beginner case is asking `int()` to convert text that is not a valid whole-number representation.
 
 **Deliberately broken code**
@@ -4267,6 +5047,18 @@ Test `"93"`, `"93.0"`, `"93,5"` and `"ninety-three"` separately with `int()` and
 Why is `float()` a better repair than converting first to float and then to integer here?
 
 ### Example 2.6.8 - Error clinic: `ZeroDivisionError`
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.8 focuses on <strong>Error clinic: ZeroDivisionError</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>completed_responses</code>, <code>invited_participants</code>, and <code>completion_rate</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
 
 `ZeroDivisionError` occurs when a numerical expression tries to divide by zero.
 
@@ -4332,6 +5124,18 @@ Which part of a division expression must not be zero?
 
 ### Example 2.6.9 - Error clinic: `IndentationError`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.9 focuses on <strong>Error clinic: IndentationError</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li><li>After the cell finishes, connect the visible output to the exact line that produced it. If no output appears, ask whether the code stored a value without using <code>print()</code>.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
+
 Python uses indentation to group lines in structures such as conditions, loops and functions. Those structures are taught later, but accidental leading spaces can already cause an error.
 
 **Deliberately broken code**
@@ -4391,6 +5195,18 @@ Add a third unindented print line describing a completed check. Confirm that all
 Why is indentation part of Python syntax rather than only visual style?
 
 ### Example 2.6.10 - Error clinic: A logical error with no traceback
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A classmate is reviewing a beginner script and needs to understand its purpose, assumptions and errors without guessing.</p>
+<p><strong>What this example is for:</strong> Example 2.6.10 focuses on <strong>Error clinic: A logical error with no traceback</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>complete_records</code>, <code>total_records</code>, and <code>completion_rate</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the values line by line and say aloud what changes after each statement. Python uses the most recently assigned value when a name appears again.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> This example may be deliberately broken or designed to expose a risky result. Its purpose is to make the problem visible. Read the final error or surprising output, identify the smallest relevant cause and compare it with the repaired version before reusing the pattern.</p>
+</div>
+</details>
 
 Some of the most important errors do not produce an error message. Python can execute the wrong formula perfectly.
 
@@ -4508,6 +5324,18 @@ The next examples combine the ideas from the whole tutorial. Do not rush to run 
 
 ### Example 2.7.1 - Produce a monthly data-quality summary
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A small TAN/STS project is combining the foundation skills into a readable and traceable report for another person to inspect.</p>
+<p><strong>What this example is for:</strong> Example 2.7.1 focuses on <strong>Produce a monthly data-quality summary</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -4581,6 +5409,18 @@ Add `invalid_date_records = 14`. Update the formula, comment and output. Then re
 Which line creates the Boolean, and which line merely displays it?
 
 ### Example 2.7.2 - Compare expected and received file structure
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A small TAN/STS project is combining the foundation skills into a readable and traceable report for another person to inspect.</p>
+<p><strong>What this example is for:</strong> Example 2.7.2 focuses on <strong>Compare expected and received file structure</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 **Code**
@@ -4656,6 +5496,18 @@ Why is a correct column count only one part of a structural check?
 
 ### Example 2.7.3 - Create an interactive organisational intake note
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A small TAN/STS project is combining the foundation skills into a readable and traceable report for another person to inspect.</p>
+<p><strong>What this example is for:</strong> Example 2.7.3 focuses on <strong>Create an interactive organisational intake note</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
+
 
 **Code**
 
@@ -4727,6 +5579,18 @@ Add a string input describing the exclusion rule. Display it in the final note. 
 Which types are returned by the four `input()` calls before conversion is applied?
 
 ### Example 2.7.4 - Preserve raw metadata and publish a standardisation note
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A small TAN/STS project is combining the foundation skills into a readable and traceable report for another person to inspect.</p>
+<p><strong>What this example is for:</strong> Example 2.7.4 focuses on <strong>Preserve raw metadata and publish a standardisation note</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, point to the starting value or input, predict what will be displayed and write one change that should alter the result. Run it only after making the prediction, then explain any difference.</p>
+<p><strong>Interpret carefully:</strong> The result demonstrates Python behaviour with small teaching values. Before applying the pattern to research or organisational data, check the units, meaning and allowed values, and test what happens when an input is empty, unexpected or exactly on a boundary.</p>
+</div>
+</details>
 
 
 This example combines assignment, strings, method-call expressions, `None`, Booleans, `type()` and an f-string. It does not use conditions, loops or custom functions.

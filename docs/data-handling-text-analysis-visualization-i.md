@@ -287,6 +287,18 @@ This means that summing `cases_received` is summing monthly service-category cou
 
 ### Example 3.1.1 — Identify the unit of observation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A research group is deciding what one row, one column and one value represent before doing any calculation.</p>
+<p><strong>What this example is for:</strong> Example 3.1.1 focuses on <strong>Identify the unit of observation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 Consider:
 
 | student_id | lecture | attendance |
@@ -302,6 +314,18 @@ What does one row represent?
 It would be wrong to say that the table has three students merely because it has three rows. Student `S01` appears twice.
 
 ### Example 3.1.2 — Variable versus value
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A research group is deciding what one row, one column and one value represent before doing any calculation.</p>
+<p><strong>What this example is for:</strong> Example 3.1.2 focuses on <strong>Variable versus value</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 In this row:
 
@@ -333,6 +357,18 @@ A cell contains a stored value. That value may be:
 This is why a dataset should not be treated as a neutral mirror of reality.
 
 ### Example 3.1.3 — A category is a modelling decision
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A research group is deciding what one row, one column and one value represent before doing any calculation.</p>
+<p><strong>What this example is for:</strong> Example 3.1.3 focuses on <strong>A category is a modelling decision</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 Suppose a column called `service_type` contains:
 
@@ -524,6 +560,18 @@ Do not automatically replace missing data with zero. Zero may have a substantive
 
 ### Example 3.2.1 — Read a CSV mentally
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is examining a CSV as a structured text file and checking whether rows and columns have been stored consistently.</p>
+<p><strong>What this example is for:</strong> Example 3.2.1 focuses on <strong>Read a CSV mentally</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```csv
 id,city,cases
 1,Copenhagen,12
@@ -540,6 +588,18 @@ Answer before coding:
 **Answer:** three columns, three data rows, and the `city` field is missing in row 3.
 
 ### Example 3.2.2 — Detect a delimiter problem
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is examining a CSV as a structured text file and checking whether rows and columns have been stored consistently.</p>
+<p><strong>What this example is for:</strong> Example 3.2.2 focuses on <strong>Detect a delimiter problem</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 Suppose pandas displays one column named:
 
@@ -673,6 +733,18 @@ The alias is a convention, not a requirement of the library.
 
 ### Example 3.3.1 — Confirm pandas is available
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is moving a CSV into pandas and needs to distinguish the stored file from the DataFrame held in the current Python session.</p>
+<p><strong>What this example is for:</strong> Example 3.3.1 focuses on <strong>Confirm pandas is available</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The first import lines make the required library tools available in the current notebook session. An import prepares the tools; it does not load or analyse the dataset by itself.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 import pandas as pd
 
@@ -719,6 +791,18 @@ The leftmost `0` and `1` are the DataFrame's **index labels**. They are not part
 
 ### Example 3.3.2 — DataFrame versus Series
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is moving a CSV into pandas and needs to distinguish the stored file from the DataFrame held in the current Python session.</p>
+<p><strong>What this example is for:</strong> Example 3.3.2 focuses on <strong>DataFrame versus Series</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The code works with columns including <code>city</code>. Read each column name as a variable recorded for every relevant row.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 print(type(df_small))
 print(type(df_small["city"]))
@@ -761,6 +845,18 @@ DataFrame stored in Python memory
 The original file and the DataFrame are not the same object. Changing the DataFrame does not automatically rewrite the original CSV.
 
 ### Example 3.3.3 — Load from a local path
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is moving a CSV into pandas and needs to distinguish the stored file from the DataFrame held in the current Python session.</p>
+<p><strong>What this example is for:</strong> Example 3.3.3 focuses on <strong>Load from a local path</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The CSV-loading line reads stored tabular text into a pandas DataFrame. From that point onward, the variable refers to an in-memory working object, while the source file remains a separate artefact.</li><li>Named results such as <code>df</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>Pay particular attention to <code>read_csv</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 If the file is already available at the relative path:
 
@@ -1160,6 +1256,18 @@ This does not complete a data-quality assessment, but it prevents many careless 
 
 ### Example 3.4.1 — Interpret shape correctly
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group has loaded a table and is inspecting its size, columns, data types and sample records before trusting it.</p>
+<p><strong>What this example is for:</strong> Example 3.4.1 focuses on <strong>Interpret shape correctly</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 print(df.shape)
 ```
@@ -1181,6 +1289,18 @@ Incorrect statement:
 Why? Because the unit of observation is a service-category-city-month record, not a citizen.
 
 ### Example 3.4.2 — Compare `head()` and `sample()`
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A project group has loaded a table and is inspecting its size, columns, data types and sample records before trusting it.</p>
+<p><strong>What this example is for:</strong> Example 3.4.2 focuses on <strong>Compare head() and sample()</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code> and <code>sample</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 print("First five rows")
@@ -1321,6 +1441,18 @@ Unless you deliberately created such a variable, that code will fail.
 
 ### Example 3.5.1 — Select a numeric column
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
+<p><strong>What this example is for:</strong> Example 3.5.1 focuses on <strong>Select a numeric column</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>cases</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 cases = df["cases_received"]
 print(cases.head())
@@ -1353,6 +1485,18 @@ inner [ ... ]  → Python list of column names
 ```
 
 ### Example 3.5.2 — Build a readable preview table
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
+<p><strong>What this example is for:</strong> Example 3.5.2 focuses on <strong>Build a readable preview table</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>columns_to_show</code> and <code>preview</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 columns_to_show = [
@@ -1458,6 +1602,18 @@ high_case_rows
 
 ### Example 3.5.3 — Filter by category
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
+<p><strong>What this example is for:</strong> Example 3.5.3 focuses on <strong>Filter by category</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>housing</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 housing = df[df["service_type"] == "Housing"]
 housing
@@ -1540,6 +1696,18 @@ Read it as:
 This often becomes easier to read when the list contains several categories.
 
 ### Example 3.5.4 — Filter and then choose columns
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
+<p><strong>What this example is for:</strong> Example 3.5.4 focuses on <strong>Filter and then choose columns</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The selection condition creates or applies a true/false rule to determine which rows are included. Test values at the boundary and state which records the rule excludes.</li><li>Named results such as <code>result</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 result = df.loc[
@@ -1876,6 +2044,18 @@ The next step is investigation, not automatic clipping to `5`.
 
 ## Example 3.6.1 — Build a conceptual type table
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A team is separating the social meaning of a variable from the technical data type that pandas currently reports.</p>
+<p><strong>What this example is for:</strong> Example 3.6.1 focuses on <strong>Build a conceptual type table</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Named results such as <code>conceptual_types</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>items</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 conceptual_types = {
     "record_id": "identifier",
@@ -1901,6 +2081,18 @@ for column, role in conceptual_types.items():
 The dictionary does not change the DataFrame. It documents your interpretation of each variable's role.
 
 ## Example 3.6.2 — Compare technical and conceptual types
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A team is separating the social meaning of a variable from the technical data type that pandas currently reports.</p>
+<p><strong>What this example is for:</strong> Example 3.6.2 focuses on <strong>Compare technical and conceptual types</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The loop repeats the indented action. Follow one iteration at a time and identify which value changes, which condition is checked and what eventually makes the repetition stop.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 for column in df.columns:
@@ -2190,6 +2382,18 @@ Rounding changes how a value is displayed or stored after rounding. It does not 
 
 ### Example 3.7.1 — Received and resolved totals
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A municipal-service teaching dataset is being summarised, but the group must connect every statistic to the records that produced it.</p>
+<p><strong>What this example is for:</strong> Example 3.7.1 focuses on <strong>Received and resolved totals</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>Named results such as <code>total_received</code> and <code>total_resolved</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 total_received = df["cases_received"].sum()
 total_resolved = df["cases_resolved"].sum()
@@ -2228,6 +2432,18 @@ df.loc[min_index]
 This is especially useful when a minimum or maximum looks suspicious.
 
 ### Example 3.7.2 — Inspect the negative minimum
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A municipal-service teaching dataset is being summarised, but the group must connect every statistic to the records that produced it.</p>
+<p><strong>What this example is for:</strong> Example 3.7.2 focuses on <strong>Inspect the negative minimum</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The selection condition creates or applies a true/false rule to determine which rows are included. Test values at the boundary and state which records the rule excludes.</li><li>Named results such as <code>min_index</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 min_index = df["cases_received"].idxmin()
@@ -2396,6 +2612,18 @@ The new column is calculated row by row.
 
 ### Example 3.8.1 — Inspect the derived column
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A group is deriving a new measure from existing columns and must make the formula, denominator and unit visible.</p>
+<p><strong>What this example is for:</strong> Example 3.8.1 focuses on <strong>Inspect the derived column</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The assignment creates or updates the DataFrame column <code>unresolved_cases</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 df["unresolved_cases"] = (
     df["cases_received"] - df["cases_resolved"]
@@ -2435,6 +2663,18 @@ df["resolution_rate"] = (
 ```
 
 ### Example 3.8.2 — Inspect the rate
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A group is deriving a new measure from existing columns and must make the formula, denominator and unit visible.</p>
+<p><strong>What this example is for:</strong> Example 3.8.2 focuses on <strong>Inspect the rate</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 display(
@@ -2592,6 +2832,18 @@ RECALCULATE rate
 Otherwise your DataFrame may contain a cleaned source column beside an outdated derived measure.
 
 ## Example 3.8.3 — Create a clearly named percentage
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A group is deriving a new measure from existing columns and must make the formula, denominator and unit visible.</p>
+<p><strong>What this example is for:</strong> Example 3.8.3 focuses on <strong>Create a clearly named percentage</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The assignment creates or updates the DataFrame column <code>resolved_pct_of_received</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 df["resolved_pct_of_received"] = (
@@ -2975,6 +3227,18 @@ service_by_city_pct.round(1)
 Always state what has been normalised. Row percentages and column percentages answer different questions.
 
 ## Example 3.9.1 — Compare satisfaction by service type
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is comparing categories and groups while checking how many records contribute to each result.</p>
+<p><strong>What this example is for:</strong> Example 3.9.1 focuses on <strong>Compare satisfaction by service type</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The grouping operation places records into named groups before calculating a summary. The resulting row represents a group, so it no longer has the same meaning as one original record.</li><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>Named results such as <code>satisfaction_by_service</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 satisfaction_by_service = (
@@ -3434,6 +3698,18 @@ This is a technical summary. It still needs human interpretation.
 
 ## Example 3.10.1 — Separate observation from action
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A data-quality review has identified possible problems, and the team needs to separate observation, interpretation and action.</p>
+<p><strong>What this example is for:</strong> Example 3.10.1 focuses on <strong>Separate observation from action</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 **Observation:** `record_id SR2026-0027` appears in two identical rows, while `SR2026-0079` labels two different rows.
 
 **Premature action:** delete one row immediately.
@@ -3441,6 +3717,18 @@ This is a technical summary. It still needs human interpretation.
 **Better next step:** verify whether `record_id` is expected to be unique and whether repeated exports or legitimate repeated observations are possible.
 
 ## Example 3.10.2 — Quality problem changes a calculation
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A data-quality review has identified possible problems, and the team needs to separate observation, interpretation and action.</p>
+<p><strong>What this example is for:</strong> Example 3.10.2 focuses on <strong>Quality problem changes a calculation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 The raw mean satisfaction score includes a value outside the documented range.
 
@@ -3802,6 +4090,18 @@ But do not claim causation. The data are observational, tiny, imperfect and synt
 
 ## Example 3.11.1 — Text length by service type
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Digital Anthropology project is exploring short feedback texts while keeping the original wording and context available.</p>
+<p><strong>What this example is for:</strong> Example 3.11.1 focuses on <strong>Text length by service type</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The transformation standardises selected text or categories. Compare the values before and after so clearly equivalent labels are combined without forcing uncertain meanings together.</li><li>The assignment creates or updates the DataFrame column <code>feedback_word_count_preview</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>Pay particular attention to <code>split</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 Create a temporary word-count Series:
 
 ```python
@@ -3827,6 +4127,18 @@ It does **not** tell you that longer comments are more thoughtful or more negati
 Because this preview column is derived from raw text, it may be recreated later after cleaning rather than treated as a final analytical variable.
 
 ## Example 3.11.2 — Identify potentially difficult experiences
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A Digital Anthropology project is exploring short feedback texts while keeping the original wording and context available.</p>
+<p><strong>What this example is for:</strong> Example 3.11.2 focuses on <strong>Identify potentially difficult experiences</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The transformation standardises selected text or categories. Compare the values before and after so clearly equivalent labels are combined without forcing uncertain meanings together.</li><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>The selection condition creates or applies a true/false rule to determine which rows are included. Test values at the boundary and state which records the rule excludes.</li><li>Named results such as <code>difficulty_mask</code>, <code>case</code>, <code>na</code>, and <code>regex</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 ```python
 difficulty_mask = df["feedback"].str.contains(
@@ -4115,6 +4427,18 @@ Once we have a Boolean indicator, pandas can group by it.
 
 ### Example 3.12.1 — Satisfaction by waiting mention
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A research group is translating an interpretive coding rule into a transparent, testable procedure.</p>
+<p><strong>What this example is for:</strong> Example 3.12.1 focuses on <strong>Satisfaction by waiting mention</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The grouping operation places records into named groups before calculating a summary. The resulting row represents a group, so it no longer has the same meaning as one original record.</li><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>Named results such as <code>wait_satisfaction</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 ```python
 wait_satisfaction = (
     df.groupby("mentions_wait")["satisfaction_score"]
@@ -4207,6 +4531,18 @@ Importance may depend on:
 Computational frequency and qualitative significance are different concepts.
 
 ## Example 3.12.2 — A transparent code is better than a vague label
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A research group is translating an interpretive coding rule into a transparent, testable procedure.</p>
+<p><strong>What this example is for:</strong> Example 3.12.2 focuses on <strong>A transparent code is better than a vague label</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>The assignment creates or updates the DataFrame column <code>negative</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 Less transparent:
 
@@ -4573,6 +4909,18 @@ State what needs cleaning/validation in Lecture 6 before final analysis.
 
 ## Example 3.13.1 — Good provenance statement
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is preparing a reproducible handover that explains the source, variables, findings and limits of the dataset.</p>
+<p><strong>What this example is for:</strong> Example 3.13.1 focuses on <strong>Good provenance statement</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
+
 > The analysis uses the synthetic `E26_TAN7_service_experience_raw.csv` course dataset loaded from the E26 GitHub repository. One row is intended to represent one service category in one city during one reporting month. The dataset contains deliberate quality problems and should be used only for teaching, not as evidence about real municipal services.
 
 This is much stronger than:
@@ -4580,6 +4928,18 @@ This is much stronger than:
 > I downloaded a CSV from GitHub.
 
 ## Example 3.13.2 — Good preliminary finding
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+<div class="plain-language-task-body">
+<p><strong>Situation:</strong> A student is preparing a reproducible handover that explains the source, variables, findings and limits of the dataset.</p>
+<p><strong>What this example is for:</strong> Example 3.13.2 focuses on <strong>Good preliminary finding</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>Read the example in this order:</strong></p>
+<ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
+<p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
+<p><strong>Interpret carefully:</strong> Treat the output as an initial description of the teaching table. Check the unit of observation, missing values, category definitions and included rows before turning the result into a substantive claim.</p>
+</div>
+</details>
 
 > In the raw teaching data, the exact `Housing` label accounts for 21 of 121 rows (17.36%). This is a proportion of service-category-city-month records, not a proportion of citizens. The dataset also contains duplicate and category-consistency issues, so the result is preliminary.
 
