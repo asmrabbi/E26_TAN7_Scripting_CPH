@@ -818,10 +818,14 @@ else:
 
 This is an early example of data cleaning.
 
-<figure class="tutorial-screenshot">
-<img src="assets/PF2-01-colab-decisions.png?v=3" alt="Examples 2.8.23 and 2.8.24 shown with exactly the same Python code as the tutorial" loading="lazy">
-<figcaption>Examples 2.8.23 and 2.8.24 repeat the website code character for character, so students can compare the ordinary input with the cleaned input line by line.</figcaption>
-</figure>
+### Possible interaction
+
+```text
+Is the source verified? Type yes or no:   YES  
+The record may continue to analysis
+```
+
+The learner entered capital letters with extra spaces. `.strip()` removes the outer spaces, `.lower()` changes `YES` to `yes`, and the cleaned answer selects the first branch.
 
 ---
 
