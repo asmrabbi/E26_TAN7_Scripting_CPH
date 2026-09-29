@@ -727,3 +727,24 @@ pre { margin: 0; padding: 20px; overflow-x: auto; color: #e9f5f3; font: 14px/1.7
   .next-row { flex-wrap: wrap; }
   .complete-button { width: 100%; margin-left: 0; justify-content: center; }
 }
+
+
+/* Optional plain-language task panels for Python Foundations II */
+.plain-language-task {
+  margin: 12px 0 18px;
+  overflow: hidden;
+  background: #f7faf8;
+  border: 1px solid #d8e5df;
+  border-radius: 11px;
+}
+.plain-language-task summary {
+  padding: 12px 15px;
+  color: #174f60;
+  background: #eef7f4;
+  cursor: pointer;
+  font-weight: 800;
+}
+.plain-language-task[open] summary { border-bottom: 1px solid #d8e5df; }
+.plain-language-task-body { padding: 13px 17px 15px; }
+.plain-language-task-body > :first-child { margin-top: 0; }
+.plain-language-task-body > :last-child { margin-bottom: 0; }

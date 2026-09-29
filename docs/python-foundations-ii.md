@@ -180,6 +180,17 @@ The capital letters matter. Python recognises `True` and `False` as reserved Boo
 
 #### Example 2.8.1 — What is a Boolean value?
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **What is a Boolean value?**. The starting information is `record_complete = True`, `needs_review = False`.
+
+1. Create the starting state using `record_complete = True`, `needs_review = False`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 record_complete = True
 needs_review = False
@@ -234,6 +245,17 @@ Comparison operators compare two values. The result is normally `True` or `False
 
 #### Example 2.8.2 — Comparing a number
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Comparing a number**. The starting information is `engagement = 125`.
+
+1. Create the starting state using `engagement = 125`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement = 125
 
@@ -286,6 +308,17 @@ Run this code:
 
 #### Example 2.8.3 — Use comparison syntax instead of assignment syntax
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Use comparison syntax instead of assignment syntax**. The starting information is `engagement = 125`. The program examines `if engagement = 125`.
+
+1. Create the starting state using `engagement = 125`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement = 125
 
@@ -300,6 +333,17 @@ You should receive a syntax error because `=` cannot be used as the equality com
 <a id="example-2-8-4"></a>
 
 #### Example 2.8.4 — Repair assignment with equality comparison
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Repair assignment with equality comparison**. The starting information is `engagement = 125`. The program examines `if engagement == 125`.
+
+1. Create the starting state using `engagement = 125`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement = 125
@@ -324,6 +368,17 @@ Python can also compare strings.
 
 #### Example 2.8.5 — Compare two matching strings
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Compare two matching strings**. The starting information is `actor_type = "Municipality"`.
+
+1. Create the starting state using `actor_type = "Municipality"`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 actor_type = "Municipality"
 
@@ -345,6 +400,17 @@ String comparisons are case-sensitive:
 <a id="example-2-8-6"></a>
 
 #### Example 2.8.6 — Compare two different strings
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Compare two different strings**. The starting information is `topic = "Cycling"`.
+
+1. Create the starting state using `topic = "Cycling"`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 topic = "Cycling"
@@ -379,6 +445,17 @@ A comparison can be stored in a variable.
 <a id="example-2-8-7"></a>
 
 #### Example 2.8.7 — Storing the result of a comparison
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Storing the result of a comparison**. The starting information is `missing_values = 14`, `too_many_missing = missing_values > 10`. The program examines `if missing_values > 10`, `if too_many_missing` in this order.
+
+1. Create the starting state using `missing_values = 14`, `too_many_missing = missing_values > 10`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 missing_values = 14
@@ -418,6 +495,17 @@ Predict the output:
 <a id="example-2-8-8"></a>
 
 #### Example 2.8.8 — Test a one-way decision
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Test a one-way decision**. The starting information is `records = 75`, `minimum_required = 100`, `enough_records = records >= minimum_required`.
+
+1. Create the starting state using `records = 75`, `minimum_required = 100`, `enough_records = records >= minimum_required`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 records = 75
@@ -460,6 +548,17 @@ Programs often need to make decisions. A condition allows Python to execute code
 
 #### Example 2.8.9 — A one-way decision
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **A one-way decision**. The starting information is `missing_values = 14`. The program examines `if missing_values > 10`.
+
+1. Create the starting state using `missing_values = 14`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 missing_values = 14
 
@@ -478,6 +577,17 @@ Review the missing data
 <a id="example-2-8-10"></a>
 
 #### Example 2.8.10 — Write a complete one-way decision
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Write a complete one-way decision**. The starting information is `condition = True`. The program examines `if condition`.
+
+1. Create the starting state using `condition = True`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 condition = True
@@ -501,6 +611,17 @@ Important parts:
 <a id="example-2-8-11"></a>
 
 #### Example 2.8.11 — When the condition is false
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **When the condition is false**. The starting information is `missing_values = 4`. The program examines `if missing_values > 10`.
+
+1. Create the starting state using `missing_values = 4`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 missing_values = 4
@@ -531,6 +652,17 @@ Correct:
 
 #### Example 2.8.12 — A correctly indented decision
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **A correctly indented decision**. The starting information is `engagement = 150`. The program examines `if engagement > 100`.
+
+1. Create the starting state using `engagement = 150`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement = 150
 
@@ -555,6 +687,17 @@ Incorrect:
 
 #### Example 2.8.13 — Broken indentation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Broken indentation**. The starting information is `engagement = 150`. The program examines `if engagement > 100`.
+
+1. Create the starting state using `engagement = 150`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagement = 150
 
@@ -572,6 +715,17 @@ Add four spaces before the action:
 
 #### Example 2.8.14 — Repair the indentation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Repair the indentation**. The starting information is `engagement = 150`. The program examines `if engagement > 100`.
+
+1. Create the starting state using `engagement = 150`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement = 150
 
@@ -586,6 +740,17 @@ if engagement > 100:
 <a id="example-2-8-15"></a>
 
 #### Example 2.8.15 — Multiple lines inside one `if` block
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Multiple lines inside one if block**. The starting information is `engagement = 220`, `actor_type = "Citizen Group"`. The program examines `if engagement > 200`.
+
+1. Create the starting state using `engagement = 220`, `actor_type = "Citizen Group"`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement = 220
@@ -618,6 +783,17 @@ All three indented lines belong to the same decision.
 
 #### Example 2.8.16 — A condition using a string
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **A condition using a string**. The starting information is `position = "Support"`. The program examines `if position == "Support"`.
+
+1. Create the starting state using `position = "Support"`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 position = "Support"
 
@@ -637,6 +813,17 @@ This record supports the proposal
 
 #### Example 2.8.17 — A case-sensitive comparison
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **A case-sensitive comparison**. The starting information is `position = "Support"`. The program examines `if position == "support"`.
+
+1. Create the starting state using `position = "Support"`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 position = "Support"
 
@@ -651,6 +838,17 @@ One possible repair is:
 <a id="example-2-8-18"></a>
 
 #### Example 2.8.18 — Normalise text before comparing
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Normalise text before comparing**. The starting information is `position = "Support"`. The program examines `if position.lower() == "support"`.
+
+1. Create the starting state using `position = "Support"`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 position = "Support"
@@ -673,6 +871,17 @@ Complete the missing condition:
 
 #### Example 2.8.19 — Starter for a duplicate-review decision
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Starter for a duplicate-review decision**. The starting information is `duplicate_rows = 7`. The program examines `if __________________`.
+
+1. Create the starting state using `duplicate_rows = 7`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 duplicate_rows = 7
 
@@ -688,6 +897,17 @@ The message should be printed when there is at least one duplicate row.
 <a id="example-2-8-20"></a>
 
 #### Example 2.8.20 — Completed duplicate-review decision
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Completed duplicate-review decision**. The starting information is `duplicate_rows = 7`. The program examines `if duplicate_rows > 0`.
+
+1. Create the starting state using `duplicate_rows = 7`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 duplicate_rows = 7
@@ -709,6 +929,17 @@ An `else` block provides an alternative action when the condition is false.
 <a id="example-2-8-21"></a>
 
 #### Example 2.8.21 — Choose between two outcomes with else
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Choose between two outcomes with else**. The starting information is `missing_values = 14`. The program examines `if missing_values > 10`.
+
+1. Create the starting state using `missing_values = 14`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 missing_values = 14
@@ -741,6 +972,17 @@ Exactly one branch runs.
 
 #### Example 2.8.22 — Understanding the flow
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Understanding the flow**. The starting information is `condition = False`. The program examines `if condition`.
+
+1. Create the starting state using `condition = False`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 condition = False
 
@@ -764,6 +1006,17 @@ Python:
 <a id="example-2-8-23"></a>
 
 #### Example 2.8.23 — Example with user input
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Example with user input**. The starting information is `answer = input("Is the source verified? Type yes or no: ")`. The program examines `if answer == "yes"`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 answer = input("Is the source verified? Type yes or no: ")
@@ -799,6 +1052,17 @@ A more robust version is:
 <a id="example-2-8-24"></a>
 
 #### Example 2.8.24 — Clean the input before comparing
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Clean the input before comparing**. The starting information is `answer = input("Is the source verified? Type yes or no: ")`, `answer = answer.strip().lower()`. The program examines `if answer == "yes"`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 answer = input("Is the source verified? Type yes or no: ")
@@ -837,6 +1101,17 @@ Broken code:
 
 #### Example 2.8.25 — Broken code with missing colons
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Broken code with missing colons**. The starting information is `engagement = 80`. The program examines `if engagement >= 100`.
+
+1. Create the starting state using `engagement = 80`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagement = 80
 
@@ -853,6 +1128,17 @@ Repaired code:
 <a id="example-2-8-26"></a>
 
 #### Example 2.8.26 — Repair the missing colons
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Repair the missing colons**. The starting information is `engagement = 80`. The program examines `if engagement >= 100`.
+
+1. Create the starting state using `engagement = 80`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 engagement = 80
@@ -880,6 +1166,17 @@ Sometimes there are more than two meaningful outcomes.
 <a id="example-2-8-27"></a>
 
 #### Example 2.8.27 — Classifying engagement
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Classifying engagement**. The starting information is `engagement = 125`. The program examines `if engagement >= 200`, `elif engagement >= 100` in this order.
+
+1. Create the starting state using `engagement = 125`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 engagement = 125
@@ -919,6 +1216,17 @@ Consider this incorrect order:
 
 #### Example 2.8.28 — Incorrect threshold order
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Incorrect threshold order**. The starting information is `engagement = 250`. The program examines `if engagement >= 100`, `elif engagement >= 200` in this order.
+
+1. Create the starting state using `engagement = 250`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagement = 250
 
@@ -944,6 +1252,17 @@ A better order is:
 
 #### Example 2.8.29 — Correct threshold order
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking how one documented comparison changes the next action. This example focuses on **Correct threshold order**. The starting information is `engagement = 250`. The program examines `if engagement >= 200`, `elif engagement >= 100` in this order.
+
+1. Create the starting state using `engagement = 250`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 engagement = 250
 
@@ -964,6 +1283,17 @@ Check the most restrictive or highest threshold first.
 <a id="example-2-8-30"></a>
 
 #### Example 2.8.30 — A more detailed classification
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **A more detailed classification**. The starting information is `missing_percentage = 18`. The program examines `if missing_percentage == 0`, `elif missing_percentage <= 5`, `elif missing_percentage <= 15` in this order.
+
+1. Create the starting state using `missing_percentage = 18`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 missing_percentage = 18
@@ -994,6 +1324,17 @@ Instead of printing inside every branch, we store the classification in `status`
 
 #### Example 2.8.31 — Reuse a stored status in a report
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Reuse a stored status in a report**. The starting information is `missing_percentage = 18`. The program examines `if missing_percentage == 0`, `elif missing_percentage <= 5`, `elif missing_percentage <= 15` in this order.
+
+1. Create the starting state using `missing_percentage = 18`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 missing_percentage = 18
 
@@ -1020,6 +1361,17 @@ The complete code makes the origin of `status` visible.
 <a id="example-2-8-32"></a>
 
 #### Example 2.8.32 — Use a stored status in a second decision
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is checking a dataset before analysis. Eighteen percent of its values are missing. The team uses four labels: **No missing values** at 0%, **Minor missingness** above 0% through 5%, **Moderate missingness** above 5% through 15%, and **Substantial missingness** above 15%.
+
+1. Store 18 in `missing_percentage`. Use `if`, `elif` and `else` to choose a label and save it in `status`.
+2. Print the status. Then check `status` again: print “Human review required” for substantial missingness; otherwise print “Continue with the documented checks”.
+3. Predict both printed messages before running your code. Test it again with 0%, 5%, 15% and 16%. Explain what happens at each boundary.
+
+</details>
 
 ```python
 missing_percentage = 18
@@ -1060,6 +1412,17 @@ The earlier version only assigned six values one after another, so Python kept o
 
 #### Example 2.8.33 — Test an exact boundary value
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal team is translating a transparent classification rule into Python. This example focuses on **Test an exact boundary value**. The starting information is `missing_percentage = 5`. The program examines `if missing_percentage == 0`, `elif missing_percentage <= 5`, `elif missing_percentage <= 15` in this order.
+
+1. Create the starting state using `missing_percentage = 5`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 missing_percentage = 5
 
@@ -1093,6 +1456,17 @@ For example, this code contains a gap:
 
 #### Example 2.8.34 — Reveal a missing boundary branch
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group wants a small decision to be explicit enough for another person to inspect. This example focuses on **Reveal a missing boundary branch**. The starting information is `observation_minutes = 20`. The program examines `if observation_minutes > 20`, `elif observation_minutes < 20` in this order.
+
+1. Create the starting state using `observation_minutes = 20`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 observation_minutes = 20
 
@@ -1110,6 +1484,9 @@ A repair needs to include the boundary value. The worked exercises below continu
 
 #### Worked Exercise 2.8.35 — Decide whether an online fieldnote is ready
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A Digital Anthropology group observes a public livestream about local cultural life.<br>
 The observer records whether the fieldnote includes both a time and a place description.<br>
 For this first decision, the student enters `yes` only when both details are present.<br>
@@ -1124,6 +1501,8 @@ Any answer other than `yes` or `no` should receive a clear instruction instead o
 3. Use `elif` for `no`.
 4. Use `else` for an unclear answer.
 5. Print one plain-language next step.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1149,6 +1528,9 @@ For an input of `no`, the program prints `Add the missing contextual detail`.
 
 #### Worked Exercise 2.8.36 — Review a stakeholder map
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A group in Framing Techno-Anthropological Transformation prepares a fictional neighbourhood heat-plan case.<br>
 They count the different stakeholder groups represented on their map.<br>
 Eight or more groups is labelled broad, four to seven is developing, and fewer than four needs expansion.<br>
@@ -1163,6 +1545,8 @@ The labels organise discussion and do not prove that every voice is represented.
 3. Use `elif` for the middle range.
 4. Use `else` for the remaining values.
 5. Print the resulting label.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1188,6 +1572,9 @@ For an input of `6`, the program prints `Developing stakeholder map`.
 
 #### Worked Exercise 2.8.37 — Classify a wayfinding test from the lowest boundary
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A TAN7 group tests a fictional wayfinding kiosk before discussing the design.<br>
 A participant tries to find the accessibility information, and the group records the time in seconds.<br>
 Thirty seconds or less is quick, 31 to 60 seconds is workable, and more than 60 seconds suggests revision.<br>
@@ -1202,6 +1589,8 @@ The decision is written from the lowest upper boundary rather than from the high
 3. Use `elif` for `60` or less.
 4. Use `else` for a longer time.
 5. Print the matching observation.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1227,6 +1616,9 @@ For an input of `52`, the program prints `Workable completion time`.
 
 #### Worked Exercise 2.8.38 — Check the valid range of a seven-day media diary
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A Digital Anthropology exercise asks for one media-diary entry on each of seven days.<br>
 The student enters how many daily entries were completed.<br>
 A value below zero or above seven is impossible and must be reported separately.<br>
@@ -1241,6 +1633,8 @@ Within the valid range, seven is complete, four to six is usable but incomplete,
 3. Use `elif` to check a value above seven separately.
 4. Continue with exact and threshold branches for the valid range.
 5. Use `else` for the remaining valid values.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1270,6 +1664,9 @@ For an input of `8`, the program prints `Invalid number of diary days`.
 
 #### Worked Exercise 2.8.39 — Interpret a written AI-explanation rating
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A class discusses a fictional explanation shown after an automated application-sorting decision.<br>
 Instead of entering a number, one participant chooses the word `clear`, `partial`, or `unclear`.<br>
 The program should preserve these three meanings and reject an unrecognised category.<br>
@@ -1284,6 +1681,8 @@ One response cannot establish that the underlying system is fair.
 3. Use `elif` for `partial` and another `elif` for `unclear`.
 4. Use `else` for an unsupported word.
 5. Print one message.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1311,6 +1710,9 @@ For an input of `partial`, the program prints `The explanation needs more detail
 
 #### Worked Exercise 2.8.40 — Reuse a moderation-response classification
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A student studies a fictional online community with a published safety-report process.<br>
 The student records how many hours passed before a moderator acknowledged one report.<br>
 The first decision stores a response-speed label instead of printing inside every branch.<br>
@@ -1325,6 +1727,8 @@ A second decision uses that stored result to add a follow-up action.
 3. Print the stored label after the branch.
 4. Use a second `if` to test the stored result.
 5. Print the follow-up only for the delayed category.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1375,6 +1779,17 @@ Both conditions must be true.
 
 #### Example 2.9.1 — `and`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project group is checking whether several requirements hold at the same time. This example focuses on **and**. The starting information is `missing_values = 4`, `duplicate_rows = 0`. The program examines `if missing_values <= 5 and duplicate_rows == 0`.
+
+1. Create the starting state using `missing_values = 4`, `duplicate_rows = 0`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 missing_values = 4
 duplicate_rows = 0
@@ -1408,6 +1823,17 @@ At least one condition must be true.
 
 #### Example 2.9.2 — `or`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal case uses more than one condition, so the grouping of the rule must remain visible. This example focuses on **or**. The starting information is `missing_values = 3`, `duplicate_rows = 7`. The program examines `if missing_values > 10 or duplicate_rows > 0`.
+
+1. Create the starting state using `missing_values = 3`, `duplicate_rows = 7`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 missing_values = 3
 duplicate_rows = 7
@@ -1434,6 +1860,17 @@ The first condition is false, but the second condition is true.
 
 #### Example 2.9.3 — `not`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research team needs to combine several criteria without hiding how the rule works. This example focuses on **not**. The starting information is `source_verified = False`. The program examines `if not source_verified`.
+
+1. Create the starting state using `source_verified = False`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 source_verified = False
 
@@ -1458,6 +1895,17 @@ The condition reads:
 <a id="example-2-9-4"></a>
 
 #### Example 2.9.4 — Require three conditions with and
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project group is checking whether several requirements hold at the same time. This example focuses on **Require three conditions with and**. The starting information is `actor_type = "Citizen Group"`, `engagement = 240`, `source_verified = True`. The program examines `if actor_type == "Citizen Group" and engagement >= 200 and source_verified`.
+
+1. Create the starting state using `actor_type = "Citizen Group"`, `engagement = 240`, `source_verified = True`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 actor_type = "Citizen Group"
@@ -1488,6 +1936,17 @@ Less clear:
 
 #### Example 2.9.5 — Ambiguous grouping without parentheses
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal case uses more than one condition, so the grouping of the rule must remain visible. This example focuses on **Ambiguous grouping without parentheses**. The starting information is `topic = "Cycling"`, `engagement = 120`. The program examines `if topic == "Cycling" or topic == "Public Transport" and engagement > 100`.
+
+1. Create the starting state using `topic = "Cycling"`, `engagement = 120`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 topic = "Cycling"
 engagement = 120
@@ -1501,6 +1960,17 @@ Clearer:
 <a id="example-2-9-6"></a>
 
 #### Example 2.9.6 — Explicit grouping with parentheses
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research team needs to combine several criteria without hiding how the rule works. This example focuses on **Explicit grouping with parentheses**. The starting information is `topic = "Cycling"`, `engagement = 120`. The program examines `if (topic == "Cycling" or topic == "Public Transport") and engagement > 100`.
+
+1. Create the starting state using `topic = "Cycling"`, `engagement = 120`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 topic = "Cycling"
@@ -1527,6 +1997,17 @@ Incorrect:
 
 #### Example 2.9.7 — Incorrect or condition
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project group is checking whether several requirements hold at the same time. This example focuses on **Incorrect or condition**. The starting information is `topic = "Cycling"`. The program examines `if topic == "Cycling" or "Public Transport"`.
+
+1. Create the starting state using `topic = "Cycling"`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 topic = "Cycling"
 
@@ -1542,6 +2023,17 @@ Correct:
 
 #### Example 2.9.8 — Repeat the comparison correctly
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal case uses more than one condition, so the grouping of the rule must remain visible. This example focuses on **Repeat the comparison correctly**. The starting information is `topic = "Cycling"`. The program examines `if topic == "Cycling" or topic == "Public Transport"`.
+
+1. Create the starting state using `topic = "Cycling"`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 topic = "Cycling"
 
@@ -1554,6 +2046,17 @@ A later alternative is:
 <a id="example-2-9-9"></a>
 
 #### Example 2.9.9 — Use membership in a list
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research team needs to combine several criteria without hiding how the rule works. This example focuses on **Use membership in a list**. The starting information is `topic = "Cycling"`, `selected_topics = ["Cycling", "Public Transport"]`. The program examines `if topic in selected_topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 topic = "Cycling"
@@ -1581,6 +2084,17 @@ Create a condition that prints `"Priority review"` when:
 
 #### Example 2.9.10 — Test grouped logical conditions
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project group is checking whether several requirements hold at the same time. This example focuses on **Test grouped logical conditions**. The starting information is `engagement = 180`, `actor_type = "NGO"`. The program examines `if engagement >= 150 and (actor_type == "Citizen Group" or actor_type == "NGO")`.
+
+1. Create the starting state using `engagement = 180`, `actor_type = "NGO"`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement = 180
 actor_type = "NGO"
@@ -1602,6 +2116,17 @@ A nested decision is an `if` statement inside another decision.
 <a id="example-2-9-11"></a>
 
 #### Example 2.9.11 — Basic nested example
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal case uses more than one condition, so the grouping of the rule must remain visible. This example focuses on **Basic nested example**. The starting information is `source_verified = True`, `engagement = 230`. The program examines `if source_verified`, `if engagement >= 200` in this order.
+
+1. Create the starting state using `source_verified = True`, `engagement = 230`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 source_verified = True
@@ -1630,6 +2155,17 @@ The second decision is checked only when the first decision passes.
 <a id="example-2-9-12"></a>
 
 #### Example 2.9.12 — Nested decision with alternatives
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research team needs to combine several criteria without hiding how the rule works. This example focuses on **Nested decision with alternatives**. The starting information is `source_verified = True`, `engagement = 80`. The program examines `if source_verified`, `if engagement >= 200` in this order.
+
+1. Create the starting state using `source_verified = True`, `engagement = 80`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 source_verified = True
@@ -1660,6 +2196,17 @@ This nested code:
 
 #### Example 2.9.13 — Nested version of the rule
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project group is checking whether several requirements hold at the same time. This example focuses on **Nested version of the rule**. The starting information is `source_verified = True`, `engagement = 230`. The program examines `if source_verified`, `if engagement >= 200` in this order.
+
+1. Create the starting state using `source_verified = True`, `engagement = 230`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 source_verified = True
 engagement = 230
@@ -1674,6 +2221,17 @@ can also be written as:
 <a id="example-2-9-14"></a>
 
 #### Example 2.9.14 — Combined-condition version of the rule
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A municipal case uses more than one condition, so the grouping of the rule must remain visible. This example focuses on **Combined-condition version of the rule**. The starting information is `source_verified = True`, `engagement = 230`. The program examines `if source_verified and engagement >= 200`.
+
+1. Create the starting state using `source_verified = True`, `engagement = 230`.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 source_verified = True
@@ -1703,6 +2261,9 @@ Assume that number inputs are sensible and that yes/no answers use those words. 
 
 #### Worked Exercise 2.9.15 — Prepare a critical counter-map
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A Digital Anthropology group is preparing a small counter-map about places affected by a fictional redevelopment plan.<br>
 The students enter how many local places appear on the map and whether they added a short note explaining the local context.<br>
 The map is ready for discussion only when it contains at least four places and includes local context.<br>
@@ -1717,6 +2278,8 @@ If four places are present but the context is missing, the program should name t
 3. Use `and` in the first branch because both readiness conditions must be true.
 4. Use `not` in the `elif` branch to identify the missing context.
 5. Use `else` when the map still needs more local places.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1743,6 +2306,9 @@ For inputs `5` and `no`, the program prints `Add local context before the discus
 
 #### Worked Exercise 2.9.16 — Decide whether an archival item can be used
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A student finds a fictional digitised item while studying how the digital can work as an archive.<br>
 The item may be available through public access or through university permission.<br>
 A separate rights note can restrict classroom reuse even when one access route exists.<br>
@@ -1757,6 +2323,8 @@ The program must distinguish permitted use, a rights review, and missing access.
 3. Add `and not rights_restricted` because access alone is insufficient.
 4. Use `elif` to give a restriction the specific review message.
 5. Use `else` when neither access route is available.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1784,6 +2352,9 @@ For inputs `no`, `yes` and `no`, the program prints `The item may be used for th
 
 #### Worked Exercise 2.9.17 — Respond to a platform outage
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A Digital Anthropology group treats a fictional campus platform as infrastructure and records a service interruption.<br>
 The students enter whether an outage is confirmed, how many services are affected, and whether a backup channel is available.<br>
 The impact question matters only after the outage has been confirmed, so the decision should be nested.<br>
@@ -1798,6 +2369,8 @@ Three affected services and no backup require the strongest response.
 3. Ask for the affected-service count and backup channel only inside that confirmed-outage branch.
 4. Inside that branch, use `and`, `or` and `not` to distinguish urgent, priority and routine responses.
 5. Use the outer `elif` and `else` for `no` and an unclear answer.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1831,6 +2404,9 @@ For inputs `yes`, `4` and `no`, the program prints `Urgent infrastructure respon
 
 #### Worked Exercise 2.9.18 — Apply a responsible-innovation stop rule
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A class discusses a fictional AI pilot using themes from Responsible Innovation and AI ethics.<br>
 The students record whether a possible harm has been reported, whether human review is complete, and whether an appeal route exists.<br>
 A harm signal or missing human review must pause the pilot before other conditions are considered.<br>
@@ -1845,6 +2421,8 @@ Only a reviewed pilot with an appeal route receives the continuation message.
 3. Use `not` to test for missing human review.
 4. In `elif`, use `and` for the two requirements that support limited continuation.
 5. Use `else` for a reviewed pilot that still lacks an appeal route.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1872,6 +2450,9 @@ For inputs `no`, `yes` and `no`, the program prints `Add an appeal route before 
 
 #### Worked Exercise 2.9.19 — Check a digital-participation plan
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A group designs a fictional public discussion inspired by the Digital Participation topic.<br>
 People may join through an online session or a room-based session, and the information should be available in an accessible format.<br>
 The first decision asks whether neither participation route exists by applying `not` to the grouped alternatives.<br>
@@ -1886,6 +2467,8 @@ If a route exists, the next decision checks whether the accessible material is r
 3. Place `not` before the parentheses to test whether both routes are absent.
 4. Use `elif` to check the material only after a route exists.
 5. Use `else` when a route exists but the accessible material is missing.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -1931,6 +2514,17 @@ The `input()` function always returns a string.
 
 #### Example 2.10.1 — Input returns a string
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is separating text input, numerical conversion and validation into visible steps. This example focuses on **Input returns a string**. The starting information is `engagement = input("Enter the engagement value: ")`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement = input("Enter the engagement value: ")
 
@@ -1952,6 +2546,17 @@ This fails:
 
 #### Example 2.10.2 — A string–integer comparison error
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom data-entry task must explain unsuitable input instead of stopping without guidance. This example focuses on **A string–integer comparison error**. The starting information is `engagement = input("Enter the engagement value: ")`. The program examines `if engagement > 100`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagement = input("Enter the engagement value: ")
 
@@ -1966,6 +2571,17 @@ Repair:
 <a id="example-2-10-3"></a>
 
 #### Example 2.10.3 — Convert before comparing
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is entering information for a small research task, and the program must handle that input carefully. This example focuses on **Convert before comparing**. The starting information is `engagement = input("Enter the engagement value: ")`, `engagement = int(engagement)`. The program examines `if engagement > 100`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement = input("Enter the engagement value: ")
@@ -1982,6 +2598,17 @@ if engagement > 100:
 <a id="example-2-10-4"></a>
 
 #### Example 2.10.4 — Conversion in one line
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is separating text input, numerical conversion and validation into visible steps. This example focuses on **Conversion in one line**. The starting information is `engagement = int(input("Enter the engagement value: "))`. The program examines `if engagement > 100`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement = int(input("Enter the engagement value: "))
@@ -2003,6 +2630,17 @@ Consider:
 <a id="example-2-10-5"></a>
 
 #### Example 2.10.5 — Identify assumptions in converted input
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom data-entry task must explain unsuitable input instead of stopping without guidance. This example focuses on **Identify assumptions in converted input**. The starting information is `age = int(input("Enter age: "))`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 age = int(input("Enter age: "))
@@ -2033,6 +2671,17 @@ Without error handling:
 
 #### Example 2.10.6 — Conversion without error handling
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is entering information for a small research task, and the program must handle that input carefully. This example focuses on **Conversion without error handling**. The starting information is `engagement = int(input("Enter engagement: "))`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagement = int(input("Enter engagement: "))
 print("Recorded:", engagement)
@@ -2045,6 +2694,17 @@ With error handling:
 <a id="example-2-10-7"></a>
 
 #### Example 2.10.7 — A broad error handler
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is separating text input, numerical conversion and validation into visible steps. This example focuses on **A broad error handler**.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 try:
@@ -2069,6 +2729,17 @@ Error: enter a whole number
 
 #### Example 2.10.8 — Understanding the structure
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom data-entry task must explain unsuitable input instead of stopping without guidance. This example focuses on **Understanding the structure**.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 try:
     engagement = int("high")
@@ -2089,6 +2760,17 @@ It is usually better to name the expected error.
 
 #### Example 2.10.9 — Catching a specific error
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is entering information for a small research task, and the program must handle that input carefully. This example focuses on **Catching a specific error**.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 try:
     engagement = int(input("Enter engagement: "))
@@ -2106,6 +2788,17 @@ This handles `ValueError` without hiding every possible problem.
 <a id="example-2-10-10"></a>
 
 #### Example 2.10.10 — Adding a decision after valid input
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is separating text input, numerical conversion and validation into visible steps. This example focuses on **Adding a decision after valid input**. The program examines `if engagement >= 200`, `elif engagement >= 100` in this order.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 try:
@@ -2131,6 +2824,17 @@ A value can be correctly converted but still be unreasonable.
 <a id="example-2-10-11"></a>
 
 #### Example 2.10.11 — Valid type but invalid range
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom data-entry task must explain unsuitable input instead of stopping without guidance. This example focuses on **Valid type but invalid range**. The program examines `if percentage < 0 or percentage > 100`, `elif percentage > 15` in this order.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 try:
@@ -2165,6 +2869,17 @@ Less informative:
 
 #### Example 2.10.12 — A broad except block
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is entering information for a small research task, and the program must handle that input carefully. This example focuses on **A broad except block**.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 try:
     engagement = int("high")
@@ -2178,6 +2893,17 @@ More informative:
 <a id="example-2-10-13"></a>
 
 #### Example 2.10.13 — A specific ValueError handler
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is separating text input, numerical conversion and validation into visible steps. This example focuses on **A specific ValueError handler**.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 try:
@@ -2197,6 +2923,17 @@ Repair this program so that non-numeric input produces a helpful message:
 
 #### Example 2.10.14 — Unprotected starter program
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom data-entry task must explain unsuitable input instead of stopping without guidance. This example focuses on **Unprotected starter program**. The starting information is `number_of_records = int(input("Enter number of records: "))`. The program examines `if number_of_records >= 100`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 number_of_records = int(input("Enter number of records: "))
 
@@ -2212,6 +2949,17 @@ else:
 <a id="example-2-10-15"></a>
 
 #### Example 2.10.15 — Repaired input handling
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is entering information for a small research task, and the program must handle that input carefully. This example focuses on **Repaired input handling**. The program examines `if number_of_records >= 100`.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Evaluate the conditions in their written order and explain why Python selects one path and skips the others.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 try:
@@ -2240,6 +2988,9 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.10.16 — Validate an interview duration
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A student records the duration of a semi-structured interview in minutes.<br>
 The teaching plan allows durations from 1 to 240 minutes.<br>
 Text such as `one hour` cannot be converted directly to an integer.<br>
@@ -2254,6 +3005,8 @@ A numerical value outside the range is a different problem from a conversion err
 3. Reject values below 1 or above 240.
 4. Accept values inside the documented range.
 5. Print a message that identifies the type of problem.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2279,6 +3032,9 @@ An input of `one hour` produces the whole-number message.
 
 #### Worked Exercise 2.10.17 — Validate a survey response percentage
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A community survey reports a response percentage that may include a decimal.<br>
 The value must be between 0 and 100 inclusive.<br>
 Using `float()` accepts `62.5`, while unsuitable text still raises `ValueError`.<br>
@@ -2293,6 +3049,8 @@ A valid number above 100 remains logically impossible.
 3. Check the lower and upper limits.
 4. Classify an accepted value as below or at least 60 per cent.
 5. Keep range validation separate from conversion.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2320,6 +3078,9 @@ An input of `62.5` prints `Response target reached`.
 
 #### Worked Exercise 2.10.18 — Check workshop capacity relationships
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A participatory workshop has a stated number of places and a number of registrations.<br>
 Both values must be whole numbers and neither may be negative.<br>
 The registrations may exceed capacity, but capacity itself cannot be zero for this planned event.<br>
@@ -2334,6 +3095,8 @@ The relationship between the two valid inputs determines whether a waiting list 
 3. Reject a negative registration count.
 4. Compare registrations with capacity.
 5. Catch `ValueError` for unsuitable text.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2364,6 +3127,9 @@ Inputs `24` and `29` print `Create a waiting list`.
 
 #### Worked Exercise 2.10.19 — Validate an archival year
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A student enters the stated year of a digitised archival item.<br>
 The classroom collection covers years from 1900 through 2026.<br>
 A year written as text causes a conversion error.<br>
@@ -2378,6 +3144,8 @@ A converted year such as 3026 is numerical but outside the collection scope.
 3. Check the earliest year.
 4. Check the latest year.
 5. Accept only a year inside both boundaries.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2405,6 +3173,9 @@ An input of `1987` is accepted as within the collection.
 
 #### Worked Exercise 2.10.20 — Validate an outage duration with an optional decimal
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A group documents the duration of a fictional platform outage in hours.<br>
 A decimal such as `1.5` is valid, while negative time is impossible.<br>
 Durations above 72 hours require confirmation because the unit may have been entered incorrectly.<br>
@@ -2419,6 +3190,8 @@ The program must distinguish these cases from unsuitable text.
 3. Flag values above 72 for confirmation.
 4. Accept the remaining range.
 5. Catch `ValueError` separately.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -2464,6 +3237,17 @@ CSV and JSON tutorials introduce new file formats, but the values read from them
 
 #### Example 2.11.1 — Lists: ordered values
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Lists: ordered values**. The starting information is `campuses = ["Aalborg", "Copenhagen"]`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 campuses = ["Aalborg", "Copenhagen"]
 campuses.append("Online")
@@ -2480,6 +3264,17 @@ Lists use square brackets. Index positions begin at zero, `append()` adds one va
 <a id="example-2-11-2"></a>
 
 #### Example 2.11.2 — Dictionaries: labelled values
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **Dictionaries: labelled values**.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 registration = {
@@ -2501,6 +3296,17 @@ Dictionary keys make a record easier to interpret than a sequence of unexplained
 
 #### Example 2.11.3 — Sets: unique values
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Sets: unique values**. The starting information is `submitted_ids = ["A12", "B07", "A12", "C03"]`, `unique_ids = set(submitted_ids)`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 submitted_ids = ["A12", "B07", "A12", "C03"]
 unique_ids = set(submitted_ids)
@@ -2516,6 +3322,17 @@ A set removes repeated values and is useful for membership checks. Sets are not 
 <a id="example-2-11-4"></a>
 
 #### Example 2.11.4 — A list of dictionaries: records ready for later file work
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **A list of dictionaries: records ready for later file work**. The program examines `for observation in observations`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 observations = [
@@ -2550,6 +3367,17 @@ A `for` loop is normally used when you have a known sequence, range or collectio
 
 #### Example 2.11.5 — A simple definite loop
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **A simple definite loop**. The program examines `for number in [1, 2, 3]`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 for number in [1, 2, 3]:
     print(number)
@@ -2568,6 +3396,17 @@ for number in [1, 2, 3]:
 <a id="example-2-11-6"></a>
 
 #### Example 2.11.6 — Trace the iteration variable
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Trace the iteration variable**. The starting information is `numbers = [1, 2, 3]`. The program examines `for number in numbers`.
+
+1. Create the starting state using `numbers = [1, 2, 3]`.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 numbers = [1, 2, 3]
@@ -2591,6 +3430,17 @@ Each time through the loop, `number` receives the next value.
 <a id="example-2-11-7"></a>
 
 #### Example 2.11.7 — Looping through strings
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Looping through strings**. The starting information is `topics = ["Cycling", "Public Transport", "Accessibility"]`. The program examines `for topic in topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 topics = ["Cycling", "Public Transport", "Accessibility"]
@@ -2625,6 +3475,17 @@ The indented line runs once for each value.
 
 #### Example 2.11.8 — The code after the loop
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **The code after the loop**. The starting information is `topics = ["Cycling", "Public Transport", "Accessibility"]`. The program examines `for topic in topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 topics = ["Cycling", "Public Transport", "Accessibility"]
 
@@ -2655,6 +3516,17 @@ The final line is not indented, so it runs after the loop finishes.
 
 #### Example 2.11.9 — Using `range()`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Using range()**. The program examines `for number in range(5)`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 for number in range(5):
     print(number)
@@ -2680,6 +3552,17 @@ for number in range(5):
 
 #### Example 2.11.10 — Starting and stopping a range
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Starting and stopping a range**. The program examines `for number in range(1, 6)`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 for number in range(1, 6):
     print(number)
@@ -2704,6 +3587,17 @@ The first argument is the starting value. The second is the stopping point, whic
 <a id="example-2-11-11"></a>
 
 #### Example 2.11.11 — Add a step argument to range
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **Add a step argument to range**. The program examines `for number in range(0, 11, 2)`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 for number in range(0, 11, 2):
@@ -2737,6 +3631,17 @@ increase by 2
 
 #### Example 2.11.12 — Repeat with a named variable
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Repeat with a named variable**. The program examines `for repetition in range(3)`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 for repetition in range(3):
     print("Check the dataset")
@@ -2758,6 +3663,17 @@ A conventional name for an unused variable is `_`:
 
 #### Example 2.11.13 — Use an underscore for an unused value
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Use an underscore for an unused value**. The program examines `for _ in range(3)`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 for _ in range(3):
     print("Check the dataset")
@@ -2770,6 +3686,17 @@ for _ in range(3):
 <a id="example-2-11-14"></a>
 
 #### Example 2.11.14 — Conditions inside a loop
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **Conditions inside a loop**. The starting information is `engagement_values = [35, 120, 240, 80]`. The program examines `for engagement in engagement_values`, `if engagement >= 200`, `elif engagement >= 100` in this order.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -2802,6 +3729,17 @@ This combines repetition with decision-making.
 
 #### Example 2.11.15 — Counting values that meet a condition
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Counting values that meet a condition**. The starting information is `engagement_values = [35, 120, 240, 80, 310]`, `high_count = 0`. The program examines `for engagement in engagement_values`, `if engagement >= 200` in this order.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement_values = [35, 120, 240, 80, 310]
 high_count = 0
@@ -2825,6 +3763,17 @@ High-engagement records: 2
 
 #### Example 2.11.16 — Initialise the counter
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Initialise the counter**. The starting information is `engagement_values = [35, 120, 240]`, `high_count = 0`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement_values = [35, 120, 240]
 high_count = 0
@@ -2837,6 +3786,17 @@ The counter begins at zero.
 <a id="example-2-11-17"></a>
 
 #### Example 2.11.17 — Visit every engagement value
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **Visit every engagement value**. The starting information is `engagement_values = [35, 120, 240]`. The program examines `for engagement in engagement_values`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement_values = [35, 120, 240]
@@ -2851,6 +3811,17 @@ Python processes each engagement value.
 
 #### Example 2.11.18 — Test the current value
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Test the current value**. The starting information is `engagement_values = [35, 120, 240]`. The program examines `for engagement in engagement_values`, `if engagement >= 200` in this order.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 engagement_values = [35, 120, 240]
 
@@ -2864,6 +3835,17 @@ The program checks whether the current value meets the threshold.
 <a id="example-2-11-19"></a>
 
 #### Example 2.11.19 — Increase the counter explicitly
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Increase the counter explicitly**. The starting information is `engagement_values = [35, 120, 240]`, `high_count = 0`. The program examines `for engagement in engagement_values`, `if engagement >= 200` in this order.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement_values = [35, 120, 240]
@@ -2884,6 +3866,17 @@ An equivalent shorter form is:
 
 #### Example 2.11.20 — Increase the counter with +=
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **Increase the counter with +=**. The starting information is `engagement_values = [35, 120, 240]`, `high_count = 0`. The program examines `for engagement in engagement_values`, `if engagement >= 200` in this order.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 engagement_values = [35, 120, 240]
 high_count = 0
@@ -2902,6 +3895,17 @@ print("High-engagement records:", high_count)
 <a id="example-2-11-21"></a>
 
 #### Example 2.11.21 — Accumulate a total
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Accumulate a total**. The starting information is `engagement_values = [35, 120, 240, 80]`, `total_engagement = 0`. The program examines `for engagement in engagement_values`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -2924,6 +3928,17 @@ Then calculate the mean:
 <a id="example-2-11-22"></a>
 
 #### Example 2.11.22 — Calculate a mean from complete data
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Calculate a mean from complete data**. The starting information is `engagement_values = [35, 120, 240, 80]`, `total_engagement = 0`, `average_engagement = total_engagement / len(engagement_values)`. The program examines `for engagement in engagement_values`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement_values = [35, 120, 240, 80]
@@ -2956,6 +3971,17 @@ Broken:
 
 #### Example 2.11.23 — Broken loop indentation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **Broken loop indentation**. The starting information is `topics = ["Cycling", "Accessibility"]`. The program examines `for topic in topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 topics = ["Cycling", "Accessibility"]
 
@@ -2968,6 +3994,17 @@ Repair:
 <a id="example-2-11-24"></a>
 
 #### Example 2.11.24 — Repaired loop indentation
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is organising a small collection of values or records before later file-based analysis. This example focuses on **Repaired loop indentation**. The starting information is `topics = ["Cycling", "Accessibility"]`. The program examines `for topic in topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 topics = ["Cycling", "Accessibility"]
@@ -2988,6 +4025,17 @@ Starter code:
 
 #### Example 2.11.25 — Starter list for the topic loop
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research group needs to process every item in a short collection consistently. This example focuses on **Starter list for the topic loop**. The starting information is `topics = ["Cycling", "Parking", "Accessibility"]`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 topics = ["Cycling", "Parking", "Accessibility"]
 ```
@@ -3006,6 +4054,17 @@ Topic under review: Accessibility
 <a id="example-2-11-26"></a>
 
 #### Example 2.11.26 — Completed topic loop
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom dataset is represented in memory so students can trace each repeated step. This example focuses on **Completed topic loop**. The starting information is `topics = ["Cycling", "Parking", "Accessibility"]`. The program examines `for topic in topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 topics = ["Cycling", "Parking", "Accessibility"]
@@ -3028,6 +4087,9 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.11.27 — Number media-diary themes
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A student has identified four themes in a media diary.<br>
 The original order reflects when the themes were first recorded.<br>
 A loop should print every theme with a counter beginning at one.<br>
@@ -3042,6 +4104,8 @@ The counter must be initialised before the loop and updated once per theme.
 3. Print the counter and current theme.
 4. Increase the counter inside the loop.
 5. Check that every theme appears once.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3065,6 +4129,9 @@ The output numbers the four themes from 1 to 4.
 
 #### Worked Exercise 2.11.28 — Add a review status to an archival record
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A digitised archival item is represented by a dictionary with named fields.<br>
 The student needs to read the title and then add a review status.<br>
 Using keys communicates what each value means more clearly than relying on positions.<br>
@@ -3079,6 +4146,8 @@ The original identifier must remain unchanged.
 3. Add a `review_status` key.
 4. Print the unchanged identifier.
 5. Print the complete updated dictionary.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3106,6 +4175,9 @@ The output preserves `ARC-07` and includes the new review status.
 
 #### Worked Exercise 2.11.29 — Find repeated workshop registrations
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A workshop list contains participant codes, including accidental repeats.<br>
 The original list must be preserved because repetition is itself information.<br>
 A set can identify unique codes, while the difference in lengths shows how many repeated entries exist.<br>
@@ -3120,6 +4192,8 @@ The program should report both totals.
 3. Calculate the difference between the two lengths.
 4. Print the original and unique totals.
 5. Print the repeated-entry count.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3144,6 +4218,9 @@ The program reports five entries, three unique codes, and two repeated entries.
 
 #### Worked Exercise 2.11.30 — Review structured transport observations
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A fieldwork group stores three transport observations as dictionaries inside a list.<br>
 Each record has an identifier, a mode, and a duration in minutes.<br>
 A loop should classify observations lasting at least 15 minutes for extended review.<br>
@@ -3158,6 +4235,8 @@ The program must count the selected records without losing their identifiers.
 3. Read named values from each dictionary.
 4. Apply the duration decision.
 5. Print the identifier and final count.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3190,6 +4269,9 @@ Records `T-02` and `T-03` enter extended review.
 
 #### Worked Exercise 2.11.31 — Calculate a mean only when responses exist
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A small community survey stores completion times in a list.<br>
 The total must be accumulated with a loop before calculating a mean.<br>
 An empty list would make the denominator zero.<br>
@@ -3204,6 +4286,8 @@ The program should therefore check the list before dividing.
 3. Check whether the list contains any values.
 4. Divide only when the length is greater than zero.
 5. Print a clear message for either path.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3250,6 +4334,17 @@ A `while` loop repeats while a condition remains true.
 
 #### Example 2.12.1 — Count down with a while loop
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project task does not know in advance how many repetitions will be needed. This example focuses on **Count down with a while loop**. The starting information is `number = 5`. The program examines `while number > 0`.
+
+1. Create the starting state using `number = 5`.
+2. Trace the initial state, the loop condition, the progress update and the stopping point. Confirm that every repeated path can eventually stop.
+3. Predict the full sequence before running it, then test a starting value that stops immediately and another that requires several repetitions.
+
+</details>
+
 ```python
 number = 5
 
@@ -3285,6 +4380,17 @@ In the example:
 
 #### Example 2.12.2 — Set the initial loop state
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A repeated process needs an explicit starting state, progress update and stopping condition. This example focuses on **Set the initial loop state**. The starting information is `number = 5`.
+
+1. Create the starting state using `number = 5`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 number = 5
 print("Initial value:", number)
@@ -3295,6 +4401,17 @@ is the initial value.
 <a id="example-2-12-3"></a>
 
 #### Example 2.12.3 — Use the condition in a complete loop
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program must repeat a step while still reaching a clear stopping point. This example focuses on **Use the condition in a complete loop**. The starting information is `number = 3`. The program examines `while number > 0`.
+
+1. Create the starting state using `number = 3`.
+2. Trace the initial state, the loop condition, the progress update and the stopping point. Confirm that every repeated path can eventually stop.
+3. Predict the full sequence before running it, then test a starting value that stops immediately and another that requires several repetitions.
+
+</details>
 
 ```python
 number = 3
@@ -3311,6 +4428,17 @@ is the condition.
 <a id="example-2-12-4"></a>
 
 #### Example 2.12.4 — Update the state in a complete loop
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project task does not know in advance how many repetitions will be needed. This example focuses on **Update the state in a complete loop**. The starting information is `number = 3`. The program examines `while number > 0`.
+
+1. Create the starting state using `number = 3`.
+2. Trace the initial state, the loop condition, the progress update and the stopping point. Confirm that every repeated path can eventually stop.
+3. Predict the full sequence before running it, then test a starting value that stops immediately and another that requires several repetitions.
+
+</details>
 
 ```python
 number = 3
@@ -3333,6 +4461,17 @@ This code never changes `number`:
 
 #### Example 2.12.5 — An infinite loop
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A repeated process needs an explicit starting state, progress update and stopping condition. This example focuses on **An infinite loop**. The starting information is `number = 5`. The program examines `while number > 0`.
+
+1. Create the starting state using `number = 5`.
+2. Trace the initial state, the loop condition, the progress update and the stopping point. Confirm that every repeated path can eventually stop.
+3. Predict the full sequence before running it, then test a starting value that stops immediately and another that requires several repetitions.
+
+</details>
+
 ```python
 number = 5
 
@@ -3352,6 +4491,17 @@ Use the stop button beside the running cell.
 
 #### Example 2.12.6 — Repair the missing loop update
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program must repeat a step while still reaching a clear stopping point. This example focuses on **Repair the missing loop update**. The starting information is `number = 5`. The program examines `while number > 0`.
+
+1. Create the starting state using `number = 5`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 number = 5
 
@@ -3367,6 +4517,17 @@ while number > 0:
 <a id="example-2-12-7"></a>
 
 #### Example 2.12.7 — A loop that never starts
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project task does not know in advance how many repetitions will be needed. This example focuses on **A loop that never starts**. The starting information is `number = 0`. The program examines `while number > 0`.
+
+1. Create the starting state using `number = 0`.
+2. Trace the initial state, the loop condition, the progress update and the stopping point. Confirm that every repeated path can eventually stop.
+3. Predict the full sequence before running it, then test a starting value that stops immediately and another that requires several repetitions.
+
+</details>
 
 ```python
 number = 0
@@ -3392,6 +4553,17 @@ The condition is false before the first iteration.
 <a id="example-2-12-8"></a>
 
 #### Example 2.12.8 — Repeating until valid input
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A repeated process needs an explicit starting state, progress update and stopping condition. This example focuses on **Repeating until valid input**. The starting information is `valid_input = False`. The program examines `while not valid_input`, `if answer == "yes" or answer == "no"` in this order.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Trace the initial state, the loop condition, the progress update and the stopping point. Confirm that every repeated path can eventually stop.
+3. Predict the full sequence before running it, then test a starting value that stops immediately and another that requires several repetitions.
+
+</details>
 
 ```python
 valid_input = False
@@ -3426,6 +4598,17 @@ Use a `for` loop when you know the sequence or number of repetitions:
 
 #### Example 2.12.9 — Choose a for loop for known items
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program must repeat a step while still reaching a clear stopping point. This example focuses on **Choose a for loop for known items**. The starting information is `topics = ["Cycling", "Accessibility", "Public Transport"]`. The program examines `for topic in topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 topics = ["Cycling", "Accessibility", "Public Transport"]
 
@@ -3438,6 +4621,17 @@ Use a `while` loop when repetition depends on a changing condition:
 <a id="example-2-12-10"></a>
 
 #### Example 2.12.10 — Choose a while loop for an unknown number of attempts
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project task does not know in advance how many repetitions will be needed. This example focuses on **Choose a while loop for an unknown number of attempts**. The starting information is `answers = ["maybe", "yes"]`, `answer_index = 0`, `valid_input = False`. The program examines `while not valid_input`, `if answer == "yes" or answer == "no"` in this order.
+
+1. Create the starting state using `answers = ["maybe", "yes"]`, `answer_index = 0`, `valid_input = False`.
+2. Trace the initial state, the loop condition, the progress update and the stopping point. Confirm that every repeated path can eventually stop.
+3. Predict the full sequence before running it, then test a starting value that stops immediately and another that requires several repetitions.
+
+</details>
 
 ```python
 answers = ["maybe", "yes"]
@@ -3470,6 +4664,17 @@ This section is useful, but it can be treated as **recommended rather than essen
 
 #### Example 2.12.11 — `break`
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A repeated process needs an explicit starting state, progress update and stopping condition. This example focuses on **break**. The starting information is `topics = ["Cycling", "Accessibility", "STOP", "Parking"]`. The program examines `for topic in topics`, `if topic == "STOP"` in this order.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 topics = ["Cycling", "Accessibility", "STOP", "Parking"]
 
@@ -3501,6 +4706,17 @@ When `"STOP"` is reached, the loop ends.
 <a id="example-2-12-12"></a>
 
 #### Example 2.12.12 — `continue`
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program must repeat a step while still reaching a clear stopping point. This example focuses on **continue**. The starting information is `values = [120, None, 75, 240]`. The program examines `for value in values`, `if value is None` in this order.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 values = [120, None, 75, 240]
@@ -3540,6 +4756,9 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.12.13 — Repeat a consent-status question until it is clear
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A classroom simulation asks whether consent documentation is present.<br>
 Only `yes` or `no` is accepted, but the number of attempts is unknown.<br>
 The loop should explain an unclear answer and then ask again.<br>
@@ -3554,6 +4773,8 @@ It stops immediately after a valid response.
 3. Set the flag to `True` only for accepted words.
 4. Print guidance for another word.
 5. Print the accepted answer after the loop.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3581,6 +4802,9 @@ The loop continues after `maybe` and stops after `yes` or `no`.
 
 #### Worked Exercise 2.12.14 — Limit attempts to enter a participant code
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A workshop check accepts the fictional code `TAN7`.<br>
 To avoid an endless prompt, the student receives at most three attempts.<br>
 The loop condition must track both success and remaining attempts.<br>
@@ -3595,6 +4819,8 @@ The final message distinguishes success from using all attempts.
 3. Increase the attempt count on every path.
 4. Set success when the code matches.
 5. Print the final result after the loop.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3627,6 +4853,9 @@ The loop cannot continue beyond three attempts.
 
 #### Worked Exercise 2.12.15 — Collect fieldnote tags until a sentinel word
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A student adds short tags while reviewing a fieldnote.<br>
 The number of tags is not known before the review begins.<br>
 Typing `done` is a sentinel that ends collection and should not become a tag.<br>
@@ -3641,6 +4870,8 @@ Empty text should be ignored with a helpful message.
 3. Use `break` for the documented sentinel.
 4. Append non-empty tags.
 5. Print the final list after the loop.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3670,6 +4901,9 @@ Entering `mobility`, `access`, and `done` stores the first two tags.
 
 #### Worked Exercise 2.12.16 — Stop at an explicit review marker
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A list represents records arriving in a documented order.<br>
 The marker `STOP FOR REVIEW` means later records must not be processed automatically.<br>
 A `for` loop is appropriate because the records already exist.<br>
@@ -3684,6 +4918,8 @@ A `break` statement ends the loop at the marker.
 3. Test for the marker before printing a processed message.
 4. Use `break` when the marker is reached.
 5. Print a final message after the loop.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3710,6 +4946,9 @@ print("Review the remaining queue manually")
 
 #### Worked Exercise 2.12.17 — Skip missing values while preserving a count
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A list of observation durations contains two missing values represented by `None`.<br>
 `None` means that no duration value is stored for that position.<br>
 The loop should skip numerical processing for those entries but count them for review.<br>
@@ -3724,6 +4963,8 @@ Valid values must still be printed.
 3. Increase the counter before `continue`.
 4. Print valid numerical values.
 5. Print the missing-value count after the loop.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -3779,6 +5020,17 @@ Functions help you:
 
 #### Example 2.13.1 — Defining and calling a function
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Defining and calling a function**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def show_welcome():
     print("Welcome to the data-quality checker")
@@ -3798,6 +5050,17 @@ Welcome to the data-quality checker
 
 #### Example 2.13.2 — Write a complete function definition
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **Write a complete function definition**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def show_welcome():
     print("Welcome to the data-quality checker")
@@ -3814,6 +5077,17 @@ show_welcome()
 
 #### Example 2.13.3 — Put the function body inside the definition
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **Put the function body inside the definition**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def show_welcome():
     message = "Welcome to the data-quality checker"
@@ -3827,6 +5101,17 @@ The indented line belongs to the function.
 <a id="example-2-13-4"></a>
 
 #### Example 2.13.4 — Call the function after defining it
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Call the function after defining it**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def show_welcome():
@@ -3849,6 +5134,17 @@ Good names:
 
 #### Example 2.13.5 — Use a descriptive function name
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **Use a descriptive function name**. The program examines `if engagement >= 200`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 def classify_engagement(engagement):
     if engagement >= 200:
@@ -3863,6 +5159,17 @@ Less useful names:
 <a id="example-2-13-6"></a>
 
 #### Example 2.13.6 — Why a vague function name is unhelpful
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **Why a vague function name is unhelpful**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def do_it(value):
@@ -3880,6 +5187,17 @@ A function name should describe the action.
 <a id="example-2-13-7"></a>
 
 #### Example 2.13.7 — Parameters and arguments
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Parameters and arguments**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def greet_actor(actor_name):
@@ -3904,6 +5222,17 @@ In the definition:
 
 #### Example 2.13.8 — Identify a parameter in a complete function
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **Identify a parameter in a complete function**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def greet_actor(actor_name):
     print("Record submitted by:", actor_name)
@@ -3918,6 +5247,17 @@ In the call:
 <a id="example-2-13-9"></a>
 
 #### Example 2.13.9 — Supply an argument in a complete call
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **Supply an argument in a complete call**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def greet_actor(actor_name):
@@ -3935,6 +5275,17 @@ greet_actor("Green Streets Association")
 <a id="example-2-13-10"></a>
 
 #### Example 2.13.10 — Multiple parameters
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Multiple parameters**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def show_record(actor_name, topic, engagement):
@@ -3965,6 +5316,17 @@ A function can calculate and return a result.
 
 #### Example 2.13.11 — Returning a value
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **Returning a value**. The starting information is `result = calculate_missing_percentage(18, 200)`. The program examines `if total_values <= 0`, `if result is None` in this order.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def calculate_missing_percentage(missing_values, total_values):
     if total_values <= 0:
@@ -3991,6 +5353,17 @@ else:
 
 #### Example 2.13.12 — Return a value from a complete function
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **Return a value from a complete function**. The program examines `if total_values <= 0`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def calculate_missing_percentage(missing_values, total_values):
     if total_values <= 0:
@@ -4006,6 +5379,17 @@ sends the result back to the place where the function was called.
 <a id="example-2-13-13"></a>
 
 #### Example 2.13.13 — Store a returned value
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Store a returned value**. The starting information is `result = calculate_missing_percentage(18, 200)`. The program examines `if total_values <= 0`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def calculate_missing_percentage(missing_values, total_values):
@@ -4029,6 +5413,17 @@ Printing:
 
 #### Example 2.13.14 — A function that only prints
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **A function that only prints**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def calculate_total(a, b):
     print(a + b)
@@ -4040,6 +5435,17 @@ Returning:
 
 #### Example 2.13.15 — A function that returns a value
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **A function that returns a value**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def calculate_total(a, b):
     return a + b
@@ -4050,6 +5456,17 @@ A returned value can be stored and used later:
 <a id="example-2-13-16"></a>
 
 #### Example 2.13.16 — Use a returned value in another calculation
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Use a returned value in another calculation**. The starting information is `total = calculate_total(5, 7)`, `average = total / 2`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def calculate_total(a, b):
@@ -4069,6 +5486,17 @@ When a function only prints, the printed result is visible but is not automatica
 <a id="example-2-13-17"></a>
 
 #### Example 2.13.17 — A function with conditional logic
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **A function with conditional logic**. The program examines `if engagement >= 200`, `elif engagement >= 100` in this order.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 def classify_engagement(engagement):
@@ -4101,6 +5529,17 @@ The function can be reused with different values.
 <a id="example-2-13-18"></a>
 
 #### Example 2.13.18 — A function with validation
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **A function with validation**. The program examines `if percentage < 0 or percentage > 100`, `elif percentage > 15`, `elif percentage > 5` in this order.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 def classify_percentage(percentage):
@@ -4135,6 +5574,17 @@ This is an important idea, but it does not need advanced treatment yet.
 <a id="example-2-13-19"></a>
 
 #### Example 2.13.19 — Local and global variables
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Local and global variables**. The starting information is `status = "Global status"`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 status = "Global status"
@@ -4172,6 +5622,17 @@ Avoid relying heavily on global variables.
 
 #### Example 2.13.20 — Define a function without calling it
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **Define a function without calling it**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def show_message():
     print("Hello")
@@ -4185,6 +5646,17 @@ Repair:
 
 #### Example 2.13.21 — Define and call the function
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **Define and call the function**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
+
 ```python
 def show_message():
     print("Hello")
@@ -4197,6 +5669,17 @@ show_message()
 <a id="example-2-13-22"></a>
 
 #### Example 2.13.22 — Call a function without its argument
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Call a function without its argument**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 def greet(name):
@@ -4213,6 +5696,17 @@ Repair:
 
 #### Example 2.13.23 — Repair the missing argument
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **Repair the missing argument**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 def greet(name):
     print("Hello", name)
@@ -4226,6 +5720,17 @@ greet("Amina")
 
 #### Example 2.13.24 — Broken function indentation
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **Broken function indentation**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 def greet(name):
 print("Hello", name)
@@ -4236,6 +5741,17 @@ Repair:
 <a id="example-2-13-25"></a>
 
 #### Example 2.13.25 — Repaired function indentation
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Repaired function indentation**.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def greet(name):
@@ -4261,6 +5777,17 @@ Test it with `180` complete records out of `200`, then test a total of `0`.
 <a id="example-2-13-26"></a>
 
 #### Example 2.13.26 — Test a reusable completion-rate function
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **Test a reusable completion-rate function**. The program examines `if total_records <= 0`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Follow the argument into the parameter, trace the function body, and follow any returned value back to the calling line.
+3. Predict the result before running the code, then call the function with at least two different arguments and explain every change.
+
+</details>
 
 ```python
 def calculate_completion_rate(complete_records, total_records):
@@ -4289,6 +5816,17 @@ Expected output:
 <a id="example-2-13-27"></a>
 
 #### Example 2.13.27 — Apply one function to several values
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team wants to place a repeated calculation or decision inside a reusable function. This example focuses on **Apply one function to several values**. The starting information is `engagement_values = [35, 120, 240, 80]`. The program examines `if engagement >= 200`, `elif engagement >= 100`, `for engagement in engagement_values` in this order.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 def classify_engagement(engagement):
@@ -4329,6 +5867,17 @@ Later, data-processing libraries will perform similar repeated operations across
 
 #### Example 2.13.28 — Count function results
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A research script needs a named function whose inputs and returned result are easy to trace. This example focuses on **Count function results**. The starting information is `engagement_values = [35, 120, 240, 80, 310]`, `high_count = 0`. The program examines `if engagement >= 200`, `elif engagement >= 100`, `for engagement in engagement_values`, `if category == "High"` in this order.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
+
 ```python
 def classify_engagement(engagement):
     if engagement >= 200:
@@ -4363,6 +5912,17 @@ High-engagement count: 2
 <a id="example-2-13-29"></a>
 
 #### Example 2.13.29 — More advanced example: produce a simple report
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A classroom program separates one responsibility into a function that can be tested independently. This example focuses on **More advanced example: produce a simple report**. The starting information is `engagement_values = [35, 120, 240, 80, 310]`, `high_count = 0`, `medium_count = 0`, `low_count = 0`. The program examines `if engagement >= 200`, `elif engagement >= 100`, `for engagement in engagement_values`, `if category == "High"` in this order.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the result before running the code. Test the stated value and values directly below, at and above every relevant boundary.
+
+</details>
 
 ```python
 def classify_engagement(engagement):
@@ -4430,6 +5990,9 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.13.30 — Normalise a project label with a function
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A project label may contain outer spaces or inconsistent capitalisation.<br>
 The same cleaning rule will be needed for several labels.<br>
 A function can receive one label and return a normalised result.<br>
@@ -4444,6 +6007,8 @@ The caller should decide when to print or store it.
 3. Return the cleaned value.
 4. Call the function with an untidy label.
 5. Store and print the returned result.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4467,6 +6032,9 @@ The function returns `Digital Participation`.
 
 #### Worked Exercise 2.13.31 — Check two consent requirements
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A fictional record may be used in a classroom exercise only when consent is documented and withdrawal has not been requested.<br>
 The function receives two Boolean arguments.<br>
 It returns a Boolean result instead of printing inside the function.<br>
@@ -4481,6 +6049,8 @@ The caller turns that result into a message.
 3. Return the Boolean result.
 4. Call the function with a test case.
 5. Print the caller’s decision.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4507,6 +6077,9 @@ Arguments `True` and `False` return `True`.
 
 #### Worked Exercise 2.13.32 — Calculate a completion rate safely
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A team needs a reusable completion-rate calculation.<br>
 The number of complete records is divided by the total and multiplied by 100.<br>
 A total of zero cannot be used as a denominator.<br>
@@ -4521,6 +6094,8 @@ The function should return `None` for that invalid case so the caller can explai
 3. Return `None` for a non-positive total.
 4. Otherwise return the percentage.
 5. Test one valid and one zero-total call.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4545,6 +6120,9 @@ The calls return `90.0` and `None`.
 
 #### Worked Exercise 2.13.33 — Apply a classification function to several observations
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A mobility observation list contains several durations.<br>
 One function should classify a duration as brief, standard, or extended.<br>
 A loop then applies the same documented rule to every value.<br>
@@ -4559,6 +6137,8 @@ The rule remains in one place, which makes later changes easier to test.
 3. Create a list of test durations.
 4. Loop through the list and call the function.
 5. Print each value and returned category.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4587,6 +6167,9 @@ The three values produce Brief, Standard, and Extended.
 
 #### Worked Exercise 2.13.34 — Build a structured review record
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A later CSV or JSON lesson will need records with consistent named fields.<br>
 A function can receive an identifier, category, and review flag.<br>
 It returns a new dictionary rather than relying on a global variable.<br>
@@ -4601,6 +6184,8 @@ Two calls should produce independent records with the same keys.
 3. Return the dictionary.
 4. Call the function twice.
 5. Print both returned records and compare their keys.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -4653,6 +6238,17 @@ A module contains reusable Python code. A library is a broader collection of too
 
 #### Example 2.14.1 — Importing a standard module
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **Importing a standard module**. The starting information is `result = math.sqrt(16)`.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 import math
 
@@ -4672,6 +6268,17 @@ print(result)
 
 #### Example 2.14.2 — Import the math module
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Import the math module**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 import math
 ```
@@ -4681,6 +6288,17 @@ makes the `math` module available.
 <a id="example-2-14-3"></a>
 
 #### Example 2.14.3 — Call a function through its module
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **Call a function through its module**. The starting information is `result = math.sqrt(16)`.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 import math
@@ -4700,6 +6318,17 @@ The dot connects the module name and the function.
 <a id="example-2-14-4"></a>
 
 #### Example 2.14.4 — Import sqrt directly
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **Import sqrt directly**. The starting information is `result = sqrt(25)`.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 from math import sqrt
@@ -4722,6 +6351,17 @@ For beginners, importing the full module can make the origin of a function clear
 
 #### Example 2.14.5 — Keep the module origin visible
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Keep the module origin visible**. The starting information is `result = math.sqrt(25)`.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 import math
 
@@ -4743,6 +6383,17 @@ A standard example:
 
 #### Example 2.14.6 — Use a conventional short alias
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **Use a conventional short alias**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 import math as m
 
@@ -4761,6 +6412,17 @@ Aliases should follow common conventions. Do not create confusing aliases such a
 
 #### Example 2.14.7 — Avoid a confusing alias
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **Avoid a confusing alias**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 import math as banana
 ```
@@ -4774,6 +6436,17 @@ Python allows it, but it makes the code harder to understand.
 <a id="example-2-14-8"></a>
 
 #### Example 2.14.8 — Example with the `random` module
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Example with the random module**. The starting information is `number = random.randint(1, 5)`.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 import random
@@ -4798,6 +6471,17 @@ This code contains a spelling error:
 
 #### Example 2.14.9 — Misspell a module name
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **Misspell a module name**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 import maths
 ```
@@ -4814,6 +6498,17 @@ Repair:
 
 #### Example 2.14.10 — Repair the module name
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **Repair the module name**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
+
 ```python
 import math
 ```
@@ -4823,6 +6518,17 @@ Another common error:
 <a id="example-2-14-11"></a>
 
 #### Example 2.14.11 — Misspell a module attribute
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Misspell a module attribute**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 import math
@@ -4837,6 +6543,17 @@ Repair:
 <a id="example-2-14-12"></a>
 
 #### Example 2.14.12 — Repair the attribute call
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **Repair the attribute call**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 import math
@@ -4870,6 +6587,17 @@ Example:
 
 #### Example 2.14.13 — SyntaxError from a missing colon
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **SyntaxError from a missing colon**. The program examines `if engagement > 100`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 if engagement > 100
     print("High")
@@ -4882,6 +6610,17 @@ Repair:
 <a id="example-2-14-14"></a>
 
 #### Example 2.14.14 — Repair the missing colon
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Repair the missing colon**. The starting information is `engagement = 120`. The program examines `if engagement > 100`.
+
+1. Create the starting state using `engagement = 120`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 engagement = 120
@@ -4900,6 +6639,17 @@ Example:
 
 #### Example 2.14.15 — IndentationError from an unindented body
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **IndentationError from an unindented body**. The program examines `for topic in topics`.
+
+1. Write the stated setup and identify the value that the next operation will use.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 for topic in topics:
 print(topic)
@@ -4910,6 +6660,17 @@ Repair:
 <a id="example-2-14-16"></a>
 
 #### Example 2.14.16 — Repair the loop indentation
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **Repair the loop indentation**. The starting information is `topics = ["Cycling", "Accessibility"]`. The program examines `for topic in topics`.
+
+1. Create the collection and explain what one item or record represents before processing it.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 topics = ["Cycling", "Accessibility"]
@@ -4928,6 +6689,17 @@ Example:
 
 #### Example 2.14.17 — NameError from inconsistent spelling
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **NameError from inconsistent spelling**. The starting information is `engagment = 120`.
+
+1. Create the starting state using `engagment = 120`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagment = 120
 print(engagement)
@@ -4940,6 +6712,17 @@ Repair:
 <a id="example-2-14-18"></a>
 
 #### Example 2.14.18 — Repair the variable spelling
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **Repair the variable spelling**. The starting information is `engagement = 120`.
+
+1. Create the starting state using `engagement = 120`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement = 120
@@ -4956,6 +6739,17 @@ Example:
 
 #### Example 2.14.19 — TypeError from adding unlike types
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **TypeError from adding unlike types**. The starting information is `engagement = "120"`, `result = engagement + 10`.
+
+1. Create the starting state using `engagement = "120"`, `result = engagement + 10`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagement = "120"
 result = engagement + 10
@@ -4968,6 +6762,17 @@ Repair:
 <a id="example-2-14-20"></a>
 
 #### Example 2.14.20 — Repair the type mismatch
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Repair the type mismatch**. The starting information is `engagement = "120"`, `result = int(engagement) + 10`.
+
+1. Create the starting state using `engagement = "120"`, `result = int(engagement) + 10`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 engagement = "120"
@@ -4986,6 +6791,17 @@ Example:
 
 #### Example 2.14.21 — ValueError from unsuitable numerical text
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **ValueError from unsuitable numerical text**. The starting information is `engagement = int("high")`.
+
+1. Create the starting state using `engagement = int("high")`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 engagement = int("high")
 ```
@@ -4997,6 +6813,17 @@ Possible repair:
 <a id="example-2-14-22"></a>
 
 #### Example 2.14.22 — Handle the ValueError
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **Handle the ValueError**.
+
+1. Ask for the required value, then apply any stated conversion or text cleaning before the value enters the decision.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 try:
@@ -5015,6 +6842,17 @@ Example:
 
 #### Example 2.14.23 — ModuleNotFoundError from a misspelling
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **ModuleNotFoundError from a misspelling**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 import statisticss
 ```
@@ -5024,6 +6862,17 @@ Possible repair:
 <a id="example-2-14-24"></a>
 
 #### Example 2.14.24 — Repair the standard-library import
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **Repair the standard-library import**.
+
+1. Make the required module or function available, keeping its origin visible in the name used by the program.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 import statistics
@@ -5041,6 +6890,17 @@ Example:
 
 #### Example 2.14.25 — TypeError from a missing function argument
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **TypeError from a missing function argument**. The starting information is `result = classify()`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 def classify(value):
     return value > 100
@@ -5053,6 +6913,17 @@ Repair:
 <a id="example-2-14-26"></a>
 
 #### Example 2.14.26 — Repair the missing argument
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Repair the missing argument**. The starting information is `result = classify(120)`.
+
+1. Identify the function’s responsibility, its parameter or parameters, and the value it should print or return.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
 
 ```python
 def classify(value):
@@ -5074,6 +6945,17 @@ Example:
 
 #### Example 2.14.27 — A formula that runs but is wrong
 
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A student is testing a small script and must identify exactly what Python is doing. This example focuses on **A formula that runs but is wrong**. The starting information is `missing_values = 10`, `total_values = 200`, `missing_percentage = total_values / missing_values * 100`.
+
+1. Create the starting state using `missing_values = 10`, `total_values = 200`, `missing_percentage = total_values / missing_values * 100`.
+2. Read the program before running it. Identify the exact line that is invalid or misleading, name the likely error or wrong result, and make the smallest justified repair.
+3. Predict the error or misleading result first, run only when it is safe, and then test the repaired version with one ordinary value and one boundary or unusual value.
+
+</details>
+
 ```python
 missing_values = 10
 total_values = 200
@@ -5089,6 +6971,17 @@ Correct:
 <a id="example-2-14-28"></a>
 
 #### Example 2.14.28 — Repair the reversed formula
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A project team is checking whether an import, function call or program rule produces the intended result. This example focuses on **Repair the reversed formula**. The starting information is `missing_values = 10`, `total_values = 200`, `missing_percentage = missing_values / total_values * 100`.
+
+1. Create the starting state using `missing_values = 10`, `total_values = 200`, `missing_percentage = missing_values / total_values * 100`.
+2. Carry out each operation in order and describe the value produced by every expression.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 missing_values = 10
@@ -5117,6 +7010,17 @@ Example:
 <a id="example-2-14-29"></a>
 
 #### Example 2.14.29 — Tracing code manually
+
+<details class="plain-language-task">
+<summary>Show this example in plain language</summary>
+
+A debugging task requires the learner to distinguish an error message from a result that merely looks plausible. This example focuses on **Tracing code manually**. The starting information is `count = 0`. The program examines `for value in [40, 120, 220]`, `if value >= 100` in this order.
+
+1. Create the starting state using `count = 0`.
+2. Trace one iteration at a time, recording the current item and every counter, total or result that changes.
+3. Predict the output before running the code. Change one relevant input, run it again, and explain why the result changes or remains the same.
+
+</details>
 
 ```python
 count = 0
@@ -5163,6 +7067,9 @@ These five exercises use different TAN7-related situations and different program
 
 #### Worked Exercise 2.14.30 — Calculate a map distance with math
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A simplified classroom map uses horizontal and vertical distances measured in kilometres.<br>
 The straight-line distance follows the square-root rule.<br>
 The `math` module provides `sqrt()`.<br>
@@ -5177,6 +7084,8 @@ The result should be rounded for display while the original values remain visibl
 3. Calculate the sum of their squares.
 4. Call `math.sqrt()`.
 5. Round only the displayed value.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -5201,6 +7110,9 @@ The displayed distance is `5.0 km`.
 
 #### Worked Exercise 2.14.31 — Summarise response times with statistics
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A small pilot study records five response times in minutes.<br>
 The standard-library `statistics` module can calculate a mean and median.<br>
 The two summaries answer different questions when unusual values appear.<br>
@@ -5215,6 +7127,8 @@ The code should keep the module name visible in both calls.
 3. Call `statistics.mean()`.
 4. Call `statistics.median()`.
 5. Print both results with labels.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -5240,6 +7154,9 @@ The median remains `10` even though the value `32` raises the mean.
 
 #### Worked Exercise 2.14.32 — Make a reproducible random classroom selection
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A lecturer demonstrates random selection from fictional discussion topics.<br>
 A fixed seed makes the teaching output reproducible when the cell is rerun.<br>
 The selection is suitable for demonstration and is not a fairness guarantee.<br>
@@ -5254,6 +7171,8 @@ The available topics should remain visible in the code.
 3. Create the topic list.
 4. Select one topic.
 5. Print the selected value and limitation note.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -5279,6 +7198,9 @@ Rerunning the cell with seed `7` produces the same selection.
 
 #### Worked Exercise 2.14.33 — Repair a fieldnote summary error
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A student intends to add two observation durations.<br>
 One value was entered as the string `"18"`, so adding it to an integer raises `TypeError`.<br>
 The debugging task is to read the error type, inspect the values, and make one justified conversion.<br>
@@ -5293,6 +7215,8 @@ The repaired code should display both the converted value and the total.
 3. Convert the numerical-looking string with `int()`.
 4. Calculate the total.
 5. Print the types and repaired result.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -5319,6 +7243,9 @@ The repaired total is `40`.
 
 #### Worked Exercise 2.14.34 — Trace and repair a counter logic error
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 **Story:** A script should count confidence scores of at least 80.<br>
 The original comparison uses `<= 80`, so the program runs but counts the wrong values.<br>
 No traceback appears because the syntax and types are valid.<br>
@@ -5333,6 +7260,8 @@ A manual trace of boundary values reveals the logic error.
 3. Locate the reversed comparison.
 4. Change it to `>= 80`.
 5. Run and compare the final count with the prediction.
+
+</details>
 
 <details>
 <summary>Show the worked solution</summary>
@@ -5729,6 +7658,9 @@ The same two notebooks serve all ten exercises:
 
 ## Exercise 2.15.1 — Allocate TAN7 project groups across two campuses
 
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
+
 AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. In this fictional teaching cohort, Copenhagen has 45 students and Aalborg has 36 students, and the coordinators want groups of four or five without mixing campuses. A group of fewer than four should be reported for manual coordination rather than silently accepted. The coordinators also need a readable campus-by-campus summary showing group sizes, the number of groups and whether anyone remains unassigned.
 
 **Code plan**
@@ -5739,8 +7671,14 @@ AAU teaches Techno-Anthropology on the Aalborg and Copenhagen campuses. In this 
 4. Validate that every generated size is four or five and that the sizes add back to the original count.
 5. Print a transparent report and state that accessibility, student preferences and prior collaboration still require human coordination.
 
+</details>
+
+---
 
 ## Exercise 2.15.2 — Check a municipal mobility dataset before analysis
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A municipality expects 240 consultation records, but the received extract contains 233 records. Seven records have missing consent information, three identifiers are duplicated and the team has not yet established whether those categories overlap. The analyst must calculate transparent quality indicators without calling the remaining records automatically “good”. A compact report should flag impossible counts, calculate a provisional retention rate and preserve a note about the unresolved overlap assumption.
 
@@ -5752,8 +7690,14 @@ A municipality expects 240 consultation records, but the received extract contai
 4. Calculate the retained count and rate only when the inputs are logically valid.
 5. Print the indicators, flags and limitation note with clear labels.
 
+</details>
+
+---
 
 ## Exercise 2.15.3 — Build a bounded course-keyword guessing activity
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A lecturer wants a short guessing activity that helps students recognise Python keywords. The program should choose from a documented list, reveal correctly guessed letters and stop after six incorrect attempts. Invalid entries such as numbers, symbols or more than one letter should not consume an attempt. The final message must reveal the word and show whether the learner completed it within the stated limit.
 
@@ -5767,8 +7711,14 @@ A lecturer wants a short guessing activity that helps students recognise Python 
 
 **Adaptation note:** This exercise adapts the word-guessing structure in Rodrigo Pinheiro’s [`hangman.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/hangman.py). The teaching version is rewritten for deterministic Colab execution and the learning scope of Tutorials 2.1–2.15.
 
+</details>
+
+---
 
 ## Exercise 2.15.4 — Scale ingredients for a community cooking workshop
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A community centre offers three recipes and needs an ingredient list for a chosen number of participants. Every recipe contains ingredient names, quantities and units, but quantities must be multiplied consistently and ingredients with different units must remain separate. The organiser may enter a recipe name with extra spaces or different capitalisation. The program should either produce a scaled list or display the available recipe names without crashing.
 
@@ -5782,8 +7732,14 @@ A community centre offers three recipes and needs an ingredient list for a chose
 
 **Adaptation note:** The data-structure idea is adapted from Rodrigo Pinheiro’s [`session03_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session03_exercises.py). The situation, recipe records, validation and complete solution are newly written.
 
+</details>
+
+---
 
 ## Exercise 2.15.5 — Design an ethical feedback collector
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A project team wants to collect a product name, a rating from one to five and an optional comment. A previous design repeatedly pressured respondents who selected fewer than four stars, which would distort the evidence and disrespect participants. The replacement must accept every valid rating, reject only values outside the scale and let the participant skip the comment. The final summary should count ratings without changing them and include a warning when the sample is too small for strong claims.
 
@@ -5797,8 +7753,14 @@ A project team wants to collect a product name, a rating from one to five and an
 
 **Adaptation note:** This exercise critically redesigns the manipulative rating prompt in Rodrigo Pinheiro’s [`session02_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session02_exercises.py). It uses the original as an ethical discussion point rather than reproducing its behaviour.
 
+</details>
+
+---
 
 ## Exercise 2.15.6 — Convert and classify fieldwork temperatures
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A fieldwork team records temperatures in either Celsius or Fahrenheit and wants a common Celsius summary. Each record includes a place label, a numerical value and a unit entered as text. Unit labels may contain spaces or lower-case letters, while unknown units must be sent for review. The program should preserve the original record, create converted records and classify Celsius values as freezing, cool, moderate or hot using documented project thresholds.
 
@@ -5812,8 +7774,14 @@ A fieldwork team records temperatures in either Celsius or Fahrenheit and wants 
 
 **Adaptation note:** The conversion idea is adapted from Rodrigo Pinheiro’s [`session01_exercises.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session01_exercises.py) and [`session05_functions_in_class.py`](https://github.com/roedorpi/TAN7_Scripting_classnotes/blob/master/session05_functions_in_class.py). The record-based workflow and validation are newly written.
 
+</details>
+
+---
 
 ## Exercise 2.15.7 — Validate workshop registrations and waiting-list priority
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 An AAU workshop has 24 places and receives registrations containing a participant code, campus and accessibility-support flag. Duplicate participant codes must not receive a second place, and incomplete records must be kept for human review. When capacity is reached, later valid registrations enter a waiting list without being deleted. The output should show accepted, waiting and review lists while making clear that accessibility needs are not a basis for exclusion.
 
@@ -5825,8 +7793,14 @@ An AAU workshop has 24 places and receives registrations containing a participan
 4. Loop through every registration and assign it to review, accepted or waiting according to the documented order.
 5. Print counts and identifiers, then test the exact-capacity boundary.
 
+</details>
+
+---
 
 ## Exercise 2.15.8 — Triage municipal service requests transparently
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A municipal help desk receives requests with an identifier, category, urgency label and location status. Safety-related requests without a confirmed location require human review rather than automatic prioritisation. Valid urgent or accessibility-related requests enter a priority queue, while other valid requests enter a standard queue. The program must process every record once, preserve its identifier and explain the rule that produced each destination.
 
@@ -5838,8 +7812,14 @@ A municipal help desk receives requests with an identifier, category, urgency la
 4. Loop through the records and append an annotated result to the appropriate queue.
 5. Print queue summaries and test missing, urgent, accessibility and ordinary inputs.
 
+</details>
+
+---
 
 ## Exercise 2.15.9 — Review confidence scores without hiding uncertainty
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A research team assigns confidence scores from zero to one hundred to coded interview excerpts. Scores at or above 80 are provisionally labelled high confidence, scores from 50 to 79 require review and lower scores receive a low-confidence flag. Missing or out-of-range scores must not be forced into one of the three categories. The report should count each outcome, list the records needing human attention and state that the thresholds do not measure truth.
 
@@ -5851,8 +7831,14 @@ A research team assigns confidence scores from zero to one hundred to coded inte
 4. Collect the identifiers requiring review or correction.
 5. Print a summary and test 49, 50, 79, 80, `None` and 101 as boundaries.
 
+</details>
+
+---
 
 ## Exercise 2.15.10 — Prepare structured records for the next CSV and JSON lesson
+
+<details class="plain-language-task">
+<summary>Show this exercise in plain language</summary>
 
 A team has received five service observations represented as dictionaries with the same intended fields: identifier, category, minutes and resolved status. Some values contain outer spaces, one duration is numerical-looking text and one record is missing a category. Before writing any CSV or JSON file, students must normalise the records in memory and keep rejected records separate. The final program should produce a clean list of dictionaries whose keys and types are consistent enough for the next tutorial.
 
@@ -5864,6 +7850,8 @@ A team has received five service observations represented as dictionaries with t
 4. Verify that every clean record has the same keys and intended value types.
 5. Print clean and rejected summaries, then explain how the structure maps naturally to CSV rows and JSON objects.
 
+
+</details>
 
 ---
 
