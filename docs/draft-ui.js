@@ -78,7 +78,13 @@ function updateDraftSidebar(config) {
   document.getElementById('sidebar-kicker').textContent = 'Part III · Data Handling and Analysis';
   document.getElementById('sidebar-title').textContent = `Section ${config.section}`;
   document.getElementById('sidebar-description').textContent = config.subtitle;
-  document.querySelectorAll('[data-package]').forEach(button => button.classList.toggle('active', button.dataset.package === state.section));
+  document.querySelectorAll('[data-package]').forEach(button => {
+    const active = button.dataset.package === state.section;
+    button.classList.toggle('active', active);
+    active ? button.setAttribute('aria-current', 'page') : button.removeAttribute('aria-current');
+  });
+  const draftNote = document.getElementById('draft-sidebar-note');
+  if (draftNote) draftNote.hidden = false;
 }
 
 function renderDraftOverview(config) {

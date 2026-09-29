@@ -4,12 +4,12 @@ description: "A complete beginner tutorial for running, reading, modifying, brea
 course: "AAU Introduction to Scripting, Data Mining and Machine Learning"
 lecture: "Python Foundations I"
 language: "en-GB"
-estimated_time: "8 to 10 hours for the core pathway, plus 3 to 4 hours for exercises and practice"
+estimated_time: "8 to 10 hours for the core pathway, 14 to 18 hours with guided practice, or 18 to 24 hours with all exercises and practice"
 prerequisites:
   - "No previous programming experience"
   - "A modern web browser"
   - "Access to the course Google Colab notebook, when published"
-last_reviewed: "2026-09-07"
+last_reviewed: "2026-09-29"
 ---
 
 # Python Foundations I
@@ -39,23 +39,24 @@ The topic boundary follows the Python Foundations I scope identified by the cour
 
 You do not need previous programming experience. You need a modern web browser, careful typing and a willingness to run, inspect and repair small examples. Lecture 3 uses standard Python 3 only: no third-party library, dataset, virtual environment or `requirements.txt` file is required.
 
-### The three Lecture 3 notebooks
+### The four Lecture 3 notebooks
 
 Use the tutorial number in each notebook to match it with the website:
 
 | File | What it contains | When to use it |
 |---|---|---|
 | [Tutorial Examples](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) | Every code example shown in Tutorials 2.1–2.7, in website order | During the lecture and when reviewing an explanation |
-| [Exercises and solutions](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | Every numbered website exercise, followed by a separate fully commented solution | Attempt the matching starter before opening its solution |
+| [Independent Exercises](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) | Every numbered website exercise with a starter cell and no answer key | Attempt and test the matching task |
+| [Fully Commented Solutions](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb) | A separate answer for every numbered exercise | Open only after making an attempt |
 | [Practice Materials](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) | Additional case questions, code-logic steps and fully commented examples | For extra classroom demonstrations or independent practice |
 
-[Open the complete AAU course repository on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH). The repository is the organised course folder: `notebooks/lecture_03` contains these three files, `docs` contains the tutorial website and later lecture folders contain later materials.
+[Open the complete AAU course repository on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH). The repository is the organised course folder: `notebooks/lecture_03` contains these four files, `docs` contains the tutorial website and later lecture folders contain later materials.
 
 ### Use Google Colab — recommended for the course
 
 Google Colab runs a Jupyter notebook in a browser, so nothing needs to be installed for Lecture 3.
 
-1. Open one of the three direct Colab links above.
+1. Open one of the four direct Colab links above.
 2. Choose **File > Save a copy in Drive** before editing the public course notebook.
 3. Rename the copy so the lecture, tutorial range and your name are clear.
 4. Run a code cell with its play button or **Shift+Enter**.
@@ -78,7 +79,7 @@ Use [Google Colab](https://colab.research.google.com/) to create a blank noteboo
 
 ### Use GitHub to find or download the material
 
-GitHub stores the course files and their version history. Open the repository, select `notebooks`, then `lecture_03`, and choose the file whose name ends in `Examples`, `Exercises` or `Practice_Materials`. Select **Open in Colab** from this tutorial when you want to run a notebook; use GitHub when you want to inspect or download the source.
+GitHub stores the course files and their version history. Open the repository, select `notebooks`, then `lecture_03`, and choose the file whose name ends in `Examples`, `Exercises`, `Solutions` or `Practice_Materials`. Select **Open in Colab** from this tutorial when you want to run a notebook; use GitHub when you want to inspect or download the source.
 
 - [GitHub Hello World — official beginner guide](https://docs.github.com/en/get-started/start-your-journey/hello-world)
 - [Getting started with Git — official GitHub guide](https://docs.github.com/en/get-started/learning-to-code/getting-started-with-git)
@@ -243,7 +244,7 @@ Why is notebook execution order part of debugging?
 4. Restart the runtime and run only the third cell; record that the missing variable produces `NameError`.
 5. Repair the notebook state by running the assignment cell before the display cell, then explain why execution order matters.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -424,7 +425,7 @@ Why does `\n` change the layout even though `print()` is called only once on the
 4. Predict the output, then create and repair one deliberate `NameError` in your notes.
 5. Explain why correct arithmetic does not establish that the exclusion rule was fair or appropriate.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -448,7 +449,7 @@ Variables are labels that help code retain the meaning of a value. A name such a
 
 ## Constants and literals
 
-A **literal** is a value written directly in code. Examples include `42`, `3.5`, `"Copenhagen"` and `True`. Python also has the special constant `None`, meaning no value is present. Section 13.1 later distinguishes `None` from zero, empty text and the string `"None"`.
+A **literal** is a value written directly in code. Examples include `42`, `3.5`, `"Copenhagen"` and `True`. Python also has the special constant `None`, meaning no value is present. Tutorial 2.4 later distinguishes `None` from zero, empty text and the string `"None"`.
 
 A **constant** is a value that should not change while a program is running. Python does not enforce ordinary constants. Programmers usually write a constant name in uppercase letters to communicate: "Treat this as fixed." This is a convention, not a technical lock.
 
@@ -629,7 +630,7 @@ What social or organisational question should accompany any coded threshold?
 3. Write two sentences explaining what uppercase naming communicates.
 4. State why Python still allows one of these values to be reassigned.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -875,7 +876,7 @@ Which assumption in this calculation should be checked against the real dataset?
 4. Display the original counts, derived count and audit trail with labels.
 5. Change one source count and confirm that every later use of its variable name remains consistent.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -891,7 +892,7 @@ Which assumption in this calculation should be checked against the real dataset?
 4. Display labelled inputs, results and the audit trail.
 5. Document one deliberate `NameError` and its repair, plus the non-overlap assumption.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -1083,7 +1084,7 @@ Why can a legal variable name still be a bad variable name?
 3. Import the standard-library `keyword` module.
 4. Run `keyword.iskeyword()` for at least four proposed names and compare the result with your classification.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -1290,7 +1291,7 @@ Are two names that differ only in capitalisation the same variable in Python?
 3. Add a one-sentence definition for every rewritten name.
 4. Use at least three rewritten names in assignments and print their values.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -1309,7 +1310,7 @@ Expressions turn stored values into new information. In a social-science project
 | Priority | Book and chapter | Suggested focus |
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Statements**, **Operators and operands**, **Expressions**, **Order of operations**, **Modulus operator** and **String operations**. These sections match the Part C sequence closely. |
-| Optional practice | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Use **Section 1.1** and Exercises 1 to 3 for extra practice with arithmetic expressions, parentheses and operator behaviour. The later corpus exercises are outside Day 1. |
+| Optional practice | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Use **Section 1.1** and Exercises 1 to 3 for extra practice with arithmetic expressions, parentheses and operator behaviour. The later corpus exercises are outside Python Foundations I. |
 
 ## Expressions and statements
 
@@ -1458,6 +1459,20 @@ Change the completed count and total count. Predict the new percentage before ru
 **Common mistake**
 
 Using the wrong denominator can produce a plausible percentage with the wrong meaning.
+
+### Exercise 2.3.1 - Distinguish expressions from statements
+
+**Context:** A research assistant is learning how Python turns supplied counts into a derived value. Classify the roles of `42`, `total = 42`, `total - missing`, `complete = total - missing` and `print(total - missing)`, then apply the pattern to 90 received and 7 excluded records.
+
+**Your task**
+
+1. Classify each supplied line by its main role: expression, assignment statement or print statement containing an expression.
+2. Store the received and excluded counts in two source variables.
+3. Derive the retained count in a third variable without changing the sources.
+4. Display the retained count with a clear label and explain which expression produced it.
+
+- [Open the independent exercise starter](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Example 2.3.4 - Calculate basic data-quality counts
 
@@ -1687,7 +1702,7 @@ Why is a compounded scenario analytically different from simply adding 5 twice?
 4. Display every result with a label and unit where relevant.
 5. Replace one numerical value with text, record the resulting error type, and repair it.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -1917,7 +1932,7 @@ What is the base of the exponent in `(-3) ** 2`?
 3. Explain two differences caused by parentheses or exponentiation precedence.
 4. Give one expression a realistic case interpretation and identify one assumption.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -2117,34 +2132,7 @@ Does `:.1f` change the stored value or only its displayed format?
 4. Add an apostrophe to one text value and choose quotation marks that keep the code readable.
 5. Display both headings and confirm that they communicate the same information.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-
-### String operations preserve or transform text
-
-String methods create a new text value while leaving the original value available unless you assign the result back to the same name. This is useful when a field label arrives with extra spaces, mixed capitalisation or punctuation.
-
-### Example 2.4.16 - Standardise a field label without losing the original
-
-**Code**
-
-```python
-raw_field_label = "  Preferred TRANSPORT mode  "
-trimmed_label = raw_field_label.strip()
-lowercase_label = trimmed_label.lower()
-field_name = lowercase_label.replace(" ", "_")
-
-print("Raw label:", raw_field_label)
-print("Proposed field name:", field_name)
-```
-
-**Expected output**
-
-```text
-Raw label:   Preferred TRANSPORT mode
-Proposed field name: preferred_transport_mode
-```
-
-`strip()`, `lower()` and `replace()` remove outer whitespace, change letters to lowercase and change ordinary spaces to underscores. Keep the raw value so you can audit what was received. A human must still check whether the proposed name preserves the intended meaning.
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -2442,7 +2430,7 @@ Which line creates a new rounded number, and which line only controls presentati
 3. Create at least one value of each of the three types.
 4. Use `type()` to inspect the created values and compare the output with your predictions.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -2641,7 +2629,7 @@ Does a `True` result prove that the dataset is reliable, representative or ethic
 4. Test exactly 500 records and exactly 80.0 per cent, then explain the `>` and `>=` boundary difference.
 5. State why `True` does not prove general data quality.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -2879,41 +2867,70 @@ Add `review_note = "Not yet checked"`. Compare its meaning and type with `None` 
 
 Why would replacing a missing waiting time with `0` change the meaning of the record?
 
+### String operations preserve or transform text
+
+String methods create a new text value while leaving the original value available unless you assign the result back to the same name. This is useful when a field label arrives with extra spaces, mixed capitalisation or punctuation.
+
+### Example 2.4.16 - Standardise a field label without losing the original
+
+**Code**
+
+```python
+raw_field_label = "  Preferred TRANSPORT mode  "
+trimmed_label = raw_field_label.strip()
+lowercase_label = trimmed_label.lower()
+field_name = lowercase_label.replace(" ", "_")
+
+print("Raw label:", raw_field_label)
+print("Proposed field name:", field_name)
+```
+
+**Expected output**
+
+```text
+Raw label:   Preferred TRANSPORT mode
+Proposed field name: preferred_transport_mode
+```
+
+`strip()`, `lower()` and `replace()` remove outer whitespace, change letters to lowercase and change ordinary spaces to underscores. Keep the raw value so you can audit what was received. A human must still check whether the proposed name preserves the intended meaning.
+
+---
+
 ### Exercise 2.4.4 - Inspect a small report before trusting it
 
 You are checking a small report before sharing it with your group. The report contains the values `25`, `25.0`, `"25"`, `None` and an empty string, and values that look similar may still mean different things to Python. Create a separate variable for each of those values, then create four more variables containing `25 / 5`, `round(93.756, 1)`, `f"{93.756:.1f}"` and `25 >= 20`. Before running the code, predict whether each variable contains an integer, float, string, Boolean or missing value. Print every value together with its type and a clear label so another student can check your work. Finish by explaining why division produces a float, formatting produces a string, comparison produces a Boolean, and visual similarity does not guarantee the same meaning.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.4.5 - Prepare a clear event message
 
 Your student group is preparing a short message about a workshop. Store the workshop name as a string, the number of participants as an integer and the average rating as a float. Use an f-string to print one readable sentence containing all three values. Show the rating with one decimal place, but keep the original float unchanged. Change the participant count and run the code again. Explain which part of the sentence changed and why formatting the rating does not change the stored value.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.4.6 - Check whether a service record is ready
 
 A small service record is ready for review only when it has a participant ID, a non-empty comment and a rating of at least 4.0. Store the ID and comment as strings and the rating as a float. Create one Boolean for each condition, then combine the three Booleans into one readiness result. Test the boundary case by setting the rating to exactly 4.0. Print every result with a clear label. Explain why a `True` readiness result shows only that the written checks passed and does not prove that the comment is truthful or complete.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.4.7 - Compare a rounded value with the original measurement
 
 A researcher records a travel time of 12.678 minutes and wants to show it in a short report. Store the original measurement as a float and create a second numerical value rounded to two decimal places with `round()`. Print both values and use `type()` to check that both are floats. Create an f-string that displays the original value with two decimal places and inspect the type of that formatted result. Change the original time to another decimal value and run the code again. Explain the difference between creating a rounded number for later calculation and changing only how a number is displayed as text.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.4.8 - Keep missing, zero and empty text separate
 
 A survey record has no waiting-time measurement, reports zero complaints and leaves an optional comment blank. Represent these situations with `None`, `0` and an empty string. Print each value with a clear label and use `type()` to inspect it. Create a Boolean named `waiting_time_recorded` that checks whether the waiting-time value is not `None`. Change the waiting time to `0` and observe how the Boolean changes. Explain why a recorded wait of zero minutes is different from a waiting time that was not recorded.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.4.9 - Build a small data-quality summary
 
 You are checking a file before discussing it with your group. The file has 125 rows, zero duplicate rows, an 86.5 percent completion rate and recorded consent. Store the four facts with suitable types, then create Booleans for more than 100 rows, exactly zero duplicates, at least 80 percent completion and consent recorded. Combine those checks into one final readiness Boolean and print a short f-string summary with the completion rate shown to one decimal place. Change the completion rate to 79.9 and run the checks again. Explain why the readiness result changes and what the result still cannot prove about the quality of the file.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 # Part E. Type conversion and user input
 
@@ -2931,7 +2948,7 @@ Data collected from people often arrives as text, even when it represents an age
 |---|---|---|
 | Core companion | [Severance, *Python for Everybody*, Chapter 2: Variables, expressions, and statements](https://www.py4e.com/html3/02-variables) | Read **Asking the user for input** and the surrounding type-conversion discussion. This directly supports `input()`, `int()` and the `ValueError` produced by unsuitable text. |
 | Recommended transfer practice | [Severance, *Python for Everybody*, Chapter 2 exercises](https://www.py4e.com/html3/02-variables) | Complete Exercises 2, 3 and 5 after the tutorial examples. Exercises 3 and 5 are the sources for the explicitly adapted gross-pay and temperature activities in this part. |
-| NLTK Book | No Day 1 reading required | The NLTK Book is not the best companion for keyboard input and type conversion. Return to it during the later text-processing lecture. |
+| NLTK Book | No reading required for this tutorial | The NLTK Book is not the best companion for keyboard input and type conversion. Return to it during the later text-processing lecture. |
 
 ## Convert values with `int()`, `float()` and `str()`
 
@@ -3173,7 +3190,7 @@ Before converting, ask:
 4. Explain why `0042` may need to remain a string when it is an identifier.
 5. Explain why decimal-comma text requires an explicit data-format decision.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -3735,31 +3752,31 @@ Why is the traveller count converted with `int()` while distance and rate use `f
 4. Test a word where an integer is expected and record the `ValueError`.
 5. Test zero invited participants and completed responses above invited participants; explain why these require validation decisions.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.5.3 - Create a two-number plus-and-minus calculator
 
 You are preparing a tiny calculator for a classmate who wants to check two numbers quickly. Ask the user to enter a first number and a second number, and preserve both original responses as strings. Convert both responses to floats so the calculator accepts whole numbers and decimal numbers. Calculate the sum and the result of subtracting the second number from the first number. Print both calculations as clearly labelled f-strings, then run the program with `15` and `4.5`. Explain why calculation requires converted values and why reversing the subtraction order would produce a different answer.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.5.4 - Prepare an input-based workshop attendance summary
 
 A community workshop needs a short attendance summary after registration closes. Ask for the workshop name, the number of registered participants and the number who attended. Keep the name as a string and convert both counts to integers. Calculate the attendance percentage by dividing attendance by registrations and multiplying by 100. Print one readable sentence containing the name, both counts and the percentage shown with one decimal place. Test the program with 50 registrations and 42 attendees, then explain why zero registrations or more attendees than registrations would require additional validation.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.5.5 - Estimate a shared field-visit cost
 
 Your study group is planning a field visit and wants a simple shared-cost estimate. Ask for a trip label, distance in kilometres, estimated cost per kilometre and number of travellers. Keep the label as text, convert distance and cost to floats, and convert the traveller count to an integer. Calculate the total estimated cost and the equal cost per traveller. Display both amounts with two decimal places and run the program once with 24.5 kilometres, 3.20 DKK per kilometre and five travellers. Explain why the result is only an estimate and why a traveller count of zero cannot be used as a divisor.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ### Exercise 2.5.6 - Turn typed project details into a file label
 
 A student team needs a consistent draft filename for a project export. Ask the user to type an organisation name, a dataset title and a reporting month while preserving all three raw responses. Create cleaned versions by removing outer spaces, changing letters to lowercase and replacing ordinary spaces with underscores. Join the three cleaned values with underscores and add the `.csv` ending. Print the raw responses and the proposed filename so another student can compare the transformation. Test the program with extra spaces and mixed capitalisation, then explain why a clean-looking filename still requires a human check for meaning, punctuation and naming policy.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -3970,7 +3987,7 @@ Before keeping a comment, ask:
 4. Delete comments that only repeat obvious assignments.
 5. Ask another student whether the remaining comments help them explain the script.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4463,7 +4480,7 @@ What evidence helped you recognise the wrong formula without a traceback?
 4. Add one normal or boundary test supporting each repair.
 5. Keep broken code in separate cells or notes and never include personal data in screenshots.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4483,7 +4500,7 @@ This tutorial brings the small pieces into a traceable workflow. The aim is not 
 |---|---|---|
 | Core consolidation | [Severance, *Python for Everybody*, Chapter 1](https://www.py4e.com/html3/01-intro) and [Chapter 2](https://www.py4e.com/html3/02-variables) | Review only the sections connected to a self-test error or uncertainty. Then use the Chapter 2 exercises as additional transfer practice rather than rereading both chapters from beginning to end. |
 | Optional language-data transfer | [Bird, Klein and Loper, *Natural Language Processing with Python*, Chapter 1](https://www.nltk.org/book/ch01.html) | Revisit **Sections 2.3 and 2.4** and explain which variables, assignments, expressions and string operations you now recognise. Lists, corpora and frequency analysis belong to later tutorials. |
-| Looking ahead, not Day 1 | [NLTK Book, Chapter 3: Processing Raw Text](https://www.nltk.org/book/ch03.html) | Bookmark this chapter for the later text-processing lecture. Do not treat it as required Python Foundations I reading. |
+| Looking ahead, not required for Python Foundations I | [NLTK Book, Chapter 3: Processing Raw Text](https://www.nltk.org/book/ch03.html) | Bookmark this chapter for the later text-processing lecture. Do not treat it as required Python Foundations I reading. |
 
 ## Read complete foundation scripts
 
@@ -4800,13 +4817,13 @@ Which variables preserve evidence, which variables contain proposed standardisat
 4. Add purpose and non-overlap assumption comments.
 5. Explain the literals, variables, assignments, expressions and output, then state one conclusion the script cannot support.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
 ## Applied problem-solving exercises
 
-These exercises bring several Python Foundations I ideas together. Read the situation, follow the numbered requirements and try your own solution before opening the fully commented answer in the Lecture 3 Exercises notebook.
+These exercises bring several Python Foundations I ideas together. Read the situation, follow the numbered requirements and try your own solution before opening the fully commented answer in the separate Lecture 3 Solutions notebook.
 
 ### Exercise 2.7.2 - Prepare a municipal consultation intake report
 
@@ -4820,7 +4837,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Display a labelled report and inspect at least two values with `type()`.
 5. Document the non-overlap assumption and explain why a column-count match is not full validation.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4836,7 +4853,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Display a labelled summary with units and inspect at least three types.
 5. Test zero invited students, completions above invitations and unsuitable numerical text in separate notes.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4852,7 +4869,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Test access counts of 600 and 604 to inspect the exact boundary and an above-boundary case.
 5. Print a limitation note and explain why one percentage cannot show whose experiences are absent.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4868,7 +4885,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Display the campus counts, planned group counts, averages and Boolean checks with clear labels.
 5. Explain why a numerical plan cannot decide the fairest allocation of particular students or support needs.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4884,7 +4901,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Print a labelled audit summary, the non-overlap assumption and the threshold Boolean.
 5. Explain why a high usable percentage does not settle questions about metadata quality, rights or representation.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4900,7 +4917,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Use `type()` to inspect one count, one decimal measurement and one calculated value.
 5. Print the attendance-record limitation and explain why cost per attendance is not automatically cost per unique person.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4916,7 +4933,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Build and display a draft `.csv` file name containing the three cleaned labels and record count.
 5. Explain why the script does not guarantee uniqueness, permitted characters or a correct organisational naming policy.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -4932,7 +4949,7 @@ These exercises bring several Python Foundations I ideas together. Read the situ
 4. Display both percentages, their denominators and the threshold Boolean in a readable evidence statement.
 5. Explain how using all contacted residents as the access-rate denominator would answer a different question and could mislead readers.
 
-- [Open checkpoint solution](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the solution after attempting the task](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -5079,7 +5096,7 @@ Complete this test without running Python first. Then use Python to check only a
 44. Explain a complete break-and-repair cycle in your own words.
 
 - [Open the self-test practice in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
-- [Open the fully commented answer notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb)
+- [Open the fully commented answer notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb)
 
 ---
 
@@ -5293,15 +5310,16 @@ Do not worry if `pd` and CSV loading are not yet familiar. Their full explanatio
 
 ## Published course resources
 
-The former planning placeholders have been replaced by the files that students and teachers can actually open. The examples notebook contains every tutorial example in website order. The exercises notebook combines each numbered task, a starter cell and its fully commented solution so students do not have to search across different files. The practice notebook provides additional short applications after the numbered work. Interactive examples are kept as real `input()` scripts and clearly state that they must be run manually.
+The former planning placeholders have been replaced by the files that students and teachers can actually open. The examples notebook contains every tutorial example in website order. The Exercises notebook contains each numbered task and starter cell. The separate Solutions notebook contains the fully commented answers. The practice notebook provides additional short applications after the numbered work. Interactive examples are kept as real `input()` scripts and clearly state that they must be run manually.
 
 | Resource | What it contains | Open it |
 |---|---|---|
 | Tutorial Examples | Examples 2.1.1–2.7.4, including manually runnable input examples | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb) |
-| Exercises and Solutions | Every numbered Python Foundations I exercise, starter and fully commented answer | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) |
+| Independent Exercises | Every numbered Python Foundations I exercise and starter cell | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb) |
+| Fully Commented Solutions | A separate answer for every numbered exercise | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb) |
 | Practice Materials | Additional short situations for Tutorials 2.1–2.7 | [Open in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb) |
 | Lecture 3 GitHub folder | Downloadable notebook files and version history | [Open on GitHub](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_03) |
-| Coverage record | Latest execution and comment audit for the published notebooks | [Open the coverage report](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/docs/tutorial_code_coverage.md) |
+| Coverage record | Current notebook structure and saved-output record | [Open the coverage report](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/docs/tutorial_code_coverage.md) |
 
 ### Colab support images already used in the tutorial
 

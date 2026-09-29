@@ -14,6 +14,7 @@ const pythonResourceLinks = {
     examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb",
     examplesGithub: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Examples.ipynb",
     exercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Exercises.ipynb",
+    solutions: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Solutions.ipynb",
     practice: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_03/L03_Tutorial_2_1_to_2_7_Practice_Materials.ipynb",
     github: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_03"
   },
@@ -1191,7 +1192,13 @@ function updateSidebar() {
       : pythonFoundation
         ? "Run, explain, modify and repair foundational Python in Google Colab."
         : "See what the course is for and how Lectures 1–10 build on one another.";
-  document.querySelectorAll("[data-package]").forEach(button => button.classList.toggle("active", button.dataset.package === state.section));
+  document.querySelectorAll("[data-package]").forEach(button => {
+    const active = button.dataset.package === state.section;
+    button.classList.toggle("active", active);
+    active ? button.setAttribute("aria-current", "page") : button.removeAttribute("aria-current");
+  });
+  const draftNote = document.getElementById("draft-sidebar-note");
+  if (draftNote) draftNote.hidden = !["data-i", "data-ii", "data-iii"].includes(state.section);
 }
 
 function updateProgress() {
@@ -1206,13 +1213,14 @@ function updateProgress() {
   document.getElementById("progress-value").textContent = count;
   document.getElementById("progress-percent").textContent = `${percent}%`;
   document.getElementById("progress-bar").style.width = `${percent}%`;
+  sidebarProgress.setAttribute("aria-label", `${sectionPageTitles[state.section] || "Course"} progress`);
   document.querySelector(".progress-chip").lastChild.textContent = `/${modules.length} complete`;
 }
 
 function renderNav() {
   updateSidebar();
   nav.innerHTML = modules.map(module => `
-    <a class="module-link ${state.current === module.id ? "active" : ""} ${state.completed.has(module.id) ? "completed" : ""}" href="${routeHref(state.section, module.id)}">
+    <a class="module-link ${state.current === module.id ? "active" : ""} ${state.completed.has(module.id) ? "completed" : ""}" href="${routeHref(state.section, module.id)}" ${state.current === module.id ? 'aria-current="page"' : ""}>
       <span class="module-number">${module.id}</span>
       <span class="module-title">${module.title}</span>
       <span class="completion-dot">${state.completed.has(module.id) ? "✓" : ""}</span>
@@ -1404,7 +1412,7 @@ function renderPythonFoundationOverview() {
   page.innerHTML = `
     <div class="page compact-page foundation-page python-page">
       <section class="hero compact-hero python-hero">
-        <div class="meta-row"><span class="pill">Part II · Section 2.1</span><span class="time">About 10 to 12 hours</span></div>
+        <div class="meta-row"><span class="pill">Part II · Section 2.1</span><span class="time">8–10 core hours · 18–24 hours with all practice</span></div>
         <h1>Python Foundations I</h1>
         <p>Learn your first Python by running, explaining, modifying, deliberately breaking and repairing meaningful examples in Google Colab.</p>
         <div class="hero-actions"><a class="primary-button" href="#python/2.1">Begin tutorial 2.1 <span>→</span></a><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
@@ -1421,6 +1429,9 @@ function renderPythonFoundationOverview() {
         <div>${pythonFoundationGuide}</div>
       </details>
 
+
+      <section class="study-plan-panel"><div><p class="eyebrow">Choose a study pathway</p><h2>Match the workload to your purpose</h2><p><strong>Core pathway, 8–10 hours:</strong> complete each tutorial overview, its central examples and one numbered exercise. <strong>Guided pathway, 14–18 hours:</strong> run all numbered examples and attempt every independent exercise. <strong>Extended pathway, 18–24 hours:</strong> add every modification, break-and-repair activity, practice material and self-test.</p></div></section>
+
       <section id="roadmap"><div class="roadmap-heading compact-heading"><div><h2 class="section-title">From your first Colab cell to a complete script</h2></div><p>Study in order if Python is new to you. Each page builds on the vocabulary and skills introduced earlier.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
       <section class="section-footer-grid">
@@ -1436,8 +1447,9 @@ function renderPythonFoundationIIOverview() {
   page.innerHTML = `
     <div class="page compact-page foundation-page python-page python-ii-page">
       <section class="hero compact-hero python-hero python-ii-hero">
-        <div class="meta-row"><span class="pill">Part II · Section 2.2</span><span class="time">About 12 to 16 hours with applied practice</span></div>
-        <h1>Make Python decide, repeat and respond.</h1>
+        <div class="meta-row"><span class="pill">Part II · Section 2.2</span><span class="time">10–12 core hours · 24–30 hours with all practice</span></div>
+        <h1>Python Foundations II</h1>
+        <p class="hero-tagline"><strong>Make Python decide, repeat and respond.</strong></p>
         <p>Build rule-based programs with conditions, loops, functions, imports and structured error handling, then test what those programs can and cannot establish.</p>
         <div class="hero-actions"><a class="primary-button" href="#python-ii/2.8">Begin tutorial 2.8 <span>→</span></a><button class="secondary-button" data-scroll-roadmap>View the sequence</button></div>
       </section>
@@ -1453,6 +1465,9 @@ function renderPythonFoundationIIOverview() {
         <summary>Open Lecture 4 course files and coding guide</summary>
         <div>${pythonFoundationIIGuide}</div>
       </details>
+
+
+      <section class="study-plan-panel"><div><p class="eyebrow">Choose a study pathway</p><h2>Use the same material at three depths</h2><p><strong>Core pathway, 10–12 hours:</strong> complete the conceptual sequence and central examples in Tutorials 2.8–2.14. <strong>Guided pathway, 16–20 hours:</strong> add the numbered independent and worked exercises. <strong>Extended pathway, 24–30 hours:</strong> complete Tutorial 2.15, the cumulative self-test and every modification, repair and boundary test.</p></div></section>
 
       <section id="roadmap"><div class="roadmap-heading compact-heading"><div><h2 class="section-title">From Boolean questions to applied Python problem solving</h2></div><p>Study Tutorials 2.8–2.14 in order if decisions, collections, loops and functions are new. Tutorial 2.15 combines both Python foundation sections in ten situational exercises.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
@@ -1634,7 +1649,7 @@ function addCodeCompanionLinks() {
       ? pythonResourceLinks.dataHandlingI
       : pythonResourceLinks.foundationsI;
   const codeBlocks = [...page.querySelectorAll(".md-code.md-python")];
-  const linkTargets = state.section === "python-ii" ? codeBlocks.slice(0, 1) : codeBlocks;
+  const linkTargets = state.section === "python" || state.section === "python-ii" ? codeBlocks.slice(0, 1) : codeBlocks;
   linkTargets.forEach(codeBlockElement => {
     if (codeBlockElement.nextElementSibling?.classList.contains("code-companion-links")) return;
     const resourceLinks = document.createElement("div");
@@ -1644,7 +1659,7 @@ function addCodeCompanionLinks() {
         ? `<span>Run the matching applied activity:</span><a href="${links.cases}" target="_blank" rel="noreferrer">Open Lecture 5 Applied Activities</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 5 on GitHub</a>`
         : `<span>Run the matching numbered material:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 5 Examples</a><a href="${links.exercises}" target="_blank" rel="noreferrer">Open Exercises and Solutions</a>`
       : state.section === "python"
-      ? `<span>Run the matching numbered example:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 3 Examples in Colab</a><a href="${links.examplesGithub}" target="_blank" rel="noreferrer">View Examples on GitHub</a>`
+      ? `<span>Open the Lecture 3 companion files:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Examples</a><a href="${links.exercises}" target="_blank" rel="noreferrer">Independent Exercises</a><a href="${links.solutions}" target="_blank" rel="noreferrer">Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">GitHub folder</a>`
       : state.current === "2.15"
         ? `<span>Run the matching applied solution:</span><a href="${links.appliedSolutions}" target="_blank" rel="noreferrer">Open Tutorial 2.15 Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 4 on GitHub</a>`
         : `<span>Open the Tutorial ${state.current} companion files:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Examples</a><a href="${links.workExercises}" target="_blank" rel="noreferrer">Worked Exercises</a><a href="${links.workExercisesGithub}" target="_blank" rel="noreferrer">Worked Exercises on GitHub</a>`;
@@ -1683,5 +1698,5 @@ document.getElementById("home-button").addEventListener("click", () => navigateT
 document.getElementById("menu-button").addEventListener("click", () => sidebar.classList.toggle("open"));
 document.querySelectorAll("[data-package]").forEach(link => link.addEventListener("click", () => sidebar.classList.remove("open")));
 window.addEventListener("hashchange", applyRouteFromHash);
-if (!window.location.hash) window.history.replaceState(null, "", "#data-ii");
+if (!window.location.hash) window.history.replaceState(null, "", "#start");
 applyRouteFromHash();

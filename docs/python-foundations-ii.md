@@ -2,7 +2,7 @@
 
 **Course:** Introduction to Scripting, Data Mining and Machine Learning  
 **Audience:** Programming beginners in Techno-Anthropology and related social-science programmes  
-**Estimated study time:** 12 to 16 hours, including the situational exercises and self-test<br>
+**Estimated study time:** 10 to 12 hours for the core pathway, 16 to 20 hours with guided practice, or 24 to 30 hours with all exercises and the self-test<br>
 **Primary environment:** Google Colab  
 **Prerequisite:** Python Foundations I, including variables, values, data types, expressions, `print()`, type conversion, user input and comments  
 
@@ -278,13 +278,13 @@ means:
 
 > Ask whether the current value of `engagement` is equal to `125`.
 
-### Deliberate error
+### Assignment inside a condition causes a syntax error
 
 Run this code:
 
 <a id="example-2-8-3"></a>
 
-#### Example 2.8.3 — Deliberate error
+#### Example 2.8.3 — Use comparison syntax instead of assignment syntax
 
 ```python
 engagement = 125
@@ -417,7 +417,7 @@ Predict the output:
 
 <a id="example-2-8-8"></a>
 
-#### Example 2.8.8 — Practice checkpoint 1
+#### Example 2.8.8 — Test a one-way decision
 
 ```python
 records = 75
@@ -473,11 +473,11 @@ if missing_values > 10:
 Review the missing data
 ```
 
-### Structure
+### The structure of a complete one-way decision
 
 <a id="example-2-8-10"></a>
 
-#### Example 2.8.10 — Structure
+#### Example 2.8.10 — Write a complete one-way decision
 
 ```python
 condition = True
@@ -704,11 +704,11 @@ if duplicate_rows > 0:
 
 An `else` block provides an alternative action when the condition is false.
 
-## Basic example
+## Choose between two outcomes with `else`
 
 <a id="example-2-8-21"></a>
 
-#### Example 2.8.21 — Basic example
+#### Example 2.8.21 — Choose between two outcomes with else
 
 ```python
 missing_values = 14
@@ -1449,11 +1449,11 @@ The condition reads:
 
 ---
 
-## A combined example
+## Require several conditions with `and`
 
 <a id="example-2-9-4"></a>
 
-#### Example 2.9.4 — A combined example
+#### Example 2.9.4 — Require three conditions with and
 
 ```python
 actor_type = "Citizen Group"
@@ -1575,7 +1575,7 @@ Create a condition that prints `"Priority review"` when:
 
 <a id="example-2-9-10"></a>
 
-#### Example 2.9.10 — Practice checkpoint 4
+#### Example 2.9.10 — Test grouped logical conditions
 
 ```python
 engagement = 180
@@ -1992,13 +1992,13 @@ This is concise, but a conversion error will stop the program when the user ente
 
 ---
 
-## Input assumptions
+## Identify assumptions in converted input
 
 Consider:
 
 <a id="example-2-10-5"></a>
 
-#### Example 2.10.5 — Input assumptions
+#### Example 2.10.5 — Identify assumptions in converted input
 
 ```python
 age = int(input("Enter age: "))
@@ -2559,11 +2559,11 @@ for number in [1, 2, 3]:
 3
 ```
 
-### Explanation
+### Trace the iteration variable
 
 <a id="example-2-11-6"></a>
 
-#### Example 2.11.6 — Explanation
+#### Example 2.11.6 — Trace the iteration variable
 
 ```python
 numbers = [1, 2, 3]
@@ -2695,11 +2695,11 @@ The first argument is the starting value. The second is the stopping point, whic
 
 ---
 
-## Adding a step
+## Add a step argument to `range()`
 
 <a id="example-2-11-11"></a>
 
-#### Example 2.11.11 — Adding a step
+#### Example 2.11.11 — Add a step argument to range
 
 ```python
 for number in range(0, 11, 2):
@@ -3240,11 +3240,11 @@ A `while` loop is useful when a process should continue until something changes,
 
 A `while` loop repeats while a condition remains true.
 
-## Countdown example
+## Count down with a `while` loop
 
 <a id="example-2-12-1"></a>
 
-#### Example 2.12.1 — Countdown example
+#### Example 2.12.1 — Count down with a while loop
 
 ```python
 number = 5
@@ -3342,11 +3342,11 @@ The condition remains true forever.
 
 Use the stop button beside the running cell.
 
-### Repair
+### Repair the missing loop update
 
 <a id="example-2-12-6"></a>
 
-#### Example 2.12.6 — Repair
+#### Example 2.12.6 — Repair the missing loop update
 
 ```python
 number = 5
@@ -4256,7 +4256,7 @@ Test it with `180` complete records out of `200`, then test a total of `0`.
 
 <a id="example-2-13-26"></a>
 
-#### Example 2.13.26 — Practice checkpoint 7
+#### Example 2.13.26 — Test a reusable completion-rate function
 
 ```python
 def calculate_completion_rate(complete_records, total_records):
