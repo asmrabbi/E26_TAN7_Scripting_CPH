@@ -6,7 +6,7 @@ part: "Part III — Data Handling, Text Analysis and Visualization"
 lecture: "Lecture 5"
 tutorial_range: "3.1–3.14"
 language: "en-GB"
-estimated_time: "10 to 12 hours for the core pathway, plus 3 to 5 hours for exercises and the integrated case activity"
+estimated_time: "10 to 12 hours for the core pathway, plus 6 to 8 hours for exercises and the integrated case activity"
 prerequisites:
   - "Python Foundations I"
   - "Python Foundations II"
@@ -14,7 +14,7 @@ prerequisites:
   - "Basic familiarity with variables, strings, numbers, Booleans, lists, conditions, loops and functions"
 primary_library: "pandas"
 primary_dataset: "data/E26_TAN7_service_experience_raw.csv"
-last_reviewed: "2026-08-26"
+last_reviewed: "2026-10-08"
 ---
 
 # Data Handling, Text Analysis and Visualization I
@@ -158,7 +158,7 @@ Lecture 5 should have exactly **three canonical GitHub/Colab notebooks**.
 | Website label | Canonical file | What it contains | When to use it |
 |---|---|---|---|
 | **Tutorial Examples** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb` | Every runnable worked example from Tutorials 3.1–3.13, in website order, plus setup cells needed for the examples | During teaching and when reviewing explanations |
-| **Exercises** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb` | Every numbered exercise from Tutorials 3.1–3.13. Student tasks come first; full commented solutions appear in a clearly separated solutions section at the end | Attempt exercises before reading the solutions |
+| **Exercises** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb` | All 39 numbered exercises from Tutorials 3.1–3.14. Student tasks come first; full commented solutions appear in a clearly separated solutions section at the end | Attempt exercises before reading the solutions |
 | **Case Activities** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb` | All numbered Case Activities in Tutorial 3.14, followed by a clearly separated model walkthrough/solution section | Complete after the core tutorials |
 
 Target Colab links follow this pattern:
@@ -298,7 +298,7 @@ This separation matters. If you change a dataset before you understand the probl
 | **3.11** | Exploring Text and Qualitative Data | 60–80 min |
 | **3.12** | From Qualitative Ideas to Simple Computational Codes | 60–80 min |
 | **3.13** | Provenance, Data Dictionaries and Responsible Interpretation | 50–70 min |
-| **3.14** | Case Activity: First Exploration of a CSV Dataset | 90–120 min |
+| **3.14** | Applied exploration and six integrated exercises | 5–7 hours |
 
 The times are deliberately generous. Beginners should pause, predict outputs, rerun cells and make mistakes.
 
@@ -5331,6 +5331,8 @@ The purpose is **not** to clean the file completely. Your task is to produce a d
 
 The case deliberately requires technical code and critical explanation. A complete answer is not only a notebook that runs. You should also explain what each result means and what it does not establish.
 
+After the eight guided case activities, six integrated exercises give you new organisational questions to solve. Each uses the same raw dataset but requires a different combination of inspection, selection, calculation, grouping, quality checks, text exploration and responsible interpretation.
+
 **Case vocabulary:** inspection report, preliminary finding, audit trail, exploratory calculation, quality flag, operational rule, limitation, next step.
 
 ## Case setup
@@ -5915,6 +5917,112 @@ Identify which issues require:
 - duplicate verification;
 - range validation;
 - text preparation.
+
+---
+
+## Six integrated exercises
+
+The following exercises extend the case activity with six new situations. Each exercise starts from the same unchanged raw CSV but asks a different analytical question. Attempt the question on the website first, then use the linked exercise notebook to compare your work with a complete standalone solution. Every solution repeats the pandas import, exact data URL and `pd.read_csv()` step so it can run independently in a fresh Colab cell.
+
+## Exercise 3.14.9 — Prepare a two-city service briefing
+
+A TAN research team is preparing a short briefing about service records from Copenhagen and Aalborg. The team has received the raw teaching dataset and knows that one row is intended to describe one service type in one city during one reporting month. A coordinator wants a quick comparison of workload, resolved cases and satisfaction across the two cities. Before calculating anything, the team needs proof that the correct file was loaded and that the relevant rows were selected. The raw city column also contains spelling, capitalisation and spacing variants that could split records into misleading groups. Missing satisfaction values mean that the number of rows and the number of scores will not always be the same. Written feedback may add useful context, but a keyword match cannot represent every resident experience. Your briefing must therefore combine inspection, filtering, grouped calculations, a text check and a clear limitation statement.
+
+### Your task
+
+1. Load the raw CSV, confirm its shape and display the first five rows.
+2. Inspect every raw city label and its frequency before selecting data.
+3. Select exact `Copenhagen` and `Aalborg` records and display only the identifier, month, city, service type, cases, satisfaction and feedback columns.
+4. For each selected city, calculate row count, total and mean cases received, total cases resolved, and the count, mean and median of satisfaction scores.
+5. Create a transparent waiting-related keyword rule, count its matches by city and display the matching comments.
+6. Write three observations and explain how city-label variants, missing scores and the synthetic source limit the briefing.
+
+> **Exercise 3.14.9 and complete solution:** [Open the Exercise notebook in Google Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) and find **Exercise 3.14.9**. Attempt the student section before scrolling to **Solution 3.14.9**.
+
+---
+
+## Exercise 3.14.10 — Investigate a claim about unresolved cases
+
+A service manager says that the service type with the largest number of received cases must also have the largest unresolved workload. The statement sounds reasonable, but it combines totals, differences and percentages as if they were the same measure. The raw file contains records where resolved cases exceed received cases and one record where received cases are negative. Those values can produce impossible unresolved counts or rates above one hundred percent. A row-level rate also answers a different question from a rate calculated from grouped totals. The service labels contain several variants that may fragment groups before any comparison is made. You are asked to test the manager's statement without silently correcting or deleting the suspicious records. Your answer must show the formulas, flag invalid inputs and explain which conclusion remains preliminary.
+
+### Your task
+
+1. Load and verify the raw dataset in a fresh block of code.
+2. Create `unresolved_cases` and a row-level `resolution_rate_pct`, using only rows with a positive denominator for the rate.
+3. Display records with negative received cases, negative unresolved cases or rates above 100%.
+4. Calculate service-type totals for received and resolved cases, then derive unresolved totals and an aggregate resolution rate for every raw service label.
+5. Compare the ranking suggested by received totals with the ranking suggested by unresolved totals.
+6. Explain why the raw comparison cannot yet settle the manager's claim.
+
+> **Exercise 3.14.10 and complete solution:** [Open the Exercise notebook in Google Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) and find **Exercise 3.14.10**. Attempt the student section before scrolling to **Solution 3.14.10**.
+
+---
+
+## Exercise 3.14.11 — Check whether service-channel counts agree
+
+A digital-inclusion group wants to know how much of the recorded service activity happened digitally rather than in person. The dataset contains `digital_cases`, `in_person_cases` and the wider `cases_received` total for every record. Someone proposes dividing digital cases by received cases immediately and presenting the result as digital uptake. Before doing that, the group must check whether the two channel counts actually add up to the stated total. A zero or negative denominator would also make a percentage meaningless or misleading. Differences across service types may reflect the composition of the table rather than the behaviour of individual residents. The file is synthetic and its raw category variants can split otherwise related records. Your task is to create an auditable channel comparison and state exactly what its denominator represents.
+
+### Your task
+
+1. Load the raw data, confirm the columns needed for the calculation and inspect a reproducible sample.
+2. Create `recorded_channel_total`, `channel_gap` and `digital_share_pct` for rows with positive received cases.
+3. Display every row where the channel total differs from `cases_received` or where received cases are not positive.
+4. Calculate digital and in-person totals by raw service type and derive a grouped digital share from those totals.
+5. Create a crosstab showing service type against whether digital cases exceed in-person cases.
+6. Write a cautious interpretation that names the unit of observation, denominator and at least two data limitations.
+
+> **Exercise 3.14.11 and complete solution:** [Open the Exercise notebook in Google Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) and find **Exercise 3.14.11**. Attempt the student section before scrolling to **Solution 3.14.11**.
+
+---
+
+## Exercise 3.14.12 — Build a first-response data-quality register
+
+A data steward has one hour to prepare a first-response note before meeting the person who supplied the CSV file. The steward must not clean the data because the meaning of several unusual values is still unknown. Instead, the note should identify completeness, uniqueness, consistency, validity and cross-field logic concerns. Missing feedback and missing satisfaction need to be counted separately because they affect different analyses. Exact duplicate rows are not the same as identifiers that appear on more than one non-identical row. Numeric-looking and date-like text must be tested safely without overwriting the original columns. Category variants should be listed so the data owner can confirm whether they represent the same places and services. Your final register must connect every detected issue to an affected-row count and a reason for follow-up.
+
+### Your task
+
+1. Load and verify the untouched raw CSV.
+2. Count missing values, exact duplicate rows and rows carrying repeated identifiers.
+3. List raw city and service labels with their frequencies.
+4. Safely test `resolution_days` as numeric and `report_month` as a date without replacing either raw column.
+5. Create masks for negative counts, out-of-range satisfaction and resolved cases greater than received cases.
+6. Assemble a compact issue register with issue name, affected-row count, detection rule and follow-up reason, then identify which issues need the data owner's decision.
+
+> **Exercise 3.14.12 and complete solution:** [Open the Exercise notebook in Google Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) and find **Exercise 3.14.12**. Attempt the student section before scrolling to **Solution 3.14.12**.
+
+---
+
+## Exercise 3.14.13 — Examine feedback about waiting and clarity
+
+A service-design workshop wants to discuss whether waiting and unclear information appear in the written feedback. The dataset contains short comments rather than interview transcripts, and three records have no stored feedback. Workshop participants first need to read a sample so that the coding rules are connected to actual language. A search for `wait` may miss phrases such as `took too long`, while a search for `clear` may also match a negated statement. The number of keyword matches is therefore a count produced by a rule, not a complete qualitative finding. The team also wants to compare matched comments with service type and satisfaction, but missing scores change the denominator. No association in this table can demonstrate that waiting or clarity caused a rating. Your task is to make the coding rules transparent, inspect their matches and report their limitations beside the results.
+
+### Your task
+
+1. Load the raw dataset and display a reproducible sample of non-missing feedback.
+2. Calculate character and word counts for the non-missing comments and summarise both measures.
+3. Create separate Boolean indicators for waiting/delay language and clarity/helpfulness language.
+4. Count the indicators, display all matched comments and manually identify at least one possible false positive or false negative.
+5. Compare each indicator with service type using crosstabs and with satisfaction using count, mean and median.
+6. State the number of matched comments and the smaller or equal number contributing a satisfaction score, then write a non-causal interpretation.
+
+> **Exercise 3.14.13 and complete solution:** [Open the Exercise notebook in Google Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) and find **Exercise 3.14.13**. Attempt the student section before scrolling to **Solution 3.14.13**.
+
+---
+
+## Exercise 3.14.14 — Test a strong management claim before repeating it
+
+A fictional management slide claims that Copenhagen Transport has the heaviest workload, the poorest satisfaction and the most waiting complaints in the dataset. It then says that long waits caused the low satisfaction scores. You have been asked to check the slide before it is shown in class. The claim combines an exact city-service subset, comparisons with other groups, a simple text rule and a causal conclusion. Raw category variants may exclude relevant records when exact labels are used. Missing and out-of-range satisfaction values may change which records contribute to an average. Keyword matches may describe an association but cannot establish why a score was given. Your review must separate what the code observes, what can be cautiously interpreted and what the dataset cannot support.
+
+### Your task
+
+1. Load and verify the raw file, then inspect city and service-type label frequencies.
+2. Select exact `Copenhagen` and `Transport` rows and report their row count, received-case total, mean and median satisfaction, and waiting-rule match count.
+3. Create a city-by-service summary so the claimed workload and satisfaction rankings can be compared with other exact-label groups.
+4. Check missing or out-of-range satisfaction, impossible case relationships and duplicates within the focal subset and in the complete dataset.
+5. Display the focal waiting-related comments and compare their satisfaction denominator with the number of text matches.
+6. Write three labelled statements: a direct observation, a cautious interpretation and an unsupported claim. End with a decision to retain, revise or remove the original slide statement.
+
+> **Exercise 3.14.14 and complete solution:** [Open the Exercise notebook in Google Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) and find **Exercise 3.14.14**. Attempt the student section before scrolling to **Solution 3.14.14**.
 
 ---
 

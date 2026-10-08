@@ -1,6 +1,6 @@
 # Tutorial notebook structure and saved-output record
 
-**Updated:** 29 September 2026
+**Updated:** 8 October 2026
 **Scope:** Current repository files. Counts below describe notebook cells and saved execution state; they do not claim that an unexecuted interactive or starter cell is defective.
 
 | Notebook | Coverage | Code cells | Cells with saved execution | Unexecuted or manual cells | Manual-input metadata |
@@ -17,7 +17,7 @@
 | [L04_Tutorial_2_15_Applied_Solutions.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Tutorial_2_15_Applied_Solutions.ipynb)) | 2.15 worked examples and solutions | 43 | 42 | 1 | 1 |
 | [L04_Python_Foundations_II_Self_Test_Answers.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_04/L04_Python_Foundations_II_Self_Test_Answers.ipynb)) | 2.8–2.15 cumulative self-test answers | 4 | 4 | 0 | 0 |
 | [L05_Tutorial_3_1_to_3_14_Examples.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb)) | 3.1–3.13 examples | 162 | 162 | 0 | 0 |
-| [L05_Tutorial_3_1_to_3_14_Exercises.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb)) | 3.1–3.13 exercises and solutions | 58 | 58 | 0 | 0 |
+| [L05_Tutorial_3_1_to_3_14_Exercises.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb)) | 3.1–3.14 exercises and solutions | 70 | 64 | 6 | 0 |
 | [L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb](https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb) ([Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb)) | 3.14 applied activities and models | 17 | 17 | 0 | 0 |
 
 ## Interpretation
