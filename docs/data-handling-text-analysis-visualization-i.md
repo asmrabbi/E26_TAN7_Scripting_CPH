@@ -158,7 +158,7 @@ Lecture 5 should have exactly **three canonical GitHub/Colab notebooks**.
 | Website label | Canonical file | What it contains | When to use it |
 |---|---|---|---|
 | **Tutorial Examples** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb` | Every runnable worked example from Tutorials 3.1–3.13, in website order, plus setup cells needed for the examples | During teaching and when reviewing explanations |
-| **Exercises** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb` | All 39 numbered exercises from Tutorials 3.1–3.14. Student tasks come first; full commented solutions appear in a clearly separated solutions section at the end | Attempt exercises before reading the solutions |
+| **Exercises** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb` | All 41 numbered exercises from Tutorials 3.1–3.14. Student tasks come first; full commented solutions appear in a clearly separated solutions section at the end | Attempt exercises before reading the solutions |
 | **Tutorial 3.14 Guided Examples** | `notebooks/lecture_05/L05_Tutorial_3_14_Guided_Examples.ipynb` | Examples 3.14.1–3.14.8, each presented as question, complete code and immediate explanation | Study before attempting Exercises 3.14.9–3.14.14 |
 
 Target Colab links follow this pattern:
@@ -306,7 +306,7 @@ The times are deliberately generous. Beginners should pause, predict outputs, re
 
 # How the examples and exercises are numbered
 
-Every tutorial uses one continuous sequence. Examples and exercises do not restart at 1. For example, Tutorial 3.5 contains Examples 3.5.1–3.5.20, followed by Exercises 3.5.21–3.5.23. The website and Colab notebooks use the same numbers, so a student can move between them without translating labels.
+Every tutorial uses one continuous sequence. Examples and exercises do not restart at 1. For example, Tutorial 3.5 contains Examples 3.5.1–3.5.20, followed by Exercises 3.5.21–3.5.24. The website and Colab notebooks use the same numbers, so a student can move between them without translating labels.
 
 ---
 
@@ -423,6 +423,18 @@ What does one row represent?
 **Suggested answer:** one student's attendance status for one lecture.
 
 It would be wrong to say that the table has three students merely because it has three rows. Student `S01` appears twice.
+
+
+
+#### Course CSV observation
+
+One row in the course CSV represents one service category in one city during one reporting month.
+
+| report_month | city | service_type | cases_received |
+|---|---|---|---:|
+| 2026-01-01 | Copenhagen | Housing | 130 |
+
+The row is a monthly service report. The value 130 counts cases within it. `cases_received` is the variable, and 130 is its value in this row. Several reports can describe one city. Therefore, 121 rows does not mean 121 citizens. This is synthetic teaching data.
 
 ### Example 3.1.3 — Variable versus value
 
@@ -700,6 +712,20 @@ Answer before coding:
 
 **Answer:** three columns, three data rows, and the `city` field is missing in row 3.
 
+
+
+#### A course CSV excerpt
+
+This excerpt contains three selected columns and the first two course records.
+
+```csv
+city,service_type,cases_received
+Copenhagen,Housing,130
+Copenhagen,Transport,124
+```
+
+Commas separate fields and the first line supplies the column names. Quotation marks keep a comma inside a feedback value in the same field. A blank field can mean missing information, while zero is a recorded numeric value.
+
 ### Example 3.2.3 — Detect a delimiter problem
 
 <details class="plain-language-task">
@@ -936,6 +962,35 @@ print(type(df_small[["city"]]))
 
 A `Series` is one-dimensional. A DataFrame is two-dimensional.
 
+
+
+#### Lecture demonstration
+
+Column names are strings. Their spelling and capital letters must match.
+
+```python
+city = df["city"]
+small_table = df[["city", "cases_received"]]
+print(type(city).__name__)
+print(type(small_table).__name__)
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Series
+DataFrame
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | One pair of brackets selects a Series. |
+| 2 | A list of names selects a DataFrame. |
+| 3 | Show the type of the single column. |
+| 4 | Show the type of the selected table. |
+
 ## The main course loading method: raw GitHub URL
 
 ### Example 3.3.6 — The main course loading method: raw GitHub URL
@@ -950,6 +1005,40 @@ df.head()
 ```
 
 This is convenient in Colab because the dataset can be loaded directly without manually uploading it every session.
+
+
+
+#### Lecture demonstration
+
+The raw address supplies CSV text. The GitHub preview is a webpage.
+
+```python
+import pandas as pd
+url = (
+    "https://raw.githubusercontent.com/asmrabbi/"
+    "E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv"
+)
+df = pd.read_csv(url)
+print(type(df).__name__)
+```
+
+**Expected output on the raw course CSV**
+
+```text
+DataFrame
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Make pandas available as pd. |
+| 2 | Begin the address of the raw file. |
+| 3 | The address starts here. |
+| 4 | Python joins these adjacent strings. |
+| 5 | Finish storing the address. |
+| 6 | Read the CSV and store the table in df. |
+| 7 | Show the kind of object we loaded. |
 
 ### What `pd.read_csv()` does
 
@@ -1443,6 +1532,34 @@ Incorrect statement:
 
 Why? Because the unit of observation is a service-category-city-month record, not a citizen.
 
+
+
+#### Lecture demonstration
+
+shape is an attribute. head() is a method that runs an operation.
+
+```python
+print(df.shape)
+print(len(df))
+print(df.columns[:4].tolist())
+```
+
+**Expected output on the raw course CSV**
+
+```text
+(121, 14)
+121
+['record_id', 'report_month', 'city', 'service_type']
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Show the number of rows, then columns. |
+| 2 | Count the rows. |
+| 3 | Show the first four column names. |
+
 ### Example 3.4.13 — Compare `head()` and `sample()`
 
 <details class="plain-language-task">
@@ -1678,6 +1795,33 @@ preview.head()
 
 Separating the list from the selection can make longer code easier to read.
 
+
+
+#### Lecture demonstration
+
+The labels 0, 1 and 2 are the DataFrame index.
+
+```python
+preview = df[["city", "service_type", "cases_received"]]
+display(preview.head(3))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+         city service_type  cases_received
+0  Copenhagen      Housing             130
+1  Copenhagen    Transport             124
+2  Copenhagen   Employment             105
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Choose three columns for a compact table. |
+| 2 | Show its first three rows. |
+
 ## Selecting by label with `.loc[]`
 
 `.loc[]` is primarily **label-based**.
@@ -1697,6 +1841,33 @@ You can select rows and columns together:
 ```python
 df.loc[0:4, ["city", "service_type", "cases_received"]]
 ```
+
+
+
+#### Lecture demonstration
+
+.loc includes the ending label, so 0:2 includes row 2.
+
+```python
+columns = ["city", "cases_received"]
+display(df.loc[0:2, columns])
+```
+
+**Expected output on the raw course CSV**
+
+```text
+         city  cases_received
+0  Copenhagen             130
+1  Copenhagen             124
+2  Copenhagen             105
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Choose the columns we want. |
+| 2 | Show row labels 0 through 2 and those columns. |
 
 ### Important slicing detail
 
@@ -1739,6 +1910,31 @@ This means:
 - first five row positions;
 - first four column positions.
 
+
+
+#### Lecture demonstration
+
+.iloc stops before 3. .loc includes label 2. These selections happen to match here.
+
+```python
+print(df.loc[0:2, "city"].tolist())
+print(df.iloc[0:3, 2].tolist())
+```
+
+**Expected output on the raw course CSV**
+
+```text
+['Copenhagen', 'Copenhagen', 'Copenhagen']
+['Copenhagen', 'Copenhagen', 'Copenhagen']
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Select row labels 0 through 2 and the city column. |
+| 2 | Select positions 0, 1, 2 and column position 2. |
+
 ### `.loc[]` versus `.iloc[]`
 
 | Tool | Think in terms of | Example |
@@ -1772,6 +1968,37 @@ Then use that Boolean Series to keep the matching rows:
 high_case_rows = df[df["cases_received"] > 100]
 high_case_rows
 ```
+
+
+
+#### Lecture demonstration
+
+Each True marks a row that passes the condition.
+
+```python
+high = df["cases_received"] > 100
+print(high.head(7))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+0     True
+1     True
+2     True
+3     True
+4     True
+5     True
+6    False
+Name: cases_received, dtype: bool
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Compare every stored case count with 100. |
+| 2 | Show the first seven True or False results. |
 
 ### Example 3.5.10 — Filter by category
 
@@ -1820,6 +2047,41 @@ result = df[
 
 result
 ```
+
+
+
+#### Lecture demonstration
+
+Use & between pandas conditions, with parentheses around each comparison.
+
+```python
+mask = (
+    (df["service_type"] == "Transport") &
+    (df["cases_received"] > 90)
+)
+columns = ["city", "cases_received"]
+display(df.loc[mask, columns].head(3))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+            city  cases_received
+1     Copenhagen             124
+6    copenhagen               95
+21    Copenhagen             126
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Begin a rule across the rows. |
+| 2 | The exact label must be Transport, and... |
+| 3 | ...the stored case count must exceed 90. |
+| 4 | Finish the combined rule. |
+| 5 | Choose the columns to show. |
+| 6 | Preview the matching records. |
 
 ### Why the parentheses matter
 
@@ -1906,6 +2168,38 @@ The structure is:
 ```text
 df.loc[row_condition, columns_to_return]
 ```
+
+
+
+#### Lecture demonstration
+
+head(3) limits the display. It does not change the 62 matching rows.
+
+```python
+high = df["cases_received"] > 100
+selected = df.loc[high, ["city", "cases_received"]]
+print("Matching rows:", len(selected))
+display(selected.head(3))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Matching rows: 62
+         city  cases_received
+0  Copenhagen             130
+1  Copenhagen             124
+2  Copenhagen             105
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Create the True or False rule. |
+| 2 | Keep matching rows and two columns. |
+| 3 | Count all matches, before the preview. |
+| 4 | Display the first three matches. |
 
 ## Filtering is an analytical decision
 
@@ -2041,6 +2335,67 @@ display(result)
 
 </details>
 
+## Exercise 3.5.24 — Housing reports for review
+
+You are helping a municipal research team prepare a first review of Housing service reports. The team wants to inspect months with more than 120 received cases. Use the raw teaching CSV and keep the original table available.
+
+1. Select reports whose service_type is exactly "Housing" and whose cases_received is greater than 120.
+2. Show city and cases_received for the first three matching reports.
+3. Print the total number of matching reports before limiting the display.
+4. Write one sentence explaining what that number counts and one limitation of the selection.
+
+Predict the output, run your code, then explain which rows the rule keeps.
+
+**Learning outcome:** Implement an explainable selection or quality rule, verify the output, and state the unit, denominator and limits of the finding. This develops the module objectives of writing simple scripts, handling data and critically assessing data quality.
+
+[Open the Exercises and Solutions notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb)
+
+<details>
+<summary>Suggested solution</summary>
+
+
+
+#### Housing selection
+
+10 matching rows means 10 monthly service reports.
+
+```python
+mask = (df["service_type"] == "Housing") & (
+    df["cases_received"] > 120
+)
+selected = df.loc[mask, ["city", "cases_received"]]
+print("Matching rows:", len(selected))
+display(selected.head(3))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Matching rows: 10
+          city  cases_received
+0   Copenhagen             130
+20  Copenhagen             157
+25      Aarhus             136
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Require Housing and a second condition. |
+| 2 | Also require more than 120 received cases. |
+| 3 | Finish the rule. |
+| 4 | Keep matching rows and two columns. |
+| 5 | Count all matching reports. |
+| 6 | Show only the first three. |
+
+
+**Explanation of the finding**
+
+Ten matching rows means ten monthly service reports. This selection uses the stored Housing label in synthetic, unvalidated teaching data.
+
+</details>
+
 ## Tutorial 3.5 summary
 
 You should now be able to use:
@@ -2168,6 +2523,32 @@ A robust interpretation might say:
 > `cases_received` and `cases_resolved` are technically numeric and conceptually counts; `record_id` is technically integer-like but conceptually an identifier; `resolution_days` is conceptually numeric but its raw stored values include non-numeric text; `report_month` is conceptually date-like but may initially be loaded as text.
 
 That is much more informative than simply copying the dtype list.
+
+
+
+#### Lecture demonstration
+
+resolution_days includes "unknown". A numeric intention needs valid numeric values.
+
+```python
+columns = ["cases_received", "resolution_days"]
+print(df[columns].dtypes)
+```
+
+**Expected output on the raw course CSV**
+
+```text
+cases_received      int64
+resolution_days    object
+dtype: object
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Name the two columns to inspect. |
+| 2 | Show how pandas currently stores each one. |
 
 ## Why `resolution_days` matters
 
@@ -2559,6 +2940,35 @@ min       -4.000000
 max      185.000000
 ```
 
+
+
+#### Lecture demonstration
+
+50% is the median. The negative minimum is a reason to inspect the source.
+
+```python
+display(df["cases_received"].describe().round(2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+count    121.00
+mean     104.57
+std       27.26
+min       -4.00
+25%       86.00
+50%      102.00
+75%      122.00
+max      185.00
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Calculate and display a standard descriptive summary. |
+
 ### How to read the output
 
 - `count`: non-missing observations included;
@@ -2720,6 +3130,36 @@ But the teaching schema says the expected range is 1–5, and the raw data conta
 
 This distinction is central to the course.
 
+
+
+#### Lecture demonstration
+
+Four scores are missing. Two other scores fall outside the expected range 1 to 5.
+
+```python
+scores = df["satisfaction_score"]
+print("Rows:", len(df))
+print("Recorded scores:", scores.count())
+print("Raw mean:", round(scores.mean(), 2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Rows: 121
+Recorded scores: 117
+Raw mean: 4.11
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Select the satisfaction scores. |
+| 2 | Count all rows in the table. |
+| 3 | Count only non-missing scores. |
+| 4 | Average the available stored scores. |
+
 ## Exercise 3.7.15 — Produce a numeric summary
 
 For `cases_resolved`, calculate:
@@ -2775,6 +3215,43 @@ Scores included: 117
 The output is still preliminary because the raw data contains an out-of-range score.
 
 </details>
+
+## Example 3.7.18 — A numerical summary
+
+A researcher wants a first summary of the received-case counts. Calculate the stored total, average, middle value and minimum. Keep the result preliminary while the negative count and duplicate are unresolved.
+
+
+
+#### Lecture demonstration
+
+The minimum is -4. These raw summaries still need investigation.
+
+```python
+cases = df["cases_received"]
+print("Total:", cases.sum())
+print("Mean:", round(cases.mean(), 2))
+print("Median:", cases.median())
+print("Minimum:", cases.min())
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Total: 12653
+Mean: 104.57
+Median: 102.0
+Minimum: -4
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Select the received-case counts. |
+| 2 | Add the stored counts across all rows. |
+| 3 | Calculate the arithmetic average. |
+| 4 | Find the middle value after ordering. |
+| 5 | Find the smallest stored count. |
 
 ## Tutorial 3.7 summary
 
@@ -2864,6 +3341,35 @@ For example, if `cases_resolved` is greater than `cases_received`, `unresolved_c
 
 The formula is behaving correctly. The relationship between the source values may be questionable.
 
+
+
+#### Lecture demonstration
+
+For row 0, 130 - 116 = 14. The original source columns stay available.
+
+```python
+df["case_gap"] = df["cases_received"] - df["cases_resolved"]
+columns = ["cases_received", "cases_resolved", "case_gap"]
+display(df[columns].head(3))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+   cases_received  cases_resolved  case_gap
+0             130             116        14
+1             124             110        14
+2             105              93        12
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Subtract resolved cases from received cases in each row. |
+| 2 | Keep the source values beside the new result. |
+| 3 | Show the first three calculations. |
+
 ## Create a row-level resolution rate
 
 A percentage can be calculated as:
@@ -2920,6 +3426,38 @@ The important question is not merely “How do I suppress an unusual output?” 
 
 > **What should the rate mean for invalid or zero received counts, and what does the data documentation say?**
 
+
+
+#### Lecture demonstration
+
+108.75% follows from the stored values. The reporting rule needs checking.
+
+```python
+df["resolution_rate"] = (
+    df["cases_resolved"] / df["cases_received"] * 100
+)
+columns = ["cases_received", "cases_resolved", "resolution_rate"]
+display(df.loc[[0, 11], columns].round(2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+    cases_received  cases_resolved  resolution_rate
+0              130             116            89.23
+11              80              87           108.75
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Name the new percentage column. |
+| 2 | Calculate resolved / received × 100. |
+| 3 | Finish the calculation for every row. |
+| 4 | Choose the inputs and the new measure. |
+| 5 | Show two reports, rounded for display. |
+
 ## Do not confuse a row-level average rate with an overall rate
 
 There are at least two different calculations someone might call “average resolution rate”.
@@ -2969,6 +3507,35 @@ This is a crucial analytical lesson:
 > **Two reasonable-looking formulas can answer different questions. Always define the measure before reporting it.**
 
 The raw dataset also contains quality problems, so neither result should yet be treated as final evidence.
+
+
+
+#### Lecture demonstration
+
+Different denominators answer different questions. Both still use unvalidated raw values.
+
+```python
+row_average = df["resolution_rate"].mean()
+overall = df["cases_resolved"].sum() / df["cases_received"].sum() * 100
+print("Average of row rates:", round(row_average, 2))
+print("Ratio of totals:", round(overall, 2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Average of row rates: 93.66
+Ratio of totals: 94.51
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Give every report percentage equal weight. |
+| 2 | Divide the total resolved count by the total received count. |
+| 3 | Display the average report percentage. |
+| 4 | Display the percentage based on all stored counts. |
 
 ## Percentage of rows with missing feedback
 
@@ -3025,6 +3592,35 @@ Housing percentage: 17.36
 This means 17.36% of **rows in this raw teaching table** are labelled exactly `Housing`. It does not mean that 17.36% of citizens use Housing services.
 
 The unit of observation determines the meaning of the percentage.
+
+
+
+#### Lecture demonstration
+
+17.36% of raw report rows carry the exact label Housing.
+
+```python
+housing_rows = (df["service_type"] == "Housing").sum()
+housing_pct = housing_rows / len(df) * 100
+print("Housing rows:", housing_rows)
+print("Percentage of rows:", round(housing_pct, 2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Housing rows: 21
+Percentage of rows: 17.36
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Count True results for the exact Housing label. |
+| 2 | Divide by all 121 rows and multiply by 100. |
+| 3 | Display the numerator. |
+| 4 | Display the percentage, rounded for reading. |
 
 ## Keep source values and derived values separate
 
@@ -3244,6 +3840,39 @@ It does not automatically answer:
 
 Again, the unit of observation matters.
 
+
+
+#### Lecture demonstration
+
+"Transport" and "Transport " count as separate labels.
+
+```python
+counts = df["service_type"].value_counts()
+display(counts)
+```
+
+**Expected output on the raw course CSV**
+
+```text
+service_type
+Transport              24
+Employment             24
+Waste                  24
+Citizen Services       24
+Housing                21
+Transport               1
+Citizen services        1
+WASTE                   1
+Employment Services     1
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Count rows for each exact service label. |
+| 2 | Display the frequency table. |
+
 ## Percentages with `normalize=True`
 
 ### Example 3.9.4 — Percentages with normalize=True
@@ -3338,6 +3967,39 @@ Waste                   88.96
 ```
 
 These are **preliminary** because the Waste group includes a negative raw value and inconsistent service labels form separate groups.
+
+
+
+#### Lecture demonstration
+
+Waste includes the -4 count. Inconsistent labels split intended groups.
+
+```python
+means = df.groupby("service_type")["cases_received"].mean()
+display(means.round(2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+service_type
+Citizen Services       129.92
+Citizen services        99.00
+Employment              88.04
+Employment Services     97.00
+Housing                115.86
+Transport              102.54
+Transport              107.00
+WASTE                   90.00
+Waste                   88.96
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Average received cases for each service label. |
+| 2 | Show each mean, rounded for reading. |
 
 ### Conceptual model of `groupby()`
 
@@ -3658,6 +4320,36 @@ Because `True` is treated like 1 and `False` like 0, the mean of the Boolean mis
 
 The raw missing percentages are approximately `2.48%` for `feedback` (3 of 121 rows) and `3.31%` for `satisfaction_score` (4 of 121 rows).
 
+
+
+#### Lecture demonstration
+
+Missing information needs an explanation before anyone replaces it.
+
+```python
+columns = ["satisfaction_score", "feedback"]
+display(df[columns].isna().sum())
+missing_pct = df["satisfaction_score"].isna().mean() * 100
+print("Missing scores (%):", round(missing_pct, 2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+satisfaction_score    4
+feedback              3
+Missing scores (%): 3.31
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Choose two columns to check. |
+| 2 | Mark missing cells and count them in each column. |
+| 3 | The mean of True/False values gives the missing fraction. |
+| 4 | Convert that fraction to a readable percentage. |
+
 ## Inspect the rows with missing values
 
 ### Missing satisfaction score
@@ -3751,6 +4443,31 @@ A repeated identifier may indicate:
 Therefore:
 
 > **Repeated identifier ≠ automatically delete the row.**
+
+
+
+#### Lecture demonstration
+
+The same ID can appear in different rows. Check the records before deleting anything.
+
+```python
+print("Extra exact copies:", df.duplicated().sum())
+print("Repeated IDs:", df["record_id"].duplicated().sum())
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Extra exact copies: 1
+Repeated IDs: 2
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Count exact copies beyond their first occurrence. |
+| 2 | Count repeated identifiers beyond their first occurrence. |
 
 ## Category consistency
 
@@ -3847,6 +4564,35 @@ This may be logically impossible under one definition of the variables, but ther
 This is why documentation matters.
 
 Do not infer an error solely from intuition if the variable definitions are ambiguous.
+
+
+
+#### Lecture demonstration
+
+A flag identifies records to investigate. It does not explain their cause.
+
+```python
+problem = df["cases_resolved"] > df["cases_received"]
+columns = ["record_id", "cases_received", "cases_resolved"]
+display(df.loc[problem, columns])
+```
+
+**Expected output on the raw course CSV**
+
+```text
+      record_id  cases_received  cases_resolved
+11  SR2026-0012              80              87
+53  SR2026-0054              -4               0
+89  SR2026-0090             159             162
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Find rows where resolved exceeds received. |
+| 2 | Keep the ID and both values for inspection. |
+| 3 | Show the rows that pass this problem rule. |
 
 ## Detect a numeric-looking column containing text
 
@@ -4064,6 +4810,95 @@ For each item below, classify it mainly as completeness, uniqueness, validity, c
 
 </details>
 
+## Exercise 3.10.21 — checking a satisfaction claim
+
+A research team is drafting a paragraph about satisfaction in the same dataset. A colleague has quoted the average, but the teaching dictionary allows scores from 1 to 5. Before using that number, the team needs to check for missing and out-of-range scores.
+
+1. Count missing satisfaction scores.
+2. Find scores below 1 or above 5. Display record_id and the stored score for those reports.
+3. Print the raw mean and the number of recorded scores contributing to it.
+4. Write a cautious interpretation stating the result, the quality concerns and what should happen next.
+
+Keep the stored values. Detecting a concern does not determine its correction.
+
+**Learning outcome:** Implement an explainable selection or quality rule, verify the output, and state the unit, denominator and limits of the finding. This develops the module objectives of writing simple scripts, handling data and critically assessing data quality.
+
+[Open the Exercises and Solutions notebook in Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb)
+
+<details>
+<summary>Suggested solution</summary>
+
+
+
+#### the quality checks
+
+Four scores are missing. Two recorded scores fall outside 1 to 5.
+
+```python
+scores = df["satisfaction_score"]
+outside = (scores < 1) | (scores > 5)
+print("Missing scores:", scores.isna().sum())
+columns = ["record_id", "satisfaction_score"]
+display(df.loc[outside, columns])
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Missing scores: 4
+      record_id  satisfaction_score
+38  SR2026-0039                 6.2
+72  SR2026-0073                 0.0
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Select the recorded score column. |
+| 2 | Flag scores below 1 or above 5. |
+| 3 | Count recognised missing scores separately. |
+| 4 | Choose the identifiers and stored scores. |
+| 5 | Display the out-of-range records. |
+
+
+
+#### a cautious finding
+
+Source confirmation and documented decisions should come before recalculation.
+
+```python
+scores = df["satisfaction_score"]
+print("Recorded scores:", scores.count())
+print("Raw mean:", round(scores.mean(), 2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Recorded scores: 117
+Raw mean: 4.11
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Select the source scores again. |
+| 2 | Count the values that contribute to the mean. |
+| 3 | Calculate and display the raw mean. |
+
+
+**Model interpretation**
+
+The raw mean is 4.11 across 117 recorded scores. Four scores are missing and two fall outside the expected range, so the average needs review.
+
+**Explanation of the finding**
+
+The raw mean uses 117 recorded scores and includes the two out-of-range values. Investigate the source and document justified decisions before recalculating.
+
+</details>
+
 ## Tutorial 3.10 summary
 
 A first data-quality audit should check more than missing values. You should now be able to inspect:
@@ -4116,6 +4951,34 @@ display(
 ```
 
 The code helps you select comments. The interpretation still requires reading them.
+
+
+
+#### Lecture demonstration
+
+A text column carries context that a numerical summary can miss.
+
+```python
+feedback = df["feedback"].dropna()
+print("Available comments:", len(feedback))
+display(feedback.head(2))
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Available comments: 118
+0    The guidance was clear, but the supporting-doc...
+1    Several users asked for clearer information ab...
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Keep the recorded feedback values. |
+| 2 | Count the available comments. |
+| 3 | Read the first two before defining a search rule. |
 
 ## Count available text responses
 
@@ -4218,7 +5081,7 @@ display(
 )
 ```
 
-The four comments include different contexts. Some are positive overall; some combine helpfulness with a complaint about waiting.
+The matching comments include different contexts. Some are positive overall; some combine helpfulness with a complaint about waiting.
 
 ## Search for alternatives with a simple pattern
 
@@ -4258,7 +5121,35 @@ display(
 )
 ```
 
-All three matching comments are Housing records in the teaching dataset. That is an observation worth noting, but the sample is tiny and synthetic.
+The raw course CSV has 11 matches to this pattern across several service labels. A match records the presence of the search wording. Read each full comment before interpreting it as a waiting or delay experience.
+
+
+
+#### Lecture demonstration
+
+The output counts matches to this pattern. Read the matching comments.
+
+```python
+mentions_wait = df["feedback"].str.contains(
+    "wait|long", case=False, na=False, regex=True
+)
+print("Matching comments:", mentions_wait.sum())
+```
+
+**Expected output on the raw course CSV**
+
+```text
+Matching comments: 11
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Search each recorded comment for a pattern. |
+| 2 | Match wait OR long, ignore capitals, treat missing text as False. |
+| 3 | Finish the True/False indicator. |
+| 4 | Count the comments that match the rule. |
 
 ## Search for clarity-related wording
 
@@ -4943,6 +5834,41 @@ display(both[["feedback"]])
 
 Explain why allowing several codes can be more faithful to mixed comments than assigning only one category.
 
+## Example 3.12.12 — Reading matched and unmatched feedback
+
+A keyword rule can count words successfully while representing an experience poorly. Inspect these two original course comments.
+
+- **SR2026-0031:** “The wait was not long, and the final response was clear and helpful.” It matches `wait|long`, although the speaker describes a short wait. It could be a false positive if the intended code means a long delay.
+- **SR2026-0085:** “The process took forever, although the staff member was helpful.” It does not match `wait|long`, although the wording may describe a delay. It could be a false negative for the same intended code.
+
+Eleven matches means eleven comments matched the explicit search rule. Context determines whether that rule represents the intended experience.
+
+
+
+#### Inspection code
+
+Compare a comment that matches wait OR long with a comment the rule misses. Read the full wording before interpreting a match as a delay.
+
+```python
+columns = ["record_id", "feedback"]
+display(df.loc[df["record_id"].isin(["SR2026-0031", "SR2026-0085"]), columns])
+```
+
+**Expected output on the raw course CSV**
+
+```text
+      record_id                                                              feedback
+30  SR2026-0031  The wait was not long, and the final response was clear and helpful.
+84  SR2026-0085      The process took forever, although the staff member was helpful.
+```
+
+**What each line does**
+
+| Line | Explanation |
+|---:|---|
+| 1 | Choose the identifier and original feedback columns. |
+| 2 | Display the two named records so you can compare the search rule with their meaning. |
+
 ## Tutorial 3.12 summary
 
 You should now understand the pathway:
@@ -5268,6 +6194,18 @@ Notice that the statement includes:
 - denominator;
 - unit meaning;
 - limitation.
+
+
+
+#### A received-case finding
+
+**Observed:** The raw table contains 121 rows. Received-case counts sum to 12,653.
+
+**Calculated:** We loaded the CSV and added the stored `cases_received` values.
+
+**Limited by:** A negative count and an exact duplicate still need investigation.
+
+**Next step:** Preserve the raw data, justify cleaning decisions, then rerun the summaries. The statement describes the synthetic teaching table and does not establish real service performance.
 
 ## Exercise 3.13.3 — Create a data dictionary
 
