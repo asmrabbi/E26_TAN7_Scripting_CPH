@@ -894,6 +894,17 @@ import pandas as pd
 print(pd.__version__)
 ```
 
+### Why is `__version__` written with double underscores?
+
+`pd` is the pandas module and the dot asks for something that belongs to that module. `__version__` is a special attribute maintained by pandas. It stores the version label for the installed pandas package, so `pd.__version__` may return text such as `"3.0.5"`.
+
+The two underscores before and after `version` are part of the attribute's exact name. Python programmers often call this style a **dunder** name, meaning “double underscore”. Such names are commonly reserved for information or behaviour defined by Python or by a library. In this example we only read the attribute; we do not change it.
+
+There are no parentheses after `__version__` because it is an **attribute containing a value**, not a function that must be called. Compare:
+
+- `pd.__version__` reads a stored version label;
+- `pd.read_csv(...)` calls a function and therefore uses parentheses.
+
 **Expected output**
 
 A pandas version number, for example:
@@ -975,6 +986,18 @@ print(type(city).__name__)
 print(type(small_table).__name__)
 ```
 
+### Why add `.__name__` after `type(...)`?
+
+`type(city)` returns the class object that describes what kind of Python object `city` is. Printing that class object directly gives a technical result such as `<class 'pandas.core.series.Series'>`. Adding `.__name__` asks the class object for only its short name, so the output becomes the easier-to-read word `Series`.
+
+Read `type(city).__name__` from left to right:
+
+1. `type(city)` finds the class of `city`;
+2. the dot accesses information stored on that class;
+3. `__name__` returns the class's short name.
+
+The paired underscores are part of Python's special attribute name and must be typed exactly. There are no parentheses after `__name__` because the code is reading an attribute rather than calling a function.
+
 **Expected output on the raw course CSV**
 
 ```text
@@ -1021,6 +1044,8 @@ url = (
 df = pd.read_csv(url)
 print(type(df).__name__)
 ```
+
+Here `type(df)` identifies the object's class, while `.__name__` keeps only the short class name for display. Without `.__name__`, Python would print a longer technical representation such as `<class 'pandas.core.frame.DataFrame'>`. The double underscores belong to the special attribute's exact name, and there are no final parentheses because `__name__` is a stored attribute rather than a function call.
 
 **Expected output on the raw course CSV**
 
