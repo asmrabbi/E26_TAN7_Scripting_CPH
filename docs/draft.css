@@ -45,5 +45,7 @@
 .visual-brief { margin: 18px 0; padding: 16px 18px; color: #3f5962; background: #edf5f7; border-left: 4px solid #4d8898; border-radius: 8px; line-height: 1.55; }
 .visual-brief strong { display: block; margin-bottom: 5px; color: #245768; }
 .python-chapter h3[id^="item-"], .python-chapter h4[id^="item-"] { scroll-margin-top: 90px; }
+.python-chapter [data-lecture-item] { scroll-margin-top: 90px; }
+.python-chapter h2.linked-target, .python-chapter h3.linked-target { color: var(--aqua-dark); }
 @media(max-width:760px) { .draft-banner { font-size: 10px; padding: 7px 10px; } .draft-banner a { margin-left: 6px; } .hero-actions { flex-wrap: wrap; } .draft-resources { align-items: flex-start; } .study-plan-panel, .study-guide-grid { grid-template-columns: 1fr; } .study-guide { padding: 21px 19px; } }
 @media print { .draft-banner { display: block; } .sidebar, .topbar, .next-row, .draft-resources, .md-copy-button { display: none; } .shell { display: block; } .page { padding: 12px; } .python-chapter pre { white-space: pre-wrap; } }

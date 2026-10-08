@@ -1,0 +1,3618 @@
+{
+  "3.1.1": {
+    "kind": "Example",
+    "title": "Why move beyond individual variables?",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-1-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.1/example-3.1.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "city = \"Copenhagen\"\nservice_type = \"Housing\"\ncases_received = 120\ncases_resolved = 112",
+        "cellId": "l05-example-3-1-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.1.2": {
+    "kind": "Example",
+    "title": "Identify the unit of observation",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-1-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.1/example-3.1.2",
+    "slides": [
+      6
+    ],
+    "blocks": []
+  },
+  "3.1.3": {
+    "kind": "Example",
+    "title": "Variable versus value",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-1-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.1/example-3.1.3",
+    "slides": [],
+    "blocks": []
+  },
+  "3.1.4": {
+    "kind": "Example",
+    "title": "A category is a modelling decision",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-1-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.1/example-3.1.4",
+    "slides": [],
+    "blocks": []
+  },
+  "3.1.5": {
+    "kind": "Exercise",
+    "title": "Describe a dataset before coding",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-1-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.1/exercise-3.1.5",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-1-5"
+  },
+  "3.2.1": {
+    "kind": "Example",
+    "title": "Delimiters are not always commas",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-2-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.2/example-3.2.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "pd.read_csv(\"file.csv\", sep=\";\")",
+        "cellId": "l05-example-3-2-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.2.2": {
+    "kind": "Example",
+    "title": "Read a CSV mentally",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-2-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.2/example-3.2.2",
+    "slides": [
+      7
+    ],
+    "blocks": []
+  },
+  "3.2.3": {
+    "kind": "Example",
+    "title": "Detect a delimiter problem",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-2-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.2/example-3.2.3",
+    "slides": [],
+    "blocks": []
+  },
+  "3.2.4": {
+    "kind": "Exercise",
+    "title": "Find the structural problem",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-2-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.2/exercise-3.2.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "exercise",
+        "code": "df = pd.read_csv(\"scores.csv\")",
+        "cellId": "l05-exercise-3-2-4",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": true
+      }
+    ],
+    "solutionCellId": "l05-solution-3-2-4"
+  },
+  "3.2.5": {
+    "kind": "Exercise",
+    "title": "Missing does not mean zero",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-2-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.2/exercise-3.2.5",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-2-5"
+  },
+  "3.3.1": {
+    "kind": "Example",
+    "title": "Import pandas",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "import pandas as pd",
+        "cellId": "l05-example-3-3-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.3.2": {
+    "kind": "Example",
+    "title": "Line-by-line explanation",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "pd.read_csv(...)",
+        "cellId": "l05-example-3-3-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      },
+      {
+        "role": "example",
+        "code": "pandas.read_csv(...)",
+        "cellId": "l05-example-3-3-2-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.3.3": {
+    "kind": "Example",
+    "title": "Confirm pandas is available",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.3",
+    "slides": [
+      13
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "import pandas as pd\n\nprint(pd.__version__)",
+        "cellId": "l05-example-3-3-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.3.4": {
+    "kind": "Example",
+    "title": "What is a DataFrame?",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "import pandas as pd\n\ndata = {\n    \"city\": [\"Copenhagen\", \"Aalborg\"],\n    \"cases_received\": [120, 92]\n}\n\ndf_small = pd.DataFrame(data)\ndf_small",
+        "cellId": "l05-example-3-3-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.3.5": {
+    "kind": "Example",
+    "title": "DataFrame versus Series",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.5",
+    "slides": [
+      13,
+      18
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "city = df[\"city\"]\nsmall_table = df[[\"city\", \"cases_received\"]]\nprint(type(city).__name__)\nprint(type(small_table).__name__)",
+        "cellId": "l05-example-3-3-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(type(df_small))\nprint(type(df_small[\"city\"]))\nprint(type(df_small[[\"city\"]]))",
+        "cellId": "l05-example-3-3-5-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.3.6": {
+    "kind": "Example",
+    "title": "The main course loading method: raw GitHub URL",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.6",
+    "slides": [
+      12,
+      13
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "import pandas as pd\nurl = (\n    \"https://raw.githubusercontent.com/asmrabbi/\"\n    \"E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"\n)\ndf = pd.read_csv(url)\nprint(type(df).__name__)",
+        "cellId": "l05-example-3-3-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "import pandas as pd\n\nurl = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"\ndf = pd.read_csv(url)\n\ndf.head()",
+        "cellId": "l05-example-3-3-6-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(type(df))\nprint(type(df).__name__)",
+        "cellId": "l05-example-3-3-6-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.3.7": {
+    "kind": "Example",
+    "title": "Load from a local path",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df = pd.read_csv(\"data/E26_TAN7_service_experience_raw.csv\")",
+        "cellId": "l05-example-3-3-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.3.8": {
+    "kind": "Example",
+    "title": "Uploading a CSV in Google Colab",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.8",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df = pd.read_csv(\"E26_TAN7_service_experience_raw.csv\")",
+        "cellId": "l05-example-3-3-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.3.9": {
+    "kind": "Example",
+    "title": "Upload through Python",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "from google.colab import files\n\nuploaded = files.upload()",
+        "cellId": "l05-example-3-3-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      },
+      {
+        "role": "example",
+        "code": "df = pd.read_csv(\"E26_TAN7_service_experience_raw.csv\")",
+        "cellId": "l05-example-3-3-9-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.3.10": {
+    "kind": "Example",
+    "title": "Wrong delimiter",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df = pd.read_csv(\"file.csv\", sep=\";\")",
+        "cellId": "l05-example-3-3-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.3.11": {
+    "kind": "Example",
+    "title": "Encoding error",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df = pd.read_csv(\"file.csv\", encoding=\"utf-8\")",
+        "cellId": "l05-example-3-3-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.3.12": {
+    "kind": "Example",
+    "title": "Methods versus attributes",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.12",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.head()",
+        "cellId": "l05-example-3-3-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df.shape",
+        "cellId": "l05-example-3-3-12-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(len(df))",
+        "cellId": "l05-example-3-3-12-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.3.13": {
+    "kind": "Example",
+    "title": "Broken code",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-3-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/example-3.3.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "import pandas as pd\n\ndf = pd.read_csv(\"E26_TAN7_service_experiences_raw.csv\")",
+        "cellId": "l05-example-3-3-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.3.14": {
+    "kind": "Exercise",
+    "title": "Load and verify",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-3-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/exercise-3.3.14",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "import pandas as pd\n\nurl = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"\ndf = pd.read_csv(url)\n\ndisplay(df.head())\nprint(type(df))",
+        "cellId": "l05-solution-3-3-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-3-14"
+  },
+  "3.3.15": {
+    "kind": "Exercise",
+    "title": "Explain the file/DataFrame distinction",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-3-15",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.3/exercise-3.3.15",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-3-15"
+  },
+  "3.4.1": {
+    "kind": "Example",
+    "title": "Start from a fresh load",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "import pandas as pd\n\nurl = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"\ndf = pd.read_csv(url)",
+        "cellId": "l05-example-3-4-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.2": {
+    "kind": "Example",
+    "title": "head() — inspect the first rows",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.head()",
+        "cellId": "l05-example-3-4-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df.head(10)",
+        "cellId": "l05-example-3-4-2-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.3": {
+    "kind": "Example",
+    "title": "tail() — inspect the final rows",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.tail()",
+        "cellId": "l05-example-3-4-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.4": {
+    "kind": "Example",
+    "title": "sample() — inspect rows from different positions",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.sample(5, random_state=42)",
+        "cellId": "l05-example-3-4-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.5": {
+    "kind": "Example",
+    "title": "shape — how many rows and columns?",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.shape",
+        "cellId": "l05-example-3-4-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "rows, columns = df.shape\n\nprint(\"Rows:\", rows)\nprint(\"Columns:\", columns)",
+        "cellId": "l05-example-3-4-5-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.6": {
+    "kind": "Example",
+    "title": "len(df) — another way to count rows",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.6",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "len(df)",
+        "cellId": "l05-example-3-4-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.7": {
+    "kind": "Example",
+    "title": "columns — inspect column names",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.columns",
+        "cellId": "l05-example-3-4-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(df.columns.tolist())",
+        "cellId": "l05-example-3-4-7-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.8": {
+    "kind": "Example",
+    "title": "index — inspect row labels",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.8",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.index",
+        "cellId": "l05-example-3-4-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.9": {
+    "kind": "Example",
+    "title": "dtypes — how pandas currently represents each column",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.dtypes",
+        "cellId": "l05-example-3-4-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.10": {
+    "kind": "Example",
+    "title": "info() — compact structural inspection",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.info()",
+        "cellId": "l05-example-3-4-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.11": {
+    "kind": "Example",
+    "title": "A repeatable first-inspection routine",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"Shape:\", df.shape)\nprint(\"\\nColumns:\")\nprint(df.columns.tolist())\n\nprint(\"\\nFirst rows:\")\ndisplay(df.head())\n\nprint(\"\\nData types:\")\nprint(df.dtypes)\n\nprint(\"\\nInfo:\")\ndf.info()",
+        "cellId": "l05-example-3-4-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.12": {
+    "kind": "Example",
+    "title": "Interpret shape correctly",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.12",
+    "slides": [
+      16
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df.shape)\nprint(len(df))\nprint(df.columns[:4].tolist())",
+        "cellId": "l05-example-3-4-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(df.shape)",
+        "cellId": "l05-example-3-4-12-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.13": {
+    "kind": "Example",
+    "title": "Compare `head()` and `sample()`",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"First five rows\")\ndisplay(df.head())\n\nprint(\"Random sample\")\ndisplay(df.sample(5, random_state=42))",
+        "cellId": "l05-example-3-4-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.14": {
+    "kind": "Example",
+    "title": "Broken code",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.14",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df.shape())",
+        "cellId": "l05-example-3-4-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.4.15": {
+    "kind": "Example",
+    "title": "Repair",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-4-15",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/example-3.4.15",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df.shape)",
+        "cellId": "l05-example-3-4-15-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.4.16": {
+    "kind": "Exercise",
+    "title": "Produce an inspection note",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-4-16",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/exercise-3.4.16",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "print(\"Rows:\", df.shape[0])\nprint(\"Columns:\", df.shape[1])\nprint(\"Column names:\", df.columns.tolist())\n\ndisplay(df.head(3))\ndisplay(df.tail(3))\n\nprint(df.dtypes)\ndf.info()",
+        "cellId": "l05-solution-3-4-16-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-4-16"
+  },
+  "3.4.17": {
+    "kind": "Exercise",
+    "title": "Why inspect beyond the first five rows?",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-4-17",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.4/exercise-3.4.17",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-4-17"
+  },
+  "3.5.1": {
+    "kind": "Example",
+    "title": "Select one column",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "city = df[\"city\"]\ncity.head()",
+        "cellId": "l05-example-3-5-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(type(df[\"city\"]))",
+        "cellId": "l05-example-3-5-1-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.2": {
+    "kind": "Example",
+    "title": "Why the column name uses quotation marks",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"city\"]",
+        "cellId": "l05-example-3-5-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[city]",
+        "cellId": "l05-example-3-5-2-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.5.3": {
+    "kind": "Example",
+    "title": "Select a numeric column",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "cases = df[\"cases_received\"]\nprint(cases.head())",
+        "cellId": "l05-example-3-5-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(cases.sum())",
+        "cellId": "l05-example-3-5-3-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.4": {
+    "kind": "Example",
+    "title": "Select several columns",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "subset = df[[\"city\", \"service_type\", \"cases_received\"]]\nsubset.head()",
+        "cellId": "l05-example-3-5-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.5": {
+    "kind": "Example",
+    "title": "Build a readable preview table",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.5",
+    "slides": [
+      15
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "preview = df[[\"city\", \"service_type\", \"cases_received\"]]\ndisplay(preview.head(3))",
+        "cellId": "l05-example-3-5-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "columns_to_show = [\n    \"record_id\",\n    \"city\",\n    \"service_type\",\n    \"cases_received\",\n    \"cases_resolved\"\n]\n\npreview = df[columns_to_show]\npreview.head()",
+        "cellId": "l05-example-3-5-5-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.6": {
+    "kind": "Example",
+    "title": "Selecting by label with .loc[]",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.6",
+    "slides": [
+      19
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "columns = [\"city\", \"cases_received\"]\ndisplay(df.loc[0:2, columns])",
+        "cellId": "l05-example-3-5-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df.loc[0]",
+        "cellId": "l05-example-3-5-6-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df.loc[0:4, [\"city\", \"service_type\", \"cases_received\"]]",
+        "cellId": "l05-example-3-5-6-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.7": {
+    "kind": "Example",
+    "title": "Important slicing detail",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.loc[0:4]",
+        "cellId": "l05-example-3-5-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.8": {
+    "kind": "Example",
+    "title": "Selecting by position with .iloc[]",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.8",
+    "slides": [
+      41
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df.loc[0:2, \"city\"].tolist())\nprint(df.iloc[0:3, 2].tolist())",
+        "cellId": "l05-example-3-5-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df.iloc[0]",
+        "cellId": "l05-example-3-5-8-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df.iloc[0:5]",
+        "cellId": "l05-example-3-5-8-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df.iloc[0:5, 0:4]",
+        "cellId": "l05-example-3-5-8-code-4",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.9": {
+    "kind": "Example",
+    "title": "Boolean filtering",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.9",
+    "slides": [
+      21
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "high = df[\"cases_received\"] > 100\nprint(high.head(7))",
+        "cellId": "l05-example-3-5-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[\"cases_received\"] > 100",
+        "cellId": "l05-example-3-5-9-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "high_case_rows = df[df[\"cases_received\"] > 100]\nhigh_case_rows",
+        "cellId": "l05-example-3-5-9-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.10": {
+    "kind": "Example",
+    "title": "Filter by category",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "housing = df[df[\"service_type\"] == \"Housing\"]\nhousing",
+        "cellId": "l05-example-3-5-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[df[\"service_type\"] == \"housing\"]",
+        "cellId": "l05-example-3-5-10-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.11": {
+    "kind": "Example",
+    "title": "Combine conditions with &",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.11",
+    "slides": [
+      23
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "mask = (\n    (df[\"service_type\"] == \"Transport\") &\n    (df[\"cases_received\"] > 90)\n)\ncolumns = [\"city\", \"cases_received\"]\ndisplay(df.loc[mask, columns].head(3))",
+        "cellId": "l05-example-3-5-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "result = df[\n    (df[\"city\"] == \"Copenhagen\") &\n    (df[\"cases_received\"] > 100)\n]\n\nresult",
+        "cellId": "l05-example-3-5-11-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.12": {
+    "kind": "Example",
+    "title": "Why the parentheses matter",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.12",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "(df[\"city\"] == \"Copenhagen\")",
+        "cellId": "l05-example-3-5-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "(df[\"city\"] == \"Copenhagen\") and (df[\"cases_received\"] > 100)",
+        "cellId": "l05-example-3-5-12-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.5.13": {
+    "kind": "Example",
+    "title": "Combine alternatives with |",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "result = df[\n    (df[\"service_type\"] == \"Housing\") |\n    (df[\"service_type\"] == \"Transport\")\n]",
+        "cellId": "l05-example-3-5-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.14": {
+    "kind": "Example",
+    "title": "Use .isin() for several allowed categories",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.14",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "result = df[\n    df[\"service_type\"].isin([\"Housing\", \"Transport\"])\n]",
+        "cellId": "l05-example-3-5-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.15": {
+    "kind": "Example",
+    "title": "Filter and then choose columns",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-15",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.15",
+    "slides": [
+      22
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "high = df[\"cases_received\"] > 100\nselected = df.loc[high, [\"city\", \"cases_received\"]]\nprint(\"Matching rows:\", len(selected))\ndisplay(selected.head(3))",
+        "cellId": "l05-example-3-5-15-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "result = df.loc[\n    df[\"cases_received\"] > 100,\n    [\"record_id\", \"city\", \"service_type\", \"cases_received\"]\n]\n\nresult",
+        "cellId": "l05-example-3-5-15-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.16": {
+    "kind": "Example",
+    "title": "Filtering is an analytical decision",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-16",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.16",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "copenhagen = df[df[\"city\"] == \"Copenhagen\"]",
+        "cellId": "l05-example-3-5-16-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.17": {
+    "kind": "Example",
+    "title": "Broken code 1",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-17",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.17",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"City\"]",
+        "cellId": "l05-example-3-5-17-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.5.18": {
+    "kind": "Example",
+    "title": "Repair",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-18",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.18",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"city\"]",
+        "cellId": "l05-example-3-5-18-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.19": {
+    "kind": "Example",
+    "title": "Broken code 2",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-19",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.19",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[(df[\"city\"] == \"Copenhagen\") and (df[\"cases_received\"] > 100)]",
+        "cellId": "l05-example-3-5-19-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": true
+      }
+    ]
+  },
+  "3.5.20": {
+    "kind": "Example",
+    "title": "Repair",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-5-20",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/example-3.5.20",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\n    (df[\"city\"] == \"Copenhagen\") &\n    (df[\"cases_received\"] > 100)\n]",
+        "cellId": "l05-example-3-5-20-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.5.21": {
+    "kind": "Exercise",
+    "title": "Column selection",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-5-21",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/exercise-3.5.21",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "selected = df[[\n    \"record_id\",\n    \"service_type\",\n    \"satisfaction_score\",\n    \"feedback\"\n]]\n\ndisplay(selected)",
+        "cellId": "l05-solution-3-5-21-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-5-21"
+  },
+  "3.5.22": {
+    "kind": "Exercise",
+    "title": "Filter a numeric condition",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-5-22",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/exercise-3.5.22",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "result = df[df[\"cases_received\"] >= 100]\ndisplay(result)",
+        "cellId": "l05-solution-3-5-22-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-5-22"
+  },
+  "3.5.23": {
+    "kind": "Exercise",
+    "title": "Combine a category and numeric condition",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-5-23",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/exercise-3.5.23",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "result = df.loc[\n    (df[\"service_type\"] == \"Transport\") &\n    (df[\"cases_received\"] > 90),\n    [\"record_id\", \"city\", \"cases_received\"]\n]\n\ndisplay(result)",
+        "cellId": "l05-solution-3-5-23-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-5-23"
+  },
+  "3.5.24": {
+    "kind": "Exercise",
+    "title": "Housing reports for review",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-5-24",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.5/exercise-3.5.24",
+    "slides": [
+      44,
+      45
+    ],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "mask = (df[\"service_type\"] == \"Housing\") & (\n    df[\"cases_received\"] > 120\n)\nselected = df.loc[mask, [\"city\", \"cases_received\"]]\nprint(\"Matching rows:\", len(selected))\ndisplay(selected.head(3))",
+        "cellId": "l05-solution-3-5-24-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-5-24"
+  },
+  "3.6.1": {
+    "kind": "Example",
+    "title": "Inspect pandas dtypes",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-6-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.6/example-3.6.1",
+    "slides": [
+      17
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "columns = [\"cases_received\", \"resolution_days\"]\nprint(df[columns].dtypes)",
+        "cellId": "l05-example-3-6-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(df.dtypes)",
+        "cellId": "l05-example-3-6-1-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.6.2": {
+    "kind": "Example",
+    "title": "Build a conceptual type table",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-6-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.6/example-3.6.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "conceptual_types = {\n    \"record_id\": \"identifier\",\n    \"report_month\": \"date-like\",\n    \"city\": \"categorical\",\n    \"service_type\": \"categorical\",\n    \"cases_received\": \"numeric count\",\n    \"cases_resolved\": \"numeric count\",\n    \"resolution_days\": \"numeric measure\",\n    \"satisfaction_score\": \"numeric rating\",\n    \"digital_cases\": \"numeric count\",\n    \"in_person_cases\": \"numeric count\",\n    \"repeat_contacts\": \"numeric count\",\n    \"complaints_received\": \"numeric count\",\n    \"staff_hours\": \"numeric measure\",\n    \"feedback\": \"free text\"\n}\n\nfor column, role in conceptual_types.items():\n    print(column, \"->\", role)",
+        "cellId": "l05-example-3-6-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.6.3": {
+    "kind": "Example",
+    "title": "Compare technical and conceptual types",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-6-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.6/example-3.6.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "for column in df.columns:\n    print(column, \"| pandas dtype:\", df[column].dtype)",
+        "cellId": "l05-example-3-6-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.6.4": {
+    "kind": "Exercise",
+    "title": "Classify the course variables",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-6-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.6/exercise-3.6.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "roles = {\"record_id\": \"identifier\", \"report_month\": \"date-like\", \"city\": \"categorical\", \"service_type\": \"categorical\", \"cases_received\": \"numeric count\", \"cases_resolved\": \"numeric count\", \"resolution_days\": \"numeric-intended measure\", \"satisfaction_score\": \"numeric rating\", \"digital_cases\": \"numeric count\", \"in_person_cases\": \"numeric count\", \"repeat_contacts\": \"numeric count\", \"complaints_received\": \"numeric count\", \"staff_hours\": \"numeric measure\", \"feedback\": \"free text\"}  # Stores the calculated or supplied value for later use.\nrole_table = pd.DataFrame({\"variable\": list(roles), \"conceptual_type\": list(roles.values())})  # Stores the calculated or supplied value for later use.\nrole_table[\"pandas_dtype\"] = role_table[\"variable\"].map(df.dtypes.astype(str))  # Stores the calculated or supplied value for later use.\ndisplay(role_table)  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-6-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-6-4"
+  },
+  "3.6.5": {
+    "kind": "Exercise",
+    "title": "Explain why this statement is wrong",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-6-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.6/exercise-3.6.5",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-6-5"
+  },
+  "3.7.1": {
+    "kind": "Example",
+    "title": "count() — count non-missing values",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"cases_received\"].count()",
+        "cellId": "l05-example-3-7-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[\"feedback\"].count()",
+        "cellId": "l05-example-3-7-1-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.2": {
+    "kind": "Example",
+    "title": "count() versus len()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"Rows:\", len(df))\nprint(\"Non-missing feedback values:\", df[\"feedback\"].count())",
+        "cellId": "l05-example-3-7-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.3": {
+    "kind": "Example",
+    "title": "sum() — total a numeric column",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "total_cases_received = df[\"cases_received\"].sum()\nprint(total_cases_received)",
+        "cellId": "l05-example-3-7-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.4": {
+    "kind": "Example",
+    "title": "mean() — arithmetic average",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "mean_cases = df[\"cases_received\"].mean()\nprint(mean_cases)",
+        "cellId": "l05-example-3-7-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.5": {
+    "kind": "Example",
+    "title": "median() — middle value",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "median_cases = df[\"cases_received\"].median()\nprint(median_cases)",
+        "cellId": "l05-example-3-7-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.6": {
+    "kind": "Example",
+    "title": "min() and max()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.6",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"Minimum:\", df[\"cases_received\"].min())\nprint(\"Maximum:\", df[\"cases_received\"].max())",
+        "cellId": "l05-example-3-7-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.7": {
+    "kind": "Example",
+    "title": "std() — standard deviation",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "std_cases = df[\"cases_received\"].std()\nprint(round(std_cases, 2))",
+        "cellId": "l05-example-3-7-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.8": {
+    "kind": "Example",
+    "title": "describe() — several summaries together",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.8",
+    "slides": [
+      42
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "display(df[\"cases_received\"].describe().round(2))",
+        "cellId": "l05-example-3-7-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[\"cases_received\"].describe()",
+        "cellId": "l05-example-3-7-8-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.9": {
+    "kind": "Example",
+    "title": "round() for readable output",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "mean_cases = df[\"cases_received\"].mean()\nprint(\"Mean cases:\", round(mean_cases, 2))",
+        "cellId": "l05-example-3-7-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.10": {
+    "kind": "Example",
+    "title": "Received and resolved totals",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "total_received = df[\"cases_received\"].sum()\ntotal_resolved = df[\"cases_resolved\"].sum()\n\nprint(\"Cases received:\", total_received)\nprint(\"Cases resolved:\", total_resolved)",
+        "cellId": "l05-example-3-7-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.11": {
+    "kind": "Example",
+    "title": "Find the row associated with an extreme value",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "max_index = df[\"cases_received\"].idxmax()\ndf.loc[max_index]",
+        "cellId": "l05-example-3-7-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "min_index = df[\"cases_received\"].idxmin()\ndf.loc[min_index]",
+        "cellId": "l05-example-3-7-11-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.12": {
+    "kind": "Example",
+    "title": "Inspect the negative minimum",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.12",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "min_index = df[\"cases_received\"].idxmin()\n\nprint(\"Minimum row index:\", min_index)\ndisplay(df.loc[[min_index]])",
+        "cellId": "l05-example-3-7-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.13": {
+    "kind": "Example",
+    "title": "Missing values and numerical calculations",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"satisfaction_score\"].mean()",
+        "cellId": "l05-example-3-7-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(\"Rows:\", len(df))\nprint(\"Available satisfaction scores:\", df[\"satisfaction_score\"].count())",
+        "cellId": "l05-example-3-7-13-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.14": {
+    "kind": "Example",
+    "title": "Preliminary satisfaction mean",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.14",
+    "slides": [
+      26
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "scores = df[\"satisfaction_score\"]\nprint(\"Rows:\", len(df))\nprint(\"Recorded scores:\", scores.count())\nprint(\"Raw mean:\", round(scores.mean(), 2))",
+        "cellId": "l05-example-3-7-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "mean_satisfaction = df[\"satisfaction_score\"].mean()\nprint(round(mean_satisfaction, 2))",
+        "cellId": "l05-example-3-7-14-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.7.15": {
+    "kind": "Exercise",
+    "title": "Produce a numeric summary",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-7-15",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/exercise-3.7.15",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "resolved = df[\"cases_resolved\"]  # Stores the calculated or supplied value for later use.\nprint(\"Count:\", resolved.count())  # Displays the result so it can be inspected.\nprint(\"Sum:\", resolved.sum())  # Displays the result so it can be inspected.\nprint(\"Mean:\", resolved.mean())  # Displays the result so it can be inspected.\nprint(\"Median:\", resolved.median())  # Displays the result so it can be inspected.\nprint(\"Minimum:\", resolved.min())  # Displays the result so it can be inspected.\nprint(\"Maximum:\", resolved.max())  # Displays the result so it can be inspected.\nprint(\"Standard deviation:\", resolved.std())  # Displays the result so it can be inspected.\nprint(resolved.describe())  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-7-15-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-7-15"
+  },
+  "3.7.16": {
+    "kind": "Exercise",
+    "title": "Mean or median?",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-7-16",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/exercise-3.7.16",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "mean_received = df[\"cases_received\"].mean()  # Stores the calculated or supplied value for later use.\nmedian_received = df[\"cases_received\"].median()  # Stores the calculated or supplied value for later use.\nprint(\"Mean:\", round(mean_received, 2))  # Displays the result so it can be inspected.\nprint(\"Median:\", median_received)  # Displays the result so it can be inspected.\ndisplay(df[df[\"cases_received\"] < 0])  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-7-16-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-7-16"
+  },
+  "3.7.17": {
+    "kind": "Exercise",
+    "title": "Count the denominator explicitly",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-7-17",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/exercise-3.7.17",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "mean_score = df[\"satisfaction_score\"].mean()\nvalid_scores = df[\"satisfaction_score\"].count()\n\nprint(\"Mean satisfaction:\", round(mean_score, 2))\nprint(\"Scores included:\", valid_scores)",
+        "cellId": "l05-solution-3-7-17-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-7-17"
+  },
+  "3.7.18": {
+    "kind": "Example",
+    "title": "A numerical summary",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-7-18",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.7/example-3.7.18",
+    "slides": [
+      25
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "cases = df[\"cases_received\"]\nprint(\"Total:\", cases.sum())\nprint(\"Mean:\", round(cases.mean(), 2))\nprint(\"Median:\", cases.median())\nprint(\"Minimum:\", cases.min())",
+        "cellId": "l05-example-3-7-18-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.1": {
+    "kind": "Example",
+    "title": "Column arithmetic",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "cases_received = 120\ncases_resolved = 112\nunresolved_cases = cases_received - cases_resolved",
+        "cellId": "l05-example-3-8-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[\"unresolved_cases\"] = (\n    df[\"cases_received\"] - df[\"cases_resolved\"]\n)",
+        "cellId": "l05-example-3-8-1-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.2": {
+    "kind": "Example",
+    "title": "Inspect the derived column",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.2",
+    "slides": [
+      27
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"case_gap\"] = df[\"cases_received\"] - df[\"cases_resolved\"]\ncolumns = [\"cases_received\", \"cases_resolved\", \"case_gap\"]\ndisplay(df[columns].head(3))",
+        "cellId": "l05-example-3-8-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[\"unresolved_cases\"] = (\n    df[\"cases_received\"] - df[\"cases_resolved\"]\n)\n\ndisplay(\n    df[[\n        \"record_id\",\n        \"cases_received\",\n        \"cases_resolved\",\n        \"unresolved_cases\"\n    ]].head(8)\n)",
+        "cellId": "l05-example-3-8-2-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.3": {
+    "kind": "Example",
+    "title": "Create a row-level resolution rate",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"resolution_rate\"] = (\n    df[\"cases_resolved\"] /\n    df[\"cases_received\"] * 100\n)",
+        "cellId": "l05-example-3-8-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.4": {
+    "kind": "Example",
+    "title": "Inspect the rate",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.4",
+    "slides": [
+      28
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"resolution_rate\"] = (\n    df[\"cases_resolved\"] / df[\"cases_received\"] * 100\n)\ncolumns = [\"cases_received\", \"cases_resolved\", \"resolution_rate\"]\ndisplay(df.loc[[0, 11], columns].round(2))",
+        "cellId": "l05-example-3-8-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "display(\n    df[[\n        \"record_id\",\n        \"cases_received\",\n        \"cases_resolved\",\n        \"resolution_rate\"\n    ]]\n)",
+        "cellId": "l05-example-3-8-4-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.5": {
+    "kind": "Example",
+    "title": "Method A — calculate each row's percentage, then average the percentages",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "mean_row_rate = df[\"resolution_rate\"].mean()\nprint(round(mean_row_rate, 2))",
+        "cellId": "l05-example-3-8-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.6": {
+    "kind": "Example",
+    "title": "Method B — divide total resolved by total received",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.6",
+    "slides": [
+      43
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "row_average = df[\"resolution_rate\"].mean()\noverall = df[\"cases_resolved\"].sum() / df[\"cases_received\"].sum() * 100\nprint(\"Average of row rates:\", round(row_average, 2))\nprint(\"Ratio of totals:\", round(overall, 2))",
+        "cellId": "l05-example-3-8-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "overall_rate = (\n    df[\"cases_resolved\"].sum() /\n    df[\"cases_received\"].sum() * 100\n)\n\nprint(round(overall_rate, 2))",
+        "cellId": "l05-example-3-8-6-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.7": {
+    "kind": "Example",
+    "title": "Percentage of rows with missing feedback",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"feedback\"].isna()",
+        "cellId": "l05-example-3-8-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "missing_feedback = df[\"feedback\"].isna().sum()\ntotal_rows = len(df)\n\nmissing_feedback_pct = missing_feedback / total_rows * 100\n\nprint(\"Missing feedback rows:\", missing_feedback)\nprint(\"Missing feedback percentage:\", round(missing_feedback_pct, 2))",
+        "cellId": "l05-example-3-8-7-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.8": {
+    "kind": "Example",
+    "title": "Percentage of rows belonging to a category",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.8",
+    "slides": [
+      30
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "housing_rows = (df[\"service_type\"] == \"Housing\").sum()\nhousing_pct = housing_rows / len(df) * 100\nprint(\"Housing rows:\", housing_rows)\nprint(\"Percentage of rows:\", round(housing_pct, 2))",
+        "cellId": "l05-example-3-8-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "housing_rows = (df[\"service_type\"] == \"Housing\").sum()\nhousing_pct = housing_rows / len(df) * 100\n\nprint(\"Housing rows:\", housing_rows)\nprint(\"Housing percentage:\", round(housing_pct, 2))",
+        "cellId": "l05-example-3-8-8-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.9": {
+    "kind": "Example",
+    "title": "Create a clearly named percentage",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-8-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/example-3.8.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"resolved_pct_of_received\"] = (\n    df[\"cases_resolved\"] /\n    df[\"cases_received\"] * 100\n)",
+        "cellId": "l05-example-3-8-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.8.10": {
+    "kind": "Exercise",
+    "title": "Derive a difference",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-8-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/exercise-3.8.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "df[\"case_gap\"] = df[\"cases_received\"] - df[\"cases_resolved\"]\n\nprint(df[\"case_gap\"].nsmallest(5))\n\ndisplay(\n    df.loc[\n        df[\"case_gap\"] < 0,\n        [\"record_id\", \"cases_received\", \"cases_resolved\", \"case_gap\"]\n    ]\n)",
+        "cellId": "l05-solution-3-8-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-8-10"
+  },
+  "3.8.11": {
+    "kind": "Exercise",
+    "title": "Explain two rate formulas",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-8-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/exercise-3.8.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "row_rates = df[\"cases_resolved\"] / df[\"cases_received\"] * 100  # Stores the calculated or supplied value for later use.\nmean_row_rate = row_rates.mean()  # Stores the calculated or supplied value for later use.\noverall_rate = df[\"cases_resolved\"].sum() / df[\"cases_received\"].sum() * 100  # Stores the calculated or supplied value for later use.\nprint(\"Mean row rate:\", round(mean_row_rate, 2))  # Displays the result so it can be inspected.\nprint(\"Aggregate rate:\", round(overall_rate, 2))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-8-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-8-11"
+  },
+  "3.8.12": {
+    "kind": "Exercise",
+    "title": "Calculate a missing percentage",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-8-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.8/exercise-3.8.12",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "missing_count = df[\"satisfaction_score\"].isna().sum()  # Stores the calculated or supplied value for later use.\nmissing_percentage = missing_count / len(df) * 100  # Stores the calculated or supplied value for later use.\nprint(\"Missing satisfaction values:\", missing_count)  # Displays the result so it can be inspected.\nprint(\"Missing percentage:\", round(missing_percentage, 2))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-8-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-8-12"
+  },
+  "3.9.1": {
+    "kind": "Example",
+    "title": "Inspect unique values before counting them",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df[\"service_type\"].unique())",
+        "cellId": "l05-example-3-9-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(df[\"city\"].unique())",
+        "cellId": "l05-example-3-9-1-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.2": {
+    "kind": "Example",
+    "title": "Count distinct values with nunique()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"service_type\"].nunique()",
+        "cellId": "l05-example-3-9-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.3": {
+    "kind": "Example",
+    "title": "Frequency table with value_counts()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.3",
+    "slides": [
+      29
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "counts = df[\"service_type\"].value_counts()\ndisplay(counts)",
+        "cellId": "l05-example-3-9-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[\"service_type\"].value_counts()",
+        "cellId": "l05-example-3-9-3-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.4": {
+    "kind": "Example",
+    "title": "Percentages with normalize=True",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "service_pct = (\n    df[\"service_type\"]\n    .value_counts(normalize=True) * 100\n)\n\nprint(service_pct.round(2))",
+        "cellId": "l05-example-3-9-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.5": {
+    "kind": "Example",
+    "title": "Include missing values when relevant",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"feedback\"].value_counts(dropna=False)",
+        "cellId": "l05-example-3-9-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.6": {
+    "kind": "Example",
+    "title": "Mode",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.6",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"service_type\"].mode()",
+        "cellId": "l05-example-3-9-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.7": {
+    "kind": "Example",
+    "title": "Introductory groupby()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.7",
+    "slides": [
+      31
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "means = df.groupby(\"service_type\")[\"cases_received\"].mean()\ndisplay(means.round(2))",
+        "cellId": "l05-example-3-9-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "mean_by_service = (\n    df.groupby(\"service_type\")[\"cases_received\"]\n      .mean()\n)\n\nprint(mean_by_service.round(2))",
+        "cellId": "l05-example-3-9-7-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.8": {
+    "kind": "Example",
+    "title": "Group totals",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.8",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "total_by_service = (\n    df.groupby(\"service_type\")[\"cases_received\"]\n      .sum()\n)\n\nprint(total_by_service)",
+        "cellId": "l05-example-3-9-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.9": {
+    "kind": "Example",
+    "title": "Several calculations at once with .agg()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "summary = (\n    df.groupby(\"service_type\")[\"cases_received\"]\n      .agg([\"count\", \"sum\", \"mean\", \"median\", \"min\", \"max\"])\n)\n\nprint(summary.round(2))",
+        "cellId": "l05-example-3-9-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.10": {
+    "kind": "Example",
+    "title": "Grouping by a dirty category can mislead",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "city_summary = (\n    df.groupby(\"city\")[\"cases_received\"]\n      .agg([\"count\", \"sum\", \"mean\"])\n)\n\nprint(city_summary.round(2))",
+        "cellId": "l05-example-3-9-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.11": {
+    "kind": "Example",
+    "title": "Cross-tabulation with pd.crosstab()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "service_by_city = pd.crosstab(\n    df[\"city\"],\n    df[\"service_type\"]\n)\n\nservice_by_city",
+        "cellId": "l05-example-3-9-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.12": {
+    "kind": "Example",
+    "title": "Percentage crosstab — optional extension",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.12",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "service_by_city_pct = pd.crosstab(\n    df[\"city\"],\n    df[\"service_type\"],\n    normalize=\"index\"\n) * 100\n\nservice_by_city_pct.round(1)",
+        "cellId": "l05-example-3-9-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.13": {
+    "kind": "Example",
+    "title": "Compare satisfaction by service type",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-9-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/example-3.9.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "satisfaction_by_service = (\n    df.groupby(\"service_type\")[\"satisfaction_score\"]\n      .agg([\"count\", \"mean\", \"median\", \"min\", \"max\"])\n)\n\nprint(satisfaction_by_service.round(2))",
+        "cellId": "l05-example-3-9-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.9.14": {
+    "kind": "Exercise",
+    "title": "Frequencies and percentages",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-9-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/exercise-3.9.14",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "print(df[\"service_type\"].unique())  # Displays the result so it can be inspected.\nprint(\"Distinct raw labels:\", df[\"service_type\"].nunique())  # Displays the result so it can be inspected.\nprint(df[\"service_type\"].value_counts())  # Displays the result so it can be inspected.\nprint(df[\"service_type\"].value_counts(normalize=True).mul(100).round(2))  # Displays the result so it can be inspected.\nprint(\"Modes:\", df[\"service_type\"].mode().tolist())  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-9-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-9-14"
+  },
+  "3.9.15": {
+    "kind": "Exercise",
+    "title": "Grouped summary",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-9-15",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/exercise-3.9.15",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "service_summary = df.groupby(\"service_type\")[\"cases_received\"].agg([\"count\", \"mean\", \"median\", \"min\", \"max\"])  # Stores the calculated or supplied value for later use.\ndisplay(service_summary.round(2))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-9-15-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-9-15"
+  },
+  "3.9.16": {
+    "kind": "Exercise",
+    "title": "Discover category fragmentation",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-9-16",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/exercise-3.9.16",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "city_summary = df.groupby(\"city\")[\"cases_received\"].agg([\"count\", \"sum\", \"mean\"])  # Stores the calculated or supplied value for later use.\ndisplay(city_summary.round(2))  # Displays the result so it can be inspected.\nprint(\"Raw city labels:\", df[\"city\"].unique().tolist())  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-9-16-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-9-16"
+  },
+  "3.9.17": {
+    "kind": "Exercise",
+    "title": "Create a crosstab",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-9-17",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.9/exercise-3.9.17",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "city_service = pd.crosstab(df[\"city\"], df[\"service_type\"])  # Stores the calculated or supplied value for later use.\ndisplay(city_service)  # Displays the result so it can be inspected.\nrow_percent = pd.crosstab(df[\"city\"], df[\"service_type\"], normalize=\"index\").mul(100)  # Stores the calculated or supplied value for later use.\ndisplay(row_percent.round(2))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-9-17-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-9-17"
+  },
+  "3.10.1": {
+    "kind": "Example",
+    "title": "Missing values with isna()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.isna()",
+        "cellId": "l05-example-3-10-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "missing_by_column = df.isna().sum()\nprint(missing_by_column)",
+        "cellId": "l05-example-3-10-1-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.2": {
+    "kind": "Example",
+    "title": "Total recognised missing cells",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "total_missing = df.isna().sum().sum()\nprint(total_missing)",
+        "cellId": "l05-example-3-10-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.3": {
+    "kind": "Example",
+    "title": "Missing percentages",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.3",
+    "slides": [
+      33
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "columns = [\"satisfaction_score\", \"feedback\"]\ndisplay(df[columns].isna().sum())\nmissing_pct = df[\"satisfaction_score\"].isna().mean() * 100\nprint(\"Missing scores (%):\", round(missing_pct, 2))",
+        "cellId": "l05-example-3-10-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "missing_pct = df.isna().mean() * 100\nprint(missing_pct.round(2))",
+        "cellId": "l05-example-3-10-3-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.4": {
+    "kind": "Example",
+    "title": "Missing satisfaction score",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "missing_satisfaction = df[df[\"satisfaction_score\"].isna()]\ndisplay(missing_satisfaction)",
+        "cellId": "l05-example-3-10-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.5": {
+    "kind": "Example",
+    "title": "Missing feedback",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "missing_feedback = df[df[\"feedback\"].isna()]\ndisplay(missing_feedback)",
+        "cellId": "l05-example-3-10-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.6": {
+    "kind": "Example",
+    "title": "Exact duplicate rows",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.6",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "duplicate_mask = df.duplicated()\nprint(duplicate_mask)",
+        "cellId": "l05-example-3-10-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(\"Exact duplicate rows:\", df.duplicated().sum())",
+        "cellId": "l05-example-3-10-6-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "display(df[df.duplicated()])",
+        "cellId": "l05-example-3-10-6-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.7": {
+    "kind": "Example",
+    "title": "Why only one duplicate is counted",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "display(df[df.duplicated(keep=False)])",
+        "cellId": "l05-example-3-10-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.8": {
+    "kind": "Example",
+    "title": "Duplicate identifiers are not the same as duplicate rows",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.8",
+    "slides": [
+      34
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"Extra exact copies:\", df.duplicated().sum())\nprint(\"Repeated IDs:\", df[\"record_id\"].duplicated().sum())",
+        "cellId": "l05-example-3-10-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "id_duplicates = df[\"record_id\"].duplicated(keep=False)\n\ndisplay(\n    df.loc[\n        id_duplicates,\n        [\"record_id\", \"report_month\", \"city\", \"service_type\"]\n    ]\n)",
+        "cellId": "l05-example-3-10-8-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.9": {
+    "kind": "Example",
+    "title": "Category consistency",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df[\"city\"].value_counts(dropna=False))",
+        "cellId": "l05-example-3-10-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.10": {
+    "kind": "Example",
+    "title": "Negative case counts",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "negative_received = df[df[\"cases_received\"] < 0]\ndisplay(negative_received)",
+        "cellId": "l05-example-3-10-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.11": {
+    "kind": "Example",
+    "title": "Out-of-range satisfaction",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "out_of_range_satisfaction = df[\n    (df[\"satisfaction_score\"] < 1) |\n    (df[\"satisfaction_score\"] > 5)\n]\n\ndisplay(out_of_range_satisfaction)",
+        "cellId": "l05-example-3-10-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.12": {
+    "kind": "Example",
+    "title": "Resolved greater than received",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.12",
+    "slides": [
+      35
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "problem = df[\"cases_resolved\"] > df[\"cases_received\"]\ncolumns = [\"record_id\", \"cases_received\", \"cases_resolved\"]\ndisplay(df.loc[problem, columns])",
+        "cellId": "l05-example-3-10-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "resolved_gt_received = df[\n    df[\"cases_resolved\"] > df[\"cases_received\"]\n]\n\ndisplay(\n    resolved_gt_received[[\n        \"record_id\",\n        \"cases_received\",\n        \"cases_resolved\"\n    ]]\n)",
+        "cellId": "l05-example-3-10-12-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.13": {
+    "kind": "Example",
+    "title": "Detect a numeric-looking column containing text",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df[\"resolution_days\"].unique())",
+        "cellId": "l05-example-3-10-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "resolution_numeric_preview = pd.to_numeric(\n    df[\"resolution_days\"],\n    errors=\"coerce\"\n)",
+        "cellId": "l05-example-3-10-13-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "conversion_problem = (\n    df[\"resolution_days\"].notna() &\n    resolution_numeric_preview.isna()\n)\n\ndisplay(\n    df.loc[\n        conversion_problem,\n        [\"record_id\", \"resolution_days\"]\n    ]\n)",
+        "cellId": "l05-example-3-10-13-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.14": {
+    "kind": "Example",
+    "title": "Important",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.14",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"resolution_days\"]",
+        "cellId": "l05-example-3-10-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.15": {
+    "kind": "Example",
+    "title": "Detect invalid date-like values without overwriting the raw column",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-15",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.15",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "report_month_preview = pd.to_datetime(\n    df[\"report_month\"],\n    errors=\"coerce\"\n)",
+        "cellId": "l05-example-3-10-15-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "invalid_date_mask = report_month_preview.isna()\n\ndisplay(\n    df.loc[\n        invalid_date_mask,\n        [\"record_id\", \"report_month\"]\n    ]\n)",
+        "cellId": "l05-example-3-10-15-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.16": {
+    "kind": "Example",
+    "title": "Build a first data-quality summary",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-16",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.16",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "quality_summary = {\n    \"rows\": len(df),\n    \"columns\": df.shape[1],\n    \"missing_cells\": int(df.isna().sum().sum()),\n    \"exact_duplicate_rows\": int(df.duplicated().sum()),\n    \"negative_cases_received\": int((df[\"cases_received\"] < 0).sum()),\n    \"out_of_range_satisfaction\": int(\n        ((df[\"satisfaction_score\"] < 1) |\n         (df[\"satisfaction_score\"] > 5)).sum()\n    )\n}\n\nfor check, value in quality_summary.items():\n    print(check, \":\", value)",
+        "cellId": "l05-example-3-10-16-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.10.17": {
+    "kind": "Example",
+    "title": "Separate observation from action",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-17",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.17",
+    "slides": [],
+    "blocks": []
+  },
+  "3.10.18": {
+    "kind": "Example",
+    "title": "Quality problem changes a calculation",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-10-18",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/example-3.10.18",
+    "slides": [],
+    "blocks": []
+  },
+  "3.10.19": {
+    "kind": "Exercise",
+    "title": "Build a quality audit",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-10-19",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/exercise-3.10.19",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "print(\"Missing counts\")  # Displays the result so it can be inspected.\nprint(df.isna().sum())  # Displays the result so it can be inspected.\nprint(\"Missing percentages\")  # Displays the result so it can be inspected.\nprint(df.isna().mean().mul(100).round(2))  # Displays the result so it can be inspected.\nprint(\"Exact duplicates:\", df.duplicated().sum())  # Displays the result so it can be inspected.\ndisplay(df[df.duplicated(keep=False)])  # Displays the result so it can be inspected.\ndisplay(df[df[\"record_id\"].duplicated(keep=False)])  # Displays the result so it can be inspected.\nprint(\"Raw cities:\", df[\"city\"].unique().tolist())  # Displays the result so it can be inspected.\ndisplay(df[df[\"cases_received\"] < 0])  # Displays the result so it can be inspected.\nsat_problem = (df[\"satisfaction_score\"] < 1) | (df[\"satisfaction_score\"] > 5)  # Stores the calculated or supplied value for later use.\ndisplay(df[sat_problem])  # Displays the result so it can be inspected.\ndisplay(df[df[\"cases_resolved\"] > df[\"cases_received\"]])  # Displays the result so it can be inspected.\nresolution_preview = pd.to_numeric(df[\"resolution_days\"], errors=\"coerce\")  # Stores the calculated or supplied value for later use.\ndisplay(df.loc[df[\"resolution_days\"].notna() & resolution_preview.isna(), [\"record_id\", \"resolution_days\"]])  # Displays the result so it can be inspected.\nmonth_preview = pd.to_datetime(df[\"report_month\"], errors=\"coerce\")  # Stores the calculated or supplied value for later use.\ndisplay(df.loc[month_preview.isna(), [\"record_id\", \"report_month\"]])  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-10-19-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-10-19"
+  },
+  "3.10.20": {
+    "kind": "Exercise",
+    "title": "Classify the quality issue",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-10-20",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/exercise-3.10.20",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-10-20"
+  },
+  "3.10.21": {
+    "kind": "Exercise",
+    "title": "checking a satisfaction claim",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-10-21",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.10/exercise-3.10.21",
+    "slides": [
+      46,
+      47,
+      48
+    ],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "scores = df[\"satisfaction_score\"]\noutside = (scores < 1) | (scores > 5)\nprint(\"Missing scores:\", scores.isna().sum())\ncolumns = [\"record_id\", \"satisfaction_score\"]\ndisplay(df.loc[outside, columns])",
+        "cellId": "l05-solution-3-10-21-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      },
+      {
+        "role": "solution",
+        "code": "scores = df[\"satisfaction_score\"]\nprint(\"Recorded scores:\", scores.count())\nprint(\"Raw mean:\", round(scores.mean(), 2))",
+        "cellId": "l05-solution-3-10-21-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-10-21"
+  },
+  "3.11.1": {
+    "kind": "Example",
+    "title": "Start by reading the text",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.1",
+    "slides": [
+      37
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "feedback = df[\"feedback\"].dropna()\nprint(\"Available comments:\", len(feedback))\ndisplay(feedback.head(2))",
+        "cellId": "l05-example-3-11-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "display(df[[\"record_id\", \"feedback\"]].head(10))",
+        "cellId": "l05-example-3-11-1-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "feedback_non_missing = df[\"feedback\"].dropna()\n\ndisplay(\n    feedback_non_missing.sample(\n        min(8, len(feedback_non_missing)),\n        random_state=42\n    )\n)",
+        "cellId": "l05-example-3-11-1-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.2": {
+    "kind": "Example",
+    "title": "Count available text responses",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"Rows:\", len(df))\nprint(\"Non-missing feedback:\", df[\"feedback\"].count())",
+        "cellId": "l05-example-3-11-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.3": {
+    "kind": "Example",
+    "title": "Character length",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "feedback_length = df[\"feedback\"].str.len()\nprint(feedback_length)",
+        "cellId": "l05-example-3-11-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(round(feedback_length.mean(), 2))",
+        "cellId": "l05-example-3-11-3-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.4": {
+    "kind": "Example",
+    "title": "Approximate word count with pandas string methods",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "word_count = df[\"feedback\"].str.split().str.len()\nprint(word_count)",
+        "cellId": "l05-example-3-11-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.5": {
+    "kind": "Example",
+    "title": "Search for a literal word with .str.contains()",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "helpful_mask = df[\"feedback\"].str.contains(\n    \"helpful\",\n    case=False,\n    na=False\n)",
+        "cellId": "l05-example-3-11-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.6": {
+    "kind": "Example",
+    "title": "Explain each argument",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.6",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(helpful_mask.sum())",
+        "cellId": "l05-example-3-11-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "display(\n    df.loc[\n        helpful_mask,\n        [\"record_id\", \"service_type\", \"satisfaction_score\", \"feedback\"]\n    ]\n)",
+        "cellId": "l05-example-3-11-6-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.7": {
+    "kind": "Example",
+    "title": "Search for alternatives with a simple pattern",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.7",
+    "slides": [
+      38
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "mentions_wait = df[\"feedback\"].str.contains(\n    \"wait|long\", case=False, na=False, regex=True\n)\nprint(\"Matching comments:\", mentions_wait.sum())",
+        "cellId": "l05-example-3-11-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "wait_mask = df[\"feedback\"].str.contains(\n    \"wait|long\",\n    case=False,\n    na=False,\n    regex=True\n)",
+        "cellId": "l05-example-3-11-7-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(wait_mask.sum())",
+        "cellId": "l05-example-3-11-7-code-3",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "display(\n    df.loc[\n        wait_mask,\n        [\"record_id\", \"feedback\", \"satisfaction_score\"]\n    ]\n)",
+        "cellId": "l05-example-3-11-7-code-4",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.8": {
+    "kind": "Example",
+    "title": "Search for clarity-related wording",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.8",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "clear_mask = df[\"feedback\"].str.contains(\n    \"clear\",\n    case=False,\n    na=False\n)\n\nprint(clear_mask.sum())",
+        "cellId": "l05-example-3-11-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.9": {
+    "kind": "Example",
+    "title": "Search for speed-related wording",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "speed_mask = df[\"feedback\"].str.contains(\n    \"quick|fast\",\n    case=False,\n    na=False,\n    regex=True\n)\n\nprint(speed_mask.sum())",
+        "cellId": "l05-example-3-11-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.10": {
+    "kind": "Example",
+    "title": "Literal versus regex search",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"feedback\"].str.contains(\n    \"some literal text\",\n    case=False,\n    na=False,\n    regex=False\n)",
+        "cellId": "l05-example-3-11-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.11": {
+    "kind": "Example",
+    "title": "Compare text presence with a numeric variable",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "display(\n    df.loc[\n        wait_mask,\n        [\"feedback\", \"satisfaction_score\"]\n    ]\n)",
+        "cellId": "l05-example-3-11-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.12": {
+    "kind": "Example",
+    "title": "Text length by service type",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.12",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"feedback_word_count_preview\"] = (\n    df[\"feedback\"].str.split().str.len()\n)",
+        "cellId": "l05-example-3-11-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(\n    df.groupby(\"service_type\")[\"feedback_word_count_preview\"]\n      .mean()\n      .round(2)\n)",
+        "cellId": "l05-example-3-11-12-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.13": {
+    "kind": "Example",
+    "title": "Identify potentially difficult experiences",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-11-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/example-3.11.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "difficulty_mask = df[\"feedback\"].str.contains(\n    \"difficult|confusing\",\n    case=False,\n    na=False,\n    regex=True\n)\n\nprint(\"Matches:\", difficulty_mask.sum())\n\ndisplay(\n    df.loc[\n        difficulty_mask,\n        [\"record_id\", \"service_type\", \"feedback\", \"satisfaction_score\"]\n    ]\n)",
+        "cellId": "l05-example-3-11-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.11.14": {
+    "kind": "Exercise",
+    "title": "Explore text before coding themes",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-11-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/exercise-3.11.14",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "feedback = df[\"feedback\"].dropna()  # Stores the calculated or supplied value for later use.\nprint(feedback.to_string(index=False))  # Displays the result so it can be inspected.\nprint(\"Available comments:\", feedback.count())  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-11-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-11-14"
+  },
+  "3.11.15": {
+    "kind": "Exercise",
+    "title": "Search and validate a keyword rule",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-11-15",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/exercise-3.11.15",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "exercise",
+        "code": "speed_mask = df[\"feedback\"].str.contains(\n    \"quick|fast\",\n    case=False,\n    na=False,\n    regex=True\n)\n\nprint(\"Matches:\", speed_mask.sum())\ndisplay(df.loc[speed_mask, [\"record_id\", \"feedback\"]])",
+        "cellId": "l05-exercise-3-11-15",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": true
+      },
+      {
+        "role": "solution",
+        "code": "speed_mask = df[\"feedback\"].str.contains(\"quick|fast\", case=False, na=False, regex=True)  # Stores the calculated or supplied value for later use.\nprint(\"Speed-rule matches:\", int(speed_mask.sum()))  # Displays the result so it can be inspected.\nprint(df.loc[speed_mask, \"feedback\"].to_string(index=False))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-11-15-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-11-15"
+  },
+  "3.11.16": {
+    "kind": "Exercise",
+    "title": "Compare quantitative and qualitative evidence",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-11-16",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.11/exercise-3.11.16",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "wait_mask = df[\"feedback\"].str.contains(\"wait|long\", case=False, na=False, regex=True)  # Stores the calculated or supplied value for later use.\nwait_rows = df.loc[wait_mask, [\"record_id\", \"service_type\", \"satisfaction_score\", \"feedback\"]]  # Stores the calculated or supplied value for later use.\ndisplay(wait_rows)  # Displays the result so it can be inspected.\nprint(\"Matched comments:\", len(wait_rows))  # Displays the result so it can be inspected.\nprint(\"Matched comments with scores:\", wait_rows[\"satisfaction_score\"].notna().sum())  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-11-16-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-11-16"
+  },
+  "3.12.1": {
+    "kind": "Example",
+    "title": "From an idea to an operational rule",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"mentions_wait\"] = df[\"feedback\"].str.contains(\n    \"wait|long\",\n    case=False,\n    na=False,\n    regex=True\n)",
+        "cellId": "l05-example-3-12-1-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.2": {
+    "kind": "Example",
+    "title": "Count the indicator",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df[\"mentions_wait\"].value_counts())",
+        "cellId": "l05-example-3-12-2-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(df[\"mentions_wait\"].sum())",
+        "cellId": "l05-example-3-12-2-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.3": {
+    "kind": "Example",
+    "title": "Create several transparent indicators",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"mentions_helpful\"] = df[\"feedback\"].str.contains(\n    \"helpful\",\n    case=False,\n    na=False\n)\n\ndf[\"mentions_clarity\"] = df[\"feedback\"].str.contains(\n    \"clear\",\n    case=False,\n    na=False\n)\n\ndf[\"mentions_difficulty\"] = df[\"feedback\"].str.contains(\n    \"difficult|confusing\",\n    case=False,\n    na=False,\n    regex=True\n)",
+        "cellId": "l05-example-3-12-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.4": {
+    "kind": "Example",
+    "title": "Inspect the rule against the original text",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "display(\n    df[[\n        \"feedback\",\n        \"mentions_wait\",\n        \"mentions_helpful\",\n        \"mentions_clarity\",\n        \"mentions_difficulty\"\n    ]]\n)",
+        "cellId": "l05-example-3-12-4-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.5": {
+    "kind": "Example",
+    "title": "Satisfaction by waiting mention",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "wait_satisfaction = (\n    df.groupby(\"mentions_wait\")[\"satisfaction_score\"]\n      .agg([\"count\", \"mean\", \"median\", \"min\", \"max\"])\n)\n\nprint(wait_satisfaction.round(2))",
+        "cellId": "l05-example-3-12-5-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.6": {
+    "kind": "Example",
+    "title": "Compare indicator counts across service types",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.6",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "wait_by_service = (\n    df.groupby(\"service_type\")[\"mentions_wait\"]\n      .sum()\n)\n\nprint(wait_by_service)",
+        "cellId": "l05-example-3-12-6-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.7": {
+    "kind": "Example",
+    "title": "Cross-tabulate a code and category",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "pd.crosstab(\n    df[\"service_type\"],\n    df[\"mentions_wait\"]\n)",
+        "cellId": "l05-example-3-12-7-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.8": {
+    "kind": "Example",
+    "title": "A transparent code is better than a vague label",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.8",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"negative\"] = ...",
+        "cellId": "l05-example-3-12-8-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "df[\"mentions_wait_or_long\"] = df[\"feedback\"].str.contains(\n    \"wait|long\",\n    case=False,\n    na=False,\n    regex=True\n)",
+        "cellId": "l05-example-3-12-8-code-2",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.12.9": {
+    "kind": "Exercise",
+    "title": "Design a coding rule",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-12-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/exercise-3.12.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "df[\"mentions_clarity\"] = df[\"feedback\"].str.contains(\"clear\", case=False, na=False)  # Stores the calculated or supplied value for later use.\nprint(\"Clarity matches:\", int(df[\"mentions_clarity\"].sum()))  # Displays the result so it can be inspected.\nprint(df.loc[df[\"mentions_clarity\"], \"feedback\"].to_string(index=False))  # Displays the result so it can be inspected.\nprint(\"Three non-matches for manual review\")  # Displays the result so it can be inspected.\nprint(df.loc[~df[\"mentions_clarity\"] & df[\"feedback\"].notna(), \"feedback\"].head(3).to_string(index=False))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-12-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-12-9"
+  },
+  "3.12.10": {
+    "kind": "Exercise",
+    "title": "Compare code and score",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-12-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/exercise-3.12.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "exercise",
+        "code": "df.groupby(\"your_indicator\")[\"satisfaction_score\"].agg(\n    [\"count\", \"mean\", \"median\"]\n)",
+        "cellId": "l05-exercise-3-12-10",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": true
+      },
+      {
+        "role": "solution",
+        "code": "comparison = df.groupby(\"mentions_clarity\")[\"satisfaction_score\"].agg([\"count\", \"mean\", \"median\"])  # Stores the calculated or supplied value for later use.\ndisplay(comparison.round(2))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-12-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-12-10"
+  },
+  "3.12.11": {
+    "kind": "Exercise",
+    "title": "Multiple codes per comment",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-12-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/exercise-3.12.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "exercise",
+        "code": "both = df[\n    df[\"mentions_helpful\"] &\n    df[\"mentions_wait\"]\n]\n\ndisplay(both[[\"feedback\"]])",
+        "cellId": "l05-exercise-3-12-11",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": true
+      },
+      {
+        "role": "solution",
+        "code": "df[\"mentions_speed\"] = df[\"feedback\"].str.contains(\"quick|fast\", case=False, na=False, regex=True)  # Stores the calculated or supplied value for later use.\ndf[\"mentions_helpful\"] = df[\"feedback\"].str.contains(\"helpful\", case=False, na=False)  # Stores the calculated or supplied value for later use.\nboth_mask = df[\"mentions_speed\"] & df[\"mentions_helpful\"]  # Stores the calculated or supplied value for later use.\ndisplay(df.loc[both_mask, [\"record_id\", \"feedback\"]])  # Displays the result so it can be inspected.\nprint(\"Comments with both codes:\", int(both_mask.sum()))  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-12-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-12-11"
+  },
+  "3.12.12": {
+    "kind": "Example",
+    "title": "Reading matched and unmatched feedback",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-12-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.12/example-3.12.12",
+    "slides": [
+      39
+    ],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "columns = [\"record_id\", \"feedback\"]\ndisplay(df.loc[df[\"record_id\"].isin([\"SR2026-0031\", \"SR2026-0085\"]), columns])",
+        "cellId": "l05-example-3-12-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.13.1": {
+    "kind": "Example",
+    "title": "Good provenance statement",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-13-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.13/example-3.13.1",
+    "slides": [],
+    "blocks": []
+  },
+  "3.13.2": {
+    "kind": "Example",
+    "title": "Good preliminary finding",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Examples.ipynb",
+    "headingCellId": "l05-example-3-13-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.13/example-3.13.2",
+    "slides": [
+      40
+    ],
+    "blocks": []
+  },
+  "3.13.3": {
+    "kind": "Exercise",
+    "title": "Create a data dictionary",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-13-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.13/exercise-3.13.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "dictionary_rows = [{\"variable\": column, \"pandas_dtype\": str(df[column].dtype), \"meaning_or_rule\": \"Complete from the published Lecture 5 data dictionary\"} for column in df.columns]  # Stores the calculated or supplied value for later use.\ndata_dictionary = pd.DataFrame(dictionary_rows)  # Stores the calculated or supplied value for later use.\ndisplay(data_dictionary)  # Displays the result so it can be inspected.",
+        "cellId": "l05-solution-3-13-3-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-13-3"
+  },
+  "3.13.4": {
+    "kind": "Exercise",
+    "title": "Rewrite an overclaim",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-13-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.13/exercise-3.13.4",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-13-4"
+  },
+  "3.13.5": {
+    "kind": "Exercise",
+    "title": "Separate three levels of statement",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-13-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.13/exercise-3.13.5",
+    "slides": [],
+    "blocks": [],
+    "solutionCellId": "l05-solution-3-13-5"
+  },
+  "3.14.1": {
+    "kind": "Example",
+    "title": "Identify and describe the dataset",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-1",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.1",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.shape\ndf.columns\ndf.dtypes\ndf.info()",
+        "cellId": "l05-example-3-14-1-code-1",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.14.2": {
+    "kind": "Example",
+    "title": "Inspect the structure and sample records",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-2",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.2",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df.sample(5, random_state=42)",
+        "cellId": "l05-example-3-14-2-code-1",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(\"Shape:\", df.shape)\n\ndisplay(df.head())\ndisplay(df.tail())\ndisplay(df.sample(5, random_state=42))\n\nprint(df.dtypes)\ndf.info()",
+        "cellId": "l05-example-3-14-2-code-2",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.14.3": {
+    "kind": "Example",
+    "title": "Calculate preliminary numerical summaries",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-3",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.3",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"Cases received\")\nprint(\"Count:\", df[\"cases_received\"].count())\nprint(\"Sum:\", df[\"cases_received\"].sum())\nprint(\"Mean:\", df[\"cases_received\"].mean())\nprint(\"Median:\", df[\"cases_received\"].median())\nprint(\"Std:\", df[\"cases_received\"].std())\nprint(\"Min:\", df[\"cases_received\"].min())\nprint(\"Max:\", df[\"cases_received\"].max())\n\nprint(\"\\nFull summary\")\nprint(df[\"cases_received\"].describe())",
+        "cellId": "l05-example-3-14-3-code-1",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.14.4": {
+    "kind": "Example",
+    "title": "Create and inspect derived measures",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-4",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.4",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"unresolved_cases\"] = (\n    df[\"cases_received\"] - df[\"cases_resolved\"]\n)\n\ndf[\"resolution_rate\"] = (\n    df[\"cases_resolved\"] /\n    df[\"cases_received\"] * 100\n)\n\ncolumns = [\n    \"record_id\",\n    \"cases_received\",\n    \"cases_resolved\",\n    \"unresolved_cases\",\n    \"resolution_rate\"\n]\n\ndisplay(df[columns])",
+        "cellId": "l05-example-3-14-4-code-1",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "mean_row_rate = df[\"resolution_rate\"].mean()",
+        "cellId": "l05-example-3-14-4-code-2",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "overall_rate = (\n    df[\"cases_resolved\"].sum() /\n    df[\"cases_received\"].sum() * 100\n)",
+        "cellId": "l05-example-3-14-4-code-3",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.14.5": {
+    "kind": "Example",
+    "title": "Explore categories and group differences",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-5",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.5",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(df[\"service_type\"].value_counts())\nprint(df[\"service_type\"].value_counts(normalize=True).mul(100).round(2))\n\nservice_cases = (\n    df.groupby(\"service_type\")[\"cases_received\"]\n      .agg([\"count\", \"sum\", \"mean\", \"median\", \"min\", \"max\"])\n)\n\ndisplay(service_cases.round(2))\n\nservice_satisfaction = (\n    df.groupby(\"service_type\")[\"satisfaction_score\"]\n      .agg([\"count\", \"mean\", \"median\", \"min\", \"max\"])\n)\n\ndisplay(service_satisfaction.round(2))\n\nprint(df[\"city\"].unique())\nprint(df[\"city\"].value_counts())\n\ncity_service = pd.crosstab(\n    df[\"city\"],\n    df[\"service_type\"]\n)\n\ndisplay(city_service)",
+        "cellId": "l05-example-3-14-5-code-1",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.14.6": {
+    "kind": "Example",
+    "title": "Complete a structured data-quality audit",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-6",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.6",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "print(\"Missing values\")\nprint(df.isna().sum())\n\nprint(\"\\nMissing percentages\")\nprint((df.isna().mean() * 100).round(2))\n\nprint(\"\\nExact duplicates\")\nprint(df.duplicated().sum())\ndisplay(df[df.duplicated(keep=False)])\n\nprint(\"\\nRepeated IDs\")\nid_duplicate_mask = df[\"record_id\"].duplicated(keep=False)\ndisplay(df[id_duplicate_mask])\n\nprint(\"\\nRaw city labels\")\nprint(df[\"city\"].value_counts(dropna=False))\n\nprint(\"\\nNegative received cases\")\ndisplay(df[df[\"cases_received\"] < 0])\n\nprint(\"\\nOut-of-range satisfaction\")\nsat_problem = (\n    (df[\"satisfaction_score\"] < 1) |\n    (df[\"satisfaction_score\"] > 5)\n)\ndisplay(df[sat_problem])\n\nprint(\"\\nResolved greater than received\")\ndisplay(df[df[\"cases_resolved\"] > df[\"cases_received\"]])\n\nresolution_preview = pd.to_numeric(\n    df[\"resolution_days\"],\n    errors=\"coerce\"\n)\nresolution_problem = (\n    df[\"resolution_days\"].notna() &\n    resolution_preview.isna()\n)\nprint(\"\\nNon-numeric resolution values\")\ndisplay(df.loc[resolution_problem, [\"record_id\", \"resolution_days\"]])\n\nmonth_preview = pd.to_datetime(\n    df[\"report_month\"],\n    errors=\"coerce\"\n)\nprint(\"\\nInvalid report months\")\ndisplay(df.loc[month_preview.isna(), [\"record_id\", \"report_month\"]])",
+        "cellId": "l05-example-3-14-6-code-1",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.14.7": {
+    "kind": "Example",
+    "title": "Explore the feedback qualitatively and computationally",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-7",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.7",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "example",
+        "code": "df[\"mentions_wait\"] = df[\"feedback\"].str.contains(\n    \"wait|long\",\n    case=False,\n    na=False,\n    regex=True\n)\n\ndf[\"mentions_helpful\"] = df[\"feedback\"].str.contains(\n    \"helpful\",\n    case=False,\n    na=False\n)",
+        "cellId": "l05-example-3-14-7-code-1",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "print(\"Waiting matches:\", df[\"mentions_wait\"].sum())\nprint(\"Helpful matches:\", df[\"mentions_helpful\"].sum())",
+        "cellId": "l05-example-3-14-7-code-2",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "wait_by_service = pd.crosstab(\n    df[\"service_type\"],\n    df[\"mentions_wait\"]\n)\n\ndisplay(wait_by_service)",
+        "cellId": "l05-example-3-14-7-code-3",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      },
+      {
+        "role": "example",
+        "code": "wait_score = (\n    df.groupby(\"mentions_wait\")[\"satisfaction_score\"]\n      .agg([\"count\", \"mean\", \"median\"])\n)\n\ndisplay(wait_score.round(2))",
+        "cellId": "l05-example-3-14-7-code-4",
+        "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+        "reference": false
+      }
+    ]
+  },
+  "3.14.8": {
+    "kind": "Example",
+    "title": "Write the Initial Data Exploration Report",
+    "notebook": "L05_Tutorial_3_14_Guided_Examples.ipynb",
+    "headingCellId": "l05-example-3-14-8",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/example-3.14.8",
+    "slides": [],
+    "blocks": []
+  },
+  "3.14.9": {
+    "kind": "Exercise",
+    "title": "Prepare a two-city service briefing",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-14-9",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/exercise-3.14.9",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "import pandas as pd  # Imports pandas so this solution can run in a fresh Colab cell.\n\ndata_url = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"  # Stores the versioned raw-data address.\ndf = pd.read_csv(data_url)  # Loads a new DataFrame for this exercise only.\nassert df.shape == (121, 14), \"The wrong dataset version was loaded.\"\n\nprint(\"Dataset shape:\", df.shape)\ndisplay(df.head())\n\nprint(\"\\nEvery raw city label\")\nprint(df[\"city\"].value_counts(dropna=False))\n\nselected_cities = [\"Copenhagen\", \"Aalborg\"]\ncity_records = df[df[\"city\"].isin(selected_cities)].copy()\n\nbriefing_columns = [\n    \"record_id\", \"report_month\", \"city\", \"service_type\",\n    \"cases_received\", \"cases_resolved\", \"satisfaction_score\", \"feedback\"\n]\ndisplay(city_records[briefing_columns].head(10))\n\ncity_summary = city_records.groupby(\"city\").agg(\n    row_count=(\"record_id\", \"count\"),\n    cases_received_total=(\"cases_received\", \"sum\"),\n    cases_received_mean=(\"cases_received\", \"mean\"),\n    cases_resolved_total=(\"cases_resolved\", \"sum\"),\n    satisfaction_n=(\"satisfaction_score\", \"count\"),\n    satisfaction_mean=(\"satisfaction_score\", \"mean\"),\n    satisfaction_median=(\"satisfaction_score\", \"median\")\n)\ndisplay(city_summary.round(2))\n\ncity_records[\"mentions_wait\"] = city_records[\"feedback\"].str.contains(\n    \"wait|long|delay\", case=False, na=False, regex=True\n)\nprint(\"\\nWaiting-rule matches by city\")\nprint(pd.crosstab(city_records[\"city\"], city_records[\"mentions_wait\"]))\ndisplay(city_records.loc[city_records[\"mentions_wait\"], [\"record_id\", \"city\", \"feedback\"]])\n\nprint(\"\\nInterpretation\")\nprint(\"These exact-label results describe synthetic city-service-month records, not residents.\")\nprint(\"Raw city variants are excluded from the two exact-label groups and need owner review.\")\nprint(\"Satisfaction counts are the denominators for satisfaction means; keyword matches describe only the stated rule.\")",
+        "cellId": "l05-solution-3-14-9-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-14-9"
+  },
+  "3.14.10": {
+    "kind": "Exercise",
+    "title": "Investigate a claim about unresolved cases",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-14-10",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/exercise-3.14.10",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "import pandas as pd  # Imports pandas so this solution is independent of earlier cells.\n\ndata_url = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"  # Identifies the unchanged raw teaching file.\ndf = pd.read_csv(data_url)  # Loads the complete dataset again.\nassert df.shape == (121, 14), \"The wrong dataset version was loaded.\"\n\ndf[\"unresolved_cases\"] = df[\"cases_received\"] - df[\"cases_resolved\"]\npositive_received = df[\"cases_received\"] > 0\ndf.loc[positive_received, \"resolution_rate_pct\"] = (\n    df.loc[positive_received, \"cases_resolved\"]\n    / df.loc[positive_received, \"cases_received\"]\n    * 100\n)\n\nproblem_mask = (\n    (df[\"cases_received\"] < 0)\n    | (df[\"unresolved_cases\"] < 0)\n    | (df[\"resolution_rate_pct\"] > 100)\n)\nproblem_columns = [\n    \"record_id\", \"service_type\", \"cases_received\", \"cases_resolved\",\n    \"unresolved_cases\", \"resolution_rate_pct\"\n]\nprint(\"Rows requiring review:\", int(problem_mask.sum()))\ndisplay(df.loc[problem_mask, problem_columns])\n\nservice_totals = df.groupby(\"service_type\")[[\"cases_received\", \"cases_resolved\"]].sum()\nservice_totals[\"unresolved_total\"] = (\n    service_totals[\"cases_received\"] - service_totals[\"cases_resolved\"]\n)\nservice_totals[\"aggregate_resolution_rate_pct\"] = (\n    service_totals[\"cases_resolved\"] / service_totals[\"cases_received\"] * 100\n)\n\nprint(\"\\nGrouped results in received-total order\")\ndisplay(service_totals.sort_values(\"cases_received\", ascending=False).round(2))\nprint(\"\\nGrouped results in unresolved-total order\")\ndisplay(service_totals.sort_values(\"unresolved_total\", ascending=False).round(2))\n\nprint(\"\\nRaw service labels\")\nprint(df[\"service_type\"].value_counts(dropna=False))\nprint(\"\\nConclusion\")\nprint(\"Received volume and unresolved workload are different measures and do not have to rank groups identically.\")\nprint(\"The raw result remains preliminary because invalid case relationships and fragmented labels affect the grouped totals.\")",
+        "cellId": "l05-solution-3-14-10-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-14-10"
+  },
+  "3.14.11": {
+    "kind": "Exercise",
+    "title": "Check whether service-channel counts agree",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-14-11",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/exercise-3.14.11",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "import pandas as pd  # Imports pandas for a complete standalone solution.\n\ndata_url = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"  # Stores the raw CSV location.\ndf = pd.read_csv(data_url)  # Loads the source data without changing the file.\nassert df.shape == (121, 14), \"The wrong dataset version was loaded.\"\n\nrequired_columns = [\"cases_received\", \"digital_cases\", \"in_person_cases\"]\nprint(\"Required columns present:\", all(column in df.columns for column in required_columns))\ndisplay(df.sample(5, random_state=42)[[\"record_id\", \"service_type\"] + required_columns])\n\ndf[\"recorded_channel_total\"] = df[\"digital_cases\"] + df[\"in_person_cases\"]\ndf[\"channel_gap\"] = df[\"cases_received\"] - df[\"recorded_channel_total\"]\npositive_received = df[\"cases_received\"] > 0\ndf.loc[positive_received, \"digital_share_pct\"] = (\n    df.loc[positive_received, \"digital_cases\"]\n    / df.loc[positive_received, \"cases_received\"]\n    * 100\n)\n\nchannel_problem = (df[\"channel_gap\"] != 0) | (~positive_received)\nprint(\"Channel or denominator issues:\", int(channel_problem.sum()))\ndisplay(df.loc[channel_problem, [\n    \"record_id\", \"cases_received\", \"digital_cases\", \"in_person_cases\",\n    \"recorded_channel_total\", \"channel_gap\", \"digital_share_pct\"\n]])\n\nchannel_summary = df.groupby(\"service_type\")[[\"digital_cases\", \"in_person_cases\"]].sum()\nchannel_summary[\"channel_total\"] = (\n    channel_summary[\"digital_cases\"] + channel_summary[\"in_person_cases\"]\n)\nchannel_summary[\"grouped_digital_share_pct\"] = (\n    channel_summary[\"digital_cases\"] / channel_summary[\"channel_total\"] * 100\n)\ndisplay(channel_summary.round(2))\n\ndf[\"digital_majority\"] = df[\"digital_cases\"] > df[\"in_person_cases\"]\ndisplay(pd.crosstab(df[\"service_type\"], df[\"digital_majority\"]))\n\nprint(\"\\nInterpretation\")\nprint(\"The denominator is recorded cases in each service-category-city-month row, not people.\")\nprint(\"Raw category variants fragment groups, and any channel gap must be investigated before reporting uptake.\")\nprint(\"Because the dataset is synthetic, the percentages cannot describe real service behaviour.\")",
+        "cellId": "l05-solution-3-14-11-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-14-11"
+  },
+  "3.14.12": {
+    "kind": "Exercise",
+    "title": "Build a first-response data-quality register",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-14-12",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/exercise-3.14.12",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "import pandas as pd  # Imports pandas for this independent audit.\n\ndata_url = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"  # Points to the versioned raw teaching data.\ndf = pd.read_csv(data_url)  # Loads a fresh untouched DataFrame.\nassert df.shape == (121, 14), \"The wrong dataset version was loaded.\"\n\nprint(\"Missing values by column\")\nprint(df.isna().sum())\n\nexact_duplicate_mask = df.duplicated(keep=False)\nrepeated_id_mask = df[\"record_id\"].duplicated(keep=False)\nresolution_preview = pd.to_numeric(df[\"resolution_days\"], errors=\"coerce\")\nmonth_preview = pd.to_datetime(df[\"report_month\"], errors=\"coerce\")\n\nnon_numeric_resolution_mask = df[\"resolution_days\"].notna() & resolution_preview.isna()\ninvalid_month_mask = df[\"report_month\"].notna() & month_preview.isna()\nnegative_received_mask = df[\"cases_received\"] < 0\nnegative_complaints_mask = df[\"complaints_received\"] < 0\ninvalid_satisfaction_mask = (\n    (df[\"satisfaction_score\"] < 1) | (df[\"satisfaction_score\"] > 5)\n)\nresolved_exceeds_received_mask = df[\"cases_resolved\"] > df[\"cases_received\"]\n\nissue_rows = [\n    [\"Missing satisfaction\", int(df[\"satisfaction_score\"].isna().sum()), \"isna()\", \"Changes the score denominator\"],\n    [\"Missing feedback\", int(df[\"feedback\"].isna().sum()), \"isna()\", \"Reduces text-analysis coverage\"],\n    [\"Exact duplicate participation\", int(exact_duplicate_mask.sum()), \"duplicated(keep=False)\", \"May double-count the same stored row\"],\n    [\"Repeated identifier participation\", int(repeated_id_mask.sum()), \"record_id duplicated\", \"May represent reuse or a legitimate revision\"],\n    [\"Non-numeric resolution value\", int(non_numeric_resolution_mask.sum()), \"to_numeric(errors='coerce')\", \"Prevents direct numeric analysis\"],\n    [\"Invalid report month\", int(invalid_month_mask.sum()), \"to_datetime(errors='coerce')\", \"Prevents valid time ordering\"],\n    [\"Negative received cases\", int(negative_received_mask.sum()), \"cases_received < 0\", \"Conflicts with a count interpretation\"],\n    [\"Negative complaints\", int(negative_complaints_mask.sum()), \"complaints_received < 0\", \"Conflicts with a count interpretation\"],\n    [\"Satisfaction outside 1–5\", int(invalid_satisfaction_mask.sum()), \"score < 1 or score > 5\", \"Conflicts with the documented scale\"],\n    [\"Resolved exceeds received\", int(resolved_exceeds_received_mask.sum()), \"resolved > received\", \"Creates an impossible relationship under the stated meaning\"],\n]\nissue_register = pd.DataFrame(\n    issue_rows,\n    columns=[\"issue\", \"affected_rows\", \"detection_rule\", \"why_follow_up\"]\n)\ndisplay(issue_register)\n\nprint(\"\\nRaw city labels\")\nprint(df[\"city\"].value_counts(dropna=False))\nprint(\"\\nRaw service labels\")\nprint(df[\"service_type\"].value_counts(dropna=False))\n\nprint(\"\\nRows involved in duplicate or identifier review\")\ndisplay(df.loc[exact_duplicate_mask | repeated_id_mask])\nprint(\"\\nOwner decisions are required for repeated identifiers, category mappings and the meaning of invalid values.\")",
+        "cellId": "l05-solution-3-14-12-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-14-12"
+  },
+  "3.14.13": {
+    "kind": "Exercise",
+    "title": "Examine feedback about waiting and clarity",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-14-13",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/exercise-3.14.13",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "import pandas as pd  # Imports pandas so the text exercise runs independently.\n\ndata_url = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"  # Stores the raw dataset URL.\ndf = pd.read_csv(data_url)  # Loads the complete raw dataset again.\nassert df.shape == (121, 14), \"The wrong dataset version was loaded.\"\n\nfeedback = df[\"feedback\"].dropna()\nprint(\"Non-missing feedback comments:\", feedback.count())\ndisplay(feedback.sample(10, random_state=42))\n\ndf[\"feedback_characters\"] = df[\"feedback\"].str.len()\ndf[\"feedback_words\"] = df[\"feedback\"].str.split().str.len()\ndisplay(df[[\"feedback_characters\", \"feedback_words\"]].describe().round(2))\n\ndf[\"mentions_wait_or_delay\"] = df[\"feedback\"].str.contains(\n    \"wait|long|delay\", case=False, na=False, regex=True\n)\ndf[\"mentions_clarity_or_help\"] = df[\"feedback\"].str.contains(\n    \"clear|helpful|useful\", case=False, na=False, regex=True\n)\n\nfor indicator in [\"mentions_wait_or_delay\", \"mentions_clarity_or_help\"]:\n    print(f\"\\n{indicator}: {int(df[indicator].sum())} matching comments\")\n    display(df.loc[df[indicator], [\"record_id\", \"service_type\", \"satisfaction_score\", \"feedback\"]])\n    print(\"Service-type comparison\")\n    display(pd.crosstab(df[\"service_type\"], df[indicator]))\n    print(\"Satisfaction comparison\")\n    display(df.groupby(indicator)[\"satisfaction_score\"].agg([\"count\", \"mean\", \"median\"]).round(2))\n    scored_matches = df.loc[df[indicator], \"satisfaction_score\"].count()\n    print(\"Matches with a stored satisfaction score:\", int(scored_matches))\n\nprint(\"\\nInterpretation\")\nprint(\"These are transparent keyword-rule matches, not complete qualitative themes.\")\nprint(\"Different wording and negation can create false negatives or false positives.\")\nprint(\"Any score difference is descriptive association and does not show that the matched language caused the score.\")",
+        "cellId": "l05-solution-3-14-13-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-14-13"
+  },
+  "3.14.14": {
+    "kind": "Exercise",
+    "title": "Test a strong management claim before repeating it",
+    "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+    "headingCellId": "l05-exercise-3-14-14",
+    "website": "https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/#data-i/3.14/exercise-3.14.14",
+    "slides": [],
+    "blocks": [
+      {
+        "role": "solution",
+        "code": "import pandas as pd  # Imports pandas for a standalone review of the claim.\n\ndata_url = \"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\"  # Records the exact source used in the review.\ndf = pd.read_csv(data_url)  # Loads a fresh copy of the raw file.\nassert df.shape == (121, 14), \"The wrong dataset version was loaded.\"\n\nprint(\"Raw city labels\")\nprint(df[\"city\"].value_counts(dropna=False))\nprint(\"\\nRaw service labels\")\nprint(df[\"service_type\"].value_counts(dropna=False))\n\ndf[\"mentions_wait\"] = df[\"feedback\"].str.contains(\n    \"wait|long|delay\", case=False, na=False, regex=True\n)\nfocal_mask = (df[\"city\"] == \"Copenhagen\") & (df[\"service_type\"] == \"Transport\")\nfocal = df.loc[focal_mask].copy()\n\nprint(\"\\nExact Copenhagen–Transport result\")\nprint(\"Rows:\", len(focal))\nprint(\"Received-case total:\", focal[\"cases_received\"].sum())\nprint(\"Satisfaction count:\", focal[\"satisfaction_score\"].count())\nprint(\"Satisfaction mean:\", round(focal[\"satisfaction_score\"].mean(), 2))\nprint(\"Satisfaction median:\", focal[\"satisfaction_score\"].median())\nprint(\"Waiting-rule matches:\", int(focal[\"mentions_wait\"].sum()))\n\nexact_cities = [\"Copenhagen\", \"Aarhus\", \"Odense\", \"Aalborg\"]\nexact_services = [\"Transport\", \"Employment\", \"Waste\", \"Citizen Services\", \"Housing\"]\ncomparison = df[\n    df[\"city\"].isin(exact_cities) & df[\"service_type\"].isin(exact_services)\n].copy()\n\ncomparison_summary = comparison.groupby([\"city\", \"service_type\"]).agg(\n    row_count=(\"record_id\", \"count\"),\n    cases_received_total=(\"cases_received\", \"sum\"),\n    satisfaction_n=(\"satisfaction_score\", \"count\"),\n    satisfaction_mean=(\"satisfaction_score\", \"mean\"),\n    waiting_matches=(\"mentions_wait\", \"sum\")\n)\ndisplay(comparison_summary.round(2))\n\ninvalid_satisfaction = (\n    focal[\"satisfaction_score\"].isna()\n    | (focal[\"satisfaction_score\"] < 1)\n    | (focal[\"satisfaction_score\"] > 5)\n)\nimpossible_cases = focal[\"cases_resolved\"] > focal[\"cases_received\"]\nprint(\"\\nFocal quality checks\")\nprint(\"Missing/out-of-range satisfaction rows:\", int(invalid_satisfaction.sum()))\nprint(\"Resolved greater than received rows:\", int(impossible_cases.sum()))\nprint(\"Exact duplicate rows in focal subset:\", int(focal.duplicated().sum()))\nprint(\"Exact duplicate rows in full data:\", int(df.duplicated().sum()))\n\nwait_comments = focal.loc[focal[\"mentions_wait\"], [\"record_id\", \"satisfaction_score\", \"feedback\"]]\ndisplay(wait_comments)\nprint(\"Focal wait matches:\", len(wait_comments))\nprint(\"Focal wait matches with a score:\", int(wait_comments[\"satisfaction_score\"].count()))\n\nprint(\"\\nEvidence decision\")\nprint(\"Observation: the printed exact-label summaries show the workload, satisfaction and waiting-rule results for each compared group.\")\nprint(\"Cautious interpretation: the focal group can be compared descriptively after naming its row and score denominators.\")\nprint(\"Unsupported claim: these synthetic records cannot show that waiting caused low satisfaction in a real population.\")\nprint(\"Decision: revise the slide so it reports exact observations and removes the causal statement.\")",
+        "cellId": "l05-solution-3-14-14-code-1",
+        "notebook": "L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
+        "reference": false
+      }
+    ],
+    "solutionCellId": "l05-solution-3-14-14"
+  }
+}

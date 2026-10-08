@@ -1128,7 +1128,7 @@ function navigateTo(section, id = "overview") {
 
 function applyRouteFromHash() {
   const rawRoute = decodeURIComponent(window.location.hash.slice(1));
-  const [requestedSection = "start", requestedPage = "overview"] = rawRoute.split("/");
+  const [requestedSection = "start", requestedPage = "overview", requestedItem] = rawRoute.split("/");
   const section = Object.prototype.hasOwnProperty.call(sectionModules, requestedSection) ? requestedSection : "start";
   const sectionSet = sectionModules[section];
   state.section = section;
@@ -1137,6 +1137,18 @@ function applyRouteFromHash() {
 
   if (sectionSet.some(module => module.id === requestedPage)) {
     showModule(requestedPage);
+    if (section === "data-i" && requestedItem) {
+      // Module rendering resets its scroll position after 40 ms. An item route
+      // then opens a folded solution, if needed, and lands at the exact item.
+      window.setTimeout(() => {
+        const target = document.getElementById(requestedItem);
+        if (!target || !page.contains(target)) return;
+        const disclosure = target.closest("details");
+        if (disclosure) disclosure.open = true;
+        target.classList.add("linked-target");
+        target.scrollIntoView({ block: "start" });
+      }, 80);
+    }
     return;
   }
 
@@ -1659,17 +1671,33 @@ function addCodeCompanionLinks() {
     if (codeBlockElement.nextElementSibling?.classList.contains("code-companion-links")) return;
     const resourceLinks = document.createElement("div");
     resourceLinks.className = "code-companion-links";
-    resourceLinks.innerHTML = state.section === "data-i"
-      ? state.current === "3.14"
-        ? `<span>Run the matching guided example:</span><a href="${links.cases}" target="_blank" rel="noreferrer">Open Tutorial 3.14 Guided Examples</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 5 on GitHub</a>`
-        : `<span>Run the matching numbered material:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Open Lecture 5 Examples</a><a href="${links.exercises}" target="_blank" rel="noreferrer">Open Exercises and Solutions</a>`
-      : state.section === "python"
+    if (state.section === "data-i") {
+      const { lectureItem, lectureRole, notebook, colabCell } = codeBlockElement.dataset;
+      // Only advertise an exact match. Syntax summaries without a numbered
+      // executable item do not lead students into an unrelated notebook.
+      if (!lectureItem || !notebook || !colabCell) return;
+      const label = lectureRole === "solution" ? `Solution ${lectureItem}`
+        : lectureRole === "exercise" ? `Exercise ${lectureItem}` : `Example ${lectureItem}`;
+      const relative = `asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/${notebook}`;
+      const colab = `https://colab.research.google.com/github/${relative}#scrollTo=${colabCell}`;
+      const github = `https://github.com/${relative}`;
+      resourceLinks.innerHTML = `<span>Matching numbered material:</span><a href="${colab}" target="_blank" rel="noreferrer">Open ${label} in Colab</a><a href="${github}" target="_blank" rel="noreferrer">View this notebook on GitHub</a>`;
+    } else resourceLinks.innerHTML = state.section === "python"
       ? `<span>Open the Lecture 3 companion files:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Examples</a><a href="${links.exercises}" target="_blank" rel="noreferrer">Independent Exercises</a><a href="${links.solutions}" target="_blank" rel="noreferrer">Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">GitHub folder</a>`
       : state.current === "2.15"
         ? `<span>Run the matching applied solution:</span><a href="${links.appliedSolutions}" target="_blank" rel="noreferrer">Open Tutorial 2.15 Solutions</a><a href="${links.github}" target="_blank" rel="noreferrer">View Lecture 4 on GitHub</a>`
         : `<span>Open the Tutorial ${state.current} companion files:</span><a href="${links.examples}" target="_blank" rel="noreferrer">Examples</a><a href="${links.workExercises}" target="_blank" rel="noreferrer">Worked Exercises</a><a href="${links.workExercisesGithub}" target="_blank" rel="noreferrer">Worked Exercises on GitHub</a>`;
     codeBlockElement.insertAdjacentElement("afterend", resourceLinks);
   });
+  if (state.section === "data-i") {
+    const headings = [...page.querySelectorAll("h2[data-lecture-item], h3[data-lecture-item]")];
+    page.querySelectorAll('a[href*="L05_Tutorial_3_1_to_3_14_Exercises.ipynb"]').forEach(link => {
+      if (link.href.includes("#scrollTo=")) return;
+      const heading = headings.filter(h => h.compareDocumentPosition(link) & Node.DOCUMENT_POSITION_FOLLOWING).at(-1);
+      if (heading?.dataset.lectureKind !== "Exercise") return;
+      link.href += "#scrollTo=l05-exercise-" + heading.dataset.lectureItem.replaceAll(".", "-");
+    });
+  }
 }
 
 async function copyToClipboard(text) {
