@@ -1085,7 +1085,7 @@ This is an early example of data cleaning.
 ### Possible interaction
 
 ```text
-Is the source verified? Type yes or no:   YES  
+Is the source verified? Type yes or no:   YES
 The record may continue to analysis
 ```
 

@@ -1,6 +1,6 @@
 # Tutorial notebook structure and saved-output record
 
-**Updated:** 29 September 2026  
+**Updated:** 29 September 2026
 **Scope:** Current repository files. Counts below describe notebook cells and saved execution state; they do not claim that an unexecuted interactive or starter cell is defective.
 
 | Notebook | Coverage | Code cells | Cells with saved execution | Unexecuted or manual cells | Manual-input metadata |

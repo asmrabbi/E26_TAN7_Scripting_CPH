@@ -201,6 +201,12 @@ The times are deliberately generous. Beginners should pause, predict outputs, re
 
 ---
 
+# How the examples and exercises are numbered
+
+Every tutorial uses one continuous sequence. Examples and exercises do not restart at 1. For example, Tutorial 3.5 contains Examples 3.5.1–3.5.20, followed by Exercises 3.5.21–3.5.23. The website and Colab notebooks use the same numbers, so a student can move between them without translating labels.
+
+---
+
 # How to work with every example
 
 Use the same cycle as Python Foundations I and II:
@@ -246,6 +252,8 @@ In Python Foundations I and II, most examples used individual variables, small l
 
 Suppose one monthly service report contains:
 
+### Example 3.1.1 — Why move beyond individual variables?
+
 ```python
 city = "Copenhagen"
 service_type = "Housing"
@@ -285,13 +293,13 @@ For the course dataset, the intended unit is:
 
 This means that summing `cases_received` is summing monthly service-category counts, not counting individual people directly.
 
-### Example 3.1.1 — Identify the unit of observation
+### Example 3.1.2 — Identify the unit of observation
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A research group is deciding what one row, one column and one value represent before doing any calculation.</p>
-<p><strong>What this example is for:</strong> Example 3.1.1 focuses on <strong>Identify the unit of observation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.1.2 focuses on <strong>Identify the unit of observation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -313,13 +321,13 @@ What does one row represent?
 
 It would be wrong to say that the table has three students merely because it has three rows. Student `S01` appears twice.
 
-### Example 3.1.2 — Variable versus value
+### Example 3.1.3 — Variable versus value
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A research group is deciding what one row, one column and one value represent before doing any calculation.</p>
-<p><strong>What this example is for:</strong> Example 3.1.2 focuses on <strong>Variable versus value</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.1.3 focuses on <strong>Variable versus value</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -356,13 +364,13 @@ A cell contains a stored value. That value may be:
 
 This is why a dataset should not be treated as a neutral mirror of reality.
 
-### Example 3.1.3 — A category is a modelling decision
+### Example 3.1.4 — A category is a modelling decision
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A research group is deciding what one row, one column and one value represent before doing any calculation.</p>
-<p><strong>What this example is for:</strong> Example 3.1.3 focuses on <strong>A category is a modelling decision</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.1.4 focuses on <strong>A category is a modelling decision</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -423,7 +431,7 @@ The text is still stored in a table, but its internal meaning is less structured
 - **Mistake:** counting rows without checking repeated units.  
   **Repair:** inspect identifiers and the unit of observation first.
 
-## Exercise 3.1.1 — Describe a dataset before coding
+## Exercise 3.1.5 — Describe a dataset before coding
 
 A fictional dataset contains these columns:
 
@@ -525,6 +533,8 @@ When pandas does not know the correct delimiter, the entire row may appear as on
 
 Later you can specify a separator:
 
+### Example 3.2.1 — Delimiters are not always commas
+
 ```python
 pd.read_csv("file.csv", sep=";")
 ```
@@ -558,13 +568,13 @@ The blank field indicates that no value is present in that position. pandas will
 
 Do not automatically replace missing data with zero. Zero may have a substantive meaning that is completely different from “unknown” or “not recorded”.
 
-### Example 3.2.1 — Read a CSV mentally
+### Example 3.2.2 — Read a CSV mentally
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A student is examining a CSV as a structured text file and checking whether rows and columns have been stored consistently.</p>
-<p><strong>What this example is for:</strong> Example 3.2.1 focuses on <strong>Read a CSV mentally</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.2.2 focuses on <strong>Read a CSV mentally</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -587,13 +597,13 @@ Answer before coding:
 
 **Answer:** three columns, three data rows, and the `city` field is missing in row 3.
 
-### Example 3.2.2 — Detect a delimiter problem
+### Example 3.2.3 — Detect a delimiter problem
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A student is examining a CSV as a structured text file and checking whether rows and columns have been stored consistently.</p>
-<p><strong>What this example is for:</strong> Example 3.2.2 focuses on <strong>Detect a delimiter problem</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.2.3 focuses on <strong>Detect a delimiter problem</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -640,7 +650,7 @@ A usable dataset therefore needs both:
 1. **stored data**, and
 2. **documentation/context**.
 
-## Exercise 3.2.1 — Find the structural problem
+## Exercise 3.2.4 — Find the structural problem
 
 Consider:
 
@@ -669,7 +679,7 @@ The file uses semicolons instead of commas. The student should investigate the `
 
 </details>
 
-## Exercise 3.2.2 — Missing does not mean zero
+## Exercise 3.2.5 — Missing does not mean zero
 
 Explain why these two values should not automatically be treated as equivalent:
 
@@ -707,6 +717,8 @@ pandas is the main Python library used in this course for tabular data. It lets 
 
 ## Import pandas
 
+### Example 3.3.1 — Import pandas
+
 ```python
 import pandas as pd
 ```
@@ -718,6 +730,8 @@ import pandas as pd
 - `as pd` creates the conventional short alias `pd`.
 
 We then write:
+
+### Example 3.3.2 — Line-by-line explanation
 
 ```python
 pd.read_csv(...)
@@ -731,13 +745,13 @@ pandas.read_csv(...)
 
 The alias is a convention, not a requirement of the library.
 
-### Example 3.3.1 — Confirm pandas is available
+### Example 3.3.3 — Confirm pandas is available
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A student is moving a CSV into pandas and needs to distinguish the stored file from the DataFrame held in the current Python session.</p>
-<p><strong>What this example is for:</strong> Example 3.3.1 focuses on <strong>Confirm pandas is available</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.3.3 focuses on <strong>Confirm pandas is available</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The first import lines make the required library tools available in the current notebook session. An import prepares the tools; it does not load or analyse the dataset by itself.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -767,6 +781,8 @@ A pandas `DataFrame` is a two-dimensional tabular object with labelled rows and 
 
 You can create one manually:
 
+### Example 3.3.4 — What is a DataFrame?
+
 ```python
 import pandas as pd
 
@@ -789,13 +805,13 @@ df_small
 
 The leftmost `0` and `1` are the DataFrame's **index labels**. They are not part of the original dictionary values.
 
-### Example 3.3.2 — DataFrame versus Series
+### Example 3.3.5 — DataFrame versus Series
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A student is moving a CSV into pandas and needs to distinguish the stored file from the DataFrame held in the current Python session.</p>
-<p><strong>What this example is for:</strong> Example 3.3.2 focuses on <strong>DataFrame versus Series</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.3.5 focuses on <strong>DataFrame versus Series</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The code works with columns including <code>city</code>. Read each column name as a variable recorded for every relevant row.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>type</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -818,6 +834,8 @@ print(type(df_small[["city"]]))
 A `Series` is one-dimensional. A DataFrame is two-dimensional.
 
 ## The main course loading method: raw GitHub URL
+
+### Example 3.3.6 — The main course loading method: raw GitHub URL
 
 ```python
 import pandas as pd
@@ -844,13 +862,13 @@ DataFrame stored in Python memory
 
 The original file and the DataFrame are not the same object. Changing the DataFrame does not automatically rewrite the original CSV.
 
-### Example 3.3.3 — Load from a local path
+### Example 3.3.7 — Load from a local path
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A student is moving a CSV into pandas and needs to distinguish the stored file from the DataFrame held in the current Python session.</p>
-<p><strong>What this example is for:</strong> Example 3.3.3 focuses on <strong>Load from a local path</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.3.7 focuses on <strong>Load from a local path</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The CSV-loading line reads stored tabular text into a pandas DataFrame. From that point onward, the variable refers to an in-memory working object, while the source file remains a separate artefact.</li><li>Named results such as <code>df</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>Pay particular attention to <code>read_csv</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -882,6 +900,8 @@ You can also use the Colab file panel:
 4. Confirm the uploaded filename.
 5. Run:
 
+### Example 3.3.8 — Uploading a CSV in Google Colab
+
 ```python
 df = pd.read_csv("E26_TAN7_service_experience_raw.csv")
 ```
@@ -889,6 +909,8 @@ df = pd.read_csv("E26_TAN7_service_experience_raw.csv")
 A temporary Colab runtime may lose uploaded files when the runtime ends. This is one reason the direct repository URL is useful for course examples.
 
 ### Upload through Python
+
+### Example 3.3.9 — Upload through Python
 
 ```python
 from google.colab import files
@@ -948,6 +970,8 @@ Check:
 
 If everything appears in one column, inspect the source delimiter.
 
+### Example 3.3.10 — Wrong delimiter
+
 ```python
 df = pd.read_csv("file.csv", sep=";")
 ```
@@ -957,6 +981,8 @@ Use this only when `;` is genuinely the delimiter.
 ### Encoding error
 
 An encoding error may require specifying an encoding, for example:
+
+### Example 3.3.11 — Encoding error
 
 ```python
 df = pd.read_csv("file.csv", encoding="utf-8")
@@ -969,6 +995,8 @@ Do not randomly try encodings until something runs. First identify the source's 
 This distinction will appear repeatedly.
 
 A **method** performs an operation and uses parentheses:
+
+### Example 3.3.12 — Methods versus attributes
 
 ```python
 df.head()
@@ -986,6 +1014,8 @@ Writing `df.shape()` is a common beginner error because `shape` is not a method.
 
 ### Broken code
 
+### Example 3.3.13 — Broken code
+
 ```python
 import pandas as pd
 
@@ -1002,7 +1032,7 @@ The filename is deliberately wrong: `experiences` should be `experience`.
 
 This is ordinary debugging, not evidence that pandas is broken.
 
-## Exercise 3.3.1 — Load and verify
+## Exercise 3.3.14 — Load and verify
 
 1. Import pandas as `pd`.
 2. Load the course CSV from the raw GitHub URL.
@@ -1027,7 +1057,7 @@ print(type(df))
 
 </details>
 
-## Exercise 3.3.2 — Explain the file/DataFrame distinction
+## Exercise 3.3.15 — Explain the file/DataFrame distinction
 
 A student says:
 
@@ -1064,6 +1094,8 @@ After a dataset loads successfully, do not immediately calculate an average or m
 
 ## Start from a fresh load
 
+### Example 3.4.1 — Start from a fresh load
+
 ```python
 import pandas as pd
 
@@ -1072,6 +1104,8 @@ df = pd.read_csv(url)
 ```
 
 ## `head()` — inspect the first rows
+
+### Example 3.4.2 — head() — inspect the first rows
 
 ```python
 df.head()
@@ -1098,6 +1132,8 @@ It cannot prove that the first five rows are representative of the entire datase
 
 ## `tail()` — inspect the final rows
 
+### Example 3.4.3 — tail() — inspect the final rows
+
 ```python
 df.tail()
 ```
@@ -1105,6 +1141,8 @@ df.tail()
 This can reveal problems that do not appear at the beginning of a file.
 
 ## `sample()` — inspect rows from different positions
+
+### Example 3.4.4 — sample() — inspect rows from different positions
 
 ```python
 df.sample(5, random_state=42)
@@ -1115,6 +1153,8 @@ df.sample(5, random_state=42)
 Do not use a random sample as proof that the dataset has no errors. It is an inspection aid.
 
 ## `shape` — how many rows and columns?
+
+### Example 3.4.5 — shape — how many rows and columns?
 
 ```python
 df.shape
@@ -1146,6 +1186,8 @@ Columns: 14
 
 ## `len(df)` — another way to count rows
 
+### Example 3.4.6 — len(df) — another way to count rows
+
 ```python
 len(df)
 ```
@@ -1159,6 +1201,8 @@ len(df)
 `len(df)` counts rows in this context. It does not report the number of columns.
 
 ## `columns` — inspect column names
+
+### Example 3.4.7 — columns — inspect column names
 
 ```python
 df.columns
@@ -1182,6 +1226,8 @@ Column names matter because later code must match them exactly.
 
 ## `index` — inspect row labels
 
+### Example 3.4.8 — index — inspect row labels
+
 ```python
 df.index
 ```
@@ -1199,6 +1245,8 @@ record_id values: SR2026-0001, SR2026-0002, SR2026-0003, ...
 
 ## `dtypes` — how pandas currently represents each column
 
+### Example 3.4.9 — dtypes — how pandas currently represents each column
+
 ```python
 df.dtypes
 ```
@@ -1212,6 +1260,8 @@ Do not memorise one exact printed dtype name for text. Focus on the conceptual q
 A particularly important column is `resolution_days`. It contains the word `unknown` in three records, so pandas cannot safely treat every value in that column as an ordinary number during a basic import.
 
 ## `info()` — compact structural inspection
+
+### Example 3.4.10 — info() — compact structural inspection
 
 ```python
 df.info()
@@ -1237,6 +1287,8 @@ For the course dataset, pay particular attention to:
 
 Use this block whenever you meet an unfamiliar DataFrame:
 
+### Example 3.4.11 — A repeatable first-inspection routine
+
 ```python
 print("Shape:", df.shape)
 print("\nColumns:")
@@ -1254,13 +1306,13 @@ df.info()
 
 This does not complete a data-quality assessment, but it prevents many careless mistakes.
 
-### Example 3.4.1 — Interpret shape correctly
+### Example 3.4.12 — Interpret shape correctly
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A project group has loaded a table and is inspecting its size, columns, data types and sample records before trusting it.</p>
-<p><strong>What this example is for:</strong> Example 3.4.1 focuses on <strong>Interpret shape correctly</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.4.12 focuses on <strong>Interpret shape correctly</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -1288,13 +1340,13 @@ Incorrect statement:
 
 Why? Because the unit of observation is a service-category-city-month record, not a citizen.
 
-### Example 3.4.2 — Compare `head()` and `sample()`
+### Example 3.4.13 — Compare `head()` and `sample()`
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A project group has loaded a table and is inspecting its size, columns, data types and sample records before trusting it.</p>
-<p><strong>What this example is for:</strong> Example 3.4.2 focuses on <strong>Compare head() and sample()</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.4.13 focuses on <strong>Compare head() and sample()</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code> and <code>sample</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -1316,6 +1368,8 @@ The purpose is not to calculate anything. It is to inspect more than one part of
 
 ### Broken code
 
+### Example 3.4.14 — Broken code
+
 ```python
 print(df.shape())
 ```
@@ -1324,13 +1378,15 @@ You may receive an error because `shape` is an attribute, not a callable method.
 
 ### Repair
 
+### Example 3.4.15 — Repair
+
 ```python
 print(df.shape)
 ```
 
 Use parentheses for methods such as `head()`, but not for `shape`.
 
-## Exercise 3.4.1 — Produce an inspection note
+## Exercise 3.4.16 — Produce an inspection note
 
 Using the course DataFrame, write code that reports:
 
@@ -1363,7 +1419,7 @@ A suitable interpretation would mention the 121 × 14 structure, the mix of nume
 
 </details>
 
-## Exercise 3.4.2 — Why inspect beyond the first five rows?
+## Exercise 3.4.17 — Why inspect beyond the first five rows?
 
 Explain two reasons why `df.head()` alone is not enough for data-quality assessment.
 
@@ -1408,6 +1464,8 @@ This tutorial introduces column selection, `.loc[]`, `.iloc[]` and Boolean filte
 
 ## Select one column
 
+### Example 3.5.1 — Select one column
+
 ```python
 city = df["city"]
 city.head()
@@ -1422,6 +1480,8 @@ print(type(df["city"]))
 ```
 
 ### Why the column name uses quotation marks
+
+### Example 3.5.2 — Why the column name uses quotation marks
 
 ```python
 df["city"]
@@ -1439,13 +1499,13 @@ which asks Python to find a variable called `city` and use its value as the key.
 
 Unless you deliberately created such a variable, that code will fail.
 
-### Example 3.5.1 — Select a numeric column
+### Example 3.5.3 — Select a numeric column
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
-<p><strong>What this example is for:</strong> Example 3.5.1 focuses on <strong>Select a numeric column</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.5.3 focuses on <strong>Select a numeric column</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Named results such as <code>cases</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -1472,6 +1532,8 @@ We will study calculations systematically in Tutorial 3.7.
 
 Use a list of column names inside the selection brackets:
 
+### Example 3.5.4 — Select several columns
+
 ```python
 subset = df[["city", "service_type", "cases_received"]]
 subset.head()
@@ -1484,13 +1546,13 @@ outer [ ... ]  → select from the DataFrame
 inner [ ... ]  → Python list of column names
 ```
 
-### Example 3.5.2 — Build a readable preview table
+### Example 3.5.5 — Build a readable preview table
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
-<p><strong>What this example is for:</strong> Example 3.5.2 focuses on <strong>Build a readable preview table</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.5.5 focuses on <strong>Build a readable preview table</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Named results such as <code>columns_to_show</code> and <code>preview</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -1519,6 +1581,8 @@ Separating the list from the selection can make longer code easier to read.
 
 For the default index:
 
+### Example 3.5.6 — Selecting by label with .loc[]
+
 ```python
 df.loc[0]
 ```
@@ -1535,6 +1599,8 @@ df.loc[0:4, ["city", "service_type", "cases_received"]]
 
 For label-based `.loc[]` slicing, the endpoint is normally included.
 
+### Example 3.5.7 — Important slicing detail
+
 ```python
 df.loc[0:4]
 ```
@@ -1544,6 +1610,8 @@ therefore includes labels `0`, `1`, `2`, `3` and `4` when those labels exist.
 ## Selecting by position with `.iloc[]`
 
 `.iloc[]` is **position-based**.
+
+### Example 3.5.8 — Selecting by position with .iloc[]
 
 ```python
 df.iloc[0]
@@ -1587,6 +1655,8 @@ Suppose the analytical question is:
 
 First create the comparison:
 
+### Example 3.5.9 — Boolean filtering
+
 ```python
 df["cases_received"] > 100
 ```
@@ -1600,13 +1670,13 @@ high_case_rows = df[df["cases_received"] > 100]
 high_case_rows
 ```
 
-### Example 3.5.3 — Filter by category
+### Example 3.5.10 — Filter by category
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
-<p><strong>What this example is for:</strong> Example 3.5.3 focuses on <strong>Filter by category</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.5.10 focuses on <strong>Filter by category</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Named results such as <code>housing</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -1637,6 +1707,8 @@ Question:
 
 > Which Copenhagen rows have more than 100 cases received?
 
+### Example 3.5.11 — Combine conditions with &
+
 ```python
 result = df[
     (df["city"] == "Copenhagen") &
@@ -1649,6 +1721,8 @@ result
 ### Why the parentheses matter
 
 With pandas Boolean conditions, write each comparison inside parentheses:
+
+### Example 3.5.12 — Why the parentheses matter
 
 ```python
 (df["city"] == "Copenhagen")
@@ -1670,6 +1744,8 @@ Question:
 
 > Which rows are Housing or Transport?
 
+### Example 3.5.13 — Combine alternatives with |
+
 ```python
 result = df[
     (df["service_type"] == "Housing") |
@@ -1683,6 +1759,8 @@ result = df[
 
 The previous filter can also be written more compactly:
 
+### Example 3.5.14 — Use .isin() for several allowed categories
+
 ```python
 result = df[
     df["service_type"].isin(["Housing", "Transport"])
@@ -1695,13 +1773,13 @@ Read it as:
 
 This often becomes easier to read when the list contains several categories.
 
-### Example 3.5.4 — Filter and then choose columns
+### Example 3.5.15 — Filter and then choose columns
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A researcher wants to focus on particular columns or records while keeping the selection rule explicit and reviewable.</p>
-<p><strong>What this example is for:</strong> Example 3.5.4 focuses on <strong>Filter and then choose columns</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.5.15 focuses on <strong>Filter and then choose columns</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The selection condition creates or applies a true/false rule to determine which rows are included. Test values at the boundary and state which records the rule excludes.</li><li>Named results such as <code>result</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -1730,6 +1808,8 @@ df.loc[row_condition, columns_to_return]
 
 When you create:
 
+### Example 3.5.16 — Filtering is an analytical decision
+
 ```python
 copenhagen = df[df["city"] == "Copenhagen"]
 ```
@@ -1751,6 +1831,8 @@ That is a cleaning/classification question. Lecture 5 should reveal the problem;
 
 ### Broken code 1
 
+### Example 3.5.17 — Broken code 1
+
 ```python
 df["City"]
 ```
@@ -1765,17 +1847,23 @@ KeyError: 'City'
 
 ### Repair
 
+### Example 3.5.18 — Repair
+
 ```python
 df["city"]
 ```
 
 ### Broken code 2
 
+### Example 3.5.19 — Broken code 2
+
 ```python
 df[(df["city"] == "Copenhagen") and (df["cases_received"] > 100)]
 ```
 
 ### Repair
+
+### Example 3.5.20 — Repair
 
 ```python
 df[
@@ -1784,7 +1872,7 @@ df[
 ]
 ```
 
-## Exercise 3.5.1 — Column selection
+## Exercise 3.5.21 — Column selection
 
 Write code to display only:
 
@@ -1813,7 +1901,7 @@ The result is a DataFrame because several columns are selected using a list.
 
 </details>
 
-## Exercise 3.5.2 — Filter a numeric condition
+## Exercise 3.5.22 — Filter a numeric condition
 
 Find rows where `cases_received` is at least 100.
 
@@ -1827,7 +1915,7 @@ display(result)
 
 </details>
 
-## Exercise 3.5.3 — Combine a category and numeric condition
+## Exercise 3.5.23 — Combine a category and numeric condition
 
 Find Transport records with more than 90 cases received. Display only:
 
@@ -1964,6 +2052,8 @@ A date may initially be stored as text. Its conceptual role is still temporal.
 
 ## Inspect pandas dtypes
 
+### Example 3.6.1 — Inspect pandas dtypes
+
 ```python
 print(df.dtypes)
 ```
@@ -2042,13 +2132,13 @@ But a suspicious value is not the same as a proven explanation. It might reflect
 
 The next step is investigation, not automatic clipping to `5`.
 
-## Example 3.6.1 — Build a conceptual type table
+## Example 3.6.2 — Build a conceptual type table
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A team is separating the social meaning of a variable from the technical data type that pandas currently reports.</p>
-<p><strong>What this example is for:</strong> Example 3.6.1 focuses on <strong>Build a conceptual type table</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.6.2 focuses on <strong>Build a conceptual type table</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Named results such as <code>conceptual_types</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>items</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -2080,13 +2170,13 @@ for column, role in conceptual_types.items():
 
 The dictionary does not change the DataFrame. It documents your interpretation of each variable's role.
 
-## Example 3.6.2 — Compare technical and conceptual types
+## Example 3.6.3 — Compare technical and conceptual types
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A team is separating the social meaning of a variable from the technical data type that pandas currently reports.</p>
-<p><strong>What this example is for:</strong> Example 3.6.2 focuses on <strong>Compare technical and conceptual types</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.6.3 focuses on <strong>Compare technical and conceptual types</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The loop repeats the indented action. Follow one iteration at a time and identify which value changes, which condition is checked and what eventually makes the repetition stop.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -2135,7 +2225,7 @@ Can missing be meaningful? yes, if no score was recorded
 Known concerns: four missing values; inspect the two out-of-range values
 ```
 
-## Exercise 3.6.1 — Classify the course variables
+## Exercise 3.6.4 — Classify the course variables
 
 Create a table with these columns:
 
@@ -2147,7 +2237,7 @@ Complete it for all fourteen variables.
 
 Do not copy `df.dtypes` as the conceptual type.
 
-## Exercise 3.6.2 — Explain why this statement is wrong
+## Exercise 3.6.5 — Explain why this statement is wrong
 
 > “`record_id` is an integer, so calculating its average is useful.”
 
@@ -2186,6 +2276,8 @@ Lecture 5 calculations are preliminary because the raw dataset still contains kn
 
 ## `count()` — count non-missing values
 
+### Example 3.7.1 — count() — count non-missing values
+
 ```python
 df["cases_received"].count()
 ```
@@ -2212,6 +2304,8 @@ Why 118 instead of 121? Three feedback values are missing.
 
 ### `count()` versus `len()`
 
+### Example 3.7.2 — count() versus len()
+
 ```python
 print("Rows:", len(df))
 print("Non-missing feedback values:", df["feedback"].count())
@@ -2227,6 +2321,8 @@ Non-missing feedback values: 118
 This distinction becomes important when calculating percentages.
 
 ## `sum()` — total a numeric column
+
+### Example 3.7.3 — sum() — total a numeric column
 
 ```python
 total_cases_received = df["cases_received"].sum()
@@ -2246,6 +2342,8 @@ That gives us an important lesson:
 > pandas can calculate correctly from values that are substantively wrong.
 
 ## `mean()` — arithmetic average
+
+### Example 3.7.4 — mean() — arithmetic average
 
 ```python
 mean_cases = df["cases_received"].mean()
@@ -2267,6 +2365,8 @@ sum of values / number of included values
 A mean can be sensitive to extreme or invalid observations.
 
 ## `median()` — middle value
+
+### Example 3.7.5 — median() — middle value
 
 ```python
 median_cases = df["cases_received"].median()
@@ -2296,6 +2396,8 @@ Do not automatically choose one. Ask what summary is appropriate and whether the
 
 ## `min()` and `max()`
 
+### Example 3.7.6 — min() and max()
+
 ```python
 print("Minimum:", df["cases_received"].min())
 print("Maximum:", df["cases_received"].max())
@@ -2316,6 +2418,8 @@ A descriptive calculation has therefore helped us discover a potential data prob
 
 ## `std()` — standard deviation
 
+### Example 3.7.7 — std() — standard deviation
+
 ```python
 std_cases = df["cases_received"].std()
 print(round(std_cases, 2))
@@ -2332,6 +2436,8 @@ At this level, interpret standard deviation as an indicator of spread around the
 You are **not** required to calculate the standard-deviation formula by hand in this course.
 
 ## `describe()` — several summaries together
+
+### Example 3.7.8 — describe() — several summaries together
 
 ```python
 df["cases_received"].describe()
@@ -2365,6 +2471,8 @@ The quartiles divide the ordered observations into parts. You do not need advanc
 
 ## `round()` for readable output
 
+### Example 3.7.9 — round() for readable output
+
 ```python
 mean_cases = df["cases_received"].mean()
 print("Mean cases:", round(mean_cases, 2))
@@ -2380,13 +2488,13 @@ Rounding changes how a value is displayed or stored after rounding. It does not 
 
 ## Calculate several totals
 
-### Example 3.7.1 — Received and resolved totals
+### Example 3.7.10 — Received and resolved totals
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A municipal-service teaching dataset is being summarised, but the group must connect every statistic to the records that produced it.</p>
-<p><strong>What this example is for:</strong> Example 3.7.1 focuses on <strong>Received and resolved totals</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.7.10 focuses on <strong>Received and resolved totals</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>Named results such as <code>total_received</code> and <code>total_resolved</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -2415,6 +2523,8 @@ This immediately invites a derived calculation, which we will formalise in Tutor
 
 Knowing that the maximum is 185 is useful, but you may want to inspect the record.
 
+### Example 3.7.11 — Find the row associated with an extreme value
+
 ```python
 max_index = df["cases_received"].idxmax()
 df.loc[max_index]
@@ -2431,13 +2541,13 @@ df.loc[min_index]
 
 This is especially useful when a minimum or maximum looks suspicious.
 
-### Example 3.7.2 — Inspect the negative minimum
+### Example 3.7.12 — Inspect the negative minimum
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A municipal-service teaching dataset is being summarised, but the group must connect every statistic to the records that produced it.</p>
-<p><strong>What this example is for:</strong> Example 3.7.2 focuses on <strong>Inspect the negative minimum</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.7.12 focuses on <strong>Inspect the negative minimum</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The selection condition creates or applies a true/false rule to determine which rows are included. Test values at the boundary and state which records the rule excludes.</li><li>Named results such as <code>min_index</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -2459,6 +2569,8 @@ The point is not to delete the record. The point is to connect a statistical sig
 Many pandas summary methods skip missing values by default.
 
 For example:
+
+### Example 3.7.13 — Missing values and numerical calculations
 
 ```python
 df["satisfaction_score"].mean()
@@ -2486,6 +2598,8 @@ Available satisfaction scores: 117
 
 ## Preliminary satisfaction mean
 
+### Example 3.7.14 — Preliminary satisfaction mean
+
 ```python
 mean_satisfaction = df["satisfaction_score"].mean()
 print(round(mean_satisfaction, 2))
@@ -2503,7 +2617,7 @@ But the teaching schema says the expected range is 1–5, and the raw data conta
 
 This distinction is central to the course.
 
-## Exercise 3.7.1 — Produce a numeric summary
+## Exercise 3.7.15 — Produce a numeric summary
 
 For `cases_resolved`, calculate:
 
@@ -2518,7 +2632,7 @@ For `cases_resolved`, calculate:
 
 Then write two observations and one quality question.
 
-## Exercise 3.7.2 — Mean or median?
+## Exercise 3.7.16 — Mean or median?
 
 Calculate the mean and median of `cases_received`. Explain:
 
@@ -2533,7 +2647,7 @@ The raw mean is approximately `104.57` and the median is `102.0`. They differ be
 
 </details>
 
-## Exercise 3.7.3 — Count the denominator explicitly
+## Exercise 3.7.17 — Count the denominator explicitly
 
 Calculate the mean satisfaction score and also print how many non-missing satisfaction scores contributed to the calculation.
 
@@ -2594,6 +2708,8 @@ Derived measures also introduce methodological responsibility. The formula, deno
 
 In ordinary Python you might write:
 
+### Example 3.8.1 — Column arithmetic
+
 ```python
 cases_received = 120
 cases_resolved = 112
@@ -2610,13 +2726,13 @@ df["unresolved_cases"] = (
 
 The new column is calculated row by row.
 
-### Example 3.8.1 — Inspect the derived column
+### Example 3.8.2 — Inspect the derived column
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A group is deriving a new measure from existing columns and must make the formula, denominator and unit visible.</p>
-<p><strong>What this example is for:</strong> Example 3.8.1 focuses on <strong>Inspect the derived column</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.8.2 focuses on <strong>Inspect the derived column</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The assignment creates or updates the DataFrame column <code>unresolved_cases</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Pay particular attention to <code>head</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -2655,6 +2771,8 @@ resolved / received × 100
 
 In pandas:
 
+### Example 3.8.3 — Create a row-level resolution rate
+
 ```python
 df["resolution_rate"] = (
     df["cases_resolved"] /
@@ -2662,13 +2780,13 @@ df["resolution_rate"] = (
 )
 ```
 
-### Example 3.8.2 — Inspect the rate
+### Example 3.8.4 — Inspect the rate
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A group is deriving a new measure from existing columns and must make the formula, denominator and unit visible.</p>
-<p><strong>What this example is for:</strong> Example 3.8.2 focuses on <strong>Inspect the rate</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.8.4 focuses on <strong>Inspect the rate</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -2705,6 +2823,8 @@ There are at least two different calculations someone might call “average reso
 
 ### Method A — calculate each row's percentage, then average the percentages
 
+### Example 3.8.5 — Method A — calculate each row's percentage, then average the percentages
+
 ```python
 mean_row_rate = df["resolution_rate"].mean()
 print(round(mean_row_rate, 2))
@@ -2717,6 +2837,8 @@ On the raw teaching data this produces a preliminary value around:
 ```
 
 ### Method B — divide total resolved by total received
+
+### Example 3.8.6 — Method B — divide total resolved by total received
 
 ```python
 overall_rate = (
@@ -2749,6 +2871,8 @@ The raw dataset also contains quality problems, so neither result should yet be 
 
 Start with a Boolean Series:
 
+### Example 3.8.7 — Percentage of rows with missing feedback
+
 ```python
 df["feedback"].isna()
 ```
@@ -2777,6 +2901,8 @@ This percentage uses **all rows** as the denominator.
 If you used another denominator, you would be answering another question.
 
 ## Percentage of rows belonging to a category
+
+### Example 3.8.8 — Percentage of rows belonging to a category
 
 ```python
 housing_rows = (df["service_type"] == "Housing").sum()
@@ -2831,13 +2957,13 @@ RECALCULATE rate
 
 Otherwise your DataFrame may contain a cleaned source column beside an outdated derived measure.
 
-## Example 3.8.3 — Create a clearly named percentage
+## Example 3.8.9 — Create a clearly named percentage
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A group is deriving a new measure from existing columns and must make the formula, denominator and unit visible.</p>
-<p><strong>What this example is for:</strong> Example 3.8.3 focuses on <strong>Create a clearly named percentage</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.8.9 focuses on <strong>Create a clearly named percentage</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The assignment creates or updates the DataFrame column <code>resolved_pct_of_received</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -2854,7 +2980,7 @@ df["resolved_pct_of_received"] = (
 
 The longer name is more informative than simply `rate` because it states the numerator and denominator relationship.
 
-## Exercise 3.8.1 — Derive a difference
+## Exercise 3.8.10 — Derive a difference
 
 Create:
 
@@ -2888,7 +3014,7 @@ A negative gap means the stored `cases_resolved` value exceeds `cases_received` 
 
 </details>
 
-## Exercise 3.8.2 — Explain two rate formulas
+## Exercise 3.8.11 — Explain two rate formulas
 
 Write code for:
 
@@ -2897,7 +3023,7 @@ Write code for:
 
 Then explain in ordinary language why they differ.
 
-## Exercise 3.8.3 — Calculate a missing percentage
+## Exercise 3.8.12 — Calculate a missing percentage
 
 Calculate the percentage of missing values in `satisfaction_score` using:
 
@@ -2936,6 +3062,8 @@ This is the first point where Lecture 5 becomes a genuine **introductory explora
 
 ## Inspect unique values before counting them
 
+### Example 3.9.1 — Inspect unique values before counting them
+
 ```python
 print(df["service_type"].unique())
 ```
@@ -2969,6 +3097,8 @@ If categories that should be equivalent are split across spellings, the group re
 
 ## Count distinct values with `nunique()`
 
+### Example 3.9.2 — Count distinct values with nunique()
+
 ```python
 df["service_type"].nunique()
 ```
@@ -2982,6 +3112,8 @@ df["service_type"].nunique()
 The value is nine because four inconsistent one-row labels are stored separately from the five intended service categories. For the raw `city` column, `nunique()` counts the stored strings as distinct. That number therefore reflects data consistency as well as conceptual categories.
 
 ## Frequency table with `value_counts()`
+
+### Example 3.9.3 — Frequency table with value_counts()
 
 ```python
 df["service_type"].value_counts()
@@ -3010,6 +3142,8 @@ It does not automatically answer:
 Again, the unit of observation matters.
 
 ## Percentages with `normalize=True`
+
+### Example 3.9.4 — Percentages with normalize=True
 
 ```python
 service_pct = (
@@ -3040,6 +3174,8 @@ By default, `value_counts()` often drops missing values.
 
 For a column where missingness matters, use:
 
+### Example 3.9.5 — Include missing values when relevant
+
 ```python
 df["feedback"].value_counts(dropna=False)
 ```
@@ -3049,6 +3185,8 @@ For free text this table may be too detailed to be analytically useful, but the 
 ## Mode
 
 The mode is the most frequently occurring value.
+
+### Example 3.9.6 — Mode
 
 ```python
 df["service_type"].mode()
@@ -3070,6 +3208,8 @@ The four values tie at 24 rows each. A dataset can have more than one mode when 
 Suppose the question is:
 
 > What is the mean number of cases received for each service type?
+
+### Example 3.9.7 — Introductory groupby()
 
 ```python
 mean_by_service = (
@@ -3112,6 +3252,8 @@ This is often described as **split–apply–combine**.
 
 ## Group totals
 
+### Example 3.9.8 — Group totals
+
 ```python
 total_by_service = (
     df.groupby("service_type")["cases_received"]
@@ -3138,6 +3280,8 @@ Waste                  2135
 The raw duplicate record and invalid negative value can affect these totals.
 
 ## Several calculations at once with `.agg()`
+
+### Example 3.9.9 — Several calculations at once with .agg()
 
 ```python
 summary = (
@@ -3170,6 +3314,8 @@ The `min = -4` in Waste is a visible warning. The split labels are a second warn
 
 Try:
 
+### Example 3.9.10 — Grouping by a dirty category can mislead
+
 ```python
 city_summary = (
     df.groupby("city")["cases_received"]
@@ -3197,6 +3343,8 @@ Do not merge them yet in Lecture 5. Document the problem.
 
 A crosstab counts combinations of two categorical variables.
 
+### Example 3.9.11 — Cross-tabulation with pd.crosstab()
+
 ```python
 service_by_city = pd.crosstab(
     df["city"],
@@ -3212,6 +3360,8 @@ The raw crosstab will again reveal split city spellings.
 
 ### Percentage crosstab — optional extension
 
+### Example 3.9.12 — Percentage crosstab — optional extension
+
 ```python
 service_by_city_pct = pd.crosstab(
     df["city"],
@@ -3226,13 +3376,13 @@ service_by_city_pct.round(1)
 
 Always state what has been normalised. Row percentages and column percentages answer different questions.
 
-## Example 3.9.1 — Compare satisfaction by service type
+## Example 3.9.13 — Compare satisfaction by service type
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A student is comparing categories and groups while checking how many records contribute to each result.</p>
-<p><strong>What this example is for:</strong> Example 3.9.1 focuses on <strong>Compare satisfaction by service type</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.9.13 focuses on <strong>Compare satisfaction by service type</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The grouping operation places records into named groups before calculating a summary. The resulting row represents a group, so it no longer has the same meaning as one original record.</li><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>Named results such as <code>satisfaction_by_service</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -3270,7 +3420,7 @@ An unjustified conclusion:
 
 The second statement leaps beyond the synthetic dataset, ignores quality issues and generalises to a population the data do not represent.
 
-## Exercise 3.9.1 — Frequencies and percentages
+## Exercise 3.9.14 — Frequencies and percentages
 
 For `service_type`:
 
@@ -3280,7 +3430,7 @@ For `service_type`:
 4. create a percentage table;
 5. identify the most frequent stored category.
 
-## Exercise 3.9.2 — Grouped summary
+## Exercise 3.9.15 — Grouped summary
 
 Calculate `count`, `mean`, `median`, `min` and `max` of `cases_received` for each `service_type`.
 
@@ -3290,13 +3440,13 @@ Then answer:
 2. Why might that affect the mean?
 3. Why should the output still be labelled preliminary?
 
-## Exercise 3.9.3 — Discover category fragmentation
+## Exercise 3.9.16 — Discover category fragmentation
 
 Group `cases_received` by raw `city` and inspect the output.
 
 Write a short note explaining why the current city groups should probably be reviewed before final analysis.
 
-## Exercise 3.9.4 — Create a crosstab
+## Exercise 3.9.17 — Create a crosstab
 
 Create a cross-tabulation of `city` by `service_type`.
 
@@ -3351,6 +3501,8 @@ These dimensions overlap. They are a thinking aid, not a universal scoring syste
 
 ## Missing values with `isna()`
 
+### Example 3.10.1 — Missing values with isna()
+
 ```python
 df.isna()
 ```
@@ -3375,6 +3527,8 @@ with zero missing values in the other columns on the basic import.
 
 ### Total recognised missing cells
 
+### Example 3.10.2 — Total recognised missing cells
+
 ```python
 total_missing = df.isna().sum().sum()
 print(total_missing)
@@ -3390,6 +3544,8 @@ This does **not** mean the dataset contains only seven problematic cells. Text s
 
 ## Missing percentages
 
+### Example 3.10.3 — Missing percentages
+
 ```python
 missing_pct = df.isna().mean() * 100
 print(missing_pct.round(2))
@@ -3403,12 +3559,16 @@ The raw missing percentages are approximately `2.48%` for `feedback` (3 of 121 r
 
 ### Missing satisfaction score
 
+### Example 3.10.4 — Missing satisfaction score
+
 ```python
 missing_satisfaction = df[df["satisfaction_score"].isna()]
 display(missing_satisfaction)
 ```
 
 ### Missing feedback
+
+### Example 3.10.5 — Missing feedback
 
 ```python
 missing_feedback = df[df["feedback"].isna()]
@@ -3418,6 +3578,8 @@ display(missing_feedback)
 Do not immediately drop these rows. First ask whether the missing value affects the analysis you want to perform.
 
 ## Exact duplicate rows
+
+### Example 3.10.6 — Exact duplicate rows
 
 ```python
 duplicate_mask = df.duplicated()
@@ -3448,6 +3610,8 @@ If two rows are identical, pandas normally treats the first occurrence as the or
 
 To show **all members of duplicate groups**:
 
+### Example 3.10.7 — Why only one duplicate is counted
+
 ```python
 display(df[df.duplicated(keep=False)])
 ```
@@ -3457,6 +3621,8 @@ This makes it easier to compare the repeated rows.
 ## Duplicate identifiers are not the same as duplicate rows
 
 Check `record_id`:
+
+### Example 3.10.8 — Duplicate identifiers are not the same as duplicate rows
 
 ```python
 id_duplicates = df["record_id"].duplicated(keep=False)
@@ -3484,6 +3650,8 @@ Therefore:
 > **Repeated identifier ≠ automatically delete the row.**
 
 ## Category consistency
+
+### Example 3.10.9 — Category consistency
 
 ```python
 print(df["city"].value_counts(dropna=False))
@@ -3513,6 +3681,8 @@ Lecture 6 will standardise categories only after the intended equivalences are j
 
 ### Negative case counts
 
+### Example 3.10.10 — Negative case counts
+
 ```python
 negative_received = df[df["cases_received"] < 0]
 display(negative_received)
@@ -3521,6 +3691,8 @@ display(negative_received)
 If counts should be zero or positive, this row violates the documented expectation.
 
 ### Out-of-range satisfaction
+
+### Example 3.10.11 — Out-of-range satisfaction
 
 ```python
 out_of_range_satisfaction = df[
@@ -3546,6 +3718,8 @@ A defensible Lecture 5 note is:
 Some problems are visible only when two columns are compared.
 
 ### Resolved greater than received
+
+### Example 3.10.12 — Resolved greater than received
 
 ```python
 resolved_gt_received = df[
@@ -3576,6 +3750,8 @@ Do not infer an error solely from intuition if the variable definitions are ambi
 `resolution_days` is intended to be numeric, but three values are `unknown`.
 
 Inspect the unique raw values:
+
+### Example 3.10.13 — Detect a numeric-looking column containing text
 
 ```python
 print(df["resolution_days"].unique())
@@ -3610,6 +3786,8 @@ display(
 
 We have **not** changed:
 
+### Example 3.10.14 — Important
+
 ```python
 df["resolution_days"]
 ```
@@ -3619,6 +3797,8 @@ We created a temporary diagnostic Series. Permanent conversion belongs to Lectur
 ## Detect invalid date-like values without overwriting the raw column
 
 Create another temporary preview:
+
+### Example 3.10.15 — Detect invalid date-like values without overwriting the raw column
 
 ```python
 report_month_preview = pd.to_datetime(
@@ -3677,6 +3857,8 @@ An outlier is not automatically an error.
 
 You can create a simple diagnostic dictionary:
 
+### Example 3.10.16 — Build a first data-quality summary
+
 ```python
 quality_summary = {
     "rows": len(df),
@@ -3696,13 +3878,13 @@ for check, value in quality_summary.items():
 
 This is a technical summary. It still needs human interpretation.
 
-## Example 3.10.1 — Separate observation from action
+## Example 3.10.17 — Separate observation from action
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A data-quality review has identified possible problems, and the team needs to separate observation, interpretation and action.</p>
-<p><strong>What this example is for:</strong> Example 3.10.1 focuses on <strong>Separate observation from action</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.10.17 focuses on <strong>Separate observation from action</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -3716,13 +3898,13 @@ This is a technical summary. It still needs human interpretation.
 
 **Better next step:** verify whether `record_id` is expected to be unique and whether repeated exports or legitimate repeated observations are possible.
 
-## Example 3.10.2 — Quality problem changes a calculation
+## Example 3.10.18 — Quality problem changes a calculation
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A data-quality review has identified possible problems, and the team needs to separate observation, interpretation and action.</p>
-<p><strong>What this example is for:</strong> Example 3.10.2 focuses on <strong>Quality problem changes a calculation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.10.18 focuses on <strong>Quality problem changes a calculation</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>Read the situation and identify the observation, variable or decision being illustrated.</li><li>Translate the example into your own words before connecting it to Python or pandas syntax.</li><li>Check which assumption would need to be true before using the idea with real research material.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -3738,7 +3920,7 @@ Therefore a good report should say:
 
 That is stronger than either ignoring the problem or secretly editing the value.
 
-## Exercise 3.10.1 — Build a quality audit
+## Exercise 3.10.19 — Build a quality audit
 
 Write code that reports:
 
@@ -3756,7 +3938,7 @@ Write code that reports:
 
 For each detected issue, write **one sentence describing the issue without fixing it**.
 
-## Exercise 3.10.2 — Classify the quality issue
+## Exercise 3.10.20 — Classify the quality issue
 
 For each item below, classify it mainly as completeness, uniqueness, validity, consistency, plausibility or logical consistency. More than one answer may sometimes be defensible.
 
@@ -3809,6 +3991,8 @@ This is **introductory text exploration**, not a complete qualitative-analysis m
 
 ## Start by reading the text
 
+### Example 3.11.1 — Start by reading the text
+
 ```python
 display(df[["record_id", "feedback"]].head(10))
 ```
@@ -3832,6 +4016,8 @@ The code helps you select comments. The interpretation still requires reading th
 
 ## Count available text responses
 
+### Example 3.11.2 — Count available text responses
+
 ```python
 print("Rows:", len(df))
 print("Non-missing feedback:", df["feedback"].count())
@@ -3847,6 +4033,8 @@ Non-missing feedback: 118
 Any text analysis using `feedback` therefore has at most 118 non-missing comments in the raw file.
 
 ## Character length
+
+### Example 3.11.3 — Character length
 
 ```python
 feedback_length = df["feedback"].str.len()
@@ -3873,6 +4061,8 @@ Character length does not measure quality or importance. It only measures stored
 
 A simple beginner approximation is:
 
+### Example 3.11.4 — Approximate word count with pandas string methods
+
 ```python
 word_count = df["feedback"].str.split().str.len()
 print(word_count)
@@ -3883,6 +4073,8 @@ This splits on whitespace. It is **not** the NLTK tokenisation process we will s
 Use it as a basic descriptive measure, not a definitive linguistic analysis.
 
 ## Search for a literal word with `.str.contains()`
+
+### Example 3.11.5 — Search for a literal word with .str.contains()
 
 ```python
 helpful_mask = df["feedback"].str.contains(
@@ -3899,6 +4091,8 @@ helpful_mask = df["feedback"].str.contains(
 - `na=False` treats missing feedback as not matching rather than returning a missing Boolean.
 
 Count matches:
+
+### Example 3.11.6 — Explain each argument
 
 ```python
 print(helpful_mask.sum())
@@ -3924,6 +4118,8 @@ display(
 The four comments include different contexts. Some are positive overall; some combine helpfulness with a complaint about waiting.
 
 ## Search for alternatives with a simple pattern
+
+### Example 3.11.7 — Search for alternatives with a simple pattern
 
 ```python
 wait_mask = df["feedback"].str.contains(
@@ -3963,6 +4159,8 @@ All three matching comments are Housing records in the teaching dataset. That is
 
 ## Search for clarity-related wording
 
+### Example 3.11.8 — Search for clarity-related wording
+
 ```python
 clear_mask = df["feedback"].str.contains(
     "clear",
@@ -3984,6 +4182,8 @@ However, one of those comments is duplicated because the entire record is duplic
 This connects text analysis back to data quality.
 
 ## Search for speed-related wording
+
+### Example 3.11.9 — Search for speed-related wording
 
 ```python
 speed_mask = df["feedback"].str.contains(
@@ -4009,6 +4209,8 @@ Again, do not treat `quick|fast` as a complete linguistic definition of “speed
 By default, `.str.contains()` interprets its pattern as a regular expression.
 
 If you want to search for exact literal characters that might otherwise have regex meaning, use:
+
+### Example 3.11.10 — Literal versus regex search
 
 ```python
 df["feedback"].str.contains(
@@ -4075,6 +4277,8 @@ Do not stop at the count.
 
 For example:
 
+### Example 3.11.11 — Compare text presence with a numeric variable
+
 ```python
 display(
     df.loc[
@@ -4088,13 +4292,13 @@ You can inspect whether waiting-related comments coincide with lower scores.
 
 But do not claim causation. The data are observational, tiny, imperfect and synthetic.
 
-## Example 3.11.1 — Text length by service type
+## Example 3.11.12 — Text length by service type
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A Digital Anthropology project is exploring short feedback texts while keeping the original wording and context available.</p>
-<p><strong>What this example is for:</strong> Example 3.11.1 focuses on <strong>Text length by service type</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.11.12 focuses on <strong>Text length by service type</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The transformation standardises selected text or categories. Compare the values before and after so clearly equivalent labels are combined without forcing uncertain meanings together.</li><li>The assignment creates or updates the DataFrame column <code>feedback_word_count_preview</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>Pay particular attention to <code>split</code>. Read each call as an instruction applied to the object immediately before it, with the values inside parentheses controlling the operation.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -4126,13 +4330,13 @@ It does **not** tell you that longer comments are more thoughtful or more negati
 
 Because this preview column is derived from raw text, it may be recreated later after cleaning rather than treated as a final analytical variable.
 
-## Example 3.11.2 — Identify potentially difficult experiences
+## Example 3.11.13 — Identify potentially difficult experiences
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A Digital Anthropology project is exploring short feedback texts while keeping the original wording and context available.</p>
-<p><strong>What this example is for:</strong> Example 3.11.2 focuses on <strong>Identify potentially difficult experiences</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.11.13 focuses on <strong>Identify potentially difficult experiences</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The transformation standardises selected text or categories. Compare the values before and after so clearly equivalent labels are combined without forcing uncertain meanings together.</li><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>The selection condition creates or applies a true/false rule to determine which rows are included. Test values at the boundary and state which records the rule excludes.</li><li>Named results such as <code>difficulty_mask</code>, <code>case</code>, <code>na</code>, and <code>regex</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -4166,7 +4370,7 @@ Expected raw match count:
 
 Now read the two comments. Are both expressing the same kind of difficulty? A computational match begins the interpretation; it does not finish it.
 
-## Exercise 3.11.1 — Explore text before coding themes
+## Exercise 3.11.14 — Explore text before coding themes
 
 1. Display all non-missing feedback comments.
 2. Read them manually.
@@ -4174,7 +4378,7 @@ Now read the two comments. Are both expressing the same kind of difficulty? A co
 4. For each idea, identify possible words that could help retrieve relevant comments.
 5. Explain at least one way that your keyword rule could miss relevant wording.
 
-## Exercise 3.11.2 — Search and validate a keyword rule
+## Exercise 3.11.15 — Search and validate a keyword rule
 
 Create a case-insensitive search for comments containing either `quick` or `fast`.
 
@@ -4205,7 +4409,7 @@ The raw match count is 32. Possible missed synonyms include `rapid`, `slow` as a
 
 </details>
 
-## Exercise 3.11.3 — Compare quantitative and qualitative evidence
+## Exercise 3.11.16 — Compare quantitative and qualitative evidence
 
 Inspect the comments that match `wait|long` together with `satisfaction_score`.
 
@@ -4256,6 +4460,8 @@ feedback contains "wait" OR "long"
 
 In code:
 
+### Example 3.12.1 — From an idea to an operational rule
+
 ```python
 df["mentions_wait"] = df["feedback"].str.contains(
     "wait|long",
@@ -4292,6 +4498,8 @@ because `mentions_wait` transparently states what was detected, whereas `bad_ser
 
 ## Count the indicator
 
+### Example 3.12.2 — Count the indicator
+
 ```python
 print(df["mentions_wait"].value_counts())
 ```
@@ -4309,6 +4517,8 @@ Expected raw count:
 ```
 
 ## Create several transparent indicators
+
+### Example 3.12.3 — Create several transparent indicators
 
 ```python
 df["mentions_helpful"] = df["feedback"].str.contains(
@@ -4336,6 +4546,8 @@ These are not final qualitative themes. They are explicit retrieval/coding rules
 ## Inspect the rule against the original text
 
 Always preserve the source text beside the indicator:
+
+### Example 3.12.4 — Inspect the rule against the original text
 
 ```python
 display(
@@ -4425,13 +4637,13 @@ Lecture 5 introduces the connection between qualitative concepts and computation
 
 Once we have a Boolean indicator, pandas can group by it.
 
-### Example 3.12.1 — Satisfaction by waiting mention
+### Example 3.12.5 — Satisfaction by waiting mention
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A research group is translating an interpretive coding rule into a transparent, testable procedure.</p>
-<p><strong>What this example is for:</strong> Example 3.12.1 focuses on <strong>Satisfaction by waiting mention</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.12.5 focuses on <strong>Satisfaction by waiting mention</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The grouping operation places records into named groups before calculating a summary. The resulting row represents a group, so it no longer has the same meaning as one original record.</li><li>The summary operation reduces many values to a smaller result such as a count, total, mean or grouped table. Check how many valid observations contributed before interpreting it.</li><li>Named results such as <code>wait_satisfaction</code> keep intermediate information available for later lines. Read <code>=</code> here as “store the value on the right under the name on the left”.</li><li>The final display step makes the result visible so it can be checked. Output is evidence about what the code produced, not automatic evidence that the source values or interpretation are valid.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -4462,6 +4674,8 @@ The code does not establish causation.
 
 ## Compare indicator counts across service types
 
+### Example 3.12.6 — Compare indicator counts across service types
+
 ```python
 wait_by_service = (
     df.groupby("service_type")["mentions_wait"]
@@ -4476,6 +4690,8 @@ If all `True` values occur in Housing, that is an observation in this particular
 It is not evidence about Housing services in real cities because the dataset is synthetic.
 
 ## Cross-tabulate a code and category
+
+### Example 3.12.7 — Cross-tabulate a code and category
 
 ```python
 pd.crosstab(
@@ -4530,13 +4746,13 @@ Importance may depend on:
 
 Computational frequency and qualitative significance are different concepts.
 
-## Example 3.12.2 — A transparent code is better than a vague label
+## Example 3.12.8 — A transparent code is better than a vague label
 
 <details class="plain-language-task">
 <summary>Show this example in plain language</summary>
 <div class="plain-language-task-body">
 <p><strong>Situation:</strong> A research group is translating an interpretive coding rule into a transparent, testable procedure.</p>
-<p><strong>What this example is for:</strong> Example 3.12.2 focuses on <strong>A transparent code is better than a vague label</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
+<p><strong>What this example is for:</strong> Example 3.12.8 focuses on <strong>A transparent code is better than a vague label</strong>. It turns that idea into a short sequence that can be inspected one step at a time. You are not expected to memorise the syntax; concentrate on what information enters, what operation is performed and what becomes visible or changes.</p>
 <p><strong>Read the example in this order:</strong></p>
 <ol><li>The assignment creates or updates the DataFrame column <code>negative</code>. This keeps the derived or cleaned value beside the source columns so the relationship can be inspected.</li><li>Follow the DataFrame line by line and ask whether each operation changes the table, creates a new object or only displays a result.</li><li>After the cell finishes, compare the result with the source values and state in one sentence what the new table, value or visual represents.</li></ol>
 <p><strong>Before you run it:</strong> Before running the code, predict the shape or type of the output and identify the observation or denominator it represents. Afterwards, compare the result with several source rows.</p>
@@ -4570,7 +4786,7 @@ df["mentions_wait_or_long"] = df["feedback"].str.contains(
 
 The second name does not solve the validity problem, but it exposes the actual rule.
 
-## Exercise 3.12.1 — Design a coding rule
+## Exercise 3.12.9 — Design a coding rule
 
 Choose one idea from the feedback, for example:
 
@@ -4591,7 +4807,7 @@ Then:
 8. revise the rule if justified;
 9. document the final rule.
 
-## Exercise 3.12.2 — Compare code and score
+## Exercise 3.12.10 — Compare code and score
 
 Using your Boolean indicator:
 
@@ -4607,7 +4823,7 @@ Write:
 - one cautious interpretation;
 - one causal claim that the result does **not** justify.
 
-## Exercise 3.12.3 — Multiple codes per comment
+## Exercise 3.12.11 — Multiple codes per comment
 
 Create at least two indicators and find comments where both are `True`.
 
@@ -4950,7 +5166,7 @@ Notice that the statement includes:
 - unit meaning;
 - limitation.
 
-## Exercise 3.13.1 — Create a data dictionary
+## Exercise 3.13.3 — Create a data dictionary
 
 Create a Markdown table for all fourteen variables with:
 
@@ -4963,7 +5179,7 @@ expected values
 known/raw concern
 ```
 
-## Exercise 3.13.2 — Rewrite an overclaim
+## Exercise 3.13.4 — Rewrite an overclaim
 
 Rewrite this statement so it becomes defensible:
 
@@ -4976,7 +5192,7 @@ Rewrite this statement so it becomes defensible:
 
 </details>
 
-## Exercise 3.13.3 — Separate three levels of statement
+## Exercise 3.13.5 — Separate three levels of statement
 
 For one calculation from Tutorial 3.9, write:
 
