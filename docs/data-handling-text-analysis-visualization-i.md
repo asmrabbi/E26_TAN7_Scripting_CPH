@@ -87,56 +87,56 @@ The table is organised by task. It prioritises tools used in Lecture 5 and adds 
 
 | Tool or syntax | Kind | What it does | Short example | Course use |
 |---|---|---|---|---|
-| `pd.read_csv()` | Function | Reads a CSV file or raw URL and returns a DataFrame. | `df = pd.read_csv(data_url)` | **Used in Lecture 5** |
-| `head() / tail() / sample()` | Methods | Shows rows from the beginning, end or a reproducible random sample. | `df.sample(3, random_state=7)` | **Used in Lecture 5** |
-| `info()` | Method | Prints column names, non-missing counts, dtypes and memory information. | `df.info()` | **Used in Lecture 5** |
-| `describe()` | Method | Returns a compact statistical summary of numeric data by default. | `df["cases_received"].describe()` | **Used in Lecture 5** |
-| `shape / columns` | Attributes | Reports the table dimensions and returns the column labels. | `print(df.shape); print(df.columns)` | **Used in Lecture 5** |
-| `dtypes` | Attribute | Shows the technical dtype currently assigned to every column. | `print(df.dtypes)` | **Used in Lecture 5** |
+| `pd.read_csv()` | Function | Reads a CSV file or raw URL and returns a DataFrame. | `df = pd.read_csv(data_url)` | 3.3.6, 3.3.14 |
+| `head() / tail() / sample()` | Methods | Shows rows from the beginning, end or a reproducible random sample. | `df.sample(3, random_state=7)` | 3.4.2, 3.4.3, 3.4.4 |
+| `info()` | Method | Prints column names, non-missing counts, dtypes and memory information. | `df.info()` | 3.4.10, 3.4.11 |
+| `describe()` | Method | Returns a compact statistical summary of numeric data by default. | `df["cases_received"].describe()` | 3.7.8 |
+| `shape / columns` | Attributes | Reports the table dimensions and returns the column labels. | `print(df.shape); print(df.columns)` | 3.4.5, 3.4.7 |
+| `dtypes` | Attribute | Shows the technical dtype currently assigned to every column. | `print(df.dtypes)` | 3.4.9, 3.6.1 |
 
 ### 2. Selecting, filtering and ordering data
 
 | Tool or syntax | Kind | What it does | Short example | Course use |
 |---|---|---|---|---|
-| `df["column"] / df[[...]]` | Selection syntax | Selects one Series or a new DataFrame containing several named columns. | `df[["city", "feedback"]]` | **Used in Lecture 5** |
-| `loc[] / iloc[]` | Indexers | Selects by labels or Boolean conditions with loc, and by integer position with iloc. | `df.loc[df["city"] == "Aalborg", ["city", "feedback"]]` | **Used in Lecture 5** |
-| `isin() / between()` | Series methods | Creates Boolean masks for membership in a collection or inclusion in a numeric range. | `df["satisfaction_score"].between(1, 5)` | **Used in Lecture 5** |
-| `sort_values()` | Method | Returns rows ordered by one or more columns without changing the original unless assigned. | `df.sort_values("cases_received", ascending=False)` | **Useful next tool** |
+| `df["column"] / df[[...]]` | Selection syntax | Selects one Series or a new DataFrame containing several named columns. | `df[["city", "feedback"]]` | 3.5.1, 3.5.4 |
+| `loc[] / iloc[]` | Indexers | Selects by labels or Boolean conditions with loc, and by integer position with iloc. | `df.loc[df["city"] == "Aalborg", ["city", "feedback"]]` | 3.5.6, 3.5.8 |
+| `isin()` | Series method | Creates a Boolean mask that tests whether each value belongs to a supplied collection. | `df["city"].isin(["Copenhagen", "Aalborg"])` | 3.5.14 |
+| `sort_values()` | Method | Returns rows ordered by one or more columns without changing the original unless assigned. | `df.sort_values("cases_received", ascending=False)` | — |
 
 ### 3. Checking and cleaning data
 
 | Tool or syntax | Kind | What it does | Short example | Course use |
 |---|---|---|---|---|
-| `isna() / notna()` | Methods | Marks missing or non-missing cells with Boolean values. | `df["feedback"].isna()` | **Used in Lecture 5** |
-| `duplicated() / drop_duplicates()` | Methods | Detects duplicate rows and, after a justified decision, returns data without selected duplicates. | `duplicate_mask = df.duplicated()` | **Detection used; removal is a next step** |
-| `pd.to_numeric()` | Function | Converts values to numbers; errors="coerce" marks unconvertible values as missing. | `pd.to_numeric(df["resolution_days"], errors="coerce")` | **Used in Lecture 5** |
-| `pd.to_datetime()` | Function | Converts values to pandas dates and can mark invalid dates as missing. | `pd.to_datetime(df["report_month"], errors="coerce")` | **Used in Lecture 5** |
-| `dropna() / fillna() / replace()` | Methods | Removes, fills or replaces values. Each operation needs a documented substantive reason. | `complete_feedback = df["feedback"].dropna()` | **Useful next tools for Lecture 6** |
+| `isna() / notna()` | Methods | Marks missing or non-missing cells with Boolean values. | `df["feedback"].isna()` | 3.10.1, 3.10.5 |
+| `duplicated()` | Method | Creates a Boolean mask that identifies repeated rows or repeated selected values. | `duplicate_mask = df.duplicated()` | 3.10.6, 3.10.8 |
+| `pd.to_numeric()` | Function | Converts values to numbers; errors="coerce" marks unconvertible values as missing. | `pd.to_numeric(df["resolution_days"], errors="coerce")` | 3.10.13 |
+| `pd.to_datetime()` | Function | Converts values to pandas dates and can mark invalid dates as missing. | `pd.to_datetime(df["report_month"], errors="coerce")` | 3.10.15 |
+| `dropna()` | Method | Returns data after removing missing values from the selected rows or Series. | `complete_feedback = df["feedback"].dropna()` | 3.11.1 |
+| `drop_duplicates() / fillna() / replace()` | Methods | Removes duplicate rows, fills missing cells or replaces specified values after a justified decision. | `working_df = df.drop_duplicates()` | — |
 
 ### 4. Calculating, summarising and grouping
 
 | Tool or syntax | Kind | What it does | Short example | Course use |
 |---|---|---|---|---|
-| `count() / sum()` | Methods | Counts non-missing values or totals numeric and Boolean values. | `df["cases_received"].sum()` | **Used in Lecture 5** |
-| `mean() / median()` | Methods | Calculates the arithmetic average or middle ordered value. | `df["satisfaction_score"].mean()` | **Used in Lecture 5** |
-| `min() / max() / std()` | Methods | Returns the smallest value, largest value or standard deviation. | `df["cases_received"].std()` | **Used in Lecture 5** |
-| `idxmin() / idxmax()` | Methods | Returns the index label of the first minimum or maximum so the source row can be inspected. | `row_id = df["cases_received"].idxmin()` | **Used in Lecture 5** |
-| `nunique() / value_counts() / mode()` | Methods | Counts distinct values, builds a frequency table or identifies the most frequent value. | `df["service_type"].value_counts(dropna=False)` | **Used in Lecture 5** |
-| `groupby() / agg()` | Methods | Splits rows into groups and applies one or several summaries to every group. | `df.groupby("city")["cases_received"].agg(["count", "mean"])` | **Used in Lecture 5** |
-| `pd.crosstab()` | Function | Builds a frequency table for combinations of two categorical variables. | `pd.crosstab(df["city"], df["service_type"])` | **Used in Lecture 5** |
+| `count() / sum()` | Methods | Counts non-missing values or totals numeric and Boolean values. | `df["cases_received"].sum()` | 3.7.1, 3.7.3 |
+| `mean() / median()` | Methods | Calculates the arithmetic average or middle ordered value. | `df["satisfaction_score"].mean()` | 3.7.4, 3.7.5 |
+| `min() / max() / std() / idxmin() / idxmax()` | Methods | Finds extremes or spread and can return the source-row index of the first extreme. | `row_id = df["cases_received"].idxmin()` | 3.7.6, 3.7.7, 3.7.11 |
+| `nunique() / value_counts() / mode()` | Methods | Counts distinct values, builds a frequency table or identifies the most frequent value. | `df["service_type"].value_counts(dropna=False)` | 3.9.2, 3.9.3, 3.9.6 |
+| `groupby() / agg()` | Methods | Splits rows into groups and applies one or several summaries to every group. | `df.groupby("city")["cases_received"].agg(["count", "mean"])` | 3.9.7, 3.9.9 |
+| `pd.crosstab()` | Function | Builds a frequency table for combinations of two categorical variables. | `pd.crosstab(df["city"], df["service_type"])` | 3.9.11, 3.9.17 |
 
 ### 5. Working with text
 
 | Tool or syntax | Kind | What it does | Short example | Course use |
 |---|---|---|---|---|
-| `str.contains()` | String method | Tests whether every text value contains a word or pattern and returns a Boolean Series. | `df["feedback"].str.contains("wait", case=False, na=False)` | **Used in Lecture 5** |
-| `str.lower() / str.strip() / str.replace() / str.split() / str.len()` | String methods | Standardises case or spacing, replaces or splits text, and measures text length. | `clean_text = df["feedback"].str.lower().str.strip()` | **Length used in Lecture 5; others prepare Lecture 6** |
+| `str.contains()` | String method | Tests whether every text value contains a word or pattern and returns a Boolean Series. | `df["feedback"].str.contains("wait", case=False, na=False)` | 3.11.5, 3.11.7 |
+| `str.split() / str.len()` | String methods | Splits text into parts and measures the length of text or resulting lists. | `word_count = df["feedback"].str.split().str.len()` | 3.11.3, 3.11.4 |
 
 ### 6. Saving a result
 
 | Tool or syntax | Kind | What it does | Short example | Course use |
 |---|---|---|---|---|
-| `to_csv()` | Method | Writes a DataFrame to a CSV file. The index is usually excluded for a clean export. | `clean_df.to_csv("cleaned_data.csv", index=False)` | **Useful next tool for Lecture 6** |
+| `to_csv()` | Method | Writes a DataFrame to a CSV file. The index is usually excluded for a clean export. | `clean_df.to_csv("cleaned_data.csv", index=False)` | — |
 
 ### How to choose and check a pandas tool
 
