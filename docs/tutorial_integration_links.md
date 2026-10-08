@@ -42,12 +42,12 @@ Every file is ordered by Tutorials 2.1–2.7. Examples use identifiers such as `
 - Website Tutorials 3.1–3.14: https://asmrabbi.github.io/E26_TAN7_Scripting_CPH/
 - Tutorial examples: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb
 - All 39 numbered exercises followed by fully commented solutions: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb
-- Eight Tutorial 3.14 applied activities followed by a model walkthrough: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb
+- Examples 3.14.1–3.14.8 with each question, complete code and explanation kept together: https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb
 - Raw dataset: https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv
 - Lecture 5 GitHub folder: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_05
 - Full website Markdown: https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/docs/data-handling-text-analysis-visualization-i.md
 
-The examples notebook preserves every website Python block from Tutorials 3.1–3.13 in order. The Exercises notebook keeps all 39 student tasks before a clear solution divider, including six integrated Tutorial 3.14 exercises with standalone data-loading code. The Applied Activities notebook follows the same separation. All solution code is executed against the supplied raw file and annotated with learner-facing comments where explanation is needed.
+The examples notebook preserves every website Python block from Tutorials 3.1–3.13 in order. The Exercises notebook keeps all 39 student tasks before a clear solution divider, including six integrated Tutorial 3.14 exercises with standalone data-loading code. The Tutorial 3.14 Guided Examples notebook places the complete code and its explanation directly after each numbered example. All solution code is executed against the supplied raw file and annotated with learner-facing comments where explanation is needed.
 
 ### Lecture 6 — Data cleaning and text preparation
 

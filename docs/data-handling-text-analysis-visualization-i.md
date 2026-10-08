@@ -159,7 +159,7 @@ Lecture 5 should have exactly **three canonical GitHub/Colab notebooks**.
 |---|---|---|---|
 | **Tutorial Examples** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb` | Every runnable worked example from Tutorials 3.1–3.13, in website order, plus setup cells needed for the examples | During teaching and when reviewing explanations |
 | **Exercises** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb` | All 39 numbered exercises from Tutorials 3.1–3.14. Student tasks come first; full commented solutions appear in a clearly separated solutions section at the end | Attempt exercises before reading the solutions |
-| **Case Activities** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb` | All numbered Case Activities in Tutorial 3.14, followed by a clearly separated model walkthrough/solution section | Complete after the core tutorials |
+| **Tutorial 3.14 Guided Examples** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb` | Examples 3.14.1–3.14.8, each presented as question, complete code and immediate explanation | Study before attempting Exercises 3.14.9–3.14.14 |
 
 Target Colab links follow this pattern:
 
@@ -5319,7 +5319,7 @@ WHAT THEY DO NOT SHOW
 ```
 
 ---
-# Tutorial 3.14 — Case Activity: First Exploration of a CSV Dataset
+# Tutorial 3.14 — Guided Examples and Integrated Exercises
 
 ## Tutorial 3.14 overview
 
@@ -5331,11 +5331,11 @@ The purpose is **not** to clean the file completely. Your task is to produce a d
 
 The case deliberately requires technical code and critical explanation. A complete answer is not only a notebook that runs. You should also explain what each result means and what it does not establish.
 
-After the eight guided case activities, six integrated exercises give you new organisational questions to solve. Each uses the same raw dataset but requires a different combination of inspection, selection, calculation, grouping, quality checks, text exploration and responsible interpretation.
+After the eight guided examples, six integrated exercises give you new organisational questions to solve. Each uses the same raw dataset but requires a different combination of inspection, selection, calculation, grouping, quality checks, text exploration and responsible interpretation.
 
-**Case vocabulary:** inspection report, preliminary finding, audit trail, exploratory calculation, quality flag, operational rule, limitation, next step.
+**Tutorial vocabulary:** inspection report, preliminary finding, audit trail, exploratory calculation, quality flag, operational rule, limitation, next step.
 
-## Case setup
+## Example setup
 
 Start from a fresh runtime and run only the code you need.
 
@@ -5363,9 +5363,9 @@ If you see a different shape, stop and check whether you loaded the correct file
 
 ---
 
-## Case Activity 3.14.1 — Identify and describe the dataset
+## Example 3.14.1 — Identify and describe the dataset
 
-### Your task
+### Question and goal
 
 Write a short dataset identity section that states:
 
@@ -5393,7 +5393,7 @@ df.info()
 Write 4–6 sentences. Do not simply paste the code output.
 
 <details>
-<summary>Model response</summary>
+<summary>What the result means</summary>
 
 The dataset is `E26_TAN7_service_experience_raw.csv`, a synthetic teaching file stored in the E26 course GitHub repository. One row is intended to represent one service category in one city during one reporting month. The raw DataFrame contains 121 rows and 14 columns. `record_id` functions conceptually as an identifier; `city` and `service_type` are categorical; seven columns are intended as counts or measures; `report_month` is date-like; and `feedback` is free text. The pandas dtypes do not perfectly match the conceptual schema because date/numeric-like values are initially stored as text-like data and recognised missingness occurs in two columns. The file is designed for teaching and must not be interpreted as evidence about actual municipal service performance.
 
@@ -5401,9 +5401,9 @@ The dataset is `E26_TAN7_service_experience_raw.csv`, a synthetic teaching file 
 
 ---
 
-## Case Activity 3.14.2 — Inspect the structure and sample records
+## Example 3.14.2 — Inspect the structure and sample records
 
-### Your task
+### Question and goal
 
 Inspect:
 
@@ -5426,7 +5426,7 @@ Then answer:
 2. Which columns need closer inspection before numeric/date analysis?
 3. Why is inspecting only `head()` insufficient?
 
-### Suggested code
+### Complete worked code
 
 ```python
 print("Shape:", df.shape)
@@ -5441,9 +5441,9 @@ df.info()
 
 ---
 
-## Case Activity 3.14.3 — Calculate preliminary numerical summaries
+## Example 3.14.3 — Calculate preliminary numerical summaries
 
-### Your task
+### Question and goal
 
 For `cases_received`, calculate:
 
@@ -5470,7 +5470,7 @@ For `satisfaction_score`, calculate:
 - minimum;
 - maximum.
 
-### Starter code
+### Complete worked code
 
 ```python
 print("Cases received")
@@ -5494,7 +5494,7 @@ print(df["cases_received"].describe())
 4. Does the raw satisfaction maximum fit the documented 1–5 scale?
 
 <details>
-<summary>Model technical checkpoints</summary>
+<summary>What the result means</summary>
 
 For raw `cases_received`:
 
@@ -5525,9 +5525,9 @@ The maximum conflicts with the documented 1–5 range, so the mean should remain
 
 ---
 
-## Case Activity 3.14.4 — Create and inspect derived measures
+## Example 3.14.4 — Create and inspect derived measures
 
-### Your task
+### Question and goal
 
 Create:
 
@@ -5547,7 +5547,7 @@ Then inspect:
 - rates above 100%;
 - missing/undefined rates caused by a zero denominator.
 
-### Starter code
+### Complete worked code
 
 ```python
 df["unresolved_cases"] = (
@@ -5594,7 +5594,7 @@ overall_rate = (
 3. Why should neither raw result yet be treated as final?
 
 <details>
-<summary>Model explanation</summary>
+<summary>What the result means</summary>
 
 The mean row rate gives each row equal weight, while the aggregate rate divides the total number resolved by the total number received and therefore weights records through their case volumes. In the supplied raw teaching data they are approximately `93.66%` and `94.51%`, respectively. The calculations are affected by problematic raw values, including three rows with resolved cases greater than received cases and one negative received count. The current file has no zero denominator, but the method still requires a documented zero-case rule. The correct analytical measure must therefore be defined and the source data validated before reporting a final rate.
 
@@ -5602,9 +5602,9 @@ The mean row rate gives each row equal weight, while the aggregate rate divides 
 
 ---
 
-## Case Activity 3.14.5 — Explore categories and group differences
+## Example 3.14.5 — Explore categories and group differences
 
-### Your task
+### Question and goal
 
 For `service_type`:
 
@@ -5627,7 +5627,7 @@ Create a crosstab of:
 city × service_type
 ```
 
-### Suggested code
+### Complete worked code
 
 ```python
 print(df["service_type"].value_counts())
@@ -5663,7 +5663,7 @@ display(city_service)
 Write at least two preliminary observations and then explicitly state which raw-data problems could distort them.
 
 <details>
-<summary>Model checkpoints</summary>
+<summary>What the result means</summary>
 
 The five most frequent exact raw service labels are:
 
@@ -5693,9 +5693,9 @@ However, Waste includes the negative raw count, the dataset contains an exact du
 
 ---
 
-## Case Activity 3.14.6 — Complete a structured data-quality audit
+## Example 3.14.6 — Complete a structured data-quality audit
 
-### Your task
+### Question and goal
 
 Create checks for:
 
@@ -5710,7 +5710,7 @@ Create checks for:
 9. non-numeric `resolution_days`;
 10. invalid `report_month` values.
 
-### Suggested audit code
+### Complete worked code
 
 ```python
 print("Missing values")
@@ -5773,9 +5773,9 @@ Do not put “delete” or “replace” as an automatic next step unless you fi
 
 ---
 
-## Case Activity 3.14.7 — Explore the feedback qualitatively and computationally
+## Example 3.14.7 — Explore the feedback qualitatively and computationally
 
-### Your task
+### Question and goal
 
 1. Display all non-missing feedback.
 2. Read the comments manually.
@@ -5847,7 +5847,7 @@ Also check how many waiting-related comments have a non-missing satisfaction sco
 
 ---
 
-## Case Activity 3.14.8 — Write the Initial Data Exploration Report
+## Example 3.14.8 — Write the Initial Data Exploration Report
 
 Create a short report with these headings.
 
@@ -5920,9 +5920,64 @@ Identify which issues require:
 
 ---
 
+<details>
+<summary>Open additional interpretation for Examples 3.14.1–3.14.8</summary>
+
+## Additional interpretation for Examples 3.14.1–3.14.8
+
+> Use these notes after running Examples 3.14.1–3.14.8. In the guided-examples notebook, each explanation appears directly after its matching code so students do not have to translate between an activity number and a separate answer number.
+
+## Dataset structure
+
+> The raw DataFrame contains 121 rows and 14 columns. One row is intended to represent a service-category-city-month record. The dataset includes numeric counts, a numeric rating, a numeric-intended time measure, categorical labels, a date-like field, an identifier and a free-text feedback field.
+
+## Preliminary cases calculation
+
+> The raw `cases_received` values sum to 12,653 and have a mean of approximately 104.57 and median of 102.0. However, the minimum value is -4, which violates the current expectation that a case count should be non-negative. The summary is therefore useful for exploration but should be recalculated after the invalid value is investigated and a cleaning decision is documented.
+
+## Service categories
+
+> The exact raw labels Citizen Services, Employment, Transport and Waste each account for 24 of 121 rows (19.83%), while Housing accounts for 21 rows (17.36%). Four inconsistent one-row service labels remain separate until cleaning. These percentages describe the distribution of records in this teaching table, not a distribution of citizens or service users.
+
+## Group comparison
+
+> The raw mean `cases_received` is approximately 129.92 for Citizen Services, 88.04 for Employment, 115.86 for Housing, 102.54 for Transport and 88.96 for Waste. The Waste result includes a negative count and the overall dataset contains an exact duplicate row, so these group means should not be treated as final analytical findings before cleaning.
+
+## Satisfaction
+
+> One hundred and seventeen of the 121 rows contain a non-missing `satisfaction_score`, and their raw mean is approximately 4.11. Two stored scores, 0.0 and 6.2, fall outside despite the documented teaching range of 1–5, so the raw mean is not yet validated.
+
+## Text exploration
+
+> A simple case-insensitive search for `wait|long` matches 11 feedback comments in the raw dataset. This rule is transparent but incomplete: it could miss delay-related language that uses different words and could incorrectly match negated phrases such as “the wait was not long”. The count should therefore be interpreted as matches to a rule rather than a definitive count of a qualitative theme.
+
+## Key quality concerns
+
+A strong audit should identify at least:
+
+- four missing satisfaction scores;
+- three missing feedback values;
+- one exact duplicate row involving `SR2026-0027` and a separate reused identifier `SR2026-0079`;
+- inconsistent raw city labels;
+- a negative `cases_received` value;
+- `cases_resolved > cases_received` in three rows;
+- `resolution_days = "unknown"` in a numeric-intended field;
+- `satisfaction_score = 0.0` or `6.2` outside the documented 1–5 range;
+- `report_month = 2026-13-01` as an invalid date-like value.
+
+## Worked conclusion
+
+> The dataset is suitable for learning the workflow from CSV to DataFrame and for practising exploratory calculations, but it should not yet be treated as analysis-ready. The preliminary calculations reveal useful patterns and simultaneously expose problems in missingness, duplication, category consistency, numeric validity, date validity and cross-field logic. The next step is not to hide these problems but to preserve the raw file, define justified cleaning rules, transform a working copy and then rerun the analyses on the cleaned data.
+
+---
+
+</details>
+
+---
+
 ## Six integrated exercises
 
-The following exercises extend the case activity with six new situations. Each exercise starts from the same unchanged raw CSV but asks a different analytical question. Attempt the question on the website first, then use the linked exercise notebook to compare your work with a complete standalone solution. Every solution repeats the pandas import, exact data URL and `pd.read_csv()` step so it can run independently in a fresh Colab cell.
+The following exercises extend the eight guided examples with six new situations. Each exercise starts from the same unchanged raw CSV but asks a different analytical question. Attempt the question on the website first, then use the linked exercise notebook to compare your work with a complete standalone solution. Every solution repeats the pandas import, exact data URL and `pd.read_csv()` step so it can run independently in a fresh Colab cell.
 
 ## Exercise 3.14.9 — Prepare a two-city service briefing
 
@@ -6023,61 +6078,6 @@ A fictional management slide claims that Copenhagen Transport has the heaviest w
 6. Write three labelled statements: a direct observation, a cautious interpretation and an unsupported claim. End with a decision to retain, revise or remove the original slide statement.
 
 > **Exercise 3.14.14 and complete solution:** [Open the Exercise notebook in Google Colab](https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb) and find **Exercise 3.14.14**. Attempt the student section before scrolling to **Solution 3.14.14**.
-
----
-
-<details>
-<summary>Open the Tutorial 3.14 model walkthrough</summary>
-
-## Model walkthrough for Tutorial 3.14
-
-> **Do not read this section before attempting the case.** The Case Activities notebook should place the model walkthrough after all student tasks, separated clearly from the activity section.
-
-## Model finding 1 — Dataset structure
-
-> The raw DataFrame contains 121 rows and 14 columns. One row is intended to represent a service-category-city-month record. The dataset includes numeric counts, a numeric rating, a numeric-intended time measure, categorical labels, a date-like field, an identifier and a free-text feedback field.
-
-## Model finding 2 — Preliminary cases calculation
-
-> The raw `cases_received` values sum to 12,653 and have a mean of approximately 104.57 and median of 102.0. However, the minimum value is -4, which violates the current expectation that a case count should be non-negative. The summary is therefore useful for exploration but should be recalculated after the invalid value is investigated and a cleaning decision is documented.
-
-## Model finding 3 — Service categories
-
-> The exact raw labels Citizen Services, Employment, Transport and Waste each account for 24 of 121 rows (19.83%), while Housing accounts for 21 rows (17.36%). Four inconsistent one-row service labels remain separate until cleaning. These percentages describe the distribution of records in this teaching table, not a distribution of citizens or service users.
-
-## Model finding 4 — Group comparison
-
-> The raw mean `cases_received` is approximately 129.92 for Citizen Services, 88.04 for Employment, 115.86 for Housing, 102.54 for Transport and 88.96 for Waste. The Waste result includes a negative count and the overall dataset contains an exact duplicate row, so these group means should not be treated as final analytical findings before cleaning.
-
-## Model finding 5 — Satisfaction
-
-> One hundred and seventeen of the 121 rows contain a non-missing `satisfaction_score`, and their raw mean is approximately 4.11. Two stored scores, 0.0 and 6.2, fall outside despite the documented teaching range of 1–5, so the raw mean is not yet validated.
-
-## Model finding 6 — Text exploration
-
-> A simple case-insensitive search for `wait|long` matches 11 feedback comments in the raw dataset. This rule is transparent but incomplete: it could miss delay-related language that uses different words and could incorrectly match negated phrases such as “the wait was not long”. The count should therefore be interpreted as matches to a rule rather than a definitive count of a qualitative theme.
-
-## Model finding 7 — Key quality concerns
-
-A strong audit should identify at least:
-
-- four missing satisfaction scores;
-- three missing feedback values;
-- one exact duplicate row involving `SR2026-0027` and a separate reused identifier `SR2026-0079`;
-- inconsistent raw city labels;
-- a negative `cases_received` value;
-- `cases_resolved > cases_received` in three rows;
-- `resolution_days = "unknown"` in a numeric-intended field;
-- `satisfaction_score = 0.0` or `6.2` outside the documented 1–5 range;
-- `report_month = 2026-13-01` as an invalid date-like value.
-
-## Model conclusion
-
-> The dataset is suitable for learning the workflow from CSV to DataFrame and for practising exploratory calculations, but it should not yet be treated as analysis-ready. The preliminary calculations reveal useful patterns and simultaneously expose problems in missingness, duplication, category consistency, numeric validity, date validity and cross-field logic. The next step is not to hide these problems but to preserve the raw file, define justified cleaning rules, transform a working copy and then rerun the analyses on the cleaned data.
-
----
-
-</details>
 
 ---
 
