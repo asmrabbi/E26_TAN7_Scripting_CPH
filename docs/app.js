@@ -1503,6 +1503,11 @@ function renderDataHandlingIOverview() {
         <div>${dataHandlingIGuide}</div>
       </details>
 
+      <section class="chapter-paper python-chapter pandas-home-reference">
+        <p class="eyebrow">Beginner pandas reference</p>
+        ${dataHandlingIPandasReference}
+      </section>
+
       <section id="roadmap"><div class="roadmap-heading compact-heading"><div><p class="eyebrow">Fourteen connected tutorials</p><h2 class="section-title">From datasets and CSV structure to a documented applied exploration</h2></div><p>Study Tutorials 3.1–3.13 in order when pandas is new. Tutorial 3.14 combines the complete workflow in eight applied activities.</p></div><div class="module-grid compact-grid">${moduleCards()}</div></section>
 
       <section class="reading-panel python-resources">

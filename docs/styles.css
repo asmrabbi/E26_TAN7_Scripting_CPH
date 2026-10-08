@@ -654,6 +654,12 @@ pre { margin: 0; padding: 20px; overflow-x: auto; color: #e9f5f3; font: 14px/1.7
 .python-chapter th:last-child, .python-chapter td:last-child { border-right: 0; }
 .python-chapter input[type="checkbox"] { margin-right: 7px; accent-color: var(--aqua-dark); }
 .python-resources { border-color: #d7dbef; background: #f8f8fc; }
+.pandas-home-reference { margin-top: 18px; }
+.pandas-home-reference > h2:first-of-type { margin-top: 0; }
+.pandas-function-table table { min-width: 940px; }
+.pandas-function-table td:first-child,
+.pandas-function-table td:nth-child(2) { white-space: nowrap; }
+.pandas-function-table td:first-child { font-weight: 750; }
 .python-ii-hero { background: linear-gradient(135deg, #173f4c, #343867); }
 .python-ii-hero::before { background: rgba(255, 183, 92, .17); }
 .python-ii-page .key-idea { background: #edf7f5; border-color: #cfe5df; }

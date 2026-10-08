@@ -48,6 +48,109 @@ ANALYSE → VISUALISE → INTERPRET → REPORT
 
 # Before you start: course files and coding options
 
+## What is pandas, and what is a pandas function?
+
+**pandas** is a Python library for working with table-shaped data. After writing `import pandas as pd`, the name `pd` refers to the library. A complete table held in pandas is usually a `DataFrame`, while one column is usually a `Series`.
+
+There is no useful single count of “all pandas functions”. pandas contains top-level functions, DataFrame methods, Series methods, string and date accessors, attributes, indexers and specialised APIs, and the public interface changes between releases. Beginners do not need to memorise hundreds of names. They need a smaller, organised set that supports a real workflow.
+
+Students often use the word **function** for every pandas command, but this course uses four related forms:
+
+- A **pandas function** begins with the library alias, such as `pd.read_csv(...)`.
+- A **method** belongs to an object and follows a dot, such as `df.head()` or `df["city"].value_counts()`.
+- An **attribute** stores information and does not use parentheses, such as `df.shape`.
+- An **indexer** selects rows or columns with square brackets, such as `df.loc[...]` or `df.iloc[...]`.
+
+A typical method call has this structure:
+
+```python
+result = object.method(argument_name=value)
+```
+
+Read it from left to right:
+
+1. `object` identifies the DataFrame, Series or grouped object that will be used;
+2. the dot means “use a tool belonging to this object”;
+3. `method` names the operation;
+4. parentheses call the method;
+5. arguments inside the parentheses control how it works;
+6. the returned result may be a DataFrame, Series, Boolean mask, summary table or single value;
+7. assignment stores that returned result under a name for inspection or reuse.
+
+Most commands below do **not** silently rewrite the original `df`. They return a result that you can display or assign. Always inspect the result, its data type, included rows, missing-value behaviour, unit and denominator before interpreting it.
+
+### Twenty-five core pandas tool groups
+
+The table is organised by task. It prioritises tools used in Lecture 5 and adds a few that students will need during cleaning and export in Lecture 6. A row may group closely related methods so that the reference remains short enough to use. The examples assume `import pandas as pd` and a DataFrame called `df`.
+
+### 1. Reading and inspecting data
+
+| Tool or syntax | Kind | What it does | Short example | Course use |
+|---|---|---|---|---|
+| `pd.read_csv()` | Function | Reads a CSV file or raw URL and returns a DataFrame. | `df = pd.read_csv(data_url)` | **Used in Lecture 5** |
+| `head() / tail() / sample()` | Methods | Shows rows from the beginning, end or a reproducible random sample. | `df.sample(3, random_state=7)` | **Used in Lecture 5** |
+| `info()` | Method | Prints column names, non-missing counts, dtypes and memory information. | `df.info()` | **Used in Lecture 5** |
+| `describe()` | Method | Returns a compact statistical summary of numeric data by default. | `df["cases_received"].describe()` | **Used in Lecture 5** |
+| `shape / columns` | Attributes | Reports the table dimensions and returns the column labels. | `print(df.shape); print(df.columns)` | **Used in Lecture 5** |
+| `dtypes` | Attribute | Shows the technical dtype currently assigned to every column. | `print(df.dtypes)` | **Used in Lecture 5** |
+
+### 2. Selecting, filtering and ordering data
+
+| Tool or syntax | Kind | What it does | Short example | Course use |
+|---|---|---|---|---|
+| `df["column"] / df[[...]]` | Selection syntax | Selects one Series or a new DataFrame containing several named columns. | `df[["city", "feedback"]]` | **Used in Lecture 5** |
+| `loc[] / iloc[]` | Indexers | Selects by labels or Boolean conditions with loc, and by integer position with iloc. | `df.loc[df["city"] == "Aalborg", ["city", "feedback"]]` | **Used in Lecture 5** |
+| `isin() / between()` | Series methods | Creates Boolean masks for membership in a collection or inclusion in a numeric range. | `df["satisfaction_score"].between(1, 5)` | **Used in Lecture 5** |
+| `sort_values()` | Method | Returns rows ordered by one or more columns without changing the original unless assigned. | `df.sort_values("cases_received", ascending=False)` | **Useful next tool** |
+
+### 3. Checking and cleaning data
+
+| Tool or syntax | Kind | What it does | Short example | Course use |
+|---|---|---|---|---|
+| `isna() / notna()` | Methods | Marks missing or non-missing cells with Boolean values. | `df["feedback"].isna()` | **Used in Lecture 5** |
+| `duplicated() / drop_duplicates()` | Methods | Detects duplicate rows and, after a justified decision, returns data without selected duplicates. | `duplicate_mask = df.duplicated()` | **Detection used; removal is a next step** |
+| `pd.to_numeric()` | Function | Converts values to numbers; errors="coerce" marks unconvertible values as missing. | `pd.to_numeric(df["resolution_days"], errors="coerce")` | **Used in Lecture 5** |
+| `pd.to_datetime()` | Function | Converts values to pandas dates and can mark invalid dates as missing. | `pd.to_datetime(df["report_month"], errors="coerce")` | **Used in Lecture 5** |
+| `dropna() / fillna() / replace()` | Methods | Removes, fills or replaces values. Each operation needs a documented substantive reason. | `complete_feedback = df["feedback"].dropna()` | **Useful next tools for Lecture 6** |
+
+### 4. Calculating, summarising and grouping
+
+| Tool or syntax | Kind | What it does | Short example | Course use |
+|---|---|---|---|---|
+| `count() / sum()` | Methods | Counts non-missing values or totals numeric and Boolean values. | `df["cases_received"].sum()` | **Used in Lecture 5** |
+| `mean() / median()` | Methods | Calculates the arithmetic average or middle ordered value. | `df["satisfaction_score"].mean()` | **Used in Lecture 5** |
+| `min() / max() / std()` | Methods | Returns the smallest value, largest value or standard deviation. | `df["cases_received"].std()` | **Used in Lecture 5** |
+| `idxmin() / idxmax()` | Methods | Returns the index label of the first minimum or maximum so the source row can be inspected. | `row_id = df["cases_received"].idxmin()` | **Used in Lecture 5** |
+| `nunique() / value_counts() / mode()` | Methods | Counts distinct values, builds a frequency table or identifies the most frequent value. | `df["service_type"].value_counts(dropna=False)` | **Used in Lecture 5** |
+| `groupby() / agg()` | Methods | Splits rows into groups and applies one or several summaries to every group. | `df.groupby("city")["cases_received"].agg(["count", "mean"])` | **Used in Lecture 5** |
+| `pd.crosstab()` | Function | Builds a frequency table for combinations of two categorical variables. | `pd.crosstab(df["city"], df["service_type"])` | **Used in Lecture 5** |
+
+### 5. Working with text
+
+| Tool or syntax | Kind | What it does | Short example | Course use |
+|---|---|---|---|---|
+| `str.contains()` | String method | Tests whether every text value contains a word or pattern and returns a Boolean Series. | `df["feedback"].str.contains("wait", case=False, na=False)` | **Used in Lecture 5** |
+| `str.lower() / str.strip() / str.replace() / str.split() / str.len()` | String methods | Standardises case or spacing, replaces or splits text, and measures text length. | `clean_text = df["feedback"].str.lower().str.strip()` | **Length used in Lecture 5; others prepare Lecture 6** |
+
+### 6. Saving a result
+
+| Tool or syntax | Kind | What it does | Short example | Course use |
+|---|---|---|---|---|
+| `to_csv()` | Method | Writes a DataFrame to a CSV file. The index is usually excluded for a clean export. | `clean_df.to_csv("cleaned_data.csv", index=False)` | **Useful next tool for Lecture 6** |
+
+### How to choose and check a pandas tool
+
+Do not choose a command only because its name looks familiar. Ask:
+
+1. What object am I using: a DataFrame, one Series or a grouped object?
+2. What will the command return: rows, a column, a Boolean mask, a summary table or one number?
+3. Which rows and missing values are included?
+4. Does the command display information, return a new object or change stored data?
+5. What unit and denominator does the result represent?
+6. Can I verify the result against a few original rows?
+
+For example, `df["feedback"].count()` counts non-missing feedback entries, while `len(df)` counts every row. Both results can be correct while answering different questions. pandas performs the operation; it does not decide whether the variable, denominator or interpretation suits the research question.
+
 ## The three Lecture 5 notebooks
 
 Lecture 5 should have exactly **three canonical GitHub/Colab notebooks**.

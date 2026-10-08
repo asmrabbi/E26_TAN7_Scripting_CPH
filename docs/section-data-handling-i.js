@@ -287,6 +287,104 @@ const dataHandlingIModules = [
 
 const dataHandlingIGuide = "<h2>Lecture 5 course files and coding guide</h2>\n<p>This section uses Python 3, pandas and the supplied synthetic CSV. Google Colab already includes pandas. For local work, install the repository requirements with <code>python -m pip install -r requirements.txt</code>, or install pandas directly with <code>python -m pip install \"pandas&gt;=2.0\"</code>.</p>\n<div class=\"table-wrap\"><table><thead><tr><th>File</th><th>Contents</th><th>Use it for</th></tr></thead><tbody>\n<tr><td><a href=\"https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb\" target=\"_blank\" rel=\"noreferrer\">Tutorial 3.1–3.14 Examples</a></td><td>Website examples and reference calculations in tutorial order, with learner comments and verified outputs.</td><td>Lecture demonstration, rerunning and modification.</td></tr>\n<tr><td><a href=\"https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb\" target=\"_blank\" rel=\"noreferrer\">Tutorial 3.1–3.13 Exercises</a></td><td>All 33 numbered exercises followed by a clearly separated, fully commented solution section.</td><td>Independent work before checking answers.</td></tr>\n<tr><td><a href=\"https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb\" target=\"_blank\" rel=\"noreferrer\">Tutorial 3.14 Applied Activities</a></td><td>Eight cumulative activities followed by a separated model walkthrough and reproducible checks.</td><td>Complete initial exploration and report.</td></tr>\n<tr><td><a href=\"https://raw.githubusercontent.com/asmrabbi/E26_TAN7_Scripting_CPH/main/data/E26_TAN7_service_experience_raw.csv\" target=\"_blank\" rel=\"noreferrer\">Lecture 5 raw CSV</a></td><td>121 synthetic records, 14 columns and deliberate data-quality problems.</td><td>Use unchanged throughout Lecture 5.</td></tr>\n</tbody></table></div>\n<p><a href=\"https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_05\" target=\"_blank\" rel=\"noreferrer\">Browse the complete Lecture 5 folder on GitHub</a>.</p>\n<h3>Google Colab</h3>\n<ol><li>Open a direct Colab link and choose <strong>File → Save a copy in Drive</strong>.</li><li>Run the setup and data-loading cells first.</li><li>Run the numbered section that matches the website tutorial.</li><li>Read the displayed shape, counts and quality flags rather than assuming that a successful cell proves the data is valid.</li></ol>\n<h3>Local Python</h3>\n<p>Clone or download the repository, install pandas, and open <code>notebooks/lecture_05</code> in Jupyter. The notebooks load the versioned raw GitHub file, while the same CSV is also available under <code>data/</code>.</p>\n<h3>Learning cycle</h3>\n<p><strong>Question → load → inspect → calculate → verify rows → document quality → interpret cautiously → reproduce.</strong> Lecture 5 diagnoses the raw data. Cleaning decisions belong to the next section.</p>";
 
+const dataHandlingIPandasReference = `
+  <h2>What is pandas, and what is a pandas function?</h2>
+  <p><strong>pandas</strong> is a Python library for working with table-shaped data. After writing <code>import pandas as pd</code>, the name <code>pd</code> refers to the library. A complete table held in pandas is usually a <code>DataFrame</code>, while one column is usually a <code>Series</code>.</p>
+  <p>There is no useful single count of “all pandas functions”. pandas contains top-level functions, DataFrame methods, Series methods, string and date accessors, attributes, indexers and specialised APIs, and the public interface changes between releases. Beginners do not need to memorise hundreds of names. They need a smaller, organised set that supports a real workflow.</p>
+  <p>Students often use the word <strong>function</strong> for every pandas command, but this course uses four related forms:</p>
+  <ul>
+    <li><strong>Function:</strong> begins with the library alias, for example <code>pd.read_csv(...)</code>.</li>
+    <li><strong>Method:</strong> belongs to an object and follows a dot, for example <code>df.head()</code>.</li>
+    <li><strong>Attribute:</strong> stores information and has no parentheses, for example <code>df.shape</code>.</li>
+    <li><strong>Indexer:</strong> selects with square brackets, for example <code>df.loc[...]</code>.</li>
+  </ul>
+  <h3>How to read a method call</h3>
+  <div class="md-code md-python"><div class="md-code-label"><span>General pattern</span><button type="button" class="md-copy-button" data-copy-python aria-label="Copy this Python code to the clipboard">Copy code</button></div><pre><code class="language-python">result = object.method(argument_name=value)</code></pre></div>
+  <ol>
+    <li><code>object</code> identifies the DataFrame, Series or grouped object being used.</li>
+    <li>The dot means “use a tool belonging to this object”.</li>
+    <li><code>method</code> names the operation, and parentheses call it.</li>
+    <li>Arguments inside the parentheses control the operation.</li>
+    <li>The returned result may be a DataFrame, Series, Boolean mask, summary table or single value.</li>
+    <li>Assignment stores that returned result under a name so it can be inspected or reused.</li>
+  </ol>
+  <p>Most commands below do <strong>not</strong> silently rewrite the original <code>df</code>. They return a result that you can display or assign. Before interpreting it, check its type, included rows, missing-value behaviour, unit and denominator.</p>
+  <h3>Twenty-five core pandas tool groups</h3>
+  <p>The reference is organised by task. It prioritises tools used in Lecture 5 and adds a few that students will need during cleaning and export in Lecture 6. A row may group closely related methods so the list remains short enough to use. The examples assume <code>import pandas as pd</code> and a DataFrame called <code>df</code>.</p>
+  <h3>1. Reading and inspecting data</h3>
+  <div class="table-wrap pandas-function-table"><table>
+    <thead><tr><th>Tool or syntax</th><th>Kind</th><th>What it does</th><th>Short example</th><th>Course use</th></tr></thead>
+    <tbody>
+      <tr><td><code>pd.read_csv()</code></td><td>Function</td><td>Reads a CSV file or raw URL and returns a DataFrame.</td><td><code>df = pd.read_csv(data_url)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>head() / tail() / sample()</code></td><td>Methods</td><td>Shows rows from the beginning, end or a reproducible random sample.</td><td><code>df.sample(3, random_state=7)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>info()</code></td><td>Method</td><td>Prints column names, non-missing counts, dtypes and memory information.</td><td><code>df.info()</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>describe()</code></td><td>Method</td><td>Returns a compact statistical summary of numeric data by default.</td><td><code>df[&quot;cases_received&quot;].describe()</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>shape / columns</code></td><td>Attributes</td><td>Reports the table dimensions and returns the column labels.</td><td><code>print(df.shape); print(df.columns)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>dtypes</code></td><td>Attribute</td><td>Shows the technical dtype currently assigned to every column.</td><td><code>print(df.dtypes)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+    </tbody>
+  </table></div>
+  <h3>2. Selecting, filtering and ordering data</h3>
+  <div class="table-wrap pandas-function-table"><table>
+    <thead><tr><th>Tool or syntax</th><th>Kind</th><th>What it does</th><th>Short example</th><th>Course use</th></tr></thead>
+    <tbody>
+      <tr><td><code>df[&quot;column&quot;] / df[[...]]</code></td><td>Selection syntax</td><td>Selects one Series or a new DataFrame containing several named columns.</td><td><code>df[[&quot;city&quot;, &quot;feedback&quot;]]</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>loc[] / iloc[]</code></td><td>Indexers</td><td>Selects by labels or Boolean conditions with loc, and by integer position with iloc.</td><td><code>df.loc[df[&quot;city&quot;] == &quot;Aalborg&quot;, [&quot;city&quot;, &quot;feedback&quot;]]</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>isin() / between()</code></td><td>Series methods</td><td>Creates Boolean masks for membership in a collection or inclusion in a numeric range.</td><td><code>df[&quot;satisfaction_score&quot;].between(1, 5)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>sort_values()</code></td><td>Method</td><td>Returns rows ordered by one or more columns without changing the original unless assigned.</td><td><code>df.sort_values(&quot;cases_received&quot;, ascending=False)</code></td><td><strong>Useful next tool</strong></td></tr>
+    </tbody>
+  </table></div>
+  <h3>3. Checking and cleaning data</h3>
+  <div class="table-wrap pandas-function-table"><table>
+    <thead><tr><th>Tool or syntax</th><th>Kind</th><th>What it does</th><th>Short example</th><th>Course use</th></tr></thead>
+    <tbody>
+      <tr><td><code>isna() / notna()</code></td><td>Methods</td><td>Marks missing or non-missing cells with Boolean values.</td><td><code>df[&quot;feedback&quot;].isna()</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>duplicated() / drop_duplicates()</code></td><td>Methods</td><td>Detects duplicate rows and, after a justified decision, returns data without selected duplicates.</td><td><code>duplicate_mask = df.duplicated()</code></td><td><strong>Detection used; removal is a next step</strong></td></tr>
+      <tr><td><code>pd.to_numeric()</code></td><td>Function</td><td>Converts values to numbers; errors=&quot;coerce&quot; marks unconvertible values as missing.</td><td><code>pd.to_numeric(df[&quot;resolution_days&quot;], errors=&quot;coerce&quot;)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>pd.to_datetime()</code></td><td>Function</td><td>Converts values to pandas dates and can mark invalid dates as missing.</td><td><code>pd.to_datetime(df[&quot;report_month&quot;], errors=&quot;coerce&quot;)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>dropna() / fillna() / replace()</code></td><td>Methods</td><td>Removes, fills or replaces values. Each operation needs a documented substantive reason.</td><td><code>complete_feedback = df[&quot;feedback&quot;].dropna()</code></td><td><strong>Useful next tools for Lecture 6</strong></td></tr>
+    </tbody>
+  </table></div>
+  <h3>4. Calculating, summarising and grouping</h3>
+  <div class="table-wrap pandas-function-table"><table>
+    <thead><tr><th>Tool or syntax</th><th>Kind</th><th>What it does</th><th>Short example</th><th>Course use</th></tr></thead>
+    <tbody>
+      <tr><td><code>count() / sum()</code></td><td>Methods</td><td>Counts non-missing values or totals numeric and Boolean values.</td><td><code>df[&quot;cases_received&quot;].sum()</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>mean() / median()</code></td><td>Methods</td><td>Calculates the arithmetic average or middle ordered value.</td><td><code>df[&quot;satisfaction_score&quot;].mean()</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>min() / max() / std()</code></td><td>Methods</td><td>Returns the smallest value, largest value or standard deviation.</td><td><code>df[&quot;cases_received&quot;].std()</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>idxmin() / idxmax()</code></td><td>Methods</td><td>Returns the index label of the first minimum or maximum so the source row can be inspected.</td><td><code>row_id = df[&quot;cases_received&quot;].idxmin()</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>nunique() / value_counts() / mode()</code></td><td>Methods</td><td>Counts distinct values, builds a frequency table or identifies the most frequent value.</td><td><code>df[&quot;service_type&quot;].value_counts(dropna=False)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>groupby() / agg()</code></td><td>Methods</td><td>Splits rows into groups and applies one or several summaries to every group.</td><td><code>df.groupby(&quot;city&quot;)[&quot;cases_received&quot;].agg([&quot;count&quot;, &quot;mean&quot;])</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>pd.crosstab()</code></td><td>Function</td><td>Builds a frequency table for combinations of two categorical variables.</td><td><code>pd.crosstab(df[&quot;city&quot;], df[&quot;service_type&quot;])</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+    </tbody>
+  </table></div>
+  <h3>5. Working with text</h3>
+  <div class="table-wrap pandas-function-table"><table>
+    <thead><tr><th>Tool or syntax</th><th>Kind</th><th>What it does</th><th>Short example</th><th>Course use</th></tr></thead>
+    <tbody>
+      <tr><td><code>str.contains()</code></td><td>String method</td><td>Tests whether every text value contains a word or pattern and returns a Boolean Series.</td><td><code>df[&quot;feedback&quot;].str.contains(&quot;wait&quot;, case=False, na=False)</code></td><td><strong>Used in Lecture 5</strong></td></tr>
+      <tr><td><code>str.lower() / str.strip() / str.replace() / str.split() / str.len()</code></td><td>String methods</td><td>Standardises case or spacing, replaces or splits text, and measures text length.</td><td><code>clean_text = df[&quot;feedback&quot;].str.lower().str.strip()</code></td><td><strong>Length used in Lecture 5; others prepare Lecture 6</strong></td></tr>
+    </tbody>
+  </table></div>
+  <h3>6. Saving a result</h3>
+  <div class="table-wrap pandas-function-table"><table>
+    <thead><tr><th>Tool or syntax</th><th>Kind</th><th>What it does</th><th>Short example</th><th>Course use</th></tr></thead>
+    <tbody>
+      <tr><td><code>to_csv()</code></td><td>Method</td><td>Writes a DataFrame to a CSV file. The index is usually excluded for a clean export.</td><td><code>clean_df.to_csv(&quot;cleaned_data.csv&quot;, index=False)</code></td><td><strong>Useful next tool for Lecture 6</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>How to choose and check a pandas tool</h3>
+  <ol>
+    <li>Identify whether you are using a DataFrame, one Series or a grouped object.</li>
+    <li>Predict whether the result will be rows, a column, a Boolean mask, a summary table or one number.</li>
+    <li>Check which rows and missing values are included.</li>
+    <li>Decide whether the command displays information, returns a new object or changes stored data.</li>
+    <li>State the unit and denominator represented by the result.</li>
+    <li>Verify the result against several original rows.</li>
+  </ol>
+  <div class="key-idea"><strong>Same data, different question</strong><p><code>df["feedback"].count()</code> counts non-missing feedback entries, while <code>len(df)</code> counts every row. Both can be correct while answering different questions. pandas performs the operation; it does not decide whether the variable, denominator or interpretation suits the research question.</p></div>
+`;
+
 const dataHandlingIChapters = {
   "3.1": [
     {
