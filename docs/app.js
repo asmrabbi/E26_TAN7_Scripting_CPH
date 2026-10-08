@@ -34,7 +34,7 @@ const pythonResourceLinks = {
     examples: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb",
     examplesGithub: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb",
     exercises: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb",
-    cases: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb",
+    cases: "https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_14_Guided_Examples.ipynb",
     dataset: lecture5DatasetUrl,
     github: "https://github.com/asmrabbi/E26_TAN7_Scripting_CPH/tree/main/notebooks/lecture_05"
   }

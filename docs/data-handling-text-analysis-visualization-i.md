@@ -159,7 +159,7 @@ Lecture 5 should have exactly **three canonical GitHub/Colab notebooks**.
 |---|---|---|---|
 | **Tutorial Examples** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Examples.ipynb` | Every runnable worked example from Tutorials 3.1–3.13, in website order, plus setup cells needed for the examples | During teaching and when reviewing explanations |
 | **Exercises** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb` | All 39 numbered exercises from Tutorials 3.1–3.14. Student tasks come first; full commented solutions appear in a clearly separated solutions section at the end | Attempt exercises before reading the solutions |
-| **Tutorial 3.14 Guided Examples** | `notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb` | Examples 3.14.1–3.14.8, each presented as question, complete code and immediate explanation | Study before attempting Exercises 3.14.9–3.14.14 |
+| **Tutorial 3.14 Guided Examples** | `notebooks/lecture_05/L05_Tutorial_3_14_Guided_Examples.ipynb` | Examples 3.14.1–3.14.8, each presented as question, complete code and immediate explanation | Study before attempting Exercises 3.14.9–3.14.14 |
 
 Target Colab links follow this pattern:
 
@@ -168,7 +168,7 @@ https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/ma
 
 https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Exercises.ipynb
 
-https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_1_to_3_14_Case_Activities.ipynb
+https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/notebooks/lecture_05/L05_Tutorial_3_14_Guided_Examples.ipynb
 ```
 
 If a notebook has not yet been generated when the website page is built, show the button as **Coming soon** rather than linking to a missing file.
