@@ -1,13 +1,20 @@
 // Additional sections in the isolated review copy only.
 function readDraftProgress() {
   try {
-    const values = JSON.parse(localStorage.getItem('aau-l67-offline-draft-v2') || '[]');
+    const current = localStorage.getItem('aau-l67-offline-draft-v3');
+    if (current !== null) {
+      const saved = JSON.parse(current);
+      return Array.isArray(saved) ? saved : [];
+    }
+    const previous = JSON.parse(localStorage.getItem('aau-l67-offline-draft-v2') || '[]');
+    const values = Array.isArray(previous) ? previous.map(id => /^3\.(3\d|4[0-5])$/.test(id) ? '3.' + (Number(id.split('.')[1]) + 1) : id) : [];
+    localStorage.setItem('aau-l67-offline-draft-v3', JSON.stringify(values));
     return Array.isArray(values) ? values : [];
   } catch { return []; }
 }
 
 function saveDraftProgress(values) {
-  try { localStorage.setItem('aau-l67-offline-draft-v2', JSON.stringify(values)); }
+  try { localStorage.setItem('aau-l67-offline-draft-v3', JSON.stringify(values)); }
   catch { showToast('Progress is available during this visit; browser storage is unavailable.'); }
 }
 
@@ -19,9 +26,9 @@ const draftNotebookLinks = {
     markdown: '../markdown/source_package/E26_TAN7_L06_Data_Quality_Cleaning_Text_Preparation_FINAL.md'
   },
   7: {
-    examples: '../notebooks/lecture_07/L07_Tutorial_3_30_to_3_44_Examples.ipynb',
-    exercises: '../notebooks/lecture_07/L07_Tutorial_3_30_to_3_44_Exercises.ipynb',
-    integrated: '../notebooks/lecture_07/L07_Tutorial_3_45_Integrated_Problems.ipynb',
+    examples: '../notebooks/lecture_07/L07_Tutorial_3_31_to_3_45_Examples.ipynb',
+    exercises: '../notebooks/lecture_07/L07_Tutorial_3_31_to_3_45_Exercises.ipynb',
+    integrated: '../notebooks/lecture_07/L07_Tutorial_3_46_Integrated_Problems.ipynb',
     markdown: '../markdown/source_package/E26_TAN7_L07_Analysis_Text_Visualisation_FINAL.md'
   }
 };
@@ -43,7 +50,12 @@ function onlineNotebookLinks(config, type) {
   };
 }
 
-function draftResourceLinks(config) {
+function draftResourceLinks(config, module = null) {
+  const loadingPath = 'notebooks/lecture_06/L06_Tutorial_3_30_Loading_Your_Own_CSV.ipynb';
+  const loadingOnline = 'https://colab.research.google.com/github/asmrabbi/E26_TAN7_Scripting_CPH/blob/main/' + loadingPath;
+  const loadingDownload = downloadableCourseFile(loadingPath, '../' + loadingPath);
+  const loadingLink = '<a class="resource-button" href="' + loadingOnline + '" target="_blank" rel="noreferrer">↗ Tutorial 3.30 CSV loading in Colab</a>';
+  if (module?.notebook) return '<div class="reading-links draft-resources"><a class="resource-button" href="' + loadingDownload + '" download>↓ Tutorial 3.30 notebook</a>' + loadingLink + '<a class="resource-button" href="' + githubCourseRoot + '/' + loadingPath + '" target="_blank" rel="noreferrer">View notebook on GitHub</a><a class="resource-button" href="' + downloadableCourseFile('data/tutorial_3_30_upload_practice.csv', '../data/tutorial_3_30_upload_practice.csv') + '" download>↓ Practice CSV</a></div>';
   const links = draftNotebookLinks[config.lecture];
   const examplesOnline = onlineNotebookLinks(config, 'examples');
   const exercisesOnline = onlineNotebookLinks(config, 'exercises');
@@ -64,6 +76,7 @@ function draftResourceLinks(config) {
     <a class="resource-button" href="${exercisesDownload}" download>↓ Exercises notebook</a>
     <a class="resource-button" href="${integratedDownload}" download>↓ Applied Problems notebook</a>
     ${sourceMarkdown}
+    ${config.lecture === 6 ? loadingLink : ''}
     <a class="resource-button" href="${rawDataset}" download>▤ Raw teaching CSV</a>
     ${cleaned}
     <a class="resource-button" href="${githubCourseRoot}/data/applied/README.md" target="_blank" rel="noreferrer">▤ Applied dataset guide</a>
@@ -120,11 +133,11 @@ function renderDraftModule(module, config) {
     <header class="module-header compact-module-header"><div class="module-meta"><span class="pill">${module.kind}</span><span class="time">◷ ${module.time}</span><span class="time">Lecture ${config.lecture} · supplied final package</span></div><h1>${module.id} ${module.title}</h1><p class="lead">${module.intro}</p></header>
     <div class="main-column compact-column"><p class="draft-crumb"><a href="#${config.route}">← Section ${config.section} overview and files</a></p>
       <section class="chapter-paper python-chapter">${module.html}</section>
-      <section class="reading-panel python-resources"><div><p class="eyebrow">Matching files</p><h2>Continue with the same numbered material</h2><p>Examples and exercises share one sequence. Download the appropriate notebook and find the visible item ID. For the applied tutorial, attempt the case before consulting the worked notebook.</p>${draftResourceLinks(config)}</div></section>
+      <section class="reading-panel python-resources"><div><p class="eyebrow">Matching files</p><h2>Continue with the same numbered material</h2><p>Examples and exercises share one sequence. Download the appropriate notebook and find the visible item ID. For the applied tutorial, attempt the case before consulting the worked notebook.</p>${draftResourceLinks(config, module)}</div></section>
       <nav class="next-row" aria-label="Module navigation">
         <a class="next-button" href="${previous ? routeHref(state.section, previous.id) : routeHref(state.section)}"><span>←</span><span><small>${previous ? 'Previous' : 'Return to'}</small><strong>${previous ? previous.id + ' ' + previous.title : 'Section ' + config.section}</strong></span></a>
         <button class="next-button complete-button ${state.completed.has(module.id) ? 'done' : ''}" data-complete="${module.id}"><span>${state.completed.has(module.id) ? '✓' : '○'}</span><span><small>Progress</small><strong>${state.completed.has(module.id) ? 'Mark incomplete' : 'Mark complete'}</strong></span></button>
-        <a class="next-button" href="${next ? routeHref(state.section, next.id) : config.lecture === 6 ? '#data-iii' : '#data-iii'}"><span><small>${next ? 'Next' : 'Continue'}</small><strong>${next ? next.id + ' ' + next.title : config.lecture === 6 ? 'Lecture 7' : 'Lecture 7 overview'}</strong></span><span>→</span></a>
+        <a class="next-button" href="${next ? routeHref(state.section, next.id) : config.lecture === 6 ? '#data-iii/3.31' : '#data-iii'}"><span><small>${next ? 'Next' : 'Continue'}</small><strong>${next ? next.id + ' ' + next.title : config.lecture === 6 ? 'Lecture 7' : 'Lecture 7 overview'}</strong></span><span>→</span></a>
       </nav>
     </div></article>`;
   attachModuleEvents(module);
